@@ -1,0 +1,597 @@
+{
+  "data": "2026-10-09",
+  "numero": 1,
+  "geradoEm": "2026-10-09T10:15:00-03:00",
+  "destaque": "Quântica passa a ser medida por uso, não por qubits",
+  "leitura": "A semana confirma uma virada: governos passaram a medir a computação quântica pelo uso científico, e não pelo número de qubits. Os EUA publicaram um roteiro com desafios até 2028 e uma instalação aberta a pesquisadores, o Novo México inaugurou um prédio para abrigar empresas do setor e, no Brasil, o Instituto Eldorado comprou a primeira máquina da IQM no continente. Para a SECTIES, a mensagem é preparar o CIQUANTA com um modelo de acesso aberto e uma chamada de desafios, e aproveitar as chamadas abertas de IA e semicondutores. Nas frentes de inovação, ensino superior e patrimônio, o Nordeste lidera a criação de startups, o Sertão ganha um instituto federal próprio e a digitalização 3D surge como caminho barato para valorizar o patrimônio histórico. E há modelos prontos para a SECTIES levar tecnologia às outras secretarias, como o programa de desafios de Goiás e a IA na regulação da saúde em Minas.",
+  "itens": [
+    {
+      "id": "doe-roadmap-quantico",
+      "titulo": "EUA publicam roteiro nacional para computação quântica tolerante a falhas até 2028",
+      "fonte": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com/us-department-of-energy-releases-national-quantum-roadmap-establishing-2028-fault-tolerance-milestones/",
+      "dataPub": "2026-10-02",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "fomento"
+      ],
+      "resumo": "Comitê consultivo do Departamento de Energia dos EUA propõe um roteiro em fases: primeiro, grandes desafios científicos entre 2026 e 2028, com laboratórios, universidades e empresas trabalhando juntos; depois, uma instalação nacional de usuários com acesso aberto aos processadores quânticos, integrada à supercomputação e à IA.",
+      "porQueImporta": "É um desenho que o CIQUANTA pode adotar: medir o sucesso por problemas científicos resolvidos e por quantos pesquisadores usam a máquina, e não pelo número de qubits. Dá argumento técnico para o modelo de governança do centro e para chamadas de desafios científicos."
+    },
+    {
+      "id": "albuquerque-lab-quantico",
+      "titulo": "Albuquerque inaugura laboratório quântico compartilhado com IonQ, QuEra e Diraq como inquilinos",
+      "fonte": "The Qubit Report",
+      "url": "https://thequbitreport.com/quantum-computing-weekly-round-up/2026/10/03/quantum-computing-weekly-round-up-week-ending-october-3-2026/",
+      "dataPub": "2026-10-03",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "O Novo México abriu em 29 de setembro um laboratório de cerca de 3.250 m² que já tem como inquilinos Diraq, IonQ, QuEra e dois laboratórios nacionais. Na mesma semana, a Pasqal trocou um programa de defesa francês por um projeto civil e a Cloudflare anunciou que quer emitir certificados pós-quânticos.",
+      "porQueImporta": "Mostra um estado usando um prédio público como ímã para empresas. O CIQUANTA pode reservar espaço para empresas residentes, como startups, fornecedores e spin-offs universitárias, e usar a inauguração para atrair os primeiros inquilinos."
+    },
+    {
+      "id": "eldorado-iqm",
+      "titulo": "Instituto Eldorado compra computador quântico finlandês, o primeiro da IQM na América do Sul",
+      "fonte": "Baguete",
+      "url": "https://www.baguete.com.br/noticias/eldorado-adquire-computador-quantico-finlandes",
+      "dataPub": "2026-09-18",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "Um dos maiores centros de P&D do país adquiriu um sistema supercondutor da IQM para estudar algoritmos, hardware e arquiteturas híbridas que juntam supercomputação, computação quântica e IA.",
+      "porQueImporta": "O CIQUANTA deixa de ser o único polo com máquina própria no Brasil. Isso abre espaço para uma rede nacional (testes comuns, troca de bolsistas) e pede que o diferencial paraibano fique claro: computadores de 20 e 100 qubits, parceria com a China e foco em formação no Nordeste."
+    },
+    {
+      "id": "ionq-nvidia",
+      "titulo": "IonQ instala processador quântico ao lado de supercomputador de IA da NVIDIA",
+      "fonte": "IonQ",
+      "url": "https://investors.ionq.com/news/news-details/2026/IonQ-to-Advance-Quantum-Supercomputing-by-Bringing-First-QPU-to-NVIDIA-Accelerated-Quantum-Research-Center/default.aspx",
+      "dataPub": "2026-09-23",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "O sistema Superion 256 será o primeiro processador quântico instalado no centro de pesquisa quântica da NVIDIA, ao lado de um supercomputador de GPUs, para rodar aplicações científicas que combinam as duas tecnologias.",
+      "porQueImporta": "Confirma o valor de juntar computação quântica e supercomputação com GPUs. Vale planejar a ligação do CIQUANTA com infraestrutura de alto desempenho e capacitar pesquisadores em programação híbrida."
+    },
+    {
+      "id": "nsf-290",
+      "titulo": "Fundação Nacional de Ciência dos EUA destina US$ 290 milhões a institutos de pesquisa quântica",
+      "fonte": "TipRanks",
+      "url": "https://www.tipranks.com/news/quantum-computing-news-qbts-adds-tech-veteran-as-nsf-commits-290m",
+      "dataPub": "2026-09-29",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "fomento"
+      ],
+      "resumo": "A NSF comprometeu US$ 290 milhões com institutos de pesquisa quântica. Na mesma semana, Chicago anunciou uma competição de startups quânticas com US$ 150 mil em prêmios, marcada para 8 de dezembro.",
+      "porQueImporta": "Competições com prêmio em dinheiro são um formato barato para atrair startups e pesquisadores. Um prêmio estadual ligado ao CIQUANTA teria custo baixo e alta visibilidade."
+    },
+    {
+      "id": "pbia-servidores",
+      "titulo": "Plano Brasileiro de IA já capacitou 82 mil servidores e mira 115 mil até o fim de 2026",
+      "fonte": "Portal Tela",
+      "url": "https://www.portaltela.com/noticias/politica/2026/05/15/plano-de-ia-brasileiro-destina-r-23-bilhoes-para-modernizar-servicos-publicos/",
+      "dataPub": "2026-05-15",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "secretaria2030",
+        "ensino"
+      ],
+      "resumo": "O PBIA prevê R$ 23 bilhões em quatro anos, com 54 ações e diretrizes de ética e autoavaliação de risco. A coordenação informou 82 mil servidores federais formados em IA e meta de 115 mil até dezembro.",
+      "porQueImporta": "O eixo Talentos em IA do SecretarIA 2030 pode adotar uma meta numérica parecida para os servidores da Paraíba e aproveitar as trilhas federais, em vez de criar conteúdo do zero."
+    },
+    {
+      "id": "mapeamento-cursos-ia",
+      "titulo": "MCTI, CGEE e LNCC mapeiam os cursos superiores de inteligência artificial no Brasil",
+      "fonte": "Instituto de IA do LNCC",
+      "url": "https://instituto.ia.lncc.br/en/publications",
+      "dataPub": "2026-05-21",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "ensino",
+        "secretaria2030"
+      ],
+      "resumo": "Estudo do MCTI com o CGEE e o Instituto de IA do LNCC levanta a oferta de graduação e pós-graduação em inteligência artificial no país (2025–2026), diante da demanda crescente por profissionais.",
+      "porQueImporta": "Base pronta para mostrar as lacunas da Paraíba na formação em IA e orientar a oferta de cursos com UFPB, UFCG, UEPB e IFPB."
+    },
+    {
+      "id": "rhae-ia",
+      "titulo": "Chamadas abertas: RHAE IA no CNPq, cooperação com a França e Finep para semicondutores",
+      "fonte": "Circular de oportunidades (UFG)",
+      "url": "https://files.cercomp.ufg.br/weby/up/1218/o/OFICIO_CIRCULAR_6516394.pdf",
+      "dataPub": "2026-10",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "ensino",
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "Circular de oportunidades lista a Chamada CNPq/MCTI/FNDCT nº 29/2026 (RHAE IA, formação de pessoal em IA para empresas), a Chamada MCTI/CNPq/ANR nº 32/2026 de cooperação científica com a agência francesa ANR e a rodada 2 do Finep Mais Inovação para semicondutores.",
+      "porQueImporta": "Três portas de financiamento: RHAE IA para formar pessoal em IA nas empresas paraibanas, a chamada com a França para pesquisa ligada ao CIQUANTA e a rodada de semicondutores para a cadeia de chips. Conferir prazos e elegibilidade em cada edital."
+    },
+    {
+      "id": "escolas-conectadas-pb",
+      "titulo": "Cerca de 3 mil escolas públicas da Paraíba já têm internet; meta é chegar às 3.737 em 2026",
+      "fonte": "Brasil 61 / MCom",
+      "url": "https://brasil61.com/n/internet-chega-a-3-mil-escolas-publicas-da-paraiba-mcom260254",
+      "dataPub": "2026-02",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "inclusao"
+      ],
+      "resumo": "Pelo programa Escolas Conectadas, do MCom e do MEC, cerca de 3 mil escolas públicas paraibanas estão conectadas. O governo federal quer cobrir as 3.737 escolas do estado ainda em 2026, dentro de um investimento nacional de cerca de R$ 9 bilhões.",
+      "porQueImporta": "A conexão está chegando, mas o uso pedagógico ainda não. As ações de inclusão digital do estado podem priorizar as escolas recém-conectadas, com formação para professores e estudantes."
+    },
+    {
+      "id": "semicon-decreto",
+      "titulo": "Decreto regulamenta o Brasil Semicon e cria conselho gestor do programa",
+      "fonte": "Atlas Público",
+      "url": "https://atlaspublico.com.br/noticias/governo-regulamenta-programa-brasil-semicondutores-e-cria-630846",
+      "dataPub": "2026-07-15",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "fomento"
+      ],
+      "resumo": "O Decreto nº 13.065/2026 regulamenta o programa federal de semicondutores, com cinco eixos: desoneração, apoio a P&D, formação de pessoas, financiamento e simplificação de importação e exportação. As diretrizes incluem incentivo às compras públicas de chips nacionais.",
+      "porQueImporta": "O CIQUANTA prevê avançar para a fabricação de chips quânticos no Brasil, o que se encaixa nos eixos de P&D e formação. O conselho aprova um plano anual: vale levar a Paraíba à conversa antes do plano de 2027."
+    },
+    {
+      "id": "icp-pos-quantica",
+      "titulo": "Estudo no SBSEG 2026 detalha a migração da ICP-Brasil para criptografia pós-quântica",
+      "fonte": "SBC — SBSEG 2026",
+      "url": "https://sol.sbc.org.br/index.php/sbseg/article/view/44306",
+      "dataPub": "2026-09-01",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "ciquanta"
+      ],
+      "resumo": "Estudo de caso analisa a preparação da infraestrutura nacional de chaves públicas para assinaturas pós-quânticas, após a Instrução Normativa ITI nº 35/2026. Conclui que a mudança afeta armazenamento, tráfego de rede, equipamentos de segurança, carimbo do tempo e governança, além dos algoritmos.",
+      "porQueImporta": "Certificados digitais e a assinatura Gov.br vão mudar. A SECTIES pode incluir no seu programa de segurança da informação um levantamento de onde usa criptografia, e o CIQUANTA ganha um tema concreto de pesquisa aplicada."
+    },
+    {
+      "id": "newsom-ia-trabalho",
+      "titulo": "Califórnia manda órgãos estaduais estudarem o efeito da IA sobre o emprego",
+      "fonte": "JD Supra",
+      "url": "https://www.jdsupra.com/topics/public-policy/executive-orders/artificial-intelligence/",
+      "dataPub": "2026-05-21",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030"
+      ],
+      "resumo": "O decreto executivo N-6-26 do governador da Califórnia pede às agências estaduais estudos sobre o impacto da IA no trabalho e recomendações de políticas, capacitação e proteção social.",
+      "porQueImporta": "É uma ação que cabe a um governo estadual. A SECTIES pode propor um estudo semelhante para a Paraíba, ligando o SecretarIA 2030 à agenda de emprego e renda."
+    },
+    {
+      "id": "brasil-china-ia",
+      "titulo": "Brasil e China reafirmam interesse em ampliar parceria em inteligência artificial",
+      "fonte": "Correio Braziliense",
+      "url": "https://www.correiobraziliense.com.br/aqui/?p=39400",
+      "dataPub": "2026-09-16",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "internacional",
+        "ciquanta"
+      ],
+      "resumo": "Os dois países seguem em diálogo diplomático sobre cooperação em IA e transferência de tecnologia, ainda sem acordo formal específico.",
+      "porQueImporta": "A Paraíba já coopera com instituições chinesas na área quântica. Se surgir um instrumento federal Brasil–China em IA, o CIQUANTA pode se oferecer como projeto-piloto."
+    },
+    {
+      "id": "planetario-parana",
+      "titulo": "Paraná compra planetário Zeiss de R$ 37,2 milhões para parque de ciência",
+      "fonte": "Viva",
+      "url": "https://viva.com.br/estilo-de-vida/novo-planetario-parana-experiencias-unicas-ciencia-astronomia.html",
+      "dataPub": "2025-10-05",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "astronomia"
+      ],
+      "resumo": "O governo paranaense comprou um planetário com cúpula de 18 metros para o Parque da Ciência Newton Freire Maia, com expectativa de até 140 mil visitantes por ano e mais de R$ 9 milhões em revitalização do parque.",
+      "porQueImporta": "Referência de custo, porte e meta de público para a Cidade da Astronomia da Paraíba."
+    },
+    {
+      "id": "sebrae-startups-nordeste",
+      "titulo": "Nordeste é a região que mais cria startups no país, aponta o Sebrae",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/nordeste-e-a-regiao-que-mais-cria-startups-mostra-sebrae/",
+      "dataPub": "2026-09-06",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "inovacao",
+        "fomento"
+      ],
+      "resumo": "Dados da Plataforma Sebrae Startups até junho de 2026 mostram o Nordeste com a maior alta do país em 12 meses (28%), somando quase 6 mil empresas de base tecnológica, 23,7% do total nacional. Pernambuco e Ceará lideram. A matéria cita o PaqTcPB, em Campina Grande, e o Parque Tecnológico Horizontes de Inovação, que fechou dois editais de R$ 10 milhões cada neste ano.",
+      "porQueImporta": "A Paraíba tem parques tecnológicos e editais, mas não aparece entre os líderes em número de startups. Vale medir o ecossistema estadual com a mesma base do Sebrae e fixar metas de crescimento."
+    },
+    {
+      "id": "bradesco-inovabra-nordeste",
+      "titulo": "Hub de inovação do Bradesco amplia a busca por startups no Nordeste, começando pelo Recife",
+      "fonte": "Movimento Econômico",
+      "url": "https://movimentoeconomico.com.br/inovacao/2026/08/28/bradesco-amplia-busca-por-inovacao-e-mira-startups-do-nordeste/",
+      "dataPub": "2026-08-28",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "inovacao"
+      ],
+      "resumo": "O Inovabra quer se conectar a centros como o Porto Digital e o CESAR para levar startups da região a projetos de cocriação com grandes empresas. O hub reúne mais de 250 startups e 30 empresas; a parceria no Recife ainda não foi formalizada e não há valores divulgados.",
+      "porQueImporta": "Grandes empresas procuram ecossistemas já organizados. A Paraíba pode se apresentar com seus parques tecnológicos como próxima parada, antes que a expansão se concentre em Pernambuco."
+    },
+    {
+      "id": "ifsertao-pb",
+      "titulo": "MEC define a estrutura do Instituto Federal do Sertão Paraibano, com sete campi",
+      "fonte": "IFPB",
+      "url": "https://www.ifpb.edu.br/noticias/2026/04/ministerio-da-educacao-define-estrutura-do-instituto-federal-do-sertao-paraibano",
+      "dataPub": "2026-04-16",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ensino",
+        "inovacao"
+      ],
+      "resumo": "A Portaria MEC nº 327/2026 organiza o novo instituto, criado a partir do IFPB, com reitoria em Patos e campi em Cajazeiras, Catolé do Rocha, Itaporanga, Patos, Princesa Isabel, Santa Luzia e Sousa.",
+      "porQueImporta": "Uma nova rede federal no Sertão abre espaço para parcerias estaduais em ensino superior, pesquisa aplicada e inovação no interior, fora do eixo João Pessoa–Campina Grande."
+    },
+    {
+      "id": "pe-de-meia-licenciaturas",
+      "titulo": "Pé-de-Meia Licenciaturas paga R$ 1.050 por mês a futuros professores",
+      "fonte": "Portal de Prefeitura",
+      "url": "https://portaldeprefeitura.com.br/brasil/pe-de-meia-licenciaturas-mec-abre-cadastro-na-terca-feira/615281/",
+      "dataPub": "2026-02-16",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "O programa do MEC oferece até 12 mil bolsas a estudantes de licenciatura com nota a partir de 650 no Enem. Parte do valor vai para uma poupança, liberada se o formado lecionar na rede pública em até cinco anos. A inscrição é pela Plataforma Freire, da Capes.",
+      "porQueImporta": "Faltam professores de ciências e matemática, base de toda a política de C&T. O estado pode divulgar o programa nas universidades e estudar um incentivo próprio para licenciaturas nessas áreas."
+    },
+    {
+      "id": "solar-conselheiro",
+      "titulo": "Casarão de 1708 no Centro Histórico de João Pessoa é restaurado para virar Casa da Música Paraibana",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/solar-do-conselheiro-renasce-para-devolver-musica-ao-centro/",
+      "dataPub": "2026-07-31",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "patrimonio"
+      ],
+      "resumo": "O Solar do Conselheiro, que já abrigou a Escola de Música Antenor Navarro, foi arrematado em leilão por particulares e está sendo restaurado com orientação do IPHAN e do IPHAEP e apoio do ICMS Cultural da Secult-PB.",
+      "porQueImporta": "Mostra um imóvel histórico ganhando novo uso com apoio público. Prédios do Centro Histórico também podem receber usos de ciência, tecnologia e inovação, unindo restauro e ocupação qualificada."
+    },
+    {
+      "id": "portugal-arca-digital",
+      "titulo": "Portugal escaneia 35 monumentos em 3D para criar uma “arca digital” do patrimônio",
+      "fonte": "The Portugal News",
+      "url": "https://www.theportugalnews.com/br/noticias/2026-05-13/portugal-lanca-arca-de-noe-digital-para-preservar-o-patrimonio-cultural/1021231",
+      "dataPub": "2026-05-13",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "patrimonio",
+        "inovacao"
+      ],
+      "resumo": "O órgão de patrimônio português faz escaneamento a laser de monumentos e sítios arqueológicos com precisão milimétrica, para conservação, monitoramento e visitas virtuais gratuitas. O projeto é pago pelo plano europeu de recuperação.",
+      "porQueImporta": "Tecnologia que a Paraíba pode aplicar ao seu patrimônio com universidades locais, gerando acervo digital, turismo virtual e formação técnica."
+    },
+    {
+      "id": "gramado-acervo-digital",
+      "titulo": "Gramado capacita museus da região para digitalizar acervos com plataforma gratuita",
+      "fonte": "Jornal do Comércio",
+      "url": "https://www.jornaldocomercio.com/jornal-cidades/2026/08/1259062-gramado-lidera-iniciativa-de-digitalizacao-de-acervos-museologicos.html",
+      "dataPub": "2026-08-10",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "patrimonio"
+      ],
+      "resumo": "Oficina da prefeitura de Gramado com a associação regional de museus ensinou a catalogar e publicar coleções na internet usando o Tainacan, plataforma livre já usada por museus brasileiros.",
+      "porQueImporta": "Ferramenta gratuita e conhecida no país. Uma capacitação estadual para museus e arquivos paraibanos teria custo baixo e resultado rápido."
+    },
+    {
+      "id": "ia-sus-contratacao",
+      "titulo": "Ministério da Saúde prepara contratação de soluções de IA para o SUS ainda em 2026",
+      "fonte": "DPL News",
+      "url": "https://dplnews.com/brasil-prepara-contratacao-solucoes-ia-para-sus-2026/",
+      "dataPub": "2026-06-20",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "transversal",
+        "secretaria2030",
+        "fomento"
+      ],
+      "resumo": "O SUS Digital montou um banco com 398 soluções habilitadas, 273 delas com IA, vindas de empresas, universidades e institutos federais. O ministério quer contratar as mais maduras ainda este ano, em áreas como telemedicina, gestão e integração de sistemas.",
+      "porQueImporta": "Vitrine pronta para a Secretaria de Saúde do estado. A SECTIES pode fazer a ponte entre essas soluções, as universidades paraibanas e as necessidades da rede estadual."
+    },
+    {
+      "id": "minas-ia-regulacao",
+      "titulo": "Saúde de Minas usa IA na triagem e na regulação de leitos da rede estadual",
+      "fonte": "CONASS",
+      "url": "https://www.conass.org.br/?p=55437",
+      "dataPub": "2026-03-17",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal"
+      ],
+      "resumo": "A secretaria de saúde mineira usa inteligência artificial para apoiar decisões clínicas, organizar o atendimento e regular a transferência de pacientes entre hospitais, dentro de um complexo estadual de regulação centralizado.",
+      "porQueImporta": "Caso concreto de tecnologia melhorando o serviço de outra pasta. Serve de modelo para um projeto conjunto da SECTIES com a Saúde da Paraíba."
+    },
+    {
+      "id": "goias-govtech",
+      "titulo": "Secretaria de Ciência de Goiás lidera programa que leva problemas das secretarias a startups",
+      "fonte": "Jornal Opção",
+      "url": "https://www.jornalopcao.com.br/tecnologia/governo-de-goias-vai-investir-ate-r-10-milhoes-em-govtechs-para-modernizar-servicos-publicos-777833/",
+      "dataPub": "2025-12-26",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "transversal",
+        "inovacao",
+        "secretaria2030"
+      ],
+      "resumo": "Coordenado pelas secretarias de Ciência e Tecnologia e de Administração, o GovTech goiano lança desafios de pastas como Saúde, Economia e Meio Ambiente para startups e universidades. São até R$ 10 milhões, com contratos de até R$ 1,6 milhão pela contratação de solução inovadora (CPSI).",
+      "porQueImporta": "É o modelo mais próximo do papel que a SECTIES pode assumir: transformar problemas das outras secretarias em editais de inovação, usando a CPSI do Marco Legal das Startups."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-desafio-quantico",
+      "titulo": "Chamada estadual de desafios científicos no CIQUANTA",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "fomento"
+      ],
+      "descricao": "Chamada com a FAPESQ para equipes de universidades e empresas resolverem problemas reais do estado (logística, energia, saúde) usando o CIQUANTA, com prêmio em dinheiro e horas de máquina.",
+      "base": [
+        "doe-roadmap-quantico",
+        "nsf-290"
+      ]
+    },
+    {
+      "id": "p-acesso-aberto",
+      "titulo": "Política de acesso aberto ao CIQUANTA",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta"
+      ],
+      "descricao": "Regulamento de uso com cotas de tempo para universidades públicas do Nordeste, empresas e órgãos de governo, edital semestral e relatório público dos projetos atendidos. Reunir o acesso à computação de alto desempenho e aos computadores quânticos num único portal.",
+      "base": [
+        "doe-roadmap-quantico",
+        "ionq-nvidia"
+      ]
+    },
+    {
+      "id": "p-rede-quantica",
+      "titulo": "Rede brasileira de centros quânticos com a Paraíba como articuladora",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "descricao": "Propor ao MCTI e ao Instituto Eldorado um acordo de cooperação: testes comuns entre máquinas de fabricantes diferentes (CETC e IQM), intercâmbio de bolsistas e agenda conjunta de formação.",
+      "base": [
+        "eldorado-iqm"
+      ]
+    },
+    {
+      "id": "p-residentes",
+      "titulo": "Espaço para empresas residentes no CIQUANTA",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "descricao": "Reservar salas para startups, fornecedores e spin-offs das universidades paraibanas, com contrapartidas de P&D e formação.",
+      "base": [
+        "albuquerque-lab-quantico"
+      ]
+    },
+    {
+      "id": "p-meta-servidores",
+      "titulo": "Meta estadual de servidores capacitados em IA",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "secretaria2030",
+        "ensino"
+      ],
+      "descricao": "Definir no SecretarIA 2030 uma meta para 2027 (por exemplo, todos os gestores da SECTIES e uma parcela dos servidores do estado), usando trilhas federais já prontas e parcerias com as universidades públicas do estado.",
+      "base": [
+        "pbia-servidores",
+        "mapeamento-cursos-ia"
+      ]
+    },
+    {
+      "id": "p-rota-escolas",
+      "titulo": "Inclusão digital guiada pelas escolas recém-conectadas",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "inclusao"
+      ],
+      "descricao": "Cruzar a lista de escolas do Escolas Conectadas com as ações de inclusão digital do estado e oferecer oficinas de uso pedagógico da internet e da IA para professores dos municípios atendidos.",
+      "base": [
+        "escolas-conectadas-pb"
+      ]
+    },
+    {
+      "id": "p-chamadas",
+      "titulo": "Força-tarefa para as chamadas abertas de IA e semicondutores",
+      "tipo": "Edital",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "ensino",
+        "ciquanta"
+      ],
+      "descricao": "Reunir FAPESQ e universidades para avaliar a RHAE IA, a chamada com a ANR francesa e a rodada Finep de semicondutores, conferindo prazos e elegibilidade de cada uma.",
+      "base": [
+        "rhae-ia",
+        "semicon-decreto"
+      ]
+    },
+    {
+      "id": "p-pos-quantico",
+      "titulo": "Inventário pós-quântico na SECTIES",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "seguranca",
+        "ciquanta"
+      ],
+      "descricao": "Incluir no programa de segurança da informação da secretaria um levantamento dos sistemas que usam certificados e criptografia, com plano de migração e um piloto técnico com o CIQUANTA.",
+      "base": [
+        "icp-pos-quantica"
+      ]
+    },
+    {
+      "id": "p-ia-emprego",
+      "titulo": "Estudo sobre IA e emprego na Paraíba",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030"
+      ],
+      "descricao": "Encomendar a uma universidade um estudo dos setores da economia paraibana mais expostos à IA, com recomendações de requalificação. Serve de base para o SecretarIA 2030.",
+      "base": [
+        "newsom-ia-trabalho"
+      ]
+    },
+    {
+      "id": "p-planetario",
+      "titulo": "Parâmetros do planetário da Cidade da Astronomia",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "astronomia"
+      ],
+      "descricao": "Usar planetários recentes como referência de diâmetro de cúpula, custo e meta de público ao definir o escopo do equipamento.",
+      "base": [
+        "planetario-parana"
+      ]
+    },
+    {
+      "id": "p-patrimonio-digital",
+      "titulo": "Programa Patrimônio Digital da Paraíba",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "patrimonio",
+        "inovacao",
+        "ensino"
+      ],
+      "descricao": "Com universidades e o IPHAEP, escanear em 3D os principais monumentos do estado e digitalizar acervos de museus e arquivos em plataforma livre, com visitação virtual aberta. Começar por um piloto no Centro Histórico de João Pessoa.",
+      "base": [
+        "portugal-arca-digital",
+        "gramado-acervo-digital"
+      ]
+    },
+    {
+      "id": "p-predios-historicos",
+      "titulo": "Prédios históricos para ciência e inovação",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "patrimonio",
+        "inovacao"
+      ],
+      "descricao": "Mapear imóveis históricos ociosos no Centro Histórico de João Pessoa e oferecê-los, com restauro orientado pelos órgãos de patrimônio, a startups, laboratórios e espaços de divulgação científica.",
+      "base": [
+        "solar-conselheiro",
+        "sebrae-startups-nordeste"
+      ]
+    },
+    {
+      "id": "p-meta-startups",
+      "titulo": "Metas para o ecossistema paraibano de startups",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "inovacao",
+        "fomento"
+      ],
+      "descricao": "Usar a base do Sebrae Startups para medir a Paraíba, fixar metas para 2027 e apresentar o estado, junto com os parques tecnológicos, a programas corporativos de inovação como o do Bradesco.",
+      "base": [
+        "sebrae-startups-nordeste",
+        "bradesco-inovabra-nordeste"
+      ]
+    },
+    {
+      "id": "p-sertao",
+      "titulo": "Agenda de ensino superior e inovação com o Instituto Federal do Sertão",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ensino",
+        "inovacao"
+      ],
+      "descricao": "Propor ao novo IFSertãoPB um acordo para cursos, pesquisa aplicada e pré-incubação de negócios nas sete cidades onde terá campi.",
+      "base": [
+        "ifsertao-pb"
+      ]
+    },
+    {
+      "id": "p-desafios-gov",
+      "titulo": "Programa de desafios das secretarias paraibanas",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "inovacao",
+        "secretaria2030"
+      ],
+      "descricao": "A SECTIES reúne problemas reais das demais secretarias e os transforma em editais para startups e universidades, com contratação de solução inovadora (CPSI). Começar por Saúde, Educação e Fazenda.",
+      "base": [
+        "goias-govtech",
+        "ia-sus-contratacao"
+      ]
+    },
+    {
+      "id": "p-ia-saude",
+      "titulo": "Piloto de IA na regulação da saúde estadual",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "descricao": "Projeto conjunto com a Secretaria de Saúde para testar IA na triagem e na regulação de leitos, aproveitando soluções do banco do SUS Digital e pesquisadores das universidades do estado.",
+      "base": [
+        "minas-ia-regulacao",
+        "ia-sus-contratacao"
+      ]
+    }
+  ]
+}
