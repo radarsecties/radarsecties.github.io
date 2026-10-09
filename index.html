@@ -488,6 +488,29 @@ footer .filete{width:72px;height:3px;margin-bottom:10px}
     return out.sort((a,b) => String(b.dataPub||"").localeCompare(String(a.dataPub||"")));
   }
 
+  /* ---------- Textos para o WhatsApp ---------- */
+  const ASSINATURA = "Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba";
+  function frase(t, max){
+    t = String(t || "").trim(); const ponto = t.indexOf(". ");
+    if (ponto > 0 && ponto < max) t = t.slice(0, ponto + 1);
+    return t.length > max ? t.slice(0, max - 1).replace(/[\s,;:]+\S*$/, "") + "…" : t;
+  }
+  function textoEdicao(ed){
+    const its = ordenados(), linhas = [];
+    linhas.push("📡 *RADAR SECTIES*", "_" + ASSINATURA + "_", "", fmtLonga(ed.data));
+    if (ed.destaque) linhas.push("", "*" + ed.destaque + "*");
+    const dest = its.slice(0,5);
+    if (dest.length){ linhas.push("", "🔎 *Destaques do dia*"); dest.forEach(i => linhas.push("• " + i.titulo + (i.fonte ? " _(" + i.fonte + ")_" : ""))); }
+    const atos = (ed.doe && Array.isArray(ed.doe.atos)) ? ed.doe.atos.slice(0,2) : [];
+    if (atos.length){ linhas.push("", "📜 *Diário Oficial do Estado*"); atos.forEach(a => linhas.push("• " + a.tipo + " — " + frase(a.resumo, 110))); }
+    linhas.push("", "Edição completa, com " + its.length + " notícias, Diário Oficial e pautas da secretaria:", SITE);
+    return linhas.join("\n");
+  }
+  function textoNoticia(it){
+    return ["📡 *Radar SECTIES* · clipping da SECTIES-PB", "", "*" + it.titulo + "*", frase(it.resumo, 220),
+      "", "Fonte: " + (it.fonte || "") + (it.url ? "\n" + it.url : ""), "", "Mais notícias do dia: " + SITE].join("\n");
+  }
+
   /* ---------- Cabeçalho ---------- */
   function renderMast(){
     const ed = state.atual;
@@ -505,8 +528,7 @@ footer .filete{width:72px;height:3px;margin-bottom:10px}
     const atos = (ed.doe && Array.isArray(ed.doe.atos)) ? ed.doe.atos.length : 0;
     const stat = (n, t) => h("div",{class:"stat"}, h("strong",null,n), h("span",null,t));
     $("stats").replaceChildren(stat(its.length,"notícias"), stat(altas.length,"de prioridade alta"), stat(atos, atos === 1 ? "ato no Diário Oficial" : "atos no Diário Oficial"), stat((ed.propostas||[]).length,"propostas"));
-    const top = altas.slice(0,4).map(i => "• " + i.titulo).join("\n");
-    $("waEdicao").href = wa("📡 *Radar SECTIES* — " + fmtBR(ed.data) + "\n_" + (ed.destaque||"") + "_\n\n" + top + "\n\n" + SITE);
+    $("waEdicao").href = wa(textoEdicao(ed));
     $("cNot").textContent = its.length; $("cPro").textContent = (ed.propostas||[]).length;
     $("cDoe").textContent = atos; $("cPau").textContent = todasPautas().length;
   }
@@ -568,7 +590,7 @@ footer .filete{width:72px;height:3px;margin-bottom:10px}
         it.porQueImporta ? h("p",{class:"para"}, h("b",null,"Para a SECTIES"), it.porQueImporta) : null,
         h("div",{class:"acoes"},
           it.url ? h("a",{class:"lnk",href:it.url,target:"_blank",rel:"noopener noreferrer"},"Ler na fonte ↗") : null,
-          h("a",{class:"lnk lnk-wa",href:wa(it.titulo + "\n" + (it.url||"") + "\n\nVia Radar SECTIES: " + SITE),target:"_blank",rel:"noopener",html:WA_SVG + "Compartilhar"}),
+          h("a",{class:"lnk lnk-wa",href:wa(textoNoticia(it)),target:"_blank",rel:"noopener",html:WA_SVG + "Compartilhar"}),
           h("div",{class:"tags"}, (it.programas||[]).map(p => h("button",{type:"button",class:"tag",title:"Filtrar por " + progNome(p), onclick:()=>{ state.prog = p; renderFiltraveis(); $("noticias").scrollIntoView({behavior: reduce.matches ? "auto" : "smooth"}); }}, progNome(p)))))
       )
     )));
