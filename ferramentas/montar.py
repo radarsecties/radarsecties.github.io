@@ -16,12 +16,15 @@ modelo = open(os.path.join(AQUI, "modelo.html"), encoding="utf-8").read()
 assert "<!--DADOS-->" in modelo
 inj = "<script>window.__RADAR_DADOS__=" + json.dumps(eds, ensure_ascii=False).replace("</", "<\\/") + ";</script>"
 corpo = modelo.replace("<!--DADOS-->", inj, 1)
+import re
+corpo = re.sub(r"<title>.*?</title>", "", corpo, count=1, flags=re.S)
 d = eds[0]
 y, m, dd = d["data"].split("-")
 titulo = "Radar SECTIES — " + dd + "/" + m + "/" + y
 desc = html.escape(d.get("destaque") or "Clipping diário de ciência, tecnologia, inovação e ensino superior da SECTIES-PB", quote=True)
 head = ('<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
+        '<title>Radar SECTIES</title>'
         '<meta name="description" content="' + desc + '">'
         '<meta property="og:type" content="website">'
         '<meta property="og:site_name" content="Radar SECTIES">'
