@@ -497,17 +497,17 @@ footer .filete{width:72px;height:3px;margin-bottom:10px}
   }
   function textoEdicao(ed){
     const its = ordenados(), linhas = [];
-    linhas.push("📡 *RADAR SECTIES*", "_" + ASSINATURA + "_", "", fmtLonga(ed.data));
+    linhas.push("*RADAR SECTIES*", "_" + ASSINATURA + "_", "", fmtLonga(ed.data));
     if (ed.destaque) linhas.push("", "*" + ed.destaque + "*");
     const dest = its.slice(0,5);
-    if (dest.length){ linhas.push("", "🔎 *Destaques do dia*"); dest.forEach(i => linhas.push("• " + i.titulo + (i.fonte ? " _(" + i.fonte + ")_" : ""))); }
+    if (dest.length){ linhas.push("", "*DESTAQUES DO DIA*"); dest.forEach(i => linhas.push("• " + i.titulo + (i.fonte ? " _(" + i.fonte + ")_" : ""))); }
     const atos = (ed.doe && Array.isArray(ed.doe.atos)) ? ed.doe.atos.slice(0,2) : [];
-    if (atos.length){ linhas.push("", "📜 *Diário Oficial do Estado*"); atos.forEach(a => linhas.push("• " + a.tipo + " — " + frase(a.resumo, 110))); }
+    if (atos.length){ linhas.push("", "*DIÁRIO OFICIAL DO ESTADO*"); atos.forEach(a => linhas.push("• " + a.tipo + " — " + frase(a.resumo, 110))); }
     linhas.push("", "Edição completa, com " + its.length + " notícias, Diário Oficial e pautas da secretaria:", SITE);
     return linhas.join("\n");
   }
   function textoNoticia(it){
-    return ["📡 *Radar SECTIES* · clipping da SECTIES-PB", "", "*" + it.titulo + "*", frase(it.resumo, 220),
+    return ["*RADAR SECTIES* · clipping da SECTIES-PB", "", "*" + it.titulo + "*", frase(it.resumo, 220),
       "", "Fonte: " + (it.fonte || "") + (it.url ? "\n" + it.url : ""), "", "Mais notícias do dia: " + SITE].join("\n");
   }
 
