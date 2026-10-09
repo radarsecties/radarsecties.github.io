@@ -593,5 +593,118 @@
         "ia-sus-contratacao"
       ]
     }
+  ],
+  "doe": {
+    "edicao": "2026-10-08",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-08-10-2026-portal.pdf/view",
+    "paginasLidas": "até a pág. 8",
+    "leituraParcial": true,
+    "obs": "A edição de 09/10 ainda não estava publicada no momento da leitura; esta é a de 08/10. A leitura automática alcança as primeiras páginas, onde ficam leis e vetos. Atos das secretarias, mais adiante, podem não aparecer aqui.",
+    "atos": [
+      {
+        "tipo": "Lei nº 14.737/2026",
+        "orgao": "Governo do Estado",
+        "pagina": "5",
+        "relevancia": "alta",
+        "programas": [
+          "ensino",
+          "fomento"
+        ],
+        "resumo": "Cria política estadual de incentivo à presença de mulheres em carreiras científicas, com ações de inclusão, bolsas e combate a estereótipos. Os artigos que davam ao Executivo a coordenação da política e um prazo de regulamentação foram vetados."
+      },
+      {
+        "tipo": "Veto total ao PL nº 3.858/2025",
+        "orgao": "Governo do Estado",
+        "pagina": "6–7",
+        "relevancia": "radar",
+        "programas": [
+          "ensino",
+          "transversal"
+        ],
+        "resumo": "Veta projeto de qualificação técnica para jovens em acolhimento institucional, por atribuir tarefas a secretarias por iniciativa parlamentar."
+      }
+    ]
+  },
+  "secom": [
+    {
+      "titulo": "Radiotelescópio Bingo é estudo científico da USP, e não base militar",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_diversidade/projeto-faz-parte-de-um-estudo-da-usp",
+      "dataPub": "2026-03-26",
+      "programas": [
+        "astronomia",
+        "internacional"
+      ],
+      "resumo": "Responde a relatório dos EUA e cita a Cidade da Astronomia, em Carrapateira; a foto é creditada à SECTIES."
+    },
+    {
+      "titulo": "Startups vão representar a Paraíba no Web Summit Rio 2026",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/startups-vao-representar-a-paraiba-no-web-summit-rio-2026",
+      "dataPub": "2026",
+      "programas": [
+        "inovacao"
+      ],
+      "resumo": "Seleção de startups paraibanas pelo edital simplificado SECTIES/FAPESQ nº 3/2026."
+    },
+    {
+      "titulo": "Paraíba sedia etapa nacional da Olimpíada Brasileira de Robótica em 2026",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/paraiba-sedia-etapa-nacional-da-olimpiada-brasileira-de-robotica-em-2026",
+      "dataPub": "",
+      "programas": [
+        "ensino",
+        "inovacao"
+      ]
+    },
+    {
+      "titulo": "Paraíba impulsiona o mercado govtech e projeta startups locais na inovação do setor público",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/paraiba-impulsiona-o-mercado-govtech-e-projeta-startups-locais-como-protagonistas-na-inovacao-do-setor-publico",
+      "dataPub": "",
+      "programas": [
+        "transversal",
+        "inovacao"
+      ]
+    },
+    {
+      "titulo": "Governo da Paraíba avança no Pacto pela Inovação no Sertão",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/governo-da-paraiba-avanca-no-pacto-pela-inovacao-no-sertao",
+      "dataPub": "",
+      "programas": [
+        "inovacao"
+      ]
+    },
+    {
+      "titulo": "Projetos do governo que usam IA são apresentados em conferência em Portugal",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/projetos-do-governo-da-paraiba-que-usam-ia-sao-apresentados-em-conferencia-em-portugal",
+      "dataPub": "",
+      "programas": [
+        "secretaria2030",
+        "internacional"
+      ]
+    },
+    {
+      "titulo": "Estado firma acordos de ciência e tecnologia com a China e anuncia centro de computação quântica",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_politicas/estado-firma-acordos-com-a-china",
+      "dataPub": "2025-11-25",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "Acordos com delegação chinesa e anúncio do centro de computação quântica, com declarações do secretário."
+    },
+    {
+      "titulo": "SECTIES leva o Bingo e a Cidade da Astronomia à Space Week Nordeste",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_diversidade/pb-e-destaque-na-space-week-do-ne",
+      "dataPub": "2025-09-29",
+      "programas": [
+        "astronomia"
+      ]
+    }
   ]
 }

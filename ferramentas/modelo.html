@@ -82,7 +82,7 @@ h1 span{display:block;color:var(--cool)}
 .corpo{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);padding-block:32px 64px;align-items:start}
 .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px}
 h2{font-weight:900;text-transform:uppercase;font-size:1.45rem;letter-spacing:-.01em;line-height:1;margin:0}
-.sec-head .mono{color:var(--muted);font-size:.8rem}
+.sec-head .mono{color:var(--muted);font-size:.8rem;white-space:nowrap}
 .sinais{display:flex;flex-direction:column}
 .sinal{display:flex;flex-direction:column;gap:10px;padding-block:24px;border-top:1px solid var(--line);scroll-margin-top:90px}
 .sinal:first-child{border-top-color:var(--ink);border-top-width:2px}
@@ -128,7 +128,44 @@ h2{font-weight:900;text-transform:uppercase;font-size:1.45rem;letter-spacing:-.0
 footer{border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;padding-block:22px 40px}
 footer p{margin:0 0 4px;max-width:80ch}
 
+/* navegação por seção */
+.secoes{display:flex;gap:6px 18px;flex-wrap:wrap;padding-block:14px 0}
+.secoes a{font-size:.86rem;font-weight:700;color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:3px}
+.secoes a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.col{display:flex;flex-direction:column;gap:48px;min-width:0}
+.secao-intro{color:var(--muted);font-size:.9rem;margin:8px 0 14px;max-width:68ch}
+/* diário oficial */
+.doe-cab{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:.82rem;color:var(--muted);margin:6px 0 4px}
+.doe-cab a{font-weight:700;text-decoration:none}
+.aviso{font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--alta-bg);color:var(--alta-fg)}
+.ato{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;padding-block:14px;border-top:1px solid var(--line)}
+.ato:first-of-type{border-top:2px solid var(--ink)}
+.ato h3{font-size:1rem;font-weight:700;margin:0;line-height:1.3}
+.ato .orgao{font-size:.8rem;color:var(--muted);font-weight:600}
+.ato p{margin:2px 0 0;font-size:.94rem;grid-column:1/-1;max-width:70ch}
+.ato .tags{grid-column:1/-1;margin-top:4px}
+.ato .pag{font-family:var(--f-mono);font-size:.76rem;color:var(--muted);white-space:nowrap;text-align:right}
+.doe-obs{font-size:.84rem;color:var(--muted);margin:12px 0 0;max-width:70ch}
+/* pautas secom */
+.mapa{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr) 2.2rem;gap:8px 12px;align-items:center;margin:4px 0 18px}
+.mapa .rot{font-size:.84rem;font-weight:700;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mapa .trilho{height:12px;border-radius:6px;background:var(--line);overflow:hidden}
+.mapa .barra{height:100%;border-radius:6px;background:var(--accent)}
+.mapa .n{font-family:var(--f-mono);font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.pauta{display:flex;flex-direction:column;gap:4px;padding-block:12px;border-top:1px solid var(--line)}
+.pauta a.tit{font-weight:700;color:var(--ink);text-decoration:none;line-height:1.3}
+.pauta a.tit:hover{color:var(--accent);text-decoration:underline}
+.pauta .meta{font-size:.78rem}
+.pauta p{margin:0;font-size:.9rem;color:var(--muted);max-width:70ch}
+/* fontes */
+.fontes{border-top:1px solid var(--line);padding-block:32px 8px}
+.fontes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr));gap:20px 32px;margin-top:14px}
+.fontes-grid h3{font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 8px}
+.fontes-grid ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.fontes-grid a{color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:600}
+.fontes-grid a:hover{color:var(--accent);text-decoration:underline}
 @media (max-width:900px){
+  .mapa{grid-template-columns:minmax(0,8.5rem) minmax(0,1fr) 2rem}
   .band-grid{display:flex;flex-direction:column;align-items:stretch;gap:0}
   .band-grid>div:first-child{display:contents}
   .eyebrow{order:1} h1{order:2} .edicao-data{order:3} .destaque{order:4}
@@ -191,6 +228,14 @@ footer p{margin:0 0 4px;max-width:80ch}
   </div>
 </header>
 
+<nav class="wrap secoes" aria-label="Seções">
+  <a href="#h-sinais">Sinais</a>
+  <a href="#h-doe">Diário Oficial</a>
+  <a href="#h-pautas">Pautas da SECTIES</a>
+  <a href="#h-prop">Propostas</a>
+  <a href="#h-fontes">Fontes monitoradas</a>
+</nav>
+
 <div class="filtros">
   <div class="wrap filtros-in">
     <div class="progs-bar" id="progsBar" role="group" aria-label="Filtrar por programa"></div>
@@ -209,18 +254,64 @@ footer p{margin:0 0 4px;max-width:80ch}
 </div>
 
 <main class="wrap corpo">
+  <div class="col">
   <section aria-labelledby="h-sinais">
     <div class="sec-head"><h2 id="h-sinais">Sinais</h2><span class="mono" id="contagem"></span></div>
     <div class="sinais" id="sinais">
       <div class="vazio"><strong>Carregando os sinais…</strong>Cada sinal traz a fonte, o resumo e o motivo de interessar à SECTIES.</div>
     </div>
   </section>
+  <section aria-labelledby="h-doe">
+    <div class="sec-head"><h2 id="h-doe">Diário Oficial do Estado</h2><span class="mono" id="doeConta"></span></div>
+    <p class="secao-intro">Atos do Diário Oficial da Paraíba ligados a ciência, tecnologia, inovação, ensino superior e temas transversais do governo.</p>
+    <div id="doe"><div class="vazio"><strong>Carregando o Diário Oficial…</strong></div></div>
+  </section>
+  <section aria-labelledby="h-pautas">
+    <div class="sec-head"><h2 id="h-pautas">Pautas da SECTIES na comunicação do governo</h2><span class="mono" id="pautasConta"></span></div>
+    <p class="secao-intro">Mapeamento das notícias sobre a SECTIES publicadas no Portal do Governo da Paraíba e no jornal A União, somando as edições recentes do Radar.</p>
+    <div id="pautasMapa"></div>
+    <div id="pautas"><div class="vazio"><strong>Carregando as pautas…</strong></div></div>
+  </section>
+  </div>
   <aside class="propostas" aria-labelledby="h-prop">
     <h2 id="h-prop">Propostas para a Paraíba</h2>
     <p class="intro">Políticas e projetos sugeridos a partir dos sinais da edição. Cada proposta indica em quais notícias se apoia.</p>
     <div id="propostas"></div>
   </aside>
 </main>
+
+<section class="wrap fontes" aria-labelledby="h-fontes">
+  <h2 id="h-fontes">Fontes monitoradas</h2>
+  <p class="secao-intro">Portais lidos todos os dias, além de buscas por tema em veículos especializados.</p>
+  <div class="fontes-grid">
+    <div><h3>Paraíba</h3><ul>
+      <li><a href="https://auniao.pb.gov.br/servicos/doe" target="_blank" rel="noopener">Diário Oficial do Estado</a></li>
+      <li><a href="https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior" target="_blank" rel="noopener">Portal do Governo · SECTIES</a></li>
+      <li><a href="https://auniao.pb.gov.br" target="_blank" rel="noopener">Jornal A União</a></li>
+      <li><a href="https://fapesq.rpp.br" target="_blank" rel="noopener">FAPESQ</a></li>
+      <li><a href="https://www.al.pb.leg.br" target="_blank" rel="noopener">Assembleia Legislativa da Paraíba</a></li>
+      <li><a href="https://www.paqtc.org.br" target="_blank" rel="noopener">Parque Tecnológico da Paraíba</a></li>
+    </ul></div>
+    <div><h3>Nacionais</h3><ul>
+      <li><a href="https://www.gov.br/mcti" target="_blank" rel="noopener">MCTI</a></li>
+      <li><a href="https://www.finep.gov.br" target="_blank" rel="noopener">Finep</a></li>
+      <li><a href="https://www.gov.br/cnpq" target="_blank" rel="noopener">CNPq</a></li>
+      <li><a href="https://www.gov.br/capes" target="_blank" rel="noopener">CAPES</a></li>
+      <li><a href="https://www.gov.br/mec" target="_blank" rel="noopener">MEC</a></li>
+      <li><a href="https://agenciagov.ebc.com.br" target="_blank" rel="noopener">Agência Gov</a></li>
+      <li><a href="https://www.in.gov.br" target="_blank" rel="noopener">Diário Oficial da União</a></li>
+      <li><a href="https://convergenciadigital.com.br" target="_blank" rel="noopener">Convergência Digital</a></li>
+    </ul></div>
+    <div><h3>Internacionais</h3><ul>
+      <li><a href="https://oecd.ai" target="_blank" rel="noopener">OECD.AI</a></li>
+      <li><a href="https://www.unesco.org/en/digital" target="_blank" rel="noopener">UNESCO · Transformação digital</a></li>
+      <li><a href="https://thequantuminsider.com" target="_blank" rel="noopener">The Quantum Insider</a></li>
+      <li><a href="https://quantumcomputingreport.com" target="_blank" rel="noopener">Quantum Computing Report</a></li>
+      <li><a href="https://www.nature.com" target="_blank" rel="noopener">Nature</a></li>
+      <li><a href="https://digitalpolicyalert.org" target="_blank" rel="noopener">Digital Policy Alert</a></li>
+    </ul></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
@@ -312,14 +403,15 @@ footer p{margin:0 0 4px;max-width:80ch}
     const its = itens();
     const altas = its.filter(i => i.relevancia === "alta").length;
     const progs = new Set(its.flatMap(i => i.programas || []));
-    const fontes = new Set(its.map(i => i.fonte));
+    const atos = (ed.doe && Array.isArray(ed.doe.atos)) ? ed.doe.atos.length : 0;
+    const pautasN = todasPautas().length;
     const stat = (n, t) => h("div",{class:"stat"}, h("strong",null,n), h("span",null,t));
     $("stats").replaceChildren(
       stat(its.length, its.length === 1 ? "sinal" : "sinais"),
       stat(altas, "de alta prioridade"),
       stat((ed.propostas||[]).length, "propostas"),
-      stat(progs.size, "programas tocados"),
-      stat(fontes.size, "fontes")
+      stat(atos, atos === 1 ? "ato no Diário Oficial" : "atos no Diário Oficial"),
+      stat(pautasN, "pautas da SECTIES mapeadas")
     );
   }
 
@@ -414,9 +506,57 @@ footer p{margin:0 0 4px;max-width:80ch}
     document.querySelectorAll("#segRel button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.v === state.rel)));
   }
 
+  /* ---------- Diário Oficial ---------- */
+  function renderDoe(){
+    const box = $("doe"); const d = state.atual && state.atual.doe;
+    if (!d){ $("doeConta").textContent = ""; box.replaceChildren(h("div",{class:"vazio"}, h("strong",null,"Sem leitura do Diário Oficial nesta edição"), "A leitura do Diário Oficial entra nas edições seguintes.")); return; }
+    const atos = (Array.isArray(d.atos) ? d.atos : []).filter(a => !state.prog || (a.programas||[]).includes(state.prog));
+    $("doeConta").textContent = (d.atos||[]).length + ((d.atos||[]).length === 1 ? " ato" : " atos");
+    const cab = h("div",{class:"doe-cab"},
+      h("span",null,"Edição de " + fmtCurta(d.edicao)),
+      d.paginasLidas ? h("span",null,"· lida " + d.paginasLidas) : null,
+      d.leituraParcial ? h("span",{class:"aviso"},"Leitura parcial") : null,
+      d.url ? h("a",{href:d.url,target:"_blank",rel:"noopener noreferrer"},"Abrir edição ↗") : null);
+    const lista = atos.length ? atos.map(a => h("article",{class:"ato"},
+      h("div",null, h("h3",null,a.tipo || "Ato"), a.orgao ? h("div",{class:"orgao"},a.orgao) : null),
+      h("div",{class:"pag"}, a.pagina ? "pág. " + a.pagina : ""),
+      h("p",null,a.resumo || ""),
+      h("div",{class:"tags"},
+        a.relevancia ? h("span",{class:"pill rel-"+a.relevancia}, REL[a.relevancia] || a.relevancia) : null,
+        (a.programas||[]).map(p => h("span",{class:"tag",style:"cursor:default"}, progNome(p)))))
+    ) : [h("div",{class:"vazio"}, h("strong",null, state.prog ? "Nenhum ato deste programa" : "Nenhum ato de C,T&I nesta edição"), "Os demais atos da edição não tratam dos temas acompanhados pelo Radar.")];
+    box.replaceChildren(cab, ...lista, d.obs ? h("p",{class:"doe-obs"}, d.obs) : null);
+  }
+
+  /* ---------- Pautas da SECTIES na Secom ---------- */
+  function todasPautas(){
+    const vistos = new Set(), out = [];
+    state.edicoes.forEach(ed => (ed.secom || []).forEach(p => {
+      const k = p.url || p.titulo; if (!k || vistos.has(k)) return; vistos.add(k); out.push(p);
+    }));
+    return out.sort((a,b) => String(b.dataPub||"").localeCompare(String(a.dataPub||"")));
+  }
+  function renderPautas(){
+    const todas = todasPautas();
+    $("pautasConta").textContent = todas.length + (todas.length === 1 ? " pauta" : " pautas");
+    const cont = {}; todas.forEach(p => (p.programas||[]).slice(0,1).forEach(id => { cont[id] = (cont[id]||0) + 1; }));
+    const ord = Object.keys(cont).sort((a,b) => cont[b]-cont[a]); const max = Math.max(1, ...ord.map(k => cont[k]));
+    $("pautasMapa").replaceChildren(ord.length ? h("div",{class:"mapa",role:"list","aria-label":"Pautas por tema"},
+      ord.flatMap(id => [h("div",{class:"rot",role:"listitem"},progNome(id)),
+        h("div",{class:"trilho"}, h("div",{class:"barra",style:"width:" + Math.round(cont[id]/max*100) + "%"})),
+        h("div",{class:"n"},cont[id])])) : "");
+    const lista = todas.filter(p => !state.prog || (p.programas||[]).includes(state.prog)).slice(0,20);
+    $("pautas").replaceChildren(...(lista.length ? lista.map(p => h("article",{class:"pauta"},
+      p.url ? h("a",{class:"tit",href:p.url,target:"_blank",rel:"noopener noreferrer"}, p.titulo) : h("strong",null,p.titulo),
+      h("div",{class:"meta mono"}, [p.portal, p.dataPub ? fmtCurta(p.dataPub) : "data a confirmar"].filter(Boolean).join(" · ")),
+      p.resumo ? h("p",null,p.resumo) : null,
+      h("div",{class:"tags"}, (p.programas||[]).map(id => h("span",{class:"tag",style:"cursor:default"}, progNome(id)))))
+    ) : [h("div",{class:"vazio"}, h("strong",null,"Nenhuma pauta mapeada"), "As notícias da SECTIES nos portais do governo aparecem aqui à medida que forem publicadas.")]));
+  }
+
   function renderAll(full){
     if (full){ renderBand(); renderArquivo(); }
-    renderProgs(); renderSegs(); renderSinais(); renderPropostas(); radar.build();
+    renderProgs(); renderSegs(); renderSinais(); renderDoe(); renderPautas(); renderPropostas(); radar.build();
   }
 
   function selecionar(data, scroll){
