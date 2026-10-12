@@ -40,10 +40,16 @@ h1,h2,h3{text-wrap:balance;margin:0}
 .fis-area{color:var(--suave);letter-spacing:.08em}
 .fis-area::before{content:"· ";}
 .fis-frase{margin:2px 0 0;font-size:clamp(1.02rem,1.9vw,1.15rem);font-weight:700;line-height:1.38;color:var(--texto);text-wrap:pretty}
-.fis-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:6px;font-size:.86rem}
+.fis-acoes{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;margin-top:10px;font-size:.86rem}
 .fis-link{all:unset;cursor:pointer;font-weight:700;color:var(--texto);border-bottom:1px solid var(--linha-2);padding-bottom:1px}
 .fis-link:hover{color:var(--vermelho);border-bottom-color:var(--vermelho)}
 .fis-link:focus-visible{outline:2px solid var(--vermelho);outline-offset:3px}
+.fis-btn{font:inherit;font-size:.84rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:8px;color:var(--vermelho);background:var(--vermelho-fundo);border:1px solid transparent;border-radius:999px;padding:7px 14px;transition:background .2s,color .2s,transform .15s}
+.fis-btn svg{width:15px;height:15px;transition:transform .6s cubic-bezier(.2,.7,.1,1)}
+.fis-btn:hover{background:var(--vermelho);color:#fff}
+.fis-btn:active{transform:scale(.97)}
+.fis-btn.gira svg{transform:rotate(360deg)}
+.fis-btn:focus-visible{outline:2px solid var(--vermelho);outline-offset:3px}
 .fis-formula{color:var(--suave);font-style:italic}
 .fis-porque{grid-column:2;margin:8px 0 0;font-size:.92rem;line-height:1.55;color:var(--texto-2);max-width:68ch}
 .fis-porque b{color:var(--texto)}
@@ -199,7 +205,7 @@ footer p{margin:0 0 6px;max-width:70ch}
       <p class="fis-frase" id="fisFrase" aria-live="polite"></p>
       <div class="fis-acoes">
         <button type="button" class="fis-link" id="fisPorqueBtn" aria-expanded="false" aria-controls="fisPorque">Por quê?</button>
-        <button type="button" class="fis-link" id="fisOutra">Outra curiosidade</button>
+        <button type="button" class="fis-btn" id="fisOutra"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg>Gerar outra curiosidade</button>
         <span class="fis-formula" id="fisFormula"></span>
       </div>
     </div>
@@ -441,6 +447,7 @@ document.documentElement.classList.add("js");
     $("fisOutra").addEventListener("click", () => {
       if (CURIOSIDADES.length < 2) return;
       idx = (idx + 1 + Math.floor(Math.random() * (CURIOSIDADES.length - 1))) % CURIOSIDADES.length;
+      const b = $("fisOutra"); b.classList.remove("gira"); void b.offsetWidth; b.classList.add("gira");
       mostra(CURIOSIDADES[idx], true);
     });
     const svg = $("atomoSvg");

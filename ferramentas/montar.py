@@ -89,72 +89,55 @@ def texto_whatsapp(ed):
 
 
 def gerar_capa(ed, destino):
-    """Imagem 1200x630 da prévia do link: fundo branco, marcas, manchete do dia e o radar como símbolo."""
+    """Capa 1200x630 da prévia do link: composição editorial limpa.
+    Branco, muito respiro, a manchete do dia como protagonista e um único acento vermelho."""
     try:
         from PIL import Image, ImageDraw, ImageFont
     except Exception as e:
         print("Pillow indisponível; capa.png mantida:", e)
         return False
-    import math
     F = lambda w, s: ImageFont.truetype(os.path.join(AQUI, "fontes", f"Arimo-{w}.ttf"), s)
-    W, H, K = 1200, 630, 2  # desenha em 2x e reduz, para bordas suaves
-    PRETO, VERM, CINZA, LINHA = (22, 22, 26), (179, 36, 45), (110, 110, 114), (228, 228, 224)
-    img = Image.new("RGB", (W * K, H * K), (255, 255, 255))
-    d = ImageDraw.Draw(img)
+    W, H, K = 1200, 630, 2
     k = lambda v: int(round(v * K))
-
-    # filete da bandeira (1/3 preto, 2/3 vermelho)
-    d.rectangle([0, 0, k(W / 3), k(10)], fill=PRETO)
-    d.rectangle([k(W / 3), 0, k(W), k(10)], fill=VERM)
-
-    # radar à direita (símbolo do Radar SECTIES)
-    cx, cy, R = 966, 330, 172
-    for f in (1.0, .68, .36):
-        d.ellipse([k(cx - R * f), k(cy - R * f), k(cx + R * f), k(cy + R * f)], outline=LINHA, width=k(1.5))
-    for ang in range(0, 180, 45):
-        a = math.radians(ang)
-        d.line([(k(cx - R * math.cos(a)), k(cy - R * math.sin(a))), (k(cx + R * math.cos(a)), k(cy + R * math.sin(a)))], fill=LINHA, width=k(1.5))
-    cunha = Image.new("RGBA", img.size, (0, 0, 0, 0))
-    ImageDraw.Draw(cunha).pieslice([k(cx - R), k(cy - R), k(cx + R), k(cy + R)], -42, 0, fill=VERM + (34,))
-    img.paste(cunha, (0, 0), cunha)
+    PRETO, VERM, CINZA, LINHA, BRANCO = (17, 17, 20), (179, 36, 45), (118, 118, 122), (226, 226, 222), (255, 255, 255)
+    img = Image.new("RGB", (W * K, H * K), BRANCO)
     d = ImageDraw.Draw(img)
-    d.line([(k(cx), k(cy)), (k(cx + R), k(cy))], fill=VERM, width=k(2))
-    its = ed.get("itens") or []
-    rnd = __import__("random").Random(ed.get("data"))
-    for i in its[:14]:
-        alta = i.get("relevancia") == "alta"
-        r = R * (rnd.uniform(.12, .36) if alta else rnd.uniform(.42, .92))
-        a = rnd.uniform(0, 2 * math.pi)
-        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
-        rr = 9 if alta else 6
-        cor = VERM if alta else ((60, 60, 64) if i.get("relevancia") == "media" else (190, 190, 186))
-        d.ellipse([k(x - rr), k(y - rr), k(x + rr), k(y + rr)], fill=cor)
-    d.ellipse([k(cx - 4), k(cy - 4), k(cx + 4), k(cy + 4)], fill=PRETO)
+    dt = datetime.date.fromisoformat(ed["data"])
+    M = 72  # margem
 
-    # marcas: SECTIES | FAPESQ
-    x0, y0 = 64, 48
-    sec = Image.open(os.path.join(AQUI, "marca-secties.png")).convert("RGBA")
-    sec = sec.resize((k(sec.width * 50 / sec.height), k(50)), Image.LANCZOS)
-    img.paste(sec, (k(x0), k(y0)), sec)
-    fap = Image.open(os.path.join(RAIZ, "fapesq.png")).convert("RGBA")
-    fap = fap.resize((k(fap.width * 42 / fap.height), k(42)), Image.LANCZOS)
-    xd = x0 + sec.width / K + 26
-    d.line([(k(xd), k(y0 + 2)), (k(xd), k(y0 + 48))], fill=LINHA, width=k(1.5))
-    img.paste(fap, (k(xd + 26), k(y0 + 4)), fap)
-
-    def espacado(x, y, txt, fonte, cor, esp):
-        for ch in txt:
+    def texto(x, y, t, fonte, cor, esp=0):
+        if not esp:
+            d.text((k(x), k(y)), t, font=fonte, fill=cor)
+            return x + d.textlength(t, font=fonte) / K
+        for ch in t:
             d.text((k(x), k(y)), ch, font=fonte, fill=cor)
             x += d.textlength(ch, font=fonte) / K + esp
         return x
 
-    tx, larg = 64, 660
-    xe = espacado(tx, 156, "RADAR SECTIES", F(700, k(22)), VERM, 4)
-    data_br = datetime.date.fromisoformat(ed["data"]).strftime("%d/%m/%Y")
-    espacado(xe + 14, 156, "·  EDIÇÃO Nº " + str(ed.get("numero", "")) + "  ·  " + data_br, F(400, k(22)), CINZA, 2)
+    # filete da bandeira
+    d.rectangle([0, 0, k(W / 3), k(8)], fill=PRETO)
+    d.rectangle([k(W / 3), 0, k(W), k(8)], fill=VERM)
 
-    manchete = ed.get("destaque") or "Clipping diário de ciência, tecnologia, inovação e ensino superior"
-    for tam in (64, 60, 56, 52, 48, 44):
+    # marcas
+    sec = Image.open(os.path.join(AQUI, "marca-secties.png")).convert("RGBA")
+    sec = sec.resize((k(sec.width * 42 / sec.height), k(42)), Image.LANCZOS)
+    img.paste(sec, (k(M), k(56)), sec)
+    fap = Image.open(os.path.join(RAIZ, "fapesq.png")).convert("RGBA")
+    fap = fap.resize((k(fap.width * 34 / fap.height), k(34)), Image.LANCZOS)
+    xd = M + sec.width / K + 22
+    d.line([(k(xd), k(58)), (k(xd), k(96))], fill=LINHA, width=k(1.5))
+    img.paste(fap, (k(xd + 22), k(60)), fap)
+
+    # edição e data, discretas, à direita
+    f_ed = F(700, k(15))
+    rot = "EDIÇÃO Nº " + str(ed.get("numero", "")) + "   ·   " + dt.strftime("%d.%m.%Y")
+    larg_rot = sum(d.textlength(c, font=f_ed) / K + 2.4 for c in rot)
+    texto(W - M - larg_rot, 70, rot, f_ed, CINZA, 2.4)
+
+    # manchete: a protagonista
+    manchete = ed.get("destaque") or "Ciência, tecnologia, inovação e ensino superior na Paraíba"
+    larg = W - 2 * M
+    for tam in (76, 72, 68, 64, 60, 56, 52):
         fm = F(700, k(tam))
         linhas, atual = [], ""
         for pal in manchete.split():
@@ -167,21 +150,28 @@ def gerar_capa(ed, destino):
         linhas.append(atual)
         if len(linhas) <= 3:
             break
-    y = 202
+    passo = tam * 1.1
+    altura = passo * len(linhas)
+    y = 170 + (310 - altura) / 2 + 14
+    texto(M, y - 44, "HOJE NO RADAR", F(700, k(16)), VERM, 3)
     for ln in linhas:
-        d.text((k(tx), k(y)), ln, font=fm, fill=PRETO)
-        y += tam * 1.14
-    y += 20
-    d.rectangle([k(tx), k(y), k(tx + 90), k(y + 6)], fill=VERM)
-    y += 28
-    altas = sum(1 for i in its if i.get("relevancia") == "alta")
-    atos = len((ed.get("doe") or {}).get("atos") or [])
-    d.text((k(tx), k(y)), f"{len(its)} notícias  ·  {altas} prioridades  ·  {atos} {'ato' if atos == 1 else 'atos'} no Diário Oficial", font=F(400, k(24)), fill=CINZA)
+        texto(M, y, ln, fm, PRETO)
+        y += passo
 
-    # rodapé leve, sem faixa
-    d.line([(k(tx), k(H - 74)), (k(W - 64), k(H - 74))], fill=LINHA, width=k(1.5))
-    xs = espacado(tx, H - 54, "radarsecties.github.io", F(700, k(24)), VERM, 0)
-    d.text((k(xs + 16), k(H - 52)), "Leia a edição completa, todos os dias", font=F(400, k(22)), fill=CINZA)
+    # rodapé: assinatura e chamada
+    yR = H - 104
+    d.line([(k(M), k(yR)), (k(W - M), k(yR))], fill=LINHA, width=k(1.5))
+    yT = yR + 30
+    f_m = F(700, k(30))
+    x = texto(M, yT, "Radar ", f_m, PRETO)
+    texto(x, yT, "SECTIES", f_m, VERM)
+    f_c = F(700, k(22))
+    cham = "Leia a edição completa"
+    xc = W - M - 40 - d.textlength(cham, font=f_c) / K
+    texto(xc, yT + 6, cham, f_c, PRETO)
+    ax, ay = W - M - 26, yT + 19
+    d.line([(k(ax), k(ay)), (k(ax + 26), k(ay))], fill=VERM, width=k(3))
+    d.line([(k(ax + 16), k(ay - 9)), (k(ax + 26), k(ay)), (k(ax + 16), k(ay + 9))], fill=VERM, width=k(3), joint="curve")
 
     img = img.resize((W, H), Image.LANCZOS)
     img.save(destino, optimize=True)
