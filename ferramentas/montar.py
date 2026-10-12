@@ -89,123 +89,101 @@ def texto_whatsapp(ed):
 
 
 def gerar_capa(ed, destino):
-    """Imagem 1200x630 da prévia do link, com a manchete do dia."""
+    """Imagem 1200x630 da prévia do link: fundo branco, marcas, manchete do dia e o radar como símbolo."""
     try:
-        from PIL import Image, ImageDraw, ImageFont, ImageFilter
+        from PIL import Image, ImageDraw, ImageFont
     except Exception as e:
         print("Pillow indisponível; capa.png mantida:", e)
         return False
+    import math
     F = lambda w, s: ImageFont.truetype(os.path.join(AQUI, "fontes", f"Arimo-{w}.ttf"), s)
-    W, H = 1200, 630
-    PRETO, VERM, CINZA, LINHA = (20, 20, 24), (179, 36, 45), (105, 105, 110), (226, 226, 222)
-    img = Image.new("RGB", (W, H), (255, 255, 255))
+    W, H, K = 1200, 630, 2  # desenha em 2x e reduz, para bordas suaves
+    PRETO, VERM, CINZA, LINHA = (22, 22, 26), (179, 36, 45), (110, 110, 114), (228, 228, 224)
+    img = Image.new("RGB", (W * K, H * K), (255, 255, 255))
     d = ImageDraw.Draw(img)
+    k = lambda v: int(round(v * K))
 
-    # filete da bandeira
-    d.rectangle([0, 0, W // 3, 9], fill=PRETO)
-    d.rectangle([W // 3, 0, W, 9], fill=VERM)
+    # filete da bandeira (1/3 preto, 2/3 vermelho)
+    d.rectangle([0, 0, k(W / 3), k(10)], fill=PRETO)
+    d.rectangle([k(W / 3), 0, k(W), k(10)], fill=VERM)
+
+    # radar à direita (símbolo do Radar SECTIES)
+    cx, cy, R = 966, 330, 172
+    for f in (1.0, .68, .36):
+        d.ellipse([k(cx - R * f), k(cy - R * f), k(cx + R * f), k(cy + R * f)], outline=LINHA, width=k(1.5))
+    for ang in range(0, 180, 45):
+        a = math.radians(ang)
+        d.line([(k(cx - R * math.cos(a)), k(cy - R * math.sin(a))), (k(cx + R * math.cos(a)), k(cy + R * math.sin(a)))], fill=LINHA, width=k(1.5))
+    cunha = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    ImageDraw.Draw(cunha).pieslice([k(cx - R), k(cy - R), k(cx + R), k(cy + R)], -42, 0, fill=VERM + (34,))
+    img.paste(cunha, (0, 0), cunha)
+    d = ImageDraw.Draw(img)
+    d.line([(k(cx), k(cy)), (k(cx + R), k(cy))], fill=VERM, width=k(2))
+    its = ed.get("itens") or []
+    rnd = __import__("random").Random(ed.get("data"))
+    for i in its[:14]:
+        alta = i.get("relevancia") == "alta"
+        r = R * (rnd.uniform(.12, .36) if alta else rnd.uniform(.42, .92))
+        a = rnd.uniform(0, 2 * math.pi)
+        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
+        rr = 9 if alta else 6
+        cor = VERM if alta else ((60, 60, 64) if i.get("relevancia") == "media" else (190, 190, 186))
+        d.ellipse([k(x - rr), k(y - rr), k(x + rr), k(y + rr)], fill=cor)
+    d.ellipse([k(cx - 4), k(cy - 4), k(cx + 4), k(cy + 4)], fill=PRETO)
 
     # marcas: SECTIES | FAPESQ
-    x0, y0 = 64, 46
+    x0, y0 = 64, 48
     sec = Image.open(os.path.join(AQUI, "marca-secties.png")).convert("RGBA")
-    sec = sec.resize((round(sec.width * 50 / sec.height), 50), Image.LANCZOS)
-    img.paste(sec, (x0, y0), sec)
+    sec = sec.resize((k(sec.width * 50 / sec.height), k(50)), Image.LANCZOS)
+    img.paste(sec, (k(x0), k(y0)), sec)
     fap = Image.open(os.path.join(RAIZ, "fapesq.png")).convert("RGBA")
-    fap = fap.resize((round(fap.width * 42 / fap.height), 42), Image.LANCZOS)
-    xd = x0 + sec.width + 26
-    d.line([(xd, y0 + 2), (xd, y0 + 48)], fill=LINHA, width=2)
-    img.paste(fap, (xd + 26, y0 + 4), fap)
+    fap = fap.resize((k(fap.width * 42 / fap.height), k(42)), Image.LANCZOS)
+    xd = x0 + sec.width / K + 26
+    d.line([(k(xd), k(y0 + 2)), (k(xd), k(y0 + 48))], fill=LINHA, width=k(1.5))
+    img.paste(fap, (k(xd + 26), k(y0 + 4)), fap)
 
-    # painel da direita: átomo com o secretário (Física de bolso)
-    cx, cy, R = 985, 330, 112
-    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    gd = ImageDraw.Draw(glow)
-    gd.ellipse([cx - 210, cy - 210, cx + 210, cy + 210], fill=(179, 36, 45, 70))
-    glow = glow.filter(ImageFilter.GaussianBlur(70))
-    img.paste(glow, (0, 0), glow)
-    d = ImageDraw.Draw(img)
-    orb = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    od = ImageDraw.Draw(orb)
-    for ang in (0, 60, 120):
-        e = Image.new("RGBA", (1320, 1320), (0, 0, 0, 0))
-        ImageDraw.Draw(e).ellipse([30, 480, 1290, 840], outline=(70, 70, 76, 170), width=5)
-        e = e.rotate(ang, resample=Image.BICUBIC).resize((440, 440), Image.LANCZOS)
-        orb.paste(e, (cx - 220, cy - 220), e)
-    import math
-    for ang, t, cor, r in ((0, 0.3, VERM, 9), (60, 2.2, PRETO, 7), (120, 4.0, VERM, 7)):
-        ex, ey = 210 * math.cos(t), 60 * math.sin(t)
-        a = math.radians(-ang)
-        px, py = cx + ex * math.cos(a) - ey * math.sin(a), cy + ex * math.sin(a) + ey * math.cos(a)
-        od.ellipse([px - r, py - r, px + r, py + r], fill=cor + (255,))
-    img.paste(orb, (0, 0), orb)
-    d = ImageDraw.Draw(img)
-    foto = Image.open(os.path.join(AQUI, "secretario.jpg")).convert("RGB").resize((2 * R, 2 * R), Image.LANCZOS)
-    mask = Image.new("L", (2 * R * 4, 2 * R * 4), 0)
-    ImageDraw.Draw(mask).ellipse([0, 0, 2 * R * 4 - 1, 2 * R * 4 - 1], fill=255)
-    mask = mask.resize((2 * R, 2 * R), Image.LANCZOS)
-    d.ellipse([cx - R - 6, cy - R - 6, cx + R + 6, cy + R + 6], fill=(255, 255, 255))
-    d.ellipse([cx - R - 7, cy - R - 7, cx + R + 7, cy + R + 7], outline=LINHA, width=1)
-    img.paste(foto, (cx - R, cy - R), mask)
-    lab = "FÍSICA DE BOLSO"
-    f_lab = F(700, 19)
-    lw = d.textlength(lab, font=f_lab) + 4 * len(lab)
-    xx = cx - lw / 2
-    for ch in lab:
-        d.text((xx, cy + R + 52), ch, font=f_lab, fill=VERM)
-        xx += d.textlength(ch, font=f_lab) + 4
-    sub = "a curiosidade do dia"
-    f_sub = F(400, 19)
-    d.text((cx - d.textlength(sub, font=f_sub) / 2, cy + R + 80), sub, font=f_sub, fill=CINZA)
-
-    # texto principal
-    tx, larg = 64, 690
-    def espaçado(x, y, txt, fonte, cor, esp):
+    def espacado(x, y, txt, fonte, cor, esp):
         for ch in txt:
-            d.text((x, y), ch, font=fonte, fill=cor)
-            x += d.textlength(ch, font=fonte) + esp
+            d.text((k(x), k(y)), ch, font=fonte, fill=cor)
+            x += d.textlength(ch, font=fonte) / K + esp
         return x
-    f_k = F(700, 22)
-    xe = espaçado(tx, 150, "RADAR SECTIES", f_k, VERM, 4)
-    espaçado(xe + 14, 150, "·  EDIÇÃO Nº " + str(ed.get("numero", "")) + "  ·  " + datetime.date.fromisoformat(ed["data"]).strftime("%d/%m/%Y"), F(400, 22), CINZA, 2)
+
+    tx, larg = 64, 660
+    xe = espacado(tx, 156, "RADAR SECTIES", F(700, k(22)), VERM, 4)
+    data_br = datetime.date.fromisoformat(ed["data"]).strftime("%d/%m/%Y")
+    espacado(xe + 14, 156, "·  EDIÇÃO Nº " + str(ed.get("numero", "")) + "  ·  " + data_br, F(400, k(22)), CINZA, 2)
 
     manchete = ed.get("destaque") or "Clipping diário de ciência, tecnologia, inovação e ensino superior"
-    for tam in (66, 62, 58, 54, 50, 46):
-        fm = F(700, tam)
+    for tam in (64, 60, 56, 52, 48, 44):
+        fm = F(700, k(tam))
         linhas, atual = [], ""
-        for p in manchete.split():
-            prova = (atual + " " + p).strip()
-            if d.textlength(prova, font=fm) <= larg:
+        for pal in manchete.split():
+            prova = (atual + " " + pal).strip()
+            if d.textlength(prova, font=fm) / K <= larg:
                 atual = prova
             else:
                 linhas.append(atual)
-                atual = p
+                atual = pal
         linhas.append(atual)
         if len(linhas) <= 3:
             break
-    y = 196
+    y = 202
     for ln in linhas:
-        d.text((tx, y), ln, font=fm, fill=PRETO)
-        y += int(tam * 1.13)
-    y += 18
-    d.rectangle([tx, y, tx + 90, y + 6], fill=VERM)
-    y += 26
-    its = ed.get("itens") or []
+        d.text((k(tx), k(y)), ln, font=fm, fill=PRETO)
+        y += tam * 1.14
+    y += 20
+    d.rectangle([k(tx), k(y), k(tx + 90), k(y + 6)], fill=VERM)
+    y += 28
     altas = sum(1 for i in its if i.get("relevancia") == "alta")
     atos = len((ed.get("doe") or {}).get("atos") or [])
-    resumo = f"{len(its)} notícias  ·  {altas} prioridades  ·  {atos} {'ato' if atos == 1 else 'atos'} no Diário Oficial"
-    d.text((tx, y), resumo, font=F(400, 25), fill=CINZA)
+    d.text((k(tx), k(y)), f"{len(its)} notícias  ·  {altas} prioridades  ·  {atos} {'ato' if atos == 1 else 'atos'} no Diário Oficial", font=F(400, k(24)), fill=CINZA)
 
-    # faixa inferior
-    d.rectangle([0, H - 66, W, H], fill=PRETO)
-    d.text((tx, H - 48), "radarsecties.github.io", font=F(700, 26), fill=(255, 255, 255))
-    rod = "Leia a edição completa"
-    fr = F(700, 22)
-    xr = W - 64 - 34 - d.textlength(rod, font=fr)
-    d.text((xr, H - 45), rod, font=fr, fill=(255, 140, 146))
-    ax, ay = W - 64 - 20, H - 33
-    d.line([(ax - 8, ay), (ax + 12, ay)], fill=(255, 140, 146), width=3)
-    d.line([(ax + 4, ay - 7), (ax + 12, ay), (ax + 4, ay + 7)], fill=(255, 140, 146), width=3, joint="curve")
+    # rodapé leve, sem faixa
+    d.line([(k(tx), k(H - 74)), (k(W - 64), k(H - 74))], fill=LINHA, width=k(1.5))
+    xs = espacado(tx, H - 54, "radarsecties.github.io", F(700, k(24)), VERM, 0)
+    d.text((k(xs + 16), k(H - 52)), "Leia a edição completa, todos os dias", font=F(400, k(22)), fill=CINZA)
 
+    img = img.resize((W, H), Image.LANCZOS)
     img.save(destino, optimize=True)
     return True
 
