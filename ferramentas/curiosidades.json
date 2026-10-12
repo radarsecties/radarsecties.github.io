@@ -1,0 +1,212 @@
+[
+ {
+  "texto": "Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.",
+  "porque": "O átomo é quase todo vazio: o núcleo é minúsculo perto da nuvem de elétrons. Espremido como numa estrela de nêutrons, tudo fica absurdamente denso.",
+  "tema": "atomo",
+  "area": "Física atômica",
+  "formula": "átomo: 99,9999999% de vazio"
+ },
+ {
+  "texto": "Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.",
+  "porque": "É a velocidade da rotação da Terra perto do equador. Como tudo à sua volta gira junto, você não sente nada.",
+  "tema": "rotacao",
+  "area": "Mecânica",
+  "formula": "v = ω · R ≈ 1.650 km/h"
+ },
+ {
+  "texto": "A luz do Sol que bate no seu rosto hoje saiu de lá há uns 8 minutos e 20 segundos. Você está sempre vendo o Sol do passado.",
+  "porque": "A luz viaja a quase 300 mil km por segundo, e o Sol fica a cerca de 150 milhões de km.",
+  "tema": "luz",
+  "area": "Óptica",
+  "formula": "t = d / c ≈ 8 min 20 s"
+ },
+ {
+  "texto": "Um dia em Vênus é mais longo que um ano em Vênus.",
+  "porque": "Vênus gira muito devagar: leva cerca de 243 dias terrestres para dar uma volta em si, e 225 para dar a volta no Sol.",
+  "tema": "astro",
+  "area": "Astronomia",
+  "formula": "1 dia venusiano > 1 ano venusiano"
+ },
+ {
+  "texto": "Bananas são levemente radioativas. Para fazer mal, porém, seria preciso comer milhões delas de uma vez.",
+  "porque": "Elas têm potássio, e uma pequena parte do potássio natural é radioativa. Seu corpo também tem, e está tudo bem.",
+  "tema": "nuclear",
+  "area": "Física nuclear",
+  "formula": "⁴⁰K → ⁴⁰Ca + e⁻ + ν̄"
+ },
+ {
+  "texto": "A cada segundo, dezenas de bilhões de neutrinos vindos do Sol atravessam a ponta do seu dedo. Sem pedir licença.",
+  "porque": "Neutrinos quase não interagem com a matéria: passam pela Terra inteira como se ela não existisse. Foram tema do Nobel de Física de 2026.",
+  "tema": "particulas",
+  "area": "Física de partículas",
+  "formula": "≈ 6,5 × 10¹⁰ neutrinos por cm² a cada segundo"
+ },
+ {
+  "texto": "O GPS do seu celular só acerta o caminho porque corrige a relatividade de Einstein. Sem isso, erraria uns 10 km por dia.",
+  "porque": "Os relógios dos satélites andam num ritmo um pouco diferente dos nossos, por causa da velocidade e da gravidade. O sistema compensa essa diferença.",
+  "tema": "relatividade",
+  "area": "Relatividade",
+  "formula": "Δt ≈ 38 microssegundos por dia"
+ },
+ {
+  "texto": "Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.",
+  "porque": "Cada qubit pode estar numa mistura de 0 e 1. Os estados possíveis dobram a cada qubit: 2 elevado a 20, 2 elevado a 100.",
+  "tema": "quantica",
+  "area": "Computação quântica",
+  "formula": "2²⁰ = 1.048.576"
+ },
+ {
+  "texto": "Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto.",
+  "porque": "O frio extremo evita que o calor bagunce os qubits. O espaço vazio fica em torno de -270 °C; esses chips chegam bem mais perto de -273,15 °C.",
+  "tema": "frio",
+  "area": "Baixas temperaturas",
+  "formula": "0 K = −273,15 °C"
+ },
+ {
+  "texto": "No espaço, ninguém ouve sua explosão. Os filmes de ficção científica deveriam ser bem mais silenciosos.",
+  "porque": "O som precisa de ar, água ou algum material para viajar. No vácuo não há o que vibrar.",
+  "tema": "onda",
+  "area": "Acústica",
+  "formula": "som no vácuo: 0 m/s"
+ },
+ {
+  "texto": "Você é, literalmente, poeira de estrelas. O cálcio dos seus ossos e o ferro do seu sangue foram fabricados dentro de estrelas.",
+  "porque": "Elementos mais pesados que o hidrogênio e o hélio se formam em estrelas e são espalhados quando elas morrem.",
+  "tema": "estrela",
+  "area": "Astrofísica",
+  "formula": "H → He → … → Fe"
+ },
+ {
+  "texto": "A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.",
+  "porque": "As marés roubam um pouquinho da rotação da Terra e empurram a Lua para longe, devagar.",
+  "tema": "astro",
+  "area": "Gravitação",
+  "formula": "+3,8 cm por ano"
+ },
+ {
+  "texto": "Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois.",
+  "porque": "Quanto mais quente algo está em relação ao ambiente, mais rápido perde calor. O leite logo de cara reduz essa diferença desde o início.",
+  "tema": "calor",
+  "area": "Termodinâmica",
+  "formula": "dT/dt = −k (T − Tₐ)"
+ },
+ {
+  "texto": "Um raio é cerca de cinco vezes mais quente que a superfície do Sol.",
+  "porque": "O canal de um raio chega a uns 30 mil °C por uma fração de segundo. A superfície do Sol fica em torno de 5.500 °C.",
+  "tema": "raio",
+  "area": "Eletricidade",
+  "formula": "≈ 30.000 °C"
+ },
+ {
+  "texto": "Em 1971, um astronauta soltou um martelo e uma pena na Lua. Chegaram ao chão juntos. Galileu teria adorado.",
+  "porque": "Sem ar para frear, todos os objetos caem com a mesma aceleração, não importa o peso.",
+  "tema": "gravidade",
+  "area": "Mecânica",
+  "formula": "g na Lua ≈ 1,62 m/s²"
+ },
+ {
+  "texto": "Einstein ganhou o Nobel não pela relatividade, mas por explicar o efeito fotoelétrico, a base das placas solares.",
+  "porque": "A luz chega em pacotinhos de energia, os fótons, capazes de arrancar elétrons de um material. É assim que a placa solar gera eletricidade.",
+  "tema": "luz",
+  "area": "Física quântica",
+  "formula": "E = h · f"
+ },
+ {
+  "texto": "Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra.",
+  "porque": "Um copo tem cerca de 8 seguido de 24 zeros de moléculas. Os oceanos inteiros dariam algo como 5 seguido de 21 zeros de copos.",
+  "tema": "molecula",
+  "area": "Física da matéria",
+  "formula": "≈ 8 × 10²⁴ moléculas por copo"
+ },
+ {
+  "texto": "A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta.",
+  "porque": "É o tempo de a luz ir e voltar, cobrindo cerca de 384 mil km em cada sentido.",
+  "tema": "luz",
+  "area": "Óptica",
+  "formula": "384.000 km ÷ c ≈ 1,3 s"
+ },
+ {
+  "texto": "Uma colher de chá de estrela de nêutrons pesaria bilhões de toneladas.",
+  "porque": "Nessas estrelas, a matéria é tão comprimida que prótons e elétrons se fundem em nêutrons, encostados uns nos outros.",
+  "tema": "estrela",
+  "area": "Astrofísica",
+  "formula": "ρ ≈ 10¹⁷ kg/m³"
+ },
+ {
+  "texto": "A água pode ferver e congelar ao mesmo tempo. Basta acertar a pressão e a temperatura no chamado ponto triplo.",
+  "porque": "A 0,01 °C e com pressão bem baixa, gelo, água líquida e vapor convivem em equilíbrio.",
+  "tema": "frio",
+  "area": "Termodinâmica",
+  "formula": "ponto triplo: 0,01 °C"
+ },
+ {
+  "texto": "O micro-ondas não esquenta a comida de dentro para fora. Ele aquece a água dos primeiros centímetros, e o resto vem por condução.",
+  "porque": "As micro-ondas fazem as moléculas de água vibrar. Elas não penetram muito fundo, por isso o meio da lasanha às vezes fica gelado.",
+  "tema": "onda",
+  "area": "Eletromagnetismo",
+  "formula": "f ≈ 2,45 GHz"
+ },
+ {
+  "texto": "O laser do caixa do supermercado e o LED do seu celular existem graças à mecânica quântica.",
+  "porque": "Os dois dependem de como os elétrons pulam entre níveis de energia e emitem luz, algo que só a física quântica explica.",
+  "tema": "quantica",
+  "area": "Física quântica",
+  "formula": "ΔE = h · f"
+ },
+ {
+  "texto": "Há mais estrelas no universo observável do que grãos de areia em todas as praias da Terra.",
+  "porque": "As estimativas falam em algo como 10 elevado a 22 estrelas. Os grãos de areia das praias ficam bem abaixo disso.",
+  "tema": "estrela",
+  "area": "Cosmologia",
+  "formula": "≈ 10²² estrelas"
+ },
+ {
+  "texto": "Seu corpo brilha. Só que a luz é mil vezes fraca demais para os olhos perceberem.",
+  "porque": "Reações químicas nas células liberam uma luz muito fraca. Câmeras ultrassensíveis já registraram esse brilho.",
+  "tema": "luz",
+  "area": "Biofísica",
+  "formula": "luz ultrafraca, invisível a olho nu"
+ },
+ {
+  "texto": "Vidro não é um líquido que escorre devagar. Vitrais antigos são mais grossos embaixo por causa de como eram fabricados.",
+  "porque": "O vidro é um sólido amorfo: rígido, mas sem a organização de um cristal. Levaria muito mais que a idade do universo para escorrer.",
+  "tema": "molecula",
+  "area": "Física da matéria",
+  "formula": "sólido amorfo"
+ },
+ {
+  "texto": "Feynman, Nobel de Física, dizia que ninguém entende a mecânica quântica. Se você também não entende, está em ótima companhia.",
+  "porque": "A frase é do livro O Caráter da Lei Física, de 1965. A quântica funciona com precisão impressionante, mesmo desafiando a intuição.",
+  "tema": "quantica",
+  "area": "Mecânica quântica",
+  "formula": "|ψ⟩ = α|0⟩ + β|1⟩"
+ },
+ {
+  "texto": "Uma sombra pode andar mais rápido que a luz. E isso não quebra nenhuma lei da física.",
+  "porque": "Se você girar uma lanterna, a mancha de luz projetada numa parede muito distante pode varrer mais rápido que a luz. Mas nada viaja de verdade de um ponto ao outro.",
+  "tema": "luz",
+  "area": "Relatividade",
+  "formula": "informação: nunca mais rápido que c"
+ },
+ {
+  "texto": "O desenho do átomo com bolinhas girando em órbitas, como o desta seção, é de 1913. Hoje sabemos que o elétron é mais uma nuvem do que um planetinha.",
+  "porque": "O modelo de Bohr foi um passo enorme, mas a mecânica quântica mostrou que só dá para falar em probabilidade de encontrar o elétron.",
+  "tema": "atomo",
+  "area": "Física atômica",
+  "formula": "modelo de Bohr, 1913"
+ },
+ {
+  "texto": "A Ponta do Seixas, em João Pessoa, é o ponto mais a leste das Américas. Por isso a cidade é conhecida como o lugar onde o Sol nasce primeiro no continente.",
+  "porque": "Como a Terra gira de oeste para leste, quem está mais a leste vê o Sol primeiro.",
+  "tema": "rotacao",
+  "area": "Astronomia",
+  "formula": "34° 47′ O: o leste das Américas"
+ },
+ {
+  "texto": "Água quente às vezes congela mais rápido que água fria. É o efeito Mpemba, e os físicos ainda discutem o porquê.",
+  "porque": "Evaporação, correntes internas e gases dissolvidos estão entre as explicações, mas o resultado depende muito das condições do teste.",
+  "tema": "calor",
+  "area": "Termodinâmica",
+  "formula": "efeito Mpemba"
+ }
+]
