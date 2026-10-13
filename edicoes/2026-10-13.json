@@ -82,6 +82,22 @@
       "porQueImporta": "É mais um exemplo de imóvel antigo do Centro voltando a ser usado, tema que interessa à política de valorização do patrimônio."
     },
     {
+      "id": "ciatox-evento-urgencia-sus",
+      "titulo": "Evento debate intoxicações e picadas de animais nas urgências do SUS",
+      "fonte": "Even3",
+      "url": "https://www.even3.com.br/toxicologia-e-toxinologia-no-servico-de-urgencia-do-sus-790573/",
+      "dataPub": "2026-10",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "ensino",
+        "fomento"
+      ],
+      "resumo": "O evento Toxicologia e Toxinologia no Serviço de Urgência do SUS tem página de inscrição na plataforma Even3 e trata do atendimento a intoxicações e a acidentes com animais peçonhentos e plantas. O tema é o mesmo do projeto CIATox, que a FAPESQ e a SECTIES apoiam com 38 bolsas nos centros de toxicologia de João Pessoa e Campina Grande.",
+      "porQueImporta": "Capacitar as equipes de urgência é ciência aplicada direto ao SUS e aproxima a SECTIES da área da saúde."
+    },
+    {
       "id": "abdi-mapa-data-centers",
       "titulo": "Governo federal vai mapear as regiões mais aptas a receber data centers",
       "fonte": "Tele.Síntese",
@@ -413,6 +429,21 @@
         "fapesp-baviera",
         "china-19-medidas-inovacao",
         "eua-taxa-estudantes-estrangeiros"
+      ]
+    },
+    {
+      "id": "p-painel-intoxicacoes",
+      "titulo": "Painel público de intoxicações com dados dos CIATox",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030",
+        "ensino"
+      ],
+      "descricao": "Transformar os registros de atendimento dos centros de toxicologia em um painel aberto, com mapa por município e tipo de ocorrência, como escorpiões, cobras e produtos de limpeza. A área da saúde e as prefeituras poderiam usar os dados para planejar prevenção e estoque de soro.",
+      "base": [
+        "ciatox-evento-urgencia-sus"
       ]
     }
   ]
