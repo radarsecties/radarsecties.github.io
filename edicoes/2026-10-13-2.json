@@ -1,0 +1,450 @@
+{
+  "data": "2026-10-13",
+  "numero": 5,
+  "geradoEm": "2026-10-13T06:59:16-03:00",
+  "destaque": "Cajazeiras monta laboratório de robôs e IA com R$ 14,9 mi da Finep",
+  "leitura": "O campus de Cajazeiras do instituto federal no Sertão monta um laboratório de robótica e inteligência artificial com R$ 14,9 milhões aprovados pela Finep. A 12ª Expotec, de 28 a 30 de outubro em João Pessoa, tem inscrições gratuitas. Não saiu Diário Oficial novo desde 10/10.",
+  "itens": [
+    {
+      "id": "cajazeiras-lab-robotica-ia",
+      "titulo": "Cajazeiras monta laboratório de robôs e IA com R$ 14,9 milhões da Finep",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/tecnologia/de-robos-humanoides-a-inteligencia-artificial-cajazeiras-estrutura-laboratorio-para-a-industria-do-futuro/",
+      "dataPub": "2026-09-22",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ensino",
+        "inovacao",
+        "fomento"
+      ],
+      "resumo": "O campus de Cajazeiras do instituto federal no Sertão está transformando sua oficina de máquinas em um laboratório de manufatura com robôs, solda robotizada e inteligência artificial (IA). Três projetos aprovados pela Finep somam cerca de R$ 14,9 milhões; um quarto, de R$ 4,9 milhões, foi aprovado por mérito mas ficou sem verba e depende de recurso extra até novembro.",
+      "porQueImporta": "É um polo de tecnologia industrial no Alto Sertão, aberto a empresas e outras instituições, e há uma janela curta para não perder o projeto que ficou sem dinheiro."
+    },
+    {
+      "id": "expotec-2026-inscricoes",
+      "titulo": "Expotec reúne tecnologia quântica e inovação em João Pessoa de 28 a 30/10",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/expotec-2026-reune-tecnologia-cultura-digital-e-empreendedorismo-em-joao-pessoa/",
+      "dataPub": "2026-10-10",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "inovacao",
+        "astronomia"
+      ],
+      "resumo": "A 12ª Expotec acontece de 28 a 30 de outubro, no Centro de Convenções de João Pessoa, com o tema tecnologias quânticas e soberania tecnológica. A inscrição é gratuita pelo site do evento, e a organização espera mais de 5 mil pessoas, com palestras, oficinas, robótica e maratona de programação para mulheres.",
+      "porQueImporta": "O evento é organizado com a SECTIES e será a maior vitrine do ano para mostrar ao público o CIQUANTA e os projetos de ciência do estado."
+    },
+    {
+      "id": "ufpb-pesquisadora-premio-confap",
+      "titulo": "Pesquisadora da UFPB indicada pela FAPESQ é finalista de prêmio nacional",
+      "fonte": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_diversidade/docente-da-ufpb-e-finalista-nacional",
+      "dataPub": "2026-10-08",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "A professora Marciane Magnani, da Engenharia de Alimentos da UFPB, está entre as finalistas do Prêmio Confap de Ciência, Tecnologia e Inovação, na categoria Ciências da Vida. Ela foi indicada pela FAPESQ e estuda segurança dos alimentos e uso de frutos do Nordeste; o resultado sai em 18 de novembro, em Curitiba.",
+      "porQueImporta": "Mostra a qualidade da pesquisa paraibana em nível nacional e dá visibilidade ao trabalho de fomento da FAPESQ."
+    },
+    {
+      "id": "fapesq-retoma-divulgacao",
+      "titulo": "FAPESQ volta a divulgar ações; bolsas de pós seguem abertas até 9/11",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/retomamos-a-divulgacao-das-nossas-acoes",
+      "dataPub": "2026-10-07",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "Encerrado o período de restrição eleitoral, a FAPESQ retomou a divulgação de editais e programas no portal e nas redes sociais. Entre as chamadas abertas estão as bolsas de mestrado, doutorado e pós-doutorado, com prazo até 9 de novembro, e o edital para empresas juniores, até 4 de novembro.",
+      "porQueImporta": "Com a comunicação de volta, é hora de reforçar a divulgação dos prazos para que pesquisadores e estudantes não percam as chamadas."
+    },
+    {
+      "id": "casarao-centro-jp-mostra",
+      "titulo": "Casarão histórico do Centro de João Pessoa ganha nova vida com mostra",
+      "fonte": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_paraiba/casarao-historico-sedia-nova-mostra",
+      "dataPub": "2026-10-06",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "patrimonio"
+      ],
+      "resumo": "Um casarão histórico na Avenida João Machado, no Centro da capital, teve a fachada revitalizada e vai receber uma mostra de arquitetura e decoração de 31 de outubro a 13 de dezembro. Serão 32 ambientes criados por mais de 45 profissionais.",
+      "porQueImporta": "É mais um exemplo de imóvel antigo do Centro voltando a ser usado, tema que interessa à política de valorização do patrimônio."
+    },
+    {
+      "id": "ciatox-evento-urgencia-sus",
+      "titulo": "Evento debate intoxicações e picadas de animais nas urgências do SUS",
+      "fonte": "Even3",
+      "url": "https://www.even3.com.br/toxicologia-e-toxinologia-no-servico-de-urgencia-do-sus-790573/",
+      "dataPub": "2026-10",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "ensino",
+        "fomento"
+      ],
+      "resumo": "O evento Toxicologia e Toxinologia no Serviço de Urgência do SUS tem página de inscrição na plataforma Even3 e trata do atendimento a intoxicações e a acidentes com animais peçonhentos e plantas. O tema é o mesmo do projeto CIATox, que a FAPESQ e a SECTIES apoiam com 38 bolsas nos centros de toxicologia de João Pessoa e Campina Grande.",
+      "porQueImporta": "Capacitar as equipes de urgência é ciência aplicada direto ao SUS e aproxima a SECTIES da área da saúde."
+    },
+    {
+      "id": "abdi-mapa-data-centers",
+      "titulo": "Governo federal vai mapear as regiões mais aptas a receber data centers",
+      "fonte": "Tele.Síntese",
+      "url": "https://telesintese.com.br/abdi-vai-identificar-onde-instalar-novos-data-centers-no-brasil/",
+      "dataPub": "2026-10-09",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "transversal",
+        "inclusao",
+        "inovacao"
+      ],
+      "resumo": "A Agência Brasileira de Desenvolvimento Industrial (ABDI) e o CPQD vão produzir uma matriz que aponta onde o país tem condições de receber novos data centers e onde faltam energia, conectividade e água. O estudo dura 24 meses, ouvirá o mercado e terá testes de tecnologias para gastar menos energia e água.",
+      "porQueImporta": "A Paraíba tem energia renovável e cabos de internet; entrar bem nesse mapa pode atrair investimentos e empregos qualificados."
+    },
+    {
+      "id": "einstein-ataque-dados",
+      "titulo": "Hospital Einstein confirma ataque com acesso a dados de pacientes",
+      "fonte": "Saúde Digital News",
+      "url": "https://saudedigitalnews.com.br/09/10/2026/einstein-confirma-ataque-cibernetico-com-acesso-a-dados-pessoais-e-medicos-de-pacientes/",
+      "dataPub": "2026-10-09",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "resumo": "O Hospital Israelita Albert Einstein confirmou que criminosos acessaram nome, CPF, receitas e resultados de exames de parte dos pacientes. A invasão foi detectada em 4 de agosto e só foi anunciada em outubro; o caso foi comunicado à Polícia Federal e à Autoridade Nacional de Proteção de Dados (ANPD).",
+      "porQueImporta": "Dados de saúde estão entre os mais visados. A rede estadual de saúde precisa de proteção e de um plano claro para avisar rapidamente os pacientes."
+    },
+    {
+      "id": "eletronet-pos-quantica",
+      "titulo": "Empresa lança no Brasil rede de dados protegida contra computadores quânticos",
+      "fonte": "Tele.Síntese",
+      "url": "https://telesintese.com.br/eletronet-lanca-transporte-optico-com-criptografia-pos-quantica/",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "A Eletronet lançou um serviço de transmissão de dados por fibra óptica que usa criptografia pós-quântica, ou seja, resistente aos computadores quânticos do futuro. É voltado a operadoras e data centers que atendem saúde, governo, finanças e indústria.",
+      "porQueImporta": "Mostra que a proteção pós-quântica já chegou ao mercado nacional, abrindo espaço para formação e serviços ligados ao CIQUANTA."
+    },
+    {
+      "id": "hackathon-sus-cancer",
+      "titulo": "Maratona do SUS seleciona startups com soluções contra o câncer",
+      "fonte": "Agência Gov",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/hackhaton-sus-empreendedores-ciencia-cancer",
+      "dataPub": "2026-10-09",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "inovacao",
+        "transversal"
+      ],
+      "resumo": "O Ministério da Saúde concluiu as etapas regionais do Hackathon SUS, que busca tecnologias para prevenir, detectar cedo e tratar o câncer. As equipes escolhidas nas regiões apresentam seus projetos na final nacional, prevista para 4 de dezembro.",
+      "porQueImporta": "É um modelo de como o poder público pode comprar inovação de startups para resolver problemas reais da saúde."
+    },
+    {
+      "id": "fapesp-baviera",
+      "titulo": "FAPESP assina acordo com governo da Baviera em IA e tecnologia quântica",
+      "fonte": "Agência FAPESP",
+      "url": "https://agencia.fapesp.br/fapesp-assina-carta-de-intencoes-com-ministerio-da-baviera-para-ampliar-cooperacao-cientifica/59378",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "internacional",
+        "fomento",
+        "ciquanta"
+      ],
+      "resumo": "A fundação de pesquisa de São Paulo assinou uma carta de intenções com o ministério de Ciência e Artes da Baviera, na Alemanha, para ampliar projetos e intercâmbio. As áreas prioritárias incluem IA, tecnologias quânticas, tecnologias limpas, espaço e museus.",
+      "porQueImporta": "Mostra que fundações estaduais podem negociar diretamente com governos regionais estrangeiros, caminho também aberto à FAPESQ."
+    },
+    {
+      "id": "utah-ia-centrada-pessoas",
+      "titulo": "Estado de Utah, nos EUA, cria regras para IA no governo centrada nas pessoas",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/artificial-intelligence/utah-governor-signs-executive-order-for-pro-human-ai",
+      "dataPub": "2026-10-06",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "secretaria2030",
+        "transversal",
+        "seguranca"
+      ],
+      "resumo": "O governador de Utah assinou uma ordem que manda os órgãos estaduais usarem IA para melhorar processos, mas sempre com a decisão final nas mãos de pessoas. A ordem prevê formação em IA para servidores, proteção contra ataques, transparência com a população e um relatório anual, o primeiro em julho de 2027.",
+      "porQueImporta": "É um modelo pronto de regra de governo para IA, com metas e prestação de contas, que dialoga diretamente com o SecretarIA 2030."
+    },
+    {
+      "id": "boulder-ia-chamadas",
+      "titulo": "Cidade americana usará IA para atender ligações não urgentes à polícia",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/artificial-intelligence/ai-will-answer-non-emergency-calls-in-boulder-colo",
+      "dataPub": "2026-10-07",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "resumo": "A polícia de Boulder, no Colorado, vai usar um assistente de IA, em inglês e espanhol, para atender e encaminhar chamadas que não são emergência, como barulho ou carro abandonado. Quem preferir pode pedir para falar com uma pessoa, e as ligações de emergência continuam com atendentes.",
+      "porQueImporta": "Cerca de 70% das ligações à central não eram urgentes; a ideia pode aliviar centrais de atendimento da segurança pública."
+    },
+    {
+      "id": "ionq-elisity-ciberseguranca",
+      "titulo": "Gigante da computação quântica compra empresa de segurança digital",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/12/ionq-agrees-to-buy-elisity-in-cybersecurity-deal-worth-up-to-1-3-billion/",
+      "dataPub": "2026-10-12",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "A IonQ, fabricante americana de computadores quânticos, vai comprar a Elisity, que protege redes de hospitais contra invasões, por até US$ 1,3 bilhão em ações. A empresa diz que o risco de a computação quântica quebrar a criptografia atual chega antes do previsto.",
+      "porQueImporta": "Quântica e segurança digital estão se juntando no mercado; a formação no CIQUANTA pode mirar as duas áreas."
+    },
+    {
+      "id": "google-correcao-erros-quantica",
+      "titulo": "Google apresenta técnica que reduz erros em cálculos quânticos",
+      "fonte": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com/google-quantum-ai-introduces-virtual-error-cancellation-for-universal-logical-circuits/",
+      "dataPub": "2026-10-12",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "Pesquisadores do Google propuseram um método feito por software, depois do cálculo, que corta muito os erros que sobram nos computadores quânticos. Por enquanto, o resultado vem de simulações, não de testes em máquinas reais.",
+      "porQueImporta": "Técnicas de correção por software podem ampliar o que os computadores do CIQUANTA conseguem fazer."
+    },
+    {
+      "id": "eua-taxa-estudantes-estrangeiros",
+      "titulo": "EUA propõem taxa de US$ 70 mil para estudante estrangeiro trabalhar após o curso",
+      "fonte": "University World News",
+      "url": "https://www.universityworldnews.com/post.php?story=20261011080046411",
+      "dataPub": "2026-10-11",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ensino",
+        "internacional"
+      ],
+      "resumo": "O governo americano propôs cobrar das universidades US$ 70 mil por estudante estrangeiro indicado ao programa que permite trabalhar no país após a formatura, e mais US$ 30 mil por ano extra. A proposta está em consulta pública por 60 dias e é criticada por entidades de ensino.",
+      "porQueImporta": "Se aprovada, pode desviar estudantes e pesquisadores latino-americanos para outros destinos, inclusive universidades brasileiras."
+    },
+    {
+      "id": "china-19-medidas-inovacao",
+      "titulo": "China lança 19 medidas para acelerar ciência, IA e novas indústrias",
+      "fonte": "CGTN",
+      "url": "https://news.cgtn.com/news/2026-10-10/China-rolls-out-19-measures-to-advance-new-quality-productive-forces-1R7ziRQWdRC/share_amp.html",
+      "dataPub": "2026-10-10",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "internacional",
+        "inovacao"
+      ],
+      "resumo": "O governo chinês publicou 19 medidas para acelerar a inovação, dando às empresas mais peso na escolha das pesquisas e mais incentivo fiscal para pesquisa e desenvolvimento. O pacote também amplia o uso de IA na indústria, com bases-piloto pelo país.",
+      "porQueImporta": "A China é parceira do CIQUANTA; entender suas prioridades ajuda a orientar a cooperação."
+    },
+    {
+      "id": "europa-salario-doutorandos",
+      "titulo": "Estudo mostra grandes diferenças no pagamento de doutorandos na Europa",
+      "fonte": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03181-1",
+      "dataPub": "2026-10-12",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ensino",
+        "fomento"
+      ],
+      "resumo": "Um levantamento em 26 países europeus mostra grande variação na renda de quem faz doutorado, entre bolsas e salários. Os autores dizem que essa diferença leva pesquisadores para os países que pagam melhor.",
+      "porQueImporta": "Ajuda a pensar valores e formatos de bolsas para manter talentos na Paraíba."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-10",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-10-10-2026-portal.pdf/view",
+    "paginasLidas": "edição já lida anteriormente",
+    "leituraParcial": true,
+    "obs": "Não houve edição nova do Diário Oficial no portal desde a de 10/10, já analisada; a edição de hoje ainda não estava disponível no momento da leitura.",
+    "atos": []
+  },
+  "secom": [
+    {
+      "titulo": "Docente da UFPB é finalista nacional",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_diversidade/docente-da-ufpb-e-finalista-nacional",
+      "dataPub": "2026-10-08",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "Pesquisadora indicada pela FAPESQ disputa o Prêmio Confap, com resultado em 18 de novembro."
+    },
+    {
+      "titulo": "Retomamos a divulgação das nossas ações",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/retomamos-a-divulgacao-das-nossas-acoes",
+      "dataPub": "2026-10-07",
+      "programas": [
+        "fomento"
+      ],
+      "resumo": "FAPESQ volta a divulgar editais e programas após o período eleitoral."
+    },
+    {
+      "titulo": "Editais, eventos e cooperação internacional marcam ano da ciência paraibana",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/editais-eventos-e-cooperacao-internacional-marcam-ano-da-ciencia-paraibana",
+      "dataPub": "",
+      "programas": [
+        "fomento",
+        "internacional"
+      ],
+      "resumo": "Balanço da SECTIES sobre editais, eventos e parcerias internacionais."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-cofinanciamento-merito",
+      "titulo": "Fundo estadual para projetos aprovados por mérito e sem verba federal",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "ensino",
+        "inovacao"
+      ],
+      "descricao": "Criar uma linha que complemente projetos de instituições paraibanas aprovados em chamadas federais, mas não contratados por falta de orçamento. A seleção já foi feita pelo órgão federal, o que reduz custo e tempo de análise.",
+      "base": [
+        "cajazeiras-lab-robotica-ia"
+      ]
+    },
+    {
+      "id": "p-paraiba-mapa-data-centers",
+      "titulo": "Dossiê paraibano para o mapa nacional de data centers",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "inclusao",
+        "inovacao"
+      ],
+      "descricao": "Reunir em um só documento os dados do estado sobre energia renovável, cabos de internet, água e formação de pessoal, e apresentá-lo à ABDI e ao CPQD durante o estudo. O objetivo é que a Paraíba apareça como região apta a receber esses investimentos.",
+      "base": [
+        "abdi-mapa-data-centers"
+      ]
+    },
+    {
+      "id": "p-balcao-editais-expotec",
+      "titulo": "Balcão de editais e bolsas na Expotec",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "ensino",
+        "inovacao"
+      ],
+      "descricao": "Montar um ponto de atendimento na Expotec para tirar dúvidas sobre as bolsas de pós-graduação e o edital de empresas juniores, que fecham em novembro. Estudantes e pesquisadores sairiam do evento com a inscrição orientada.",
+      "base": [
+        "expotec-2026-inscricoes",
+        "fapesq-retoma-divulgacao"
+      ]
+    },
+    {
+      "id": "p-regra-ia-centrada-pessoas",
+      "titulo": "Regra estadual de IA com decisão humana e relatório anual",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal",
+        "seguranca"
+      ],
+      "descricao": "Propor, dentro do SecretarIA 2030, uma norma que garanta ao cidadão falar com uma pessoa quando atendido por IA e que obrigue cada órgão a publicar, uma vez por ano, onde e como usa IA. A norma pode se inspirar no modelo adotado em Utah.",
+      "base": [
+        "utah-ia-centrada-pessoas",
+        "boulder-ia-chamadas"
+      ]
+    },
+    {
+      "id": "p-ia-ligacoes-nao-urgentes",
+      "titulo": "Piloto de IA para ligações não urgentes da segurança pública",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "descricao": "Testar com a área de segurança um assistente que atenda e encaminhe ligações sem urgência, como barulho e veículo abandonado, sempre com opção de falar com um atendente. Assim os atendentes ficam livres para as emergências.",
+      "base": [
+        "boulder-ia-chamadas"
+      ]
+    },
+    {
+      "id": "p-aviso-rapido-dados-saude",
+      "titulo": "Protocolo de aviso rápido a pacientes em vazamentos de dados",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "descricao": "Definir com a área da saúde um prazo máximo e um canal único para avisar pacientes quando houver invasão aos sistemas da rede estadual. O caso do Einstein mostra que a demora entre descobrir e avisar aumenta o dano.",
+      "base": [
+        "einstein-ataque-dados",
+        "eletronet-pos-quantica"
+      ]
+    },
+    {
+      "id": "p-cooperacao-regioes-estrangeiras",
+      "titulo": "Acordos da FAPESQ com governos regionais estrangeiros",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "internacional",
+        "fomento",
+        "ciquanta"
+      ],
+      "descricao": "Buscar cartas de intenção com regiões estrangeiras que tenham agências de pesquisa próprias, com chamadas conjuntas em quântica, astronomia e museus. O modelo segue o acordo assinado pela FAPESP com a Baviera.",
+      "base": [
+        "fapesp-baviera",
+        "china-19-medidas-inovacao",
+        "eua-taxa-estudantes-estrangeiros"
+      ]
+    },
+    {
+      "id": "p-painel-intoxicacoes",
+      "titulo": "Painel público de intoxicações com dados dos CIATox",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030",
+        "ensino"
+      ],
+      "descricao": "Transformar os registros de atendimento dos centros de toxicologia em um painel aberto, com mapa por município e tipo de ocorrência, como escorpiões, cobras e produtos de limpeza. A área da saúde e as prefeituras poderiam usar os dados para planejar prevenção e estoque de soro.",
+      "base": [
+        "ciatox-evento-urgencia-sus"
+      ]
+    }
+  ]
+}
