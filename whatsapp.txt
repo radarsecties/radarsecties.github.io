@@ -1,23 +1,23 @@
-*RADAR SECTIES*  |  Edição nº 4
-_Segunda-feira, 12 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 7
+_Quinta-feira, 15 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*FINEP: CADASTRO PARA CHAMADA DE R$ 100 MILHÕES VAI ATÉ SEXTA (16)*
-O prazo mais urgente é o da Finep: universidades têm até sexta (16) para se cadastrar e disputar até R$ 100 milhões em tecnologia com cooperativas.
+*CIATOX DE CAMPINA GRANDE ABRE CURSO GRATUITO SOBRE INTOXICAÇÕES*
+O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos.
 
 *PRIORIDADES DO DIA*
-1. Centelha 3 Paraíba seleciona 50 ideias para receber apoio — _FAPESQ_
-2. Finep tem R$ 100 milhões para tecnologia voltada a cooperativas e associações — _Agência Gov_
-3. Coaf libera nuvem de terceiros, mas proíbe usar seus dados para treinar IA — _Convergência Digital_
-4. Indústria quântica europeia pede fábricas próprias de chips quânticos — _Quantum Computing Report_
+1. CIATox de Campina Grande abre curso gratuito sobre intoxicações para a rede de urgência — _UEPB_
+2. Empresas juniores da Paraíba têm até 4/11 para disputar apoio da SECTIES e da FAPESQ — _FAPESQ_
+3. Decreto regulamenta lei dos games e cria rede nacional de formação — _Convergência Digital_
+4. Observatório Nacional terá centro de IA aberto a pesquisadores do país — _Agência Gov_
 
 *TAMBÉM NESTA EDIÇÃO*
-• Paraíba: Antiga fábrica tombada no Varadouro vai virar prédio com 50 moradias
-• Brasil: Agência Espacial Brasileira cria política de inovação com bolsas e encomendas
-• Mundo: IonQ acelera ligação entre máquinas quânticas usando luz
+• Paraíba: Edital FAPESQ–Embrapii divulga 7º resultado e segue aberto até 6/11
+• Brasil: MEC aciona Polícia Federal após ameaças a dez universidades
+• Mundo: Nova York investe em fábrica de chips quânticos ligada à formação de técnicos
 
 *FÍSICA DE BOLSO*
-_Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou._
+_Bananas são levemente radioativas. Para fazer mal, porém, seria preciso comer milhões delas de uma vez._
 
-Leia a edição completa, com 19 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 17 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
