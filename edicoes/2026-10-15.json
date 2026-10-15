@@ -1,9 +1,9 @@
 {
   "data": "2026-10-15",
   "numero": 7,
-  "geradoEm": "2026-10-15T06:59:21-03:00",
+  "geradoEm": "2026-10-15T07:30:45-03:00",
   "destaque": "CIATox de Campina Grande abre curso gratuito sobre intoxicações",
-  "leitura": "O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos. Empresas juniores têm até 4/11 para o edital da SECTIES e da FAPESQ. O Diário Oficial de 13/10 não trouxe atos da área.",
+  "leitura": "O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos. Empresas juniores têm até 4/11 para o edital da SECTIES e da FAPESQ. No Diário Oficial de hoje, órgãos estaduais criam comissões de dados abertos.",
   "itens": [
     {
       "id": "ciatox-cg-curso-urgencias",
@@ -264,12 +264,45 @@
     }
   ],
   "doe": {
-    "edicao": "2026-10-13",
-    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-13-10-2026-portal.pdf/view",
+    "edicao": "2026-10-15",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-15-10-2026-portal.pdf/view",
     "paginasLidas": "até a pág. 9",
     "leituraParcial": true,
-    "obs": "A edição de 13/10 traz nas páginas lidas só a convocação de 846 professores aprovados em concurso da Educação; nenhum ato da área. Não há edições de 14 e 15/10 no portal.",
-    "atos": []
+    "obs": "Lidas as primeiras 9 páginas das edições de 14 e 15/10. Não apareceram atos da SECTIES, da FAPESQ ou da UEPB; os destaques são planos de dados abertos e um crédito para tecnologia no Tribunal de Justiça.",
+    "atos": [
+      {
+        "tipo": "Portaria nº 028/2026",
+        "orgao": "Secretaria Executiva do Empreendedorismo",
+        "pagina": "6-7",
+        "relevancia": "media",
+        "programas": [
+          "transversal",
+          "secretaria2030"
+        ],
+        "resumo": "A Secretaria Executiva do Empreendedorismo cria comissão para seu Plano de Dados Abertos, seguindo a Política Estadual de Dados Abertos e os padrões técnicos da CODATA."
+      },
+      {
+        "tipo": "Portaria nº 045/2026 (DOE de 14/10)",
+        "orgao": "Empresa Paraibana de Turismo (PBTUR)",
+        "pagina": "8-9",
+        "relevancia": "radar",
+        "programas": [
+          "transversal",
+          "secretaria2030"
+        ],
+        "resumo": "A PBTUR cria comissão para seu Plano de Dados Abertos, com representante na Rede PB Digital, rede que liga os órgãos à transformação digital do estado."
+      },
+      {
+        "tipo": "Decreto nº 48.935",
+        "orgao": "Governadoria / Tribunal de Justiça da Paraíba",
+        "pagina": "2-3",
+        "relevancia": "radar",
+        "programas": [
+          "transversal"
+        ],
+        "resumo": "Abre crédito especial de R$ 28,3 milhões ao Tribunal de Justiça para obras e para modernizar seus equipamentos e serviços de tecnologia, com recursos do próprio tribunal."
+      }
+    ]
   },
   "secom": [
     {
@@ -425,6 +458,20 @@
         "secretaria2030"
       ],
       "descricao": "Pedir que propostas e relatórios de editais declarem se e como usaram IA, com orientação clara aos pesquisadores. A medida protege a avaliação de mérito diante da onda de textos automáticos.",
+      "base": [
+        "arxiv-limite-ia"
+      ]
+    },
+    {
+      "id": "p-dados-abertos-ciencia",
+      "titulo": "Dados abertos de ciência e inovação no padrão estadual",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Aproveitar a onda de planos de dados abertos nos órgãos para publicar, em formato aberto, dados de bolsas, editais e resultados de pesquisa. Isso facilita o controle social e o uso por universidades e startups.",
       "base": [
         "arxiv-limite-ia"
       ]
