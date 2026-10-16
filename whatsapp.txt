@@ -1,21 +1,21 @@
-*RADAR SECTIES*  |  Edição nº 7
-_Quinta-feira, 15 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 8
+_Sexta-feira, 16 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*CIATOX DE CAMPINA GRANDE ABRE CURSO GRATUITO SOBRE INTOXICAÇÕES*
-O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos.
+*30 STARTUPS PARAIBANAS VÃO AO WEB SUMMIT LISBOA COM APOIO DO ESTADO*
+O Governo da Paraíba selecionou 30 startups para o Web Summit Lisboa, de 9 a 12 de novembro, sete a mais que em 2025.
 
 *PRIORIDADES DO DIA*
-1. CIATox de Campina Grande abre curso gratuito sobre intoxicações para a rede de urgência — _UEPB_
-2. Empresas juniores da Paraíba têm até 4/11 para disputar apoio da SECTIES e da FAPESQ — _FAPESQ_
-3. Decreto regulamenta lei dos games e cria rede nacional de formação — _Convergência Digital_
+1. Paraíba leva 30 startups ao Web Summit Lisboa, sete a mais que em 2025 — _FAPESQ_
+2. Último dia para vagas em projetos da FAPESQ com CODATA, núcleos de inovação e acervo de José Américo — _FAPESQ_
+3. Finep anuncia hoje no Recife resultado de edital de R$ 300 milhões para empresas do Nordeste — _Tele.Síntese_
 
 *DIÁRIO OFICIAL DO ESTADO*
-• Edital nº 0009/2026 SECTIES/FAPESQ (retificação) — SECTIES e FAPESQ corrigem o edital que leva 30 startups paraibanas ao Web Summit Lisboa, de 9 a 12/11.
-• Portaria Conjunta nº 409 — A Educação repassa R$ 416,5 mil à FAPESQ para o projeto Trilhar, de apoio à alfabetização.
+• Portaria Conjunta nº 0002/2026 — SECTIES, SECOM e FAPESQ criam comissão para o mestrado em jornalismo da UFPB para servidores.
+• Portarias de Planos de Dados Abertos — SECOM e Agência das Águas (AESA) criam comissões para abrir dados ao público.
 
 *FÍSICA DE BOLSO*
-_Bananas são levemente radioativas. Para fazer mal, porém, seria preciso comer milhões delas de uma vez._
+_A cada segundo, dezenas de bilhões de neutrinos vindos do Sol atravessam a ponta do seu dedo. Sem pedir licença._
 
-Leia a edição completa, com 18 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 15 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/

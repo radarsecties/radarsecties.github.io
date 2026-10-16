@@ -1,9 +1,9 @@
 {
   "data": "2026-10-15",
   "numero": 7,
-  "geradoEm": "2026-10-15T07:30:45-03:00",
+  "geradoEm": "2026-10-15T13:54:43-03:00",
   "destaque": "CIATox de Campina Grande abre curso gratuito sobre intoxicações",
-  "leitura": "O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos. Empresas juniores têm até 4/11 para o edital da SECTIES e da FAPESQ. No Diário Oficial de hoje, órgãos estaduais criam comissões de dados abertos.",
+  "leitura": "O CIATox de Campina Grande abre curso gratuito, em 3 e 4 de novembro, para profissionais que atendem intoxicações e acidentes com animais peçonhentos. Empresas juniores têm até 4/11 para o edital da SECTIES e da FAPESQ. O Diário Oficial de hoje ajusta o apoio às startups paraibanas no Web Summit Lisboa.",
   "itens": [
     {
       "id": "ciatox-cg-curso-urgencias",
@@ -50,6 +50,21 @@
       ],
       "resumo": "A FAPESQ publicou em 13 de outubro o 7º resultado parcial, após recursos, do Edital nº 32/2026, de fluxo contínuo com as unidades da Embrapii (Empresa Brasileira de Pesquisa e Inovação Industrial). O edital, que une empresas e centros de pesquisa em projetos de inovação, continua recebendo propostas até 6 de novembro.",
       "porQueImporta": "Fluxo contínuo significa que empresas paraibanas ainda podem entrar com projetos neste ano."
+    },
+    {
+      "id": "web-summit-lisboa-startups",
+      "titulo": "Startups paraibanas no Web Summit Lisboa: Diário Oficial ajusta regras do apoio",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-15-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-15",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inovacao",
+        "internacional"
+      ],
+      "resumo": "A SECTIES e a FAPESQ publicaram correção no edital que apoia startups da Paraíba no Web Summit Lisboa, de 9 a 12 de novembro, em Portugal. Cada uma das 30 startups selecionadas recebe R$ 15,5 mil para passagens e ajuda de custo, além de ingressos e um dia de exposição no estande do governo.",
+      "porQueImporta": "O Web Summit é uma das maiores feiras de tecnologia do mundo e abre portas para investidores e clientes."
     },
     {
       "id": "jararaca-do-jabre",
@@ -266,20 +281,64 @@
   "doe": {
     "edicao": "2026-10-15",
     "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-15-10-2026-portal.pdf/view",
-    "paginasLidas": "até a pág. 9",
-    "leituraParcial": true,
-    "obs": "Lidas as primeiras 9 páginas das edições de 14 e 15/10. Não apareceram atos da SECTIES, da FAPESQ ou da UEPB; os destaques são planos de dados abertos e um crédito para tecnologia no Tribunal de Justiça.",
+    "paginasLidas": "edição inteira (35 páginas)",
+    "leituraParcial": false,
+    "obs": "O Diário de 15/10 foi lido por inteiro. Da edição de 14/10, foram lidas as 9 primeiras páginas.",
     "atos": [
+      {
+        "tipo": "Edital nº 0009/2026 SECTIES/FAPESQ (retificação)",
+        "orgao": "SECTIES e FAPESQ",
+        "pagina": "13-14",
+        "relevancia": "alta",
+        "programas": [
+          "inovacao",
+          "internacional",
+          "fomento"
+        ],
+        "resumo": "SECTIES e FAPESQ corrigem o edital que leva 30 startups paraibanas ao Web Summit Lisboa, de 9 a 12/11. Cada startup recebe R$ 15,5 mil para passagens e ajuda de custo, e a correção (item 4.2) diz que o dinheiro só pode ser usado pelo coordenador da proposta."
+      },
+      {
+        "tipo": "Portaria Conjunta nº 409",
+        "orgao": "Planejamento, Educação e FAPESQ",
+        "pagina": "10 e 23",
+        "relevancia": "media",
+        "programas": [
+          "transversal",
+          "fomento"
+        ],
+        "resumo": "A Educação repassa R$ 416,5 mil à FAPESQ para o projeto Trilhar, de apoio à alfabetização. As duas executam juntas, até 31 de dezembro, essa ação do programa Alfabetiza Mais Paraíba, voltada à política de alfabetização nos territórios."
+      },
+      {
+        "tipo": "Portaria Conjunta nº 411",
+        "orgao": "Planejamento, SECTIES e FAPESQ",
+        "pagina": "12",
+        "relevancia": "media",
+        "programas": [
+          "fomento",
+          "ensino"
+        ],
+        "resumo": "A pedido da FAPESQ, o governo cancela em parte um repasse de R$ 3 milhões para pesquisa e extensão. O valor era para fomento a projetos de formação profissional, pesquisa e extensão e tinha sido liberado em maio pela Portaria Conjunta nº 200/2026."
+      },
       {
         "tipo": "Portaria nº 028/2026",
         "orgao": "Secretaria Executiva do Empreendedorismo",
         "pagina": "6-7",
-        "relevancia": "media",
+        "relevancia": "radar",
         "programas": [
           "transversal",
           "secretaria2030"
         ],
         "resumo": "A Secretaria Executiva do Empreendedorismo cria comissão para seu Plano de Dados Abertos, seguindo a Política Estadual de Dados Abertos e os padrões técnicos da CODATA."
+      },
+      {
+        "tipo": "Decreto nº 48.935",
+        "orgao": "Governadoria / Tribunal de Justiça da Paraíba",
+        "pagina": "2-3",
+        "relevancia": "radar",
+        "programas": [
+          "transversal"
+        ],
+        "resumo": "O governo abre crédito especial de R$ 28,3 milhões ao Tribunal de Justiça para obras e para modernizar seus equipamentos e serviços de tecnologia, com recursos do próprio tribunal."
       },
       {
         "tipo": "Portaria nº 045/2026 (DOE de 14/10)",
@@ -291,16 +350,6 @@
           "secretaria2030"
         ],
         "resumo": "A PBTUR cria comissão para seu Plano de Dados Abertos, com representante na Rede PB Digital, rede que liga os órgãos à transformação digital do estado."
-      },
-      {
-        "tipo": "Decreto nº 48.935",
-        "orgao": "Governadoria / Tribunal de Justiça da Paraíba",
-        "pagina": "2-3",
-        "relevancia": "radar",
-        "programas": [
-          "transversal"
-        ],
-        "resumo": "Abre crédito especial de R$ 28,3 milhões ao Tribunal de Justiça para obras e para modernizar seus equipamentos e serviços de tecnologia, com recursos do próprio tribunal."
       }
     ]
   },
@@ -460,6 +509,20 @@
       "descricao": "Pedir que propostas e relatórios de editais declarem se e como usaram IA, com orientação clara aos pesquisadores. A medida protege a avaliação de mérito diante da onda de textos automáticos.",
       "base": [
         "arxiv-limite-ia"
+      ]
+    },
+    {
+      "id": "p-vitrine-web-summit",
+      "titulo": "Agenda de negócios para as startups no Web Summit Lisboa",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "inovacao",
+        "internacional"
+      ],
+      "descricao": "Preparar, antes da viagem, encontros com investidores e empresas portuguesas para as 30 startups apoiadas. Na volta, medir contratos e parcerias fechados para orientar os próximos editais.",
+      "base": [
+        "web-summit-lisboa-startups"
       ]
     },
     {
