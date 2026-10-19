@@ -1,21 +1,21 @@
-*RADAR SECTIES*  |  Edição nº 8
-_Sexta-feira, 16 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 9
+_Segunda-feira, 19 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*30 STARTUPS PARAIBANAS VÃO AO WEB SUMMIT LISBOA COM APOIO DO ESTADO*
-O Governo da Paraíba selecionou 30 startups para o Web Summit Lisboa, de 9 a 12 de novembro, sete a mais que em 2025.
+*PARAÍBA DIVULGA PROJETOS APROVADOS DE MULHERES E MENINAS NA CIÊNCIA*
+A FAPESQ e a SECTIES publicaram o resultado final do edital de apoio ao protagonismo de mulheres e meninas na ciência.
 
 *PRIORIDADES DO DIA*
-1. Paraíba leva 30 startups ao Web Summit Lisboa, sete a mais que em 2025 — _FAPESQ_
-2. Último dia para vagas em projetos da FAPESQ com CODATA, núcleos de inovação e acervo de José Américo — _FAPESQ_
-3. Finep anuncia hoje no Recife resultado de edital de R$ 300 milhões para empresas do Nordeste — _Tele.Síntese_
+1. Edital de R$ 1,56 milhão apoia empresas juniores das universidades públicas; inscrições até 4/11 — _WSCOM_
+2. FAPESQ entra na chamada europeia Water4All sobre gestão da água; pré-propostas até 10/11 — _FAPESQ_
+3. MEC prepara 200 novas unidades da rede federal e espera ofertas de prédios das prefeituras — _Diário do Grande ABC_
 
 *DIÁRIO OFICIAL DO ESTADO*
-• Portaria Conjunta nº 0002/2026 — SECTIES, SECOM e FAPESQ criam comissão para o mestrado em jornalismo da UFPB para servidores.
-• Portarias de Planos de Dados Abertos — SECOM e Agência das Águas (AESA) criam comissões para abrir dados ao público.
+• Edital nº 35/2026 SECTIES/FAPESQ — FAPESQ e SECTIES publicam o resultado final do edital para mulheres e meninas na ciência.
+• Decreto nº 48.956 — Governo remaneja R$ 465 mil da SECTIES de parques tecnológicos para eventos de ciência e inovação.
 
 *FÍSICA DE BOLSO*
-_A cada segundo, dezenas de bilhões de neutrinos vindos do Sol atravessam a ponta do seu dedo. Sem pedir licença._
+_Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto._
 
-Leia a edição completa, com 15 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 18 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/

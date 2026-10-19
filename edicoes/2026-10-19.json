@@ -1,0 +1,492 @@
+{
+ "data": "2026-10-19",
+ "numero": 9,
+ "geradoEm": "2026-10-19T08:32:00-03:00",
+ "destaque": "Paraíba divulga projetos aprovados de mulheres e meninas na ciência",
+ "leitura": "A FAPESQ e a SECTIES publicaram o resultado final do edital de apoio ao protagonismo de mulheres e meninas na ciência. Seguem abertos editais para empresas juniores (até 4/11) e para a chamada europeia Water4All, sobre água (até 10/11). No país, o MEC planeja 200 novas unidades da rede federal.",
+ "itens": [
+  {
+   "id": "edital-35-mulheres-ciencia",
+   "titulo": "Sai o resultado final do edital da FAPESQ para mulheres e meninas na ciência",
+   "fonte": "Diário Oficial da Paraíba",
+   "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-17-10-2026-portal.pdf/view",
+   "dataPub": "2026-10-17",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "fomento",
+    "ensino"
+   ],
+   "resumo": "A FAPESQ e a SECTIES publicaram a lista final do Edital nº 35/2026, que apoia projetos de pesquisa liderados por mulheres e ações para levar meninas à ciência. Há propostas da UEPB, UFPB, UFCG, IFPB e INSA em áreas como agrárias, saúde, engenharias e humanas.",
+   "porQueImporta": "O resultado final encerra a seleção e abre a fase de contratação dos projetos."
+  },
+  {
+   "id": "empresas-juniores-edital-53",
+   "titulo": "Edital de R$ 1,56 milhão apoia empresas juniores das universidades públicas; inscrições até 4/11",
+   "fonte": "WSCOM",
+   "url": "https://wscom.com.br/economia/2026/10/16/governo-da-paraiba-lanca-edital-de-r-156-milhao-para-bolsas-em-empresas-juniores-universitarias/",
+   "dataPub": "2026-10-16",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "O Edital nº 53/2026 da SECTIES e da FAPESQ destina R$ 1,56 milhão a bolsas para equipes de empresas juniores, as empresas de consultoria formadas e geridas por estudantes de universidades públicas. As inscrições vão até 4 de novembro, às 17h.",
+   "porQueImporta": "Empresas juniores são uma porta de entrada dos estudantes no empreendedorismo e na prestação de serviços a pequenos negócios."
+  },
+  {
+   "id": "water4all-chamada-fapesq",
+   "titulo": "FAPESQ entra na chamada europeia Water4All sobre gestão da água; pré-propostas até 10/11",
+   "fonte": "FAPESQ",
+   "url": "https://fapesq.rpp.br/editais/2026/chamada-transnacional-conjunta-water4all-2026-2013-gestao-sustentavel-dos-recursos-hidricos-diretrizes-especificas-da-fapesq",
+   "dataPub": "2026-10-14",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "internacional",
+    "fomento",
+    "transversal"
+   ],
+   "resumo": "A FAPESQ publicou as regras para pesquisadores paraibanos participarem da Chamada Transnacional Water4All 2026, que reúne financiadores de vários países em projetos sobre uso sustentável da água. As pré-propostas devem ser enviadas até 10 de novembro, às 15h no horário da Europa Central.",
+   "porQueImporta": "Abre caminho para grupos da Paraíba pesquisarem seca e recursos hídricos junto com parceiros estrangeiros."
+  },
+  {
+   "id": "expotec-espaco-robotica",
+   "titulo": "Expotec terá espaço de robótica com oficinas gratuitas, de 28 a 30 de outubro",
+   "fonte": "Polêmica Paraíba",
+   "url": "https://www.polemicaparaiba.com.br/tecnologia/expotec-2026-tera-espaco-de-robotica-com-oficinas-e-atividades-interativas-em-joao-pessoa/",
+   "dataPub": "2026-10-16",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "astronomia",
+    "inclusao",
+    "ciquanta"
+   ],
+   "resumo": "A 12ª Expotec, feira de tecnologia realizada pela Associação Nacional para Inclusão Digital (Anid) e pelo Governo da Paraíba, por meio da SECTIES, acontece no Centro de Convenções de João Pessoa, com o tema das tecnologias quânticas. A programação inclui mostra de robótica de escolas e do IFPB, oficinas com kits educacionais e maratona de programação para mulheres.",
+   "porQueImporta": "É a principal vitrine pública de tecnologia do estado neste mês e tem entrada gratuita."
+  },
+  {
+   "id": "fll-escola-jp-campea",
+   "titulo": "Escola municipal de João Pessoa é campeã nacional de robótica e vai ao mundial nos EUA",
+   "fonte": "Paraíba Online",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/10/18/escola-da-rede-municipal-de-joao-pessoa-conquista-1o-lugar-nacional-na-fll/",
+   "dataPub": "2026-10-18",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "inclusao"
+   ],
+   "resumo": "Alunos de uma escola municipal do bairro Padre Zé ficaram em 1º lugar na categoria Explore da etapa nacional da First Lego League, torneio de robótica, no Rio de Janeiro, com projeto sobre magnetismo em achados arqueológicos. Outra escola da capital ficou em 2º lugar, e a vencedora garantiu vaga no mundial de abril de 2027, em Houston.",
+   "porQueImporta": "Mostra talentos em ciência na rede pública que podem ser atraídos depois para a universidade e para a inovação."
+  },
+  {
+   "id": "ufcg-pos-computacao-58-vagas",
+   "titulo": "Pós-graduação em Computação da UFCG abre 58 vagas de mestrado e doutorado",
+   "fonte": "UFCG",
+   "url": "https://www.gov.br/ufcg/pt-br/assuntos/noticias/2026/outubro/pos-graduacao-em-ciencia-da-computacao-da-ufcg-vai-abrir-58-vagas",
+   "dataPub": "2026-10-13",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "O programa de pós-graduação em Ciência da Computação da UFCG, em Campina Grande, oferece 43 vagas de mestrado e 15 de doutorado. As inscrições vão de 16 a 30 de outubro, pelo sistema acadêmico da universidade.",
+   "porQueImporta": "Forma pesquisadores em computação, área de que dependem a inteligência artificial e as tecnologias quânticas no estado."
+  },
+  {
+   "id": "doe-secties-eventos-ct",
+   "titulo": "Decreto reforça em R$ 465 mil a verba da SECTIES para eventos de ciência e tecnologia",
+   "fonte": "Diário Oficial da Paraíba",
+   "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-17-10-2026-portal.pdf/view",
+   "dataPub": "2026-10-17",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "fomento",
+    "inovacao"
+   ],
+   "resumo": "O Decreto nº 48.956 remaneja R$ 465 mil dentro do orçamento da SECTIES, da ação de parques tecnológicos para a de realização e apoio a eventos de ciência, tecnologia e inovação. Não há aumento do gasto total da secretaria.",
+   "porQueImporta": "O ajuste ocorre às vésperas da Expotec e de outros eventos da área no fim do ano."
+  },
+  {
+   "id": "ufcg-enupex-resumos",
+   "titulo": "UFCG recebe até terça (20) resumos para seu primeiro encontro unificado de pesquisa e extensão",
+   "fonte": "UFCG",
+   "url": "https://www.gov.br/ufcg/pt-br/assuntos/noticias/2026/outubro/ufcg-promovera-i-encontro-unificado-de-pesquisa-e-extensao-em-novembro",
+   "dataPub": "2026-10-05",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "O I Encontro Unificado de Pesquisa e Extensão da UFCG será de 9 a 19 de novembro, nos sete campi, com o tema tecnologia, ética e sociedade e foco nas mulheres na pesquisa. O prazo para envio de resumos termina em 20 de outubro.",
+   "porQueImporta": "Reúne em um só evento a produção científica e de extensão da universidade em todo o interior."
+  },
+  {
+   "id": "mec-200-unidades-rede-federal",
+   "titulo": "MEC prepara 200 novas unidades da rede federal e espera ofertas de prédios das prefeituras",
+   "fonte": "Diário do Grande ABC",
+   "url": "https://dgabc.com.br/Noticia/4353266/mec-preve-quatro-novos-institutos-federais-no-grande-abc",
+   "dataPub": "2026-10-17",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "Em entrevista, o ministro da Educação disse que há um plano nacional de 200 novas unidades da Rede Federal de educação profissional, científica e tecnológica. A instalação depende de propostas das prefeituras, que podem oferecer terrenos ou imóveis.",
+   "porQueImporta": "Municípios paraibanos que se organizarem cedo podem disputar novas unidades de institutos federais."
+  },
+  {
+   "id": "ia-contra-crime-goias",
+   "titulo": "Programa de IA da segurança de Goiás já ajudou a esclarecer mais de 3 mil crimes",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/mercado/ia-contra-o-crime-ajudou-a-resolver-mais-de-3-mil-crimes-em-goias/",
+   "dataPub": "2026-10-16",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "transversal",
+    "secretaria2030",
+    "seguranca"
+   ],
+   "resumo": "O programa cruza imagens de câmeras e dados para seguir veículos, mesmo com placa clonada, e já levou a cerca de 1.500 prisões e 1.100 veículos recuperados. Funciona em 194 municípios goianos, com meta de 202 até dezembro.",
+   "porQueImporta": "É um caso concreto de IA em outra secretaria, mas exige regras claras de privacidade e controle."
+  },
+  {
+   "id": "senado-pl-ia-saude",
+   "titulo": "Senado analisa projeto com regras para uso de inteligência artificial na saúde",
+   "fonte": "Agência Senado",
+   "url": "https://www12.senado.leg.br/noticias/materias/2026/10/14/projeto-na-cas-cria-diretrizes-para-uso-da-inteligencia-artificial-na-saude",
+   "dataPub": "2026-10-14",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "resumo": "O PL 931/2026, que aguarda votação na Comissão de Assuntos Sociais, diz que a IA não substitui a supervisão humana nem tira a responsabilidade dos profissionais de saúde. Também garante ao paciente o direito de saber quando a tecnologia é usada no seu atendimento.",
+   "porQueImporta": "Antecipa exigências que qualquer projeto de IA na saúde estadual terá de cumprir."
+  },
+  {
+   "id": "ibm-custo-vazamento-recorde",
+   "titulo": "Custo médio de vazamento de dados no Brasil bate recorde; saúde é o setor mais caro",
+   "fonte": "Wproo",
+   "url": "https://wproo.com/2026/10/15/prejuizo-com-vazamento-de-dados-bate-recorde-no-brasil-e-atinge-r-744-milhoes/",
+   "dataPub": "2026-10-15",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "seguranca",
+    "transversal"
+   ],
+   "resumo": "Estudo anual da IBM calcula em R$ 7,44 milhões o prejuízo médio por vazamento no país, o maior da série; na saúde, a média chega a R$ 12,55 milhões. Organizações que usam automação e IA na defesa gastaram cerca de 30% menos.",
+   "porQueImporta": "Hospitais e sistemas públicos guardam dados sensíveis e são alvo preferencial de criminosos."
+  },
+  {
+   "id": "mec-ameacas-universidades",
+   "titulo": "MEC aciona Polícia Federal após ameaças a pelo menos dez universidades federais",
+   "fonte": "Agência Gov",
+   "url": "https://agenciagov.ebc.com.br/noticias/202610/mec-solicita-atuacao-da-pf-e-da-agu-em-funcao-das-ameacas-as-universidades-federais",
+   "dataPub": "2026-10-13",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "seguranca"
+   ],
+   "resumo": "O Ministério da Educação pediu investigação à Polícia Federal e medidas à Advocacia-Geral da União após mensagens de intimidação, atos de violência e símbolos nazistas em universidades. Um incêndio danificou um laboratório da UFPE; nenhuma instituição da Paraíba aparece na lista.",
+   "porQueImporta": "Reforça a necessidade de planos de proteção para campi e laboratórios em todo o Nordeste."
+  },
+  {
+   "id": "rj-politica-ia-decreto",
+   "titulo": "Rio de Janeiro cria política estadual de IA com fórum e comitê de ética",
+   "fonte": "Atlas Público",
+   "url": "https://atlaspublico.com.br/estados/rj/noticias/governo-do-rj-institui-politica-de-inteligencia-artificial-92315",
+   "dataPub": "2026-10-14",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "Decreto publicado em 14 de outubro institui a Política de Inteligência Artificial Fluminense, com um fórum ligado à secretaria de Ciência e Tecnologia e um comitê de ética ligado à de Transformação Digital. Os órgãos estaduais terão de responder formalmente às recomendações do comitê.",
+   "porQueImporta": "É um modelo recente de governança de IA em governo estadual, útil como comparação."
+  },
+  {
+   "id": "gao-pos-quantica-eua",
+   "titulo": "Auditoria dos EUA conclui que nenhum dos 24 grandes órgãos está pronto para a criptografia pós-quântica",
+   "fonte": "GAO",
+   "url": "https://www.gao.gov/products/gao-27-108740",
+   "dataPub": "2026-10-14",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "seguranca",
+    "ciquanta"
+   ],
+   "resumo": "O órgão de auditoria do Congresso americano (GAO) aponta falta de especialistas, de inventário dos sistemas e de verba para trocar a criptografia atual por versões resistentes a computadores quânticos. Um computador capaz de quebrar a proteção atual pode surgir já na década de 2030.",
+   "porQueImporta": "Se nem o governo americano está pronto, os estados brasileiros precisam começar cedo a planejar a mudança."
+  },
+  {
+   "id": "ukri-50-milhoes-quantica",
+   "titulo": "Reino Unido destina 50 milhões de libras a empresas de tecnologia quântica",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/19/ukri-backs-uk-quantum-businesses-with-share-of-50-million/",
+   "dataPub": "2026-10-19",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ciquanta",
+    "fomento"
+   ],
+   "resumo": "A agência britânica de pesquisa e inovação (UKRI) anunciou apoio a projetos de empresas, como sensores quânticos para detectar falhas em ferrovias e um aparelho portátil de exame de olhos. Há ainda verbas separadas para redes quânticas e para um programa de aprendizes.",
+   "porQueImporta": "Mostra que o foco internacional está nas aplicações práticas e na formação de técnicos, temas centrais para o CIQUANTA."
+  },
+  {
+   "id": "ue-ai-act-primeiras-acoes",
+   "titulo": "União Europeia faz as primeiras cobranças às empresas de IA com base na nova lei",
+   "fonte": "Unite.AI",
+   "url": "https://www.unite.ai/eu-announces-first-ai-act-enforcement-actions-after-ai-agent-incidents/",
+   "dataPub": "2026-10-14",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "secretaria2030",
+    "seguranca"
+   ],
+   "resumo": "A Comissão Europeia informou que seu escritório de IA pediu informações aos fornecedores dos modelos mais avançados após incidentes em que agentes de IA saíram do controle. Os pedidos tratam de segurança, avaliação externa e monitoramento depois do lançamento.",
+   "porQueImporta": "As regras europeias tendem a servir de referência para contratos de IA no setor público brasileiro."
+  },
+  {
+   "id": "unesco-docencia-america-latina",
+   "titulo": "Estudo da UNESCO aponta precarização de professores no ensino superior latino-americano",
+   "fonte": "UNESCO IESALC",
+   "url": "https://www.iesalc.unesco.org/en/articles/new-study-warns-latin-america-has-democratised-higher-education-has-made-teaching-conditions-more",
+   "dataPub": "2026-09-29",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "internacional"
+   ],
+   "resumo": "O ensino superior da região passou de 1,9 milhão de estudantes em 1970 para mais de 30 milhões em 2019, mas muitas aulas ficaram com docentes horistas e contratos instáveis. O estudo recomenda ligar formação docente a carreira e ter políticas claras de uso de IA.",
+   "porQueImporta": "Oferece parâmetros para avaliar a qualidade da expansão das vagas no estado."
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-17",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-17-10-2026-portal.pdf/view",
+  "paginasLidas": "edição inteira (44 páginas)",
+  "leituraParcial": false,
+  "obs": "Lida a edição de sábado (17/10) inteira; a edição de hoje (19/10) não havia sido publicada até as 8h30.",
+  "atos": [
+   {
+    "tipo": "Edital nº 35/2026 SECTIES/FAPESQ",
+    "orgao": "FAPESQ e SECTIES",
+    "pagina": "15 a 19",
+    "relevancia": "alta",
+    "programas": [
+     "fomento",
+     "ensino"
+    ],
+    "resumo": "FAPESQ e SECTIES publicam o resultado final do edital para mulheres e meninas na ciência. A lista traz projetos da UEPB, UFPB, UFCG, IFPB e INSA."
+   },
+   {
+    "tipo": "Decreto nº 48.956",
+    "orgao": "Governo do Estado (SECTIES)",
+    "pagina": "7",
+    "relevancia": "media",
+    "programas": [
+     "fomento",
+     "inovacao"
+    ],
+    "resumo": "Governo remaneja R$ 465 mil da SECTIES de parques tecnológicos para eventos de ciência e inovação. O valor sai de uma ação e vai para outra, sem aumento do orçamento total."
+   },
+   {
+    "tipo": "Decreto nº 48.947",
+    "orgao": "Governo do Estado (CODATA)",
+    "pagina": "5",
+    "relevancia": "radar",
+    "programas": [
+     "transversal",
+     "seguranca"
+    ],
+    "resumo": "Governo reforça em R$ 3,17 milhões a verba da CODATA para desenvolver e manter sistemas. O dinheiro vem de outras dotações da própria companhia de processamento de dados do estado."
+   },
+   {
+    "tipo": "Portaria da SUPLAN (Dados Abertos)",
+    "orgao": "SUPLAN",
+    "pagina": "11",
+    "relevancia": "radar",
+    "programas": [
+     "transversal"
+    ],
+    "resumo": "SUPLAN cria grupo para elaborar seu Plano de Dados Abertos, seguindo a política estadual. O grupo define quais dados de obras serão abertos e atualiza o plano periodicamente."
+   },
+   {
+    "tipo": "Decreto (Comenda Céu do Talhado)",
+    "orgao": "Governo do Estado (SECULT)",
+    "pagina": "7",
+    "relevancia": "radar",
+    "programas": [
+     "patrimonio"
+    ],
+    "resumo": "Governo cria a Comenda Ancestral Céu do Talhado para quem contribui com a cultura paraibana. A honraria inclui a preservação da memória e do patrimônio material e imaterial."
+   }
+  ]
+ },
+ "secom": [
+  {
+   "titulo": "Chamada Transnacional Conjunta Water4All 2026: diretrizes específicas da FAPESQ",
+   "portal": "Portal da FAPESQ",
+   "url": "https://fapesq.rpp.br/editais/2026/chamada-transnacional-conjunta-water4all-2026-2013-gestao-sustentavel-dos-recursos-hidricos-diretrizes-especificas-da-fapesq",
+   "dataPub": "2026-10-14",
+   "programas": [
+    "internacional",
+    "fomento"
+   ],
+   "resumo": "Regras para pesquisadores paraibanos entrarem na chamada europeia sobre gestão da água; pré-propostas até 10/11."
+  },
+  {
+   "titulo": "Edital nº 53/2026: seleção de equipes de empresas juniores do estado",
+   "portal": "Portal da FAPESQ",
+   "url": "https://fapesq.rpp.br/editais/2026/edital-no-53-2026-selecao-de-equipes-de-empresas-juniores-do-estado-da-paraiba",
+   "dataPub": "2026-10-05",
+   "programas": [
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "Página do edital com o cronograma retificado; inscrições até 4 de novembro."
+  },
+  {
+   "titulo": "Edital nº 32/2026: fluxo contínuo FAPESQ e unidades Embrapii tem 8º resultado",
+   "portal": "Portal da FAPESQ",
+   "url": "https://fapesq.rpp.br/editais/2026/edital-no-32-2026-2013-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii",
+   "dataPub": "2026-10-15",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": "Saiu a oitava lista de propostas enquadradas no edital que une empresas e unidades Embrapii na Paraíba."
+  },
+  {
+   "titulo": "Paraíba destaca protagonismo em computação quântica durante painel no São Paulo Innovation Week 2026",
+   "portal": "Portal da FAPESQ",
+   "url": "https://fapesq.rpp.br/noticias/paraiba-destaca-protagonismo-em-computacao-quantica-durante-painel-no-sao-paulo-innovation-week-2026",
+   "dataPub": "2026-05-16",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": "SECTIES e FAPESQ apresentaram o CIQUANTA em painel sobre soberania quântica brasileira."
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-balcao-chamadas-europeias",
+   "titulo": "Balcão de apoio às candidaturas paraibanas em chamadas europeias",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "internacional",
+    "fomento"
+   ],
+   "descricao": "Montar plantão com a FAPESQ e as pró-reitorias para ajudar grupos a achar parceiros e escrever pré-propostas da Water4All até 10/11. A mesma estrutura serviria para as próximas chamadas conjuntas internacionais.",
+   "base": [
+    "water4all-chamada-fapesq"
+   ]
+  },
+  {
+   "id": "p-mapa-imoveis-rede-federal",
+   "titulo": "Mapa de imóveis municipais para novas unidades da rede federal",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "ensino",
+    "patrimonio"
+   ],
+   "descricao": "Levantar com as prefeituras terrenos e prédios disponíveis, inclusive imóveis históricos sem uso, para apresentar ao MEC propostas de novas unidades na Paraíba. A SECTIES coordenaria a lista com o IFPB e o Instituto Federal do Sertão.",
+   "base": [
+    "mec-200-unidades-rede-federal"
+   ]
+  },
+  {
+   "id": "p-vitrine-mulheres-ciencia-expotec",
+   "titulo": "Vitrine dos projetos de mulheres na ciência na Expotec",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "fomento",
+    "astronomia"
+   ],
+   "descricao": "Reservar espaço na Expotec para as pesquisadoras aprovadas no Edital nº 35/2026 apresentarem seus projetos ao público e a estudantes. Ajuda a divulgar o resultado e a inspirar meninas da rede pública.",
+   "base": [
+    "edital-35-mulheres-ciencia",
+    "expotec-espaco-robotica"
+   ]
+  },
+  {
+   "id": "p-linha-orcamentaria-pos-quantica",
+   "titulo": "Linha de orçamento para a troca de criptografia nos sistemas do estado",
+   "tipo": "Política",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "seguranca",
+    "ciquanta"
+   ],
+   "descricao": "Prever no orçamento de tecnologia do estado, a começar pela CODATA, uma verba específica para mapear e substituir a criptografia vulnerável a computadores quânticos. A auditoria americana mostra que a falta de dinheiro reservado é um dos maiores entraves.",
+   "base": [
+    "gao-pos-quantica-eua"
+   ]
+  },
+  {
+   "id": "p-ia-seguranca-com-privacidade",
+   "titulo": "Regras de privacidade para IA com câmeras na segurança pública",
+   "tipo": "Política",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "transversal",
+    "secretaria2030",
+    "seguranca"
+   ],
+   "descricao": "Oferecer à Segurança apoio técnico das universidades para avaliar ferramentas de leitura de câmeras e placas, com regras de guarda de dados, auditoria e decisão humana. O caso de Goiás mostra resultados, mas também a escala de dados envolvida.",
+   "base": [
+    "ia-contra-crime-goias",
+    "ue-ai-act-primeiras-acoes"
+   ]
+  },
+  {
+   "id": "p-defesa-digital-hospitais",
+   "titulo": "Monitoramento compartilhado de segurança digital para hospitais estaduais",
+   "tipo": "Parceria",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "seguranca",
+    "transversal"
+   ],
+   "descricao": "Propor à Saúde uma central comum de monitoramento de ataques para os hospitais da rede, com apoio de grupos de pesquisa em cibersegurança. A saúde é o setor com o maior custo médio de vazamento no país.",
+   "base": [
+    "ibm-custo-vazamento-recorde",
+    "senado-pl-ia-saude"
+   ]
+  },
+  {
+   "id": "p-apoio-robotica-mundial",
+   "titulo": "Apoio a equipes escolares paraibanas em torneios internacionais de ciência",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "inclusao"
+   ],
+   "descricao": "Criar uma linha simples de apoio para equipes de escolas públicas classificadas para mundiais de robótica e olimpíadas científicas. A equipe campeã nacional da First Lego League seria o primeiro caso.",
+   "base": [
+    "fll-escola-jp-campea"
+   ]
+  }
+ ]
+}
