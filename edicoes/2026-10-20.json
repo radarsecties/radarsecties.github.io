@@ -1,0 +1,497 @@
+{
+  "data": "2026-10-20",
+  "numero": 10,
+  "geradoEm": "2026-10-20T08:05:00-03:00",
+  "destaque": "Finep amplia para R$ 450 milhões apoio à inovação no Norte e Nordeste",
+  "leitura": "O governo federal ampliou de R$ 300 milhões para R$ 450 milhões o edital da Finep para empresas inovadoras do Norte, Nordeste e Centro-Oeste. Na Paraíba, o Diário Oficial traz novo projeto aprovado no edital FAPESQ e Embrapii, voltado à saúde mental, e bolsas de permanência no ensino superior.",
+  "itens": [
+    {
+      "id": "finep-regional-450-milhoes",
+      "titulo": "Finep amplia para R$ 450 milhões edital de inovação; Paraíba tem 1 projeto na primeira lista do Nordeste",
+      "fonte": "Consecti",
+      "url": "https://consecti.org.br/mcti-e-finep-anunciam-aporte-de-r-450-milhoes-para-114-empresas-das-regioes-norte-nordeste-e-centro-oeste/",
+      "dataPub": "2026-10-19",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "resumo": "O MCTI e a Finep anunciaram em Recife o resultado da chamada de subvenção (dinheiro que não precisa ser devolvido) para empresas do Norte, Nordeste e Centro-Oeste, com 587 propostas inscritas. O orçamento subiu de R$ 300 milhões para R$ 450 milhões e passa a atender 114 projetos; na primeira lista do Nordeste, segundo a Sudene, a Paraíba teve 1 projeto de R$ 4,15 milhões, contra 13 de Pernambuco.",
+      "porQueImporta": "Mostra que as empresas paraibanas ainda disputam pouco os recursos federais de inovação e precisam de apoio para chegar às próximas chamadas."
+    },
+    {
+      "id": "horizon-europe-confap-chamadas",
+      "titulo": "Três chamadas europeias via Confap recebem pré-propostas até 10 e 16 de novembro",
+      "fonte": "Agência FAPESP",
+      "url": "https://agencia.fapesp.br/fapesp-participa-de-tres-novas-chamadas-internacionais-do-horizon-europe/59408",
+      "dataPub": "2026-10-16",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "resumo": "Por meio do Confap, que reúne as fundações estaduais de amparo à pesquisa, o Brasil participa das chamadas BiodivFuture (biodiversidade), Water4All (água) e SBEP (economia do mar) do programa europeu Horizon Europe. As pré-propostas das duas primeiras vencem em 10 de novembro e as da SBEP, em 16 de novembro, sempre com parceiros europeus.",
+      "porQueImporta": "A FAPESQ já aderiu à Water4All; as outras duas são temas fortes para o litoral e o semiárido paraibanos."
+    },
+    {
+      "id": "ciclo-saberes-mec-minc",
+      "titulo": "MEC e MinC abrem edital de R$ 5 milhões para levar mestres da cultura popular às universidades",
+      "fonte": "Chico Terra",
+      "url": "https://chicoterra.com/2026/10/19/mec-e-minc-abrem-inscricoes-para-o-programa-ciclo-de-saberes/",
+      "dataPub": "2026-10-19",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "ensino",
+        "patrimonio"
+      ],
+      "resumo": "O Programa Ciclo de Saberes vai apoiar projetos em que mestres de saberes tradicionais e populares dão aulas e oficinas em universidades federais e escolas públicas. Cada instituição federal pode enviar uma proposta até 8 de novembro, com projetos de até R$ 500 mil ou R$ 250 mil.",
+      "porQueImporta": "Abre recurso para valorizar o patrimônio imaterial paraibano dentro do ensino superior, em parceria com a UFPB, a UFCG e os institutos federais."
+    },
+    {
+      "id": "cge-pb-ia-controle",
+      "titulo": "Controladoria da Paraíba conhece ferramentas de IA da CGE de Mato Grosso e discute cooperação",
+      "fonte": "Conaci",
+      "url": "https://conaci.org.br/noticias/cge-mt-apresenta-solucoes-de-inteligencia-artificial-e-analise-de-dados-a-controladoria-da-paraiba/",
+      "dataPub": "2026-10-19",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "Uma equipe da Controladoria Geral do Estado da Paraíba visitou a CGE de Mato Grosso para conhecer um banco de dados unificado, um sistema de alertas, um assistente de conversa e auditorias apoiadas por inteligência artificial (IA). As duas controladorias falaram em acordo para compartilhar as soluções.",
+      "porQueImporta": "Copiar soluções já testadas em outro estado é um caminho rápido e barato para levar IA à gestão pública paraibana."
+    },
+    {
+      "id": "alice-bob-proqcima-franca",
+      "titulo": "França mede por etapas seu programa público de computadores quânticos",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/20/alice-bob-reports-cat-qubit-progress-in-french-quantum-computing-program/",
+      "dataPub": "2026-10-20",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "A empresa Alice & Bob apresentou os resultados da primeira fase do PROQCIMA, programa do governo francês liderado pela área de defesa, com testes em chips de 6 e 12 qubits. A meta do programa é ter dois protótipos com 1.000 qubits corrigidos prontos para produção até 2032, e cada fase é avaliada antes de liberar a seguinte.",
+      "porQueImporta": "É um modelo de como um governo pode acompanhar investimento público em quântica com metas claras e verificáveis."
+    },
+    {
+      "id": "doe-edital-32-ampara-saude-mental",
+      "titulo": "Edital FAPESQ e Embrapii aprova assistente digital de apoio a cuidadores em saúde mental",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-20-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inovacao",
+        "transversal",
+        "fomento"
+      ],
+      "resumo": "O 7º resultado final do Edital nº 32/2026 da SECTIES e da FAPESQ aprovou o projeto AMPARA, um assistente digital para apoiar familiares que cuidam de pessoas em sofrimento mental, com orçamento de R$ 105 mil. O projeto une uma empresa de tecnologia à unidade Embrapii NUTES, da UEPB.",
+      "porQueImporta": "É inovação feita na Paraíba com uso direto em uma política de outra secretaria, a da Saúde."
+    },
+    {
+      "id": "doe-fapesq-bolsas-permanencia",
+      "titulo": "FAPESQ formaliza 38 bolsas e projetos, de permanência no ensino superior ao radiotelescópio Bingo",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-20-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "ensino",
+        "fomento",
+        "astronomia"
+      ],
+      "resumo": "A FAPESQ publicou a lista de 38 termos de bolsas e projetos, que somam R$ 1,1 milhão. Há bolsas do programa de ações afirmativas para permanência no ensino superior, da Casa do Estudante, do Paraíba sem Fronteiras e do programa Limite do Visível, além de pesquisas ligadas ao radiotelescópio Bingo.",
+      "porQueImporta": "Mostra o dinheiro estadual chegando a estudantes e pesquisadores, sobretudo para manter alunos de baixa renda na universidade."
+    },
+    {
+      "id": "hub-experience-sebrae-pb",
+      "titulo": "Sebrae Paraíba promove até 30/10 a Hub Experience, com IA e captação de recursos para startups",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/paraiba-amplia-conexoes-entre-startups-empresas-e-mercado-para-acelerar-negocios-inovadores/",
+      "dataPub": "2026-10-19",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inovacao"
+      ],
+      "resumo": "A programação acontece de 19 a 30 de outubro no Hub Sebrae de João Pessoa, com temas como inteligência artificial, gestão de custos de nuvem e captação de recursos. A rede de inovação do Sebrae no estado reúne oito iniciativas do litoral ao sertão, e startups paraibanas apoiadas pela entidade foram premiadas este ano.",
+      "porQueImporta": "Une-se à Expotec no fim do mês e reforça a agenda de inovação em João Pessoa."
+    },
+    {
+      "id": "ifpb-finep-dialogo",
+      "titulo": "IFPB recebe a Finep para discutir novos financiamentos à inovação",
+      "fonte": "IFPB",
+      "url": "https://www.ifpb.edu.br/noticias/2026/10/ifpb-e-finep-dialogam-sobre-fomento-a-inovacao-e-desenvolvimento-regional",
+      "dataPub": "2026-10-15",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "fomento",
+        "inovacao",
+        "ensino"
+      ],
+      "resumo": "A gerência da Finep no Nordeste visitou o parque tecnológico e a agência de inovação do IFPB. O instituto já captou quase R$ 50 milhões em projetos da Finep, e a conversa incluiu formas de facilitar o acesso de empresas paraibanas a crédito e apoio.",
+      "porQueImporta": "Aproximar instituições e empresas da Finep é o caminho para a Paraíba ganhar mais nas próximas chamadas federais."
+    },
+    {
+      "id": "expotec-2026-robotica-clickpb",
+      "titulo": "Expotec, feira de tecnologia do estado, acontece de 28 a 30 de outubro em João Pessoa",
+      "fonte": "ClickPB",
+      "url": "https://www.clickpb.com.br/tecnologia/expotec-tecnologia-pb.html",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao",
+        "ciquanta",
+        "astronomia"
+      ],
+      "resumo": "A 12ª Expotec é realizada pela Associação Nacional para Inclusão Digital com o Governo da Paraíba, por meio da SECTIES, e terá espaço de robótica com atividades para o público. O tema desta edição são as tecnologias quânticas.",
+      "porQueImporta": "É a principal vitrine de ciência e tecnologia do estado neste mês, aberta ao público."
+    },
+    {
+      "id": "patos-tech-robotica",
+      "titulo": "Patos recebe primeira competição de robótica da cidade, com 60 equipes, no dia 27",
+      "fonte": "Folha Patoense",
+      "url": "https://folhapatoense.com/2026/10/20/prefeitura-apresenta-patos-tech-e-destaca-potencial-tecnologico-do-municipio/",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao",
+        "inovacao"
+      ],
+      "resumo": "A Prefeitura de Patos apresentou o Patos Tech, competição de robótica marcada para 27 de outubro no Patos Shopping. Cerca de 60 equipes de crianças e jovens da Paraíba e do Rio Grande do Norte vão participar.",
+      "porQueImporta": "Mostra o interesse por tecnologia no Sertão, região que também recebe investimentos estaduais em ciência."
+    },
+    {
+      "id": "doe-semas-lista-vermelha-fauna",
+      "titulo": "Governo monta grupo com pesquisadores das universidades para a Lista Vermelha da fauna da Paraíba",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-20-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "transversal"
+      ],
+      "resumo": "A Secretaria do Meio Ambiente criou um grupo de trabalho para avaliar o risco de extinção de aves, mamíferos, répteis, anfíbios, peixes e invertebrados do estado. A coordenação científica reúne pesquisadores da UFPB, da UFCG e da UEPB, com o método internacional da IUCN.",
+      "porQueImporta": "É ciência produzida nas universidades paraibanas servindo diretamente a uma política de outra secretaria."
+    },
+    {
+      "id": "rubin-lsst-fapesp-acordo",
+      "titulo": "São Paulo garante a 60 pesquisadores acesso ao maior mapeamento do céu já feito",
+      "fonte": "Agência FAPESP",
+      "url": "https://agencia.fapesp.br/acordo-amplia-presenca-paulista-no-maior-levantamento-astronomico-da-historia/59407",
+      "dataPub": "2026-10-16",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "astronomia",
+        "internacional"
+      ],
+      "resumo": "A FAPESP fechou acordo com o consórcio americano que opera o Observatório Vera Rubin, no Chile, para que 60 pesquisadores paulistas tenham acesso completo aos dados do levantamento LSST, que vai fotografar o céu do hemisfério Sul por dez anos. O acordo custa US$ 2,3 milhões por ano.",
+      "porQueImporta": "Mostra como uma fundação estadual pode comprar acesso a grandes dados de astronomia para seus cientistas."
+    },
+    {
+      "id": "abdc-icms-data-centers",
+      "titulo": "Setor de data centers pede aos estados corte de 90% no ICMS de equipamentos",
+      "fonte": "Tele.Síntese",
+      "url": "https://telesintese.com.br/abdc-pede-corte-de-90-no-icms-e-cobra-regulamentacao-do-redata/",
+      "dataPub": "2026-10-19",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "inovacao"
+      ],
+      "resumo": "A associação das empresas de data center quer que os estados, pelo Confaz, reduzam em 90% o ICMS sobre equipamentos de informática sem fabricação nacional. O pedido depende da regulamentação do Redata, o regime federal de incentivo ao setor, ainda pendente.",
+      "porQueImporta": "A decisão passa pelas secretarias de Fazenda e pesa na disputa entre estados por novos data centers."
+    },
+    {
+      "id": "cientistas-influentes-brasil-2026",
+      "titulo": "Brasil chega a 1.510 cientistas na lista dos mais influentes do mundo",
+      "fonte": "O Tempo",
+      "url": "https://www.otempo.com.br/ciencia/2026/10/19/brasil-amplia-para-1-510-o-numero-de-cientistas-entre-os-mais-influentes-do-mundo",
+      "dataPub": "2026-10-19",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "A lista anual da Universidade Stanford com a editora Elsevier, que mede o impacto das publicações, inclui 1.510 cientistas que trabalham no Brasil, 3,4% a mais que no ano passado. O país está em 24º lugar e a USP lidera, com 282 nomes.",
+      "porQueImporta": "Serve de referência para acompanhar o peso das universidades paraibanas na pesquisa nacional."
+    },
+    {
+      "id": "anpd-meta-contas",
+      "titulo": "ANPD cobra da Meta explicações sobre bloqueio de contas no Facebook e Instagram",
+      "fonte": "Agência Gov",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/anpd-pede-explicacoes-a-meta-sobre-denuncias-de-violacoes-na-suspensao-de-contas-e-remocao-de-conteudos",
+      "dataPub": "2026-10-19",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "seguranca"
+      ],
+      "resumo": "A Autoridade Nacional de Proteção de Dados (ANPD) notificou a Meta para explicar denúncias de violação de direitos na suspensão de contas e na remoção de conteúdos. A empresa terá de detalhar como toma essas decisões.",
+      "porQueImporta": "Reforça que decisões sobre usuários de plataformas digitais precisam ser explicáveis, cuidado que vale também para o governo."
+    },
+    {
+      "id": "quantinuum-helios-erro-logico",
+      "titulo": "Computador quântico reduz em dez vezes a taxa de erros em teste recorde",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/19/quantinuum-reports-a-10x-reduction-in-logical-error-rate-on-helios/",
+      "dataPub": "2026-10-19",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "A empresa Quantinuum informou que sua máquina Helios chegou a cerca de cinco erros por milhão de operações em qubits protegidos por correção de erros, resultado dez vezes melhor que o recorde anterior. Para isso, cada qubit protegido usa até 37 qubits físicos.",
+      "porQueImporta": "A correção de erros é o passo que falta para os computadores quânticos resolverem problemas reais, e a formação de pessoal precisa acompanhar isso."
+    },
+    {
+      "id": "erc-corte-orcamento-europa",
+      "titulo": "Presidente do Conselho Europeu de Pesquisa critica proposta de corte de quase 10% na ciência",
+      "fonte": "University World News",
+      "url": "https://www.universityworldnews.com/post.php?story=20261017131535400",
+      "dataPub": "2026-10-17",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "resumo": "Maria Leptin, presidente do Conselho Europeu de Pesquisa (ERC), disse que a proposta de reduzir em quase 10% a verba de pesquisa e inovação no orçamento europeu de 2028 a 2034 é uma escolha errada. A decisão final ainda depende dos países da União Europeia.",
+      "porQueImporta": "O tamanho do próximo programa europeu define quanto dinheiro haverá nas chamadas abertas a parceiros brasileiros."
+    },
+    {
+      "id": "govtech-ia-seguranca-publica",
+      "titulo": "Uso diário de IA por equipes de emergência nos EUA triplica em um ano",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/public-safety/survey-ai-use-surges-among-first-responders",
+      "dataPub": "2026-10-16",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "transversal",
+        "seguranca"
+      ],
+      "resumo": "Pesquisa com 1.035 profissionais de segurança pública e emergência mostra que 32% usam IA todos os dias no trabalho, contra 11% em 2025. Redes de comunicação instáveis e falta de orçamento seguem como os maiores problemas.",
+      "porQueImporta": "Indica o ritmo de adoção de IA na segurança pública e as condições básicas, como conectividade, que precisam vir antes."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-20",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-20-10-2026-portal.pdf/view",
+    "paginasLidas": "edição inteira (36 páginas)",
+    "leituraParcial": false,
+    "obs": "Lida a edição inteira de hoje (20/10); não há edições de 18 e 19/10 publicadas.",
+    "atos": [
+      {
+        "tipo": "Edital nº 32/2026 SECTIES/FAPESQ",
+        "orgao": "FAPESQ e SECTIES",
+        "pagina": "12",
+        "relevancia": "alta",
+        "programas": [
+          "inovacao",
+          "transversal",
+          "fomento"
+        ],
+        "resumo": "FAPESQ aprova projeto de apoio a cuidadores em saúde mental com a Embrapii da UEPB. É o 7º resultado final do edital de fluxo contínuo, com orçamento de R$ 105 mil."
+      },
+      {
+        "tipo": "Planilha FAPESQ nº 2622/2026",
+        "orgao": "FAPESQ",
+        "pagina": "24",
+        "relevancia": "media",
+        "programas": [
+          "ensino",
+          "fomento",
+          "astronomia"
+        ],
+        "resumo": "FAPESQ formaliza 38 bolsas e projetos, somando R$ 1,1 milhão. Inclui bolsas de permanência no ensino superior, Casa do Estudante e pesquisas do radiotelescópio Bingo."
+      },
+      {
+        "tipo": "Edital nº 44/2026 EMPAER/FAPESQ",
+        "orgao": "FAPESQ e EMPAER",
+        "pagina": "12",
+        "relevancia": "media",
+        "programas": [
+          "fomento",
+          "transversal"
+        ],
+        "resumo": "FAPESQ e EMPAER publicam resultado das vagas para pesquisadores do campo. Os selecionados atuam em estações experimentais do programa de desenvolvimento rural sustentável."
+      },
+      {
+        "tipo": "Portaria nº 050/2026/SEMAS",
+        "orgao": "Secretaria do Meio Ambiente",
+        "pagina": "4 e 5",
+        "relevancia": "radar",
+        "programas": [
+          "transversal"
+        ],
+        "resumo": "Meio Ambiente cria grupo com UFPB, UFCG e UEPB para a Lista Vermelha da fauna. O grupo avalia o risco de extinção das espécies do estado pelo método da IUCN."
+      },
+      {
+        "tipo": "Portaria nº 012/2026 ESPEP",
+        "orgao": "Escola de Serviço Público (ESPEP)",
+        "pagina": "5",
+        "relevancia": "radar",
+        "programas": [
+          "transversal",
+          "seguranca"
+        ],
+        "resumo": "ESPEP cria comissão para elaborar seu Plano de Dados Abertos. Segue a política estadual de dados abertos, com apoio da CODATA e da área de transformação digital."
+      },
+      {
+        "tipo": "Contrato nº 00154/2026 UEPB",
+        "orgao": "UEPB",
+        "pagina": "24",
+        "relevancia": "radar",
+        "programas": [
+          "inclusao",
+          "ensino"
+        ],
+        "resumo": "UEPB contrata internet por satélite para o campus de Catolé do Rocha. O serviço atende a uma unidade do Centro de Ciências Humanas e Agrárias."
+      }
+    ]
+  },
+  "secom": [
+    {
+      "titulo": "PB propõe reconstrução da memória histórica de povos",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_diversidade/pb-propoe-reconstrucao-da-memoria-historica-de-povos",
+      "dataPub": "2026-05-25",
+      "programas": [
+        "patrimonio"
+      ],
+      "resumo": "Museu da Diáspora Africana, dos Povos Indígenas e das Comunidades Tradicionais, no Casarão do Capitão-Mor, tem cerca de R$ 1 milhão da SECTIES e apoio da FAPESQ."
+    },
+    {
+      "titulo": "FAPESQ convida pesquisadores a divulgar artigos no quadro Da Ciência Para Você",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/fapesq-convida-pesquisadores-que-queiram-divulgar-seus-artigos-cientificos-da-ciencia-para-voce",
+      "dataPub": "2026-02-10",
+      "programas": [
+        "astronomia",
+        "ensino"
+      ],
+      "resumo": "Pesquisadores e estudantes de pós-graduação e iniciação científica podem enviar resumos em linguagem simples para divulgação pela FAPESQ."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-radar-empresas-subvencao",
+      "titulo": "Cadastro estadual de empresas prontas para pedir subvenção federal",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "descricao": "Mapear, com os núcleos de inovação das universidades e institutos federais, as empresas paraibanas com projetos maduros para chamadas da Finep. Assim o estado chega às próximas rodadas com candidaturas preparadas antes de o edital abrir.",
+      "base": [
+        "finep-regional-450-milhoes",
+        "ifpb-finep-dialogo"
+      ]
+    },
+    {
+      "id": "p-adesao-biodivfuture-sbep",
+      "titulo": "Adesão da FAPESQ às chamadas europeias de biodiversidade e economia do mar",
+      "tipo": "Edital",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "descricao": "Avaliar com o Confap a entrada da FAPESQ nas chamadas BiodivFuture e SBEP, como já foi feito na Water4All. Caatinga e litoral são temas em que grupos paraibanos têm pesquisa reconhecida.",
+      "base": [
+        "horizon-europe-confap-chamadas",
+        "doe-semas-lista-vermelha-fauna"
+      ]
+    },
+    {
+      "id": "p-ciclo-saberes-paraiba",
+      "titulo": "Projetos paraibanos no Ciclo de Saberes com mestres da cultura popular",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "patrimonio",
+        "ensino"
+      ],
+      "descricao": "Articular a UFPB, a UFCG e os institutos federais para enviar propostas até 8/11 com mestres de cultura popular e tradicional da Paraíba. O estado pode ajudar indicando mestres e escolas públicas parceiras.",
+      "base": [
+        "ciclo-saberes-mec-minc"
+      ]
+    },
+    {
+      "id": "p-saude-mental-inovacao",
+      "titulo": "Chamada de inovação em saúde mental com a Secretaria da Saúde",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "inovacao"
+      ],
+      "descricao": "Usar o modelo do edital FAPESQ e Embrapii para uma chamada com desafios definidos pela rede estadual de saúde mental. As soluções aprovadas seriam testadas em serviços públicos antes de ganhar escala.",
+      "base": [
+        "doe-edital-32-ampara-saude-mental"
+      ]
+    },
+    {
+      "id": "p-troca-solucoes-ia",
+      "titulo": "Rede de troca de soluções de IA entre órgãos estaduais",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Criar um catálogo de ferramentas de IA já usadas por controladorias, fazendas e secretarias de outros estados, com contatos para cooperação técnica. Cada pasta da Paraíba poderia adotar o que já funciona sem começar do zero.",
+      "base": [
+        "cge-pb-ia-controle",
+        "govtech-ia-seguranca-publica"
+      ]
+    },
+    {
+      "id": "p-dados-astronomia-acesso",
+      "titulo": "Acesso de astrônomos paraibanos a grandes levantamentos do céu",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "astronomia",
+        "internacional"
+      ],
+      "descricao": "Estudar parceria com outras fundações estaduais para que pesquisadores da Paraíba tenham acesso a dados de observatórios como o Vera Rubin. Os dados também alimentariam atividades de divulgação científica no Sertão.",
+      "base": [
+        "rubin-lsst-fapesp-acordo",
+        "doe-fapesq-bolsas-permanencia"
+      ]
+    },
+    {
+      "id": "p-metas-formacao-quantica",
+      "titulo": "Painel público de metas de formação em tecnologias quânticas",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "descricao": "Publicar metas por etapa para formação de pessoas em computação quântica, como fazem programas públicos na Europa. Isso dá transparência ao investimento e ajuda universidades a planejar cursos.",
+      "base": [
+        "alice-bob-proqcima-franca",
+        "quantinuum-helios-erro-logico"
+      ]
+    }
+  ]
+}

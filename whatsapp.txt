@@ -1,21 +1,21 @@
-*RADAR SECTIES*  |  Edição nº 9
-_Segunda-feira, 19 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 10
+_Terça-feira, 20 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*PARAÍBA DIVULGA PROJETOS APROVADOS DE MULHERES E MENINAS NA CIÊNCIA*
-A FAPESQ e a SECTIES publicaram o resultado final do edital de apoio ao protagonismo de mulheres e meninas na ciência.
+*FINEP AMPLIA PARA R$ 450 MILHÕES APOIO À INOVAÇÃO NO NORTE E NORDESTE*
+O governo federal ampliou de R$ 300 milhões para R$ 450 milhões o edital da Finep para empresas inovadoras do Norte, Nordeste e Centro-Oeste.
 
 *PRIORIDADES DO DIA*
-1. Edital de R$ 1,56 milhão apoia empresas juniores das universidades públicas; inscrições até 4/11 — _WSCOM_
-2. FAPESQ entra na chamada europeia Water4All sobre gestão da água; pré-propostas até 10/11 — _FAPESQ_
-3. MEC prepara 200 novas unidades da rede federal e espera ofertas de prédios das prefeituras — _Diário do Grande ABC_
+1. Finep amplia para R$ 450 milhões edital de inovação; Paraíba tem 1 projeto na primeira lista do Nordeste — _Consecti_
+2. Três chamadas europeias via Confap recebem pré-propostas até 10 e 16 de novembro — _Agência FAPESP_
+3. MEC e MinC abrem edital de R$ 5 milhões para levar mestres da cultura popular às universidades — _Chico Terra_
 
 *DIÁRIO OFICIAL DO ESTADO*
-• Edital nº 35/2026 SECTIES/FAPESQ — FAPESQ e SECTIES publicam o resultado final do edital para mulheres e meninas na ciência.
-• Decreto nº 48.956 — Governo remaneja R$ 465 mil da SECTIES de parques tecnológicos para eventos de ciência e inovação.
+• Edital nº 32/2026 SECTIES/FAPESQ — FAPESQ aprova projeto de apoio a cuidadores em saúde mental com a Embrapii da UEPB.
+• Planilha FAPESQ nº 2622/2026 — FAPESQ formaliza 38 bolsas e projetos, somando R$ 1,1 milhão.
 
 *FÍSICA DE BOLSO*
-_Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto._
+_No espaço, ninguém ouve sua explosão. Os filmes de ficção científica deveriam ser bem mais silenciosos._
 
-Leia a edição completa, com 18 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 19 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
