@@ -1,0 +1,535 @@
+{
+  "data": "2026-10-21",
+  "numero": 11,
+  "geradoEm": "2026-10-21T08:05:00-03:00",
+  "destaque": "Estado garante R$ 465 mil para levar 30 startups ao Web Summit Lisboa",
+  "leitura": "O Diário Oficial de hoje traz R$ 465 mil da SECTIES à FAPESQ para levar 30 startups paraibanas ao Web Summit Lisboa. Há também recursos para a Expotec, para ações contra a desinformação e para um fórum sobre a Caatinga. Um ranking nacional põe a Paraíba em 5º lugar em investimento público em pesquisa.",
+  "itens": [
+    {
+      "id": "doe-web-summit-lisboa-465-mil",
+      "titulo": "Estado repassa R$ 465 mil para levar 30 startups paraibanas ao Web Summit Lisboa",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-21-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-21",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "inovacao",
+        "internacional",
+        "fomento"
+      ],
+      "resumo": "A SECTIES transferiu R$ 465 mil à FAPESQ para custear a ida de 30 startups da Paraíba ao Web Summit Lisboa, uma das maiores feiras de tecnologia do mundo, em novembro. As empresas foram escolhidas pelo Edital Simplificado nº 9/2026, e o recurso vale até 31 de dezembro.",
+      "porQueImporta": "Garante o dinheiro para a maior missão de startups paraibanas ao exterior e abre espaço para contratos e investidores."
+    },
+    {
+      "id": "pb-5-lugar-investimento-pesquisa",
+      "titulo": "Paraíba é o 5º estado do país que mais investe dinheiro público em pesquisa, diz ranking",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/paraiba-e-um-dos-cinco-estados-que-mais-investem-em-pesquisa-e-desenvolvimento-aponta-ranking-da-clp",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "resumo": "No Ranking de Competitividade dos Estados 2026, do Centro de Liderança Pública (CLP), a Paraíba aparece em 5º no Brasil e 3º no Nordeste em investimento público em pesquisa e desenvolvimento, com 0,17% do PIB estadual. O índice usa dados de 2024 do MCTI e do IBGE e mede o gasto em relação ao tamanho da economia, não o valor total.",
+      "porQueImporta": "É um dado oficial e comparável para mostrar o esforço do estado em ciência, mas não mede sozinho os resultados dos projetos."
+    },
+    {
+      "id": "doe-expotec-600-mil",
+      "titulo": "FAPESQ recebe R$ 600 mil para a Expotec 2026, que começa dia 28 em João Pessoa",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-21-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-21",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inovacao",
+        "ensino"
+      ],
+      "resumo": "Portaria publicada hoje repassa R$ 600 mil da SECTIES à FAPESQ para executar a Expotec 2026 e uma ação de formação e planejamento da secretaria. A feira de tecnologia e cultura digital acontece de 28 a 30 de outubro, em João Pessoa.",
+      "porQueImporta": "Assegura a estrutura do principal evento de tecnologia do estado a uma semana da abertura."
+    },
+    {
+      "id": "snct-joao-pessoa-dezembro",
+      "titulo": "Semana Nacional de Ciência e Tecnologia em João Pessoa terá colóquio de tecnologias quânticas",
+      "fonte": "Paladino da Verdade",
+      "url": "https://paladinodaverdade.com.br/2026/10/20/23a-edicao-da-semana-nacional-de-ciencia-e-tecnologia-acontece-em-dezembro-no-espaco-cultural/",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "astronomia",
+        "ciquanta",
+        "ensino"
+      ],
+      "resumo": "A 23ª Semana Nacional de Ciência e Tecnologia de João Pessoa será de 2 a 4 de dezembro, no Espaço Cultural, com entrada gratuita e o tema mulheres na ciência. A programação, organizada pela prefeitura com o IFPB, inclui a 4ª edição de um colóquio sobre tecnologias quânticas, mostra de robótica e competição de games.",
+      "porQueImporta": "É uma vitrine aberta ao público para divulgar a computação quântica e a ciência feita na Paraíba."
+    },
+    {
+      "id": "detran-pbsign-codata",
+      "titulo": "Detran-PB passa a aceitar assinatura digital pelo gov.br em transferência de veículos",
+      "fonte": "CODATA",
+      "url": "https://codata.pb.gov.br/noticias/desenvolvido-pela-codata-detran-pb-lan%C3%A7a-sistema-para-agilizar-processos-de-ve%C3%ADculos-por-meio-digital/",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "resumo": "O Detran-PB lançou o PBSign, sistema feito pela CODATA (empresa de tecnologia do governo) para assinar documentos, procurações e autorizações de transferência de veículos com a conta gov.br. O cidadão resolve tudo pela internet, sem ir ao órgão nem ao cartório, e cada operação fica registrada em blockchain, um registro digital que não pode ser alterado.",
+      "porQueImporta": "Mostra uma solução estadual pronta que pode ser levada a outros serviços que ainda exigem firma reconhecida."
+    },
+    {
+      "id": "ufpb-integridade-cgu",
+      "titulo": "UFPB tira nota máxima em avaliação de integridade da Controladoria-Geral da União",
+      "fonte": "UFPB",
+      "url": "https://www.ufpb.br/noticias/ufpb-alcanca-nota-maxima-no-nivel-3-integrado-pleno-da-avaliacao-de-integridade-publica-da-cgu/",
+      "dataPub": "2026-10-20",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "A UFPB alcançou o nível mais alto de maturidade em integridade pública na avaliação da Controladoria-Geral da União (CGU). Para isso, cumpriu 19 ações apontadas em um diagnóstico e as incluiu no seu Plano de Integridade.",
+      "porQueImporta": "Fortalece a imagem da universidade como parceira confiável em projetos com o estado."
+    },
+    {
+      "id": "ifpb-ouvidoria-ia-cgu",
+      "titulo": "Ouvidoria do IFPB testa ferramenta da CGU que usa IA para avaliar serviços públicos",
+      "fonte": "IFPB",
+      "url": "https://www.ifpb.edu.br/noticias/2026/10/ouvidoria-do-ifpb-participa-de-projeto-piloto-da-cgu-para-aprimorar-servicos-publicos",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "O IFPB entrou no piloto Avalia, da CGU, que lê as reclamações e sugestões enviadas pelo sistema Fala.BR para medir a qualidade dos serviços. A inteligência artificial identifica sozinha a qual serviço cada manifestação se refere; a primeira fase gerou 212 relatórios.",
+      "porQueImporta": "É um exemplo de uso de IA em ouvidoria que pode inspirar a Ouvidoria-Geral do estado."
+    },
+    {
+      "id": "tcu-ciberseguranca-orgaos-federais",
+      "titulo": "TCU: nenhum órgão federal avaliado cumpre todas as medidas básicas de segurança digital",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/sem-profissionais-de-ti-governo-descumpre-medidas-basicas-e-fica-fragil-na-seguranca-cibernetica/",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "resumo": "Relatório do Tribunal de Contas da União mostra que nenhuma das 239 organizações avaliadas adotou as 56 medidas básicas contra os ataques mais comuns; só 12 passaram de 90%. A falta e a troca frequente de profissionais de TI aparecem como causa principal, e o governo federal vai exigir provas documentais a partir de 2027.",
+      "porQueImporta": "Os mesmos problemas atingem os estados; o relatório serve de roteiro para checar os órgãos paraibanos antes de uma auditoria."
+    },
+    {
+      "id": "ms-rede-utis-inteligentes",
+      "titulo": "Ministério da Saúde assina contrato da rede de UTIs com IA, que começa com 60 leitos",
+      "fonte": "Ministério da Saúde",
+      "url": "https://www.gov.br/saude/pt-br/assuntos/noticias-ms/2026/outubro/ministerio-da-saude-assina-contrato-de-gestao-do-hospital-inteligente-e-da-rede-de-utis-conectadas",
+      "dataPub": "2026-10-20",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "resumo": "O ministério assinou o contrato de gestão do Hospital Inteligente, previsto para São Paulo em 2029, e da Rede de UTIs conectadas, que começa com 60 leitos em seis hospitais das cinco regiões e deve chegar a 280 leitos em 14 hospitais. O projeto é financiado com US$ 320 milhões do banco do BRICS (Novo Banco de Desenvolvimento).",
+      "porQueImporta": "A expansão para mais hospitais abre chance de a Paraíba disputar leitos conectados para a rede estadual."
+    },
+    {
+      "id": "escolas-conectadas-31-mil",
+      "titulo": "Programa federal já conectou 31 mil escolas e promete chegar a 40 mil até dezembro",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/escolas-conectadas-media-de-conexao-e-de-mais-de-100-escolas-por-dia-util/",
+      "dataPub": "2026-10-16",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "inclusao",
+        "transversal"
+      ],
+      "resumo": "O programa de internet nas escolas instala mais de 100 escolas por dia útil, com fibra ou satélite, e cobre também as salas de aula. Outras 5.700 escolas entram em 2027, e cada uma terá 24 meses de suporte.",
+      "porQueImporta": "Ajuda a planejar, com a Educação, quais escolas paraibanas ainda estão fora da lista."
+    },
+    {
+      "id": "rj-politica-ia-servico-publico",
+      "titulo": "Rio de Janeiro cria política de IA para o serviço público, com fórum e comitê de ética",
+      "fonte": "Site da Baixada",
+      "url": "https://sitedabaixada.com.br/geral/2026/10/15/governo-do-estado-cria-politica-de-inteligencia-artificial-para-agilizar-servicos-publicos-a-populacao",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "O governo fluminense publicou em 14 de outubro a Política de Inteligência Artificial Fluminense, com regras para uso responsável da IA na administração. Ela cria um fórum com governo, universidades e empresas e um comitê de ética, sob coordenação das secretarias de Ciência e de Transformação Digital.",
+      "porQueImporta": "É um modelo recente de outro estado para a visão da SECTIES sobre IA na gestão pública."
+    },
+    {
+      "id": "museu-nacional-10-milhoes",
+      "titulo": "MEC libera mais R$ 10 milhões para a reconstrução do Museu Nacional, no Rio",
+      "fonte": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-10/museu-da-ufrj-ira-receber-mais-r-10-milhoes-para-restauracao",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "patrimonio",
+        "ensino"
+      ],
+      "resumo": "O Museu Nacional, da UFRJ, destruído por incêndio em 2018, vai receber mais R$ 10 milhões do Ministério da Educação. Desde 2023, o ministério já aplicou cerca de R$ 68 milhões na obra.",
+      "porQueImporta": "Mostra que o MEC financia patrimônio ligado a universidades, caminho possível para acervos da UEPB e da UFPB."
+    },
+    {
+      "id": "quantica-brasil-acessar-comprar-construir",
+      "titulo": "Artigo cita o CIQUANTA como exemplo do caminho de compra na estratégia quântica do Brasil",
+      "fonte": "TI Inside",
+      "url": "https://tiinside.com.br/20/10/2026/computacao-quantica-no-brasil-acessar-comprar-ou-construir/",
+      "dataPub": "2026-10-20",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "Em artigo de opinião, um especialista em criptografia defende que o Brasil combine três caminhos: usar máquinas quânticas pela nuvem, comprar equipamentos e desenvolver os próprios chips. O texto cita o CIQUANTA, em João Pessoa, com computadores de 20 e 100 qubits e formação de pessoal.",
+      "porQueImporta": "Reforça o CIQUANTA no debate nacional sobre autonomia em computação quântica."
+    },
+    {
+      "id": "toshiba-rede-segura-quantica",
+      "titulo": "Toshiba lança plataforma para proteger redes contra futuros ataques de computadores quânticos",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/21/toshiba-launches-quantum-safe-network-platform/",
+      "dataPub": "2026-10-21",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "A plataforma junta criptografia resistente a computadores quânticos, distribuição quântica de chaves e geração de números aleatórios, sem exigir troca da rede existente. Segundo a empresa, um único centro pode atender centenas de locais remotos, o que reduz custos.",
+      "porQueImporta": "Mostra que já há produtos para proteger dados de governo contra a ameaça quântica, tema que interessa ao CIQUANTA e à CODATA."
+    },
+    {
+      "id": "ibm-rutgers-100-qubits",
+      "titulo": "IBM e Rutgers controlam 100 qubits em tempo real, passo rumo a computadores quânticos confiáveis",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/21/rutgers-and-ibm-demonstrate-real-time-control-across-100-qubits/",
+      "dataPub": "2026-10-21",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta"
+      ],
+      "resumo": "Em estudo na revista Nature Physics, a equipe usou um processador IBM de 156 qubits para medir e corrigir até 100 qubits enquanto o cálculo seguia em andamento. É um avanço na direção de máquinas que corrigem os próprios erros, que ainda não existem.",
+      "porQueImporta": "Indica o patamar técnico que os pesquisadores do CIQUANTA vão acompanhar com as máquinas de 20 e 100 qubits."
+    },
+    {
+      "id": "eua-banem-deepseek-governo",
+      "titulo": "EUA mandam retirar a IA chinesa DeepSeek de todos os sistemas do governo federal",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/eua-mandam-banir-o-uso-da-ia-deepseek-dos-sistemas-de-ti-governamentais/",
+      "dataPub": "2026-10-19",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "internacional"
+      ],
+      "resumo": "O Departamento de Segurança Interna determinou que as agências civis removam produtos da DeepSeek e serviços que usam o modelo, e proibiu novas compras. A alegação é o risco de dados sensíveis chegarem ao governo chinês.",
+      "porQueImporta": "Reforça a necessidade de regras estaduais sobre quais ferramentas de IA podem tratar dados do governo."
+    },
+    {
+      "id": "china-recorde-pesquisa",
+      "titulo": "China bate recorde e investe mais de US$ 583 bilhões em pesquisa e desenvolvimento",
+      "fonte": "Interesting Engineering",
+      "url": "https://interestingengineering.com/innovation/china-invests-record-billion-in-science",
+      "dataPub": "2026-10-17",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "internacional",
+        "ensino"
+      ],
+      "resumo": "Dados oficiais chineses mostram alta de 8,2% no gasto com pesquisa em 2025, chegando a 2,8% do PIB; a pesquisa básica cresceu 13,3% e a feita nas universidades, 11%. O contraste é com os cortes propostos para a ciência nos Estados Unidos.",
+      "porQueImporta": "Ajuda a dimensionar o peso do principal parceiro do CIQUANTA e as oportunidades de cooperação com a China."
+    },
+    {
+      "id": "ue-raise-ia-ciencia",
+      "titulo": "União Europeia lança iniciativa para reunir computação e dados para IA na ciência",
+      "fonte": "Portugal Global",
+      "url": "https://portugalglobal.pt/en/news/2026/outubro/european-commission-launches-initiative-to-boost-ai-in-science/",
+      "dataPub": "2026-10-16",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "resumo": "A Comissão Europeia lançou em Dublin a RAISE, iniciativa que reúne apoio de empresas e fundações, como capacidade de computação e bases de dados, para pesquisa com IA. A iniciativa segue aberta a novas organizações.",
+      "porQueImporta": "Abre uma porta para pesquisadores paraibanos que já participam de chamadas europeias via FAPESQ."
+    },
+    {
+      "id": "universidades-desigualdade-ia",
+      "titulo": "Estudo em sete países mostra universidades em ritmos muito diferentes no uso de IA",
+      "fonte": "University World News",
+      "url": "https://www.universityworldnews.com/post.php?story=20261015140656705",
+      "dataPub": "2026-10-17",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ensino",
+        "secretaria2030"
+      ],
+      "resumo": "Pesquisa em países como Colômbia, Gana, Índia e Espanha aponta diferenças grandes em regras, preparo de professores e estrutura para usar IA no ensino superior. Os autores sugerem mudar as avaliações para mostrar o raciocínio do aluno e criar capacidade local, sem depender só de ferramentas importadas.",
+      "porQueImporta": "Traz recomendações práticas para orientar a UEPB e as demais universidades da Paraíba sobre IA."
+    },
+    {
+      "id": "cg-350-vagas-cursos-tecnologia",
+      "titulo": "Campina Grande abre 350 vagas gratuitas em cursos de IA, Python e segurança da informação",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/cursos/campina-grande-oferece-350-vagas-gratuitas-para-cursos-na-area-de-tecnologia/",
+      "dataPub": "2026-10-06",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao",
+        "ensino"
+      ],
+      "resumo": "A Secretaria de Ciência e Tecnologia de Campina Grande oferece 14 cursos gratuitos, de letramento digital a inteligência artificial, banco de dados e Power BI. As inscrições são feitas no site da secretaria municipal ou na sede, no Centro.",
+      "porQueImporta": "Mostra a demanda por formação digital básica no interior e possíveis parceiros municipais."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-21",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-21-10-2026-portal.pdf/view",
+    "paginasLidas": "edição inteira (36 páginas)",
+    "leituraParcial": false,
+    "obs": "Lida a edição inteira de hoje (21/10); a SECTIES publicou quatro repasses à FAPESQ.",
+    "atos": [
+      {
+        "tipo": "Portaria Conjunta nº 416",
+        "orgao": "SEPLAG, SECTIES e FAPESQ",
+        "pagina": "6 e 23",
+        "relevancia": "alta",
+        "programas": [
+          "inovacao",
+          "internacional",
+          "fomento"
+        ],
+        "resumo": "SECTIES repassa R$ 465 mil à FAPESQ para levar 30 startups ao Web Summit Lisboa. As empresas foram escolhidas pelo Edital Simplificado nº 9/2026, e o recurso vale até 31/12."
+      },
+      {
+        "tipo": "Portaria Conjunta nº 419",
+        "orgao": "SEPLAG, SECTIES e FAPESQ",
+        "pagina": "7 e 23",
+        "relevancia": "alta",
+        "programas": [
+          "inovacao",
+          "ensino"
+        ],
+        "resumo": "SECTIES repassa R$ 600 mil à FAPESQ para a Expotec 2026. O valor cobre também uma ação de formação e planejamento da secretaria para 2027 a 2030."
+      },
+      {
+        "tipo": "Portaria Conjunta nº 417",
+        "orgao": "SEPLAG, SECTIES e FAPESQ",
+        "pagina": "7 e 23",
+        "relevancia": "media",
+        "programas": [
+          "transversal",
+          "secretaria2030"
+        ],
+        "resumo": "SECTIES repassa R$ 481 mil à FAPESQ para parceria com o Alumia contra a desinformação. O objetivo é criar ferramentas e estratégias para enfrentar notícias falsas no estado."
+      },
+      {
+        "tipo": "Portaria Conjunta nº 418",
+        "orgao": "SEPLAG, SECTIES e FAPESQ",
+        "pagina": "7 e 24",
+        "relevancia": "media",
+        "programas": [
+          "fomento",
+          "transversal"
+        ],
+        "resumo": "SECTIES repassa R$ 102,6 mil à FAPESQ para um fórum sobre fomento regional e Caatinga. O debate reúne universidades, governo, empresas e sociedade sobre desigualdade regional e o bioma."
+      },
+      {
+        "tipo": "Portaria FAPESQ nº 19/2026",
+        "orgao": "FAPESQ",
+        "pagina": "8",
+        "relevancia": "radar",
+        "programas": [
+          "transversal",
+          "fomento"
+        ],
+        "resumo": "FAPESQ forma equipe de geólogos para mapear o subsolo no Sertão e no Cariri. O projeto, com a SEIRH e o Serviço Geológico do Brasil, cobre Monteiro, Patos, Piancó e Sumé e começa em 1º/11."
+      },
+      {
+        "tipo": "Portarias de Planos de Dados Abertos",
+        "orgao": "ARPB, DER, FUNDAC e PBPrev",
+        "pagina": "8 a 11",
+        "relevancia": "radar",
+        "programas": [
+          "transversal",
+          "seguranca"
+        ],
+        "resumo": "Quatro órgãos estaduais criam comissões para seus Planos de Dados Abertos. Seguem a política estadual de dados abertos, com apoio da CODATA e da área de transformação digital."
+      },
+      {
+        "tipo": "Edital nº 45/2026 EMPAER/FAPESQ",
+        "orgao": "FAPESQ e EMPAER",
+        "pagina": "12",
+        "relevancia": "radar",
+        "programas": [
+          "fomento",
+          "transversal"
+        ],
+        "resumo": "FAPESQ e EMPAER publicam o resultado final das vagas restantes para pesquisador extensionista. Os selecionados atuam no programa de desenvolvimento rural sustentável."
+      }
+    ]
+  },
+  "secom": [
+    {
+      "titulo": "Paraíba é um dos cinco estados que mais investem em Pesquisa e Desenvolvimento, aponta ranking da CLP",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/paraiba-e-um-dos-cinco-estados-que-mais-investem-em-pesquisa-e-desenvolvimento-aponta-ranking-da-clp",
+      "dataPub": "2026-10-16",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "resumo": "Estado fica em 5º no país e 3º no Nordeste em investimento público em pesquisa, com 0,17% do PIB."
+    },
+    {
+      "titulo": "Governo da Paraíba investe R$ 1,56 milhão para projetos de Empresas Juniores de universidades públicas do estado",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/governo-da-paraiba-investe-r-1-56-milhao-para-projetos-de-empresas-juniores-de-universidades-publicas-do-estado",
+      "dataPub": "2026-10-15",
+      "programas": [
+        "inovacao",
+        "ensino",
+        "fomento"
+      ],
+      "resumo": "Edital nº 53/2026 vai apoiar 20 empresas juniores com bolsas por 12 meses; inscrições até 4 de novembro."
+    },
+    {
+      "titulo": "Fapesq abre participação de pesquisadores da Paraíba em chamada internacional para pesquisas sobre gestão sustentável da água",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/fapesq-abre-participacao-de-pesquisadores-da-paraiba-em-chamada-internacional-para-pesquisas-sobre-gestao-sustentavel-da-agua",
+      "dataPub": "2026-10-14",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "resumo": "Chamada Water4All 2026 apoia com até 20 mil euros doutores da Paraíba; pré-propostas até 10 de novembro."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-metas-minimas-seguranca-digital",
+      "titulo": "Metas mínimas de segurança digital para todos os órgãos estaduais",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "descricao": "Adotar uma lista curta de medidas básicas contra ataques, com autoavaliação anual e comprovação por documentos, a exemplo do que o TCU cobra dos órgãos federais. Os resultados seriam acompanhados com a CODATA e publicados por órgão.",
+      "base": [
+        "tcu-ciberseguranca-orgaos-federais",
+        "eua-banem-deepseek-governo"
+      ]
+    },
+    {
+      "id": "p-leitos-conectados-rede-estadual",
+      "titulo": "Candidatura de hospitais paraibanos à rede nacional de UTIs com IA",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "descricao": "Apoiar a Secretaria da Saúde a preparar a candidatura de hospitais da rede estadual na ampliação da rede de UTIs conectadas para 14 hospitais. Universidades locais poderiam acompanhar os resultados e formar equipes.",
+      "base": [
+        "ms-rede-utis-inteligentes"
+      ]
+    },
+    {
+      "id": "p-assinatura-gov-br-mais-servicos",
+      "titulo": "Assinatura pelo gov.br em outros serviços que ainda exigem cartório",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "descricao": "Levar a solução de assinatura digital já usada no Detran a outros órgãos que pedem firma reconhecida ou ida presencial. Um levantamento rápido apontaria os serviços com maior procura.",
+      "base": [
+        "detran-pbsign-codata"
+      ]
+    },
+    {
+      "id": "p-comite-etica-ia-estado",
+      "titulo": "Fórum aberto e comitê de ética para o uso de IA no governo estadual",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Criar um espaço permanente com universidades, empresas e sociedade para discutir o uso de IA nos órgãos, com um comitê de ética para casos sensíveis. Outros estados já adotaram esse desenho.",
+      "base": [
+        "rj-politica-ia-servico-publico",
+        "universidades-desigualdade-ia"
+      ]
+    },
+    {
+      "id": "p-oficinas-checagem-expotec",
+      "titulo": "Oficinas de checagem de informação para professores na Expotec",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ensino",
+        "transversal"
+      ],
+      "descricao": "Aproveitar a Expotec, que recebeu recursos no Diário Oficial de hoje, para oferecer oficinas curtas sobre como identificar notícias falsas e conteúdos feitos por IA. O material poderia ser levado depois às escolas estaduais.",
+      "base": [
+        "doe-expotec-600-mil"
+      ]
+    },
+    {
+      "id": "p-coloquio-quantico-snct",
+      "titulo": "Participação do estado no colóquio de tecnologias quânticas da Semana de Ciência",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "astronomia"
+      ],
+      "descricao": "Propor à organização da Semana Nacional de Ciência e Tecnologia de João Pessoa uma sessão aberta sobre o CIQUANTA e a formação de pessoal em computação quântica. A ideia é atrair estudantes do ensino médio e superior para a área.",
+      "base": [
+        "snct-joao-pessoa-dezembro",
+        "ibm-rutgers-100-qubits"
+      ]
+    },
+    {
+      "id": "p-ponte-raise-europa",
+      "titulo": "Ponte de pesquisadores paraibanos com a iniciativa europeia de IA para a ciência",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "internacional",
+        "fomento"
+      ],
+      "descricao": "Mapear grupos das universidades paraibanas que usam IA em pesquisa e apresentá-los às redes europeias, aproveitando os canais que a FAPESQ já usa em chamadas internacionais. O foco seria acesso a computação e bases de dados.",
+      "base": [
+        "ue-raise-ia-ciencia",
+        "china-recorde-pesquisa"
+      ]
+    }
+  ]
+}

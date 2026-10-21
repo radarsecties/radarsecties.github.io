@@ -1,21 +1,21 @@
-*RADAR SECTIES*  |  Edição nº 10
-_Terça-feira, 20 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 11
+_Quarta-feira, 21 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*FINEP AMPLIA PARA R$ 450 MILHÕES APOIO À INOVAÇÃO NO NORTE E NORDESTE*
-O governo federal ampliou de R$ 300 milhões para R$ 450 milhões o edital da Finep para empresas inovadoras do Norte, Nordeste e Centro-Oeste.
+*ESTADO GARANTE R$ 465 MIL PARA LEVAR 30 STARTUPS AO WEB SUMMIT LISBOA*
+O Diário Oficial de hoje traz R$ 465 mil da SECTIES à FAPESQ para levar 30 startups paraibanas ao Web Summit Lisboa.
 
 *PRIORIDADES DO DIA*
-1. Finep amplia para R$ 450 milhões edital de inovação; Paraíba tem 1 projeto na primeira lista do Nordeste — _Consecti_
-2. Três chamadas europeias via Confap recebem pré-propostas até 10 e 16 de novembro — _Agência FAPESP_
-3. MEC e MinC abrem edital de R$ 5 milhões para levar mestres da cultura popular às universidades — _Chico Terra_
+1. Estado repassa R$ 465 mil para levar 30 startups paraibanas ao Web Summit Lisboa — _Diário Oficial da Paraíba_
+2. Paraíba é o 5º estado do país que mais investe dinheiro público em pesquisa, diz ranking — _FAPESQ_
+3. TCU: nenhum órgão federal avaliado cumpre todas as medidas básicas de segurança digital — _Convergência Digital_
 
 *DIÁRIO OFICIAL DO ESTADO*
-• Edital nº 32/2026 SECTIES/FAPESQ — FAPESQ aprova projeto de apoio a cuidadores em saúde mental com a Embrapii da UEPB.
-• Planilha FAPESQ nº 2622/2026 — FAPESQ formaliza 38 bolsas e projetos, somando R$ 1,1 milhão.
+• Portaria Conjunta nº 416 — SECTIES repassa R$ 465 mil à FAPESQ para levar 30 startups ao Web Summit Lisboa.
+• Portaria Conjunta nº 419 — SECTIES repassa R$ 600 mil à FAPESQ para a Expotec 2026.
 
 *FÍSICA DE BOLSO*
-_No espaço, ninguém ouve sua explosão. Os filmes de ficção científica deveriam ser bem mais silenciosos._
+_Você é, literalmente, poeira de estrelas. O cálcio dos seus ossos e o ferro do seu sangue foram fabricados dentro de estrelas._
 
-Leia a edição completa, com 19 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 20 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
