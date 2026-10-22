@@ -1,21 +1,21 @@
-*RADAR SECTIES*  |  Edição nº 11
-_Quarta-feira, 21 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 12
+_Quinta-feira, 22 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*ESTADO GARANTE R$ 465 MIL PARA LEVAR 30 STARTUPS AO WEB SUMMIT LISBOA*
-O Diário Oficial de hoje traz R$ 465 mil da SECTIES à FAPESQ para levar 30 startups paraibanas ao Web Summit Lisboa.
+*SBPC FAZ 1ª REUNIÃO REGIONAL NA PARAÍBA; INSCRIÇÕES ATÉ SEXTA (23)*
+Campina Grande recebe nos dias 27 e 28 a primeira reunião regional da SBPC na Paraíba, com inscrições gratuitas até sexta-feira (23).
 
 *PRIORIDADES DO DIA*
-1. Estado repassa R$ 465 mil para levar 30 startups paraibanas ao Web Summit Lisboa — _Diário Oficial da Paraíba_
-2. Paraíba é o 5º estado do país que mais investe dinheiro público em pesquisa, diz ranking — _FAPESQ_
-3. TCU: nenhum órgão federal avaliado cumpre todas as medidas básicas de segurança digital — _Convergência Digital_
+1. SBPC faz primeira reunião regional na Paraíba; inscrições gratuitas até sexta (23) — _UFPB_
+2. Paraíba teve só um projeto aprovado na chamada regional de inovação da Finep — _Paraíba Total_
+3. Ministério passa a exigir que seus dados em nuvem fiquem e sejam processados no Brasil — _Convergência Digital_
 
 *DIÁRIO OFICIAL DO ESTADO*
-• Portaria Conjunta nº 416 — SECTIES repassa R$ 465 mil à FAPESQ para levar 30 startups ao Web Summit Lisboa.
-• Portaria Conjunta nº 419 — SECTIES repassa R$ 600 mil à FAPESQ para a Expotec 2026.
+• Editais nº 44 e 45/2026 EMPAER/FAPESQ — FAPESQ e Empaer convocam cadastro de reserva de pesquisadores para o desenvolvimento rural.
+• Homologação Pregão nº 90005/2026 SEE — Educação contrata reforma da Biblioteca Pública Augusto dos Anjos por R$ 430 mil.
 
 *FÍSICA DE BOLSO*
-_Você é, literalmente, poeira de estrelas. O cálcio dos seus ossos e o ferro do seu sangue foram fabricados dentro de estrelas._
+_A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce._
 
-Leia a edição completa, com 20 notícias, Diário Oficial e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 20 notícias e Diário Oficial:
 https://radarsecties.github.io/
