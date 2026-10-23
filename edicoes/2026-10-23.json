@@ -1,0 +1,402 @@
+{
+  "data": "2026-10-23",
+  "numero": 13,
+  "geradoEm": "2026-10-23T08:40:00-03:00",
+  "destaque": "Importação para pesquisa pública fica livre de impostos",
+  "leitura": "O Ministério da Fazenda garantiu que importações para pesquisa de universidades públicas, inclusive pelas fundações de apoio, não paguem impostos. Falhas graves no PHP levaram órgãos públicos a tirar sistemas do ar, e a Expotec terá bootcamp de computação quântica para mulheres no dia 30. O Diário Oficial de hoje não saiu até 8h30.",
+  "itens": [
+    {
+      "id": "fazenda-imunidade-importacao-pesquisa",
+      "titulo": "Importações para pesquisa em universidades públicas ficam livres de impostos",
+      "fonte": "Reforma Tributária",
+      "url": "https://www.reformatributaria.com/governo/ministerio-da-fazenda-reconhece-imunidade-tributaria-a-importacoes-de-fundacoes-de-apoio-a-universidades-publicas/",
+      "dataPub": "2026-10-21",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "O Ministério da Fazenda confirmou que equipamentos, programas e insumos importados para projetos de universidades públicas, institutos federais e instituições públicas de pesquisa não pagam impostos, mesmo quando a compra é feita pela fundação de apoio. Para isso, a importação precisa sair em nome da instituição, o dinheiro deve ficar em conta exclusiva e o bem entra direto no patrimônio dela.",
+      "porQueImporta": "Pode baratear a compra de equipamentos de laboratório da UEPB e de projetos apoiados pela FAPESQ, hoje limitada por uma cota do CNPq."
+    },
+    {
+      "id": "php-falha-orgaos-publicos",
+      "titulo": "Falhas graves no PHP fazem Anatel e tribunais tirarem sistemas do ar",
+      "fonte": "Canaltech",
+      "url": "https://canaltech.com.br/seguranca/falhas-no-php-chegam-ao-brasil-e-fazem-anatel-e-tribunais-suspenderem-sistemas/",
+      "dataPub": "2026-10-21",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "resumo": "Duas falhas críticas no PHP, linguagem usada por muitos sites e sistemas, levaram Anatel e tribunais federais a suspender o acesso externo ao SEI e a outros sistemas por precaução. O centro federal de resposta a incidentes recomenda instalar já as versões corrigidas ou tirar do ar o que estiver vulnerável.",
+      "porQueImporta": "Sites e sistemas do governo estadual e das universidades que usam PHP precisam ser conferidos e atualizados com urgência."
+    },
+    {
+      "id": "expotec-bootcamp-mulheres-quantica",
+      "titulo": "Expotec terá bootcamp gratuito para mulheres sobre computação quântica no dia 30",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/tecnologia/mulheres-na-tecnologia-bootcamp-woman-da-expotec-2026-quer-transformar-ideias-em-solucoes-de-mercado-na-paraiba/",
+      "dataPub": "2026-10-22",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "inovacao",
+        "inclusao"
+      ],
+      "resumo": "Na sexta, 30 de outubro, estudantes, pesquisadoras e professoras vão trabalhar em equipes por oito horas para criar soluções em hardware, software inteligente e computação quântica, com apresentação para uma banca. A atividade faz parte da 12ª Expotec, de 28 a 30/10 no Centro de Convenções de João Pessoa, organizada com o Governo da Paraíba por meio da SECTIES; a inscrição é gratuita.",
+      "porQueImporta": "Aproxima mulheres da área quântica e ajuda a formar a equipe que o estado vai precisar com a chegada do CIQUANTA."
+    },
+    {
+      "id": "uepb-cai-ruf-2026",
+      "titulo": "UEPB cai 14 posições no Ranking Universitário Folha; UFCG fica em 40º",
+      "fonte": "Jornal da Paraíba",
+      "url": "https://jornaldaparaiba.com.br/educacao/ufpb-lidera-ranking-de-universidades-da-paraiba-ufcg-e-uepb-tem-queda-na-classificacao",
+      "dataPub": "2026-10-22",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "No ranking de 2026, a UEPB passou do 90º para o 104º lugar e perdeu pontos. A UFCG ganhou pontos, mas caiu uma posição, para 40º, enquanto a UFPB subiu para 24º.",
+      "porQueImporta": "A UEPB é a universidade do estado: entender onde ela perdeu pontos ajuda a orientar apoio em pesquisa, ensino e internacionalização."
+    },
+    {
+      "id": "google-competicao-quantica-ia",
+      "titulo": "Google abre competição de US$ 150 mil para tornar programas quânticos mais leves",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/23/google-launches-150000-ai-competition-to-reduce-quantum-computing-demands/",
+      "dataPub": "2026-10-23",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "fomento"
+      ],
+      "resumo": "A disputa, na plataforma Kaggle, desafia participantes a reduzir o tamanho de circuitos quânticos usados em química, energia de fusão e otimização, com ajuda de IA se quiserem. Há prêmios intermediários, com o primeiro marco em 20 de novembro, e o primeiro lugar leva US$ 50 mil.",
+      "porQueImporta": "É uma chance de estudantes e grupos paraibanos ganharem experiência prática e visibilidade em programação quântica."
+    },
+    {
+      "id": "madri-computador-quantico-universidade",
+      "titulo": "Madri terá seu primeiro computador quântico, instalado em universidade",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/23/madrid-first-quantum-computer-telefonica-iqm/",
+      "dataPub": "2026-10-23",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "ensino",
+        "internacional"
+      ],
+      "resumo": "A Telefónica e a empresa IQM vão instalar até o fim de 2026 um computador quântico na Universidade Politécnica de Madri, com investimento do governo regional. A máquina será usada em pesquisa e ensino por universidades, hospitais, centros de pesquisa e startups.",
+      "porQueImporta": "Mostra um modelo de uso compartilhado entre universidade, saúde e empresas que serve de referência para o CIQUANTA."
+    },
+    {
+      "id": "vietna-primeiro-computador-quantico",
+      "titulo": "Vietnã terá primeiro computador quântico com programa de formação de professores",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/23/quandela-and-quanova-partner-to-deploy-vietnams-first-quantum-computer/",
+      "dataPub": "2026-10-23",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "internacional",
+        "ensino"
+      ],
+      "resumo": "A francesa Quandela e a vietnamita Quanova anunciaram um computador quântico que ficará em uma universidade em Quy Nhon. O pacote inclui formação de professores, novos currículos, centro de visitação, residência para inovadores e maratonas de programação.",
+      "porQueImporta": "Reforça que a máquina sozinha não basta: formação e cursos fazem parte do pacote, como prevê o CIQUANTA."
+    },
+    {
+      "id": "fust-conecta-cras",
+      "titulo": "Governo federal vai levar internet rápida a 2.018 CRAS com R$ 43 milhões",
+      "fonte": "Tele.Síntese",
+      "url": "https://telesintese.com.br/governo-seleciona-projetos-para-conectar-2-018-cras-com-r-43-milhoes-do-fust/",
+      "dataPub": "2026-10-22",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "inclusao",
+        "transversal"
+      ],
+      "resumo": "O Ministério das Comunicações divulgou o resultado provisório do edital que vai instalar fibra de 300 Mbps e wi-fi em centros de assistência social de todo o país. Metade deve estar ligada até abril de 2027 e o restante até outubro de 2027.",
+      "porQueImporta": "Unidades da assistência social na Paraíba podem ganhar conexão e, com ela, oferecer serviços digitais e cursos à população."
+    },
+    {
+      "id": "smart-sampa-vazamento-cameras",
+      "titulo": "Falha expôs 58 mil câmeras de vigilância de São Paulo por quase um ano",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/mercado/mp-de-sao-paulo-diz-que-vazamento-de-dados-do-smart-samp-e-gravissimo/",
+      "dataPub": "2026-10-21",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "resumo": "O Ministério Público de São Paulo vai investigar o acesso indevido ao Smart Sampa, sistema de videomonitoramento da cidade, que ficou aberto por pelo menos 11 meses. Os sistemas não tinham verificação em duas etapas para entrar.",
+      "porQueImporta": "Serve de alerta para os sistemas de câmeras e dados da segurança pública e de outros órgãos do estado."
+    },
+    {
+      "id": "cfm-regra-ia-medicina",
+      "titulo": "Nova regra dos médicos obriga hospitais a controlar o uso de IA",
+      "fonte": "Saúde Digital News",
+      "url": "https://saudedigitalnews.com.br/22/10/2026/com-66-dos-medicos-ja-usando-ia-nova-regra-do-cfm-aumenta-pressao-por-governanca-em-hospitais-e-clinicas/",
+      "dataPub": "2026-10-22",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "resumo": "A resolução do Conselho Federal de Medicina, em vigor desde agosto, mantém com o médico a decisão final e exige que hospitais e clínicas avaliem riscos, auditem e acompanhem as ferramentas de IA depois da compra. Segundo a reportagem, 66% dos médicos já usam IA.",
+      "porQueImporta": "Os hospitais da rede estadual precisarão de regras e equipes para usar IA com segurança."
+    },
+    {
+      "id": "ia-requalificacao-servidores-eua",
+      "titulo": "Dois estados americanos mapeiam como a IA vai mudar os cargos públicos",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/artificial-intelligence/1-1m-grant-targets-ai-skills-gap-in-state-government",
+      "dataPub": "2026-10-22",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "Com US$ 1,1 milhão de fundos filantrópicos, Oklahoma e Virgínia vão comparar seus cargos com as novas habilidades exigidas pela IA, em 18 meses. O projeto vai liberar uma ferramenta gratuita e guias para outros governos repetirem a análise.",
+      "porQueImporta": "Oferece um caminho aberto para planejar a capacitação de servidores, tema central do SecretarIA 2030."
+    },
+    {
+      "id": "uepb-semex-novembro",
+      "titulo": "UEPB faz 9º Seminário de Extensão de 4 a 6 de novembro, sem suspender aulas",
+      "fonte": "UEPB",
+      "url": "https://uepb.edu.br/pro-reitoria-de-graduacao-comunica-sobre-manutencao-de-aulas-durante-periodo-de-realizacao-do-9o-semex/",
+      "dataPub": "2026-10-22",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "O seminário reúne os projetos de extensão da universidade, que levam o conhecimento para fora da sala de aula. As aulas seguem normalmente, e professores foram orientados a evitar provas que choquem com as apresentações dos alunos.",
+      "porQueImporta": "É uma vitrine dos projetos da UEPB com a comunidade, inclusive na saúde e na educação."
+    },
+    {
+      "id": "qualifica-joao-pessoa-77-mil",
+      "titulo": "Cursos online gratuitos da Prefeitura de João Pessoa passam de 77 mil inscrições",
+      "fonte": "Veja de Tudo",
+      "url": "https://vejadetudo.com.br/2026/10/22/qualifica-joao-pessoa-soma-mais-de-77-mil-inscricoes-e-amplia-acesso-a-capacitacao-profissional-gratuita/",
+      "dataPub": "2026-10-22",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao",
+        "inovacao"
+      ],
+      "resumo": "Criado em 2021, o programa da Secretaria de Ciência e Tecnologia da capital já teve mais de 46 mil concluintes. Em 2026 são 85 cursos, em áreas como tecnologia, saúde, gestão e inovação, abertos a partir dos 12 anos.",
+      "porQueImporta": "Mostra a procura por formação digital gratuita e abre espaço para parcerias com o estado."
+    },
+    {
+      "id": "ufpb-log-premios-sbpo",
+      "titulo": "Grupo da UFPB ganha três prêmios nacionais, um deles por agendar cirurgias",
+      "fonte": "UFPB",
+      "url": "https://www.ufpb.br/noticias/grupo-de-pesquisa-da-ufpb-conquista-tres-premiacoes-em-evento-nacional/",
+      "dataPub": "2026-10-21",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "ensino",
+        "transversal"
+      ],
+      "resumo": "O grupo de otimização e logística da UFPB foi premiado no principal simpósio de pesquisa operacional do país. Um dos trabalhos premiados propõe um método para organizar a agenda diária de cirurgias eletivas.",
+      "porQueImporta": "Há competência local em otimização que pode ajudar a rede estadual de saúde a reduzir filas."
+    },
+    {
+      "id": "enade-2027-professor-elaborador",
+      "titulo": "Inep seleciona até 14/12 professores para elaborar questões do Enade 2027",
+      "fonte": "Agência Brasil",
+      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-10/aberta-inscricao-para-selecao-de-professor-elaborador-do-enade-2027",
+      "dataPub": "2026-10-22",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "Podem se inscrever professores do ensino superior que deram aula nos últimos dois anos em 17 áreas, como enfermagem, farmácia, agronomia e turismo. Os selecionados fazem uma capacitação a distância em 2027.",
+      "porQueImporta": "Professores da UEPB e de outras instituições paraibanas podem participar da avaliação nacional dos cursos."
+    },
+    {
+      "id": "australia-supercomputadores-ia",
+      "titulo": "IA faz pedidos de supercomputador na Austrália chegarem a três vezes a capacidade",
+      "fonte": "Times Higher Education",
+      "url": "https://www.timeshighereducation.com/news/access-supercomputers-under-more-pressure-ai-boosts-demand",
+      "dataPub": "2026-10-22",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ensino",
+        "internacional"
+      ],
+      "resumo": "Os pesquisadores australianos pediram mais de 2,2 bilhões de horas de processamento, quase o triplo do que os dois supercomputadores nacionais oferecem. Especialistas defendem que pesquisas de saúde e defesa fiquem em máquinas públicas.",
+      "porQueImporta": "Indica que a demanda por computação de alto desempenho para pesquisa vai crescer também aqui."
+    },
+    {
+      "id": "reino-unido-retorno-pesquisa-publica",
+      "titulo": "Parlamento britânico quer que o governo lucre mais com pesquisa que financia",
+      "fonte": "Times Higher Education",
+      "url": "https://www.timeshighereducation.com/news/taxpayers-being-short-changed-when-research-commercialised",
+      "dataPub": "2026-10-21",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "inovacao",
+        "fomento"
+      ],
+      "resumo": "Uma comissão do Parlamento recomenda que a agência de pesquisa do Reino Unido passe a ter participação nas empresas que apoia e cuide melhor das patentes. O relatório diz que pequenas empresas acham os laboratórios públicos lentos e caros de usar.",
+      "porQueImporta": "Ajuda a pensar regras para que o apoio estadual à inovação traga retorno e seja mais fácil para as empresas."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-22",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+    "paginasLidas": "edição de hoje indisponível",
+    "leituraParcial": true,
+    "obs": "A edição de 23/10 do Diário Oficial não estava disponível para leitura até 8h30; a de 22/10 já foi analisada na edição anterior.",
+    "atos": []
+  },
+  "secom": [
+    {
+      "titulo": "Paraíba promove eventos gratuitos sobre ciência, tecnologia e desenvolvimento social",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/paraiba-promove-eventos-gratuitos-sobre-ciencia-tecnologia-e-desenvolvimento-social",
+      "dataPub": "",
+      "programas": [
+        "astronomia",
+        "inovacao"
+      ],
+      "resumo": "Agenda de eventos gratuitos divulgada pela SECTIES."
+    },
+    {
+      "titulo": "Edital nº 32/2026 SECTIES/FAPESQ com unidades Embrapii divulga 8º resultado de propostas aceitas",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/editais-2026/15_10_26-edital-no-32-2026-2013-secties-fapesq-pb-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii-8o-resultado-das-propostas-homologadas.pdf/@@download/file/15_10_26%20Edital%20n%C2%BA%2032-2026%20%E2%80%93%20SECTIES-FAPESQ-PB%20-%20Edital%20de%20Fluxo%20Cont%C3%ADnuo%20FAPESQ%20e%20Unidades%20EMBRAPII%20(8%C2%BA%20Resultado%20das%20propostas%20homologadas).pdf",
+      "dataPub": "2026-10-15",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "resumo": "Nova lista de propostas aceitas no edital de fluxo contínuo que apoia empresas em projetos com centros Embrapii."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-resposta-rapida-falhas",
+      "titulo": "Protocolo de resposta rápida a falhas críticas nos sistemas do estado",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "descricao": "Criar uma rotina para que, a cada alerta nacional grave, todos os órgãos e universidades estaduais confiram e corrijam seus sistemas em até 48 horas. O caso do PHP mostra que a velocidade da correção define o tamanho do estrago.",
+      "base": [
+        "php-falha-orgaos-publicos",
+        "smart-sampa-vazamento-cameras"
+      ]
+    },
+    {
+      "id": "p-guia-imunidade-importacao",
+      "titulo": "Guia para a UEPB e a FAPESQ usarem a isenção nas importações de pesquisa",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "descricao": "Preparar um passo a passo e consultar a Receita Federal sobre como as instituições estaduais podem aplicar a nova regra. A economia em impostos pode virar mais equipamentos nos laboratórios.",
+      "base": [
+        "fazenda-imunidade-importacao-pesquisa"
+      ]
+    },
+    {
+      "id": "p-plano-indicadores-uepb",
+      "titulo": "Plano de melhoria dos indicadores da UEPB nos rankings",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ensino",
+        "fomento"
+      ],
+      "descricao": "Analisar com a universidade os quesitos em que ela perdeu pontos e ligar editais estaduais a metas de pesquisa, publicação e internacionalização. Os resultados seriam acompanhados a cada ano.",
+      "base": [
+        "uepb-cai-ruf-2026"
+      ]
+    },
+    {
+      "id": "p-desafio-quantico-estudantes",
+      "titulo": "Desafio paraibano de programação quântica para estudantes",
+      "tipo": "Edital",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "ensino",
+        "fomento"
+      ],
+      "descricao": "Apoiar equipes de universidades e institutos federais da Paraíba a disputar competições internacionais como a do Google, com mentoria e premiação local. A Expotec pode servir de lançamento.",
+      "base": [
+        "google-competicao-quantica-ia",
+        "expotec-bootcamp-mulheres-quantica"
+      ]
+    },
+    {
+      "id": "p-mapa-cargos-ia",
+      "titulo": "Mapa de como a IA muda os cargos do governo estadual",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Com a Secretaria de Administração, comparar as funções dos servidores com as novas habilidades ligadas à IA e definir trilhas de capacitação. Ferramentas abertas usadas nos Estados Unidos podem ser adaptadas.",
+      "base": [
+        "ia-requalificacao-servidores-eua"
+      ]
+    },
+    {
+      "id": "p-governanca-ia-hospitais",
+      "titulo": "Comitê de uso seguro de IA nos hospitais estaduais",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "secretaria2030"
+      ],
+      "descricao": "Propor à Secretaria da Saúde um comitê que avalie, aprove e acompanhe as ferramentas de IA usadas na rede, seguindo a nova regra dos médicos. Grupos das universidades podem ajudar, como no agendamento de cirurgias.",
+      "base": [
+        "cfm-regra-ia-medicina",
+        "ufpb-log-premios-sbpo"
+      ]
+    },
+    {
+      "id": "p-acesso-compartilhado-quantico",
+      "titulo": "Programa de acesso de hospitais, startups e professores à computação quântica",
+      "tipo": "Programa",
+      "horizonte": "Longo prazo",
+      "programas": [
+        "ciquanta",
+        "ensino",
+        "inovacao"
+      ],
+      "descricao": "Definir regras para que universidades, hospitais e empresas paraibanas reservem tempo nas máquinas do CIQUANTA, junto com formação de professores. Madri e Vietnã seguem esse modelo.",
+      "base": [
+        "madri-computador-quantico-universidade",
+        "vietna-primeiro-computador-quantico"
+      ]
+    }
+  ]
+}

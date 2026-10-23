@@ -1,21 +1,18 @@
-*RADAR SECTIES*  |  Edição nº 12
-_Quinta-feira, 22 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 13
+_Sexta-feira, 23 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*SBPC FAZ 1ª REUNIÃO REGIONAL NA PARAÍBA; INSCRIÇÕES ATÉ SEXTA (23)*
-Campina Grande recebe nos dias 27 e 28 a primeira reunião regional da SBPC na Paraíba, com inscrições gratuitas até sexta-feira (23).
+*IMPORTAÇÃO PARA PESQUISA PÚBLICA FICA LIVRE DE IMPOSTOS*
+O Ministério da Fazenda garantiu que importações para pesquisa de universidades públicas, inclusive pelas fundações de apoio, não paguem impostos.
 
 *PRIORIDADES DO DIA*
-1. SBPC faz primeira reunião regional na Paraíba; inscrições gratuitas até sexta (23) — _UFPB_
-2. Paraíba teve só um projeto aprovado na chamada regional de inovação da Finep — _Paraíba Total_
-3. Ministério passa a exigir que seus dados em nuvem fiquem e sejam processados no Brasil — _Convergência Digital_
-
-*DIÁRIO OFICIAL DO ESTADO*
-• Editais nº 44 e 45/2026 EMPAER/FAPESQ — FAPESQ e Empaer convocam cadastro de reserva de pesquisadores para o desenvolvimento rural.
-• Homologação Pregão nº 90005/2026 SEE — Educação contrata reforma da Biblioteca Pública Augusto dos Anjos por R$ 430 mil.
+1. Importações para pesquisa em universidades públicas ficam livres de impostos — _Reforma Tributária_
+2. Falhas graves no PHP fazem Anatel e tribunais tirarem sistemas do ar — _Canaltech_
+3. Expotec terá bootcamp gratuito para mulheres sobre computação quântica no dia 30 — _Polêmica Paraíba_
+4. UEPB cai 14 posições no Ranking Universitário Folha; UFCG fica em 40º — _Jornal da Paraíba_
 
 *FÍSICA DE BOLSO*
-_A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce._
+_Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois._
 
-Leia a edição completa, com 20 notícias e Diário Oficial:
+Leia a edição completa, com 17 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
