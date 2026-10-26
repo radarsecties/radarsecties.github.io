@@ -1,0 +1,389 @@
+{
+  "data": "2026-10-26",
+  "numero": 14,
+  "geradoEm": "2026-10-26T08:32:00-03:00",
+  "destaque": "CIQUANTA: peças chegam em novembro e entrega parcial em dezembro",
+  "leitura": "As peças dos dois computadores quânticos do CIQUANTA chegam à Paraíba em novembro, e a entrega de parte do centro está prevista para o início de dezembro. A Expotec começa na quarta (28) em João Pessoa, com foco em tecnologias quânticas. O Diário Oficial de 23/10 e o de hoje não puderam ser lidos até 8h30.",
+  "itens": [
+    {
+      "id": "ciquanta-cronograma-dezembro",
+      "titulo": "CIQUANTA: peças dos computadores quânticos chegam em novembro",
+      "fonte": "Jornal da Paraíba",
+      "url": "https://jornaldaparaiba.com.br/tecnologia/computadores-quanticos-na-paraiba-entenda-a-tecnologia-citada-por-lula-em-debate-presidencial",
+      "dataPub": "2026-10-24",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "As peças restantes dos dois computadores quânticos do CIQUANTA, de 20 e 100 qubits, devem chegar à Paraíba em 17 de novembro, depois da liberação na alfândega a partir do dia 5. A montagem física recomeça em 20 de novembro e a previsão é entregar parte do centro, na Estação das Artes, no início de dezembro.",
+      "porQueImporta": "O novo calendário orienta a preparação das equipes das universidades que vão usar as máquinas primeiro."
+    },
+    {
+      "id": "expotec-comeca-quarta",
+      "titulo": "Expotec começa quarta (28) com foco em tecnologias quânticas",
+      "fonte": "Expotec",
+      "url": "https://www.expotec.org.br/2026/",
+      "dataPub": "2026-10",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "astronomia",
+        "inovacao"
+      ],
+      "resumo": "A 12ª Expotec vai de 28 a 30 de outubro no Centro de Convenções de João Pessoa, com entrada gratuita e o tema tecnologias quânticas e soberania tecnológica. O evento é realizado pela Associação Nacional para Inclusão Digital com a SECTIES e terá planetário itinerante, cinema sobre computação quântica, robótica e maratonas de programação.",
+      "porQueImporta": "É a principal vitrine do ano para apresentar o CIQUANTA e a Cidade da Astronomia ao público."
+    },
+    {
+      "id": "fapesq-embrapii-resultado-final",
+      "titulo": "FAPESQ divulga resultado final de nova rodada do edital com a Embrapii",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/editais-2026/19_10_26-edital-no-32-2026-2013-secties-fapesq-pb-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii-7o-resultado-final.pdf/@@download/file/19_10_26%20Edital%20n%C2%BA%2032-2026%20%E2%80%93%20SECTIES-FAPESQ-PB%20-%20Edital%20de%20Fluxo%20Cont%C3%ADnuo%20FAPESQ%20e%20Unidades%20EMBRAPII%20(7%C2%BA%20Resultado%20Final).pdf",
+      "dataPub": "2026-10-19",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inovacao",
+        "fomento"
+      ],
+      "resumo": "Saiu o resultado final da 7ª rodada do Edital nº 32/2026, que apoia em fluxo contínuo projetos de empresas com as unidades da Embrapii, rede que liga indústria e centros de pesquisa. O edital segue recebendo propostas ao longo do ano.",
+      "porQueImporta": "É uma porta permanente para empresas paraibanas fazerem inovação junto com laboratórios de pesquisa."
+    },
+    {
+      "id": "data-centers-nordeste-natal",
+      "titulo": "Data centers no Nordeste: setor paraibano discute energia e licenças",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/natal-reune-setor-de-data-centers-e-coloca-infraestrutura-digital-no-centro-da-agenda/",
+      "dataPub": "2026-10-23",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao",
+        "inovacao"
+      ],
+      "resumo": "Uma conferência em Natal reuniu na sexta (23) empresas de tecnologia, energia e meio ambiente para discutir a instalação de data centers, os grandes centros de computadores. A associação paraibana do setor participou, e os temas foram energia confiável, conexão rápida, licenciamento e financiamento.",
+      "porQueImporta": "Mostra o que a Paraíba precisa oferecer para atrair esses investimentos, que pesam em IA e em serviços digitais."
+    },
+    {
+      "id": "universidades-retomam-aulas-pos-eleicao",
+      "titulo": "UFCG e UEPB retomam atividades após o segundo turno",
+      "fonte": "PB Agora",
+      "url": "https://www.pbagora.com.br/noticia/educacao/ufpb-ufcg-e-uepb-alteram-calendario-de-aulas-e-expediente-por-causa-do-2o-turno-das-eleicoes/",
+      "dataPub": "2026-10",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "A UEPB volta ao funcionamento normal hoje (26) a partir das 13h, e a UFCG retoma as aulas na terça (27). Na UFPB, as aulas presenciais desta segunda foram trocadas por atividades supervisionadas, sem mudar o calendário.",
+      "porQueImporta": "Ajuda a planejar agendas com as universidades nesta semana."
+    },
+    {
+      "id": "fapesp-plataformas-digitais-abertas",
+      "titulo": "R$ 21 milhões para pesquisa em plataformas digitais abertas",
+      "fonte": "Agência FAPESP",
+      "url": "https://agencia.fapesp.br/nova-chamada-destinara-r-21-milhoes-a-pesquisas-sobre-plataformas-digitais-abertas/59469",
+      "dataPub": "2026-10-26",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "inovacao",
+        "secretaria2030"
+      ],
+      "resumo": "FAPESP, MCTI, Ministério das Comunicações e CGI.br, o comitê que coordena a internet no Brasil, lançaram chamada de R$ 21 milhões para pesquisas em plataformas baseadas em software livre e padrões abertos. O envio de propostas abre em 5 de novembro e vai até 22 de fevereiro de 2027.",
+      "porQueImporta": "Mostra um modelo de parceria entre fundação estadual e governo federal que a FAPESQ pode buscar para a Paraíba."
+    },
+    {
+      "id": "anpd-consulta-fiscalizacao-prazo-hoje",
+      "titulo": "Termina hoje consulta sobre novas regras de fiscalização da ANPD",
+      "fonte": "FCM Advogados",
+      "url": "https://fcm.law/en/regulamento-de-fiscalizacao-da-anpd/privacidade-protecao-de-dados/",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "seguranca"
+      ],
+      "resumo": "A Autoridade Nacional de Proteção de Dados (ANPD) recebe até hoje (26) sugestões para revisar suas regras de fiscalização e punição. A revisão inclui proteção de crianças na internet, deveres das plataformas e as novas funções da ANPD como agência reguladora.",
+      "porQueImporta": "As regras finais vão definir como a ANPD fiscaliza quem trata dados pessoais, inclusive em serviços digitais."
+    },
+    {
+      "id": "mppa-ataque-hacker",
+      "titulo": "Ataque hacker tira do ar sistemas do Ministério Público do Pará",
+      "fonte": "Diário do Pará",
+      "url": "https://diariodopara.com.br/para/ataque-hacker-derruba-sistemas-do-ministerio-publico-do-para-e-obriga-a-suspensao-do-expediente-presencial/",
+      "dataPub": "2026-10-21",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "transversal"
+      ],
+      "resumo": "Um ataque hacker paralisou os sistemas eletrônicos do Ministério Público do Pará e levou à suspensão do trabalho presencial na quinta (22). O órgão disse não ter identificado vazamento de dados, mas não informou prazo para normalizar os serviços.",
+      "porQueImporta": "Mais um caso que reforça a urgência de cópias de segurança e planos de continuidade nos órgãos públicos."
+    },
+    {
+      "id": "brisanet-satelite-celular",
+      "titulo": "Brisanet e outras operadoras vão levar internet por satélite ao celular",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/23/10/2026/operadoras-regionais-fecham-parceria-com-ast-spacemobile-para-d2d/",
+      "dataPub": "2026-10-23",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "inclusao",
+        "transversal"
+      ],
+      "resumo": "Brisanet, Unifique e iez! fecharam acordo com a AST SpaceMobile para conectar celulares comuns direto ao satélite, com voz e internet, sobretudo fora das cidades. Ainda não há data de lançamento, e o serviço contínuo no Brasil é esperado até o fim de 2027.",
+      "porQueImporta": "Pode ajudar a cobrir áreas rurais e estradas do interior paraibano onde hoje não há sinal."
+    },
+    {
+      "id": "sus-sistema-rastreamento-cancer",
+      "titulo": "Sistema digital organiza convocação para exames de câncer no SUS",
+      "fonte": "Agência FAPESP",
+      "url": "https://agencia.fapesp.br/boletim-detalha-criacao-de-sistema-digital-para-organizar-o-rastreamento-de-cancer-no-sus/59470",
+      "dataPub": "2026-10-26",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "fomento"
+      ],
+      "resumo": "Um sistema criado com apoio da FAPESP junta bases de dados nacionais e municipais e mostra às equipes de saúde quais mulheres devem fazer mamografia e preventivo, além de apontar atrasos. Ele já funciona em municípios do interior paulista e está sendo ampliado.",
+      "porQueImporta": "É um exemplo de pesquisa financiada pelo estado virando ferramenta prática para a Secretaria da Saúde."
+    },
+    {
+      "id": "usp-china-leitura-qubit",
+      "titulo": "Físicos da USP e de Pequim propõem jeito mais simples de ler qubits",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/26/qubits-own-electric-current-could-offer-a-simpler-readout-method/",
+      "dataPub": "2026-10-26",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta",
+        "internacional"
+      ],
+      "resumo": "Pesquisadores da USP de São Carlos e do Instituto de Tecnologia de Pequim propuseram ler o estado de um qubit pela corrente elétrica que ele mesmo gera, sem precisar de qubits auxiliares. Por enquanto a proposta é só teórica, testada em simulações.",
+      "porQueImporta": "Mostra que já há parceria científica Brasil–China em física quântica que pode dialogar com o CIQUANTA."
+    },
+    {
+      "id": "anatel-agentes-ia-sem-regras",
+      "titulo": "Anatel aponta falta de regras para robôs de IA que negociam com clientes",
+      "fonte": "Mix Vale",
+      "url": "https://www.mixvale.com.br/2026/10/21/relatorio-da-anatel-aponta-vacuo-em-regras-para-agentes-de-ia/",
+      "dataPub": "2026-10-21",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "secretaria2030",
+        "seguranca"
+      ],
+      "resumo": "Relatório da Anatel diz que robôs de IA das operadoras já negociam planos e mudam contratos sem regra clara sobre quem responde por erros. A IA foi o assunto principal do setor pelo terceiro trimestre seguido.",
+      "porQueImporta": "A mesma dúvida vale para robôs de atendimento em serviços públicos."
+    },
+    {
+      "id": "enem-2026-8-e-15-novembro",
+      "titulo": "Enem 2026 será nos domingos 8 e 15 de novembro",
+      "fonte": "Agência Gov",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/enem-2026-falta-um-mes-para-o-primeiro-dia-de-provas-1",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "As provas do Enem começam às 13h30, horário de Brasília, com portões fechando às 13h. No primeiro dia há redação, linguagens e ciências humanas; no segundo, ciências da natureza e matemática.",
+      "porQueImporta": "A nota do Enem é a principal porta de entrada nas universidades públicas da Paraíba."
+    },
+    {
+      "id": "china-18-tarefas-ia-empregos",
+      "titulo": "China cria 18 medidas para proteger empregos diante da IA",
+      "fonte": "Paraíba Business",
+      "url": "https://paraibabusiness.com.br/china-publica-18-tarefas-para-conter-perda-de-empregos-causada-por-ia-diz-xinhua/",
+      "dataPub": "2026-10-23",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "secretaria2030",
+        "internacional"
+      ],
+      "resumo": "O governo chinês publicou 18 tarefas para reduzir a perda de empregos causada pela IA, com monitoramento de riscos, avaliação antes de adotar a tecnologia e apoio à recolocação de trabalhadores. Também prevê requalificação e regras contra discriminação em contratações feitas por algoritmos.",
+      "porQueImporta": "Traz ideias práticas para que a IA no governo venha acompanhada de formação e transição das equipes."
+    },
+    {
+      "id": "coreia-rede-quantica-nacional",
+      "titulo": "Coreia do Sul vai ampliar rede de comunicação quântica a todo o país",
+      "fonte": "Digital Today",
+      "url": "https://www.digitaltoday.co.kr/en/view/117994/kt-to-expand-national-quantum-communication-infrastructure-with-nationwide-testbed",
+      "dataPub": "2026-10-22",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "A operadora KT, em projeto do ministério de ciência coreano, vai levar até 2028 sua rede de testes de criptografia quântica para outras regiões, com testes em bancos e hospitais. O plano também inclui ligações sem fio e por satélite.",
+      "porQueImporta": "É um modelo de rede pública de testes que pode inspirar o uso do CIQUANTA por empresas e órgãos."
+    },
+    {
+      "id": "apps-sem-criptografia-pos-quantica",
+      "titulo": "97% dos aplicativos ainda não têm proteção contra computador quântico",
+      "fonte": "NowSecure",
+      "url": "https://www.nowsecure.com/press-releases/97-of-mobile-apps-show-no-quantum-safe-encryption-nowsecure-analysis-of-more-than-136000-apps-finds/",
+      "dataPub": "2026-10-20",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "ciquanta"
+      ],
+      "resumo": "Análise de mais de 136 mil aplicativos de celular encontrou proteção pós-quântica, a que resiste a futuros computadores quânticos, em só 3% deles. A empresa recomenda planos de troca de pelo menos dois anos.",
+      "porQueImporta": "Os aplicativos de serviços do estado também precisarão dessa atualização."
+    },
+    {
+      "id": "washington-ia-governo-funcoes",
+      "titulo": "Washington propõe organizar governo por funções com ajuda da IA",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/artificial-intelligence/ai-can-radically-transform-government-one-state-cio-says",
+      "dataPub": "2026-10-23",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "O chefe de tecnologia do estado de Washington, nos EUA, defende usar IA para juntar serviços parecidos de órgãos diferentes, como emissão de licenças, e cortar sistemas repetidos. Ele sugere começar pequeno e crescer aos poucos, sem substituir servidores.",
+      "porQueImporta": "Conversa com a ideia de usar IA para integrar serviços entre as secretarias."
+    },
+    {
+      "id": "agentes-ia-pessoais-sites-governo",
+      "titulo": "Sites de governo devem aceitar robôs de IA agindo pelo cidadão?",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/blogs/lohrmann-on-cybersecurity/should-government-websites-block-personal-ai-agent-transactions",
+      "dataPub": "2026-10-25",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "seguranca",
+        "secretaria2030"
+      ],
+      "resumo": "Um especialista em segurança questiona se assistentes de IA pessoais são seguros para pagar taxas ou fazer pedidos em sites públicos. Ele pergunta se os governos já precisam de regras sobre isso.",
+      "porQueImporta": "Os portais do estado vão receber cada vez mais acessos feitos por robôs em nome das pessoas."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-22",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+    "paginasLidas": "edições novas indisponíveis",
+    "leituraParcial": true,
+    "obs": "As edições de 23/10 e de hoje do Diário Oficial não puderam ser lidas até 8h30 e ficam para a próxima edição do Radar.",
+    "atos": []
+  },
+  "secom": [
+    {
+      "titulo": "Edital nº 32/2026 SECTIES/FAPESQ (fluxo contínuo com unidades Embrapii): 7º resultado final",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/editais-2026/19_10_26-edital-no-32-2026-2013-secties-fapesq-pb-edital-de-fluxo-continuo-fapesq-e-unidades-embrapii-7o-resultado-final.pdf/@@download/file/19_10_26%20Edital%20n%C2%BA%2032-2026%20%E2%80%93%20SECTIES-FAPESQ-PB%20-%20Edital%20de%20Fluxo%20Cont%C3%ADnuo%20FAPESQ%20e%20Unidades%20EMBRAPII%20(7%C2%BA%20Resultado%20Final).pdf",
+      "dataPub": "2026-10-19",
+      "programas": [
+        "inovacao",
+        "fomento"
+      ],
+      "resumo": "Resultado final da sétima rodada do edital que apoia projetos de inovação de empresas com a Embrapii."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-cronograma-publico-ciquanta",
+      "titulo": "Calendário público da instalação do CIQUANTA",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "descricao": "Publicar uma página simples com as etapas da instalação, da alfândega à entrega, e o que cada universidade precisa preparar. Na Expotec, um ponto de atendimento pode explicar o calendário ao público.",
+      "base": [
+        "ciquanta-cronograma-dezembro",
+        "expotec-comeca-quarta"
+      ]
+    },
+    {
+      "id": "p-avaliacao-impacto-ia-equipes",
+      "titulo": "Avaliar o efeito nas equipes antes de adotar IA no governo",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Todo projeto de IA nos órgãos estaduais passaria a trazer uma análise de como muda o trabalho dos servidores e um plano de formação. A ideia segue o modelo de medidas de transição adotado pela China.",
+      "base": [
+        "china-18-tarefas-ia-empregos",
+        "washington-ia-governo-funcoes"
+      ]
+    },
+    {
+      "id": "p-chamada-software-livre",
+      "titulo": "Chamada FAPESQ para plataformas digitais abertas",
+      "tipo": "Edital",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "descricao": "Negociar com o comitê gestor da internet e o governo federal uma chamada paraibana para software livre e plataformas abertas usadas por cooperativas e serviços públicos. A chamada paulista de R$ 21 milhões serve de modelo.",
+      "base": [
+        "fapesp-plataformas-digitais-abertas"
+      ]
+    },
+    {
+      "id": "p-satelite-escolas-postos-rurais",
+      "titulo": "Piloto de internet por satélite em escolas e postos rurais",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "inclusao",
+        "transversal"
+      ],
+      "descricao": "Mapear com Educação e Saúde as escolas e postos sem sinal no interior e testar a conexão por satélite no celular quando o serviço chegar. O teste mediria custo e qualidade antes de ampliar.",
+      "base": [
+        "brisanet-satelite-celular",
+        "data-centers-nordeste-natal"
+      ]
+    },
+    {
+      "id": "p-convocacao-digital-exames",
+      "titulo": "Convocação digital para exames preventivos na rede estadual",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "fomento"
+      ],
+      "descricao": "Apoiar com a FAPESQ e a Secretaria da Saúde um sistema que cruze bases de dados e avise quem está com mamografia ou preventivo atrasado. O exemplo paulista mostra que pesquisa aplicada pode virar ferramenta do SUS.",
+      "base": [
+        "sus-sistema-rastreamento-cancer"
+      ]
+    },
+    {
+      "id": "p-regras-robos-ia-servicos",
+      "titulo": "Regras para robôs de IA que usam serviços públicos pelo cidadão",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "seguranca",
+        "secretaria2030"
+      ],
+      "descricao": "Definir quando um assistente de IA pode agir pela pessoa nos portais do estado, com confirmação humana em pagamentos e pedidos. Isso protege o cidadão e dá segurança aos órgãos.",
+      "base": [
+        "agentes-ia-pessoais-sites-governo",
+        "anatel-agentes-ia-sem-regras"
+      ]
+    }
+  ]
+}

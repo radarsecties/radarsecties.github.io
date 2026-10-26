@@ -1,18 +1,23 @@
-*RADAR SECTIES*  |  Edição nº 13
-_Sexta-feira, 23 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 14
+_Segunda-feira, 26 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*IMPORTAÇÃO PARA PESQUISA PÚBLICA FICA LIVRE DE IMPOSTOS*
-O Ministério da Fazenda garantiu que importações para pesquisa de universidades públicas, inclusive pelas fundações de apoio, não paguem impostos.
+*CIQUANTA: PEÇAS CHEGAM EM NOVEMBRO E ENTREGA PARCIAL EM DEZEMBRO*
+As peças dos dois computadores quânticos do CIQUANTA chegam à Paraíba em novembro, e a entrega de parte do centro está prevista para o início de dezembro.
 
 *PRIORIDADES DO DIA*
-1. Importações para pesquisa em universidades públicas ficam livres de impostos — _Reforma Tributária_
-2. Falhas graves no PHP fazem Anatel e tribunais tirarem sistemas do ar — _Canaltech_
-3. Expotec terá bootcamp gratuito para mulheres sobre computação quântica no dia 30 — _Polêmica Paraíba_
-4. UEPB cai 14 posições no Ranking Universitário Folha; UFCG fica em 40º — _Jornal da Paraíba_
+1. CIQUANTA: peças dos computadores quânticos chegam em novembro — _Jornal da Paraíba_
+2. Expotec começa quarta (28) com foco em tecnologias quânticas — _Expotec_
+3. R$ 21 milhões para pesquisa em plataformas digitais abertas — _Agência FAPESP_
+4. China cria 18 medidas para proteger empregos diante da IA — _Paraíba Business_
+
+*TAMBÉM NESTA EDIÇÃO*
+• Paraíba: FAPESQ divulga resultado final de nova rodada do edital com a Embrapii
+• Brasil: Termina hoje consulta sobre novas regras de fiscalização da ANPD
+• Mundo: Coreia do Sul vai ampliar rede de comunicação quântica a todo o país
 
 *FÍSICA DE BOLSO*
-_Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois._
+_Einstein ganhou o Nobel não pela relatividade, mas por explicar o efeito fotoelétrico, a base das placas solares._
 
-Leia a edição completa, com 17 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 18 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
