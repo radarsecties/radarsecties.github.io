@@ -1,23 +1,23 @@
-*RADAR SECTIES*  |  Edição nº 14
-_Segunda-feira, 26 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 15
+_Terça-feira, 27 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*CIQUANTA: PEÇAS CHEGAM EM NOVEMBRO E ENTREGA PARCIAL EM DEZEMBRO*
-As peças dos dois computadores quânticos do CIQUANTA chegam à Paraíba em novembro, e a entrega de parte do centro está prevista para o início de dezembro.
+*CAMINHÃO DE CURSOS DIGITAIS GRATUITOS CHEGA HOJE A CAMPINA GRANDE*
+O projeto Caminhos Digitais começa hoje (27) na UEPB, em Campina Grande, com mais de 10 cursos gratuitos de tecnologia e certificado.
 
 *PRIORIDADES DO DIA*
-1. CIQUANTA: peças dos computadores quânticos chegam em novembro — _Jornal da Paraíba_
-2. Expotec começa quarta (28) com foco em tecnologias quânticas — _Expotec_
-3. R$ 21 milhões para pesquisa em plataformas digitais abertas — _Agência FAPESP_
-4. China cria 18 medidas para proteger empregos diante da IA — _Paraíba Business_
+1. Caminhão de cursos digitais gratuitos começa hoje em Campina Grande — _UEPB_
+2. Expotec começa amanhã com tecnologias quânticas no centro do debate — _WSCOM_
+3. Tecnova terá R$ 588 milhões para pequenas empresas inovadoras via fundações estaduais — _Brasil Inovador_
+4. Goiás abre 500 vagas gratuitas para startups que vendem soluções ao governo — _Paraíba Total_
 
 *TAMBÉM NESTA EDIÇÃO*
-• Paraíba: FAPESQ divulga resultado final de nova rodada do edital com a Embrapii
-• Brasil: Termina hoje consulta sobre novas regras de fiscalização da ANPD
-• Mundo: Coreia do Sul vai ampliar rede de comunicação quântica a todo o país
+• Paraíba: Instituto Federal de Santa Catarina conhece o ecossistema de inovação da Paraíba
+• Brasil: IA da USP e da Suécia identifica infarto grave pelo eletrocardiograma
+• Mundo: Usar IA em línguas que não são o inglês pode custar até 5 vezes mais
 
 *FÍSICA DE BOLSO*
-_Einstein ganhou o Nobel não pela relatividade, mas por explicar o efeito fotoelétrico, a base das placas solares._
+_Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra._
 
-Leia a edição completa, com 18 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 17 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
