@@ -1,0 +1,446 @@
+{
+ "data": "2026-10-28",
+ "numero": 16,
+ "geradoEm": "2026-10-28T08:31:00-03:00",
+ "destaque": "Expotec abre hoje em JP com planetário e cinema sobre quântica",
+ "leitura": "A 12ª Expotec abre hoje (28) no Centro de Convenções de João Pessoa, com entrada gratuita, planetário e cinema sobre computação quântica, até sexta (30). Em Campina Grande, a reunião regional da SBPC termina hoje. As edições do Diário Oficial de 23/10 em diante não puderam ser lidas até 8h30.",
+ "itens": [
+  {
+   "id": "expotec-abre-hoje",
+   "titulo": "Expotec abre hoje em João Pessoa com planetário e cinema sobre computação quântica",
+   "fonte": "Portal Pop Notícias",
+   "url": "https://portalpopnoticias.com.br/2026/10/27/12a-expotec-vai-contar-com-sessoes-gratuitas-do-planetario-movel-e-do-cinema-da-secties",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "astronomia",
+    "ciquanta",
+    "inclusao"
+   ],
+   "resumo": "A 12ª Expotec vai de hoje (28) a sexta (30), das 9h às 17h, no Centro de Convenções de João Pessoa, com entrada gratuita e o tema tecnologias quânticas e soberania tecnológica. A SECTIES leva sessões gratuitas do Planetário Móvel, da Cidade da Astronomia, e de um cinema que explica de forma simples o que é computação quântica e o CIQUANTA.",
+   "porQueImporta": "É a maior vitrine do ano para mostrar ao público, sobretudo a estudantes, os dois projetos científicos do estado."
+  },
+  {
+   "id": "sbpc-regional-caatinga",
+   "titulo": "Reunião regional da SBPC em Campina Grande debate a Caatinga até hoje",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br/evento-reune-pesquisadores-docentes-estudantes-e-representantes-de-instituicoes-publicas-e-privadas-em-campina-grande/",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "ensino",
+    "fomento",
+    "astronomia"
+   ],
+   "resumo": "A primeira reunião regional da SBPC (Sociedade Brasileira para o Progresso da Ciência) na Paraíba reúne 1.100 inscritos e 182 trabalhos em Campina Grande, ontem e hoje (28), com o tema Caatinga e desigualdades regionais. O evento é da UEPB e da SBPC, com SECTIES, FAPESQ, universidades federais, IFPB, INSA e Parque Tecnológico na organização.",
+   "porQueImporta": "Prepara o terreno para a Reunião Anual da SBPC, que a Paraíba recebe em 2027, e dá visibilidade à pesquisa sobre o semiárido."
+  },
+  {
+   "id": "conexao-mundo-500",
+   "titulo": "Intercâmbio Conexão Mundo sobe para 500 vagas e divulga aprovados",
+   "fonte": "Polêmica Paraíba",
+   "url": "https://www.polemicaparaiba.com.br/polemicas/experiencias-para-a-vida-inteira-erivonaldo-alves-anuncia-resultado-do-conexao-mundo-com-500-vagas-para-estudantes-da-rede-estadual/",
+   "dataPub": "2026-10-24",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "internacional",
+    "ensino",
+    "transversal"
+   ],
+   "resumo": "Saiu o resultado final do Conexão Mundo 2026/2027, intercâmbio de cerca de 12 semanas no exterior para alunos da rede estadual, feito pela Secretaria da Educação com a FAPESQ. As vagas passaram de 400 para 500 (300 de inglês e 200 de espanhol), e a lista está no site da FAPESQ.",
+   "porQueImporta": "Os aprovados ainda passam por avaliação e curso de formação, e os destinos ainda serão definidos."
+  },
+  {
+   "id": "ufpb-pesquisadores-influentes",
+   "titulo": "UFPB tem 18 nomes na lista dos pesquisadores mais citados do mundo",
+   "fonte": "UFPB",
+   "url": "https://www.ufpb.br/noticias/ufpb-tem-18-pesquisadores-entre-os-2-mais-influentes-do-mundo-em-2025/",
+   "dataPub": "2026-10-26",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "A UFPB tem 18 pesquisadores entre os 2% mais influentes do mundo em 2025, segundo lista da editora Elsevier com a Universidade de Stanford. O cálculo usa sobretudo o número de citações dos trabalhos.",
+   "porQueImporta": "É um indicador de qualidade que ajuda a atrair parcerias e recursos para a pesquisa no estado."
+  },
+  {
+   "id": "ifpb-pec-ple-estrangeiros",
+   "titulo": "IFPB seleciona professores para ensinar português a estudantes estrangeiros",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/arinter-seleciona-professores-e-estudantes-para-atender-o-pec-ple",
+   "dataPub": "2026-10-26",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "internacional",
+    "ensino"
+   ],
+   "resumo": "O IFPB abriu seleção, até amanhã (29), para 8 professores e 1 monitor que vão atender, em 2027, estrangeiros do programa federal que prepara alunos de outros países para estudar no Brasil. As vagas são em Pedras de Fogo, Areia e João Pessoa, com bolsa de R$ 1.800 para docentes, paga pelo MEC.",
+   "porQueImporta": "Mostra a Paraíba recebendo estudantes de fora, um passo para atrair talentos ao ensino superior do estado."
+  },
+  {
+   "id": "uepb-tutoria-especial",
+   "titulo": "UEPB abre 13 bolsas para estudantes tutores de colegas com deficiência",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br/divulgado-edital-para-processo-seletivo-com-13-vagas-para-programa-de-tutoria-especial-nos-campus-i-iii-iv-v-e-vii/",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "inclusao"
+   ],
+   "resumo": "A UEPB abriu seleção, até 2 de novembro, para 13 estudantes que vão apoiar colegas com deficiência, autismo ou altas habilidades em cinco câmpus. A bolsa é de R$ 396 por mês, e o resultado sai em 11 de novembro.",
+   "porQueImporta": "Ajuda a manter na universidade estudantes que mais enfrentam barreiras."
+  },
+  {
+   "id": "finep-bndespar-fundo-startups",
+   "titulo": "Finep e BNDES montam fundo de R$ 250 milhões para startups, com cota para o Nordeste",
+   "fonte": "Brasil Inovador",
+   "url": "https://brasilinovador.com.br/finep-e-bndespar-estruturam-fundo-de-r-250-milhoes-voltado-a-startups-e-capital-semente/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": "Finep e BNDESPAR (braço de investimentos do BNDES) abriram chamada para escolher o gestor de um fundo de R$ 250 milhões para startups de tecnologia em fase inicial. Pelo menos metade irá para empresas já apoiadas por programas federais ou estaduais, como Centelha e Tecnova, e no mínimo 30% da parte federal deve ir para o Norte, Nordeste e Centro-Oeste.",
+   "porQueImporta": "Startups paraibanas que já passaram por editais da FAPESQ ficam bem posicionadas para receber esse investimento."
+  },
+  {
+   "id": "lei-do-bem-2025",
+   "titulo": "Lei do Bem apoiou 4,6 mil empresas e R$ 65,7 bilhões em pesquisa em 2025",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/lei-do-bem-4598-empresas-foram-beneficiadas-e-renuncia-fiscal-ficou-em-r-158-bilhoes-em-2025/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": "Segundo o MCTI, 4.598 empresas usaram a Lei do Bem em 2025, com R$ 65,7 bilhões investidos em pesquisa e inovação e R$ 15,8 bilhões em impostos que deixaram de ser cobrados. Todos os números cresceram em relação a 2024.",
+   "porQueImporta": "O benefício vale só para empresas de lucro real, e poucas do Nordeste usam; divulgar a regra pode atrair mais empresas paraibanas."
+  },
+  {
+   "id": "fies-vagas-remanescentes",
+   "titulo": "Fies abre 50 mil vagas remanescentes até 3 de novembro",
+   "fonte": "Paraíba Online",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/10/26/fies-2-abertas-inscricoes-gratuitas-para-vagas-remanescentes/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "inclusao"
+   ],
+   "resumo": "O Fies (financiamento estudantil do governo federal) abriu inscrições gratuitas até 3 de novembro para 50 mil vagas remanescentes do segundo semestre, com resultado em 16 de novembro. Metade das vagas é para famílias inscritas no CadÚnico com renda de até meio salário mínimo por pessoa.",
+   "porQueImporta": "É uma chance rápida de acesso ao ensino superior que vale divulgar nas escolas e nos municípios."
+  },
+  {
+   "id": "anpd-feira-santana",
+   "titulo": "ANPD pune prefeitura baiana que expôs dados de saúde de 1.241 pessoas",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/anpd-impoe-sancoes-a-prefeitura-de-feira-de-santana-ba-pelo-vazamento-de-dados-medicos-de-1-200-pessoas/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "seguranca",
+    "transversal"
+   ],
+   "resumo": "A ANPD (Autoridade Nacional de Proteção de Dados) puniu a Prefeitura de Feira de Santana por publicar no Diário Oficial diagnósticos de saúde junto com os nomes de beneficiários do passe livre. A prefeitura levou advertência, terá de nomear um responsável por dados, treinar servidores e divulgar a falha no site por seis meses.",
+   "porQueImporta": "Mostra que publicações oficiais também precisam de cuidado com dados pessoais, um alerta útil para todos os órgãos do estado."
+  },
+  {
+   "id": "gaispi-datacenter-ia",
+   "titulo": "Dinheiro do 5G vai bancar data center de IA do governo e conversores de TV",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/27/10/2026/gaispi-aprova-r-17-bilhao-em-projetos-adicionais-de-tv-3-0-e-data-center/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "secretaria2030",
+    "inclusao"
+   ],
+   "resumo": "O grupo que administra recursos do leilão do 5G aprovou R$ 1,7 bilhão em dois projetos: R$ 1,3 bilhão em conversores de TV digital para famílias de baixa renda e R$ 375 milhões em um data center de inteligência artificial para uso do governo. A Anatel ainda precisa dar a aprovação final.",
+   "porQueImporta": "Uma estrutura federal de IA para o setor público pode servir de base para projetos de IA na gestão estadual."
+  },
+  {
+   "id": "governo-federal-analistas-ti",
+   "titulo": "Governo federal chega a 760 analistas de tecnologia para acelerar o governo digital",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/governo-quer-contar-com-1300-analistas-de-ti-para-acelerar-transformacao-digital/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "O Ministério da Gestão recebeu 230 novos analistas de tecnologia da informação aprovados no Concurso Nacional Unificado, e a carreira passou de 408 para 760 servidores. Eles são distribuídos a órgãos que tinham equipes de TI menores; a meta é chegar a 1.300.",
+   "porQueImporta": "Mostra que transformar serviços públicos depende de equipe técnica própria, e não só de contratos."
+  },
+  {
+   "id": "lacigf-fortaleza",
+   "titulo": "Fórum latino-americano de governança da internet será em Fortaleza, de 4 a 6/11",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/internet/19o-forum-de-governanca-da-internet-da-america-latina-e-caribe-acontece-em-fortaleza/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao",
+    "seguranca",
+    "internacional"
+   ],
+   "resumo": "O 19º Fórum de Governança da Internet da América Latina e Caribe acontece de 4 a 6 de novembro, no Centro de Eventos do Ceará, com o CGI.br e o NIC.br como anfitriões. Os debates incluem inclusão digital, cibersegurança, inteligência artificial e proteção de crianças, com inscrição aberta e transmissão online.",
+   "porQueImporta": "Evento internacional perto da Paraíba, bom para técnicos do estado acompanharem e fazerem contatos."
+  },
+  {
+   "id": "fapesp-holanda-acordo",
+   "titulo": "FAPESP renova parceria com a Holanda e reforça quântica e IA",
+   "fonte": "Agência FAPESP",
+   "url": "https://agencia.fapesp.br/fapesp-e-nwo-renovam-acordo-e-projetam-expansao-da-cooperacao-cientifica/59490",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "internacional",
+    "fomento",
+    "ciquanta"
+   ],
+   "resumo": "A FAPESP e o conselho de pesquisa da Holanda (NWO) renovaram o acordo que mantém chamadas conjuntas, por mais cinco anos. A FAPESP também anunciou recursos extras para sete áreas, entre elas tecnologia quântica e transição digital com IA.",
+   "porQueImporta": "É um modelo de cooperação que fundações estaduais como a FAPESQ podem seguir com outros países."
+  },
+  {
+   "id": "nist-criptografia-pos-quantica",
+   "titulo": "EUA fixam 2035 como prazo final para trocar a criptografia atual",
+   "fonte": "Quantum Computing Report",
+   "url": "https://quantumcomputingreport.com/nist-releases-final-ir-8547-establishing-definitive-post-quantum-cryptography-transition-timeline-and-deprecation-schedules/",
+   "dataPub": "2026-10-27",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "seguranca",
+    "ciquanta"
+   ],
+   "resumo": "O NIST, instituto de padrões dos EUA, publicou a versão final do roteiro para migrar para a criptografia pós-quântica, que resiste a computadores quânticos. Os sistemas federais mais sensíveis devem trocar as chaves até 2030 e as assinaturas digitais até 2031, e os métodos atuais, como RSA, ficam proibidos a partir de 2035.",
+   "porQueImporta": "Fornecedores de tecnologia que atendem o estado vão seguir esse calendário, e sistemas que guardam dados por muitos anos precisam se preparar já."
+  },
+  {
+   "id": "reino-unido-startups-pesquisa",
+   "titulo": "Reino Unido é desafiado a dobrar startups nascidas da pesquisa até 2035",
+   "fonte": "University World News",
+   "url": "https://www.universityworldnews.com/post.php?story=2026102416043249",
+   "dataPub": "2026-10-24",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "Relatório do Instituto Tony Blair propõe dobrar, até 2035, as startups britânicas que nascem de pesquisas e captam mais de 2 milhões de libras. Para isso, sugere subir de cerca de 8 milhões para 100 milhões de libras por ano o apoio a provas de conceito, a fase em que se testa se uma ideia funciona.",
+   "porQueImporta": "Reforça que o gargalo está no primeiro passo entre o laboratório e a empresa, onde editais estaduais fazem diferença."
+  },
+  {
+   "id": "washington-ia-assinaturas",
+   "titulo": "Estado americano de Washington estuda IA para conferir assinaturas de eleitores",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/artificial-intelligence/could-ai-verify-ballot-signatures-washington-considers-it",
+   "dataPub": "2026-10-26",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "O secretário de Estado de Washington quer testar, possivelmente em 2027, uma IA usada por bancos para comparar assinaturas de votos pelo correio com o cadastro dos eleitores. A proposta prevê revisão humana de todas as recusas e checagem por amostra das aprovações.",
+   "porQueImporta": "Um exemplo de IA com supervisão humana obrigatória, modelo que serve para outros serviços de conferência de documentos."
+  },
+  {
+   "id": "emirados-ia-escolas",
+   "titulo": "Emirados Árabes tornam IA disciplina obrigatória nas escolas",
+   "fonte": "Rest of World",
+   "url": "https://restofworld.org/2026/uae-mandates-k12-ai-education-schools/",
+   "dataPub": "2026-10-13",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "resumo": "Os Emirados Árabes Unidos passaram a ensinar IA em toda a educação básica, a partir dos sete anos, com foco em como a tecnologia funciona e onde ela erra. O país vai treinar 22 mil professores, e as crianças menores não usam IA sozinhas.",
+   "porQueImporta": "Ajuda a pensar, com a Secretaria da Educação, como ensinar IA nas escolas estaduais de forma segura."
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+  "paginasLidas": "edições novas indisponíveis",
+  "leituraParcial": true,
+  "obs": "As edições de 23/10 a 28/10 do Diário Oficial não ficaram disponíveis para leitura até 8h30 e ficam para a próxima edição do Radar.",
+  "atos": []
+ },
+ "secom": [
+  {
+   "titulo": "12ª Expotec vai contar com sessões gratuitas do Planetário Móvel e do Cinema da Secties",
+   "portal": "Portal Pop Notícias",
+   "url": "https://portalpopnoticias.com.br/2026/10/27/12a-expotec-vai-contar-com-sessoes-gratuitas-do-planetario-movel-e-do-cinema-da-secties",
+   "dataPub": "2026-10-27",
+   "programas": [
+    "astronomia",
+    "ciquanta"
+   ],
+   "resumo": "A SECTIES leva à Expotec o Planetário Móvel da Cidade da Astronomia e sessões de cinema que explicam a computação quântica e o CIQUANTA."
+  },
+  {
+   "titulo": "Evento reúne pesquisadores, docentes, estudantes e representantes de instituições públicas e privadas em Campina Grande",
+   "portal": "UEPB",
+   "url": "https://uepb.edu.br/evento-reune-pesquisadores-docentes-estudantes-e-representantes-de-instituicoes-publicas-e-privadas-em-campina-grande/",
+   "dataPub": "2026-10-27",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "Primeira reunião regional da SBPC na Paraíba, com SECTIES e FAPESQ na organização, reúne 1.100 inscritos em Campina Grande."
+  },
+  {
+   "titulo": "Erivonaldo Alves anuncia resultado do Conexão Mundo com 500 vagas para estudantes da rede estadual",
+   "portal": "Polêmica Paraíba",
+   "url": "https://www.polemicaparaiba.com.br/polemicas/experiencias-para-a-vida-inteira-erivonaldo-alves-anuncia-resultado-do-conexao-mundo-com-500-vagas-para-estudantes-da-rede-estadual/",
+   "dataPub": "2026-10-24",
+   "programas": [
+    "internacional",
+    "ensino"
+   ],
+   "resumo": "Intercâmbio da Secretaria da Educação com a FAPESQ amplia vagas para 500; lista de aprovados está no site da FAPESQ."
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-startups-fundo-finep-bndes",
+   "titulo": "Lista de startups paraibanas prontas para o novo fundo Finep-BNDES",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "descricao": "Reunir as startups que já receberam apoio de editais estaduais e federais e prepará-las para conversar com o gestor do fundo quando ele for escolhido. A regra que favorece empresas já apoiadas e o Nordeste joga a favor da Paraíba.",
+   "base": [
+    "finep-bndespar-fundo-startups"
+   ]
+  },
+  {
+   "id": "p-plantao-lei-do-bem",
+   "titulo": "Plantão de orientação sobre a Lei do Bem para indústrias paraibanas",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "descricao": "Oferecer, com a FIEPB e o Sebrae, encontros rápidos para explicar às empresas como abater impostos ao investir em pesquisa. Cada empresa que entra no benefício tende a contratar mais projetos com as universidades do estado.",
+   "base": [
+    "lei-do-bem-2025"
+   ]
+  },
+  {
+   "id": "p-edital-prova-de-conceito",
+   "titulo": "Edital de prova de conceito para pesquisas virarem empresas",
+   "tipo": "Edital",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "inovacao",
+    "ensino",
+    "fomento"
+   ],
+   "descricao": "Criar uma linha com valores pequenos e decisão rápida para testar se uma descoberta de laboratório tem uso no mercado. É a etapa que mais falta antes de uma startup conseguir investidor.",
+   "base": [
+    "reino-unido-startups-pesquisa",
+    "finep-bndespar-fundo-startups"
+   ]
+  },
+  {
+   "id": "p-caravana-planetario-quantica",
+   "titulo": "Planetário e cinema sobre quântica nas escolas do interior depois da Expotec",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "astronomia",
+    "ciquanta",
+    "inclusao"
+   ],
+   "descricao": "Levar as sessões apresentadas na Expotec a escolas estaduais de cidades médias, em parceria com a Secretaria da Educação. Assim, mais estudantes conhecem a Cidade da Astronomia e o CIQUANTA.",
+   "base": [
+    "expotec-abre-hoje"
+   ]
+  },
+  {
+   "id": "p-checagem-dados-publicacoes",
+   "titulo": "Checagem de dados pessoais antes de publicar atos oficiais",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "seguranca",
+    "transversal"
+   ],
+   "descricao": "Adotar uma lista simples de verificação, para todas as secretarias, que impeça a publicação de dados de saúde e outros dados sensíveis em listas e editais. Pode ser apoiada por uma ferramenta automática que avisa antes do envio.",
+   "base": [
+    "anpd-feira-santana"
+   ]
+  },
+  {
+   "id": "p-ia-conferencia-documentos",
+   "titulo": "Piloto de IA para conferir documentos de cadastros, com revisão humana",
+   "tipo": "Projeto",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "descricao": "Testar, com uma secretaria que recebe muitos documentos, uma IA que faz a primeira conferência e manda tudo o que recusar para um servidor revisar. O piloto mede tempo economizado e erros antes de qualquer ampliação.",
+   "base": [
+    "washington-ia-assinaturas",
+    "gaispi-datacenter-ia"
+   ]
+  },
+  {
+   "id": "p-ia-curriculo-escolas",
+   "titulo": "Noções básicas de IA nas escolas estaduais, com a Secretaria da Educação",
+   "tipo": "Programa",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "transversal",
+    "ensino"
+   ],
+   "descricao": "Preparar um material curto sobre como a IA funciona e onde erra, com formação de professores pelas universidades do estado. A ideia é ensinar uso seguro antes de liberar ferramentas aos alunos.",
+   "base": [
+    "emirados-ia-escolas",
+    "governo-federal-analistas-ti"
+   ]
+  },
+  {
+   "id": "p-delegacao-forum-internet",
+   "titulo": "Equipe técnica do estado no fórum de governança da internet em Fortaleza",
+   "tipo": "Parceria",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao",
+    "seguranca",
+    "internacional"
+   ],
+   "descricao": "Enviar técnicos da área de conectividade e segurança digital ao fórum de 4 a 6 de novembro para trazer soluções de outros países e fazer contatos com o CGI.br. A viagem é curta e o evento tem transmissão online para quem não puder ir.",
+   "base": [
+    "lacigf-fortaleza"
+   ]
+  }
+ ]
+}

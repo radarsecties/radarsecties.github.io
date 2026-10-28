@@ -1,23 +1,18 @@
-*RADAR SECTIES*  |  Edição nº 15
-_Terça-feira, 27 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 16
+_Quarta-feira, 28 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*CAMINHÃO DE CURSOS DIGITAIS GRATUITOS CHEGA HOJE A CAMPINA GRANDE*
-O projeto Caminhos Digitais começa hoje (27) na UEPB, em Campina Grande, com mais de 10 cursos gratuitos de tecnologia e certificado.
+*EXPOTEC ABRE HOJE EM JP COM PLANETÁRIO E CINEMA SOBRE QUÂNTICA*
+A 12ª Expotec abre hoje (28) no Centro de Convenções de João Pessoa, com entrada gratuita, planetário e cinema sobre computação quântica, até sexta (30).
 
 *PRIORIDADES DO DIA*
-1. Caminhão de cursos digitais gratuitos começa hoje em Campina Grande — _UEPB_
-2. Expotec começa amanhã com tecnologias quânticas no centro do debate — _WSCOM_
-3. Tecnova terá R$ 588 milhões para pequenas empresas inovadoras via fundações estaduais — _Brasil Inovador_
-4. Goiás abre 500 vagas gratuitas para startups que vendem soluções ao governo — _Paraíba Total_
-
-*TAMBÉM NESTA EDIÇÃO*
-• Paraíba: Instituto Federal de Santa Catarina conhece o ecossistema de inovação da Paraíba
-• Brasil: IA da USP e da Suécia identifica infarto grave pelo eletrocardiograma
-• Mundo: Usar IA em línguas que não são o inglês pode custar até 5 vezes mais
+1. Expotec abre hoje em João Pessoa com planetário e cinema sobre computação quântica — _Portal Pop Notícias_
+2. Reunião regional da SBPC em Campina Grande debate a Caatinga até hoje — _UEPB_
+3. Finep e BNDES montam fundo de R$ 250 milhões para startups, com cota para o Nordeste — _Brasil Inovador_
+4. EUA fixam 2035 como prazo final para trocar a criptografia atual — _Quantum Computing Report_
 
 *FÍSICA DE BOLSO*
-_Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra._
+_A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta._
 
-Leia a edição completa, com 17 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 18 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
