@@ -1,18 +1,18 @@
-*RADAR SECTIES*  |  Edição nº 16
-_Quarta-feira, 28 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 17
+_Quinta-feira, 29 de outubro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*EXPOTEC ABRE HOJE EM JP COM PLANETÁRIO E CINEMA SOBRE QUÂNTICA*
-A 12ª Expotec abre hoje (28) no Centro de Convenções de João Pessoa, com entrada gratuita, planetário e cinema sobre computação quântica, até sexta (30).
+*BOLSAS DE PÓS-GRADUAÇÃO: PRAZO PARA PROGRAMAS TERMINA EM 9 DE NOVEMBRO*
+Os programas de pós-graduação da Paraíba têm até 9 de novembro para disputar até 390 bolsas de mestrado, doutorado e pós-doutorado da FAPESQ.
 
 *PRIORIDADES DO DIA*
-1. Expotec abre hoje em João Pessoa com planetário e cinema sobre computação quântica — _Portal Pop Notícias_
-2. Reunião regional da SBPC em Campina Grande debate a Caatinga até hoje — _UEPB_
-3. Finep e BNDES montam fundo de R$ 250 milhões para startups, com cota para o Nordeste — _Brasil Inovador_
-4. EUA fixam 2035 como prazo final para trocar a criptografia atual — _Quantum Computing Report_
+1. Prazo para disputar até 390 bolsas de pós-graduação da FAPESQ termina em 9 de novembro — _Polêmica Paraíba_
+2. Só 34 empresas paraibanas usam a Lei do Bem; outras 2,7 mil poderiam usar — _Sebrae Paraíba_
+3. Anatel abre consulta sobre plano de inclusão digital, segurança e clima — _Teletime_
+4. Governos nos EUA começam a usar IA para pedidos de informação, licitações e notas fiscais — _GovTech_
 
 *FÍSICA DE BOLSO*
-_A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta._
+_Uma colher de chá de estrela de nêutrons pesaria bilhões de toneladas._
 
-Leia a edição completa, com 18 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 19 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
