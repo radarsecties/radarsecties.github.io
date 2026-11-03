@@ -1,18 +1,23 @@
-*RADAR SECTIES*  |  Edição nº 17
-_Quinta-feira, 29 de outubro de 2026_
+*RADAR SECTIES*  |  Edição nº 18
+_Terça-feira, 3 de novembro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*BOLSAS DE PÓS-GRADUAÇÃO: PRAZO PARA PROGRAMAS TERMINA EM 9 DE NOVEMBRO*
-Os programas de pós-graduação da Paraíba têm até 9 de novembro para disputar até 390 bolsas de mestrado, doutorado e pós-doutorado da FAPESQ.
+*30 STARTUPS DA PARAÍBA EMBARCAM PARA O WEB SUMMIT LISBOA*
+O Governo da Paraíba faz hoje o pré-embarque das 30 startups que vão ao Web Summit Lisboa e anuncia edital para o Web Summit de Doha.
 
 *PRIORIDADES DO DIA*
-1. Prazo para disputar até 390 bolsas de pós-graduação da FAPESQ termina em 9 de novembro — _Polêmica Paraíba_
-2. Só 34 empresas paraibanas usam a Lei do Bem; outras 2,7 mil poderiam usar — _Sebrae Paraíba_
-3. Anatel abre consulta sobre plano de inclusão digital, segurança e clima — _Teletime_
-4. Governos nos EUA começam a usar IA para pedidos de informação, licitações e notas fiscais — _GovTech_
+1. Paraíba se despede hoje das 30 startups que vão ao Web Summit Lisboa — _Polêmica Paraíba_
+2. CIATox de Campina Grande capacita equipes de urgência em intoxicações hoje e amanhã — _UEPB_
+3. Futuras Cientistas: alunas e professoras da rede estadual podem se inscrever até 6 de novembro — _Agência Gov_
+4. Finep tem R$ 100 milhões para projetos de chips; propostas até 25 de novembro — _O Povo_
+
+*TAMBÉM NESTA EDIÇÃO*
+• Paraíba: UFCG é a melhor universidade de porte médio do Nordeste no ranking da Folha
+• Brasil: Anatel propõe regras de inclusão digital para pessoas vulneráveis e com deficiência
+• Mundo: Estado americano abre concorrência para contratar IA de ponta em todo o governo
 
 *FÍSICA DE BOLSO*
-_Uma colher de chá de estrela de nêutrons pesaria bilhões de toneladas._
+_Seu corpo brilha. Só que a luz é mil vezes fraca demais para os olhos perceberem._
 
-Leia a edição completa, com 19 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 20 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
