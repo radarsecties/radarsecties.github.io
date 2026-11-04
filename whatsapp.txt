@@ -1,23 +1,18 @@
-*RADAR SECTIES*  |  Edição nº 18
-_Terça-feira, 3 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 19
+_Quarta-feira, 4 de novembro de 2026_
 Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
 
-*30 STARTUPS DA PARAÍBA EMBARCAM PARA O WEB SUMMIT LISBOA*
-O Governo da Paraíba faz hoje o pré-embarque das 30 startups que vão ao Web Summit Lisboa e anuncia edital para o Web Summit de Doha.
+*EDITAL DE INOVAÇÃO DA FAPESQ COM A EMBRAPII FECHA NESTA SEXTA*
+O edital de inovação da FAPESQ com unidades Embrapii recebe propostas de empresas paraibanas até sexta-feira (6).
 
 *PRIORIDADES DO DIA*
-1. Paraíba se despede hoje das 30 startups que vão ao Web Summit Lisboa — _Polêmica Paraíba_
-2. CIATox de Campina Grande capacita equipes de urgência em intoxicações hoje e amanhã — _UEPB_
-3. Futuras Cientistas: alunas e professoras da rede estadual podem se inscrever até 6 de novembro — _Agência Gov_
-4. Finep tem R$ 100 milhões para projetos de chips; propostas até 25 de novembro — _O Povo_
-
-*TAMBÉM NESTA EDIÇÃO*
-• Paraíba: UFCG é a melhor universidade de porte médio do Nordeste no ranking da Folha
-• Brasil: Anatel propõe regras de inclusão digital para pessoas vulneráveis e com deficiência
-• Mundo: Estado americano abre concorrência para contratar IA de ponta em todo o governo
+1. Últimos dias: edital de inovação da FAPESQ com a Embrapii fecha sexta (6) — _Poder Paraíba_
+2. Patos recebe feira de negócios com espaço de inovação das universidades de quinta a sábado — _Paraíba Online_
+3. Compra do supercomputador federal de IA, que ficará no RN, fica para 2027 — _Convergência Digital_
+4. Europa prepara lei para a quântica, e empresa pede fábricas de chips e compras por metas — _Quantum Computing Report_
 
 *FÍSICA DE BOLSO*
-_Seu corpo brilha. Só que a luz é mil vezes fraca demais para os olhos perceberem._
+_Vidro não é um líquido que escorre devagar. Vitrais antigos são mais grossos embaixo por causa de como eram fabricados._
 
-Leia a edição completa, com 20 notícias e pautas da SECTIES e da FAPESQ:
+Leia a edição completa, com 16 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/
