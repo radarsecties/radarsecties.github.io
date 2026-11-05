@@ -261,6 +261,27 @@
    "origem": "auto"
   },
   {
+   "id": "25089b9b8f8e",
+   "titulo": "Perdi o documento ou estou sem internet: o que fazer para não perder o Enem?",
+   "url": "https://jornaldaparaiba.com.br/educacao/perdi-o-documento-ou-estou-sem-internet-o-que-fazer-para-nao-perder-o-enem",
+   "resumo": "Divulgação/SSP-PI Perdeu a identidade, está sem internet ou não consegue abrir o aplicativo? Calma, respira! Quem vai fazer o Enem 2026 precisa apresentar um documento de identificação válido para entrar na prova, mas o edital prevê alternativas para algumas situações.O exame será aplicado nos dias 8 e 15 de novembro.…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-05",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/perdi-o-documento-ou-estou-sem-internet-o-que-faze0022229400202611050949-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fperdi-o-documento-ou-estou-sem-internet-o-que-faze0022229400202611050949.jpg%3Fxid%3D1241929&amp;xid=1241929",
+   "coletadoEm": "2026-11-05T13:03:22Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "1b4d5cfa38ef",
    "titulo": "Anatel homenageia Raimundo Carreiro por inclusão de escolas no leilão do 5G",
    "url": "https://telesintese.com.br/anatel-homenageia-raimundo-carreiro-por-inclusao-de-escolas-no-leilao-do-5g",
@@ -298,26 +319,6 @@
     "ensino"
    ],
    "escopo": "Nacional",
-   "pontos": 29,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "2f1e224ace53",
-   "titulo": "Videoaula do Lá Vem o Enem aborda sobre literatura afro-brasileira e decolonialidade",
-   "url": "https://jornaldaparaiba.com.br/educacao/videoaula-do-la-vem-o-enem-aborda-sobre-literatura-afro-brasileira-e-decolonialidade",
-   "resumo": "Reprodução A literatura afro-brasileira e a decolonialidade são temas importantes para quem está se preparando para o Exame Nacional do Ensino Médio (Enem) 2026. Na nova videoaula do Lá Vem o Enem, o professor de Literatura e História da Arte Rodrigo Paes apresenta autores negros fundamentais para a cultura brasileira…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-05",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/thumbnail/220000/videoaula-do-la-vem-o-enem-aborda-sobre-literatura0022228700202611050621.jpg?xid=1241889",
-   "coletadoEm": "2026-11-05T10:08:06Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
    "pontos": 29,
    "urgente": false,
    "relevancia": "media",
@@ -450,7 +451,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-05T09:11:56-03:00",
+ "geradoEm": "2026-11-05T10:05:23-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -649,7 +650,7 @@
    "nome": "Jornal da Paraíba",
    "ok": true,
    "itens": 40,
-   "feed": "https://jornaldaparaiba.com.br/rss",
+   "feed": "https://jornaldaparaiba.com.br/feed/",
    "obs": ""
   },
   {
