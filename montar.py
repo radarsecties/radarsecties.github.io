@@ -169,49 +169,61 @@ def primeira_frase(t: str) -> str:
     return m.group(1) if m else (t or "")
 
 
+def _parecidos(a: str, b: str) -> bool:
+    """Dois títulos falam da mesma notícia? (evita repetir a manchete na lista)"""
+    pa = {w for w in re.findall(r"\w{4,}", (a or "").lower())}
+    pb = {w for w in re.findall(r"\w{4,}", (b or "").lower())}
+    return bool(pa and pb) and len(pa & pb) / min(len(pa), len(pb)) >= 0.5
+
+
 def gerar_whatsapp(ed: dict, link: str, limite: int = 1300) -> str:
-    """Mensagem institucional, no mesmo formato das edições anteriores do Radar."""
+    """Mensagem do WhatsApp: chamativa e fácil de ler, sem emojis, com um único link no fim (que traz a capa)."""
     dt = datetime.strptime(ed["data"], "%Y-%m-%d")
     data_ext = f"{DIAS[dt.weekday()].capitalize()}, {dt.day} de {MESES[dt.month - 1]} de {dt.year}"
     ordem = {"alta": 0, "media": 1, "radar": 2}
     its = sorted(ed.get("itens") or [], key=lambda i: ordem.get(i.get("relevancia"), 3))
-    altas = [i for i in its if i.get("relevancia") == "alta"]
+    destaque = ed.get("destaque") or ""
+    altas = [i for i in its if i.get("relevancia") == "alta" and not _parecidos(i["titulo"], destaque)]
     atos = (ed.get("doe") or {}).get("atos") or []
     cur = ed.get("curiosidade") or {}
     esfera = {"Paraíba": "Paraíba", "Nacional": "Brasil", "Global": "Mundo"}
 
-    def montar(n_prior, com_tambem, com_lide, com_fisica):
-        L = [f"*RADAR SECTIES*  |  Edição nº {ed.get('numero', '')}", f"_{data_ext}_",
-             "Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba", "",
-             "*" + (ed.get("destaque") or "").upper() + "*"]
+    def linha_prio(i):
+        prazo = "*Prazo:* " if i.get("urgente") else ""
+        return f"{prazo}{i['titulo']} _({i.get('fonte', '')})_"
+
+    def montar(n_prior, com_mapa, com_lide, com_doe, com_fisica):
+        L = [f"*RADAR SECTIES*  |  Edição nº {ed.get('numero', '')}", f"_{data_ext}_", "",
+             "*" + destaque.upper() + "*"]
         if com_lide and ed.get("leitura"):
-            L.append(primeira_frase(ed["leitura"]))
-        prior = (altas or its)[:n_prior]
+            L.append("> " + primeira_frase(ed["leitura"]))
+        prior = altas[:n_prior]
         if prior:
-            L += ["", "*PRIORIDADES DO DIA*"] + [f"{k}. {i['titulo']} — _{i.get('fonte', '')}_" for k, i in enumerate(prior, 1)]
-        if com_tambem:
+            L += ["", "*O QUE PEDE ATENÇÃO HOJE*"] + [f"{k}. {linha_prio(i)}" for k, i in enumerate(prior, 1)]
+        if com_mapa:
             usados = {i.get("id") for i in prior}
-            extra = []
+            mapa = []
             for esc in ("Paraíba", "Nacional", "Global"):
-                c = next((i for i in its if i.get("escopo") == esc and i.get("id") not in usados), None)
+                c = next((i for i in its if i.get("escopo") == esc and i.get("id") not in usados and not _parecidos(i["titulo"], destaque)), None)
                 if c:
-                    extra.append(f"• {esfera[esc]}: {c['titulo']}")
-            if extra:
-                L += ["", "*TAMBÉM NESTA EDIÇÃO*"] + extra
-        if atos:
-            L += ["", "*DIÁRIO OFICIAL DO ESTADO*"] + [f"• {a.get('tipo', 'Ato')} — {primeira_frase(a.get('resumo', ''))[:110]}" for a in atos[:2]]
+                    mapa.append(f"*{esfera[esc]}:* {c['titulo']}")
+            if mapa:
+                L += ["", "*NA PARAÍBA, NO BRASIL E NO MUNDO*"] + mapa
+        if com_doe and atos:
+            L += ["", "*NO DIÁRIO OFICIAL*"] + [f"- {a.get('tipo', 'Ato')}: {primeira_frase(a.get('resumo', ''))[:110]}" for a in atos[:2]]
         if com_fisica and cur.get("texto"):
-            L += ["", "*FÍSICA DE BOLSO*", "_" + cur["texto"] + "_"]
+            L += ["", "> *Você sabia?* " + cur["texto"]]
         partes = [f"{len(its)} notícias"]
         if atos:
             partes.append("Diário Oficial")
         if ed.get("secom"):
             partes.append("pautas da SECTIES e da FAPESQ")
-        L += ["", "Leia a edição completa, com " + ", ".join(partes[:-1]) + (" e " if len(partes) > 1 else "") + partes[-1] + ":", link]
+        L += ["", "*Leia a edição completa*, com " + ", ".join(partes[:-1]) + (" e " if len(partes) > 1 else "") + partes[-1] + ":", link]
         return "\n".join(L)
 
-    for tent in [(4, True, True, True), (4, False, True, True), (3, False, True, True), (3, False, False, True),
-                 (3, False, False, False), (2, False, False, False)]:
+    for tent in [(3, True, True, True, True), (3, True, True, False, True), (3, False, True, True, True),
+                 (3, False, True, False, True), (3, False, False, False, True), (3, False, False, False, False),
+                 (2, False, False, False, False)]:
         texto = montar(*tent)
         if len(texto) <= limite:
             return texto
@@ -248,7 +260,8 @@ def montar_site(fontes: list[dict] | None = None) -> dict:
     if fontes is None:
         fontes = json.loads((RAIZ / "fontes" / "fontes.json").read_text(encoding="utf-8"))["fontes"]
     for k, ed in enumerate(edicoes):  # texto institucional de cada edição, para o botão de compartilhar
-        ed["whatsapp"] = gerar_whatsapp(ed, SITE_URL if k == 0 else f"{SITE_URL}#{ed['data']}")
+        ed["link"] = f"{SITE_URL}?e={ed['data']}"
+        ed["whatsapp"] = gerar_whatsapp(ed, ed["link"])
     banco = json.loads((PASTA_FERR / "curiosidades.json").read_text(encoding="utf-8")) if (PASTA_FERR / "curiosidades.json").exists() else []
     dados = {"tipos": TIPOS, "programas": PROGRAMAS, "edicoes": edicoes, "curiosidades": banco, "site": SITE_URL,
              "fontes": [{"id": f["id"], "nome": f["nome"], "site": f["site"], "grupo": f["grupo"]} for f in fontes]}
@@ -259,9 +272,10 @@ def montar_site(fontes: list[dict] | None = None) -> dict:
     html = html.replace("<!--TITULO-->", f"Radar SECTIES: {hoje['destaque']}".replace('"', "&quot;"))
     html = html.replace("<!--DESCRICAO-->", primeira_frase(hoje.get("leitura", "")).replace('"', "&quot;"))
     html = html.replace("<!--CAPA-->", f"{SITE_URL}capa.png?v={versao}")
+    html = html.replace("<!--URL-->", f"{SITE_URL}?e={hoje['data']}")
     (PASTA_SITE / "index.html").write_text(html, encoding="utf-8")
     gerar_capa(hoje, PASTA_SITE / "capa.png")
-    (PASTA_SITE / "whatsapp.txt").write_text(gerar_whatsapp(hoje, SITE_URL), encoding="utf-8")
+    (PASTA_SITE / "whatsapp.txt").write_text(gerar_whatsapp(hoje, f"{SITE_URL}?e={hoje['data']}"), encoding="utf-8")
     (PASTA_SITE / "edicao.json").write_text(json.dumps(hoje, ensure_ascii=False, indent=1), encoding="utf-8")
     return hoje
 

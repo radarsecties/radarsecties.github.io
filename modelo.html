@@ -6,9 +6,16 @@
 <title><!--TITULO--></title>
 <meta name="description" content="<!--DESCRICAO-->">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Radar SECTIES">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="<!--URL-->">
 <meta property="og:title" content="<!--TITULO-->">
 <meta property="og:description" content="<!--DESCRICAO-->">
 <meta property="og:image" content="<!--CAPA-->">
+<meta property="og:image:secure_url" content="<!--CAPA-->">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Capa do Radar SECTIES com a manchete do dia">
+<meta name="twitter:image" content="<!--CAPA-->">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -37,6 +44,7 @@
     color-scheme: light;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   html { scroll-behavior: smooth; scroll-padding-top: 70px; }
   body { margin: 0; background: var(--branco); color: var(--texto); font-family: var(--fonte); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   a { color: inherit; text-decoration: none; }
@@ -298,6 +306,7 @@
       <div class="acoes">
         <a class="btn branco" id="zap-hero" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.2-.2-.2-.5-.3z"/></svg>Compartilhar no WhatsApp</a>
         <button type="button" class="link" id="copiar">Copiar o texto</button>
+        <a class="link" id="baixar-capa" href="capa.png" download="radar-secties-capa.png">Baixar a capa</a>
       </div>
     </div>
   </div>
@@ -390,11 +399,32 @@
   function textoZap(ed) {
     if (ed.whatsapp) return ed.whatsapp;
     var altas = (ed.itens || []).filter(function (i) { return i.relevancia === "alta"; }).slice(0, 3);
-    return "*RADAR SECTIES* | Edição nº " + ed.numero + "\n" + ed.destaque + "\n\n" + altas.map(function (i, k) { return (k + 1) + ". " + i.titulo; }).join("\n") + "\n\nLeia a edição completa: " + SITE + "#" + ed.data;
+    return "*RADAR SECTIES* | Edição nº " + ed.numero + "\n" + ed.destaque + "\n\n" + altas.map(function (i, k) { return (k + 1) + ". " + i.titulo; }).join("\n") + "\n\nLeia a edição completa: " + (ed.link || SITE);
   }
+  /* A capa do dia é carregada em segundo plano para que o celular possa enviá-la junto com o texto. */
+  var capaArquivo = null;
+  try {
+    fetch("capa.png", { cache: "no-cache" }).then(function (r) { return r.ok ? r.blob() : null; }).then(function (b) {
+      if (b && b.size) capaArquivo = new File([b], "radar-secties.png", { type: "image/png" });
+    }).catch(function () {});
+  } catch (e) {}
+  var celular = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
   function ligarCompartilhar(ed) {
     var url = "https://wa.me/?text=" + encodeURIComponent(textoZap(ed));
-    ["zap-topo", "zap-hero"].forEach(function (id) { document.getElementById(id).href = url; });
+    var hoje = ed === EDICOES[0];
+    ["zap-topo", "zap-hero"].forEach(function (id) {
+      var a = document.getElementById(id);
+      a.href = url;
+      a.onclick = function (ev) {
+        if (!(celular && hoje && capaArquivo && navigator.canShare)) return; // segue para o WhatsApp pelo link
+        var pacote = { files: [capaArquivo], text: textoZap(ed) };
+        if (!navigator.canShare(pacote)) return;
+        ev.preventDefault();
+        navigator.share(pacote).catch(function (e) { if (e && e.name !== "AbortError") location.href = url; });
+      };
+    });
+    document.getElementById("baixar-capa").hidden = !hoje;
   }
 
   function montarFisica(c) {
@@ -536,9 +566,9 @@
   atual = EDICOES[0];
   var sel = document.getElementById("seletor");
   sel.innerHTML = EDICOES.map(function (e, i) { return '<option value="' + i + '">nº ' + e.numero + ' · ' + dataCurta(e.data) + "</option>"; }).join("");
-  var pedida = location.hash.replace("#", "");
+  var pedida = (location.search.match(/[?&]e=(\d{4}-\d{2}-\d{2})/) || [])[1] || location.hash.replace("#", "");
   EDICOES.forEach(function (e, i) { if (e.data === pedida) { atual = e; sel.value = i; } });
-  sel.addEventListener("change", function () { atual = EDICOES[+sel.value]; estado = { tipo: "todos", escopo: "todos", busca: "" }; history.replaceState(null, "", "#" + atual.data); montarEdicao(atual); window.scrollTo({ top: 0, behavior: "smooth" }); });
+  sel.addEventListener("change", function () { atual = EDICOES[+sel.value]; estado = { tipo: "todos", escopo: "todos", busca: "" }; history.replaceState(null, "", "?e=" + atual.data); montarEdicao(atual); window.scrollTo({ top: 0, behavior: "smooth" }); });
 
   var links = document.querySelectorAll(".nav nav a");
   if ("IntersectionObserver" in window) {
