@@ -1,18 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 19
-_Quarta-feira, 4 de novembro de 2026_
-Clipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba
+*RADAR SECTIES*  |  Edição nº 20
+_Quinta-feira, 5 de novembro de 2026_
 
-*EDITAL DE INOVAÇÃO DA FAPESQ COM A EMBRAPII FECHA NESTA SEXTA*
-O edital de inovação da FAPESQ com unidades Embrapii recebe propostas de empresas paraibanas até sexta-feira (6).
+*PARAÍBA TERÁ 30 STARTUPS NO WEB SUMMIT LISBOA E LANÇA EDITAL PARA O WE*
+> Edição montada automaticamente a partir dos portais acompanhados.
 
-*PRIORIDADES DO DIA*
-1. Últimos dias: edital de inovação da FAPESQ com a Embrapii fecha sexta (6) — _Poder Paraíba_
-2. Patos recebe feira de negócios com espaço de inovação das universidades de quinta a sábado — _Paraíba Online_
-3. Compra do supercomputador federal de IA, que ficará no RN, fica para 2027 — _Convergência Digital_
-4. Europa prepara lei para a quântica, e empresa pede fábricas de chips e compras por metas — _Quantum Computing Report_
+*O QUE PEDE ATENÇÃO HOJE*
+1. Universidade Estadual da Paraíba conquista Conceito A na primeira nova avaliação do Pibid realizada pela Capes _(UEPB)_
+2. Universidade Estadual da Paraíba faz convocação de servidora para vaga temporária no Câmpus de Catolé do Rocha _(UEPB)_
+3. CQMTEK Raises More Than $15 Million For Quantum Measurement Expansion _(The Quantum Insider)_
 
-*FÍSICA DE BOLSO*
-_Vidro não é um líquido que escorre devagar. Vitrais antigos são mais grossos embaixo por causa de como eram fabricados._
+*NA PARAÍBA, NO BRASIL E NO MUNDO*
+*Paraíba:* PRONERA: Graduação publica resultado final do processo seletivo para turma especial de Relações Internacionais
+*Brasil:* Petrobras e Embrapii destinam R$ 14 milhões para projetos de economia circular na indústria de energia
+*Mundo:* IonQ Partners With QuantumCT to Expand Quantum Computing Access in Connecticut
 
-Leia a edição completa, com 16 notícias e pautas da SECTIES e da FAPESQ:
-https://radarsecties.github.io/
+> *Você sabia?* Feynman, Nobel de Física, dizia que ninguém entende a mecânica quântica. Se você também não entende, está em ótima companhia.
+
+*Leia a edição completa*, com 18 notícias e pautas da SECTIES e da FAPESQ:
+https://radarsecties.github.io/?e=2026-11-05
