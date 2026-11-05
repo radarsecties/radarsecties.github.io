@@ -1,0 +1,381 @@
+{
+  "data": "2026-10-10",
+  "numero": 2,
+  "geradoEm": "2026-10-10T07:35:11-03:00",
+  "destaque": "Paraíba abre 390 bolsas de pós-graduação com R$ 37 milhões",
+  "leitura": "A semana trouxe uma boa notícia para a ciência paraibana: o estado abriu três editais com R$ 37 milhões para até 390 bolsas de mestrado, doutorado e pós-doutorado, e um edital de bolsas para pesquisa no acervo da Fundação Casa de José Américo. No Diário Oficial, a SECTIES formalizou a equipe do projeto de preservação do patrimônio fóssil e arqueológico da Bacia do Rio do Peixe. Lá fora, os EUA listaram oito problemas científicos que os computadores quânticos devem resolver, e o governo federal anunciou um guia de criptografia resistente à computação quântica, temas que conversam com o CIQUANTA. O ataque hacker que derrubou o sistema financeiro do Tocantins e os incêndios em laboratórios da UFPE são alertas para proteger sistemas e acervos científicos do estado.",
+  "itens": [
+    {
+      "id": "bolsas-posgrad-37mi",
+      "titulo": "Paraíba abre três editais com R$ 37 milhões para até 390 bolsas de pós-graduação",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/governo-da-paraiba-lanca-tres-editais-para-bolsas-de-pos-graduacao-com-investimento-de-r-37-1-milhoes",
+      "dataPub": "2026-10-07",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": ["fomento", "ensino"],
+      "resumo": "O governo, por meio da FAPESQ e da SECTIES, lançou editais para 310 bolsas de mestrado e doutorado acadêmicos, 30 de mestrado e doutorado profissionais e 50 de pós-doutorado. O investimento total é de R$ 37,1 milhões do tesouro estadual. Os coordenadores de programas enviam propostas até 9 de novembro, e as bolsas devem começar entre março e abril de 2027.",
+      "porQueImporta": "É o maior volume de bolsas de pós-graduação do ano no estado e forma os pesquisadores que vão ocupar laboratórios e centros como o CIQUANTA. Vale acompanhar a adesão dos programas até o prazo."
+    },
+    {
+      "id": "fcja-bolsas-acervo",
+      "titulo": "Edital oferece 22 bolsas para estudantes pesquisarem o acervo da Fundação Casa de José Américo",
+      "fonte": "Repórter PB",
+      "url": "https://www.reporterpb.com.br/noticia/paraiba/2026/10/07/edital-tem-22-bolsas-para-pesquisador-da-fundacao-casa-de-jose-americo/193086.html",
+      "dataPub": "2026-10-07",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": ["patrimonio", "fomento", "ensino"],
+      "resumo": "A Fundação Casa de José Américo, a SECTIES e a FAPESQ abriram 22 vagas para graduandos em 11 núcleos de pesquisa, que vão de manuscritos e audiovisual à digitalização do Arquivo dos Governadores e ao mapeamento do patrimônio arqueológico. As inscrições vão de 9 a 16 de outubro, pelo sistema da FAPESQ.",
+      "porQueImporta": "Une ensino superior, tecnologia e valorização do patrimônio num só edital, com núcleos dedicados a repositório digital e modernização de arquivos."
+    },
+    {
+      "id": "ufpb-novos-cursos",
+      "titulo": "UFPB terá seis novos cursos de graduação a partir de 2027",
+      "fonte": "Folha Patoense",
+      "url": "https://folhapatoense.com/2026/10/03/ufpb-tera-seis-novos-cursos-de-graduacao-a-partir-de-2027",
+      "dataPub": "2026-10-03",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": ["ensino"],
+      "resumo": "A universidade abrirá 340 vagas iniciais em Psicologia, Educação Especial Inclusiva e Nutrição, em Bananeiras, e em Engenharia de Mobilidade e Combustíveis do Futuro, Física e Gestão da Qualidade, em João Pessoa. Os cursos fazem parte do programa Universidades Transformadoras, do MEC.",
+      "porQueImporta": "Amplia a oferta no interior e cria um curso de engenharia ligado à transição energética, área que pode atrair parcerias com o estado."
+    },
+    {
+      "id": "ifpb-novo-reitor",
+      "titulo": "IFPB elege novo reitor para o mandato 2026–2030",
+      "fonte": "Paraíba Online",
+      "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/10/08/coneca-o-novo-reitor-do-instituto-federal-da-paraiba",
+      "dataPub": "2026-10-08",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": ["ensino", "inovacao"],
+      "resumo": "A comunidade do Instituto Federal da Paraíba escolheu em segundo turno, no dia 7, o novo reitor para os próximos quatro anos. A nomeação cabe ao presidente da República, e o mandato da atual gestão termina em 24 de outubro.",
+      "porQueImporta": "A troca de gestão é o momento de alinhar com o IFPB agendas comuns de pesquisa aplicada, formação técnica e inovação no interior."
+    },
+    {
+      "id": "eua-problemas-quanticos",
+      "titulo": "EUA definem oito problemas científicos que os computadores quânticos devem resolver",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/08/doe-announces-science-applications-for-quantum-computing/",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": ["ciquanta", "internacional"],
+      "resumo": "O Departamento de Energia dos EUA publicou uma lista de oito aplicações prioritárias em química, materiais, física e matemática aplicada. Os resultados das máquinas quânticas serão comparados com os melhores supercomputadores, e a lista vai orientar uma competição e uma instalação nacional aberta a pesquisadores.",
+      "porQueImporta": "Mostra como um país organiza o uso de computadores quânticos a partir de problemas concretos. É um modelo útil para definir o que o CIQUANTA vai priorizar."
+    },
+    {
+      "id": "chattanooga-formacao-quantica",
+      "titulo": "Cidade americana forma primeira turma de profissionais preparados para a era quântica",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/09/chattanooga-quantum-collaborative-graduates-first-quantum-ready-cohort/",
+      "dataPub": "2026-10-09",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": ["ciquanta", "ensino"],
+      "resumo": "Um curso de 12 semanas em Chattanooga, no Tennessee, formou 17 profissionais de 16 empresas e órgãos locais, de áreas como saúde, finanças, energia e logística. A turma teve aulas on-line, palestras e acesso prático a plataformas quânticas, com apoio da agência de ciência dos EUA.",
+      "porQueImporta": "Formar quem já trabalha, e não só estudantes, acelera o uso real da tecnologia. O formato é barato e pode ser replicado no entorno do CIQUANTA."
+    },
+    {
+      "id": "universal-quantum-100mi",
+      "titulo": "Empresa britânica de computação quântica capta mais de US$ 100 milhões",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/08/universal-quantum-raises-over-100-million-series-a/",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": ["ciquanta", "inovacao"],
+      "resumo": "A Universal Quantum, nascida na Universidade de Sussex, recebeu a maior rodada inicial de investimento de uma empresa quântica do Reino Unido. Ela desenvolve computadores modulares, formados por pequenos chips interligados.",
+      "porQueImporta": "Confirma que empresas nascidas em universidades atraem grandes investimentos em tecnologia quântica, caminho possível para startups ligadas ao CIQUANTA."
+    },
+    {
+      "id": "gsi-pos-quantico",
+      "titulo": "Governo federal prepara regra de criptografia resistente a computadores quânticos",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/seguranca/gsi-vai-publicar-uma-in-para-tratar-da-seguranca-pos-quantica-para-criptografia-do-estado/",
+      "dataPub": "2026-10-05",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": ["seguranca", "ciquanta"],
+      "resumo": "O Gabinete de Segurança Institucional vai lançar na segunda quinzena de novembro um guia para padronizar a proteção de dados do Estado contra a computação quântica. Depois do guia, sai uma instrução normativa. O objetivo também é reduzir a dependência de poucos fornecedores.",
+      "porQueImporta": "As regras federais devem servir de referência para estados. A Paraíba pode se antecipar e unir o tema ao CIQUANTA."
+    },
+    {
+      "id": "tocantins-ataque-hacker",
+      "titulo": "Ataque hacker tira do ar o sistema financeiro do governo do Tocantins",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/ataque-hacker-suspende-sistema-financeiro-do-estado-do-tocantins/",
+      "dataPub": "2026-10-07",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": ["seguranca", "transversal"],
+      "resumo": "Tentativas de invasão levaram a Secretaria da Fazenda do Tocantins a suspender o sistema que processa os pagamentos do estado e o Portal da Transparência. Foi criada uma força-tarefa com outros poderes, e o governo informou que nenhum dado foi roubado.",
+      "porQueImporta": "Mostra o risco para sistemas centrais de qualquer estado. É argumento para planos de resposta a incidentes envolvendo Fazenda, CODATA e demais órgãos."
+    },
+    {
+      "id": "ufpe-incendios-laboratorios",
+      "titulo": "Terceiro incêndio em uma semana atinge laboratórios da UFPE; MEC aciona a Polícia Federal",
+      "fonte": "Jornal do Comércio",
+      "url": "https://www.jornaldocomercio.com/geral/2026/10/1266264-pf-investiga-incendio-na-ufpe-e-reitor-estima-prejuizo-em-rs-100-milhoes.html",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["ensino", "seguranca"],
+      "resumo": "O fogo atingiu um prédio com laboratórios de fármacos, informática e genética no campus do Recife, com prejuízo estimado em R$ 100 milhões. A Polícia Federal investiga, e o MEC pediu apuração de ameaças virtuais recebidas por outras universidades.",
+      "porQueImporta": "Perdas de equipamentos e amostras podem apagar anos de pesquisa. O caso reforça a necessidade de prevenção e de cópias de segurança nos laboratórios paraibanos."
+    },
+    {
+      "id": "agu-ia-comunicacoes",
+      "titulo": "AGU usa inteligência artificial para tratar 100 mil comunicações judiciais por dia",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/inovacao/agu-usa-ia-para-lidar-com-100-mil-comunicacoes-judiciais-por-dia/",
+      "dataPub": "2026-10-05",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["secretaria2030", "transversal"],
+      "resumo": "A Advocacia-Geral da União testa com 500 servidores uma ferramenta que lê e extrai dados das intimações recebidas. Até o fim de outubro, os usuários poderão escolher entre quatro modelos de IA, com uma equipe controlando os custos de uso.",
+      "porQueImporta": "É um caso pronto de IA na gestão pública que pode inspirar procuradorias e áreas jurídicas do estado, dentro da visão do SecretarIA 2030."
+    },
+    {
+      "id": "supercomputador-ia-rn",
+      "titulo": "Compra do supercomputador nacional de IA, que ficará no RN, é adiada para novembro",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/governo-modifica-edital-e-adia-entrega-de-propostas-para-a-compra-do-supercomputador-de-inteligencia-artificial/",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["secretaria2030", "fomento"],
+      "resumo": "A seleção do fornecedor, estimada em cerca de R$ 959 milhões com recursos da Finep, passou de 8 de outubro para 4 de novembro. A máquina será instalada no parque tecnológico de Macaíba, no Rio Grande do Norte, a serviço do Laboratório Nacional de Computação Científica.",
+      "porQueImporta": "Um supercomputador de IA no estado vizinho abre a chance de pesquisadores paraibanos usarem a máquina em projetos conjuntos."
+    },
+    {
+      "id": "finep-semicondutores",
+      "titulo": "Finep prorroga até 25 de novembro chamada de R$ 100 milhões para semicondutores",
+      "fonte": "O Povo",
+      "url": "https://www.opovo.com.br/noticias/economia/2026/09/29/finep-prorroga-ate-25-11-chamada-publica-de-rs-100-mi-para-programa-de-semicondutores.html",
+      "dataPub": "2026-09-29",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["fomento", "inovacao"],
+      "resumo": "A chamada do programa Mais Inovação apoia projetos de empresas de qualquer porte no setor de semicondutores, desde a prova de conceito até o produto pronto. A participação de universidades ou institutos de pesquisa é obrigatória.",
+      "porQueImporta": "O novo prazo dá tempo para empresas e universidades paraibanas montarem propostas em conjunto."
+    },
+    {
+      "id": "nobel-fisica-neutrinos",
+      "titulo": "Nobel de Física 2026 premia detector de neutrinos instalado no gelo da Antártida",
+      "fonte": "Agência Gov",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/neutrinos-particulas-que-renderam-nobel-de-fisica-em-2026-sao-estudadas-no-observatorio-nacional-entenda-o-que-sao",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": ["astronomia"],
+      "resumo": "O físico belga Francis Halzen recebeu o prêmio por um novo método de detectar neutrinos vindos do espaço, com o observatório IceCube, enterrado no gelo do Polo Sul. No Brasil, o Observatório Nacional pesquisa o papel dessas partículas na formação do Universo.",
+      "porQueImporta": "O Nobel dá visibilidade à astrofísica e é um gancho para ações de divulgação científica ligadas à Cidade da Astronomia."
+    },
+    {
+      "id": "conectividade-rural-fust",
+      "titulo": "Internet no campo amplia uso de tecnologia na produção rural",
+      "fonte": "Agência Gov",
+      "url": "https://agenciagov.ebc.com.br/noticias/202610/conectividade-fortalece-a-producao-rural-ao-permitir-uso-de-novas-tecnologias-e-acesso-a-informacoes-mais-precisas",
+      "dataPub": "2026-10-06",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": ["inclusao", "transversal"],
+      "resumo": "O Ministério das Comunicações destaca que o fundo de universalização das telecomunicações tem uma linha para levar internet e telefonia ao meio rural, com dezenas de projetos em andamento. A conexão permite sensores, irrigação inteligente e acesso a crédito e serviços on-line.",
+      "porQueImporta": "É uma fonte de recursos que a Paraíba pode buscar para conectar áreas rurais e apoiar a agricultura familiar no semiárido."
+    },
+    {
+      "id": "nuvem-ia-impacto-brasil",
+      "titulo": "Brasil concentra 38% do impacto econômico da nuvem e da IA na América Latina",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/09/10/2026/brasil-ia-impacto-economico/",
+      "dataPub": "2026-10-09",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": ["secretaria2030", "inovacao"],
+      "resumo": "Estudo encomendado por uma empresa de tecnologia estima em US$ 92 bilhões o efeito da nuvem e da IA na economia brasileira em 2025. A maior parte do impacto da IA vem de ganhos indiretos, como produtividade.",
+      "porQueImporta": "Ajuda a dimensionar o tamanho da oportunidade, mas é um estudo de mercado e deve ser lido com cautela."
+    },
+    {
+      "id": "preco-gb-movel",
+      "titulo": "Preço da internet móvel cai 13% em um ano, segundo a Anatel",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/07/10/2026/preco-medio-gb-movel-cai-anatel/",
+      "dataPub": "2026-10-07",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": ["inclusao"],
+      "resumo": "O gigabyte de dados móveis passou de R$ 6,19 para R$ 5,36 entre o segundo trimestre de 2025 e o de 2026, e o consumo médio por usuário bateu recorde. O Maranhão teve o menor consumo do país.",
+      "porQueImporta": "Internet mais barata ajuda a inclusão digital, mas o Nordeste ainda consome menos dados, sinal de desigualdade de acesso."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-10",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-10-10-2026-portal.pdf/view",
+    "paginasLidas": "até a pág. 9",
+    "leituraParcial": true,
+    "obs": "Foram lidas as edições de 09/10 (até a pág. 10) e de 10/10 (até a pág. 9); atos mais adiante nas edições podem não aparecer aqui.",
+    "atos": [
+      {
+        "tipo": "Portaria SECTIES nº 0099/2026",
+        "orgao": "SECTIES",
+        "pagina": "09/10, p. 5",
+        "relevancia": "alta",
+        "programas": ["patrimonio", "fomento"],
+        "resumo": "Forma a equipe de pesquisadores do projeto de preservação do patrimônio geopaleontológico e arqueológico da Bacia do Rio do Peixe, com vigência desde 1º de outubro."
+      },
+      {
+        "tipo": "Portaria SEAD nº 779/2026",
+        "orgao": "Secretaria da Administração",
+        "pagina": "09/10, p. 2",
+        "relevancia": "media",
+        "programas": ["secretaria2030", "transversal"],
+        "resumo": "Atualiza a composição e o ponto focal da Rede PB Digital, que coordena a transformação digital dos órgãos estaduais."
+      },
+      {
+        "tipo": "Portaria AGEVISA nº 014/2026",
+        "orgao": "Agevisa",
+        "pagina": "09/10, p. 6–7",
+        "relevancia": "radar",
+        "programas": ["transversal"],
+        "resumo": "Cria a comissão que vai elaborar o Plano de Dados Abertos da Agência de Vigilância Sanitária, com participação da área de tecnologia e da Rede PB Digital."
+      },
+      {
+        "tipo": "Decreto nº 48.909/2026",
+        "orgao": "Governo do Estado",
+        "pagina": "10/10, p. 1",
+        "relevancia": "radar",
+        "programas": ["transversal"],
+        "resumo": "Altera o regulamento do ICMS para integrar os portais da Fazenda aos sistemas que emitem o conhecimento de transporte eletrônico, seguindo acordo nacional."
+      }
+    ]
+  },
+  "secom": [
+    {
+      "titulo": "Carrapateira troca o estigma do esquecimento com a chegada da Cidade da Astronomia",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/carrapateira-troca-o-estigma-do-esquecimento-com-a-chegada-da-cidade-da-astronomia",
+      "dataPub": "",
+      "programas": ["astronomia"],
+      "resumo": "Reportagem sobre o efeito da Cidade da Astronomia no município de Carrapateira."
+    },
+    {
+      "titulo": "Governo lança edital para capacitação internacional de servidores em políticas públicas de inovação",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/governo-lanca-edital-para-capacitacao-internacional-de-servidores-em-politicas-publicas-de-inovacao",
+      "dataPub": "",
+      "programas": ["internacional", "inovacao"],
+      "resumo": "Edital para formação de servidores no exterior em políticas de inovação."
+    },
+    {
+      "titulo": "Governo da Paraíba lança Sistema de Inteligência de Dados em Ciência e Tecnologia (SIDTec) durante seminário na UFPB",
+      "portal": "Portal do Governo da Paraíba",
+      "url": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/governo-da-paraiba-lanca-sistema-de-inteligencia-de-dados-em-ciencia-e-tecnologia-sidtec-durante-seminario-na-ufpb",
+      "dataPub": "",
+      "programas": ["fomento", "secretaria2030"],
+      "resumo": "Lançamento de sistema de dados sobre a produção científica e tecnológica do estado."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-cota-bolsas-estrategicas",
+      "titulo": "Bolsas de pós-graduação com reserva para áreas estratégicas",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": ["fomento", "ensino", "ciquanta"],
+      "descricao": "Nos próximos ciclos de bolsas, reservar uma parte das vagas para computação quântica, IA aplicada ao governo e patrimônio digital. Assim, a formação de mestres e doutores acompanha as apostas do estado.",
+      "base": ["bolsas-posgrad-37mi", "eua-problemas-quanticos"]
+    },
+    {
+      "id": "p-agenda-aplicacoes-quanticas",
+      "titulo": "Agenda paraibana de aplicações para o CIQUANTA",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": ["ciquanta", "transversal"],
+      "descricao": "Reunir universidades e secretarias para listar até dez problemas do estado (água, energia, logística, saúde, agricultura) que o CIQUANTA deve atacar primeiro, como fizeram os EUA. A lista orienta pesquisa, bolsas e parcerias.",
+      "base": ["eua-problemas-quanticos"]
+    },
+    {
+      "id": "p-formacao-quantica-profissionais",
+      "titulo": "Curso de 12 semanas em tecnologias quânticas para profissionais já empregados",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": ["ciquanta", "ensino"],
+      "descricao": "Turmas on-line com aulas práticas para servidores e profissionais de empresas paraibanas, em parceria com universidades e o IFPB. O modelo de Chattanooga mostra que é possível formar profissionais de vários setores em poucos meses.",
+      "base": ["chattanooga-formacao-quantica", "ifpb-novo-reitor"]
+    },
+    {
+      "id": "p-adesao-guia-pos-quantico",
+      "titulo": "Adesão antecipada dos órgãos estaduais ao guia pós-quântico federal",
+      "tipo": "Política",
+      "horizonte": "Médio prazo",
+      "programas": ["seguranca", "ciquanta"],
+      "descricao": "Assim que o guia do GSI for publicado, em novembro, preparar com a CODATA um cronograma para que os sistemas estaduais mais sensíveis adotem a criptografia resistente à computação quântica.",
+      "base": ["gsi-pos-quantico"]
+    },
+    {
+      "id": "p-simulado-ataque-fazenda",
+      "titulo": "Simulado de ataque hacker nos sistemas financeiros do estado",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": ["seguranca", "transversal"],
+      "descricao": "Propor à Fazenda e à CODATA um exercício que simule a queda do sistema de pagamentos, testando cópias de segurança, comunicação com outros poderes e tempo de retorno. O caso do Tocantins mostra que o risco é real.",
+      "base": ["tocantins-ataque-hacker"]
+    },
+    {
+      "id": "p-protecao-laboratorios",
+      "titulo": "Plano de proteção de laboratórios e acervos científicos",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": ["ensino", "seguranca", "patrimonio"],
+      "descricao": "Vistoria de prevenção a incêndio e rotina de cópia de dados e amostras em laboratórios financiados pelo estado, começando pelos centros multiusuários. Os incêndios na UFPE mostram quanto se perde sem prevenção.",
+      "base": ["ufpe-incendios-laboratorios"]
+    },
+    {
+      "id": "p-rota-cientifica-sertao",
+      "titulo": "Rota científica do Sertão: fósseis do Rio do Peixe e céu da Cidade da Astronomia",
+      "tipo": "Projeto",
+      "horizonte": "Longo prazo",
+      "programas": ["patrimonio", "astronomia"],
+      "descricao": "Aproveitar o projeto de preservação da Bacia do Rio do Peixe, publicado no Diário Oficial, para criar um roteiro de turismo científico que una paleontologia, arqueologia e astronomia no Sertão, com material educativo produzido por bolsistas.",
+      "base": ["fcja-bolsas-acervo", "nobel-fisica-neutrinos"]
+    },
+    {
+      "id": "p-supercomputador-rn",
+      "titulo": "Acordo para pesquisadores paraibanos usarem o supercomputador de IA do RN",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": ["secretaria2030", "internacional", "fomento"],
+      "descricao": "Negociar com o laboratório nacional responsável uma cota de uso da máquina para projetos de IA de universidades paraibanas, aproveitando a proximidade e a rede de pesquisa do Nordeste.",
+      "base": ["supercomputador-ia-rn"]
+    },
+    {
+      "id": "p-ia-procuradoria",
+      "titulo": "Piloto de IA para leitura de intimações na área jurídica do estado",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": ["secretaria2030", "transversal"],
+      "descricao": "Testar com a Procuradoria-Geral do Estado uma ferramenta que leia e organize intimações judiciais, no modelo da AGU, com controle de custos e revisão humana.",
+      "base": ["agu-ia-comunicacoes"]
+    },
+    {
+      "id": "p-conectividade-agricultura",
+      "titulo": "Projeto paraibano para recursos federais de internet no campo",
+      "tipo": "Edital",
+      "horizonte": "Médio prazo",
+      "programas": ["inclusao", "transversal"],
+      "descricao": "Preparar com a Secretaria da Agricultura um projeto para buscar a linha do fundo de universalização das telecomunicações voltada ao meio rural, priorizando áreas de agricultura familiar no semiárido.",
+      "base": ["conectividade-rural-fust", "preco-gb-movel"]
+    },
+    {
+      "id": "p-agenda-nova-gestao-ifpb",
+      "titulo": "Agenda de inovação com a nova gestão do IFPB",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": ["ensino", "inovacao"],
+      "descricao": "Propor à nova gestão do instituto uma agenda comum para pesquisa aplicada, formação técnica em tecnologias emergentes e apoio a startups nos campi do interior.",
+      "base": ["ifpb-novo-reitor", "ufpb-novos-cursos"]
+    }
+  ]
+}

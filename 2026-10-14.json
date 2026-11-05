@@ -1,0 +1,453 @@
+{
+  "data": "2026-10-14",
+  "numero": 6,
+  "geradoEm": "2026-10-14T07:30:00-03:00",
+  "destaque": "Reunião da SBPC chega à Paraíba em 2027; propostas até 13/11",
+  "leitura": "A 79ª Reunião Anual da SBPC será realizada pela primeira vez na Paraíba, de 25 a 31 de julho de 2027, na UFPB, e pesquisadores do estado podem propor atividades até 13 de novembro. Uma nova portaria federal cria verba mensal para os centros de toxicologia do SUS. Não saiu Diário Oficial novo desde 10/10.",
+  "itens": [
+    {
+      "id": "sbpc-2027-joao-pessoa",
+      "titulo": "Reunião anual da SBPC será em João Pessoa em 2027; propostas até 13/11",
+      "fonte": "UFPB",
+      "url": "https://www.ufpb.br/noticias/ufpb-abre-submissao-de-propostas-cientificas-para-a-79a-reuniao-anual-da-sbpc/",
+      "dataPub": "2026-10-13",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ensino",
+        "astronomia",
+        "fomento"
+      ],
+      "resumo": "A 79ª Reunião Anual da Sociedade Brasileira para o Progresso da Ciência (SBPC) acontece de 25 a 31 de julho de 2027 no campus da UFPB, em João Pessoa, pela primeira vez na Paraíba. Professores e pesquisadores de instituições paraibanas podem propor conferências, mesas-redondas e minicursos até 13 de novembro.",
+      "porQueImporta": "É a chance de pôr a ciência paraibana na vitrine nacional, e o prazo para entrar na programação é curto."
+    },
+    {
+      "id": "ciatox-portaria-custeio",
+      "titulo": "Nova portaria federal cria verba mensal para os centros de toxicologia do SUS",
+      "fonte": "CFF",
+      "url": "https://site.cff.org.br/noticia/noticias-do-cff/17/09/2026/nova-portaria-fortalece-resposta-do-sus-a-mais-de-1-3-milhao-de-intoxicacoes",
+      "dataPub": "2026-09-17",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "transversal",
+        "fomento"
+      ],
+      "resumo": "A Portaria nº 12.151/2026 do Ministério da Saúde define regras para habilitar os Centros de Informação e Assistência Toxicológica (CIATox) e os integra à rede de urgência do SUS. Centros habilitados passam a receber custeio federal mensal de cerca de R$ 119 mil a R$ 173 mil, conforme a população atendida, com exigências como farmacêutico no núcleo de antídotos.",
+      "porQueImporta": "Os CIATox de João Pessoa e Campina Grande, apoiados pelo estado, podem se habilitar e garantir verba permanente."
+    },
+    {
+      "id": "finep-cooperamais-agricultura-familiar",
+      "titulo": "Finep oferece até R$ 15 milhões por projeto de tecnologia com cooperativas rurais",
+      "fonte": "UFRRJ",
+      "url": "https://portalpesquisa.ufrrj.br/2026/10/chamada-interna-para-selecao-de-proposta-institucional-finep-2026-cooperamais-tecnologia-ict/",
+      "dataPub": "2026-10",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "inovacao",
+        "transversal"
+      ],
+      "resumo": "A chamada CooperaMais Tecnologia ICT, da Finep, financia sem reembolso projetos de universidades e institutos de pesquisa feitos junto com cooperativas da agricultura familiar, de R$ 3 milhões a R$ 15 milhões cada. Os temas incluem comercialização, agroindústria, transformação digital, economia circular e resiliência climática; o prazo final é 8 de dezembro.",
+      "porQueImporta": "Une pesquisa e semiárido: as instituições paraibanas têm perfil para disputar, mas precisam de parceria formal com cooperativas."
+    },
+    {
+      "id": "mai-dai-capes-cnpq",
+      "titulo": "Mestrado e doutorado para inovação: CNPq e Capes recebem propostas até 11/12",
+      "fonte": "Guia da Pós-Graduação",
+      "url": "https://guiadaposgraduacao.com.br/capes-e-cnpq-chamada-mai-dai-com-bolsas-ate-11-12-2026/",
+      "dataPub": "2026-09-04",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "fomento",
+        "ensino",
+        "inovacao"
+      ],
+      "resumo": "A chamada CNPq/Capes nº 30/2026 apoia bolsas de mestrado, doutorado e pós-doutorado ligadas a problemas reais de empresas, órgãos públicos e organizações sociais. As universidades enviam as propostas com um parceiro, que aporta contrapartida, até 11 de dezembro.",
+      "porQueImporta": "Órgãos públicos podem ser parceiros, o que abre caminho para pesquisas sobre problemas do próprio governo estadual."
+    },
+    {
+      "id": "reino-unido-quantica-78-milhoes",
+      "titulo": "Reino Unido investe £ 78 milhões em usos práticos da tecnologia quântica",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/13/quantum-firms-backed-to-keep-uk-railways-running-and-cut-waiting-lists/",
+      "dataPub": "2026-10-13",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "fomento",
+        "internacional"
+      ],
+      "resumo": "O governo britânico anunciou £ 78 milhões para empresas de tecnologia quântica, com usos como achar falhas em ferrovias onde o GPS não chega e exames de vista portáteis. Parte do dinheiro amplia um programa de aprendizes que quer formar 150 técnicos em engenharia quântica até 2030.",
+      "porQueImporta": "Mostra como transformar quântica em serviço público concreto e em formação técnica, temas centrais para o CIQUANTA."
+    },
+    {
+      "id": "erc-ufpb-dinamarca",
+      "titulo": "Pesquisador da UFPB vai à Dinamarca estudar preservação de sítios arqueológicos submersos",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/pesquisador-da-paraiba-e-selecionado-para-intercambio-na-europa-no-1o-resultado-da-chamada-erc2013confap20132026",
+      "dataPub": "2026-10-13",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "internacional",
+        "patrimonio",
+        "fomento"
+      ],
+      "resumo": "Mateus David Finco, da UFPB, foi selecionado na chamada que liga pesquisadores brasileiros a equipes financiadas pelo Conselho Europeu de Pesquisa. Ele trabalhará com o Museu Nacional da Dinamarca em um projeto sobre patrimônio arqueológico subaquático, com R$ 10 mil da FAPESQ.",
+      "porQueImporta": "Abre ponte europeia para um tema de patrimônio pouco explorado no litoral paraibano."
+    },
+    {
+      "id": "tce-pb-ia-seixas",
+      "titulo": "TCE-PB lança IA feita com a UFCG para consultar 17 milhões de documentos",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/tecnologia/tce-pb-apresenta-ia-desenvolvida-com-a-ufcg-para-auxiliar-analise-de-processos/",
+      "dataPub": "2026-09-18",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal",
+        "ensino"
+      ],
+      "resumo": "O Tribunal de Contas da Paraíba apresentou o Seixas, ferramenta de inteligência artificial (IA) criada com professores da UFCG e do IFPB. Ela busca processos, decisões e pareceres num acervo de cerca de 17 milhões de arquivos e gera resumos para auditores.",
+      "porQueImporta": "É um caso paraibano de IA no serviço público, feito com universidade local, que pode inspirar outros órgãos do estado."
+    },
+    {
+      "id": "cg-350-vagas-tecnologia",
+      "titulo": "Campina Grande abre 350 vagas gratuitas em cursos de tecnologia, incluindo IA",
+      "fonte": "Paraíba Online",
+      "url": "https://paraibaonline.com.br/tecnologia/2026/10/06/area-de-tecnologia-campina-grande-abre-350-vagas-para-cursos-gratuitos/",
+      "dataPub": "2026-10-06",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": [
+        "inclusao",
+        "ensino"
+      ],
+      "resumo": "A Secretaria de Ciência e Tecnologia da Prefeitura de Campina Grande oferece 14 cursos gratuitos, de letramento digital a inteligência artificial, Python e segurança da informação. As inscrições são feitas pela internet ou na sede da secretaria.",
+      "porQueImporta": "Amplia a formação digital básica na segunda maior cidade do estado e pode somar com ações estaduais."
+    },
+    {
+      "id": "aquapredict-pombal",
+      "titulo": "Startup de Pombal usa IA para orientar produtores rurais sobre água e clima",
+      "fonte": "Paraíba Online",
+      "url": "https://paraibaonline.com.br/tecnologia/2026/09/14/startup-do-sertao-paraibano-usa-ia-no-auxilio-a-produtores-rurais/",
+      "dataPub": "2026-09-14",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "inovacao",
+        "transversal"
+      ],
+      "resumo": "A AquaPredict AI, criada por uma engenheira formada na UFCG, transforma dados de clima e território em informação para decisões no campo. O produto está em fase inicial e já passou pelo Web Summit Rio, com apoio do Sebrae e seleção do governo estadual.",
+      "porQueImporta": "Exemplo de inovação nascida no Sertão com aplicação direta na agricultura e na gestão da água."
+    },
+    {
+      "id": "preguica-ciencia-cidada",
+      "titulo": "Fotos de moradores ajudam a mapear preguiças em João Pessoa",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/mapeando-a-biodiversidade-urbana-como-a-ciencia-cidada-contribui-para-o-monitoramento-da-preguica-comum-em-joao-pessoa",
+      "dataPub": "2026-10-13",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": [
+        "astronomia",
+        "transversal"
+      ],
+      "resumo": "Pesquisadores da UFPB e uma bolsista da FAPESQ ligada à Sudema analisaram mais de 8 mil registros de espécies feitos por cidadãos em João Pessoa entre 2002 e 2024. Entre eles, 99 são de preguiça-comum, o que ajuda a orientar a gestão ambiental da cidade.",
+      "porQueImporta": "Mostra como a população pode produzir dados úteis para ciência e meio ambiente com o celular."
+    },
+    {
+      "id": "decreto-sac-ia",
+      "titulo": "Decreto federal permite IA no atendimento, mas exige humano disponível",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/governo-aperta-regras-e-inclui-medidas-de-protecao-ao-uso-de-inteligencia-artificial-no-atendimento-ao-consumidor/",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "O Decreto nº 13.135/2026 muda as regras dos serviços de atendimento de empresas reguladas e fintechs: a IA pode ser usada, mas não pode impedir o contato com uma pessoa. Exige atendimento humano das 8h às 20h todos os dias, retorno em 5 minutos se a ligação cair e cancelamento em qualquer etapa; as regras valem 20 dias após a publicação.",
+      "porQueImporta": "Sinaliza o padrão que a sociedade passará a esperar também dos canais digitais do governo."
+    },
+    {
+      "id": "mp-golpes-telefonicos",
+      "titulo": "Medida provisória obriga operadoras a autenticar e bloquear ligações suspeitas",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/13/10/2026/mp-bloqueio-chamadas-autenticacao/",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "seguranca",
+        "inclusao"
+      ],
+      "resumo": "A MP 1396/2026 torna obrigatória a autenticação de chamadas e manda bloquear ligações não autenticadas e números usados em excesso, como os de robôs de golpe. Parte das regras vale em 30 dias, e a Anatel tem 60 dias para regulamentar o restante.",
+      "porQueImporta": "Atinge um dos golpes que mais afetam a população e pode reduzir fraudes que usam o nome de órgãos públicos."
+    },
+    {
+      "id": "ancine-site-invadido",
+      "titulo": "Site da Ancine é invadido com ofensas a nordestinos e ameaças a universidades",
+      "fonte": "Portal de Prefeitura",
+      "url": "https://portaldeprefeitura.com.br/cotidiano/hackers-invadem-site-da-ancine-e-publicam-ataques-contra-nordestinos/634000/",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "seguranca",
+        "ensino"
+      ],
+      "resumo": "Uma página da Agência Nacional do Cinema foi alterada por invasores em 12 de outubro e passou a exibir ofensas a nordestinos e ameaças a universidades públicas. O conteúdo foi retirado e o caso é investigado; não havia confirmação de vazamento de dados.",
+      "porQueImporta": "Reforça a necessidade de vigiar os sites públicos e das universidades num período de ameaças a campi."
+    },
+    {
+      "id": "fies-vagas-remanescentes",
+      "titulo": "Fies abre inscrições para vagas que sobraram de 26/10 a 3/11",
+      "fonte": "Mix Vale",
+      "url": "https://www.mixvale.com.br/2026/10/13/mec-abre-inscricoes-para-vagas-remanescentes-do-fies-em-outubro/",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "Estudantes que fizeram o Enem a partir de 2010, com média mínima de 450 pontos, podem disputar vagas remanescentes do financiamento estudantil para este semestre. Metade das vagas vai para o Fies Social, que pode financiar até 100% do curso para famílias de baixa renda.",
+      "porQueImporta": "Ajuda a ampliar o acesso ao ensino superior privado para estudantes paraibanos de baixa renda."
+    },
+    {
+      "id": "premio-carolina-bori",
+      "titulo": "Prêmio da SBPC para meninas na ciência recebe inscrições até 30/10",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/inscricoes-para-o-8o-premio-carolina-bori-ciencia-mulher-se-encerram-em-30-de-outubro",
+      "dataPub": "2026-10-07",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "O 8º Prêmio Carolina Bori Ciência & Mulher vai premiar seis estudantes do ensino médio e da graduação com destaque em pesquisa, feiras ou olimpíadas. Os prêmios são de R$ 10 mil e R$ 13 mil, e as inscrições são gratuitas.",
+      "porQueImporta": "É uma oportunidade direta para alunas paraibanas de iniciação científica e de olimpíadas."
+    },
+    {
+      "id": "colorado-ia-normalizar",
+      "titulo": "Colorado quer tornar a IA rotina no governo e desmontar a equipe especial em 5 anos",
+      "fonte": "GovTech",
+      "url": "https://www.govtech.com/workforce/colorados-ai-leader-wants-to-normalize-its-technologies",
+      "dataPub": "2026-10-13",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "resumo": "O estado americano do Colorado criou um cargo de diretora de arquitetura de IA e treina servidores para saber quando usar a tecnologia e declarar esse uso. A equipe central de IA tem prazo para acabar: em até cinco anos o tema deve fazer parte do trabalho normal da área de tecnologia.",
+      "porQueImporta": "Oferece um modelo de governança de IA no governo sem criar uma estrutura permanente a mais."
+    },
+    {
+      "id": "cientistas-fiscalizacao-ia",
+      "titulo": "Cerca de 400 cientistas pedem órgão global para fiscalizar IA avançada",
+      "fonte": "Olhar Digital",
+      "url": "https://olhardigital.com.br/2026/10/13/inteligencia-artificial/cientistas-pedem-orgao-global-para-fiscalizar-sistemas-de-ia-avancada",
+      "dataPub": "2026-10-13",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "seguranca",
+        "secretaria2030"
+      ],
+      "resumo": "Uma carta aberta assinada por pesquisadores de 34 países pede padrões comuns de segurança, registro de incidentes e avaliação independente dos sistemas de IA mais potentes. Os signatários consideram insuficientes os compromissos voluntários das empresas.",
+      "porQueImporta": "Antecipa regras que podem chegar aos governos que contratam e usam IA."
+    },
+    {
+      "id": "bitcoin-pos-quantico",
+      "titulo": "Coinbase pede que o bitcoin comece já a se proteger dos computadores quânticos",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/13/coinbase-urges-early-work-on-bitcoins-post-quantum-transition/",
+      "dataPub": "2026-10-13",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "A empresa argumenta que trocar a criptografia do bitcoin por uma resistente a computadores quânticos levará anos e precisa começar antes que essas máquinas existam. O texto compara opções técnicas e não define data.",
+      "porQueImporta": "Mostra que a migração para a criptografia pós-quântica já preocupa o setor financeiro, tema que também chega aos sistemas públicos."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-10",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-10-10-2026-portal.pdf/view",
+    "paginasLidas": "edição já lida anteriormente",
+    "leituraParcial": true,
+    "obs": "O portal do jornal A União não publicou edição nova do Diário Oficial desde a de 10/10, já analisada; as edições de 13 e 14/10 ainda não estavam disponíveis no momento da leitura.",
+    "atos": []
+  },
+  "secom": [
+    {
+      "titulo": "Desafio Celso Furtado está com inscrições abertas para estudantes e professores da rede estadual",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/desafio-celso-furtado-esta-com-inscricoes-abertas-para-estudantes-e-professores-da-rede-estadual-da-paraiba",
+      "dataPub": "2026-10-13",
+      "programas": [
+        "ensino",
+        "inovacao"
+      ],
+      "resumo": "Inscrições abertas para alunos e professores da rede estadual."
+    },
+    {
+      "titulo": "Pesquisador da Paraíba é selecionado para intercâmbio na Europa no 1º resultado da chamada ERC–CONFAP–2026",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/pesquisador-da-paraiba-e-selecionado-para-intercambio-na-europa-no-1o-resultado-da-chamada-erc2013confap20132026",
+      "dataPub": "2026-10-13",
+      "programas": [
+        "internacional",
+        "patrimonio"
+      ],
+      "resumo": "Pesquisador da UFPB vai ao Museu Nacional da Dinamarca estudar patrimônio subaquático."
+    },
+    {
+      "titulo": "Ciência cidadã ajuda a monitorar a preguiça-comum em João Pessoa",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/mapeando-a-biodiversidade-urbana-como-a-ciencia-cidada-contribui-para-o-monitoramento-da-preguica-comum-em-joao-pessoa",
+      "dataPub": "2026-10-13",
+      "programas": [
+        "transversal"
+      ],
+      "resumo": "Estudo com bolsista da FAPESQ usa registros feitos por moradores."
+    },
+    {
+      "titulo": "Inscrições para o 8º Prêmio Carolina Bori Ciência & Mulher se encerram em 30 de outubro",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/inscricoes-para-o-8o-premio-carolina-bori-ciencia-mulher-se-encerram-em-30-de-outubro",
+      "dataPub": "2026-10-07",
+      "programas": [
+        "fomento",
+        "ensino"
+      ],
+      "resumo": "Prêmio da SBPC para estudantes do ensino médio e da graduação."
+    },
+    {
+      "titulo": "Edital tem 22 bolsas para pesquisador da Fundação Casa de José Américo",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/edital-tem-22-bolsas-para-pesquisador-da-fundacao-casa-de-jose-americo",
+      "dataPub": "2026-10-07",
+      "programas": [
+        "patrimonio",
+        "fomento"
+      ],
+      "resumo": "Bolsas para estudantes pesquisarem o acervo da fundação."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-sbpc-2027-paraiba",
+      "titulo": "Força-tarefa paraibana para a SBPC 2027",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ensino",
+        "astronomia",
+        "fomento"
+      ],
+      "descricao": "Reunir universidades, institutos federais e a FAPESQ para estimular propostas de pesquisadores do estado até 13 de novembro. Na reunião, montar uma vitrine da ciência paraibana com o CIQUANTA e a Cidade da Astronomia.",
+      "base": [
+        "sbpc-2027-joao-pessoa"
+      ]
+    },
+    {
+      "id": "p-ciatox-habilitacao",
+      "titulo": "Plano para habilitar os CIATox na nova portaria federal",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "fomento"
+      ],
+      "descricao": "Com a Saúde, levantar o que falta para os centros de João Pessoa e Campina Grande cumprirem as exigências e pedir o custeio mensal. A formação de bolsistas apoiada pelo Edital nº 47/2026 pode ajudar a comprovar equipe e serviço.",
+      "base": [
+        "ciatox-portaria-custeio"
+      ]
+    },
+    {
+      "id": "p-cooperamais-semiarido",
+      "titulo": "Candidaturas paraibanas à Finep com cooperativas do semiárido",
+      "tipo": "Edital",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "fomento",
+        "inovacao",
+        "transversal"
+      ],
+      "descricao": "Apoiar universidades e institutos do estado a fechar parcerias formais com cooperativas da agricultura familiar e disputar a chamada até 8 de dezembro. A Agricultura pode ajudar a indicar cooperativas e demandas prioritárias.",
+      "base": [
+        "finep-cooperamais-agricultura-familiar",
+        "aquapredict-pombal"
+      ]
+    },
+    {
+      "id": "p-mai-dai-governo",
+      "titulo": "Secretarias como parceiras de mestrados e doutorados para inovação",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ensino",
+        "transversal",
+        "fomento"
+      ],
+      "descricao": "Oferecer problemas reais das secretarias para que programas de pós-graduação paraibanos concorram à chamada MAI/DAI até 11 de dezembro. O estado ganha pesquisa aplicada e as universidades, bolsas.",
+      "base": [
+        "mai-dai-capes-cnpq"
+      ]
+    },
+    {
+      "id": "p-assistente-ia-acervos",
+      "titulo": "Assistentes de IA para os acervos de documentos do estado",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "secretaria2030",
+        "transversal"
+      ],
+      "descricao": "Inspirado no caso do TCE-PB com a UFCG, criar com universidades locais ferramentas que localizem e resumam processos em órgãos como Fazenda e Procuradoria. Seguir o modelo do Colorado: capacitar servidores e avaliar resultados de forma contínua.",
+      "base": [
+        "tce-pb-ia-seixas",
+        "colorado-ia-normalizar"
+      ]
+    },
+    {
+      "id": "p-aprendizes-quanticos",
+      "titulo": "Formação de técnicos em tecnologias quânticas",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "descricao": "Criar com os institutos federais uma trilha de nível técnico para operar e manter equipamentos quânticos, como faz o programa britânico de aprendizes. Isso prepara mão de obra local para o CIQUANTA.",
+      "base": [
+        "reino-unido-quantica-78-milhoes"
+      ]
+    },
+    {
+      "id": "p-patrimonio-subaquatico",
+      "titulo": "Inventário do patrimônio submerso do litoral paraibano",
+      "tipo": "Projeto",
+      "horizonte": "Longo prazo",
+      "programas": [
+        "patrimonio",
+        "internacional"
+      ],
+      "descricao": "Aproveitar a nova ponte com o Museu Nacional da Dinamarca para mapear naufrágios e sítios submersos da costa do estado. O resultado pode virar acervo digital e roteiro de turismo científico.",
+      "base": [
+        "erc-ufpb-dinamarca"
+      ]
+    }
+  ]
+}

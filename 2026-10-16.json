@@ -1,0 +1,329 @@
+{
+  "data": "2026-10-16",
+  "numero": 8,
+  "geradoEm": "2026-10-16T07:55:00-03:00",
+  "destaque": "30 startups paraibanas vão ao Web Summit Lisboa com apoio do estado",
+  "leitura": "O Governo da Paraíba selecionou 30 startups para o Web Summit Lisboa, de 9 a 12 de novembro, sete a mais que em 2025. A Finep divulga hoje, no Recife, o resultado de um edital de R$ 300 milhões para empresas do Norte, Nordeste e Centro-Oeste. No Diário Oficial, SECTIES, SECOM e FAPESQ criam comissão para acompanhar mestrado em jornalismo para servidores.",
+  "itens": [
+    {
+      "id": "web-summit-lisboa-30-startups",
+      "titulo": "Paraíba leva 30 startups ao Web Summit Lisboa, sete a mais que em 2025",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/governo-da-paraiba-seleciona-30-startups-para-participar-do-web-summit-lisboa-2026",
+      "dataPub": "2026-10-15",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": ["inovacao", "internacional", "fomento"],
+      "resumo": "A SECTIES e a FAPESQ divulgaram as 30 startups que vão representar a Paraíba no Web Summit Lisboa, uma das maiores feiras de tecnologia do mundo, de 9 a 12 de novembro. Cada empresa recebe R$ 15,5 mil para viagem e estadia do coordenador e cinco ingressos para o evento.",
+      "porQueImporta": "É a maior delegação paraibana até agora e abre porta para investidores e clientes no exterior."
+    },
+    {
+      "id": "fapesq-editais-ultimo-dia",
+      "titulo": "Último dia para vagas em projetos da FAPESQ com CODATA, núcleos de inovação e acervo de José Américo",
+      "fonte": "FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/2026/edital-no-66-2026-2013-selecao-de-equipe-tecnica-e-formacao-de-cadastro-de-reserva-cr-para-os-nucleos-de-inovacao-estadual-da-paraiba-nie-pb-vagas-remanescentes",
+      "dataPub": "2026-10-05",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": ["inovacao", "patrimonio", "fomento"],
+      "resumo": "Terminam nesta sexta (16) as inscrições em vários editais da FAPESQ com vagas que sobraram: equipe dos Núcleos de Inovação Estadual (NIE-PB), gestão de documentos na CODATA, a empresa de tecnologia do estado, e estudantes para cuidar do acervo da Fundação Casa de José Américo. Também fecham hoje seleções ligadas à Educação, como o comitê de busca ativa escolar.",
+      "porQueImporta": "Vagas que não forem preenchidas hoje atrasam projetos de inovação e de patrimônio já financiados."
+    },
+    {
+      "id": "pb-5o-investimento-publico-pd",
+      "titulo": "Paraíba é o 5º estado do país em investimento público em pesquisa, diz ranking do CLP",
+      "fonte": "PB Agora",
+      "url": "https://www.pbagora.com.br/noticia/paraiba/pb-ocupa-a-3a-posicao-no-ne-e-a-5a-no-brasil-entre-os-estados-com-mais-investimentos-publicos-em-pesquisa-e-desenvolvimento/",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": ["fomento", "inovacao"],
+      "resumo": "No Ranking de Competitividade dos Estados 2026, do Centro de Liderança Pública (CLP), a Paraíba aparece em 5º lugar no Brasil e 3º no Nordeste no peso do investimento público em pesquisa e desenvolvimento dentro da economia do estado. O indicador usa dados do Ministério da Ciência e do IBGE.",
+      "porQueImporta": "É um dado externo e comparável que mostra o esforço do estado em ciência e inovação."
+    },
+    {
+      "id": "doe-mestrado-jornalismo-servidores",
+      "titulo": "Comissão vai acompanhar mestrado em jornalismo da UFPB para servidores do estado",
+      "fonte": "Diário Oficial da Paraíba",
+      "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-16-10-2026-portal.pdf/view",
+      "dataPub": "2026-10-16",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": ["ensino", "transversal"],
+      "resumo": "SECTIES, Secretaria de Comunicação (SECOM) e FAPESQ criaram uma comissão com dois representantes de cada órgão para acompanhar o acordo com a UFPB. O acordo qualifica jornalistas que são servidores do Executivo no Mestrado Profissional em Jornalismo da universidade.",
+      "porQueImporta": "Mostra a SECTIES usando o ensino superior para formar quadros de outras secretarias."
+    },
+    {
+      "id": "ufpb-premio-delby-fernandes",
+      "titulo": "UFPB abre inscrições de 20 a 31/10 para prêmio que valoriza suas patentes e programas",
+      "fonte": "UFPB",
+      "url": "https://www.ufpb.br/oportunidades/ufpb-lanca-edital-do-9o-premio-delby-fernandes-de-inovacao/",
+      "dataPub": "2026-10-14",
+      "escopo": "Paraíba",
+      "relevancia": "media",
+      "programas": ["inovacao", "ensino"],
+      "resumo": "A Agência UFPB de Inovação Tecnológica lançou o 9º Prêmio Delby Fernandes, que premia as melhores patentes, desenhos industriais e programas de computador registrados pela universidade em 2025. As inscrições vão de 20 a 31 de outubro e a premiação será em 4 de dezembro.",
+      "porQueImporta": "Ajuda a identificar tecnologias prontas para virar negócio ou servir ao governo."
+    },
+    {
+      "id": "ufpb-patente-cerveja-abacaxi",
+      "titulo": "Cerveja com abacaxi e hortelã criada em trabalho de alunos da UFPB ganha patente",
+      "fonte": "UFPB",
+      "url": "https://www.ufpb.br/ciencia/ufpb-desenvolve-cerveja-artesanal-com-abacaxi-e-hortela-e-o-invento-e-reconhecido-com-patente/",
+      "dataPub": "2026-10-15",
+      "escopo": "Paraíba",
+      "relevancia": "radar",
+      "programas": ["inovacao", "ensino"],
+      "resumo": "Uma cerveja de trigo com abacaxi e hortelã, nascida de um trabalho de conclusão de curso de Engenharia de Alimentos da UFPB, recebeu patente do Instituto Nacional da Propriedade Industrial (INPI). O segredo está no momento em que a fruta e a erva entram no preparo.",
+      "porQueImporta": "É exemplo de pesquisa universitária com produto local que pode chegar ao mercado."
+    },
+    {
+      "id": "finep-subvencao-regional-resultado",
+      "titulo": "Finep anuncia hoje no Recife resultado de edital de R$ 300 milhões para empresas do Nordeste",
+      "fonte": "Tele.Síntese",
+      "url": "https://telesintese.com.br/finep-divulgara-projetos-selecionados-em-edital-de-r-300-milhoes-para-inovacao/",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": ["fomento", "inovacao"],
+      "resumo": "O Ministério da Ciência e a Finep divulgam nesta sexta (16), às 11h, na Sudene, no Recife, os projetos aprovados no edital de Subvenção Econômica Regional. São R$ 300 milhões que não precisam ser devolvidos, para empresas do Norte, Nordeste e Centro-Oeste; o edital recebeu 587 propostas e deve ganhar reforço de verba.",
+      "porQueImporta": "Vale conferir quantas empresas paraibanas foram aprovadas e apoiar as que ficarem fora."
+    },
+    {
+      "id": "ciatox-portaria-financiamento",
+      "titulo": "Nova regra federal define dinheiro mensal e equipe mínima dos CIATox",
+      "fonte": "CFF",
+      "url": "https://site.cff.org.br/noticia/noticias-do-cff/17/09/2026/nova-portaria-fortalece-resposta-do-sus-a-mais-de-1-3-milhao-de-intoxicacoes",
+      "dataPub": "2026-09-17",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": ["transversal", "fomento"],
+      "resumo": "A Portaria nº 12.151/2026 do Ministério da Saúde liga os Centros de Informação e Assistência Toxicológica (CIATox) à rede de urgência do SUS e fixa repasses mensais de cerca de R$ 119 mil a R$ 173 mil, conforme a população atendida. Exige farmacêutico na unidade de antídotos e prevê verba para construir novos centros.",
+      "porQueImporta": "Os CIATox de João Pessoa e Campina Grande, com projeto apoiado pela SECTIES e FAPESQ, podem buscar esse dinheiro."
+    },
+    {
+      "id": "tcu-ciberseguranca-governo",
+      "titulo": "TCU: nenhum de 239 órgãos federais cumpre todas as medidas básicas contra ataques hacker",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/sem-profissionais-de-ti-governo-descumpre-medidas-basicas-e-fica-fragil-na-seguranca-cibernetica/",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["seguranca", "transversal"],
+      "resumo": "Levantamento do Tribunal de Contas da União mostra que nenhum dos 239 órgãos avaliados adotou as 56 medidas básicas de segurança digital. A principal causa é a falta e a rotatividade de profissionais de tecnologia.",
+      "porQueImporta": "O mesmo risco existe nos órgãos estaduais e pede formação de pessoal em segurança digital."
+    },
+    {
+      "id": "decreto-sac-ia-atendimento-humano",
+      "titulo": "Decreto permite IA no atendimento ao consumidor, mas garante falar com humano",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/governo-aperta-regras-e-inclui-medidas-de-protecao-ao-uso-de-inteligencia-artificial-no-atendimento-ao-consumidor/",
+      "dataPub": "2026-10-13",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": ["secretaria2030", "transversal"],
+      "resumo": "O Decreto nº 13.135/2026 muda as regras dos serviços de atendimento ao consumidor de setores regulados e de bancos digitais. A inteligência artificial pode ser usada, mas não pode impedir o acesso a um atendente, disponível das 8h às 20h todos os dias.",
+      "porQueImporta": "É uma boa referência para os canais de atendimento com IA que o estado vier a usar."
+    },
+    {
+      "id": "conectividade-rodovias-2030",
+      "titulo": "Governo federal quer dobrar estradas com sinal de celular até 2030",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/15/10/2026/governo-conectividade-rodovias-2030/",
+      "dataPub": "2026-10-15",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": ["inclusao", "transversal"],
+      "resumo": "A nova Política Nacional de Conectividade em Rodovias quer levar sinal 4G e 5G de 27 mil para 57 mil km de estradas federais até 2030, obrigando operadoras a compartilhar redes. A BR-101, que corta o litoral paraibano, deve ter cobertura total em 2027.",
+      "porQueImporta": "Afeta segurança nas estradas e acesso a serviços digitais no interior."
+    },
+    {
+      "id": "ionq-cambridge-centro-quantico",
+      "titulo": "Universidade de Cambridge abre centro quântico com empresa e vagas para formar pesquisadores",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/15/ionq-cambridge-quantum-innovation-centre-2/",
+      "dataPub": "2026-10-15",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": ["ciquanta", "ensino", "internacional"],
+      "resumo": "A Universidade de Cambridge, no Reino Unido, inaugurou com a empresa IonQ um centro de inovação quântica dentro do campus, com nove projetos iniciais em química, materiais, finanças e medicina. A parceria cria vagas de professores, pós-doutores e doutorandos e terá um computador quântico de 256 qubits.",
+      "porQueImporta": "É um modelo de centro quântico ligado à formação de pessoal, objetivo também do CIQUANTA."
+    },
+    {
+      "id": "google-magic-states",
+      "titulo": "Google reduz em 40 vezes erros num passo-chave da computação quântica",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/16/google-demonstrates-method-to-cut-errors-in-quantum-computings-magic-states/",
+      "dataPub": "2026-10-16",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": ["ciquanta"],
+      "resumo": "Em estudo na revista Science, o Google mostrou um método que reduz cerca de 40 vezes os erros ao preparar estados especiais que os computadores quânticos consomem em cálculos longos. Os próprios autores dizem que ainda faltam testes em escala maior.",
+      "porQueImporta": "Mostra o ritmo da corrida quântica e os temas que o CIQUANTA terá de dominar."
+    },
+    {
+      "id": "suecia-academias-quantica-ia",
+      "titulo": "Suécia entra em academias europeias para formar gente em quântica e IA",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/15/sweden-european-skills-academies-quantum-ai/",
+      "dataPub": "2026-10-15",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": ["ciquanta", "ensino", "internacional"],
+      "resumo": "A Suécia aderiu à Academia Europeia de Habilidades Quânticas, rede de 73 parceiros em 23 países com orçamento de 19,8 milhões de euros em quatro anos, e a uma academia de IA voltada à saúde. Metade do dinheiro vem da União Europeia.",
+      "porQueImporta": "Redes regionais de formação são um caminho para preparar técnicos para o CIQUANTA."
+    },
+    {
+      "id": "nature-china-ascensao-ciencia",
+      "titulo": "Nature mostra como a China virou potência científica e onde ainda tropeça",
+      "fonte": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03222-9",
+      "dataPub": "2026-10-14",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": ["internacional", "ciquanta"],
+      "resumo": "Reportagem da Nature mostra que a China multiplicou por cerca de 100 seus gastos em pesquisa em três décadas e já lidera em artigos nas revistas de maior impacto. A pesquisa básica, porém, ainda recebe só cerca de 7% do orçamento, metade da fatia dos EUA.",
+      "porQueImporta": "Ajuda a entender o parceiro do CIQUANTA e a planejar a cooperação Paraíba–China."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-16",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-16-10-2026-portal.pdf/view",
+    "paginasLidas": "edição inteira (56 páginas)",
+    "leituraParcial": false,
+    "obs": "O Diário de 16/10 foi lido por inteiro; a edição de 15/10 já tinha sido lida por inteiro na edição anterior.",
+    "atos": [
+      {
+        "tipo": "Portaria Conjunta nº 0002/2026",
+        "orgao": "SECTIES, SECOM e FAPESQ",
+        "pagina": "8",
+        "relevancia": "alta",
+        "programas": ["ensino", "transversal"],
+        "resumo": "SECTIES, SECOM e FAPESQ criam comissão para o mestrado em jornalismo da UFPB para servidores. A comissão acompanha o acordo que forma jornalistas do Executivo no Mestrado Profissional em Jornalismo."
+      },
+      {
+        "tipo": "Portarias de Planos de Dados Abertos",
+        "orgao": "SECOM e AESA",
+        "pagina": "8 e 15",
+        "relevancia": "media",
+        "programas": ["secretaria2030", "transversal"],
+        "resumo": "SECOM e Agência das Águas (AESA) criam comissões para abrir dados ao público. Elas fazem os Planos de Dados Abertos de cada órgão, com a CODATA e a rede de transformação digital do estado."
+      },
+      {
+        "tipo": "Portaria Conjunta SEFAZ/CGE nº 0001/2026",
+        "orgao": "Fazenda e Controladoria-Geral do Estado",
+        "pagina": "11",
+        "relevancia": "radar",
+        "programas": ["transversal", "seguranca"],
+        "resumo": "Fazenda e Controladoria ampliam sistema que detecta riscos em fornecedores do estado. O contrato passa o uso de 10 para 65 acessos simultâneos, um por órgão estadual, com instalação no ambiente da CODATA."
+      },
+      {
+        "tipo": "Portaria nº 199/2026/SEDH",
+        "orgao": "Secretaria do Desenvolvimento Humano",
+        "pagina": "8",
+        "relevancia": "radar",
+        "programas": ["transversal"],
+        "resumo": "Desenvolvimento Humano testa sistema para monitorar o programa Tá na Mesa. Uma comissão técnica fará a prova de conceito de uma solução tecnológica para acompanhar e medir a execução do programa."
+      }
+    ]
+  },
+  "secom": [
+    {
+      "titulo": "Governo da Paraíba seleciona 30 startups para participar do Web Summit Lisboa 2026",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/noticias/governo-da-paraiba-seleciona-30-startups-para-participar-do-web-summit-lisboa-2026",
+      "dataPub": "2026-10-15",
+      "programas": ["inovacao", "internacional"],
+      "resumo": "Resultado do edital da SECTIES e da FAPESQ: 30 startups e R$ 15,5 mil para cada uma."
+    },
+    {
+      "titulo": "Edital nº 66/2026: equipe técnica dos Núcleos de Inovação Estadual (NIE-PB), vagas remanescentes",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/2026/edital-no-66-2026-2013-selecao-de-equipe-tecnica-e-formacao-de-cadastro-de-reserva-cr-para-os-nucleos-de-inovacao-estadual-da-paraiba-nie-pb-vagas-remanescentes",
+      "dataPub": "2026-10-05",
+      "programas": ["inovacao"],
+      "resumo": "Inscrições até 16/10."
+    },
+    {
+      "titulo": "Edital nº 70/2026: projeto de gestão de documentos na CODATA, vagas remanescentes",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/2026/edital-no-70-2026-2013-processo-seletivo-do-projeto-estrategias-de-gestao-documental-para-o-aperfeicoamento-da-administracao-na-companhia-de-processamento-de-dados-da-paraiba-codata-vagas-remanescentes",
+      "dataPub": "2026-10-07",
+      "programas": ["transversal", "secretaria2030"],
+      "resumo": "Inscrições de 10 a 16/10."
+    },
+    {
+      "titulo": "Edital nº 64/2026: graduandos para preservar e divulgar o acervo da Fundação Casa de José Américo",
+      "portal": "Portal da FAPESQ",
+      "url": "https://fapesq.rpp.br/editais/2026/edital-no-64-2026-2013-processo-seletivo-de-graduandos-para-o-projeto-preservacao-da-memoria-e-difusao-educativa-cultural-e-cientifica-do-acervo-da-fundacao-casa-de-jose-americo",
+      "dataPub": "2026-10-05",
+      "programas": ["patrimonio", "ensino"],
+      "resumo": "Inscrições até 16/10."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-web-summit-relatorio-resultados",
+      "titulo": "Painel público de resultados das missões de startups ao exterior",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": ["inovacao", "internacional"],
+      "descricao": "Pedir às 30 startups que relatem, seis meses depois do Web Summit, contatos, contratos e investimentos obtidos. Os números orientariam as próximas missões e mostrariam o retorno do dinheiro público.",
+      "base": ["web-summit-lisboa-30-startups"]
+    },
+    {
+      "id": "p-plantao-finep-nao-aprovadas",
+      "titulo": "Plantão de apoio às empresas paraibanas que ficarem fora da Finep",
+      "tipo": "Programa",
+      "horizonte": "Curto prazo",
+      "programas": ["fomento", "inovacao"],
+      "descricao": "Reunir FAPESQ, Sebrae e núcleos de inovação para ajudar as empresas não aprovadas no edital regional a melhorar os projetos. As boas propostas poderiam ser encaminhadas a editais estaduais ou a novas chamadas federais.",
+      "base": ["finep-subvencao-regional-resultado", "pb-5o-investimento-publico-pd"]
+    },
+    {
+      "id": "p-ciatox-habilitacao-financiamento",
+      "titulo": "Dossiê para os CIATox paraibanos receberem o repasse federal máximo",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": ["transversal", "fomento"],
+      "descricao": "Com a Secretaria de Saúde, levantar o que falta aos centros de João Pessoa e Campina Grande para cumprir as exigências da nova portaria, como farmacêutico na unidade de antídotos. Os bolsistas do projeto apoiado pela FAPESQ podem ajudar a reunir os dados.",
+      "base": ["ciatox-portaria-financiamento"]
+    },
+    {
+      "id": "p-trilha-ciberseguranca-servidores",
+      "titulo": "Trilha de formação em segurança digital para equipes de TI do estado",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": ["seguranca", "ensino", "transversal"],
+      "descricao": "Oferecer, com universidades e institutos federais, cursos curtos para as equipes de tecnologia das secretarias, começando pelas medidas básicas que o TCU cobra. Bolsas poderiam atrair estudantes para estágios nos órgãos.",
+      "base": ["tcu-ciberseguranca-governo"]
+    },
+    {
+      "id": "p-regra-atendimento-ia-servicos",
+      "titulo": "Regra estadual para robôs de atendimento com saída para humano",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": ["secretaria2030", "transversal"],
+      "descricao": "Adaptar ao atendimento público as regras do novo decreto federal: o cidadão sempre pode pedir um atendente e recebe o histórico da conversa. Valeria para canais com IA em saúde, Detran, Procon e Fazenda.",
+      "base": ["decreto-sac-ia-atendimento-humano"]
+    },
+    {
+      "id": "p-mestrados-profissionais-servidores",
+      "titulo": "Mais mestrados profissionais para servidores em áreas de tecnologia",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": ["ensino", "secretaria2030"],
+      "descricao": "Repetir o modelo do acordo com a UFPB em jornalismo para formar servidores em dados, IA e segurança digital. Os trabalhos finais resolveriam problemas reais das secretarias.",
+      "base": ["doe-mestrado-jornalismo-servidores", "tcu-ciberseguranca-governo"]
+    },
+    {
+      "id": "p-vitrine-patentes-universidades",
+      "titulo": "Vitrine estadual de patentes das universidades para empresas e governo",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": ["inovacao", "ensino"],
+      "descricao": "Reunir num só site as patentes e programas registrados por UFPB, UFCG, UEPB e IFPB, com linguagem simples e contato do inventor. Prêmios como o Delby Fernandes ajudariam a escolher os destaques.",
+      "base": ["ufpb-premio-delby-fernandes", "ufpb-patente-cerveja-abacaxi"]
+    }
+  ]
+}

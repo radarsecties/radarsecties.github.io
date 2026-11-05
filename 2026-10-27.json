@@ -1,0 +1,390 @@
+{
+ "data": "2026-10-27",
+ "numero": 15,
+ "geradoEm": "2026-10-27T08:34:00-03:00",
+ "destaque": "Caminhão de cursos digitais gratuitos chega hoje a Campina Grande",
+ "leitura": "O projeto Caminhos Digitais começa hoje (27) na UEPB, em Campina Grande, com mais de 10 cursos gratuitos de tecnologia e certificado. A Expotec abre amanhã em João Pessoa, com foco em tecnologias quânticas. Os Diários Oficiais de 23/10 em diante não puderam ser lidos até 8h30.",
+ "itens": [
+  {
+   "id": "caminhos-digitais-campina",
+   "titulo": "Caminhão de cursos digitais gratuitos começa hoje em Campina Grande",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br/caminhos-digitais-inicia-atividades-com-cursos-gratuitos-e-comeca-nova-etapa-pela-universidade-estadual-da-paraiba/",
+   "dataPub": "2026-10",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inclusao",
+    "ensino",
+    "secretaria2030"
+   ],
+   "resumo": "O projeto Caminhos Digitais, da SECTIES com a FAPESQ, abre hoje (27), às 17h, um caminhão-sala de aula na UEPB, em Campina Grande, onde fica até 6 de novembro. São mais de 10 cursos gratuitos com certificado, de informática básica a programação, inteligência artificial e segurança digital, com inscrição em caminhosdigitais.com.br.",
+   "porQueImporta": "O caminhão segue depois por 12 cidades do interior até fevereiro de 2027, levando formação digital a quem mora longe dos grandes centros."
+  },
+  {
+   "id": "expotec-comeca-amanha",
+   "titulo": "Expotec começa amanhã com tecnologias quânticas no centro do debate",
+   "fonte": "WSCOM",
+   "url": "https://wscom.com.br/noticias/2026/10/07/paraiba-sedia-12-expotec-joao-pessoa-inscricoes-gratuitas/",
+   "dataPub": "2026-10-07",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "ciquanta",
+    "astronomia",
+    "inovacao"
+   ],
+   "resumo": "A 12ª Expotec acontece de quarta (28) a sexta (30), das 9h às 17h, no Centro de Convenções de João Pessoa, com entrada gratuita. Organizada pela Anid com o Governo da Paraíba, por meio da SECTIES, a feira tem como tema as tecnologias quânticas e a soberania tecnológica, e mostra o projeto do computador quântico e o radiotelescópio BINGO.",
+   "porQueImporta": "É a principal vitrine pública do ano para os projetos de ciência do estado, com mais de 5 mil visitantes esperados."
+  },
+  {
+   "id": "ifpb-ifsc-horizontes",
+   "titulo": "Instituto Federal de Santa Catarina conhece o ecossistema de inovação da Paraíba",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/ifpb-recebe-comitiva-do-ifsc-para-intercambio-de-experiencias-em-inovacao",
+   "dataPub": "2026-10-26",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "ensino",
+    "ciquanta"
+   ],
+   "resumo": "Uma comitiva do IFSC passou três dias no IFPB para trocar experiências de gestão e inovação. O grupo visitou a agência de inovação do instituto e o Parque Tecnológico Horizontes de Inovação, do governo estadual, onde viu uma réplica ligada ao projeto dos primeiros computadores quânticos do país.",
+   "porQueImporta": "Mostra que o parque estadual e o projeto quântico já atraem instituições de outros estados, o que abre espaço para pesquisas em conjunto."
+  },
+  {
+   "id": "ifpb-nova-reitoria",
+   "titulo": "IFPB inaugura nova sede da Reitoria em Mangabeira, com R$ 25 milhões",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/novo-predio-da-reitoria-do-ifpb-e-inaugurado-em-dia-festivo",
+   "dataPub": "2026-10-23",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "O Instituto Federal da Paraíba inaugurou o novo prédio da Reitoria, com 8,7 mil metros quadrados, no bairro de Mangabeira, em João Pessoa. A obra custou mais de R$ 25 milhões, vindos do PAC e de emendas parlamentares, e reúne setores que antes ficavam em três prédios.",
+   "porQueImporta": "Uma sede única facilita a articulação do instituto com o estado em projetos de formação e inovação."
+  },
+  {
+   "id": "ifpb-encontro-ead",
+   "titulo": "IFPB abre inscrições para encontro de educação a distância de 4 a 6/11",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/inscricoes-abertas-para-o-vi-encontro-de-educacao-a-distancia",
+   "dataPub": "2026-10-26",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "inclusao"
+   ],
+   "resumo": "O IFPB abriu inscrições para o VI Encontro de Educação a Distância, marcado para 4 a 6 de novembro. O evento reúne quem trabalha com cursos online no instituto e na rede.",
+   "porQueImporta": "O ensino a distância é uma das formas de levar cursos superiores e técnicos ao interior do estado."
+  },
+  {
+   "id": "jp-ia-servicos-publicos",
+   "titulo": "João Pessoa usa IA, fibra própria e Wi-Fi gratuito para modernizar serviços",
+   "fonte": "PB Agora",
+   "url": "https://www.pbagora.com.br/noticia/paraiba/joao-pessoa-amplia-uso-da-tecnologia-e-da-inteligencia-artificial-para-modernizar-servicos-publicos/",
+   "dataPub": "2026-10-11",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "transversal",
+    "inclusao",
+    "secretaria2030"
+   ],
+   "resumo": "A prefeitura da capital tem cerca de 280 km de fibra óptica própria ligando prédios públicos e pontos de Wi-Fi gratuito em praças e na orla. A cidade integra uma coalizão de dez capitais apoiada pelo BID Lab e testa alertas por SMS para moradores de áreas de risco.",
+   "porQueImporta": "São soluções municipais já em uso que podem servir de referência para outras cidades paraibanas e para as secretarias do estado."
+  },
+  {
+   "id": "tecnova-588-milhoes",
+   "titulo": "Tecnova terá R$ 588 milhões para pequenas empresas inovadoras via fundações estaduais",
+   "fonte": "Brasil Inovador",
+   "url": "https://brasilinovador.com.br/finep-e-mcti-estruturam-r-588-milhoes-para-impulsionar-inovacao-em-pequenas-empresas-pelo-tecnova/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "fomento",
+    "inovacao"
+   ],
+   "resumo": "A Finep e o MCTI organizaram uma nova fase do Tecnova, com R$ 360 milhões federais e R$ 228 milhões de contrapartida de estados, fundações de apoio à pesquisa e parceiros, para apoiar até 713 empresas. O dinheiro é a fundo perdido e vale para micro e pequenas empresas com faturamento de até R$ 16 milhões por ano.",
+   "porQueImporta": "O programa é executado pelas fundações estaduais, como a FAPESQ, que já operou edições anteriores do Tecnova na Paraíba."
+  },
+  {
+   "id": "govtech-hub-goias-vagas",
+   "titulo": "Goiás abre 500 vagas gratuitas para startups que vendem soluções ao governo",
+   "fonte": "Paraíba Total",
+   "url": "https://paraibatotal.com.br/2026/10/26/formacao-govtech-hub-goias-oferece-500-vagas-gratuitas-para-startups-e-empresas-de-tecnologia/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "resumo": "A Secretaria de Ciência, Tecnologia e Inovação de Goiás, com apoio do Sebrae Startups, abriu a Formação GovTech, com 500 vagas gratuitas para startups e empresas que querem resolver problemas do setor público. As inscrições vão até 2 de novembro e o programa ocorre de dezembro a fevereiro, com parte presencial em Goiânia.",
+   "porQueImporta": "Startups paraibanas podem conferir se são aceitas e aprender a vender para governos, um mercado ainda pouco explorado no estado."
+  },
+  {
+   "id": "ia-infarto-incor",
+   "titulo": "IA da USP e da Suécia identifica infarto grave pelo eletrocardiograma",
+   "fonte": "Agência FAPESP",
+   "url": "https://agencia.fapesp.br/inteligencia-artificial-detecta-tipo-mais-grave-de-infarto-e-localiza-arteria-bloqueada-com-alta-precisao/59478",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "resumo": "Pesquisadores do InCor (USP) e da Universidade de Uppsala criaram um sistema que lê o eletrocardiograma comum e aponta o tipo mais grave de infarto e a artéria entupida. O acerto chega a 96% nos casos típicos e a 82% nos difíceis, mas a ferramenta ainda é experimental e depende de aprovação da Anvisa.",
+   "porQueImporta": "O exame é barato e existe em quase todo hospital, o que torna esse tipo de IA útil para a rede de urgência do interior."
+  },
+  {
+   "id": "vivo-satelite-celular",
+   "titulo": "Vivo passa a enviar mensagens por satélite em áreas sem sinal",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/26/10/2026/vivo-parceria-starlink-vivo-satelite/",
+   "dataPub": "2026-10-26",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao",
+    "transversal"
+   ],
+   "resumo": "A Vivo lançou com a Starlink um serviço em que celulares compatíveis se conectam a satélites quando não há sinal da operadora. No início, permite mensagens e áudios por aplicativos como WhatsApp, além de mapas, e é gratuito por 12 meses para clientes pessoa física.",
+   "porQueImporta": "Áreas rurais do semiárido sem cobertura podem ganhar um canal mínimo de comunicação, útil para saúde e Defesa Civil."
+  },
+  {
+   "id": "mec-sinaept-avaliacao",
+   "titulo": "MEC regulamenta avaliação nacional da educação profissional e tecnológica",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/mec-implementa-sistema-nacional-de-avaliacao-da-educacao-profissional-e-tecnologica",
+   "dataPub": "2026-10-20",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "Uma portaria do Inep definiu como vai funcionar o Sinaept, sistema que avaliará escolas e cursos de educação profissional e tecnológica. O Inep tem 180 dias para publicar o calendário de implantação, que começa pelos cursos técnicos.",
+   "porQueImporta": "Institutos federais, a UEPB e escolas técnicas do estado passarão a ter indicadores públicos de qualidade."
+  },
+  {
+   "id": "tokenizer-ia-idiomas",
+   "titulo": "Usar IA em línguas que não são o inglês pode custar até 5 vezes mais",
+   "fonte": "Rest of World",
+   "url": "https://restofworld.org/2026/ai-tokenizer-tax-non-english-languages-cost-inequity/",
+   "dataPub": "2026-10-26",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "Um estudo mostrou que modelos de IA cobram por pedaços de texto, e muitas línguas precisam de 1,5 a 5 vezes mais pedaços que o inglês para dizer a mesma coisa. Isso encarece o uso e deixa as respostas mais lentas em países fora do eixo de língua inglesa.",
+   "porQueImporta": "Ao contratar IA, governos que trabalham em português devem medir o custo real em português, não só o preço anunciado."
+  },
+  {
+   "id": "intel-compra-classiq",
+   "titulo": "Intel compra empresa de software quântico para oferecer solução completa",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/26/intel-to-acquire-classiq-to-create-a-full-stack-quantum-computing-platform/",
+   "dataPub": "2026-10-26",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": "A Intel anunciou a compra da Classiq, empresa cujo programa ajuda a criar circuitos quânticos sem conhecer a fundo a máquina. A ideia é juntar o software aos chips quânticos de silício da Intel, com conclusão prevista para 2027.",
+   "porQueImporta": "Ferramentas que facilitam a programação quântica serão chave para formar usuários das máquinas do CIQUANTA."
+  },
+  {
+   "id": "ibm-liga-processadores",
+   "titulo": "IBM conecta dois processadores quânticos de 120 qubits por cabo",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/27/ibm-connects-two-120-qubit-processors-with-99-state-transfer-fidelity/",
+   "dataPub": "2026-10-27",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": "Pesquisadores da IBM ligaram dois processadores de 120 qubits com cabos supercondutores e transferiram informação quântica com 99% de acerto. O estudo ainda não foi revisado por outros cientistas.",
+   "porQueImporta": "Ligar máquinas menores é um dos caminhos para chegar a computadores quânticos maiores."
+  },
+  {
+   "id": "rmit-ia-admissao",
+   "titulo": "Universidade australiana é criticada por usar IA para aprovar matrículas",
+   "fonte": "University World News",
+   "url": "https://www.universityworldnews.com/post.php?story=20261024155951736",
+   "dataPub": "2026-10-24",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "secretaria2030"
+   ],
+   "resumo": "O sindicato de professores da Austrália disse ao Parlamento que a RMIT, em Melbourne, passou a usar um sistema de IA para analisar e decidir pedidos de matrícula, sobretudo de estrangeiros, sem consultar os servidores. A reportagem não traz resposta da universidade.",
+   "porQueImporta": "O caso mostra que usar IA em seleções de estudantes e bolsistas exige regras claras e revisão humana."
+  },
+  {
+   "id": "ulster-desiste-ia-policia",
+   "titulo": "Polícia de condado nos EUA desiste de IA para escrever boletins",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/artificial-intelligence/kentucky-sheriff-nixes-ai-assisted-report-writing-after-trial",
+   "dataPub": "2026-10-23",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "transversal",
+    "seguranca"
+   ],
+   "resumo": "Depois de 90 dias de teste, a polícia do condado de Ulster, em Nova York, abandonou a ferramenta que escrevia rascunhos de boletins a partir das gravações. O comando disse que o benefício não compensava o custo, e o dinheiro federal irá para computadores e rádios.",
+   "porQueImporta": "Testes curtos e com avaliação de custo evitam contratos de IA que não entregam resultado."
+  },
+  {
+   "id": "openai-prova-revisao",
+   "titulo": "Prova matemática feita por IA vai passar por revisão de especialistas",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/27/openai-computing-claim-faces-review-raising-questions-about-quantum-advantage/",
+   "dataPub": "2026-10-27",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta",
+    "secretaria2030"
+   ],
+   "resumo": "A OpenAI chamou pesquisadores de fora para checar uma prova gerada por IA que contesta uma suposição usada para medir a vantagem dos computadores quânticos. Por si só, o resultado não torna os computadores comuns mais rápidos.",
+   "porQueImporta": "Resultados da IA na ciência precisam de verificação independente antes de mudar políticas ou investimentos."
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+  "paginasLidas": "edições novas indisponíveis",
+  "leituraParcial": true,
+  "obs": "As edições de 23/10 a 27/10 do Diário Oficial não ficaram disponíveis para leitura até 8h30 e ficam para a próxima edição do Radar.",
+  "atos": []
+ },
+ "secom": [
+  {
+   "titulo": "Caminhos Digitais inicia atividades com cursos gratuitos e começa nova etapa pela UEPB",
+   "portal": "UEPB",
+   "url": "https://uepb.edu.br/caminhos-digitais-inicia-atividades-com-cursos-gratuitos-e-comeca-nova-etapa-pela-universidade-estadual-da-paraiba/",
+   "dataPub": "",
+   "programas": [
+    "inclusao",
+    "ensino"
+   ],
+   "resumo": "Projeto da SECTIES com a FAPESQ leva um caminhão-sala de aula com cursos digitais gratuitos a Campina Grande e depois a 12 cidades do interior."
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-painel-caminhos-digitais",
+   "titulo": "Painel público do Caminhos Digitais por cidade",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao",
+    "ensino"
+   ],
+   "descricao": "Mostrar em uma página simples quantas pessoas se inscreveram e concluíram cursos em cada parada do caminhão. Os dados ajudam a ajustar os cursos e a escolher as próximas cidades.",
+   "base": [
+    "caminhos-digitais-campina"
+   ]
+  },
+  {
+   "id": "p-guia-tecnova-empresas",
+   "titulo": "Guia para pequenas empresas disputarem o novo Tecnova",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "fomento",
+    "inovacao"
+   ],
+   "descricao": "Publicar um passo a passo, com oficinas no Parque Horizontes e no interior, sobre como uma pequena empresa monta um projeto de subvenção. Assim as empresas paraibanas chegam preparadas quando as chamadas estaduais do programa forem abertas.",
+   "base": [
+    "tecnova-588-milhoes",
+    "govtech-hub-goias-vagas"
+   ]
+  },
+  {
+   "id": "p-custo-ia-portugues",
+   "titulo": "Teste de custo em português antes de contratar IA",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "descricao": "Incluir nas compras de IA do estado um teste com textos reais em português, medindo custo, rapidez e qualidade. A regra evita surpresas na conta e na qualidade do atendimento ao cidadão.",
+   "base": [
+    "tokenizer-ia-idiomas",
+    "ulster-desiste-ia-policia"
+   ]
+  },
+  {
+   "id": "p-ecg-ia-urgencia",
+   "titulo": "Estudo de IA no eletrocardiograma da rede de urgência",
+   "tipo": "Parceria",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "descricao": "Propor à Secretaria da Saúde e às universidades um estudo sobre o apoio de IA na leitura de eletrocardiogramas em hospitais regionais. O uso real só viria depois de aprovação da Anvisa e com decisão final sempre do médico.",
+   "base": [
+    "ia-infarto-incor"
+   ]
+  },
+  {
+   "id": "p-alerta-satelite-defesa-civil",
+   "titulo": "Alertas por satélite no celular para áreas sem sinal",
+   "tipo": "Projeto",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "transversal",
+    "inclusao"
+   ],
+   "descricao": "Estudar com a Defesa Civil e a Saúde o envio de alertas e orientações por mensagens via satélite em comunidades rurais sem cobertura. A experiência de João Pessoa com alertas por SMS pode servir de ponto de partida.",
+   "base": [
+    "vivo-satelite-celular",
+    "jp-ia-servicos-publicos"
+   ]
+  },
+  {
+   "id": "p-regras-ia-selecoes",
+   "titulo": "Regras para uso de IA em seleções de estudantes e bolsistas",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "ensino",
+    "secretaria2030"
+   ],
+   "descricao": "Definir que qualquer uso de IA em seleções de bolsas e matrículas no estado seja informado aos candidatos e tenha revisão humana. A orientação protege a UEPB e a FAPESQ de contestações como a que ocorreu na Austrália.",
+   "base": [
+    "rmit-ia-admissao"
+   ]
+  },
+  {
+   "id": "p-rota-visitas-parque",
+   "titulo": "Roteiro de visitas técnicas ao Parque Horizontes",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "ciquanta",
+    "ensino"
+   ],
+   "descricao": "Organizar um roteiro fixo de visitas para universidades, institutos e empresas de fora, com o parque, as incubadoras e a vitrine do projeto quântico. Cada visita pode terminar com uma lista de possíveis projetos em conjunto.",
+   "base": [
+    "ifpb-ifsc-horizontes",
+    "expotec-comeca-amanha"
+   ]
+  }
+ ]
+}

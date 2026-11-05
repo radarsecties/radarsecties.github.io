@@ -1,0 +1,472 @@
+{
+ "data": "2026-10-22",
+ "numero": 12,
+ "geradoEm": "2026-10-22T07:55:00-03:00",
+ "destaque": "SBPC faz 1ª reunião regional na Paraíba; inscrições até sexta (23)",
+ "leitura": "Campina Grande recebe nos dias 27 e 28 a primeira reunião regional da SBPC na Paraíba, com inscrições gratuitas até sexta-feira (23). A Paraíba teve um projeto aprovado na chamada regional da Finep, e a Alemanha fixou 2030 para proteger sistemas críticos contra computadores quânticos. No Diário Oficial, a FAPESQ chama pesquisadores para o campo.",
+ "itens": [
+  {
+   "id": "sbpc-regional-campina",
+   "titulo": "SBPC faz primeira reunião regional na Paraíba; inscrições gratuitas até sexta (23)",
+   "fonte": "UFPB",
+   "url": "https://www.ufpb.br/noticias/uepb-vai-sediar-a-i-reuniao-regional-da-sbpc-na-paraiba-nos-dias-27-e-28-de-outubro/",
+   "dataPub": "2026-10-06",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "A UEPB recebe nos dias 27 e 28 de outubro, em Campina Grande, a I Reunião Regional da Sociedade Brasileira para o Progresso da Ciência (SBPC) na Paraíba, com apoio da UFPB e da UFCG. O tema é a ciência feita no semiárido e a redução das diferenças regionais no dinheiro para pesquisa; as inscrições vão até 23 de outubro.",
+   "porQueImporta": "É o ensaio da reunião nacional da SBPC de julho de 2027 em João Pessoa e um palco para defender mais fomento para o Nordeste."
+  },
+  {
+   "id": "finep-nordeste-paraiba",
+   "titulo": "Paraíba teve só um projeto aprovado na chamada regional de inovação da Finep",
+   "fonte": "Paraíba Total",
+   "url": "https://paraibatotal.com.br/2026/10/21/demanda-por-inovacao-no-nordeste-supera-em-oito-vezes-recursos-iniciais-de-edital-federal/",
+   "dataPub": "2026-10-21",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": "Na chamada da Finep de apoio a empresas do Norte, Nordeste e Centro-Oeste, o Nordeste teve 310 propostas e 40 aprovadas, somando cerca de R$ 151,7 milhões. A Paraíba ficou com um projeto, de cerca de R$ 4,15 milhões, e o reforço anunciado pelo MCTI pode levar o total de empresas atendidas a 120.",
+   "porQueImporta": "Com mais R$ 150 milhões a caminho, há chance de mais empresas paraibanas entrarem se as propostas estiverem bem preparadas."
+  },
+  {
+   "id": "ufpb-ruf-2026",
+   "titulo": "UFPB sobe quatro posições e fica em 24º lugar no Ranking Universitário Folha",
+   "fonte": "UFPB",
+   "url": "https://www.ufpb.br/noticias/ufpb-alcanca-24o-lugar-nacional-no-ranking-do-ranking-universitario-folha-2026/",
+   "dataPub": "2026-10-21",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "inovacao"
+   ],
+   "resumo": "A UFPB passou do 28º para o 24º lugar entre 205 instituições avaliadas pelo ranking da Folha, melhor posição desde 2013. Os maiores avanços foram em mercado de trabalho e em inovação.",
+   "porQueImporta": "Mostra a força do ensino superior paraibano e ajuda a atrair estudantes, pesquisadores e parcerias."
+  },
+  {
+   "id": "hub-sebrae-semana-inovacao",
+   "titulo": "Hub Sebrae faz semana de inovação e negócios em João Pessoa até 30 de outubro",
+   "fonte": "Paraíba Total",
+   "url": "https://paraibatotal.com.br/2026/10/21/hub-sebrae-promove-duas-semanas-de-inovacao-negocios-e-conexoes-na-paraiba-2/",
+   "dataPub": "2026-10-21",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "inovacao"
+   ],
+   "resumo": "O Hub Sebrae, em João Pessoa, reúne pequenos negócios, startups e universidades em atividades de 20 a 30 de outubro, para cerca de 400 participantes. A programação inclui aceleração de empresas nos dias 27 e 28 e encontros para mulheres empreendedoras.",
+   "porQueImporta": "A agenda coincide com a Expotec e amplia as conexões do ecossistema de startups do estado."
+  },
+  {
+   "id": "doe-fapesq-empaer-rural",
+   "titulo": "FAPESQ e Empaer chamam pesquisadores da reserva para o programa de desenvolvimento rural",
+   "fonte": "Diário Oficial da Paraíba",
+   "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+   "dataPub": "2026-10-22",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "fomento",
+    "transversal"
+   ],
+   "resumo": "O Diário Oficial publicou a primeira chamada do cadastro de reserva dos Editais nº 44 e 45/2026, da FAPESQ com a Empaer. As vagas são para técnicos e profissionais que atuam no apoio ao desenvolvimento rural sustentável.",
+   "porQueImporta": "É um exemplo de fomento à pesquisa servindo diretamente à agricultura familiar e a outra secretaria."
+  },
+  {
+   "id": "doe-biblioteca-augusto-dos-anjos",
+   "titulo": "Estado contrata reforma da Biblioteca Pública Augusto dos Anjos por R$ 430 mil",
+   "fonte": "Diário Oficial da Paraíba",
+   "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+   "dataPub": "2026-10-22",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "patrimonio"
+   ],
+   "resumo": "A Secretaria da Educação homologou a licitação para reforma e manutenção da Biblioteca Pública Estadual Augusto dos Anjos, em João Pessoa. O valor total é de R$ 430 mil.",
+   "porQueImporta": "A obra abre espaço para pensar a digitalização do acervo e novos usos culturais e científicos do prédio."
+  },
+  {
+   "id": "doe-uepb-cooperacao-espanha",
+   "titulo": "UEPB recebe professora de espanhol pela cooperação oficial da Espanha",
+   "fonte": "Diário Oficial da Paraíba",
+   "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+   "dataPub": "2026-10-22",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "internacional",
+    "ensino"
+   ],
+   "resumo": "A UEPB assinou termo com a Agência Espanhola de Cooperação para o Desenvolvimento (AECID) para receber uma professora de espanhol no Departamento de Letras e na área de relações internacionais. O apoio vai até julho de 2027.",
+   "porQueImporta": "Fortalece a internacionalização da universidade estadual com custo bancado pelo parceiro estrangeiro."
+  },
+  {
+   "id": "mulheres-dados-nuvem-brasil",
+   "titulo": "Ministério passa a exigir que seus dados em nuvem fiquem e sejam processados no Brasil",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/ministerio-das-mulheres-passa-a-exigir-dados-armazenados-e-processados-no-brasil/",
+   "dataPub": "2026-10-19",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "seguranca",
+    "secretaria2030"
+   ],
+   "resumo": "Portaria do Ministério das Mulheres determina que dados guardados em nuvem sejam armazenados e processados em data centers no país, com exceções justificadas e cópia no Brasil. A regra também exige contratos que permitam trocar de fornecedor sem perder dados.",
+   "porQueImporta": "Serve de modelo para uma regra estadual de nuvem que proteja dados dos cidadãos e evite dependência de um só fornecedor."
+  },
+  {
+   "id": "sus-prontuario-integrado",
+   "titulo": "SUS amplia acesso de profissionais ao histórico clínico integrado dos pacientes",
+   "fonte": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/sus-amplia-acesso-de-profissionais-a-prontuarios-eletronicos-integrados/",
+   "dataPub": "2026-10-22",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "resumo": "Profissionais de saúde habilitados poderão consultar no atendimento consultas, exames, vacinas e receitas do paciente registrados em outras unidades, pela Rede Nacional de Dados em Saúde. A integração com hospitais ainda está em teste.",
+   "porQueImporta": "Hospitais estaduais da Paraíba podem se preparar para entrar nessa rede e evitar exames repetidos."
+  },
+  {
+   "id": "pf-centro-protecao-digital",
+   "titulo": "Polícia Federal abre centro nacional para receber alertas de crimes contra crianças na internet",
+   "fonte": "Agência Gov",
+   "url": "https://agenciagov.ebc.com.br/noticias/202610/pf-inicia-atividades-do-centro-nacional-de-protecao-a-crianca-e-ao-adolescente",
+   "dataPub": "2026-10-21",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "seguranca",
+    "transversal"
+   ],
+   "resumo": "O centro vai receber avisos que as plataformas digitais são obrigadas a enviar pelo ECA Digital e repassá-los às polícias dos estados. Nesta primeira fase, entraram no ar o portal e o cadastro das empresas.",
+   "porQueImporta": "As polícias civis, inclusive a da Paraíba, vão receber esses casos e precisam de equipe e sistemas prontos."
+  },
+  {
+   "id": "sinaept-avaliacao-ept",
+   "titulo": "MEC regulamenta avaliação nacional dos cursos técnicos e tecnológicos",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/mec-implementa-sistema-nacional-de-avaliacao-da-educacao-profissional-e-tecnologica",
+   "dataPub": "2026-10-20",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "Portaria do Inep define como vai funcionar o sistema que avalia a qualidade de escolas e cursos de educação profissional, começando pelo ensino técnico. As redes estaduais podem aderir e integrar suas próprias avaliações.",
+   "porQueImporta": "A Paraíba pode usar os dados para planejar a oferta técnica e tecnológica junto com IFPB, UEPB e escolas estaduais."
+  },
+  {
+   "id": "marco-legal-games",
+   "titulo": "Governo regulamenta o Marco Legal dos Games e cria plataforma para jogos nacionais",
+   "fonte": "Jornal da Paraíba",
+   "url": "https://jornaldaparaiba.com.br/tecnologia/governo-regulamenta-marco-legal-dos-games-e-anuncia-plataforma-para-jogos-nacionais-entenda",
+   "dataPub": "2026-10-14",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "Decreto federal reconhece os jogos eletrônicos como produto cultural e abre acesso a políticas de educação, cultura e saúde. O governo também anunciou a plataforma Game Brasil para divulgar jogos feitos no país.",
+   "porQueImporta": "Abre espaço para estúdios e cursos paraibanos de jogos buscarem apoio público."
+  },
+  {
+   "id": "fapesp-pipe-tecnologias-educacionais",
+   "titulo": "FAPESP abre R$ 25 milhões para pequenas empresas criarem tecnologias para escolas",
+   "fonte": "Agência FAPESP",
+   "url": "https://agencia.fapesp.br/programa-pesquisa-inovativa-em-pequenas-empresas-vai-apoiar-projetos-de-tecnologias-educacionais/59435",
+   "dataPub": "2026-10-21",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "fomento",
+    "inovacao",
+    "transversal"
+   ],
+   "resumo": "A chamada apoia projetos de até R$ 500 mil em temas como tutores de inteligência artificial, gestão escolar com dados e tecnologia assistiva. As pré-propostas vão até 12 de novembro e valem para empresas paulistas.",
+   "porQueImporta": "É um formato que a FAPESQ pode copiar com a Secretaria da Educação para estimular startups locais."
+  },
+  {
+   "id": "fapesp-investimento-2025",
+   "titulo": "FAPESP aumenta em 30% o dinheiro aplicado em pesquisa em 2025",
+   "fonte": "Agência FAPESP",
+   "url": "https://agencia.fapesp.br/investimento-da-fapesp-em-pesquisa-cresce-30-em-2025/59421",
+   "dataPub": "2026-10-20",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "fomento"
+   ],
+   "resumo": "A fundação paulista contratou 15,9 mil projetos no ano e criou 34 centros de ciência para o desenvolvimento, com parceiros públicos e privados. Também apoiou 462 projetos de pesquisa em políticas públicas com prefeituras e órgãos de governo.",
+   "porQueImporta": "Os programas de pesquisa para políticas públicas são referência para aproximar a FAPESQ das demais secretarias."
+  },
+  {
+   "id": "conab-ataque-cibernetico",
+   "titulo": "Conab informa que seus sistemas estão sob ataque cibernético",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/conab-adverte-que-esta-seendo-alvo-de-ataques-ciberneticos/",
+   "dataPub": "2026-10-20",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "seguranca"
+   ],
+   "resumo": "A Companhia Nacional de Abastecimento disse que seus sistemas seguem protegidos, mas que usuários podem ter instabilidade por causa das medidas preventivas. O caso está sendo investigado.",
+   "porQueImporta": "Mais um alerta de que órgãos públicos são alvo frequente e precisam de planos de resposta prontos."
+  },
+  {
+   "id": "alemanha-criptografia-pos-quantica",
+   "titulo": "Alemanha fixa 2030 como prazo para proteger sistemas críticos contra computadores quânticos",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/16/transition-post-quantum-cryptography-national-eu-roadmap-guideline/",
+   "dataPub": "2026-10-16",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "ciquanta",
+    "seguranca"
+   ],
+   "resumo": "O governo alemão publicou guia para trocar a criptografia atual por métodos resistentes a computadores quânticos: sistemas de alto risco até o fim de 2030 e o restante até 2035. O documento vale para governos federal, estaduais e municipais e pede responsáveis e prazos definidos.",
+   "porQueImporta": "Dá um calendário de referência para a Paraíba planejar a proteção dos seus sistemas, tema ligado ao CIQUANTA."
+  },
+  {
+   "id": "china-bolsas-15-anos",
+   "titulo": "China escolhe 44 jovens cientistas para bolsas de 15 anos sem metas de curto prazo",
+   "fonte": "Times Higher Education",
+   "url": "https://www.timeshighereducation.com/node/745375",
+   "dataPub": "2026-10-09",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "fomento",
+    "internacional"
+   ],
+   "resumo": "A Fundação Nacional de Ciências Naturais da China selecionou 44 pesquisadores com menos de 35 anos, nove deles trabalhando fora do país. O valor da bolsa dobra a cada cinco anos e não há avaliações periódicas de produtividade.",
+   "porQueImporta": "Mostra uma forma nova de fomento de longo prazo que pode inspirar programas de fixação de talentos."
+  },
+  {
+   "id": "china-atrai-cientistas",
+   "titulo": "China atrai cientistas renomados, inclusive um Nobel, e aumenta verba de ciência",
+   "fonte": "University World News",
+   "url": "https://www.universityworldnews.com/post.php?story=20261021111639957",
+   "dataPub": "2026-10-21",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "internacional",
+    "ensino"
+   ],
+   "resumo": "Universidades chinesas contrataram nomes como o Nobel de Química de 2025, Omar Yaghi, que passou a trabalhar em tempo integral na Universidade Tsinghua. O governo central reservou cerca de US$ 62 bilhões para ciência e tecnologia em 2026, cerca de 10% a mais.",
+   "porQueImporta": "Ajuda a entender o parceiro chinês do CIQUANTA e a disputa global por pesquisadores."
+  },
+  {
+   "id": "ia-licencas-obras-eua",
+   "titulo": "Ferramenta de IA revisa pedidos de licença de obras antes da análise humana nos EUA",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/biz/ai-partnership-aims-to-automate-parts-of-permitting-reviews",
+   "dataPub": "2026-10-20",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "Uma empresa de software para prefeituras passou a oferecer uma IA que aponta documentos faltando e possíveis falhas em projetos antes de chegarem ao técnico. A decisão final continua com o servidor responsável.",
+   "porQueImporta": "O modelo pode reduzir filas de licenças ambientais e de obras em órgãos estaduais."
+  },
+  {
+   "id": "qcentroid-avaliacao-quantica",
+   "titulo": "Nova ferramenta testa se vale a pena trocar soluções clássicas por quânticas",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/22/qcentroid-launches-missions-for-enterprise-quantum-computing-evaluation/",
+   "dataPub": "2026-10-22",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": "A empresa QCentroid lançou um recurso que compara métodos clássicos, híbridos e quânticos para um mesmo problema e só recomenda a troca se houver ganho comprovado. Pessoas aprovam cada etapa.",
+   "porQueImporta": "Ilustra como futuros usuários de computadores quânticos podem medir ganho real antes de investir."
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+  "paginasLidas": "edição inteira (36 páginas)",
+  "leituraParcial": false,
+  "obs": "Edição de 22/10 lida por inteiro; sem leis ou decretos da área, com atos da FAPESQ, da UEPB e da Educação.",
+  "atos": [
+   {
+    "tipo": "Editais nº 44 e 45/2026 EMPAER/FAPESQ",
+    "orgao": "FAPESQ",
+    "pagina": "8",
+    "relevancia": "media",
+    "programas": [
+     "fomento",
+     "transversal"
+    ],
+    "resumo": "FAPESQ e Empaer convocam cadastro de reserva de pesquisadores para o desenvolvimento rural. A chamada preenche vagas remanescentes de técnicos e profissionais de nível superior em municípios do interior."
+   },
+   {
+    "tipo": "Homologação Pregão nº 90005/2026 SEE",
+    "orgao": "Secretaria de Estado da Educação",
+    "pagina": "13-14",
+    "relevancia": "media",
+    "programas": [
+     "patrimonio"
+    ],
+    "resumo": "Educação contrata reforma da Biblioteca Pública Augusto dos Anjos por R$ 430 mil. O serviço inclui reforma e manutenção do prédio, em João Pessoa."
+   },
+   {
+    "tipo": "Termo de outorga UEPB/AECID",
+    "orgao": "UEPB",
+    "pagina": "16",
+    "relevancia": "radar",
+    "programas": [
+     "internacional",
+     "ensino"
+    ],
+    "resumo": "UEPB recebe professora de espanhol cedida pela cooperação oficial da Espanha. O apoio ao Departamento de Letras e às relações internacionais vai de 21/10/2026 a julho de 2027."
+   },
+   {
+    "tipo": "Aditivo SEIRH/UEPB-NUTES",
+    "orgao": "Secretaria de Infraestrutura e Recursos Hídricos",
+    "pagina": "12",
+    "relevancia": "radar",
+    "programas": [
+     "transversal"
+    ],
+    "resumo": "Infraestrutura prorroga por 30 dias projeto com o núcleo de tecnologias em saúde da UEPB. A prorrogação não aumenta o valor do convênio."
+   },
+   {
+    "tipo": "Pregão Eletrônico nº 925316.11/2026",
+    "orgao": "UEPB",
+    "pagina": "16",
+    "relevancia": "radar",
+    "programas": [
+     "ensino"
+    ],
+    "resumo": "UEPB remarca para 4 de novembro a compra de computadores e notebooks. A data mudou por causa do ponto facultativo de 29 de outubro."
+   }
+  ]
+ },
+ "secom": [],
+ "propostas": [
+  {
+   "id": "p-inventario-criptografia-2030",
+   "titulo": "Inventário da criptografia dos sistemas críticos do estado, com metas para 2030",
+   "tipo": "Projeto",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "ciquanta",
+    "seguranca"
+   ],
+   "descricao": "Mapear quais sistemas estaduais usam criptografia que poderá ser quebrada por computadores quânticos e definir responsáveis e prazos, seguindo o calendário alemão de 2030 e 2035. O levantamento pode envolver a CODATA e pesquisadores das universidades paraibanas.",
+   "base": [
+    "alemanha-criptografia-pos-quantica",
+    "qcentroid-avaliacao-quantica"
+   ]
+  },
+  {
+   "id": "p-regra-nuvem-estadual",
+   "titulo": "Regra estadual de nuvem com dados processados no Brasil e troca fácil de fornecedor",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "seguranca",
+    "secretaria2030"
+   ],
+   "descricao": "Propor, com a Administração e a CODATA, uma norma para contratos de nuvem que exija dados guardados e processados no país e cláusulas de saída sem perda de informações. A regra protegeria dados de saúde, educação e segurança.",
+   "base": [
+    "mulheres-dados-nuvem-brasil",
+    "conab-ataque-cibernetico"
+   ]
+  },
+  {
+   "id": "p-edital-tecnologias-educacionais",
+   "titulo": "Edital FAPESQ de tecnologias para escolas em parceria com a Educação",
+   "tipo": "Edital",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "fomento",
+    "inovacao",
+    "transversal"
+   ],
+   "descricao": "Lançar chamada para startups e pequenas empresas paraibanas criarem soluções para gestão escolar, tutoria com IA e acessibilidade, com escolas estaduais como campo de teste. Os resultados da nova avaliação nacional da educação técnica podem orientar os temas.",
+   "base": [
+    "fapesp-pipe-tecnologias-educacionais",
+    "sinaept-avaliacao-ept"
+   ]
+  },
+  {
+   "id": "p-ia-pre-analise-licencas",
+   "titulo": "IA para pré-checar pedidos de licença ambiental e de obras",
+   "tipo": "Projeto",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "descricao": "Testar com órgãos de meio ambiente e infraestrutura uma ferramenta que avise o requerente sobre documentos faltando antes da análise técnica. A decisão continuaria com o servidor, e o ganho seria medido em dias de fila.",
+   "base": [
+    "ia-licencas-obras-eua"
+   ]
+  },
+  {
+   "id": "p-hospitais-rede-dados-saude",
+   "titulo": "Hospitais estaduais prontos para o histórico clínico integrado do SUS",
+   "tipo": "Parceria",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "descricao": "Apoiar a Secretaria da Saúde a candidatar hospitais da rede estadual à fase de testes do acesso integrado aos registros do paciente. Universidades e a CODATA podem ajudar na integração dos sistemas.",
+   "base": [
+    "sus-prontuario-integrado"
+   ]
+  },
+  {
+   "id": "p-acervo-biblioteca-digital",
+   "titulo": "Digitalização do acervo raro durante a reforma da Biblioteca Augusto dos Anjos",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "patrimonio",
+    "inclusao"
+   ],
+   "descricao": "Aproveitar a obra para digitalizar obras raras e jornais antigos com bolsistas de universidades, deixando o material aberto na internet. Depois da reforma, o espaço pode receber atividades de divulgação científica.",
+   "base": [
+    "doe-biblioteca-augusto-dos-anjos"
+   ]
+  },
+  {
+   "id": "p-bolsa-longa-jovens-cientistas",
+   "titulo": "Bolsa de longa duração para jovens cientistas que voltarem ou vierem para a Paraíba",
+   "tipo": "Programa",
+   "horizonte": "Longo prazo",
+   "programas": [
+    "fomento",
+    "internacional"
+   ],
+   "descricao": "Estudar uma bolsa de vários anos, com avaliação simples, para atrair pesquisadores jovens que estão fora do estado. As áreas prioritárias seriam tecnologias quânticas, semiárido e saúde.",
+   "base": [
+    "china-bolsas-15-anos",
+    "china-atrai-cientistas",
+    "sbpc-regional-campina"
+   ]
+  }
+ ]
+}

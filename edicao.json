@@ -1,0 +1,420 @@
+{
+ "data": "2026-11-04",
+ "numero": 19,
+ "geradoEm": "2026-11-04T08:30:12-03:00",
+ "destaque": "Edital de inovação da FAPESQ com a Embrapii fecha nesta sexta",
+ "leitura": "O edital de inovação da FAPESQ com unidades Embrapii recebe propostas de empresas paraibanas até sexta-feira (6). Patos recebe de quinta a sábado uma feira de negócios com espaço de inovação das universidades, e o supercomputador federal de IA, que ficará no RN, só deve ser comprado em 2027. O Diário Oficial de 23/10 em diante ainda não pôde ser lido.",
+ "itens": [
+  {
+   "id": "edital-fapesq-embrapii-fecha-sexta",
+   "titulo": "Últimos dias: edital de inovação da FAPESQ com a Embrapii fecha sexta (6)",
+   "fonte": "Poder Paraíba",
+   "url": "https://poderparaiba.com.br/governo-da-paraiba-lanca-edital-de-r-3-milhoes-para-impulsionar-inovacao-em-empresas-e-startups/",
+   "dataPub": "2026-06-11",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "fomento",
+    "inovacao"
+   ],
+   "resumo": "O edital da FAPESQ e da SECTIES com as unidades Embrapii da UEPB, da UFCG e do IFPB recebe propostas até 6 de novembro. São até R$ 3 milhões no total, com até R$ 200 mil a fundo perdido por projeto de empresa paraibana, inclusive startups e MEIs.",
+   "porQueImporta": "É a última chance do ano para pequenas empresas do estado financiarem inovação junto com as universidades.",
+   "tipo": "oficial",
+   "urgente": false
+  },
+  {
+   "id": "patos-expo-espaco-inovacao",
+   "titulo": "Patos recebe feira de negócios com espaço de inovação das universidades de quinta a sábado",
+   "fonte": "Paraíba Online",
+   "url": "https://paraibaonline.com.br/paraiba/2026/11/03/programacao-da-patos-expo-business-e-circuito-empreender-tera-palestras-gratuitas/",
+   "dataPub": "2026-11-03",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "A Patos Expo Business e Circuito Empreender acontece de 5 a 7 de novembro, em Patos, com entrada gratuita e cerca de 10 mil visitantes esperados. O evento é do Sebrae, do Governo da Paraíba e da prefeitura e terá um Espaço da Inovação com UEPB, UFCG, Unifip e IFPB.",
+   "porQueImporta": "É uma vitrine no Sertão para mostrar programas estaduais de inovação a empreendedores do interior.",
+   "tipo": "ensino",
+   "urgente": false
+  },
+  {
+   "id": "caminhos-digitais-roteiro",
+   "titulo": "Carreta de cursos gratuitos de tecnologia segue até o Sertão; Campina Grande vai até sexta",
+   "fonte": "Paraíba Total",
+   "url": "https://paraibatotal.com.br/2026/10/29/caminhos-digitais-oferece-cursos-gratuitos-de-tecnologia-em-campina-grande-e-outras-12-cidades-da-paraiba/",
+   "dataPub": "2026-10-29",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inclusao",
+    "ensino"
+   ],
+   "resumo": "O Caminhos Digitais, da SECTIES com a FAPESQ, leva uma sala de aula montada numa carreta com mais de dez cursos gratuitos e com certificado, como inteligência artificial. Depois de Campina Grande (até 6/11), passa por Serra Branca, Monteiro, Patos e mais nove cidades até fevereiro de 2027.",
+   "porQueImporta": "Leva formação digital a cidades do interior que raramente recebem cursos desse tipo.",
+   "tipo": "oficial",
+   "urgente": true
+  },
+  {
+   "id": "web-summit-startups-saude-reciclagem",
+   "titulo": "Startups de saúde mental e de lixo eletrônico estão entre as paraibanas no Web Summit",
+   "fonte": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/duas-startups-da-paraiba-levam-solucoes-de-saude-mental-e-sustentabilidade-ao-web-summit-lisboa/",
+   "dataPub": "2026-10-28",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "resumo": "Duas das 30 startups escolhidas pela SECTIES e pela FAPESQ para o Web Summit Lisboa, de 9 a 12 de novembro, são a RevigoradaMente, que usa jogo digital e IA para cuidar da saúde mental no trabalho, e a Semear, que recicla lixo eletrônico. Cada startup recebe R$ 15,5 mil para a viagem.",
+   "porQueImporta": "Mostra o perfil das empresas que vão representar o estado num dos maiores eventos de tecnologia do mundo.",
+   "tipo": "oficial",
+   "urgente": false
+  },
+  {
+   "id": "uepb-selo-ods",
+   "titulo": "UEPB é a primeira instituição da Paraíba com selo de desenvolvimento sustentável",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br/uepb-conquista-selo-de-certificacao-ods-reafirmando-compromisso-com-sustentabilidade-e-questoes-ambientais/",
+   "dataPub": "2026-11-03",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "A universidade estadual recebeu o Selo de Certificação ODS, do Instituto Social, ligado aos Objetivos de Desenvolvimento Sustentável da ONU. Dos 66 projetos inscritos, quase todos de extensão, 59 comprovaram resultados.",
+   "porQueImporta": "O selo ajuda a UEPB a fechar parcerias e disputar editais e verbas federais.",
+   "tipo": "ensino",
+   "urgente": false
+  },
+  {
+   "id": "casacor-casarao-centro-historico",
+   "titulo": "Casarão do Centro Histórico de João Pessoa abriga mostra de arquitetura até dezembro",
+   "fonte": "Paladino da Verdade",
+   "url": "https://paladinodaverdade.com.br/2026/10/25/prefeitura-de-joao-pessoa-firma-parceria-com-casacor-para-fortalecer-revitalizacao-do-centro-historico/",
+   "dataPub": "2026-10-25",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "patrimonio"
+   ],
+   "resumo": "A prefeitura de João Pessoa cedeu um casarão da Avenida João Machado para a CASACOR Paraíba, aberta até 13 de dezembro, com 32 ambientes e tema sobre a vida conectada e a inteligência artificial. Alunos da rede municipal poderão fazer visitas guiadas.",
+   "porQueImporta": "É um exemplo de novo uso de imóvel histórico que atrai público e movimenta o centro antigo.",
+   "tipo": "patrimonio",
+   "urgente": false
+  },
+  {
+   "id": "francilene-mcti",
+   "titulo": "Cientistas defendem a paraibana Francilene Garcia para comandar o Ministério da Ciência",
+   "fonte": "Diário Carioca",
+   "url": "https://www.diariocarioca.com/2026/11/02/politica/cientistas-propoem-francilene-mcti/",
+   "dataPub": "2026-11-02",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "fomento"
+   ],
+   "resumo": "Um grupo de pesquisadores sugere o nome da presidente da SBPC, Francilene Procópio Garcia, formada pela UFPB e ex-secretária de Ciência e Tecnologia da Paraíba, para o MCTI no próximo governo federal. Não há decisão nem posição oficial do governo sobre o assunto.",
+   "porQueImporta": "Uma ministra com trajetória na Paraíba conheceria de perto as apostas científicas do estado.",
+   "tipo": "ciencia",
+   "urgente": false
+  },
+  {
+   "id": "supercomputador-ia-adiado",
+   "titulo": "Compra do supercomputador federal de IA, que ficará no RN, fica para 2027",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/compra-do-supercomputador-de-r-1-bilhao-do-governo-para-ia-fica-para-2027/",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "secretaria2030",
+    "fomento"
+   ],
+   "resumo": "A licitação de cerca de R$ 959 milhões para o supercomputador do Plano Brasileiro de IA foi cancelada para revisão e só deve escolher fornecedor em 2027. A máquina ficará em Macaíba (RN), e a nova regra dá peso à produção nacional.",
+   "porQueImporta": "A maior estrutura de IA do país ficará no Nordeste, ao alcance de pesquisadores paraibanos, mas vai demorar mais.",
+   "tipo": "ia-gov",
+   "urgente": false
+  },
+  {
+   "id": "gsi-anatel-ciberseguranca",
+   "titulo": "Governo federal e Anatel fecham acordo de cinco anos contra ataques cibernéticos",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/03/11/2026/gsi-anatel-ciberseguranca/",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "seguranca"
+   ],
+   "resumo": "O Gabinete de Segurança Institucional da Presidência e a Anatel vão fazer simulações e ter um protocolo de resposta rápida a incidentes. A Anatel terá um canal seguro com o centro federal que recebe os alertas de ataques.",
+   "porQueImporta": "Cria um modelo de coordenação contra ataques que os estados podem seguir.",
+   "tipo": "ciencia",
+   "urgente": false
+  },
+  {
+   "id": "anatel-leilao-reverso-cobertura",
+   "titulo": "Anatel reserva R$ 23 milhões para levar sinal de celular a pequenas localidades",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/03/11/2026/anatel-leilao-reverso/",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao"
+   ],
+   "resumo": "O dinheiro vai para um novo leilão em que vence a operadora que pedir menos para instalar antenas em vilas e trechos de rodovias sem sinal. As localidades ainda serão definidas a partir de indicação do Ministério das Comunicações.",
+   "porQueImporta": "Abre espaço para o estado indicar comunidades paraibanas que ainda não têm cobertura.",
+   "tipo": "norma",
+   "urgente": false
+  },
+  {
+   "id": "speed-gov-startups-governo",
+   "titulo": "São Paulo cria aceleradora para startups aprenderem a vender ao governo",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/prodesp-e-sebrae-sp-lancam-speed-gov-para-acelerar-ate-100-startups-em-cinco-anos/",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "resumo": "A empresa de tecnologia do governo paulista e o Sebrae-SP lançaram o Speed GOV, que vai acelerar até 100 startups em cinco anos com mentorias, apoio jurídico e testes com áreas do governo. A primeira turma trabalha com desafios de saúde, educação, segurança e atendimento ao cidadão.",
+   "porQueImporta": "É um modelo que pode ser adaptado na Paraíba com as secretarias como clientes.",
+   "tipo": "inovacao",
+   "urgente": false
+  },
+  {
+   "id": "eu-quantum-act-iqm",
+   "titulo": "Europa prepara lei para a quântica, e empresa pede fábricas de chips e compras por metas",
+   "fonte": "Quantum Computing Report",
+   "url": "https://quantumcomputingreport.com/ahead-of-eu-quantum-act-iqm-calls-for-dedicated-qubit-foundries-and-darpa-style-procurement/",
+   "dataPub": "2026-11-03",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "ciquanta",
+    "internacional"
+   ],
+   "resumo": "Antes da apresentação da lei europeia de tecnologias quânticas, a fabricante IQM propôs fábricas próprias de chips quânticos e contratos públicos pagos por metas cumpridas, no lugar de bolsas de pesquisa. Também pediu análise mais rápida de ajuda estatal e um fundo para empresas em crescimento.",
+   "porQueImporta": "Mostra que o debate mundial agora é fabricar chips e comprar resultados, tema que o CIQUANTA prevê para o futuro.",
+   "tipo": "quantica",
+   "urgente": false
+  },
+  {
+   "id": "st-louis-ia-orcamento",
+   "titulo": "Condado americano usa IA para achar cortes no orçamento",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/artificial-intelligence/st-louis-county-mo-council-turns-to-ai-for-budget-cuts",
+   "dataPub": "2026-11-03",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "resumo": "Com rombo de US$ 53 milhões, o Conselho do Condado de St. Louis contratou por US$ 273 mil uma ferramenta que compara seu orçamento com o de outros governos e sugere economias. O governo local diz que muitas ideias já estavam em prática, e especialistas pedem cautela.",
+   "porQueImporta": "Mostra um uso de IA na área de finanças públicas, com limites claros.",
+   "tipo": "ia-gov",
+   "urgente": false
+  },
+  {
+   "id": "unc-abandona-ia-redacoes",
+   "titulo": "Universidade americana deixa de usar IA para avaliar redações de candidatos",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/education/higher-ed/unc-chapel-hill-to-stop-using-ai-to-rate-admissions-essays",
+   "dataPub": "2026-10-29",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "secretaria2030"
+   ],
+   "resumo": "A Universidade da Carolina do Norte desistiu da ferramenta que dava notas à escrita dos textos de admissão. Como os candidatos passaram a corrigir os textos com IA, as notas subiram para todos e deixaram de diferenciar.",
+   "porQueImporta": "Alerta para seleções e bolsas que usam IA para avaliar textos.",
+   "tipo": "ia-gov",
+   "urgente": false
+  },
+  {
+   "id": "bancos-criptografia-quantica",
+   "titulo": "Guia orienta bancos a trocar a criptografia antes dos computadores quânticos",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/11/04/crypto-agility-post-quantum-security-banks/",
+   "dataPub": "2026-11-04",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "seguranca",
+    "ciquanta"
+   ],
+   "resumo": "Artigo de um executivo do setor recomenda listar onde a criptografia é usada, desligar protocolos antigos e priorizar pagamentos, identidade e assinaturas digitais. Também pede cobrar dos fornecedores planos de migração.",
+   "porQueImporta": "O roteiro serve também para os sistemas críticos do governo estadual.",
+   "tipo": "quantica",
+   "urgente": false
+  },
+  {
+   "id": "chicago-toyota-quantica",
+   "titulo": "Universidade de Chicago e Toyota fecham parceria de pesquisa quântica",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/11/03/university-chicago-toyota-quantum-research-future-mobility/",
+   "dataPub": "2026-11-03",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "resumo": "A montadora vai investir até US$ 1 milhão por ano em cinco projetos sobre sensores, materiais e comunicação segura para veículos. A primeira fase paga até oito estudantes de pós-graduação.",
+   "porQueImporta": "É um modelo de parceria entre indústria e universidade que pode inspirar o uso do CIQUANTA por empresas.",
+   "tipo": "quantica",
+   "urgente": false
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+  "paginasLidas": "edições novas indisponíveis",
+  "leituraParcial": true,
+  "obs": "As edições do Diário Oficial de 23/10 até hoje não ficaram disponíveis para leitura até 8h30 e seguem pendentes para a próxima edição.",
+  "atos": []
+ },
+ "secom": [
+  {
+   "titulo": "Caminhos Digitais oferece cursos gratuitos de tecnologia em Campina Grande e outras 12 cidades da Paraíba",
+   "portal": "Paraíba Total",
+   "url": "https://paraibatotal.com.br/2026/10/29/caminhos-digitais-oferece-cursos-gratuitos-de-tecnologia-em-campina-grande-e-outras-12-cidades-da-paraiba/",
+   "dataPub": "2026-10-29",
+   "programas": [
+    "inclusao",
+    "ensino"
+   ],
+   "resumo": "A carreta do Caminhos Digitais, da SECTIES e da FAPESQ, oferece cursos gratuitos em Campina Grande até 6/11 e segue para mais 12 cidades até fevereiro."
+  },
+  {
+   "titulo": "Duas startups da Paraíba levam soluções de saúde mental e sustentabilidade ao Web Summit Lisboa",
+   "portal": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/duas-startups-da-paraiba-levam-solucoes-de-saude-mental-e-sustentabilidade-ao-web-summit-lisboa/",
+   "dataPub": "2026-10-28",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "resumo": "RevigoradaMente e Semear Sustentabilidade estão entre as 30 startups selecionadas pela SECTIES e pela FAPESQ para o Web Summit Lisboa."
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-banco-desafios-secretarias",
+   "titulo": "Banco público de desafios das secretarias para startups paraibanas",
+   "tipo": "Programa",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "descricao": "Cada secretaria publicaria problemas reais, como filas, cadastros ou fiscalização, para startups do estado testarem soluções em pequena escala. As melhores ganhariam apoio para virar contratação, como faz o Speed GOV paulista.",
+   "base": [
+    "speed-gov-startups-governo",
+    "web-summit-startups-saude-reciclagem"
+   ]
+  },
+  {
+   "id": "p-acesso-supercomputador-rn",
+   "titulo": "Acordo para pesquisadores paraibanos usarem o supercomputador de IA no RN",
+   "tipo": "Parceria",
+   "horizonte": "Longo prazo",
+   "programas": [
+    "secretaria2030",
+    "fomento"
+   ],
+   "descricao": "Negociar desde já, com o MCTI e o Rio Grande do Norte, uma cota de uso da máquina para universidades e órgãos da Paraíba. Assim o estado chega pronto quando o equipamento entrar em operação.",
+   "base": [
+    "supercomputador-ia-adiado"
+   ]
+  },
+  {
+   "id": "p-compras-por-metas-quantica",
+   "titulo": "Estudo de compras públicas por metas para tecnologias quânticas",
+   "tipo": "Política",
+   "horizonte": "Longo prazo",
+   "programas": [
+    "ciquanta",
+    "inovacao"
+   ],
+   "descricao": "Avaliar, com a Procuradoria e a FAPESQ, como o estado poderia contratar soluções quânticas pagando por resultados entregues. A ideia segue o debate europeu sobre a nova lei do setor.",
+   "base": [
+    "eu-quantum-act-iqm",
+    "chicago-toyota-quantica"
+   ]
+  },
+  {
+   "id": "p-ia-economias-orcamento",
+   "titulo": "Teste de IA para sugerir economias no orçamento, com revisão humana",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "transversal",
+    "secretaria2030"
+   ],
+   "descricao": "Um piloto com a Fazenda e o Planejamento compararia gastos do estado com os de outros governos e listaria possíveis economias. As sugestões seriam só ponto de partida para análise técnica.",
+   "base": [
+    "st-louis-ia-orcamento"
+   ]
+  },
+  {
+   "id": "p-alerta-cibernetico-estadual",
+   "titulo": "Canal estadual de alertas de ataques ligado ao centro federal",
+   "tipo": "Parceria",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "seguranca"
+   ],
+   "descricao": "A CODATA e a Segurança Pública teriam um canal direto com o centro federal de resposta a incidentes, nos moldes do acordo entre GSI e Anatel. Simulações anuais testariam a resposta dos sistemas críticos.",
+   "base": [
+    "gsi-anatel-ciberseguranca",
+    "bancos-criptografia-quantica"
+   ]
+  },
+  {
+   "id": "p-lista-localidades-sem-sinal",
+   "titulo": "Lista paraibana de localidades sem sinal para o próximo leilão da Anatel",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao"
+   ],
+   "descricao": "Reunir com prefeituras e escolas uma lista de vilas e estradas sem cobertura e enviá-la ao Ministério das Comunicações. O objetivo é incluir a Paraíba no novo leilão de R$ 23 milhões.",
+   "base": [
+    "anatel-leilao-reverso-cobertura",
+    "caminhos-digitais-roteiro"
+   ]
+  },
+  {
+   "id": "p-selo-ods-universidades",
+   "titulo": "Apoio para mais universidades e institutos conquistarem o selo ODS",
+   "tipo": "Programa",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "descricao": "Oficinas com a experiência da UEPB ajudariam outras instituições do estado a organizar provas de resultado dos seus projetos de extensão. Mais instituições certificadas atraem parcerias e editais.",
+   "base": [
+    "uepb-selo-ods"
+   ]
+  }
+ ],
+ "curiosidade": {
+  "texto": "Vidro não é um líquido que escorre devagar. Vitrais antigos são mais grossos embaixo por causa de como eram fabricados.",
+  "porque": "O vidro é um sólido amorfo: rígido, mas sem a organização de um cristal. Levaria muito mais que a idade do universo para escorrer.",
+  "tema": "molecula",
+  "area": "Física da matéria",
+  "formula": "sólido amorfo"
+ },
+ "fotoNucleo": "secretario.jpg",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 19\n_Quarta-feira, 4 de novembro de 2026_\nClipping diário da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba\n\n*EDITAL DE INOVAÇÃO DA FAPESQ COM A EMBRAPII FECHA NESTA SEXTA*\nO edital de inovação da FAPESQ com unidades Embrapii recebe propostas de empresas paraibanas até sexta-feira (6).\n\n*PRIORIDADES DO DIA*\n1. Últimos dias: edital de inovação da FAPESQ com a Embrapii fecha sexta (6) — _Poder Paraíba_\n2. Patos recebe feira de negócios com espaço de inovação das universidades de quinta a sábado — _Paraíba Online_\n3. Compra do supercomputador federal de IA, que ficará no RN, fica para 2027 — _Convergência Digital_\n4. Europa prepara lei para a quântica, e empresa pede fábricas de chips e compras por metas — _Quantum Computing Report_\n\n*FÍSICA DE BOLSO*\n_Vidro não é um líquido que escorre devagar. Vitrais antigos são mais grossos embaixo por causa de como eram fabricados._\n\nLeia a edição completa, com 16 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radarsecties.github.io/"
+}

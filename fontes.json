@@ -1,0 +1,1651 @@
+{
+ "_como_usar": "Cada fonte tem: id, nome curto (aparece no cartão), site, feeds (endereços RSS a tentar, em ordem), escopo (Paraíba, Nacional ou Global), peso (1 a 3: quanto a fonte conta na relevância), grupo (para a seção 'De onde vêm as notícias') e dicas (temas que a fonte costuma trazer). Se nenhum feed funcionar, o coletor tenta descobrir o RSS pela página inicial. Para adicionar uma fonte, copie um bloco e ajuste.",
+ "fontes": [
+  {
+   "id": "fapesq",
+   "nome": "FAPESQ",
+   "site": "https://fapesq.rpp.br",
+   "feeds": [
+    "https://fapesq.rpp.br/feed/",
+    "https://fapesq.rpp.br/noticias/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 3,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "fomento",
+    "oficial"
+   ]
+  },
+  {
+   "id": "auniao",
+   "nome": "A União",
+   "site": "https://auniao.pb.gov.br/noticias",
+   "feeds": [
+    "https://auniao.pb.gov.br/noticias/RSS",
+    "https://auniao.pb.gov.br/noticias/rss",
+    "https://auniao.pb.gov.br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 3,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "oficial"
+   ]
+  },
+  {
+   "id": "governo-pb",
+   "nome": "Portal do Governo da Paraíba",
+   "site": "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias",
+   "feeds": [
+    "https://paraiba.pb.gov.br/diretas/secretaria-da-ciencia-tecnologia-inovacao-e-ensino-superior/noticias/RSS",
+    "https://paraiba.pb.gov.br/noticias/RSS",
+    "https://paraiba.pb.gov.br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 3,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "oficial"
+   ]
+  },
+  {
+   "id": "horizontes",
+   "nome": "Horizontes de Inovação",
+   "site": "https://horizontesdeinovacao.pb.gov.br/noticias/",
+   "feeds": [
+    "https://horizontesdeinovacao.pb.gov.br/feed/",
+    "https://horizontesdeinovacao.pb.gov.br/noticias/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 3,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "codata",
+   "nome": "CODATA",
+   "site": "https://codata.pb.gov.br",
+   "feeds": [
+    "https://codata.pb.gov.br/feed/",
+    "https://codata.pb.gov.br/noticias/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "transversal",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "alpb",
+   "nome": "Assembleia Legislativa da Paraíba",
+   "site": "https://www.al.pb.leg.br",
+   "feeds": [
+    "https://www.al.pb.leg.br/feed/",
+    "https://www.al.pb.leg.br/noticias/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "norma"
+   ]
+  },
+  {
+   "id": "uepb",
+   "nome": "UEPB",
+   "site": "https://uepb.edu.br",
+   "feeds": [
+    "https://uepb.edu.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 3,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "ufpb",
+   "nome": "UFPB",
+   "site": "https://www.ufpb.br",
+   "feeds": [
+    "https://www.ufpb.br/ufpb/contents/noticias/RSS",
+    "https://www.ufpb.br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "ufcg",
+   "nome": "UFCG",
+   "site": "https://portal.ufcg.edu.br",
+   "feeds": [
+    "https://portal.ufcg.edu.br/feed/",
+    "https://portal.ufcg.edu.br/ultimas-noticias/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "ifpb",
+   "nome": "IFPB",
+   "site": "https://www.ifpb.edu.br/noticias",
+   "feeds": [
+    "https://www.ifpb.edu.br/noticias/RSS",
+    "https://www.ifpb.edu.br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "insa",
+   "nome": "INSA",
+   "site": "https://www.gov.br/insa/pt-br",
+   "feeds": [
+    "https://www.gov.br/insa/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/insa/pt-br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "transversal"
+   ]
+  },
+  {
+   "id": "embrapa-algodao",
+   "nome": "Embrapa Algodão",
+   "site": "https://www.embrapa.br/algodao",
+   "feeds": [
+    "https://www.embrapa.br/algodao/noticias-rss",
+    "https://www.embrapa.br/noticias-rss"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "transversal"
+   ]
+  },
+  {
+   "id": "sebrae-pb",
+   "nome": "Sebrae Paraíba",
+   "site": "https://sebrae.com.br/sites/PortalSebrae/ufs/pb",
+   "feeds": [
+    "https://sebrae.com.br/sites/PortalSebrae/ufs/pb/rss"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "paraibaonline",
+   "nome": "Paraíba Online",
+   "site": "https://paraibaonline.com.br/educacao-e-ciencia/",
+   "feeds": [
+    "https://paraibaonline.com.br/educacao-e-ciencia/feed/",
+    "https://paraibaonline.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "jornaldaparaiba",
+   "nome": "Jornal da Paraíba",
+   "site": "https://jornaldaparaiba.com.br",
+   "feeds": [
+    "https://jornaldaparaiba.com.br/feed/",
+    "https://jornaldaparaiba.com.br/rss"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "portalcorreio",
+   "nome": "Portal Correio",
+   "site": "https://portalcorreio.com.br",
+   "feeds": [
+    "https://portalcorreio.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "clickpb",
+   "nome": "ClickPB",
+   "site": "https://www.clickpb.com.br",
+   "feeds": [
+    "https://www.clickpb.com.br/feed/",
+    "https://www.clickpb.com.br/rss"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "maispb",
+   "nome": "MaisPB",
+   "site": "https://www.maispb.com.br",
+   "feeds": [
+    "https://www.maispb.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "pbagora",
+   "nome": "PB Agora",
+   "site": "https://www.pbagora.com.br",
+   "feeds": [
+    "https://www.pbagora.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "paraibabusiness",
+   "nome": "Paraíba Business",
+   "site": "https://paraibabusiness.com.br",
+   "feeds": [
+    "https://paraibabusiness.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: imprensa",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "polemicapb",
+   "nome": "Polêmica Paraíba",
+   "site": "https://www.polemicaparaiba.com.br",
+   "feeds": [
+    "https://www.polemicaparaiba.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "wscom",
+   "nome": "WSCOM",
+   "site": "https://www.wscom.com.br",
+   "feeds": [
+    "https://www.wscom.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "paraibatotal",
+   "nome": "Paraíba Total",
+   "site": "https://paraibatotal.com.br",
+   "feeds": [
+    "https://paraibatotal.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "folhapatoense",
+   "nome": "Folha Patoense",
+   "site": "https://folhapatoense.com",
+   "feeds": [
+    "https://folhapatoense.com/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "mcti",
+   "nome": "MCTI",
+   "site": "https://www.gov.br/mcti/pt-br",
+   "feeds": [
+    "https://www.gov.br/mcti/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/mcti/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 3,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "finep",
+   "nome": "Finep",
+   "site": "http://www.finep.gov.br/noticias",
+   "feeds": [
+    "http://www.finep.gov.br/noticias?format=feed&type=rss",
+    "http://www.finep.gov.br/?format=feed&type=rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 3,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "cnpq",
+   "nome": "CNPq",
+   "site": "https://www.gov.br/cnpq/pt-br",
+   "feeds": [
+    "https://www.gov.br/cnpq/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/cnpq/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 3,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "capes",
+   "nome": "CAPES",
+   "site": "https://www.gov.br/capes/pt-br",
+   "feeds": [
+    "https://www.gov.br/capes/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/capes/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 3,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "ensino",
+    "fomento"
+   ]
+  },
+  {
+   "id": "mec",
+   "nome": "MEC",
+   "site": "https://www.gov.br/mec/pt-br",
+   "feeds": [
+    "https://www.gov.br/mec/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/mec/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "agenciagov",
+   "nome": "Agência Gov",
+   "site": "https://agenciagov.ebc.com.br",
+   "feeds": [
+    "https://agenciagov.ebc.com.br/rss/ultimas-noticias/feed.xml",
+    "https://agenciagov.ebc.com.br/feed"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: governo",
+   "dicas": []
+  },
+  {
+   "id": "agenciabrasil",
+   "nome": "Agência Brasil",
+   "site": "https://agenciabrasil.ebc.com.br",
+   "feeds": [
+    "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: governo",
+   "dicas": []
+  },
+  {
+   "id": "govdigital",
+   "nome": "Governo Digital",
+   "site": "https://www.gov.br/governodigital/pt-br",
+   "feeds": [
+    "https://www.gov.br/governodigital/pt-br/noticias/RSS",
+    "https://www.gov.br/governodigital/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "secretaria2030",
+    "transversal"
+   ]
+  },
+  {
+   "id": "anpd",
+   "nome": "ANPD",
+   "site": "https://www.gov.br/anpd/pt-br",
+   "feeds": [
+    "https://www.gov.br/anpd/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/anpd/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "seguranca"
+   ]
+  },
+  {
+   "id": "anatel",
+   "nome": "Anatel",
+   "site": "https://www.gov.br/anatel/pt-br",
+   "feeds": [
+    "https://www.gov.br/anatel/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/anatel/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "inclusao"
+   ]
+  },
+  {
+   "id": "aeb",
+   "nome": "Agência Espacial Brasileira",
+   "site": "https://www.gov.br/aeb/pt-br",
+   "feeds": [
+    "https://www.gov.br/aeb/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/aeb/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "astronomia"
+   ]
+  },
+  {
+   "id": "iphan",
+   "nome": "Iphan",
+   "site": "https://www.gov.br/iphan/pt-br",
+   "feeds": [
+    "https://www.gov.br/iphan/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/iphan/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "patrimonio"
+   ]
+  },
+  {
+   "id": "ibram",
+   "nome": "Ibram",
+   "site": "https://www.gov.br/museus/pt-br",
+   "feeds": [
+    "https://www.gov.br/museus/pt-br/assuntos/noticias/RSS",
+    "https://www.gov.br/museus/pt-br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "patrimonio"
+   ]
+  },
+  {
+   "id": "embrapii",
+   "nome": "Embrapii",
+   "site": "https://embrapii.org.br",
+   "feeds": [
+    "https://embrapii.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "fomento",
+    "inovacao"
+   ]
+  },
+  {
+   "id": "bndes",
+   "nome": "BNDES",
+   "site": "https://www.bndes.gov.br/wps/portal/site/home/imprensa/noticias",
+   "feeds": [
+    "https://www.bndes.gov.br/wps/portal/site/home/imprensa/noticias/rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "rnp",
+   "nome": "RNP",
+   "site": "https://www.rnp.br/noticias",
+   "feeds": [
+    "https://www.rnp.br/feed/",
+    "https://www.rnp.br/rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "inclusao",
+    "ensino"
+   ]
+  },
+  {
+   "id": "cgee",
+   "nome": "CGEE",
+   "site": "https://www.cgee.org.br",
+   "feeds": [
+    "https://www.cgee.org.br/feed/",
+    "https://www.cgee.org.br/rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": []
+  },
+  {
+   "id": "cgibr",
+   "nome": "CGI.br",
+   "site": "https://cgi.br",
+   "feeds": [
+    "https://cgi.br/feed/",
+    "https://cgi.br/rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "inclusao",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "confap",
+   "nome": "Confap",
+   "site": "https://confap.org.br",
+   "feeds": [
+    "https://confap.org.br/feed/",
+    "https://confap.org.br/news/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "consecti",
+   "nome": "Consecti",
+   "site": "https://www.consecti.org.br",
+   "feeds": [
+    "https://www.consecti.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "fomento"
+   ]
+  },
+  {
+   "id": "sbpc",
+   "nome": "Jornal da Ciência",
+   "site": "http://www.jornaldaciencia.org.br",
+   "feeds": [
+    "http://www.jornaldaciencia.org.br/feed/",
+    "https://jornaldaciencia.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "agenciafapesp",
+   "nome": "Agência FAPESP",
+   "site": "https://agencia.fapesp.br",
+   "feeds": [
+    "https://agencia.fapesp.br/rss/",
+    "https://agencia.fapesp.br/rss/ultimas/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "pesquisafapesp",
+   "nome": "Pesquisa FAPESP",
+   "site": "https://revistapesquisa.fapesp.br",
+   "feeds": [
+    "https://revistapesquisa.fapesp.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "abc",
+   "nome": "Academia Brasileira de Ciências",
+   "site": "https://www.abc.org.br",
+   "feeds": [
+    "https://www.abc.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "nossaciencia",
+   "nome": "Nossa Ciência",
+   "site": "https://nossaciencia.com.br",
+   "feeds": [
+    "https://nossaciencia.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "convergencia",
+   "nome": "Convergência Digital",
+   "site": "https://convergenciadigital.com.br/category/governo/",
+   "feeds": [
+    "https://convergenciadigital.com.br/category/governo/feed/",
+    "https://convergenciadigital.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "secretaria2030",
+    "seguranca"
+   ]
+  },
+  {
+   "id": "teletime",
+   "nome": "Teletime",
+   "site": "https://teletime.com.br",
+   "feeds": [
+    "https://teletime.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "inclusao"
+   ]
+  },
+  {
+   "id": "telesintese",
+   "nome": "Tele.Síntese",
+   "site": "https://telesintese.com.br",
+   "feeds": [
+    "https://telesintese.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "inclusao"
+   ]
+  },
+  {
+   "id": "mobiletime",
+   "nome": "Mobile Time",
+   "site": "https://www.mobiletime.com.br",
+   "feeds": [
+    "https://www.mobiletime.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "startupi",
+   "nome": "Startupi",
+   "site": "https://startupi.com.br",
+   "feeds": [
+    "https://startupi.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "saudedigital",
+   "nome": "Saúde Digital News",
+   "site": "https://saudedigitalnews.com.br",
+   "feeds": [
+    "https://saudedigitalnews.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "transversal"
+   ]
+  },
+  {
+   "id": "baguete",
+   "nome": "Baguete",
+   "site": "https://www.baguete.com.br",
+   "feeds": [
+    "https://www.baguete.com.br/rss.xml",
+    "https://www.baguete.com.br/feed"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "oecd-ai",
+   "nome": "OECD.AI",
+   "site": "https://oecd.ai",
+   "feeds": [
+    "https://oecd.ai/en/feed",
+    "https://oecd.ai/feed"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "secretaria2030"
+   ]
+  },
+  {
+   "id": "unesco",
+   "nome": "UNESCO",
+   "site": "https://www.unesco.org/en/news",
+   "feeds": [
+    "https://www.unesco.org/en/rss.xml",
+    "https://www.unesco.org/en/news/rss.xml"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "patrimonio",
+    "ensino"
+   ]
+  },
+  {
+   "id": "govtech",
+   "nome": "GovTech",
+   "site": "https://www.govtech.com/artificial-intelligence",
+   "feeds": [
+    "https://www.govtech.com/rss/category/artificial-intelligence.rss",
+    "https://www.govtech.com/rss/news.rss"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "secretaria2030",
+    "transversal"
+   ]
+  },
+  {
+   "id": "apolitical",
+   "nome": "Apolitical",
+   "site": "https://apolitical.co",
+   "feeds": [
+    "https://apolitical.co/feed"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "secretaria2030"
+   ]
+  },
+  {
+   "id": "ec-digital",
+   "nome": "Comissão Europeia Digital",
+   "site": "https://digital-strategy.ec.europa.eu/en/news",
+   "feeds": [
+    "https://digital-strategy.ec.europa.eu/en/news/rss",
+    "https://digital-strategy.ec.europa.eu/en/rss"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "secretaria2030",
+    "ciquanta"
+   ]
+  },
+  {
+   "id": "quantuminsider",
+   "nome": "The Quantum Insider",
+   "site": "https://thequantuminsider.com",
+   "feeds": [
+    "https://thequantuminsider.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 3,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": [
+    "ciquanta"
+   ]
+  },
+  {
+   "id": "qcreport",
+   "nome": "Quantum Computing Report",
+   "site": "https://quantumcomputingreport.com",
+   "feeds": [
+    "https://quantumcomputingreport.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": [
+    "ciquanta"
+   ]
+  },
+  {
+   "id": "ieee",
+   "nome": "IEEE Spectrum",
+   "site": "https://spectrum.ieee.org",
+   "feeds": [
+    "https://spectrum.ieee.org/feeds/feed.rss"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": []
+  },
+  {
+   "id": "nature",
+   "nome": "Nature",
+   "site": "https://www.nature.com/nature/articles?type=news",
+   "feeds": [
+    "https://www.nature.com/nature.rss",
+    "https://www.nature.com/subjects/science-policy.rss"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": []
+  },
+  {
+   "id": "science",
+   "nome": "Science",
+   "site": "https://www.science.org/news",
+   "feeds": [
+    "https://www.science.org/rss/news_current.xml"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": []
+  },
+  {
+   "id": "physicsworld",
+   "nome": "Physics World",
+   "site": "https://physicsworld.com",
+   "feeds": [
+    "https://physicsworld.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "ciquanta",
+    "astronomia"
+   ]
+  },
+  {
+   "id": "mittr",
+   "nome": "MIT Technology Review",
+   "site": "https://www.technologyreview.com",
+   "feeds": [
+    "https://www.technologyreview.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": []
+  },
+  {
+   "id": "the",
+   "nome": "Times Higher Education",
+   "site": "https://www.timeshighereducation.com/news",
+   "feeds": [
+    "https://www.timeshighereducation.com/news/feed",
+    "https://www.timeshighereducation.com/rss/news"
+   ],
+   "escopo": "Global",
+   "peso": 2,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "uwn",
+   "nome": "University World News",
+   "site": "https://www.universityworldnews.com",
+   "feeds": [
+    "https://www.universityworldnews.com/rss.php",
+    "https://www.universityworldnews.com/feed"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "scidev",
+   "nome": "SciDev.Net",
+   "site": "https://www.scidev.net",
+   "feeds": [
+    "https://www.scidev.net/global/feed/",
+    "https://www.scidev.net/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "internacional"
+   ]
+  },
+  {
+   "id": "restofworld",
+   "nome": "Rest of World",
+   "site": "https://restofworld.org",
+   "feeds": [
+    "https://restofworld.org/feed/latest/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "inclusao"
+   ]
+  },
+  {
+   "id": "nasa",
+   "nome": "NASA",
+   "site": "https://www.nasa.gov/news",
+   "feeds": [
+    "https://www.nasa.gov/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "astronomia"
+   ]
+  },
+  {
+   "id": "eso",
+   "nome": "ESO",
+   "site": "https://www.eso.org/public/news/",
+   "feeds": [
+    "https://www.eso.org/public/news/feed/",
+    "https://www.eso.org/public/news/rss/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "astronomia"
+   ]
+  },
+  {
+   "id": "spacenews",
+   "nome": "SpaceNews",
+   "site": "https://spacenews.com",
+   "feeds": [
+    "https://spacenews.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "astronomia"
+   ]
+  },
+  {
+   "id": "xinhua",
+   "nome": "Xinhua Ciência",
+   "site": "https://english.news.cn/sci-tech/index.htm",
+   "feeds": [
+    "https://english.news.cn/rss/sci-tech.xml"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "internacional"
+   ]
+  },
+  {
+   "id": "cas",
+   "nome": "Academia Chinesa de Ciências",
+   "site": "https://english.cas.cn",
+   "feeds": [
+    "https://english.cas.cn/rss/news.xml"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "internacional"
+   ]
+  },
+  {
+   "id": "europeana",
+   "nome": "Europeana",
+   "site": "https://pro.europeana.eu/news",
+   "feeds": [
+    "https://pro.europeana.eu/feed/news"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "patrimonio"
+   ]
+  },
+  {
+   "id": "poderparaiba",
+   "nome": "Poder Paraíba",
+   "site": "https://poderparaiba.com.br",
+   "feeds": [
+    "https://poderparaiba.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "paraibaja",
+   "nome": "Paraíba Já",
+   "site": "https://paraibaja.com.br",
+   "feeds": [
+    "https://paraibaja.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "jampanews",
+   "nome": "Jampa News",
+   "site": "https://jampanews.com.br",
+   "feeds": [
+    "https://jampanews.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "brasilcg",
+   "nome": "Brasil CG",
+   "site": "https://brasilcg.com.br",
+   "feeds": [
+    "https://brasilcg.com.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: imprensa",
+   "dicas": []
+  },
+  {
+   "id": "radiotabajara",
+   "nome": "Rádio Tabajara",
+   "site": "https://radiotabajara.pb.gov.br",
+   "feeds": [
+    "https://radiotabajara.pb.gov.br/feed/",
+    "https://radiotabajara.pb.gov.br/noticias/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "oficial"
+   ]
+  },
+  {
+   "id": "iphaep",
+   "nome": "IPHAEP",
+   "site": "https://iphaep.pb.gov.br",
+   "feeds": [
+    "https://iphaep.pb.gov.br/feed/",
+    "https://iphaep.pb.gov.br/noticias/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "patrimonio"
+   ]
+  },
+  {
+   "id": "pmjp",
+   "nome": "Prefeitura de João Pessoa",
+   "site": "https://www.joaopessoa.pb.gov.br/noticias/",
+   "feeds": [
+    "https://www.joaopessoa.pb.gov.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "transversal"
+   ]
+  },
+  {
+   "id": "pmcg",
+   "nome": "Prefeitura de Campina Grande",
+   "site": "https://campinagrande.pb.gov.br",
+   "feeds": [
+    "https://campinagrande.pb.gov.br/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: governo e órgãos",
+   "dicas": [
+    "transversal"
+   ]
+  },
+  {
+   "id": "ufpb-agencia",
+   "nome": "Agência de Notícias da UFPB",
+   "site": "https://www.ufpb.br/ufpb/contents/noticias",
+   "feeds": [
+    "https://www.ufpb.br/ufpb/contents/noticias/RSS",
+    "https://www.ufpb.br/ufpb/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 2,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "ifsertaopb",
+   "nome": "IF Sertão Paraibano",
+   "site": "https://www.ifsertaopb.edu.br",
+   "feeds": [
+    "https://www.ifsertaopb.edu.br/noticias/RSS",
+    "https://www.ifsertaopb.edu.br/RSS"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "fiepb",
+   "nome": "FIEP",
+   "site": "https://www.fiepb.com.br",
+   "feeds": [
+    "https://www.fiepb.com.br/feed/",
+    "https://www.fiepb.com.br/noticias/feed/"
+   ],
+   "escopo": "Paraíba",
+   "peso": 1,
+   "grupo": "Paraíba: universidades e ecossistema",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "agenciasenado",
+   "nome": "Agência Senado",
+   "site": "https://www12.senado.leg.br/noticias",
+   "feeds": [
+    "https://www12.senado.leg.br/noticias/ultimas/rss",
+    "https://www12.senado.leg.br/noticias/feed/ultimas"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "norma"
+   ]
+  },
+  {
+   "id": "agenciacamara",
+   "nome": "Agência Câmara",
+   "site": "https://www.camara.leg.br/noticias",
+   "feeds": [
+    "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
+    "https://www.camara.leg.br/noticias/rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "norma"
+   ]
+  },
+  {
+   "id": "serpro",
+   "nome": "Serpro",
+   "site": "https://www.serpro.gov.br/menu/noticias",
+   "feeds": [
+    "https://www.serpro.gov.br/menu/noticias/RSS",
+    "https://www.serpro.gov.br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "secretaria2030"
+   ]
+  },
+  {
+   "id": "dataprev",
+   "nome": "Dataprev",
+   "site": "https://www.dataprev.gov.br/noticias",
+   "feeds": [
+    "https://www.dataprev.gov.br/noticias/RSS",
+    "https://www.dataprev.gov.br/RSS"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: governo",
+   "dicas": [
+    "secretaria2030"
+   ]
+  },
+  {
+   "id": "ipea",
+   "nome": "Ipea",
+   "site": "https://www.ipea.gov.br/portal/",
+   "feeds": [
+    "https://www.ipea.gov.br/portal/index.php?format=feed&type=rss"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": []
+  },
+  {
+   "id": "abdi",
+   "nome": "ABDI",
+   "site": "https://www.abdi.com.br",
+   "feeds": [
+    "https://www.abdi.com.br/feed/",
+    "https://www.abdi.com.br/noticias/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "anprotec",
+   "nome": "Anprotec",
+   "site": "https://anprotec.org.br",
+   "feeds": [
+    "https://anprotec.org.br/site/feed/",
+    "https://anprotec.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "sebrae-startups",
+   "nome": "Sebrae Startups",
+   "site": "https://sebraestartups.com.br",
+   "feeds": [
+    "https://sebraestartups.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: fomento e redes",
+   "dicas": [
+    "inovacao"
+   ]
+  },
+  {
+   "id": "agenciabori",
+   "nome": "Agência Bori",
+   "site": "https://abori.com.br",
+   "feeds": [
+    "https://abori.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 2,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "cienciahoje",
+   "nome": "Ciência Hoje",
+   "site": "https://cienciahoje.org.br",
+   "feeds": [
+    "https://cienciahoje.org.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "jornalusp",
+   "nome": "Jornal da USP",
+   "site": "https://jornal.usp.br",
+   "feeds": [
+    "https://jornal.usp.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "unicamp",
+   "nome": "Jornal da Unicamp",
+   "site": "https://www.unicamp.br/unicamp/noticias",
+   "feeds": [
+    "https://www.unicamp.br/unicamp/rss.xml",
+    "https://www.unicamp.br/unicamp/noticias/feed"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "theconversation-br",
+   "nome": "The Conversation Brasil",
+   "site": "https://theconversation.com/br",
+   "feeds": [
+    "https://theconversation.com/br/articles.atom"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "olhardigital",
+   "nome": "Olhar Digital",
+   "site": "https://olhardigital.com.br",
+   "feeds": [
+    "https://olhardigital.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": []
+  },
+  {
+   "id": "cio",
+   "nome": "IT Forum",
+   "site": "https://itforum.com.br",
+   "feeds": [
+    "https://itforum.com.br/feed/"
+   ],
+   "escopo": "Nacional",
+   "peso": 1,
+   "grupo": "Nacional: ciência e imprensa especializada",
+   "dicas": [
+    "seguranca"
+   ]
+  },
+  {
+   "id": "hpcwire",
+   "nome": "HPCwire",
+   "site": "https://www.hpcwire.com",
+   "feeds": [
+    "https://www.hpcwire.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": [
+    "ciquanta"
+   ]
+  },
+  {
+   "id": "semiengineering",
+   "nome": "Semiconductor Engineering",
+   "site": "https://semiengineering.com",
+   "feeds": [
+    "https://semiengineering.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": []
+  },
+  {
+   "id": "physorg-quantum",
+   "nome": "Phys.org Quantum",
+   "site": "https://phys.org/physics-news/quantum-physics/",
+   "feeds": [
+    "https://phys.org/rss-feed/physics-news/quantum-physics/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: quântica e semicondutores",
+   "dicas": [
+    "ciquanta"
+   ]
+  },
+  {
+   "id": "quanta",
+   "nome": "Quanta Magazine",
+   "site": "https://www.quantamagazine.org",
+   "feeds": [
+    "https://api.quantamagazine.org/feed/",
+    "https://www.quantamagazine.org/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "astronomia"
+   ]
+  },
+  {
+   "id": "eurekalert",
+   "nome": "EurekAlert",
+   "site": "https://www.eurekalert.org",
+   "feeds": [
+    "https://www.eurekalert.org/rss/technology_engineering.xml",
+    "https://www.eurekalert.org/rss.xml"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": []
+  },
+  {
+   "id": "insidehighered",
+   "nome": "Inside Higher Ed",
+   "site": "https://www.insidehighered.com",
+   "feeds": [
+    "https://www.insidehighered.com/rss.xml",
+    "https://www.insidehighered.com/feed"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "iesalc",
+   "nome": "UNESCO IESALC",
+   "site": "https://www.iesalc.unesco.org",
+   "feeds": [
+    "https://www.iesalc.unesco.org/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: ciência, ensino superior e espaço",
+   "dicas": [
+    "ensino",
+    "internacional"
+   ]
+  },
+  {
+   "id": "oecd-education",
+   "nome": "OECD Education",
+   "site": "https://www.oecd.org/en/topics/education.html",
+   "feeds": [
+    "https://www.oecd.org/en/topics/education.rss",
+    "https://oecdedutoday.com/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "ensino"
+   ]
+  },
+  {
+   "id": "worldbank-digital",
+   "nome": "Banco Mundial Digital",
+   "site": "https://www.worldbank.org/en/topic/digitaldevelopment",
+   "feeds": [
+    "https://www.worldbank.org/en/topic/digitaldevelopment/rss",
+    "https://blogs.worldbank.org/en/digital-development/rss"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "inclusao",
+    "secretaria2030"
+   ]
+  },
+  {
+   "id": "iadb",
+   "nome": "BID",
+   "site": "https://www.iadb.org/en/news",
+   "feeds": [
+    "https://www.iadb.org/en/news/rss",
+    "https://blogs.iadb.org/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: organismos e políticas",
+   "dicas": [
+    "internacional"
+   ]
+  },
+  {
+   "id": "chinadaily-tech",
+   "nome": "China Daily Tech",
+   "site": "https://www.chinadaily.com.cn/business/tech",
+   "feeds": [
+    "https://www.chinadaily.com.cn/rss/tech_rss.xml",
+    "http://www.chinadaily.com.cn/rss/china_rss.xml"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "internacional"
+   ]
+  },
+  {
+   "id": "icom",
+   "nome": "ICOM",
+   "site": "https://icom.museum/en/news/",
+   "feeds": [
+    "https://icom.museum/en/feed/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "patrimonio"
+   ]
+  },
+  {
+   "id": "unesco-whc",
+   "nome": "UNESCO Patrimônio Mundial",
+   "site": "https://whc.unesco.org/en/news/",
+   "feeds": [
+    "https://whc.unesco.org/en/news/rss/"
+   ],
+   "escopo": "Global",
+   "peso": 1,
+   "grupo": "Internacional: patrimônio e China",
+   "dicas": [
+    "patrimonio"
+   ]
+  }
+ ]
+}

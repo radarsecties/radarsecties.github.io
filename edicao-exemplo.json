@@ -1,0 +1,394 @@
+{
+ "data": "2026-11-05",
+ "numero": 20,
+ "geradoEm": "2026-11-05T07:40:00-03:00",
+ "destaque": "Edital de inovação da FAPESQ com a Embrapii fecha nesta sexta",
+ "leitura": "A FAPESQ e a Embrapii recebem propostas de inovação até sexta-feira, 6 de novembro, com até R$ 200 mil por projeto. A Patos Expo Business reúne universidades no Espaço da Inovação até dia 7. Esta é uma edição de demonstração do novo visual, montada a partir da edição nº 19: os links levam às páginas iniciais das fontes.",
+ "itens": [
+  {
+   "id": "fapesq-embrapii",
+   "titulo": "Edital FAPESQ e Embrapii recebe propostas de inovação até sexta (6)",
+   "fonte": "FAPESQ",
+   "url": "https://fapesq.rpp.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "fomento",
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "A chamada apoia projetos de empresas com unidades da UEPB, UFCG e IFPB. O total é de até R$ 3 milhões, com até R$ 200 mil por projeto.",
+   "porQueImporta": "Último prazo para empresas paraibanas captarem recursos de inovação com as universidades do estado."
+  },
+  {
+   "id": "patos-expo",
+   "titulo": "Patos Expo Business abre Espaço da Inovação com UEPB, UFCG, Unifip e IFPB",
+   "fonte": "Folha Patoense",
+   "url": "https://folhapatoense.com",
+   "dataPub": "2026-11-04",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "ensino"
+   ],
+   "resumo": "A feira acontece de 5 a 7 de novembro em Patos. O Espaço da Inovação reúne projetos das universidades da região.",
+   "porQueImporta": "Vitrine do ecossistema de inovação do Sertão paraibano."
+  },
+  {
+   "id": "supercomputador",
+   "titulo": "Compra do supercomputador federal de IA fica para 2027",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br",
+   "dataPub": "2026-11-04",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "secretaria2030",
+    "fomento"
+   ],
+   "resumo": "O governo federal adiou a compra da máquina, de cerca de R$ 959 milhões, que ficará em Macaíba, no Rio Grande do Norte. O cronograma passa para o próximo ano.",
+   "porQueImporta": "O equipamento ficará a poucas horas de João Pessoa e pode atender pesquisas da Paraíba."
+  },
+  {
+   "id": "iqm-europa",
+   "titulo": "IQM propõe fábricas de chips e compras por metas na lei europeia de quântica",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com",
+   "dataPub": "2026-11-04",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "ciquanta",
+    "internacional"
+   ],
+   "resumo": "A empresa finlandesa sugere que a União Europeia financie fábricas de chips quânticos e compre computadores por metas de desempenho.",
+   "porQueImporta": "Modelos de compra por metas podem inspirar a política paraibana para o CIQUANTA."
+  },
+  {
+   "id": "caminhos-digitais",
+   "titulo": "Caminhos Digitais fica em Campina Grande até dia 6 e segue para o Cariri",
+   "fonte": "Paraíba Total",
+   "url": "https://paraibatotal.com.br",
+   "dataPub": "2026-10-29",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inclusao",
+    "transversal"
+   ],
+   "resumo": "A carreta de cursos digitais gratuitos atende em Campina Grande até 6 de novembro. Depois passa por Serra Branca, Monteiro, Patos e mais nove cidades até fevereiro de 2027.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "web-summit",
+   "titulo": "Startups paraibanas embarcam para o Web Summit Lisboa com apoio do estado",
+   "fonte": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br",
+   "dataPub": "2026-10-28",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "resumo": "Trinta startups participam do evento de 9 a 12 de novembro. Cada uma recebe R$ 15,5 mil de apoio.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "uepb-ods",
+   "titulo": "UEPB é a primeira universidade da Paraíba com o Selo ODS",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "O selo reconhece ações ligadas aos Objetivos de Desenvolvimento Sustentável da ONU.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "casacor",
+   "titulo": "CASACOR ocupa casarão do Centro Histórico de João Pessoa até 13 de dezembro",
+   "fonte": "Jornal da Paraíba",
+   "url": "https://jornaldaparaiba.com.br",
+   "dataPub": "2026-11-02",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "patrimonio"
+   ],
+   "resumo": "A mostra de arquitetura dá novo uso temporário a um imóvel histórico da capital.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "gsi-anatel",
+   "titulo": "GSI e Anatel firmam acordo de cibersegurança para redes de telecomunicações",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "seguranca",
+    "inclusao"
+   ],
+   "resumo": "O acordo prevê troca de alertas e resposta conjunta a incidentes.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "anatel-leilao",
+   "titulo": "Anatel reserva R$ 23 milhões para leilão de cobertura móvel em áreas sem sinal",
+   "fonte": "Tele.Síntese",
+   "url": "https://telesintese.com.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao"
+   ],
+   "resumo": "Os recursos vão para operadoras que levarem sinal a localidades hoje descobertas.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "speed-gov",
+   "titulo": "São Paulo cria trilha rápida para startups venderem ao governo",
+   "fonte": "Startupi",
+   "url": "https://startupi.com.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "secretaria2030"
+   ],
+   "resumo": "O programa simplifica a contratação de soluções inovadoras por órgãos estaduais.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "sbpc-mcti",
+   "titulo": "Cientistas defendem presidente da SBPC, paraibana, para o MCTI",
+   "fonte": "Jornal da Ciência",
+   "url": "https://jornaldaciencia.org.br",
+   "dataPub": "2026-11-03",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "fomento"
+   ],
+   "resumo": "Entidades científicas apoiam o nome de Francilene Procópio Garcia para o ministério.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "stlouis-ia",
+   "titulo": "Condado de St. Louis usa IA para montar o orçamento público",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com",
+   "dataPub": "2026-11-03",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "A ferramenta sugere cortes e prioridades a partir dos dados de gastos.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "unc-ia",
+   "titulo": "Universidade da Carolina do Norte abandona IA na avaliação de redações de admissão",
+   "fonte": "Times Higher Education",
+   "url": "https://www.timeshighereducation.com",
+   "dataPub": "2026-11-03",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "secretaria2030"
+   ],
+   "resumo": "A instituição voltou à leitura humana depois de críticas sobre justiça do processo.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "pqc-bancos",
+   "titulo": "Bancos recebem guia de criptografia pós-quântica",
+   "fonte": "Quantum Computing Report",
+   "url": "https://quantumcomputingreport.com",
+   "dataPub": "2026-11-02",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ciquanta",
+    "seguranca"
+   ],
+   "resumo": "O guia orienta a migração dos sistemas financeiros antes que computadores quânticos quebrem a criptografia atual.",
+   "porQueImporta": ""
+  },
+  {
+   "id": "chicago-toyota",
+   "titulo": "Universidade de Chicago e Toyota firmam parceria em pesquisa quântica",
+   "fonte": "Physics World",
+   "url": "https://physicsworld.com",
+   "dataPub": "2026-11-02",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta",
+    "internacional"
+   ],
+   "resumo": "A colaboração une laboratório universitário e indústria em tecnologias quânticas.",
+   "porQueImporta": ""
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro",
+  "paginasLidas": "edição inteira",
+  "leituraParcial": false,
+  "obs": "Última edição lida pela rotina anterior. As edições de 23/10 em diante ainda não foram lidas: a leitura automática está sendo reativada neste repositório.",
+  "atos": [
+   {
+    "tipo": "Edital nº 47/2026 SECTIES/FAPESQ",
+    "orgao": "SECTIES e FAPESQ",
+    "pagina": "12",
+    "relevancia": "alta",
+    "programas": [
+     "fomento",
+     "transversal"
+    ],
+    "resumo": "SECTIES e FAPESQ divulgam resultado com 38 bolsistas para o projeto CIATox. Os selecionados atuam nos centros de João Pessoa e Campina Grande."
+   },
+   {
+    "tipo": "Portaria Conjunta nº 409",
+    "orgao": "SECTIES",
+    "pagina": "13",
+    "relevancia": "media",
+    "programas": [
+     "ensino"
+    ],
+    "resumo": "Exemplo de ato: a portaria define o calendário de prestação de contas de bolsas de pós-graduação."
+   }
+  ]
+ },
+ "secom": [
+  {
+   "titulo": "Caminhos Digitais leva cursos gratuitos a Campina Grande",
+   "portal": "Paraíba Total",
+   "url": "https://paraibatotal.com.br",
+   "dataPub": "2026-10-29",
+   "programas": [
+    "inclusao"
+   ],
+   "resumo": ""
+  },
+  {
+   "titulo": "Duas startups da Paraíba contam como será a ida ao Web Summit",
+   "portal": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br",
+   "dataPub": "2026-10-28",
+   "programas": [
+    "inovacao"
+   ],
+   "resumo": ""
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-banco-desafios",
+   "titulo": "Banco público de desafios das secretarias para startups",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "descricao": "Cada secretaria registra problemas concretos que startups podem resolver. A lista fica aberta e orienta editais e compras de inovação.",
+   "base": [
+    "speed-gov"
+   ]
+  },
+  {
+   "id": "p-supercomputador",
+   "titulo": "Acordo para uso do supercomputador federal instalado no RN",
+   "tipo": "Parceria",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "secretaria2030",
+    "ensino"
+   ],
+   "descricao": "Negociar cotas de uso para universidades e órgãos da Paraíba antes da entrega da máquina.",
+   "base": [
+    "supercomputador"
+   ]
+  },
+  {
+   "id": "p-compras-metas",
+   "titulo": "Estudo de compras por metas em tecnologias quânticas",
+   "tipo": "Política",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "ciquanta"
+   ],
+   "descricao": "Avaliar contratos em que o pagamento depende do desempenho entregue, como propõe a indústria europeia.",
+   "base": [
+    "iqm-europa"
+   ]
+  },
+  {
+   "id": "p-ia-orcamento",
+   "titulo": "Teste de IA para sugerir economias no orçamento estadual",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "descricao": "Piloto com a Fazenda usando dados abertos de gastos. Toda sugestão passa por revisão humana.",
+   "base": [
+    "stlouis-ia"
+   ]
+  },
+  {
+   "id": "p-alertas-ciber",
+   "titulo": "Canal estadual de alertas cibernéticos ligado ao centro federal",
+   "tipo": "Parceria",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "seguranca"
+   ],
+   "descricao": "Conectar a CODATA ao acordo GSI e Anatel para receber alertas em tempo real.",
+   "base": [
+    "gsi-anatel"
+   ]
+  },
+  {
+   "id": "p-sem-sinal",
+   "titulo": "Lista paraibana de localidades sem sinal para o leilão da Anatel",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao"
+   ],
+   "descricao": "Mapear com as prefeituras os distritos sem cobertura e enviar à Anatel antes do leilão.",
+   "base": [
+    "anatel-leilao"
+   ]
+  },
+  {
+   "id": "p-selo-ods",
+   "titulo": "Apoio para mais universidades conquistarem o Selo ODS",
+   "tipo": "Programa",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "ensino"
+   ],
+   "descricao": "Oficina da SECTIES com as instituições de ensino superior sobre os critérios do selo.",
+   "base": [
+    "uepb-ods"
+   ]
+  }
+ ]
+}

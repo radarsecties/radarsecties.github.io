@@ -1,0 +1,426 @@
+{
+ "data": "2026-10-29",
+ "numero": 17,
+ "geradoEm": "2026-10-29T08:30:30-03:00",
+ "destaque": "Bolsas de pós-graduação: prazo para programas termina em 9 de novembro",
+ "leitura": "Os programas de pós-graduação da Paraíba têm até 9 de novembro para disputar até 390 bolsas de mestrado, doutorado e pós-doutorado da FAPESQ. A Expotec segue até sexta (30) em João Pessoa, e a Anatel abriu consulta sobre inclusão digital. As edições do Diário Oficial de 23/10 em diante não puderam ser lidas.",
+ "itens": [
+  {
+   "id": "bolsas-pos-prazo-9-11",
+   "titulo": "Prazo para disputar até 390 bolsas de pós-graduação da FAPESQ termina em 9 de novembro",
+   "fonte": "Polêmica Paraíba",
+   "url": "https://www.polemicaparaiba.com.br/educacao/governo-da-paraiba-destina-r-37-milhoes-para-ate-390-bolsas-de-pos-graduacao/",
+   "dataPub": "2026-10-07",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "fomento",
+    "ensino"
+   ],
+   "resumo": "Os editais nº 40, 41 e 42/2026 da FAPESQ e da SECTIES somam cerca de R$ 37 milhões para até 310 bolsas de mestrado e doutorado acadêmicos, 30 profissionais e 50 de pós-doutorado. Os coordenadores dos programas enviam as propostas pelo sistema SIGFAPESQ até 9 de novembro, às 17h.",
+   "porQueImporta": "Faltam 11 dias, e programa que perder o prazo fica sem bolsas novas para as turmas de 2027."
+  },
+  {
+   "id": "lei-do-bem-paraiba-34-empresas",
+   "titulo": "Só 34 empresas paraibanas usam a Lei do Bem; outras 2,7 mil poderiam usar",
+   "fonte": "Sebrae Paraíba",
+   "url": "https://pb.agenciasebrae.com.br/inovacao-e-tecnologia/apenas-34-empresas-paraibanas-utilizam-a-lei-do-bem-outras-27-mil-podem-se-beneficiar/",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": "Em encontro no Hub Sebrae, em João Pessoa, técnicos do MCTI explicaram a Lei do Bem, que dá desconto em impostos a empresas que investem em pesquisa e inovação. Na Paraíba, 34 empresas de oito cidades usam o benefício, mas cerca de 2,7 mil têm o perfil para usar.",
+   "porQueImporta": "É dinheiro federal para inovação que as empresas do estado deixam de aproveitar, e as universidades podem ser parceiras desses projetos."
+  },
+  {
+   "id": "anatel-consulta-conectividade-significativa",
+   "titulo": "Anatel abre consulta sobre plano de inclusão digital, segurança e clima",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/28/10/2026/consulta-conectividade-significativa/",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "alta",
+   "programas": [
+    "inclusao",
+    "seguranca"
+   ],
+   "resumo": "A Anatel (agência que regula as telecomunicações) aprovou consulta pública de 45 dias sobre o Plano de Conectividade Significativa. A proposta junta formação digital, acesso mais barato, prevenção a golpes e redes preparadas para desastres climáticos, incluindo acesso gratuito a serviços públicos essenciais.",
+   "porQueImporta": "O estado pode enviar sugestões baseadas nos seus programas de inclusão digital antes que as regras sejam fechadas."
+  },
+  {
+   "id": "gemini-governo-missouri",
+   "titulo": "Governos nos EUA começam a usar IA para pedidos de informação, licitações e notas fiscais",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/biz/early-adopters-take-up-gemini-for-government-services",
+   "dataPub": "2026-10-27",
+   "escopo": "Global",
+   "relevancia": "alta",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "resumo": "O estado do Missouri e o Ministério da Saúde dos EUA estão entre os primeiros a usar uma ferramenta de IA do Google feita para governos. Ela pesquisa normas, sugere respostas a pedidos de informação, confere propostas de licitação e revisa notas fiscais, sempre com decisão final de um servidor.",
+   "porQueImporta": "Mostra tarefas concretas da gestão pública em que a IA já ajuda, sempre com revisão humana."
+  },
+  {
+   "id": "expotec-segue-ate-sexta",
+   "titulo": "Expotec segue até sexta (30) em João Pessoa, com entrada gratuita",
+   "fonte": "Ponto PB",
+   "url": "https://www.pontopb.com.br/noticia/dicas-e-destinos/expotec-2026-comeca-nesta-quarta-feira-28-em-joao-pessoa-com-entrada-gratuita-veja-programacao.html",
+   "dataPub": "2026-10-26",
+   "escopo": "Paraíba",
+   "relevancia": "alta",
+   "programas": [
+    "ciquanta",
+    "astronomia",
+    "inclusao"
+   ],
+   "resumo": "A 12ª Expotec, realizada pela SECTIES e pela Associação Nacional para Inclusão Digital, vai até sexta no Centro de Convenções, das 9h às 17h, com o tema tecnologias quânticas e soberania tecnológica. Há planetário, oficinas de robótica e apresentação de projetos paraibanos como o radiotelescópio BINGO e a computação quântica.",
+   "porQueImporta": "Os dois últimos dias são a chance de levar escolas e o público ao debate sobre o CIQUANTA."
+  },
+  {
+   "id": "incoday-campina-grande",
+   "titulo": "Nove projetos paraibanos vão a evento internacional de inovação em Campina Grande",
+   "fonte": "Paraíba Online",
+   "url": "https://paraibaonline.com.br/economia/2026/10/28/nove-projetos-paraibanos-sao-selecionados-para-evento-internacional-de-inovacao-em-campina-grande/",
+   "dataPub": "2026-10-28",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "resumo": "Um júri internacional escolheu as ideias que serão apresentadas no INCODAY, dia internacional de inovação colaborativa, em 1º e 2 de dezembro, em Campina Grande. O evento é do Sebrae Paraíba com a plataforma BraFIP e terá transmissão pela internet.",
+   "porQueImporta": "Coloca Campina Grande em vitrine internacional de inovação e aproxima ideias locais de parceiros de fora."
+  },
+  {
+   "id": "ufpb-ru-420-vagas",
+   "titulo": "UFPB abre 420 vagas de refeição gratuita e auxílio para estudantes",
+   "fonte": "UFPB",
+   "url": "https://www.ufpb.br/noticias/ufpb-amplia-acesso-a-alimentacao-gratuita-edital-oferece-400-novas-vagas-nos-restaurantes-universitarios-e-5-746-estudantes-ja-tem-o-beneficio-garantido/",
+   "dataPub": "2026-10-28",
+   "escopo": "Paraíba",
+   "relevancia": "media",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "São 400 vagas de acesso gratuito aos restaurantes universitários e 20 de auxílio alimentação para estudantes de graduação. As inscrições vão de 29 de outubro a 6 de novembro, pelo SIGAA, e o resultado sai em 17 de dezembro.",
+   "porQueImporta": "A assistência estudantil ajuda a manter na universidade alunos de baixa renda."
+  },
+  {
+   "id": "ifpb-proeja-340-vagas",
+   "titulo": "IFPB oferece 340 vagas gratuitas em cursos técnicos para jovens e adultos",
+   "fonte": "IFPB",
+   "url": "https://www.ifpb.edu.br/noticias/2026/10/ifpb-oferta-300-vagas-em-cursos-tecnicos-pelo-proeja-para-ingresso-em-2027",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino",
+    "inclusao"
+   ],
+   "resumo": "As vagas são para cursos técnicos junto com o ensino médio, para maiores de 18 anos, em campi como João Pessoa, Campina Grande, Sousa, Cabedelo e Cajazeiras. As inscrições são presenciais, até 19 de novembro.",
+   "porQueImporta": "Abre caminho de volta aos estudos e, depois, ao ensino superior para adultos que pararam de estudar."
+  },
+  {
+   "id": "ufpb-ccae-20-anos",
+   "titulo": "Campus da UFPB no Litoral Norte completa 20 anos",
+   "fonte": "UFPB",
+   "url": "https://www.ufpb.br/noticias/ufpb-celebra-20-anos-do-ccae-com-solenidade-no-campus-iv-no-dia-29-de-outubro/",
+   "dataPub": "2026-10-27",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "O Centro de Ciências Aplicadas e Educação, em Mamanguape e Rio Tinto, comemora 20 anos com solenidade hoje (29), às 16h30, em Rio Tinto. O campus tem 13 cursos de graduação e quatro mestrados.",
+   "porQueImporta": "É exemplo de como a interiorização das universidades leva formação superior a regiões fora das grandes cidades."
+  },
+  {
+   "id": "uepb-mestrado-farmaceuticas",
+   "titulo": "UEPB abre 23 vagas no mestrado em Ciências Farmacêuticas",
+   "fonte": "UEPB",
+   "url": "https://uepb.edu.br/pos-graduacao-em-ciencias-farmaceuticas-abre-inscricoes-para-turma-2027-1-do-mestrado-academico-com-23-vagas-disponiveis/",
+   "dataPub": "2026-10-23",
+   "escopo": "Paraíba",
+   "relevancia": "radar",
+   "programas": [
+    "ensino"
+   ],
+   "resumo": "As inscrições para a turma de 2027 vão até 14 de dezembro, pela internet. A seleção tem prova, defesa de pré-projeto e análise de currículo.",
+   "porQueImporta": "Forma pesquisadores em medicamentos e produtos naturais, área próxima da saúde pública e da toxicologia."
+  },
+  {
+   "id": "anatel-unesco-idosos",
+   "titulo": "Estudo da Anatel e da Unesco mostra que 62% dos idosos estão abaixo do básico no uso digital",
+   "fonte": "Tele.Síntese",
+   "url": "https://telesintese.com.br/unesco-e-itamaraty-defendem-inclusao-digital-com-foco-em-direitos-humanos-e-ia/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao",
+    "seguranca"
+   ],
+   "resumo": "O diagnóstico ouviu idosos em sete estados e analisou 170 projetos de inclusão digital: só 8% têm boas habilidades digitais. O medo de golpes é uma das maiores barreiras, e aulas presenciais, material impresso e prática em grupo foram os métodos que mais funcionaram.",
+   "porQueImporta": "Dá um roteiro testado para programas estaduais de inclusão digital voltados a idosos."
+  },
+  {
+   "id": "brisanet-5g-nordeste",
+   "titulo": "Brisanet vai captar até R$ 504 milhões para ampliar o 5G no Nordeste, incluindo a Paraíba",
+   "fonte": "Teletime",
+   "url": "https://teletime.com.br/28/10/2026/brisanet-financiamento-5g-nordeste/",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inclusao"
+   ],
+   "resumo": "O dinheiro vem do Banco do Nordeste, pela linha FNE Inovação, e cobre 80% de um projeto de R$ 630 milhões para novas torres e equipamentos. A expansão alcança os nove estados do Nordeste.",
+   "porQueImporta": "Mais cobertura móvel no interior ajuda escolas, postos de saúde e serviços digitais do estado."
+  },
+  {
+   "id": "speed-gov-sao-paulo",
+   "titulo": "São Paulo cria aceleradora para startups venderem soluções ao governo",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/prodesp-e-sebrae-sp-lancam-speed-gov-para-acelerar-ate-100-startups-em-cinco-anos/",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "media",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "resumo": "A empresa de tecnologia do governo paulista e o Sebrae-SP lançaram o Speed GOV, que vai preparar até 100 startups em cinco anos para disputar compras públicas. A primeira turma trabalha com demandas de atendimento ao cidadão, segurança, saúde, educação e agronegócio.",
+   "porQueImporta": "É um modelo para ligar startups locais aos problemas reais das secretarias."
+  },
+  {
+   "id": "tecpar-inovacao-aberta-saude",
+   "titulo": "Instituto do Paraná abre chamada de inovação para problemas da saúde pública",
+   "fonte": "Saúde Digital News",
+   "url": "https://saudedigitalnews.com.br/28/10/2026/tecpar-lanca-convite-de-inovacao-aberta-para-atender-demandas-da-saude-publica/",
+   "dataPub": "2026-10-28",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "transversal",
+    "inovacao"
+   ],
+   "resumo": "O Tecpar busca ideias de universidades, startups e empresas sobre saúde humana, animal e ambiental, como zoonoses, resistência a antibióticos, vacinas e diagnósticos. A participação não garante financiamento.",
+   "porQueImporta": "Inspira chamadas estaduais que liguem pesquisa e as necessidades do SUS."
+  },
+  {
+   "id": "abes-ia-pib-infraestrutura",
+   "titulo": "Setor de software pede estratégia nacional de infraestrutura para a IA",
+   "fonte": "Convergência Digital",
+   "url": "https://convergenciadigital.com.br/governo/para-ter-r-1-trilhao-adicionado-ao-pib-ate-2030-pela-ia-abes-defende-estrategia-nacional-para-infraestrutura/",
+   "dataPub": "2026-10-27",
+   "escopo": "Nacional",
+   "relevancia": "radar",
+   "programas": [
+    "secretaria2030",
+    "seguranca"
+   ],
+   "resumo": "No encontro da associação das empresas de software, em São Paulo, a projeção apresentada foi de até R$ 1 trilhão a mais no PIB até 2030 com IA, se houver infraestrutura e formação. Também foi dito que só 5% das empresas têm controles adequados para usar agentes de IA com segurança.",
+   "porQueImporta": "Reforça que adotar IA exige, ao mesmo tempo, investir em segurança e capacitação."
+  },
+  {
+   "id": "lula-ensino-superior-orcamento",
+   "titulo": "Revista britânica prevê orçamento apertado para universidades no novo mandato de Lula",
+   "fonte": "Times Higher Education",
+   "url": "https://www.timeshighereducation.com/news/finances-constrain-lulas-he-plans-after-defeating-bolsonaro",
+   "dataPub": "2026-10-28",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "resumo": "Lula foi reeleito em 25 de outubro com 51,79% dos votos, com apoio de estudantes e de reitores de universidades estaduais. Especialistas ouvidos avaliam que a dívida pública e um Congresso de maioria de oposição devem limitar novos gastos com ensino superior e pesquisa.",
+   "porQueImporta": "Os estados podem precisar de mais fontes próprias e parcerias para manter o ritmo da pesquisa."
+  },
+  {
+   "id": "iqm-54-qubits",
+   "titulo": "Empresa finlandesa liga todos os 54 qubits de um chip quântico ao mesmo tempo",
+   "fonte": "The Quantum Insider",
+   "url": "https://thequantuminsider.com/2026/10/29/iqm-full-chip-entanglement-54-qubit-processor/",
+   "dataPub": "2026-10-29",
+   "escopo": "Global",
+   "relevancia": "media",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": "A IQM conseguiu fazer os 54 qubits do seu processador trabalharem juntos de forma coordenada, o que antes só funcionava com cerca de 30. A máquina pode ser usada pela internet por clientes.",
+   "porQueImporta": "Mostra o ritmo de melhoria das máquinas e ajuda a dimensionar o que o CIQUANTA poderá oferecer."
+  },
+  {
+   "id": "reino-unido-quantica-espaco",
+   "titulo": "Reino Unido lança plano para levar tecnologias quânticas ao espaço até 2040",
+   "fonte": "Quantum Computing Report",
+   "url": "https://quantumcomputingreport.com/uk-space-agency-and-dsit-publish-quantum-technology-roadmap-for-space-targeting-2035-2040-sovereign-capabilities/",
+   "dataPub": "2026-10-28",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "ciquanta",
+    "internacional"
+   ],
+   "resumo": "A agência espacial britânica e o ministério de ciência definiram prioridades como relógios de alta precisão, navegação, comunicação segura e computação quântica. O plano pede migração para criptografia resistente a computadores quânticos.",
+   "porQueImporta": "Mostra como países amarram tecnologia quântica à soberania, tema central da Expotec deste ano."
+  },
+  {
+   "id": "robos-ia-bibliotecas-digitais",
+   "titulo": "Robôs de IA sobrecarregam bibliotecas e acervos digitais de universidades",
+   "fonte": "GovTech",
+   "url": "https://www.govtech.com/education/higher-ed/ai-bot-activity-strains-digital-libraries-at-universities",
+   "dataPub": "2026-10-26",
+   "escopo": "Global",
+   "relevancia": "radar",
+   "programas": [
+    "patrimonio",
+    "seguranca"
+   ],
+   "resumo": "Programas automáticos que coletam dados para IA estão deixando lentos sites de bibliotecas, museus e arquivos e chegam a tirar o acesso de alunos e professores. Mais de cem instituições formaram um grupo para trocar soluções, como limites de acesso e filtros de tráfego.",
+   "porQueImporta": "Acervos digitalizados do estado precisam de proteção técnica para continuar disponíveis ao público."
+  }
+ ],
+ "doe": {
+  "edicao": "2026-10-22",
+  "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-22-10-2026-portal.pdf/view",
+  "paginasLidas": "edições novas indisponíveis",
+  "leituraParcial": true,
+  "obs": "As edições do Diário Oficial de 23/10 a 29/10 não ficaram disponíveis para leitura até 8h30 e ficam para a próxima edição do Radar.",
+  "atos": []
+ },
+ "secom": [
+  {
+   "titulo": "Expotec 2026 começa nesta quarta-feira (28) em João Pessoa com entrada gratuita; veja programação",
+   "portal": "Ponto PB",
+   "url": "https://www.pontopb.com.br/noticia/dicas-e-destinos/expotec-2026-comeca-nesta-quarta-feira-28-em-joao-pessoa-com-entrada-gratuita-veja-programacao.html",
+   "dataPub": "2026-10-26",
+   "programas": [
+    "ciquanta",
+    "astronomia"
+   ],
+   "resumo": "A SECTIES realiza a 12ª Expotec com a Anid, de 28 a 30 de outubro, com projetos paraibanos como o BINGO e a computação quântica."
+  },
+  {
+   "titulo": "Expotec 2026 cria Espaço Robótica e espera mais de 5 mil visitantes",
+   "portal": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/expotec-2026-cria-espaco-robotica-e-espera-mais-de-5-mil-visitantes/",
+   "dataPub": "2026-10-16",
+   "programas": [
+    "inclusao",
+    "ensino"
+   ],
+   "resumo": "Feira realizada pela SECTIES e pela Anid terá mostra e oficinas de robótica com escolas, IFPB e ONGs."
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p-mutirao-lei-do-bem",
+   "titulo": "Mutirão de projetos de inovação entre empresas e universidades para usar a Lei do Bem",
+   "tipo": "Programa",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "descricao": "Reunir em rodadas curtas empresas com perfil para a Lei do Bem e grupos de pesquisa das universidades estaduais e federais, para montar projetos conjuntos. A meta pode ser multiplicar o número de empresas paraibanas que usam o incentivo nos próximos dois anos.",
+   "base": [
+    "lei-do-bem-paraiba-34-empresas"
+   ]
+  },
+  {
+   "id": "p-contribuicao-anatel-pcs",
+   "titulo": "Contribuição do estado à consulta da Anatel sobre inclusão digital",
+   "tipo": "Política",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao",
+    "seguranca"
+   ],
+   "descricao": "Enviar, dentro dos 45 dias da consulta, propostas baseadas na experiência paraibana, como acesso gratuito aos serviços digitais do estado e formação contra golpes. O texto pode ser preparado com a CODATA e as universidades.",
+   "base": [
+    "anatel-consulta-conectividade-significativa",
+    "anatel-unesco-idosos"
+   ]
+  },
+  {
+   "id": "p-oficinas-digitais-idosos",
+   "titulo": "Oficinas presenciais de uso seguro do celular para idosos",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "inclusao",
+    "transversal"
+   ],
+   "descricao": "Levar oficinas em grupo, com material impresso, a centros de convivência e unidades de assistência social, com foco em golpes, gov.br e serviços de saúde. Estudantes universitários bolsistas podem atuar como monitores.",
+   "base": [
+    "anatel-unesco-idosos"
+   ]
+  },
+  {
+   "id": "p-ia-licitacoes-revisao",
+   "titulo": "Teste de IA para conferir propostas de licitação na Administração",
+   "tipo": "Projeto",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "secretaria2030",
+    "transversal"
+   ],
+   "descricao": "Testar, com a Secretaria da Administração, uma ferramenta que compara propostas de licitação com as exigências do edital e aponta falhas, com decisão final sempre de servidores. O piloto teria metas de tempo economizado e regras de proteção de dados.",
+   "base": [
+    "gemini-governo-missouri",
+    "abes-ia-pib-infraestrutura"
+   ]
+  },
+  {
+   "id": "p-trilha-startups-compras-publicas",
+   "titulo": "Trilha para startups paraibanas aprenderem a vender ao governo",
+   "tipo": "Programa",
+   "horizonte": "Médio prazo",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "descricao": "Criar turmas anuais que preparem startups para as regras de compras públicas, a partir de desafios trazidos pelas secretarias estaduais. A trilha pode ser feita com o Sebrae e os parques tecnológicos.",
+   "base": [
+    "speed-gov-sao-paulo",
+    "incoday-campina-grande"
+   ]
+  },
+  {
+   "id": "p-protecao-acervos-digitais",
+   "titulo": "Proteção técnica dos acervos digitais públicos contra robôs de IA",
+   "tipo": "Projeto",
+   "horizonte": "Curto prazo",
+   "programas": [
+    "patrimonio",
+    "seguranca"
+   ],
+   "descricao": "Avaliar o tráfego dos sites de bibliotecas, arquivos e museus estaduais e aplicar limites de acesso e filtros para manter o acervo disponível ao público. A medida também melhora as estatísticas de uso reais.",
+   "base": [
+    "robos-ia-bibliotecas-digitais"
+   ]
+  },
+  {
+   "id": "p-plano-fontes-pesquisa",
+   "titulo": "Plano estadual para diversificar fontes de recursos da pesquisa",
+   "tipo": "Política",
+   "horizonte": "Longo prazo",
+   "programas": [
+    "fomento",
+    "internacional"
+   ],
+   "descricao": "Mapear fontes que não dependem só do orçamento federal, como fundos regionais, cooperação internacional e parcerias com empresas, e preparar as instituições para disputá-las. O plano pode ter metas anuais de captação.",
+   "base": [
+    "lula-ensino-superior-orcamento",
+    "brisanet-5g-nordeste"
+   ]
+  }
+ ]
+}

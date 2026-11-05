@@ -1,0 +1,472 @@
+{
+  "data": "2026-10-11",
+  "numero": 3,
+  "geradoEm": "2026-10-11T07:30:00-03:00",
+  "destaque": "Expotec põe as tecnologias quânticas no centro do debate em JP",
+  "leitura": "A semana fecha com a quântica em evidência dentro e fora do estado: a Expotec, organizada com a SECTIES, terá o tema como eixo, enquanto os EUA lançam prêmio milionário para computadores quânticos e especialistas pedem que as empresas brasileiras se preparem já. Para o CIQUANTA, o recado é aproveitar a feira para formar pessoas e atrair parceiros com problemas reais, como energia e logística. No ensino, o Desafio Celso Furtado abre inscrições na rede estadual, e a crise de manutenção das universidades federais acende o alerta sobre laboratórios e acervos. Não houve Diário Oficial novo desde sábado.",
+  "itens": [
+    {
+      "id": "expotec-2026-quantica",
+      "titulo": "Expotec 2026 terá as tecnologias quânticas como tema central",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/tecnologia/soberania-digital-entra-no-centro-do-debate-da-12a-expotec-em-joao-pessoa/",
+      "dataPub": "2026-10-08",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "inovacao",
+        "inclusao"
+      ],
+      "resumo": "A 12ª Expotec acontece de 28 a 30 de outubro no Centro de Convenções de João Pessoa, com entrada gratuita. O tema é tecnologias quânticas e soberania tecnológica, e a feira é organizada pela Associação Nacional para Inclusão Digital em parceria com o Governo da Paraíba, por meio da SECTIES. A expectativa é de mais de cinco mil participantes.",
+      "porQueImporta": "É a maior vitrine do ano para apresentar o CIQUANTA ao público e aproximar estudantes, empresas e universidades do tema quântico."
+    },
+    {
+      "id": "desafio-celso-furtado-2027",
+      "titulo": "Desafio Celso Furtado abre inscrições para alunos e professores da rede estadual",
+      "fonte": "Polêmica Paraíba",
+      "url": "https://www.polemicaparaiba.com.br/paraiba/desafio-celso-furtado-abre-inscricoes-para-estudantes-e-professores-da-rede-estadual-da-paraiba/",
+      "dataPub": "2026-10-09",
+      "escopo": "Paraíba",
+      "relevancia": "alta",
+      "programas": [
+        "fomento",
+        "inovacao",
+        "ensino"
+      ],
+      "resumo": "O Governo da Paraíba, pela SECTIES e com a FAPESQ, abriu inscrições até 23 de outubro para equipes de estudantes da rede estadual, do 8º ano ao ensino médio e EJA, com um professor mentor. Até 25 equipes serão escolhidas em cinco eixos, como clima, Caatinga e inclusão, e recebem bolsas por 12 meses a partir de fevereiro de 2027.",
+      "porQueImporta": "Leva a pesquisa aplicada para dentro da escola pública e forma futuros universitários com experiência em projetos."
+    },
+    {
+      "id": "universidades-federais-manutencao",
+      "titulo": "Universidades federais têm a menor verba para obras em quase 20 anos",
+      "fonte": "ParaibaOnline",
+      "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/10/10/sem-dinheiro-para-manutencao-universidades-federais-sofrem-para-conservar-predios/",
+      "dataPub": "2026-10-10",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "ensino",
+        "patrimonio"
+      ],
+      "resumo": "A verba federal para obras, reformas e equipamentos nas universidades foi de R$ 600 milhões em 2025, a menor em quase duas décadas. O incêndio na UFPE, que destruiu pesquisas estimadas em R$ 100 milhões, reacendeu o alerta sobre prédios sem manutenção. O MEC afirma que o orçamento livre das universidades cresceu desde 2020.",
+      "porQueImporta": "Mostra que a conservação de laboratórios e acervos é um risco real para a pesquisa, inclusive nas instituições paraibanas."
+    },
+    {
+      "id": "eua-6-bilhoes-ciencia-quantica",
+      "titulo": "EUA anunciam pacote de US$ 6 bilhões para ciência, com prêmio para computador quântico",
+      "fonte": "Casa Branca",
+      "url": "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-trump-administration-announces-the-most-ambitious-set-of-science-initiatives-this-century/",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "fomento",
+        "secretaria2030"
+      ],
+      "resumo": "O governo americano reuniu mais de US$ 6 bilhões de órgãos públicos, empresas e fundações para ciência. O Departamento de Energia lançou uma competição de US$ 215 milhões para equipes que demonstrem os primeiros computadores quânticos resistentes a erros, guiada por oito problemas prioritários. Há ainda US$ 2,4 bilhões em supercomputação para IA aplicada à pesquisa.",
+      "porQueImporta": "Confirma a tendência de financiar a quântica por desafios concretos, modelo que pode inspirar o uso do CIQUANTA."
+    },
+    {
+      "id": "futurecom-quantica-planejamento",
+      "titulo": "Especialistas pedem que empresas brasileiras já planejem a era quântica",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/computacao-quantica-ja-chegou-e-tem-de-estar-no-planejamento-das-empresas-nacionais/",
+      "dataPub": "2026-10-07",
+      "escopo": "Nacional",
+      "relevancia": "alta",
+      "programas": [
+        "ciquanta",
+        "seguranca"
+      ],
+      "resumo": "Em painel no Futurecom, pesquisadores disseram que a computação quântica saiu da teoria e entra na fase de demonstrações e produtos. O alerta principal é que a criptografia usada hoje poderá ser quebrada, e a preparação deve começar já, com mapeamento de riscos e capacitação de equipes. Segundo o painel, o Brasil tem gente qualificada, mas pouco conhecida pelo mercado.",
+      "porQueImporta": "Reforça o papel do CIQUANTA na formação de pessoal e na aproximação com empresas."
+    },
+    {
+      "id": "gartner-receita-quantica",
+      "titulo": "Mercado quântico deve passar de US$ 1 bilhão em 2027, com governos à frente",
+      "fonte": "Gartner",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-08-gartner-says-global-quantum-computing-revenue-will-reach-over-us-dollars-1-billion-in-2027",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ciquanta",
+        "inovacao"
+      ],
+      "resumo": "A consultoria Gartner projeta receita mundial de computação quântica perto de US$ 870 milhões em 2026 e de US$ 1,1 bilhão em 2027. O setor público deve ser o maior comprador até 2027, superado depois pelos bancos. A empresa prevê que mais da metade das startups quânticas saia do mercado até 2030.",
+      "porQueImporta": "Governos lideram a demanda inicial, o que valoriza centros públicos como o CIQUANTA na atração de parceiros."
+    },
+    {
+      "id": "eon-quantica-rede-eletrica",
+      "titulo": "Empresa de energia relata ganhos com computação quântica na otimização da rede",
+      "fonte": "The Quantum Insider",
+      "url": "https://thequantuminsider.com/2026/10/10/corey-omeara-e-on-finding-real-quantum-advantage-in-grid-optimization/",
+      "dataPub": "2026-10-10",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta",
+        "transversal"
+      ],
+      "resumo": "O cientista-chefe de quântica da alemã E.ON contou como uma equipe de cinco pessoas busca usos de alto valor na otimização da rede elétrica. Ele cita evidências de vantagem quântica em negociação de energia e defende acesso pela nuvem com apoio de computadores clássicos.",
+      "porQueImporta": "Energia e logística são candidatas naturais a primeiros casos de uso do CIQUANTA com empresas e órgãos do estado."
+    },
+    {
+      "id": "qrmi-quantica-supercomputadores",
+      "titulo": "Consórcio amplia software aberto que liga computadores quânticos a supercomputadores",
+      "fonte": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com/multi-institutional-consortium-expands-qrmi-to-standardize-quantum-hpc-integration-across-major-workload-managers/",
+      "dataPub": "2026-10-10",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "resumo": "Um grupo de empresas e laboratórios da Europa e dos EUA ampliou o QRMI, ferramenta aberta que agenda processadores quânticos junto com computadores tradicionais. Ela agora funciona com seis sistemas de gestão de supercomputadores e já está em uso em centros na Itália, no Reino Unido e nos EUA.",
+      "porQueImporta": "Padrões abertos facilitam conectar o CIQUANTA a outros centros de computação do país."
+    },
+    {
+      "id": "qiskit-novas-linguagens",
+      "titulo": "Principal software de programação quântica passa a aceitar novas linguagens",
+      "fonte": "Quantum Computing Report",
+      "url": "https://quantumcomputingreport.com/ibm-expands-qiskit-beyond-python-with-native-c-api-bindings-for-fortran-c-and-julia/",
+      "dataPub": "2026-10-10",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "resumo": "A IBM permitiu que o Qiskit seja usado com Fortran, C++ e Julia, além de Python. Isso facilita levar circuitos quânticos para programas científicos que já rodam em supercomputadores.",
+      "porQueImporta": "Amplia o público que pode programar para máquinas quânticas, útil para cursos de formação ligados ao CIQUANTA."
+    },
+    {
+      "id": "assinatura-govbr-instabilidade",
+      "titulo": "Assinatura eletrônica do Gov.br enfrenta falhas há mais de uma semana",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/assinatura-gov-br-sofre-instabilidade-e-deixa-usuarios-na-mao-ha-mais-de-10-dias/",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "seguranca",
+        "secretaria2030"
+      ],
+      "resumo": "O serviço federal de assinatura eletrônica apresenta instabilidade há dias, com aumento de reclamações. O governo descartou ataque hacker e admitiu falha no sistema, sem detalhar a causa. O restante do Gov.br segue funcionando.",
+      "porQueImporta": "Serviços estaduais que dependem da assinatura federal precisam de plano alternativo para não parar."
+    },
+    {
+      "id": "anpd-denuncias-marco-civil",
+      "titulo": "ANPD abre canal de denúncias sobre as novas regras do Marco Civil da Internet",
+      "fonte": "Convergência Digital",
+      "url": "https://convergenciadigital.com.br/governo/anpd-lanca-pagina-especial-para-denuncias-de-infracoes-ao-marco-civil-da-internet/",
+      "dataPub": "2026-10-07",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "seguranca"
+      ],
+      "resumo": "A Autoridade Nacional de Proteção de Dados criou uma página para receber denúncias sobre o descumprimento dos decretos que atualizaram o Marco Civil da Internet. Qualquer pessoa ou empresa pode relatar, por exemplo, falta de canal para avisar sobre conteúdo ilegal ou atraso na remoção.",
+      "porQueImporta": "Mostra a ANPD assumindo mais fiscalização no ambiente digital, tema que toca também os órgãos públicos."
+    },
+    {
+      "id": "eua-taxa-estudantes-estrangeiros",
+      "titulo": "EUA propõem taxa de US$ 100 mil para estrangeiros trabalharem após a pós",
+      "fonte": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-02921-7",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "media",
+      "programas": [
+        "ensino",
+        "internacional"
+      ],
+      "resumo": "O governo americano propôs cobrar até US$ 100 mil de estudantes estrangeiros que queiram trabalhar no país após a formatura. O próprio governo estima queda de até 44% nas adesões ao programa, e especialistas preveem perda de talentos em ciência e tecnologia.",
+      "porQueImporta": "Abre uma janela para atrair ou repatriar pesquisadores brasileiros que hoje estão nos EUA."
+    },
+    {
+      "id": "ia-descobertas-pesquisadores",
+      "titulo": "Cientistas temem que a IA chegue antes deles às descobertas",
+      "fonte": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03128-6",
+      "dataPub": "2026-10-08",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "secretaria2030",
+        "ensino"
+      ],
+      "resumo": "Casos recentes em que ferramentas de IA resolveram problemas que pesquisadores estudavam há meses deixaram parte da comunidade científica apreensiva. Alguns grupos passaram a limitar o uso dessas ferramentas por medo de expor dados ainda não publicados.",
+      "porQueImporta": "Indica a necessidade de orientar bolsistas e grupos de pesquisa sobre o uso seguro de IA."
+    },
+    {
+      "id": "eua-nsf-verba-parada",
+      "titulo": "Agência americana de ciência termina o ano com mais de US$ 1 bilhão sem uso",
+      "fonte": "AIP",
+      "url": "https://www.aip.org/fyi/the-week-of-october-5-2026",
+      "dataPub": "2026-10-05",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "fomento",
+        "internacional"
+      ],
+      "resumo": "Segundo o boletim do Instituto Americano de Física, a NSF fechou o ano fiscal com mais de US$ 1 bilhão sem destinação, após queda de cerca de 23% nos apoios a pesquisa. O Departamento de Energia também divulgou roteiros para quântica e para IA na ciência.",
+      "porQueImporta": "A retração americana em fomento pode abrir espaço para parcerias com outros países e para atrair pesquisadores."
+    },
+    {
+      "id": "agro-conectividade-iot",
+      "titulo": "Parceria leva internet e sensores a 1,4 milhão de hectares de lavouras em Goiás",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/08/10/2026/vivo-e-cerradinho-bioenergia/",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "media",
+      "programas": [
+        "transversal",
+        "inclusao"
+      ],
+      "resumo": "Uma operadora e um grupo do setor de cana vão instalar 14 torres de cobertura rural com 4G e redes para sensores. A rede vai monitorar irrigação, máquinas e frotas, e também levar sinal a áreas vizinhas.",
+      "porQueImporta": "Modelo que pode ser adaptado ao semiárido paraibano em conjunto com a área de agricultura do estado."
+    },
+    {
+      "id": "pequenos-provedores-banda-larga",
+      "titulo": "Pequenos provedores já atendem 72% da banda larga em Minas Gerais",
+      "fonte": "Teletime",
+      "url": "https://teletime.com.br/08/10/2026/banda-larga-minas-gerais/",
+      "dataPub": "2026-10-08",
+      "escopo": "Nacional",
+      "relevancia": "radar",
+      "programas": [
+        "inclusao"
+      ],
+      "resumo": "Dados de agosto mostram que 72% dos 6,3 milhões de acessos de banda larga em Minas estão com provedores pequenos. O total cresceu 42% em cinco anos, com média de 13 empresas por município.",
+      "porQueImporta": "Provedores regionais são parceiros-chave para inclusão digital no interior, realidade parecida com a da Paraíba."
+    },
+    {
+      "id": "artemis-dados-lua",
+      "titulo": "NASA divulga mais de 800 GB de dados da missão Artemis II",
+      "fonte": "Nature",
+      "url": "https://www.nature.com/articles/d41586-026-03197-7",
+      "dataPub": "2026-10-07",
+      "escopo": "Global",
+      "relevancia": "radar",
+      "programas": [
+        "astronomia",
+        "ensino"
+      ],
+      "resumo": "A agência espacial americana liberou imagens, áudios e anotações dos quatro astronautas que contornaram a Lua em abril. O material traz relatos sobre cores, relevo e iluminação da superfície lunar.",
+      "porQueImporta": "Material aberto e atrativo para atividades de divulgação científica ligadas à Cidade da Astronomia."
+    }
+  ],
+  "doe": {
+    "edicao": "2026-10-10",
+    "url": "https://auniao.pb.gov.br/servicos/doe/2026/outubro/diario-oficial-10-10-2026-portal.pdf/view",
+    "paginasLidas": "edição já lida na véspera",
+    "leituraParcial": true,
+    "obs": "Não houve edição nova do Diário Oficial desde a de 10/10, já analisada na edição anterior do Radar.",
+    "atos": []
+  },
+  "secom": [
+    {
+      "titulo": "Governo lança novo edital do Programa Celso Furtado para selecionar 25 projetos",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/geral/governo-lanca-novo-edital-para-selecionar-projetos",
+      "dataPub": "2026-05-14",
+      "programas": [
+        "fomento",
+        "inovacao"
+      ],
+      "resumo": "Edital da SECTIES com a FAPESQ para projetos de pesquisa voltados a problemas sociais."
+    },
+    {
+      "titulo": "Feira de Tecnologia de Campina Grande volta após quase dez anos",
+      "portal": "A União",
+      "url": "https://www.auniao.pb.gov.br/noticias/caderno_paraiba/em-cg-feira-de-tecnologia-retorna-apos-hiato-de-quase-10-anos",
+      "dataPub": "2026-06-16",
+      "programas": [
+        "inovacao",
+        "secretaria2030"
+      ],
+      "resumo": "A Fetech teve foco em IA, inovação e sustentabilidade, com a SECTIES entre os parceiros."
+    },
+    {
+      "titulo": "Paraíba lidera o Nordeste em matrículas presenciais no ensino superior",
+      "portal": "A União",
+      "url": "https://www.auniao.pb.gov.br/noticias/geral/pb-e-lider-em-matriculas-de-cursos-presenciais-no-ne",
+      "dataPub": "2026-05-26",
+      "programas": [
+        "ensino"
+      ],
+      "resumo": "Dados do Censo da Educação Superior colocam o estado em 2º lugar no país em matrículas presenciais por habitante."
+    },
+    {
+      "titulo": "Paraíba se destaca no número de mestres por habitante",
+      "portal": "A União",
+      "url": "https://auniao.pb.gov.br/noticias/caderno_paraiba/pb-e-destaque-em-numero-de-mestres",
+      "dataPub": "2026-04-21",
+      "programas": [
+        "ensino",
+        "fomento"
+      ],
+      "resumo": "Dados da Capes mostram o estado entre os primeiros do país, com apoio das bolsas da FAPESQ."
+    }
+  ],
+  "propostas": [
+    {
+      "id": "p-trilha-quantica-expotec",
+      "titulo": "Trilha de formação quântica durante a Expotec",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ciquanta",
+        "ensino",
+        "inovacao"
+      ],
+      "descricao": "Organizar, nos três dias da Expotec, uma trilha com oficinas introdutórias de programação quântica para estudantes, professores e servidores. Ao final, emitir certificado e formar uma lista de interessados para cursos futuros ligados ao CIQUANTA.",
+      "base": [
+        "expotec-2026-quantica",
+        "futurecom-quantica-planejamento",
+        "qiskit-novas-linguagens"
+      ]
+    },
+    {
+      "id": "p-quantica-energia-logistica",
+      "titulo": "Primeiros casos de uso quântico em energia e logística",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta",
+        "transversal"
+      ],
+      "descricao": "Convidar empresas de energia, distribuição e transporte que atuam na Paraíba a propor problemas reais de otimização para testes no CIQUANTA. O modelo segue a experiência internacional de desafios orientados por problemas concretos.",
+      "base": [
+        "eon-quantica-rede-eletrica",
+        "eua-6-bilhoes-ciencia-quantica",
+        "gartner-receita-quantica"
+      ]
+    },
+    {
+      "id": "p-ciquanta-rede-supercomputacao",
+      "titulo": "Conexão do CIQUANTA a supercomputadores com ferramentas abertas",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ciquanta",
+        "ensino"
+      ],
+      "descricao": "Adotar desde o início ferramentas abertas que integram computadores quânticos e supercomputadores, permitindo que universidades paraibanas usem as duas máquinas no mesmo fluxo de trabalho. Isso facilita parcerias com outros centros de computação do país.",
+      "base": [
+        "qrmi-quantica-supercomputadores",
+        "qiskit-novas-linguagens"
+      ]
+    },
+    {
+      "id": "p-atracao-talentos-eua",
+      "titulo": "Programa de atração de pesquisadores brasileiros que estão nos EUA",
+      "tipo": "Programa",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ensino",
+        "internacional",
+        "fomento"
+      ],
+      "descricao": "Criar uma chamada de bolsas para pós-doutores e jovens pesquisadores brasileiros no exterior virem para universidades e institutos paraibanos, com prioridade para quântica, IA e semicondutores. A mudança nas regras americanas torna o momento favorável.",
+      "base": [
+        "eua-taxa-estudantes-estrangeiros",
+        "eua-nsf-verba-parada"
+      ]
+    },
+    {
+      "id": "p-mentoria-celso-furtado",
+      "titulo": "Mentoria universitária para as equipes do Desafio Celso Furtado",
+      "tipo": "Parceria",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "ensino",
+        "inovacao",
+        "fomento"
+      ],
+      "descricao": "Mobilizar estudantes de pós-graduação e professores das universidades e institutos federais como mentores voluntários das equipes escolares selecionadas. Aproxima o ensino médio do ensino superior e fortalece os projetos.",
+      "base": [
+        "desafio-celso-furtado-2027"
+      ]
+    },
+    {
+      "id": "p-plano-b-assinatura",
+      "titulo": "Plano alternativo para assinatura eletrônica nos serviços estaduais",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "transversal",
+        "seguranca",
+        "secretaria2030"
+      ],
+      "descricao": "Mapear quais serviços do estado dependem da assinatura do Gov.br e definir uma alternativa de contingência para quando houver falhas. A medida reduz o risco de paralisação de processos e atendimentos.",
+      "base": [
+        "assinatura-govbr-instabilidade"
+      ]
+    },
+    {
+      "id": "p-provedores-sensores-semiarido",
+      "titulo": "Piloto de sensores agrícolas com provedores regionais",
+      "tipo": "Parceria",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "transversal",
+        "inclusao"
+      ],
+      "descricao": "Em parceria com a área de agricultura do estado, testar redes de sensores para irrigação e clima no semiárido usando a estrutura de provedores regionais de internet. O piloto amplia a conectividade rural e gera dados para o pequeno produtor.",
+      "base": [
+        "agro-conectividade-iot",
+        "pequenos-provedores-banda-larga"
+      ]
+    },
+    {
+      "id": "p-guia-ia-pesquisa",
+      "titulo": "Guia de uso responsável de IA para bolsistas e grupos de pesquisa",
+      "tipo": "Política",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "secretaria2030",
+        "ensino"
+      ],
+      "descricao": "Publicar orientações simples sobre uso de IA em pesquisa, cobrindo proteção de dados não publicados, transparência e autoria. O guia pode acompanhar os editais de bolsas do estado.",
+      "base": [
+        "ia-descobertas-pesquisadores"
+      ]
+    },
+    {
+      "id": "p-conservacao-laboratorios",
+      "titulo": "Inventário de riscos em prédios de pesquisa da rede estadual",
+      "tipo": "Projeto",
+      "horizonte": "Médio prazo",
+      "programas": [
+        "ensino",
+        "patrimonio"
+      ],
+      "descricao": "Fazer um levantamento das condições elétricas e de prevenção de incêndio dos prédios de pesquisa e acervos ligados ao estado, com lista de prioridades de manutenção. Pode servir de base para buscar recursos federais de infraestrutura.",
+      "base": [
+        "universidades-federais-manutencao"
+      ]
+    },
+    {
+      "id": "p-lua-nas-escolas",
+      "titulo": "A Lua de perto: dados da Artemis II nas escolas",
+      "tipo": "Projeto",
+      "horizonte": "Curto prazo",
+      "programas": [
+        "astronomia",
+        "ensino"
+      ],
+      "descricao": "Transformar os dados abertos da missão Artemis II em atividades para escolas e eventos de divulgação científica, conectadas à Cidade da Astronomia. Professores recebem roteiros prontos e imagens reais da missão.",
+      "base": [
+        "artemis-dados-lua"
+      ]
+    }
+  ]
+}
