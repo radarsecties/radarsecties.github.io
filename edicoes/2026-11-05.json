@@ -450,7 +450,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-05T09:09:24-03:00",
+ "geradoEm": "2026-11-05T09:11:56-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -649,7 +649,7 @@
    "nome": "Jornal da Paraíba",
    "ok": true,
    "itens": 40,
-   "feed": "https://jornaldaparaiba.com.br/feed/",
+   "feed": "https://jornaldaparaiba.com.br/rss",
    "obs": ""
   },
   {
