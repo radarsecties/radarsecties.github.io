@@ -580,3 +580,15 @@ jobs:
             sleep 15
           done
           echo "Não foi possível publicar depois de 3 tentativas." && exit 1
+      
+      - name: Publish to server
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY}}
+          port: ${{ secrets.SSH_PORT }}
+          script: |
+            cd /var/www/radarsecties
+            git pull origin main
+
