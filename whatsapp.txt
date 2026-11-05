@@ -1,13 +1,13 @@
 *RADAR SECTIES*  |  Edição nº 20
 _Quinta-feira, 5 de novembro de 2026_
 
-*PARAÍBA TERÁ 30 STARTUPS NO WEB SUMMIT LISBOA E LANÇA EDITAL PARA O WE*
-> Edição montada automaticamente a partir dos portais acompanhados.
+*PARAÍBA TERÁ 30 STARTUPS NO WEB SUMMIT LISBOA E LANÇA EDITAL PARA O WEB SUMMIT DOHA*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 8 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
 1. Universidade Estadual da Paraíba conquista Conceito A na primeira nova avaliação do Pibid realizada pela Capes _(UEPB)_
-2. Universidade Estadual da Paraíba faz convocação de servidora para vaga temporária no Câmpus de Catolé do Rocha _(UEPB)_
-3. CQMTEK Raises More Than $15 Million For Quantum Measurement Expansion _(The Quantum Insider)_
+2. CQMTEK Raises More Than $15 Million For Quantum Measurement Expansion _(The Quantum Insider)_
+3. Enem 2026: o que acontece se deixar questões em branco na prova? _(Jornal da Paraíba)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
 *Paraíba:* PRONERA: Graduação publica resultado final do processo seletivo para turma especial de Relações Internacionais
@@ -16,5 +16,5 @@ _Quinta-feira, 5 de novembro de 2026_
 
 > *Você sabia?* Feynman, Nobel de Física, dizia que ninguém entende a mecânica quântica. Se você também não entende, está em ótima companhia.
 
-*Leia a edição completa*, com 18 notícias e pautas da SECTIES e da FAPESQ:
+*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
 https://radarsecties.github.io/?e=2026-11-05

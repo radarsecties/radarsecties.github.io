@@ -2,8 +2,8 @@
  "data": "2026-11-05",
  "numero": 20,
  "modo": "automatico",
- "destaque": "Paraíba terá 30 startups no Web Summit Lisboa e lança edital para o We",
- "leitura": "Edição montada automaticamente a partir dos portais acompanhados. 18 notícias selecionadas por relevância, com prioridades da Paraíba, do Brasil e do mundo.",
+ "destaque": "Paraíba terá 30 startups no Web Summit Lisboa e lança edital para o Web Summit Doha",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 8 delas da Paraíba. Também em destaque: Universidade Estadual da Paraíba conquista Conceito A na primeira nova avaliação do Pibid realizada pela Capes; e Enem 2026: o que acontece se deixar questões em branco na prova?",
  "itens": [
   {
    "id": "510a19aa01f9",
@@ -45,27 +45,6 @@
    ],
    "escopo": "Paraíba",
    "pontos": 41,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "204bcf61dd40",
-   "titulo": "Universidade Estadual da Paraíba faz convocação de servidora para vaga temporária no Câmpus de Catolé do Rocha",
-   "url": "https://uepb.edu.br/universidade-estadual-da-paraiba-faz-convocacao-de-servidora-para-vaga-temporaria-no-campus-de-catole-do-rocha",
-   "resumo": "A Universidade Estadual da Paraíba (UEPB), por meio da Pró-reitoria de Gestão de Pessoas (PROGEP) publicou, nesta quarta-feira (4), o edital de convocação para candidata aprovada em Processo Seletivo Simplificado para preenchimento de vagas temporárias para o Câmpus IV, em Catolé do Rocha. A contratação dessa…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-04",
-   "imagem": "",
-   "coletadoEm": "2026-11-05T10:08:00Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 39,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
@@ -115,7 +94,7 @@
    "id": "b4a058ef2ddf",
    "titulo": "CQMTEK Raises More Than $15 Million For Quantum Measurement Expansion",
    "url": "https://thequantuminsider.com/2026/11/04/cqmtek-raises-more-than-15-million-for-quantum-measurement-expansion",
-   "resumo": "Insider Brief CQMTEK — Guoce Quantum Technology (Zhejiang) Co., Ltd — has raised more than 100 million yuan — or about US$15 million — to expand manufacturing and commercial applications of its quantum precision measurement products, the company said in a statement that was computer translated. The pre-Series B…",
+   "resumo": "CQMTEK — Guoce Quantum Technology (Zhejiang) Co., Ltd — has raised more than 100 million yuan — or about US$15 million — to expand manufacturing and commercial applications of its quantum precision measurement products, the company said in a statement that was computer translated. The pre-Series B…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
    "dataPub": "2026-11-04",
@@ -133,31 +112,10 @@
    "origem": "auto"
   },
   {
-   "id": "1605b3462450",
-   "titulo": "Gibis produzidos em projeto de extensão de Odontologia auxiliam crianças com cuidados em saúde bucal",
-   "url": "https://uepb.edu.br/gibis-produzidos-em-projeto-de-extensao-de-odontologia-auxiliam-criancas-com-cuidados-em-saude-bucal",
-   "resumo": "Uma iniciativa que une criatividade, educação e promoção da saúde bucal vem contribuindo para tornar os atendimentos odontológicos e as ações da Clínica Escola de Odontologia, da Universidade Estadual da Paraíba (UEPB), mais atrativos para o público infantil. Idealizado pela estudante do 10º período de Odontologia…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-03",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Os-Super-Dentistas-No-3.jpeg",
-   "coletadoEm": "2026-11-05T10:08:00Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "transversal"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 36,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
    "id": "e65c4c16269c",
    "titulo": "IonQ Partners With QuantumCT to Expand Quantum Computing Access in Connecticut",
    "url": "https://thequantuminsider.com/2026/11/04/ionq-quantumct-quantum-computing-access-connecticut",
-   "resumo": "Insider Brief PRESS RELEASE — IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced a partnership with QuantumCT, Connecticut’s statewide initiative to accelerate quantum innovation and economic development. QuantumCT will purchase access to IonQ’s trapped-ion quantum…",
+   "resumo": "IonQ (NYSE: IONQ), the world’s leading full-stack quantum platform and foundry, today announced a partnership with QuantumCT, Connecticut’s statewide initiative to accelerate quantum innovation and economic development. QuantumCT will purchase access to IonQ’s trapped-ion quantum…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
    "dataPub": "2026-11-04",
@@ -178,7 +136,7 @@
    "id": "51818c04c86f",
    "titulo": "Quantum Base Secures £700,000 UKRI Research Fellowship",
    "url": "https://thequantuminsider.com/2026/11/04/quantum-base-secures-ukri-research-fellowship",
-   "resumo": "Insider Brief PRESS RELEASE — Quantum Base (AIM: QUBE), the quantum science company focused on creating a new global standard in authentication, is pleased to announce that it has been awarded a UK Research and Innovation (“UKRI”) Future Leaders Fellowship Grant (the “Grant”), with Dr William Thom, Head of Materials…",
+   "resumo": "Quantum Base (AIM: QUBE), the quantum science company focused on creating a new global standard in authentication, is pleased to announce that it has been awarded a UK Research and Innovation (“UKRI”) Future Leaders Fellowship Grant (the “Grant”), with Dr William Thom, Head of Materials…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
    "dataPub": "2026-11-04",
@@ -188,28 +146,6 @@
    "programas": [
     "ciquanta",
     "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "53df979e35cb",
-   "titulo": "China’s Photonic Quantum Computer Among WIC Award Winners",
-   "url": "https://thequantuminsider.com/2026/11/04/chinas-photonic-quantum-computer-among-wic-award-winners",
-   "resumo": "Insider Brief China’s Jiuzhang 4.0 photonic quantum computer has won one of the World Internet Conference’s top science prizes. The prototype, built by researchers at the University of Science and Technology of China, or USTC, was among 20 projects honored with the 2026 WIC Leading Science and Technology Awards at a…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-04",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Jiuzhang.jpg",
-   "coletadoEm": "2026-11-05T10:08:36Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "internacional",
-    "ensino"
    ],
    "escopo": "Global",
    "pontos": 34,
@@ -235,28 +171,7 @@
    "escopo": "Paraíba",
    "pontos": 32,
    "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "4a94002dec77",
-   "titulo": "EIC Scaling Club Reports €4 Billion Raised, Including Major Quantum and AI Round",
-   "url": "https://thequantuminsider.com/2026/11/04/eic-scaling-club-reports-e4-billion-raised-including-major-quantum-and-ai-round",
-   "resumo": "Insider Brief PRESS RELEASE — European deep tech scale-ups have raised more than €4 billion since joining the EIC Scaling Club, an EIC-funded initiative for promising European deep tech scale-ups, growing their funding 2.3 times faster than comparable businesses relative to their pre-joining funding, according to a…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-04",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/1x3li7tgf6o.jpg",
-   "coletadoEm": "2026-11-05T10:08:36Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "fomento"
-   ],
-   "escopo": "Global",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
+   "relevancia": "alta",
    "origem": "auto"
   },
   {
@@ -342,7 +257,7 @@
    "escopo": "Paraíba",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "radar",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -364,7 +279,7 @@
    "escopo": "Nacional",
    "pontos": 29,
    "urgente": false,
-   "relevancia": "radar",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -384,6 +299,129 @@
    ],
    "escopo": "Nacional",
    "pontos": 29,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "2f1e224ace53",
+   "titulo": "Videoaula do Lá Vem o Enem aborda sobre literatura afro-brasileira e decolonialidade",
+   "url": "https://jornaldaparaiba.com.br/educacao/videoaula-do-la-vem-o-enem-aborda-sobre-literatura-afro-brasileira-e-decolonialidade",
+   "resumo": "Reprodução A literatura afro-brasileira e a decolonialidade são temas importantes para quem está se preparando para o Exame Nacional do Ensino Médio (Enem) 2026. Na nova videoaula do Lá Vem o Enem, o professor de Literatura e História da Arte Rodrigo Paes apresenta autores negros fundamentais para a cultura brasileira…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-05",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/thumbnail/220000/videoaula-do-la-vem-o-enem-aborda-sobre-literatura0022228700202611050621.jpg?xid=1241889",
+   "coletadoEm": "2026-11-05T10:08:06Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "0b8a45cf25e5",
+   "titulo": "Empresas ampliam uso de IA, mas ainda falham na gestão de riscos",
+   "url": "https://paraibabusiness.com.br/empresas-ampliam-uso-de-ia-mas-ainda-falham-na-gestao-de-riscos",
+   "resumo": "O uso de inteligência artificial (IA) nas empresas brasileiras avançou, mas a estrutura de governança ainda precisa acompanhar a velocidade de adoção. Entre 2024 e 2025, a proporção de companhias com dez ou mais funcionários que utilizaram algum tipo de IA passou de 13% para 17%, segundo a pesquisa TIC Empresas 2025…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-04",
+   "imagem": "",
+   "coletadoEm": "2026-11-05T10:08:09Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "4287ad6e5c06",
+   "titulo": "Embrapii marca presença em eventos estratégicos de inovação em novembro",
+   "url": "https://embrapii.org.br/embrapii-marca-presenca-em-eventos-estrategicos-de-inovacao-em-novembro",
+   "resumo": "Em novembro, a Embrapii participa de uma agenda de eventos que reúne empresas, especialistas, instituições de pesquisa e representantes do setor público em diferentes regiões do país. A programação aborda temas como inovação aberta, economia circular, automação industrial, cooperação internacional, saúde, transição…",
+   "fonte": "Embrapii",
+   "fonteId": "embrapii",
+   "dataPub": "2026-11-03",
+   "imagem": "",
+   "coletadoEm": "2026-11-05T10:08:24Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "escopo": "Nacional",
+   "pontos": 28,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "ac225135506d",
+   "titulo": "A single measurement makes quantum bits more reliable",
+   "url": "https://phys.org/news/2026-11-quantum-bits-reliable.html",
+   "resumo": "Researchers at the University of Regensburg and their international partners have found a way to significantly reduce errors in quantum bits. In an experiment, they demonstrated that a single additional measurement before a series of quantum operations can cut the error rate by more than half. The results have been…",
+   "fonte": "Phys.org Quantum",
+   "fonteId": "physorg-quantum",
+   "dataPub": "2026-11-03",
+   "imagem": "https://scx1.b-cdn.net/csz/news/tmb/2026/a-single-measurement-m.jpg",
+   "coletadoEm": "2026-11-05T10:09:01Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "escopo": "Global",
+   "pontos": 28,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "8dad590395ed",
+   "titulo": "Unidade Embrapii Senai Cimatec: inovação industrial da digitalização à economia circular",
+   "url": "https://embrapii.org.br/unidade-embrapii-senai-cimatec",
+   "resumo": "Nem todo problema industrial cabe dentro de uma única tecnologia. Uma nova rota produtiva pode exigir automação para alcançar escala e competitividade. O aproveitamento de resíduos pode depender do desenvolvimento de processos inéditos. Uma planta industrial pode gerar milhares de dados diariamente e, ainda assim…",
+   "fonte": "Embrapii",
+   "fonteId": "embrapii",
+   "dataPub": "2026-11-04",
+   "imagem": "",
+   "coletadoEm": "2026-11-05T10:08:24Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao"
+   ],
+   "escopo": "Nacional",
+   "pontos": 27,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "afce3a8dd2ea",
+   "titulo": "SpaceX vai usar solução da Qualcomm na rede 5G da Starlink Mobile",
+   "url": "https://teletime.com.br/04/11/2026/spacex-qualcomm-starlink-mobile",
+   "resumo": "SpaceX escolheu uma solução de infraestrutura celular da Qualcomm para suportar a rede 5G da Starlink Mobile, futura operação de telefonia móvel da operadora de satélites; tecnologia deve aprimorar a cobertura, a capacidade e a eficiência espectral da rede móvel",
+   "fonte": "Teletime",
+   "fonteId": "teletime",
+   "dataPub": "2026-11-04",
+   "imagem": "https://teletime.com.br/wp-content/uploads/2026/06/starlink-mobile-534x462.webp",
+   "coletadoEm": "2026-11-05T10:08:32Z",
+   "tipo": "inclusao",
+   "programas": [
+    "inclusao",
+    "astronomia"
+   ],
+   "escopo": "Nacional",
+   "pontos": 27,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -412,7 +450,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-05T07:21:18-03:00",
+ "geradoEm": "2026-11-05T09:09:24-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -586,7 +624,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 10,
+   "itens": 11,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "obs": ""
   },
@@ -722,7 +760,7 @@
    "id": "pesquisafapesp",
    "nome": "Pesquisa FAPESP",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "https://revistapesquisa.fapesp.br/feed/",
    "obs": ""
   },
@@ -738,7 +776,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 29,
+   "itens": 30,
    "feed": "https://physicsworld.com/feed/",
    "obs": ""
   },
@@ -786,7 +824,7 @@
    "id": "restofworld",
    "nome": "Rest of World",
    "ok": true,
-   "itens": 3,
+   "itens": 4,
    "feed": "https://restofworld.org/feed/latest/",
    "obs": ""
   },
