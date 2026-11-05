@@ -1,65 +1,91 @@
-name: Baixar Diario Oficial PB
+# Radar SECTIES: tarefa agendada diária, tudo no GitHub.
+# 7h05: lê todos os portais e publica a edição do dia.
+# 8h20: segunda passagem, para incluir o Diário Oficial (que sai entre 7h e 8h).
+# Também roda sempre que algo é enviado ao repositório, e pode ser disparada à mão.
+name: Radar SECTIES
 
-# Tenta a cada 10 minutos entre 7h00 e 8h50 (horario de Fortaleza = UTC-3)
-# e para assim que a edicao do dia estiver salva em doe/AAAA-MM-DD.txt
 on:
   schedule:
-    - cron: "*/10 10-11 * * *"
+    - cron: "5 10 * * *"
+    - cron: "20 11 * * *"
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: doe
+  group: radar
   cancel-in-progress: false
 
 jobs:
-  baixar:
+  edicao:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
 
-      - name: Baixar e converter a edicao do dia
+      - name: Arrumar arquivos enviados soltos na raiz
         run: |
-          set -u
-          export TZ=America/Fortaleza
-          HOJE=$(date +%F); DIA=$(date +%d); MESN=$(date +%m); ANO=$(date +%Y)
-          MESES=(janeiro fevereiro marco abril maio junho julho agosto setembro outubro novembro dezembro)
-          MES=${MESES[$((10#$MESN-1))]}
-          ALVO="doe/$HOJE.txt"
-          if [ -s "$ALVO" ]; then echo "Ja existe $ALVO"; exit 0; fi
-          sudo apt-get -qq update >/dev/null && sudo apt-get -qq install -y poppler-utils >/dev/null
-          mkdir -p doe tmp
-          BASE="https://auniao.pb.gov.br/servicos/doe/$ANO/$MES"
-          # lista todos os PDFs da data (edicao normal e suplementos)
-          curl -sSL --retry 3 "$BASE" -o tmp/lista.html || true
-          grep -oE "href=\"[^\"]*$DIA-$MESN-$ANO[^\"]*\.pdf" tmp/lista.html | sed 's/href="//' | sort -u > tmp/links.txt || true
-          if [ ! -s tmp/links.txt ]; then
-            echo "$BASE/diario-oficial-$DIA-$MESN-$ANO-portal.pdf" > tmp/links.txt
-          fi
-          : > tmp/saida.txt; ok=0
-          while read -r L; do
-            case "$L" in http*) U="$L";; /*) U="https://auniao.pb.gov.br$L";; *) U="$BASE/$L";; esac
-            N=$(basename "$U")
-            curl -sSL --retry 3 "$U/@@download/file" -o "tmp/$N" || continue
-            if head -c 4 "tmp/$N" | grep -q '%PDF'; then
-              { echo "===== ARQUIVO: $N"; echo "===== URL: ${U}/view"; pdftotext -layout "tmp/$N" -; } >> tmp/saida.txt
-              ok=1
-            fi
-          done < tmp/links.txt
-          if [ "$ok" = 1 ]; then
-            mv tmp/saida.txt "$ALVO"; echo "Salvo $ALVO ($(wc -c < "$ALVO") bytes)"
-          else
-            echo "Edicao de $HOJE ainda nao publicada"
-          fi
-          rm -rf tmp
+          python3 - <<'PY'
+          import os, re, glob, shutil
+          def por(src, dst):
+              if os.path.isfile(src):
+                  os.makedirs(os.path.dirname(dst), exist_ok=True)
+                  os.replace(src, dst)
+          for f in ["__init__.py", "classificar.py", "coletar.py", "doe.py", "editorial.py", "main.py", "montar.py", "modelo.html"]:
+              por(f, "radar/" + f)
+          por("fontes.json", "fontes/fontes.json")
+          por("curiosidades.json", "ferramentas/curiosidades.json")
+          por("edicao-exemplo.json", "exemplos/edicao-exemplo.json")
+          for f in ["Arimo-400.ttf", "Arimo-700.ttf", "LICENSE-Arimo.txt"]:
+              por(f, "ferramentas/fontes/" + f)
+          for f in glob.glob("????-??-??.json"):
+              por(f, "edicoes/" + f)
+          for f in glob.glob("????-??-??.txt"):
+              por(f, "doe/" + f)
+          if os.path.isfile("secretario.jpg") and not os.path.isfile("ferramentas/secretario.jpg"):
+              os.makedirs("ferramentas", exist_ok=True); shutil.copy("secretario.jpg", "ferramentas/secretario.jpg")
+          lixo = [f for f in os.listdir(".") if os.path.isfile(f) and (f.startswith("download") or re.search(r" \(\d+\)\.(png|jpe?g)$", f) or f.startswith("radar-upload-") or f == "radar.yml")]
+          lixo += [f for f in ("ferramentas/modelo.html", "ferramentas/montar.py") if os.path.isfile(f)]
+          for f in lixo:
+              os.remove(f)
+          if not os.path.isfile(".gitignore"):
+              open(".gitignore", "w").write("__pycache__/\n*.pyc\n.DS_Store\n")
+          print("Arrumados/removidos:", len(lixo), "arquivos soltos")
+          PY
 
-      - name: Gravar no repositorio
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar ferramentas
         run: |
-          git config user.name "radar-doe"
-          git config user.email "radar-doe@users.noreply.github.com"
-          git add doe/ || true
-          if git diff --cached --quiet; then echo "Nada novo"; exit 0; fi
-          git commit -m "Diario Oficial PB: texto de $(TZ=America/Fortaleza date +%d/%m/%Y)"
-          git pull --rebase origin main && git push origin HEAD:main
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils fonts-liberation
+          pip install -q -r requirements.txt
+
+      - name: Ler os portais, o Diário Oficial e montar o site
+        env:
+          RADAR_CHAVE_EDITORIAL: ${{ secrets.RADAR_CHAVE_EDITORIAL }}
+          TZ: America/Fortaleza
+        run: python3 -m radar.main
+
+      - name: Publicar no repositório
+        run: |
+          git config user.name "radar-secties"
+          git config user.email "radar@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada novo para publicar."
+            exit 0
+          fi
+          git commit -q -m "Radar SECTIES: edição de $(TZ=America/Fortaleza date +%d/%m/%Y)"
+          for tentativa in 1 2 3; do
+            git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && exit 0
+            sleep 15
+          done
+          echo "Não foi possível publicar depois de 3 tentativas." && exit 1
