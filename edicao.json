@@ -447,7 +447,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-06T07:45:21-03:00",
+ "geradoEm": "2026-11-06T07:58:31-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -489,9 +489,9 @@
    "id": "agenciacamara",
    "nome": "Agência Câmara",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 20,
+   "feed": "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -921,7 +921,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1494,7 +1494,7 @@
   "formula": "informação: nunca mais rápido que c"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-06-0745.png",
+ "capa": "capa-2026-11-06-0758.png",
  "link": "https://radar.secties.pb.gov.br/edicao/21/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 21\n_Sexta-feira, 6 de novembro de 2026_\n\n*COMPUTADORES QUÂNTICOS CHEGAM AO PORTO DE SUAPE E SEGUEM PARA INSTALAÇÃO NA PARAÍBA*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa _(UEPB)_\n2. UFPB tem mais de R$ 4,4 milhões aprovados para projetos na Chamada Universal do CNPq _(UFPB)_\n3. China’s Photonic Quantum Computer Among WIC Award Winners _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* PROGEP informa sobre prazo limite de envio de processos com documentação que recaiam sobre a Folha de Pagamento\n*Brasil:* Conectividade veicular vai acelerar união entre redes móveis e satélites\n*Mundo:* QNu Labs Launches Corporate Training Programme on Quantum-Safe Security\n\n> *Você sabia?* Uma sombra pode andar mais rápido que a luz. E isso não quebra nenhuma lei da física.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/21/"
 }

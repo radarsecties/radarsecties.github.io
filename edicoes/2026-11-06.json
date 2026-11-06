@@ -447,7 +447,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-06T07:45:21-03:00",
+ "geradoEm": "2026-11-06T07:58:31-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -489,9 +489,9 @@
    "id": "agenciacamara",
    "nome": "Agência Câmara",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 20,
+   "feed": "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -921,7 +921,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1493,5 +1493,5 @@
   "area": "Relatividade",
   "formula": "informação: nunca mais rápido que c"
  },
- "capa": "capa-2026-11-06-0745.png"
+ "capa": "capa-2026-11-06-0758.png"
 }

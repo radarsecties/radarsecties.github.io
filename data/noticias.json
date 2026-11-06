@@ -36101,6 +36101,78 @@
 "escopo": "Nacional",
 "pontos": 19,
 "urgente": false
+},
+"104597f748c1": {
+"id": "104597f748c1",
+"titulo": "Portal Integra",
+"url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3TnB3Xy1zNWpXN1ZwdUt2SHhlV3JEYzYyTHcwQldhakxoTGtIWkh2bk5zTmJFdXpnZ0JibVQwYmExYkRsRHZOM0RMcWgxMlFkbjV4bERNbFNKMU9hM0JKRW1WdUxMTmJ6ZnlNTEV2OVRkd1JWUlFXTnl6SGVaTTQ?oc=5",
+"resumo": "",
+"fonte": "IFPB",
+"fonteId": "ifpb",
+"dataPub": "2026-11-03",
+"imagem": "",
+"coletadoEm": "2026-11-06T10:56:59Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 4,
+"urgente": false
+},
+"b1e3c6d75738": {
+"id": "b1e3c6d75738",
+"titulo": "Lucas Ribeiro amplia incentivo à literatura com publicação de 42 obras inéditas na Paraíba",
+"url": "https://www.polemicaparaiba.com.br/politica/lucas-ribeiro-amplia-incentivo-a-literatura-com-publicacao-de-42-obras-ineditas-na-paraiba",
+"resumo": "O governador Lucas Ribeiro entregou, na noite desta quinta-feira (5), aos autores os exemplares das 42 obras literárias inéditas O post Lucas Ribeiro amplia incentivo à literatura com publicação de 42 obras inéditas na Paraíba apareceu primeiro em Polêmica Paraíba .",
+"fonte": "Polêmica Paraíba",
+"fonteId": "polemicapb",
+"dataPub": "2026-11-06",
+"imagem": "https://uploads.polemicaparaiba.com.br/2026/11/WhatsApp-Image-2026-11-06-at-07.27.21.jpeg",
+"coletadoEm": "2026-11-06T10:57:01Z",
+"tipo": "evento",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 6,
+"urgente": false
+},
+"a90a631a54cc": {
+"id": "a90a631a54cc",
+"titulo": "Imposto encarece produtos que causam danos à saúde; cerveja será taxada em 4,2% e vinhos em 8%",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOX2JXdDJxU0U1NERyWE5tMk0xNHhTLVJ5dlQwZDFOSVdSdm5CcEcycjdfdWEwMmRCcjB1NFZyUmRXV0YxSzBQLWN1bEtVY20yNDdNYy1HWTdFWTB0Vi1HMU9XajVGcFhMcXBNNlJBRlZwWm03Q3BCNnMyMl9pM05FWktLVXN1YWJwLUp4OGJvME5SeEV1SzNIa19NM2hac3JSa0lKa01vNGs2LVVZOUlEX3h1c0ctbGFOS3lNU3loVmFKVktYN25nUS1JTUZDQQ?oc=5",
+"resumo": "",
+"fonte": "PB Agora",
+"fonteId": "pbagora",
+"dataPub": "2026-11-05",
+"imagem": "",
+"coletadoEm": "2026-11-06T10:57:05Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"1b1a6244dc2f": {
+"id": "1b1a6244dc2f",
+"titulo": "VTV News | Curativo líquido desenvolvido na Unicamp seca em até 45 segundos na pele",
+"url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNWtaWUtqQzJWRGE1WkJGQjIwbWNlQ2lFM1pVMHQ3TGcyRUtIbkhwRjdla1U3TGtEdUtLeVJnZWZQczdWWC1HS29weC05cXhUYnFGd05FNlhHR3REUXFVZEUyTDBnWDRudTYtRFpwTm1zdEFWaW9tYk9QTTJTdkFtYnBoQk5tMkdTU1hLdWtjVjAwbkd6cFUyYUxYY2JBM3R0bUYycGJyVVU0d09scWZJaHNBNTdoUHk0Vm0w?oc=5",
+"resumo": "",
+"fonte": "Jornal da Unicamp",
+"fonteId": "unicamp",
+"dataPub": "2026-11-05",
+"imagem": "",
+"coletadoEm": "2026-11-06T10:57:50Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
 }
 }
 }
