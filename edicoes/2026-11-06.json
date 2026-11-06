@@ -447,7 +447,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-06T07:34:09-03:00",
+ "geradoEm": "2026-11-06T07:45:21-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -489,9 +489,9 @@
    "id": "agenciacamara",
    "nome": "Agência Câmara",
    "ok": true,
-   "itens": 20,
-   "feed": "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
-   "via": "feed",
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -624,7 +624,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -750,7 +750,7 @@
    "id": "eurekalert",
    "nome": "EurekAlert",
    "ok": true,
-   "itens": 4,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -823,6 +823,15 @@
    "nome": "Ibram",
    "ok": true,
    "itens": 4,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "icom",
+   "nome": "ICOM",
+   "ok": true,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1200,7 +1209,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 34,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1397,14 +1406,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "icom",
-   "nome": "ICOM",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "ifsertaopb",
    "nome": "IF Sertão Paraibano",
    "ok": false,
@@ -1491,5 +1492,6 @@
   "tema": "luz",
   "area": "Relatividade",
   "formula": "informação: nunca mais rápido que c"
- }
+ },
+ "capa": "capa-2026-11-06-0745.png"
 }
