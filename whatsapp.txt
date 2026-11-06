@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 20
-_Quinta-feira, 5 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 21
+_Sexta-feira, 6 de novembro de 2026_
 
-*PARAÍBA TERÁ 30 STARTUPS NO WEB SUMMIT LISBOA E LANÇA EDITAL PARA O WEB SUMMIT DOHA*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 8 delas da Paraíba.
+*COMPUTADORES QUÂNTICOS CHEGAM AO PORTO DE SUAPE E SEGUEM PARA INSTALAÇÃO NA PARAÍBA*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. Universidade Estadual da Paraíba conquista Conceito A na primeira nova avaliação do Pibid realizada pela Capes _(UEPB)_
-2. CQMTEK Raises More Than $15 Million For Quantum Measurement Expansion _(The Quantum Insider)_
-3. Enem 2026: o que acontece se deixar questões em branco na prova? _(Jornal da Paraíba)_
+1. UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa _(UEPB)_
+2. *Prazo:* Fies 2: terminam nesta terça-feira inscrições para vagas remanescentes _(Paraíba Online)_
+3. China’s Photonic Quantum Computer Among WIC Award Winners _(The Quantum Insider)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* PRONERA: Graduação publica resultado final do processo seletivo para turma especial de Relações Internacionais
-*Brasil:* Petrobras e Embrapii destinam R$ 14 milhões para projetos de economia circular na indústria de energia
-*Mundo:* IonQ Partners With QuantumCT to Expand Quantum Computing Access in Connecticut
+*Paraíba:* PROGEP informa sobre prazo limite de envio de processos com documentação que recaiam sobre a Folha de Pagamento
+*Brasil:* Conectividade veicular vai acelerar união entre redes móveis e satélites
+*Mundo:* QNu Labs Launches Corporate Training Programme on Quantum-Safe Security
 
-> *Você sabia?* Feynman, Nobel de Física, dizia que ninguém entende a mecânica quântica. Se você também não entende, está em ótima companhia.
+> *Você sabia?* Uma sombra pode andar mais rápido que a luz. E isso não quebra nenhuma lei da física.
 
 *Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radarsecties.github.io/?e=2026-11-05
+https://radar.secties.pb.gov.br/?e=2026-11-06
