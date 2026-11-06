@@ -3,7 +3,7 @@
  "numero": 21,
  "modo": "automatico",
  "destaque": "Computadores quânticos chegam ao Porto de Suape e seguem para instalação na Paraíba",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba. Também em destaque: UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa; e UFPB tem mais de R$ 4,4 milhões aprovados para projetos na Chamada Universal do CNPq.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa; e UFPB tem mais de R$ 4,4 milhões aprovados para projetos na Chamada Universal do CNPq.",
  "itens": [
   {
    "id": "fe0b1d2bd3b8",
@@ -238,6 +238,27 @@
    "origem": "auto"
   },
   {
+   "id": "86e2fcd66122",
+   "titulo": "Banco do Nordeste investe quase R$ 100 milhões em projetos de inovação utilizando a Lei do Bem",
+   "url": "https://paraibatotal.com.br/2026/11/06/banco-do-nordeste-investe-quase-r-100-milhoes-em-projetos-de-inovacao-utilizando-a-lei-do-bem",
+   "resumo": "O Banco do Nordeste (BNB) já reinvestiu cerca de R$ 100 milhões em projetos de inovação para implantar […]",
+   "fonte": "Paraíba Total",
+   "fonteId": "paraibatotal",
+   "dataPub": "2026-11-06",
+   "imagem": "https://paraibatotal.com.br/wp-content/uploads/2023/11/BANNER-WEB-728x90-TODOS.gif",
+   "coletadoEm": "2026-11-06T12:03:09Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "9d153b4b2fec",
    "titulo": "Horizon Quantum Signs Letter of Intent to Acquire Entropica Labs for $27 Million",
    "url": "https://quantumcomputingreport.com/horizon-quantum-signs-letter-of-intent-to-acquire-entropica-labs-for-27-million",
@@ -316,7 +337,7 @@
    "escopo": "Nacional",
    "pontos": 28,
    "urgente": true,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -401,27 +422,6 @@
    "urgente": true,
    "relevancia": "radar",
    "origem": "auto"
-  },
-  {
-   "id": "ecfa2628dd94",
-   "titulo": "Hughes aposta em solução de conectividade híbrida para frotas",
-   "url": "https://teletime.com.br/05/11/2026/hughes-conectividade-hibrida-frotas",
-   "resumo": "Hughes desenvolveu uma solução que combina redes 4G e 5G de qualquer operadora com a conectividade dos satélites Starlink; tecnologia de gestão de frota é direcionada a setores de operações críticas, como transporte, logística, infraestrutura, logística e governo",
-   "fonte": "Teletime",
-   "fonteId": "teletime",
-   "dataPub": "2026-11-05",
-   "imagem": "https://teletime.com.br/wp-content/uploads/2026/11/Movecomm-2026-Patricia-Bille-Hughes-534x462.webp",
-   "coletadoEm": "2026-11-06T10:19:00Z",
-   "tipo": "inclusao",
-   "programas": [
-    "inclusao",
-    "astronomia"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
   }
  ],
  "doe": {},
@@ -447,7 +447,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-06T07:58:31-03:00",
+ "geradoEm": "2026-11-06T09:04:37-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -543,7 +543,7 @@
    "id": "anatel",
    "nome": "Anatel",
    "ok": true,
-   "itens": 5,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -615,7 +615,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 6,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -687,7 +687,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -921,7 +921,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 39,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1020,7 +1020,7 @@
    "id": "oecd-ai",
    "nome": "OECD.AI",
    "ok": true,
-   "itens": 1,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1083,7 +1083,7 @@
    "id": "pesquisafapesp",
    "nome": "Pesquisa FAPESP",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "https://revistapesquisa.fapesp.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1134,10 +1134,19 @@
    "obs": ""
   },
   {
+   "id": "governo-pb",
+   "nome": "Portal do Governo da Paraíba",
+   "ok": true,
+   "itens": 11,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 24,
+   "itens": 25,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1209,7 +1218,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1430,14 +1439,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "governo-pb",
-   "nome": "Portal do Governo da Paraíba",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "radiotabajara",
    "nome": "Rádio Tabajara",
    "ok": false,
@@ -1493,5 +1494,5 @@
   "area": "Relatividade",
   "formula": "informação: nunca mais rápido que c"
  },
- "capa": "capa-2026-11-06-0758.png"
+ "capa": "capa-2026-11-06-0904.png"
 }
