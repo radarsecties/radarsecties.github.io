@@ -445,7 +445,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-07T07:36:46-03:00",
+ "geradoEm": "2026-11-07T08:54:14-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -550,7 +550,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 7,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -604,7 +604,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 39,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -622,7 +622,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 21,
+   "itens": 22,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -658,7 +658,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 17,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -847,7 +847,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 38,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1132,15 +1132,6 @@
    "obs": ""
   },
   {
-   "id": "governo-pb",
-   "nome": "Portal do Governo da Paraíba",
-   "ok": true,
-   "itens": 1,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
@@ -1216,7 +1207,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 36,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1333,7 +1324,7 @@
    "id": "unesco",
    "nome": "UNESCO",
    "ok": true,
-   "itens": 5,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1446,6 +1437,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "governo-pb",
+   "nome": "Portal do Governo da Paraíba",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "radiotabajara",
    "nome": "Rádio Tabajara",
    "ok": false,
@@ -1494,7 +1493,7 @@
   "formula": "modelo de Bohr, 1913"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-07-0736.png",
+ "capa": "capa-2026-11-07-0854.png",
  "link": "https://radar.secties.pb.gov.br/edicao/22/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 22\n_Sábado, 7 de novembro de 2026_\n\n*UNIVERSITY OF CAMBRIDGE JOINS UK QUANTUM COMMERCIALISATION INITIATIVE*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. *Prazo:* Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_\n2. Primeiros computadores quânticos da América Latina desembarcam no Brasil em força-tarefa que custou R$ 80 milhões _(Convergência Digital)_\n3. Oficinas de compostagem: uma proposta de educação ambiental no IFPB – Campus Cajazeiras e na ASCAMARC _(IFPB)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Workshop em comemoração aos 15 anos do PPGCF debate sobre tecnologia e química para inovação terapêutica\n*Brasil:* Hughes aposta em solução de conectividade híbrida para frotas\n*Mundo:* Horizon Quantum Plans to Acquire Entropica Labs for $27 Million\n\n> *Você sabia?* O desenho do átomo com bolinhas girando em órbitas, como o desta seção, é de 1913. Hoje sabemos que o elétron é mais uma nuvem do que um planetinha.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/22/"
 }
