@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 21
-_Sexta-feira, 6 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 22
+_Sábado, 7 de novembro de 2026_
 
-*COMPUTADORES QUÂNTICOS CHEGAM AO PORTO DE SUAPE E SEGUEM PARA INSTALAÇÃO NA PARAÍBA*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.
+*UNIVERSITY OF CAMBRIDGE JOINS UK QUANTUM COMMERCIALISATION INITIATIVE*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa _(UEPB)_
-2. UFPB tem mais de R$ 4,4 milhões aprovados para projetos na Chamada Universal do CNPq _(UFPB)_
-3. China’s Photonic Quantum Computer Among WIC Award Winners _(The Quantum Insider)_
+1. *Prazo:* Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_
+2. Primeiros computadores quânticos da América Latina desembarcam no Brasil em força-tarefa que custou R$ 80 milhões _(Convergência Digital)_
+3. Oficinas de compostagem: uma proposta de educação ambiental no IFPB – Campus Cajazeiras e na ASCAMARC _(IFPB)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* PROGEP informa sobre prazo limite de envio de processos com documentação que recaiam sobre a Folha de Pagamento
-*Brasil:* Conectividade veicular vai acelerar união entre redes móveis e satélites
-*Mundo:* QNu Labs Launches Corporate Training Programme on Quantum-Safe Security
+*Paraíba:* Workshop em comemoração aos 15 anos do PPGCF debate sobre tecnologia e química para inovação terapêutica
+*Brasil:* Hughes aposta em solução de conectividade híbrida para frotas
+*Mundo:* Horizon Quantum Plans to Acquire Entropica Labs for $27 Million
 
-> *Você sabia?* Uma sombra pode andar mais rápido que a luz. E isso não quebra nenhuma lei da física.
+> *Você sabia?* O desenho do átomo com bolinhas girando em órbitas, como o desta seção, é de 1913. Hoje sabemos que o elétron é mais uma nuvem do que um planetinha.
 
 *Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radar.secties.pb.gov.br/edicao/21/
+https://radar.secties.pb.gov.br/edicao/22/
