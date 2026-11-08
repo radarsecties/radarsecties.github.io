@@ -2,8 +2,8 @@
  "data": "2026-11-08",
  "numero": 23,
  "modo": "automatico",
- "destaque": "Quantum SuperConnector to Accelerate Commercial Success of UK quantum Research",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba. Também em destaque: Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES; e Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba.",
+ "destaque": "Mais de 5 milhões de estudantes iniciam provas do Enem neste domingo; portões abrem às 12h",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES; e Mais de 5 milhões de estudantes iniciam provas do Enem neste domingo; portões abrem às 12h.",
  "itens": [
   {
    "id": "0af0649d927b",
@@ -89,6 +89,27 @@
    "origem": "auto"
   },
   {
+   "id": "c157e8a51891",
+   "titulo": "Mais de 5 milhões de estudantes iniciam provas do Enem neste domingo; portões abrem às 12h",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/08/mais-de-5-milhoes-de-estudantes-iniciam-provas-do-enem-neste-domingo-portoes-abrem-as-12h",
+   "resumo": "Mais de 5,05 milhões de estudantes estão inscritos para o Exame Nacional do Ensino Médio (Enem) deste ano. O exame é dividido em dois dias de provas, sendo o primeiro neste domingo (8) e o segundo no próximo domingo (15). Os candidatos precisam ficar atentos ao horário de chegada para não perder a prova. De […]",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-08",
+   "imagem": "",
+   "coletadoEm": "2026-11-08T11:53:21Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
    "id": "da11ce4321d2",
    "titulo": "Quantum SuperConnector to Accelerate Commercial Success of UK quantum Research",
    "url": "https://thequantuminsider.com/2026/11/06/uk-universities-quantum-commercialisation-programme",
@@ -131,23 +152,24 @@
    "origem": "auto"
   },
   {
-   "id": "f81424966db6",
-   "titulo": "Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba",
-   "url": "https://paraibabusiness.com.br/inovenow-impulsiona-desenvolvimento-de-startups-e-inovacao-na-paraiba",
-   "resumo": "Transformar ideias tecnológicas em negócios viáveis exige conhecimento técnico, planejamento e acesso a especialistas. É nesse processo que atua a Inovenow, aceleradora de startups residente do Ilha Tech, centro de inovação em João Pessoa. Com oito anos de atuação, a empresa liderada por Vanessa Pessoa desenvolve…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
+   "id": "d1740a8e0b41",
+   "titulo": "Computadores quânticos de R$ 80 milhões chegam ao Brasil e serão instalados em JP",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOXN1N0FUdFFlZkhqcDNlVVJLaXRTV0NONU9aUkwwalQ5czZnbzU5V1VGQVRLQWtQbDZwNndTNkFzWGRKVWJkZy0xdHFsQWNQNEpobUlLNm9HaWFGZDJvSk1GcTFsb1BZRWVjM1pGQTJ0bU5MaWluRU03aW14Q1lKQnk2eVdjUW11ckV1T29BREl2NUR1WlFCbDU2V1Joc1dvdVE?oc=5",
+   "resumo": "",
+   "fonte": "WSCOM",
+   "fonteId": "wscom",
    "dataPub": "2026-11-07",
    "imagem": "",
-   "coletadoEm": "2026-11-08T10:35:52Z",
-   "tipo": "inovacao",
+   "coletadoEm": "2026-11-08T11:53:25Z",
+   "tipo": "quantica",
    "programas": [
-    "inovacao"
+    "ciquanta",
+    "fomento"
    ],
    "escopo": "Paraíba",
-   "pontos": 33,
+   "pontos": 34,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -166,6 +188,26 @@
     "fomento"
    ],
    "escopo": "Global",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "f81424966db6",
+   "titulo": "Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba",
+   "url": "https://paraibabusiness.com.br/inovenow-impulsiona-desenvolvimento-de-startups-e-inovacao-na-paraiba",
+   "resumo": "Transformar ideias tecnológicas em negócios viáveis exige conhecimento técnico, planejamento e acesso a especialistas. É nesse processo que atua a Inovenow, aceleradora de startups residente do Ilha Tech, centro de inovação em João Pessoa. Com oito anos de atuação, a empresa liderada por Vanessa Pessoa desenvolve…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-07",
+   "imagem": "",
+   "coletadoEm": "2026-11-08T10:35:52Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao"
+   ],
+   "escopo": "Paraíba",
    "pontos": 33,
    "urgente": false,
    "relevancia": "media",
@@ -193,64 +235,22 @@
    "origem": "auto"
   },
   {
-   "id": "78de1c1338ee",
-   "titulo": "Participantes do Enem podem ter parcela extra do Pé-de-Meia; veja os critérios",
-   "url": "https://portalcorreio.com.br/participantes-do-enem-podem-ter-parcela-extra-do-pe-de-meia-veja-os-criterios",
-   "resumo": "Cerca de 1,2 milhão de beneficiários do programa Pé-de-Meia que participarão dos dois dias de provas do Exame Nacional do Ensino Médio (Enem) em 2026 poderão receber uma parcela extra de R$ 200. Para isso, é necessário que o aluno seja concluinte do ensino médio e esteja presente nos dois dias da aplicação, que…",
+   "id": "13d861a1ef1a",
+   "titulo": "Primeiro dia do Enem é neste domingo; candidatos precisam chegar antes das 13h",
+   "url": "https://portalcorreio.com.br/primeiro-dia-do-enem-e-neste-domingo-candidatos-precisam-chegar-antes-das-13h",
+   "resumo": "Mais de 5,05 milhões de estudantes estão inscritos para o Exame Nacional do Ensino Médio (Enem) deste ano. O exame é dividido em dois dias de provas, sendo o primeiro neste domingo (8) e o segundo no próximo domingo (15). Os candidatos precisam ficar atentos ao horário de chegada para não perder a prova. De […]",
    "fonte": "Portal Correio",
    "fonteId": "portalcorreio",
-   "dataPub": "2026-11-06",
-   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2025/10/5216abfbbc6e71f6e93ab8b471b88734.webp",
-   "coletadoEm": "2026-11-07T10:35:13Z",
+   "dataPub": "2026-11-08",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2025/11/78805a221a988e79ef3f42d7c5bfd418-97.png",
+   "coletadoEm": "2026-11-08T11:53:22Z",
    "tipo": "ensino",
    "programas": [
     "ensino",
     "fomento"
    ],
    "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "de7f0375aece",
-   "titulo": "Confira as regras da redação e dicas para um texto nota 1.000 no Enem",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/07/confira-as-regras-da-redacao-e-dicas-para-um-texto-nota-1-000-no-enem",
-   "resumo": "A Prova de Redação será um dos desafios dos mais de 5 milhões de inscritos no Exame Nacional do Ensino Médio (Enem) neste domingo. A avaliação conta com textos de apoio para que o candidato discorra, em até 30 linhas, sobre o tema proposto. Para ter um bom desempenho, é importante que o candidato conheça o estilo […]",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-07",
-   "imagem": "",
-   "coletadoEm": "2026-11-08T10:35:48Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "8fa9d3859e4b",
-   "titulo": "IQM and Volkswagen Advance Quantum-Classical AFQMC to Simulate Next-Generation Battery Chemistry",
-   "url": "https://quantumcomputingreport.com/iqm-and-volkswagen-advance-quantum-classical-afqmc-to-simulate-next-generation-battery-chemistry",
-   "resumo": "IQM Quantum Computers and Volkswagen Group Innovation have significantly advanced Quantum-Classical Auxiliary-Field Quantum Monte Carlo (QC-AFQMC) for simulating battery chemistry. They achieved up to a 124x reduction in classical execution time for a 50-orbital benchmark, validated on IQM's Emerald superconducting…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-06T10:19:04Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 31,
+   "pontos": 33,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
@@ -456,7 +456,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-08T07:37:25-03:00",
+ "geradoEm": "2026-11-08T08:54:59-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -553,6 +553,15 @@
    "nome": "Anatel",
    "ok": true,
    "itens": 11,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "anpd",
+   "nome": "ANPD",
+   "ok": true,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -675,6 +684,15 @@
    "obs": ""
   },
   {
+   "id": "ec-digital",
+   "nome": "Comissão Europeia Digital",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "confap",
    "nome": "Confap",
    "ok": true,
@@ -747,6 +765,15 @@
    "obs": ""
   },
   {
+   "id": "fiepb",
+   "nome": "FIEP",
+   "ok": true,
+   "itens": 5,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "finep",
    "nome": "Finep",
    "ok": true,
@@ -768,7 +795,7 @@
    "id": "govdigital",
    "nome": "Governo Digital",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -822,7 +849,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 32,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -886,7 +913,7 @@
    "nome": "Jornal da Paraíba",
    "ok": true,
    "itens": 40,
-   "feed": "https://jornaldaparaiba.com.br/feed/",
+   "feed": "https://jornaldaparaiba.com.br/rss",
    "via": "feed",
    "obs": ""
   },
@@ -975,9 +1002,9 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 4,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 6,
+   "feed": "https://nossaciencia.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1107,6 +1134,24 @@
    "obs": ""
   },
   {
+   "id": "pmcg",
+   "nome": "Prefeitura de Campina Grande",
+   "ok": true,
+   "itens": 34,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "pmjp",
+   "nome": "Prefeitura de João Pessoa",
+   "ok": true,
+   "itens": 37,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "quanta",
    "nome": "Quanta Magazine",
    "ok": true,
@@ -1164,7 +1209,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1330,14 +1375,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "anpd",
-   "nome": "ANPD",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "worldbank-digital",
    "nome": "Banco Mundial Digital",
    "ok": false,
@@ -1362,14 +1399,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "ec-digital",
-   "nome": "Comissão Europeia Digital",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "europeana",
    "nome": "Europeana",
    "ok": false,
@@ -1380,14 +1409,6 @@
   {
    "id": "fapesq",
    "nome": "FAPESQ",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "fiepb",
-   "nome": "FIEP",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1428,22 +1449,6 @@
   {
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "pmcg",
-   "nome": "Prefeitura de Campina Grande",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "pmjp",
-   "nome": "Prefeitura de João Pessoa",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1498,7 +1503,7 @@
   "formula": "34° 47′ O: o leste das Américas"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-08-0737.png",
+ "capa": "capa-2026-11-08-0854.png",
  "link": "https://radar.secties.pb.gov.br/edicao/23/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 23\n_Domingo, 8 de novembro de 2026_\n\n*QUANTUM SUPERCONNECTOR TO ACCELERATE COMMERCIAL SUCCESS OF UK QUANTUM RESEARCH*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Paraíba recebe computadores quânticos de última geração para impulsionar pesquisas científicas _(Poder Paraíba)_\n2. Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_\n3. Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba _(Paraíba Business)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* 9º Seminário de Extensão é encerrado com homenagem e premiação de artigos publicados em e-book comemorativo\n*Brasil:* Agência de Inovação expõe projetos de laboratórios da Unemat na Semana de Inovação de Mato Grosso\n*Mundo:* UK Announces New Funding to Support Quantum Technology Commercialisation\n\n> *Você sabia?* A Ponta do Seixas, em João Pessoa, é o ponto mais a leste das Américas. Por isso a cidade é conhecida como o lugar onde o Sol nasce primeiro no continente.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/23/"
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 23\n_Domingo, 8 de novembro de 2026_\n\n*MAIS DE 5 MILHÕES DE ESTUDANTES INICIAM PROVAS DO ENEM NESTE DOMINGO; PORTÕES ABREM ÀS 12H*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Paraíba recebe computadores quânticos de última geração para impulsionar pesquisas científicas _(Poder Paraíba)_\n2. Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_\n3. Quantum SuperConnector to Accelerate Commercial Success of UK quantum Research _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* 9º Seminário de Extensão é encerrado com homenagem e premiação de artigos publicados em e-book comemorativo\n*Brasil:* Agência de Inovação expõe projetos de laboratórios da Unemat na Semana de Inovação de Mato Grosso\n*Mundo:* UK Announces New Funding to Support Quantum Technology Commercialisation\n\n> *Você sabia?* A Ponta do Seixas, em João Pessoa, é o ponto mais a leste das Américas. Por isso a cidade é conhecida como o lugar onde o Sol nasce primeiro no continente.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/23/"
 }
