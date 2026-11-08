@@ -1,104 +1,102 @@
 {
- "data": "2026-11-07",
- "numero": 22,
+ "data": "2026-11-08",
+ "numero": 23,
  "modo": "automatico",
- "destaque": "University of Cambridge Joins UK Quantum Commercialisation Initiative",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba. Também em destaque: Primeiros computadores quânticos da América Latina desembarcam no Brasil em força-tarefa que custou R$ 80 milhões; e Oficinas de compostagem: uma proposta de educação ambiental no IFPB – Campus Cajazeiras e na ASCAMARC.",
+ "destaque": "Quantum SuperConnector to Accelerate Commercial Success of UK quantum Research",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba. Também em destaque: Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES; e Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba.",
  "itens": [
   {
-   "id": "60d6112e52c3",
-   "titulo": "Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES",
-   "url": "https://uepb.edu.br/pro-reitoria-de-ensino-medio-tecnico-e-educacao-a-distancia-abre-selecao-para-docentes-atuarem-nos-cursos-da-secties",
-   "resumo": "Estão abertas até o dia 17 de novembro vagas para atuação nos cursos de licenciatura, na modalidade a distância, em convênio com a Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior (SECTIES). Os interessados em participar do certame, deverão acessar a página da Pró-reitoria de Ensino Médio…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-06",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Selecao-PROEAD.jpeg",
-   "coletadoEm": "2026-11-07T10:35:07Z",
+   "id": "0af0649d927b",
+   "titulo": "Paraíba recebe computadores quânticos de última geração para impulsionar pesquisas científicas",
+   "url": "https://poderparaiba.com.br/paraiba-recebe-computadores-quanticos-de-ultima-geracao-para-impulsionar-pesquisas-cientificas",
+   "resumo": "Dois computadores quânticos fabricados na China chegaram nesta quinta-feira (5) ao Porto de Suape, em Pernambuco, e serão transportados para João Pessoa, onde serão instalados no Centro Internacional de Computação e Tecnologias Quânticas (Ciquanta). Os equipamentos, avaliados em aproximadamente R$ 80 milhões, possuem…",
+   "fonte": "Poder Paraíba",
+   "fonteId": "poderparaiba",
+   "dataPub": "2026-11-07",
+   "imagem": "https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png",
+   "coletadoEm": "2026-11-08T10:36:21Z",
    "tipo": "oficial",
-   "programas": [
-    "ensino",
-    "inovacao"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 56,
-   "urgente": true,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "b47a44cb12d9",
-   "titulo": "Workshop em comemoração aos 15 anos do PPGCF debate sobre tecnologia e química para inovação terapêutica",
-   "url": "https://uepb.edu.br/workshop-em-comemoracao-aos-15-anos-do-ppgcf-debate-sobre-tecnologia-e-quimica-para-inovacao-terapeutica",
-   "resumo": "O Programa de Pós-graduação em Ciências Farmacêuticas (PPGCF) da Universidade Estadual da Paraíba (UEPB) realizará, entre os dias 23 e 25 de novembro, o 7º Workshop do PPGCF, que nesta edição traz o tema “15 anos do PPGCF/UEPB: avanços em Tecnologia Farmacêutica e Química Medicinal para a inovação terapêutica”. O…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-06",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Workshop-Ciencias-Farmaceuticas.jpeg",
-   "coletadoEm": "2026-11-07T10:35:07Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "inovacao"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 42,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "3feee4710939",
-   "titulo": "PRONERA: divulgado edital complementar para preenchimento de vagas remanescentes para o curso de Relações Internacionais",
-   "url": "https://uepb.edu.br/pronera-divulgado-edital-complementar-para-preenchimento-de-vagas-remanescentes-para-o-curso-de-relacoes-internacionais",
-   "resumo": "A Pró-reitoria de Graduação (PROGRAD) da Universidade Estadual da Paraíba (UEPB) publicou, nesta sexta-feira (6), o Edital Complementar nº 015/2026/PROGRAD-SEL/PROGRAD/REITORIA, que estabelece uma etapa complementar para o preenchimento de cinco vagas remanescentes do Processo Seletivo Especial PRONERA/INCRA/UEPB…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:07Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 41,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "d93610819e5e",
-   "titulo": "Primeiros computadores quânticos da América Latina desembarcam no Brasil em força-tarefa que custou R$ 80 milhões",
-   "url": "https://convergenciadigital.com.br/governo/primeiros-computadores-quanticos-da-america-latina-desembarcam-no-brasil-em-forca-tarefa-que-custou-r-80-milhoes",
-   "resumo": "São duas máquinas, de 20 e 100 qubits, unidade que mede a capacidade de processamento desses computadores, fornecidas pela empresa chinesa CETC-IQC. Os equipamentos vão ficar Paraíba.",
-   "fonte": "Convergência Digital",
-   "fonteId": "convergencia",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:35Z",
-   "tipo": "quantica",
    "programas": [
     "ciquanta",
     "fomento",
     "internacional"
    ],
    "escopo": "Paraíba",
-   "pontos": 39,
+   "pontos": 46,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "079fcaec9b89",
-   "titulo": "University of Cambridge Joins UK Quantum Commercialisation Initiative",
-   "url": "https://thequantuminsider.com/2026/11/06/cambridge-uk-quantum-superconnector-commercialisation",
-   "resumo": "A consortium of five of the UK’s top universities, including the University of Cambridge, has announced the launch of the UK Quantum SuperConnector, an initiative designed to bridge the gap between quantum research and commercial success. The initiative will create a UK-wide community of entrepreneurs, investors…",
+   "id": "4f7d7a18975f",
+   "titulo": "Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVjg1Y25YQ2hWRjJKeGtIcVVzX1NuM1BXbzctV1FtZDNxSTBQd29IcUlxcF9lSkRKNHBTeGZZYzFjNkRCX2NFX0h0QUpicFFheTBtZ1FaWU5Nc3hNLUlVUVVWaHNxMnc5ZFdINjJvNXBDaWFsa2VnTnZKdFBsWURHX0cxOXdZbWVJLUtVcTNHbFc5a25NOXo4WGhOUWVMcDRTTTgxUjdVWXU0cHZRdWtRY01TeTNYdWJHU2h5aXhZUUVwWHVWTmFHQnU3WTdPcndHVEJJ?oc=5",
+   "resumo": "",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-06",
+   "imagem": "",
+   "coletadoEm": "2026-11-08T10:35:47Z",
+   "tipo": "oficial",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 43,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "5c9bf8a9bd36",
+   "titulo": "9º Seminário de Extensão é encerrado com homenagem e premiação de artigos publicados em e-book comemorativo",
+   "url": "https://uepb.edu.br/9o-seminario-de-extensao-e-encerrado-com-homenagem-e-premiacao-de-artigos-publicados-em-e-book-comemorativo",
+   "resumo": "A Universidade Estadual da Paraíba (UEPB), por meio da Pró-reitoria de Extensão (PROEX), encerrou, na manhã desta sexta-feira (6), a programação do 9º Seminário de Extensão (SEMEX), que, nesta edição, teve como tema central “Diálogos: Universidade e sociedade em transformação”. Realizado entre os dias 4 e 6 de…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-06",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Encerramento-do-9o-Seminario-de-Extensao-2026-10-300x169.jpeg",
+   "coletadoEm": "2026-11-07T10:35:07Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 41,
+   "urgente": true,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "8c05fd4d09b2",
+   "titulo": "UEPB inicia 2027 com acréscimo de 15 bolsas de mestrado e doutorado em seus programas de pós-graduação e pesquisa",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOU0pZR2xsRG9TRjIzX3pJalo0VURlQ3lwM2R0N3BTN1VuX3lNZDcyanZ6QXRhTVkwcWVDV0ItVG14VUhrYzNfaU56eXRvTUF3SnRtbkM1LUxmMzJrRWkwNjhiMlVMMzRiQ1Z6LUVEM1E0bjFtU1E0RmM3aEJURTFGVEg4QkpWQlNMYVhVdFV0ekdHa0VndExsazNnT1hNSzYwTjVCMUw0ZWhZZUs4aE5jUUNEelB5LWJXcF9mS2tFNEJUdmg1TWs3amJJME52S0k?oc=5",
+   "resumo": "",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-05",
+   "imagem": "",
+   "coletadoEm": "2026-11-08T10:35:47Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 40,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "da11ce4321d2",
+   "titulo": "Quantum SuperConnector to Accelerate Commercial Success of UK quantum Research",
+   "url": "https://thequantuminsider.com/2026/11/06/uk-universities-quantum-commercialisation-programme",
+   "resumo": "The UK-wide programme will equip quantum innovators with the entrepreneurial skills, networks and support needed to turn world-leading quantum research into high-growth businesses. A consortium of five of the UK’s top universities has announced the launch of the UK Quantum SuperConnector, an initiative designed to…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
    "dataPub": "2026-11-06",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-06_23-51.png",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-06_21-51.png",
    "coletadoEm": "2026-11-07T10:35:38Z",
    "tipo": "quantica",
    "programas": [
@@ -106,21 +104,21 @@
     "ensino"
    ],
    "escopo": "Global",
-   "pontos": 37,
+   "pontos": 34,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "f4a3045c274e",
-   "titulo": "Horizon Quantum Plans to Acquire Entropica Labs for $27 Million",
-   "url": "https://thequantuminsider.com/2026/11/05/horizon-quantum-acquire-entropica-labs-27-million",
-   "resumo": "Horizon Quantum Holdings Ltd. (Nasdaq: HQ) (“Horizon Quantum”), a pioneer of software infrastructure for quantum applications, today announced that they have signed a non-binding letter of intent to acquire Entropica Labs Pte. Ltd. (“Entropica Labs”), a Singapore-based quantum software company specializing in error…",
+   "id": "e8cfd57a0ecf",
+   "titulo": "UK Announces New Funding to Support Quantum Technology Commercialisation",
+   "url": "https://thequantuminsider.com/2026/11/06/uk-announces-new-funding-to-support-quantum-technology-commercialisation",
+   "resumo": "New steps to help accelerate the adoption, commercialisation, and talent pipeline for UK Quantum will kickstart a major event demonstrating Britain’s global leadership in the technology being held in London today (Friday 6th November). Run by Innovate UK, part of UKRI, the UK’s National Quantum Technologies Showcase…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
-   "dataPub": "2026-11-05",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-05_18-51.png",
-   "coletadoEm": "2026-11-06T10:19:04Z",
+   "dataPub": "2026-11-06",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-06_15-08.png",
+   "coletadoEm": "2026-11-07T10:35:38Z",
    "tipo": "quantica",
    "programas": [
     "ciquanta",
@@ -133,39 +131,18 @@
    "origem": "auto"
   },
   {
-   "id": "0963b07952a0",
-   "titulo": "Toshiba Secures UK Contract to Develop Quantum Networking Technologies",
-   "url": "https://thequantuminsider.com/2026/11/06/toshiba-uk-contract-quantum-networking-technologies",
-   "resumo": "Toshiba Europe has been awarded a contract by Innovate UK, part of UK Research and Innovation (UKRI), to develop technologies that can help unlock the commercial potential of quantum networks. The project will develop technology for long-distance quantum links and networks serving multiple users and validate it under…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-06",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-06_14-49.png",
-   "coletadoEm": "2026-11-06T10:42:55Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "b300e0e95dda",
-   "titulo": "Oficinas de compostagem: uma proposta de educação ambiental no IFPB – Campus Cajazeiras e na ASCAMARC",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMkUtckVnRkdZZE5tb19IMER0cjVOd0I3a3dVSmR5R21mOUVnN1ZBazVqdkJOU19iNlRlVjhRNmtPY1lRMlltZ1RRR1JSMlRxaklRSlh2MkhORW5nUFlRc0RnelViV0RIX3BzRzBFYXMzemlEMXJUTlEzZkNJdUxxZUhzVQ?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
-   "dataPub": "2026-11-06",
+   "id": "f81424966db6",
+   "titulo": "Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba",
+   "url": "https://paraibabusiness.com.br/inovenow-impulsiona-desenvolvimento-de-startups-e-inovacao-na-paraiba",
+   "resumo": "Transformar ideias tecnológicas em negócios viáveis exige conhecimento técnico, planejamento e acesso a especialistas. É nesse processo que atua a Inovenow, aceleradora de startups residente do Ilha Tech, centro de inovação em João Pessoa. Com oito anos de atuação, a empresa liderada por Vanessa Pessoa desenvolve…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-07",
    "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:42Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-08T10:35:52Z",
+   "tipo": "inovacao",
    "programas": [
-    "ensino"
+    "inovacao"
    ],
    "escopo": "Paraíba",
    "pontos": 33,
@@ -174,35 +151,57 @@
    "origem": "auto"
   },
   {
-   "id": "871580dd1082",
-   "titulo": "IFPB inaugura Laboratório de Games no Campus Esperança",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWk1qNkdOMTRqTDhKeXFMMDliNENCcG1sWjFDQTJUZ0VVY045ZVVaOEVYV2Vab0d1c3JHRFBYcjNBeGxEcnYyNTNvcEE3dGtZUHBXeWFJRHVoYzZuMTAxOE42WUJxOVRwNmc1aHkxai1MOFhZRzBjazkzeTdSTWtmSi1RbjJyYmRmSm5nbjExbDFyVFhjU2hhUjEtRQ?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
-   "dataPub": "2026-11-05",
-   "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:42Z",
-   "tipo": "ensino",
+   "id": "6437e52da0a1",
+   "titulo": "Guest Post — Commercial Diplomacy: Building The Quantum Ecosystem",
+   "url": "https://thequantuminsider.com/2026/11/06/guest-post-commercial-diplomacy-building-the-quantum-ecosystem",
+   "resumo": "Guest Post by by Charlene B. Flick, Esq. “Demonstrating that logical qubits can maintain coherence, we are paving the way toward fault-tolerant systems that can eventually scale to millions of qubits!” The CEO paused, seemingly absorbing this revelation. “Congratulations, Professor. Forgive me, but what does it do?”…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-06",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/fyocihbhlq8.jpg",
+   "coletadoEm": "2026-11-06T10:19:04Z",
+   "tipo": "quantica",
    "programas": [
-    "ensino"
+    "ciquanta",
+    "fomento"
    ],
-   "escopo": "Paraíba",
+   "escopo": "Global",
    "pontos": 33,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "758ac06c151d",
-   "titulo": "Enem 2026: MEC garante segurança da prova e mantém regras da redação",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/04/enem-2026-mec-garante-seguranca-da-prova-e-mantem-regras-da-redacao",
-   "resumo": "O ministro da Educação (MEC), Leonardo Barchini, garantiu, nesta quarta-feira (4), a segurança e lisura da aplicação do Exame Nacional do Ensino Médio (Enem) nos próximos dois domingos, dias 8 e 15 de novembro para mais de 5,05 milhões de pessoas inscritas confirmadas. A declaração aborda o episódio de 2025 em que…",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-04",
+   "id": "ab557fa83336",
+   "titulo": "Adelaide University Engineers Synthetic Area Spread to Unlock High-Sensitivity Absolute Quantum Magnetometers",
+   "url": "https://quantumcomputingreport.com/adelaide-university-engineers-synthetic-area-spread-to-unlock-high-sensitivity-absolute-quantum-magnetometers",
+   "resumo": "Engineers at Adelaide University have developed a new technique called \"synthetic area spread\" for superconducting quantum magnetometers. This method allows for absolute magnetic field sensing without sacrificing detector sensitivity, by using uniform loop geometries in two-dimensional Superconducting Quantum…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-07",
    "imagem": "",
-   "coletadoEm": "2026-11-06T10:18:38Z",
+   "coletadoEm": "2026-11-08T10:36:15Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "escopo": "Global",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "78de1c1338ee",
+   "titulo": "Participantes do Enem podem ter parcela extra do Pé-de-Meia; veja os critérios",
+   "url": "https://portalcorreio.com.br/participantes-do-enem-podem-ter-parcela-extra-do-pe-de-meia-veja-os-criterios",
+   "resumo": "Cerca de 1,2 milhão de beneficiários do programa Pé-de-Meia que participarão dos dois dias de provas do Exame Nacional do Ensino Médio (Enem) em 2026 poderão receber uma parcela extra de R$ 200. Para isso, é necessário que o aluno seja concluinte do ensino médio e esteja presente nos dois dias da aplicação, que…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-06",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2025/10/5216abfbbc6e71f6e93ab8b471b88734.webp",
+   "coletadoEm": "2026-11-07T10:35:13Z",
    "tipo": "ensino",
    "programas": [
     "ensino",
@@ -215,18 +214,18 @@
    "origem": "auto"
   },
   {
-   "id": "63472c34d6e2",
-   "titulo": "Polícia Civil cumpre mandados contra suspeitos de golpe de quase R$ 1 milhão na PB e no RN",
-   "url": "https://jornaldaparaiba.com.br/cotidiano/policia-civil-cumpre-mandados-contra-suspeitos-de-golpe-de-quase-r-1-milhao-na-pb-e-no-rn",
-   "resumo": "Polícia Civil cumpre mandados contra suspeitos de golpe de quase R$ 1 milhão na PB e no RN. (Foto: Reprodução/Polícia Civil) A Polícia Civil do Rio Grande do Norte deflagrou, nesta sexta-feira (6), a segunda fase da Operação Cavalo de Troia, que investiga um esquema de fraude eletrônica conhecido como \"golpe do falso…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-06",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/policia-civil-cumpre-mandados-contra-suspeitos-de-0022234200202611061203-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fpolicia-civil-cumpre-mandados-contra-suspeitos-de-0022234200202611061203.jpg%3Fxid%3D1242099&amp;xid=1242099",
-   "coletadoEm": "2026-11-07T10:35:12Z",
-   "tipo": "evento",
+   "id": "de7f0375aece",
+   "titulo": "Confira as regras da redação e dicas para um texto nota 1.000 no Enem",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/07/confira-as-regras-da-redacao-e-dicas-para-um-texto-nota-1-000-no-enem",
+   "resumo": "A Prova de Redação será um dos desafios dos mais de 5 milhões de inscritos no Exame Nacional do Ensino Médio (Enem) neste domingo. A avaliação conta com textos de apoio para que o candidato discorra, em até 30 linhas, sobre o tema proposto. Para ter um bom desempenho, é importante que o candidato conheça o estilo […]",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-07",
+   "imagem": "",
+   "coletadoEm": "2026-11-08T10:35:48Z",
+   "tipo": "ensino",
    "programas": [
-    "transversal",
+    "ensino",
     "fomento"
    ],
    "escopo": "Paraíba",
@@ -236,10 +235,10 @@
    "origem": "auto"
   },
   {
-   "id": "c306834e9afc",
-   "titulo": "IQM Quantum Computers Reports Q3 2026 Results: Backlog Expands to €102.5M, Q3 Revenue Up 51%, and FY 2026 Guidance Reaffirmed",
-   "url": "https://quantumcomputingreport.com/iqm-quantum-computers-reports-q3-2026-results-backlog-expands-to-e102-5m-q3-revenue-up-51-and-fy-2026-guidance-reaffirmed",
-   "resumo": "IQM Quantum Computers reported strong Q3 2026 results with revenue up 50.7% to €8.86 million, and a record order intake of €42.2 million, expanding their backlog to €102.5 million. They finalized a €33 million contract with LUMI AI Factory, expanded into South America, and reaffirmed their full-year 2026 revenue…",
+   "id": "8fa9d3859e4b",
+   "titulo": "IQM and Volkswagen Advance Quantum-Classical AFQMC to Simulate Next-Generation Battery Chemistry",
+   "url": "https://quantumcomputingreport.com/iqm-and-volkswagen-advance-quantum-classical-afqmc-to-simulate-next-generation-battery-chemistry",
+   "resumo": "IQM Quantum Computers and Volkswagen Group Innovation have significantly advanced Quantum-Classical Auxiliary-Field Quantum Monte Carlo (QC-AFQMC) for simulating battery chemistry. They achieved up to a 124x reduction in classical execution time for a 50-orbital benchmark, validated on IQM's Emerald superconducting…",
    "fonte": "Quantum Computing Report",
    "fonteId": "qcreport",
    "dataPub": "2026-11-06",
@@ -248,7 +247,7 @@
    "tipo": "quantica",
    "programas": [
     "ciquanta",
-    "fomento"
+    "inovacao"
    ],
    "escopo": "Global",
    "pontos": 31,
@@ -257,167 +256,168 @@
    "origem": "auto"
   },
   {
-   "id": "3d2a68421f2c",
-   "titulo": "Polícia Civil faz operação em Campina Grande contra golpe do falso CEO de R$ 940 mil",
-   "url": "https://portalcorreio.com.br/policia-civil-faz-operacao-em-campina-grande-contra-golpe-do-falso-ceo-de-r-940-mil",
-   "resumo": "A Polícia Civil do Rio Grande do Norte cumpriu, nesta sexta-feira (6), mandados de busca e apreensão em Campina Grande, durante a Operação Cavalo de Troia, que investiga uma organização criminosa suspeita de cometer fraudes eletrônicas com prejuízos estimados em R$ 940 mil. De acordo com as investigações, o grupo…",
-   "fonte": "Portal Correio",
-   "fonteId": "portalcorreio",
-   "dataPub": "2026-11-06",
-   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/36ba2d3617cfe7c825e6f23bf2cda5ef.jpeg",
-   "coletadoEm": "2026-11-07T10:35:13Z",
-   "tipo": "evento",
-   "programas": [
-    "transversal",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "7598517199bf",
-   "titulo": "Política de Privacidade da CODATA - CODATA | Companhia de processamento de dados da Paraíba",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWUhObTg1aXB4UGF2WXluV0YtOEpmdWpneFNhVDhCUnJwQ0hsVlBVNWh1cVRjUUxBT0xSa0kxUEc4MDNPbzMwODEwWldtbUNLSzhqWFVyYS12LUx2WG1XYU5rdWxQNzVzTERoYmtrTGxuZWdMMGU0QXVyUjZBa1JwcUlPcTd3Y3hQRzVpcGJXeWpRRzEx?oc=5",
-   "resumo": "",
-   "fonte": "CODATA",
-   "fonteId": "codata",
-   "dataPub": "2026-11-03",
+   "id": "42fadfbc12f5",
+   "titulo": "Agência de Inovação expõe projetos de laboratórios da Unemat na Semana de Inovação de Mato Grosso",
+   "url": "https://consecti.org.br/agencia-de-inovacao-expoe-projetos-de-laboratorios-da-unemat-na-semana-de-inovacao-de-mato-grosso",
+   "resumo": "Estande coordenado pela Aginov reúne informação espacial, jogos ambientais, bioprospecção e impressão 3D (Foto: Divulgação) A Universidade do Estado de Mato Grosso (Unemat) participa como expositora da 6ª Semana de Inovação de Mato Grosso (SIMT), de 5 a 7 de novembro, no ParkTech Mutum, em Nova Mutum. A Universidade…",
+   "fonte": "Consecti",
+   "fonteId": "consecti",
+   "dataPub": "2026-11-04",
    "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:44Z",
-   "tipo": "seguranca",
-   "programas": [
-    "seguranca"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 30,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "2cee9f052d8a",
-   "titulo": "Em missão à China, SENAI amplia conexões internacionais para impulsionar a inovação industrial",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOcjhsMVRsSGxBTFl5c05oNjFYYWlydmMwcUxTYnF1UjFoRDg5RG5HVE5VSjFsZXVSb0JIYlhhTjczU1lsTDY3RE1zOGhIZ0JDTUpfSERfdnZLb0x2R0s1M2xpX050ZUFDSzdLbHlVMjZmcXVpT2RRYWV3Ulh1NG8yNXpXb2VSeDdEYllWdEFlYVhJblZXZXZNdFdPeFNrbmlUUzhsSVgtYWJ5U0dPRmw1S24zWXJTMC1vTG1iSUcwa0dFUUwxa0E?oc=5",
-   "resumo": "",
-   "fonte": "FIEP",
-   "fonteId": "fiepb",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:55Z",
+   "coletadoEm": "2026-11-05T10:08:31Z",
    "tipo": "inovacao",
    "programas": [
     "inovacao",
-    "internacional"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 30,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "ecfa2628dd94",
-   "titulo": "Hughes aposta em solução de conectividade híbrida para frotas",
-   "url": "https://teletime.com.br/05/11/2026/hughes-conectividade-hibrida-frotas",
-   "resumo": "Hughes desenvolveu uma solução que combina redes 4G e 5G de qualquer operadora com a conectividade dos satélites Starlink; tecnologia de gestão de frota é direcionada a setores de operações críticas, como transporte, logística, infraestrutura, logística e governo",
-   "fonte": "Teletime",
-   "fonteId": "teletime",
-   "dataPub": "2026-11-05",
-   "imagem": "https://teletime.com.br/wp-content/uploads/2026/11/Movecomm-2026-Patricia-Bille-Hughes-534x462.webp",
-   "coletadoEm": "2026-11-06T10:19:00Z",
-   "tipo": "inclusao",
-   "programas": [
-    "inclusao",
+    "ensino",
     "astronomia"
    ],
    "escopo": "Nacional",
-   "pontos": 27,
+   "pontos": 26,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "df5eabef1e19",
-   "titulo": "ANPD publica os três últimos Relatórios Parciais de Monitoramento do Sandbox em IA e proteção de dados",
-   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLVNfU2hYMjRldEZERThyZG1IakFRQmp1SnVyYm5oM2RleFBZWnpVYll6aVJfYTl0NHZvN3pSN096TkFXd3RBYmx1aUJzMW5peDFRV21xVHh0NnMzcTBOaklMMkNqdEk1Q29IVm5NQnNmNDdPazlueEctV0dWWl85X0N0X1ZMQUk3Ul9ucnZEWWMyVDk0TTlDWVBhd1E1bXBnMmNiQ3VNMEpaOGNuV05aWmJxbUkwbHM1TGhZQlpQNU1XOVFmNExIOG1yY19aQkc4RjExTlF4Y1VfVm9XZXh1YVNSZm4?oc=5",
-   "resumo": "",
-   "fonte": "ANPD",
-   "fonteId": "anpd",
-   "dataPub": "2026-11-03",
-   "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:52Z",
-   "tipo": "seguranca",
-   "programas": [
-    "seguranca",
-    "secretaria2030"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "79a0e4b4076a",
-   "titulo": "ANPD conclui 1ª edição de Sandbox de IA e anuncia 2ª edição voltada a jogos digitais para crianças e adolescentes",
-   "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNREptbHc0Tm9kU3NDY3NSV19zaWQ1Zk4ySlNZZ0VwNnZuQmJjbWdQcFI1TUh5MzE1c21mMVdDbTJISXl1ODc2YjN3cU9wQlAtLUtUMGlFUlRzRERDU1dMQmM5OFkzU3hzRXVzSVEwajhBb2pOM0FzT3hnZ1MwUEtHLXVsZ2ZNYVFGSUhzdjhPc0pjOElYQzNvQzI4bTdEUko3eXRmUVVTY3Iwem04YWlIZGRlTjV2UWhQTVVVU1dnVHlxN0tDZldhbktQLTNtTVpWb3dBcDNfNEpYSTRhZHJ4RkxzNDVWTnQxX2dvNHVoZzE3cGc?oc=5",
-   "resumo": "",
-   "fonte": "ANPD",
-   "fonteId": "anpd",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:52Z",
-   "tipo": "seguranca",
-   "programas": [
-    "seguranca",
-    "secretaria2030"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "d22db5804974",
-   "titulo": "iez! telecom cobrirá mais 84 cidades para atingir a meta anual do leilão do 5G",
-   "url": "https://teletime.com.br/06/11/2026/iez-telecom-5g-metas",
-   "resumo": "iez! telecom explicou que já levou conectividade a 150 cidades. Agora, a companhia precisa cobrir outras 84 até o final de 2026 para cumprir as metas estabelecidas no leilão de 5G. Uso de satélites também está em estudos",
+   "id": "5836fa056e42",
+   "titulo": "Starlink pede à Anatel autorização para usar novas faixas de frequência no Brasil",
+   "url": "https://teletime.com.br/04/11/2026/starlink-anatel-novas-faixas",
+   "resumo": "O objetivo seria permitir a comunicação entre os satélites da empresa e estações terrestres de apoio (gateways) que fazem a ligação da constelação com as redes de telecomunicações em solo. Pedido da Starlink foi submetido à consulta pública",
    "fonte": "Teletime",
    "fonteId": "teletime",
-   "dataPub": "2026-11-06",
-   "imagem": "https://teletime.com.br/wp-content/uploads/2026/11/Design-sem-nome-2026-11-06T112911.149-534x462.webp",
-   "coletadoEm": "2026-11-07T10:35:36Z",
+   "dataPub": "2026-11-04",
+   "imagem": "https://teletime.com.br/wp-content/uploads/2026/08/Design-sem-nome-2026-08-19T205556.299-534x462.webp",
+   "coletadoEm": "2026-11-05T10:08:32Z",
    "tipo": "inclusao",
    "programas": [
     "inclusao",
     "astronomia"
    ],
    "escopo": "Nacional",
-   "pontos": 27,
+   "pontos": 26,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "3c0cae789e70",
+   "titulo": "O que mais de 20 milhões de usuários nos ensinaram sobre o que as pessoas realmente querem",
+   "url": "https://startupi.com.br/o-que-mais-de-20-milhoes-de-usuarios-nos-ensinaram-sobre-o-que-as-pessoas-realmente-querem",
+   "resumo": "Startupi O que mais de 20 milhões de usuários nos ensinaram sobre o que as pessoas realmente querem Por Nara Iachan, cofundadora e CMO da Loyalme O post O que mais de 20 milhões de usuários nos ensinaram sobre o que as pessoas realmente querem aparece primeiro em Startupi e foi escrito por Convidado Especial O post O…",
+   "fonte": "Startupi",
+   "fonteId": "startupi",
+   "dataPub": "2026-11-04",
+   "imagem": "https://startupi.com.br/wp-content/uploads/2026/10/Captura-de-tela-2026-10-07-202403.png",
+   "coletadoEm": "2026-11-05T10:08:33Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Nacional",
+   "pontos": 26,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "e103064999ca",
+   "titulo": "Enem: cursinhos populares preparam alunos em vulnerabilidade social",
+   "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/enem-cursinhos-populares-preparam-alunos-em-vulnerabilidade-social",
+   "resumo": "Quem vê Raimundo dos Santos Nascimento, de 62 anos, em uma sala de um cursinho popular da Ceilândia, no Distrito Federal, não faz ideia da trajetória que este carioca percorreu até esta preparação para o Exame Nacional do Ensino Médio (Enem). Ele é um dos 13.821 candidatos do Enem 2026 com mais de 60 anos. Vindo do…",
+   "fonte": "Agência Brasil",
+   "fonteId": "agenciabrasil",
+   "dataPub": "2026-11-05",
+   "imagem": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg",
+   "coletadoEm": "2026-11-05T12:10:04Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Nacional",
+   "pontos": 26,
+   "urgente": true,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "1f814d5b8c44",
+   "titulo": "Robôs e IA aceleram o desenvolvimento de plantas resilientes ao clima nos Países Baixos",
+   "url": "https://consecti.org.br/robos-e-ia-aceleram-o-desenvolvimento-de-plantas-resilientes-ao-clima-nos-paises-baixos",
+   "resumo": "Com novo financiamento de € 5,4 milhões, centro neerlandês de monitoramento vegetal avançado expande módulos automatizados e ferramentas digitais para enfrentar desafios agrícolas globais Plantas cultivadas em câmaras de crescimento no NPEC (foto: Elton Alisson/Agência FAPESP) Elton Alisson, de Wageningen (Países…",
+   "fonte": "Consecti",
+   "fonteId": "consecti",
+   "dataPub": "2026-11-05",
+   "imagem": "https://agencia.fapesp.br/files/upload/59555/rick-van-de-zedde-cred-eltonalisson-selecao-1-de-1.jpg",
+   "coletadoEm": "2026-11-05T12:10:16Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "fomento",
+    "secretaria2030"
+   ],
+   "escopo": "Nacional",
+   "pontos": 26,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
   },
   {
-   "id": "b0a909ef54f6",
-   "titulo": "GPS sai do celular e vai para dentro do capacete de motociclistas",
-   "url": "https://paraibabusiness.com.br/gps-sai-do-celular-e-vai-para-dentro-do-capacete-de-motociclistas",
-   "resumo": "Consultar o GPS durante uma viagem de moto pode exigir que o condutor desvie a atenção da estrada para acompanhar a tela do celular ou do painel. Uma startup suíça quer mudar essa experiência ao levar as informações de navegação para dentro do capacete. O Aegis Rider Vision utiliza realidade aumentada para projetar…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-06",
+   "id": "3cc517dfee0a",
+   "titulo": "Ruy Carneiro participa de evento mundial sobre Cidades Inteligentes em Barcelona",
+   "url": "https://www.maispb.com.br/866835/ruy-carneiro-participa-de-evento-mundial-sobre-cidades-inteligentes-em-barcelona.html",
+   "resumo": "O deputado federal Ruy Carneiro (Podemos-PB) participou de terça (3), até esta quinta-feira (5), do Smart City Expo World Congress 2026, evento internacional de referência em inovação urbana e transformação digital, em Barcelona, na Espanha. “Soluções urbanas, impacto real” foi o tema das discussões cujo foco foi…",
+   "fonte": "MaisPB",
+   "fonteId": "maispb",
+   "dataPub": "2026-11-05",
    "imagem": "",
-   "coletadoEm": "2026-11-06T10:32:46Z",
-   "tipo": "inovacao",
+   "coletadoEm": "2026-11-06T10:18:41Z",
+   "tipo": "evento",
    "programas": [
     "inovacao"
    ],
    "escopo": "Paraíba",
-   "pontos": 27,
+   "pontos": 26,
+   "urgente": true,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "225cebe08a09",
+   "titulo": "Edital da Embrapii e Petrobras vai investir em projetos de alto impacto em economia circular",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNS1pXYWYxc245SXBKT2tpajJKd0djTVJZcUg4Y2dWNk4xTE1MM21PbUxzTDNSTk9wSVNXSkRuUlJtYnB0S19RTUpVMXlsQndyamU0aThyVjF5X3ZEb2FrZ2FaaFhCcVZyUTUwcmE2d3dRZWZfaUdkNW12dUdiOWFvRnJFcUtxb2JCYjRMcHN4UWE1NEkxQVc5dW10UjhZZkdJbE9scGhMd2NhamVuSzFDVWhtOU5ob21iZ3JwWE9WRXhxT3pldUNJblRVMmwyeHFMYWlTWWl4c1FMUkh3ZWktQmFkWEdNMHY5VGl4Tw?oc=5",
+   "resumo": "",
+   "fonte": "MCTI",
+   "fonteId": "mcti",
+   "dataPub": "2026-11-05",
+   "imagem": "",
+   "coletadoEm": "2026-11-06T10:32:49Z",
+   "tipo": "edital",
+   "programas": [
+    "fomento",
+    "inovacao"
+   ],
+   "escopo": "Nacional",
+   "pontos": 26,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "bdd305ce1c20",
+   "titulo": "Prefeitura deJP lança edital para comerciantes informais que queiram trabalhar na Romaria da Penha 2026",
+   "url": "https://paraibatotal.com.br/2026/11/06/prefeitura-dejp-lanca-edital-para-comerciantes-informais-que-queiram-trabalhar-na-romaria-da-penha-2026",
+   "resumo": "A Prefeitura de João Pessoa, através da Secretaria de Desenvolvimento Urbano (Sedurb), publicou, nesta quarta-feira (4), no Diário […]",
+   "fonte": "Paraíba Total",
+   "fonteId": "paraibatotal",
+   "dataPub": "2026-11-06",
+   "imagem": "https://paraibatotal.com.br/wp-content/uploads/2023/11/BANNER-WEB-728x90-TODOS.gif",
+   "coletadoEm": "2026-11-06T12:03:09Z",
+   "tipo": "edital",
+   "programas": [
+    "transversal",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 26,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -426,32 +426,43 @@
  "doe": {},
  "secom": [
   {
+   "titulo": "Paraíba recebe computadores quânticos de última geração para impulsionar pesquisas científicas",
+   "portal": "Poder Paraíba",
+   "url": "https://poderparaiba.com.br/paraiba-recebe-computadores-quanticos-de-ultima-geracao-para-impulsionar-pesquisas-cientificas",
+   "dataPub": "2026-11-07",
+   "programas": [
+    "ciquanta",
+    "fomento",
+    "internacional"
+   ],
+   "resumo": ""
+  },
+  {
    "titulo": "Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES",
    "portal": "UEPB",
-   "url": "https://uepb.edu.br/pro-reitoria-de-ensino-medio-tecnico-e-educacao-a-distancia-abre-selecao-para-docentes-atuarem-nos-cursos-da-secties",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVjg1Y25YQ2hWRjJKeGtIcVVzX1NuM1BXbzctV1FtZDNxSTBQd29IcUlxcF9lSkRKNHBTeGZZYzFjNkRCX2NFX0h0QUpicFFheTBtZ1FaWU5Nc3hNLUlVUVVWaHNxMnc5ZFdINjJvNXBDaWFsa2VnTnZKdFBsWURHX0cxOXdZbWVJLUtVcTNHbFc5a25NOXo4WGhOUWVMcDRTTTgxUjdVWXU0cHZRdWtRY01TeTNYdWJHU2h5aXhZUUVwWHVWTmFHQnU3WTdPcndHVEJJ?oc=5",
    "dataPub": "2026-11-06",
    "programas": [
-    "ensino",
-    "inovacao"
+    "ensino"
    ],
    "resumo": ""
   }
  ],
  "propostas": [],
  "doeAuto": {
-  "data": "2026-11-07",
+  "data": "2026-11-08",
   "lido": false,
   "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-07T08:54:14-03:00",
+ "geradoEm": "2026-11-08T07:37:25-03:00",
  "saude": [
   {
    "id": "abdi",
    "nome": "ABDI",
    "ok": true,
-   "itens": 8,
+   "itens": 6,
    "feed": "https://www.abdi.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -505,7 +516,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 2,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -514,7 +525,7 @@
    "id": "agenciafapesp",
    "nome": "Agência FAPESP",
    "ok": true,
-   "itens": 20,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -547,19 +558,10 @@
    "obs": ""
   },
   {
-   "id": "anpd",
-   "nome": "ANPD",
-   "ok": true,
-   "itens": 9,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 7,
+   "itens": 4,
    "feed": "https://anprotec.org.br/site/feed/",
    "via": "feed",
    "obs": ""
@@ -577,10 +579,10 @@
    "id": "alpb",
    "nome": "Assembleia Legislativa da Paraíba",
    "ok": true,
-   "itens": 2,
+   "itens": 0,
    "feed": "https://www.al.pb.leg.br/feed/",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "baguete",
@@ -604,7 +606,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -613,7 +615,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 5,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -622,7 +624,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 22,
+   "itens": 23,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -631,7 +633,7 @@
    "id": "cgibr",
    "nome": "CGI.br",
    "ok": true,
-   "itens": 4,
+   "itens": 2,
    "feed": "https://cgi.br/noticias/feed.rss",
    "via": "feed",
    "obs": ""
@@ -658,7 +660,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 20,
+   "itens": 24,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -667,16 +669,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 8,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "ec-digital",
-   "nome": "Comissão Europeia Digital",
-   "ok": true,
-   "itens": 1,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -685,7 +678,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 9,
+   "itens": 8,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -712,7 +705,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -721,7 +714,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 39,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -730,7 +723,7 @@
    "id": "embrapii",
    "nome": "Embrapii",
    "ok": true,
-   "itens": 5,
+   "itens": 4,
    "feed": "https://embrapii.org.br/feed/",
    "via": "feed",
    "obs": ""
@@ -747,15 +740,6 @@
   {
    "id": "eurekalert",
    "nome": "EurekAlert",
-   "ok": true,
-   "itens": 7,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "fiepb",
-   "nome": "FIEP",
    "ok": true,
    "itens": 6,
    "feed": "busca de notícias",
@@ -784,7 +768,7 @@
    "id": "govdigital",
    "nome": "Governo Digital",
    "ok": true,
-   "itens": 5,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -797,15 +781,6 @@
    "feed": "https://www.govtech.com/artificial-intelligence.rss",
    "via": "feed",
    "obs": ""
-  },
-  {
-   "id": "horizontes",
-   "nome": "Horizontes de Inovação",
-   "ok": true,
-   "itens": 0,
-   "feed": "https://horizontesdeinovacao.pb.gov.br/feed/",
-   "via": "feed",
-   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "hpcwire",
@@ -838,7 +813,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 11,
+   "itens": 9,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -847,7 +822,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 36,
+   "itens": 32,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -883,7 +858,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 10,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -919,7 +894,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 38,
+   "itens": 33,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -946,7 +921,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 15,
+   "itens": 17,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1000,9 +975,9 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 7,
-   "feed": "https://nossaciencia.com.br/feed/",
-   "via": "feed",
+   "itens": 4,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -1081,7 +1056,7 @@
    "id": "pesquisafapesp",
    "nome": "Pesquisa FAPESP",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "https://revistapesquisa.fapesp.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1090,7 +1065,7 @@
    "id": "physorg-quantum",
    "nome": "Phys.org Quantum",
    "ok": true,
-   "itens": 29,
+   "itens": 27,
    "feed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
    "via": "feed",
    "obs": ""
@@ -1099,7 +1074,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 29,
+   "itens": 23,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1129,24 +1104,6 @@
    "itens": 10,
    "feed": "https://portalcorreio.com.br/feed/",
    "via": "feed",
-   "obs": ""
-  },
-  {
-   "id": "pmcg",
-   "nome": "Prefeitura de Campina Grande",
-   "ok": true,
-   "itens": 33,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "pmjp",
-   "nome": "Prefeitura de João Pessoa",
-   "ok": true,
-   "itens": 38,
-   "feed": "busca de notícias",
-   "via": "busca",
    "obs": ""
   },
   {
@@ -1216,7 +1173,7 @@
    "id": "sebrae-startups",
    "nome": "Sebrae Startups",
    "ok": true,
-   "itens": 3,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1234,7 +1191,7 @@
    "id": "serpro",
    "nome": "Serpro",
    "ok": true,
-   "itens": 10,
+   "itens": 9,
    "feed": "https://www.serpro.gov.br/RSS",
    "via": "feed",
    "obs": ""
@@ -1243,7 +1200,7 @@
    "id": "spacenews",
    "nome": "SpaceNews",
    "ok": true,
-   "itens": 9,
+   "itens": 8,
    "feed": "https://spacenews.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1279,7 +1236,7 @@
    "id": "theconversation-br",
    "nome": "The Conversation Brasil",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "https://theconversation.com/br/articles.atom",
    "via": "feed",
    "obs": ""
@@ -1306,9 +1263,9 @@
    "id": "uepb",
    "nome": "UEPB",
    "ok": true,
-   "itens": 20,
-   "feed": "https://uepb.edu.br/feed/",
-   "via": "feed",
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -1324,7 +1281,7 @@
    "id": "unesco",
    "nome": "UNESCO",
    "ok": true,
-   "itens": 6,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1373,6 +1330,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "anpd",
+   "nome": "ANPD",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "worldbank-digital",
    "nome": "Banco Mundial Digital",
    "ok": false,
@@ -1397,6 +1362,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "ec-digital",
+   "nome": "Comissão Europeia Digital",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "europeana",
    "nome": "Europeana",
    "ok": false,
@@ -1407,6 +1380,22 @@
   {
    "id": "fapesq",
    "nome": "FAPESQ",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "fiepb",
+   "nome": "FIEP",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "horizontes",
+   "nome": "Horizontes de Inovação",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1439,6 +1428,22 @@
   {
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "pmcg",
+   "nome": "Prefeitura de Campina Grande",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "pmjp",
+   "nome": "Prefeitura de João Pessoa",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1486,14 +1491,14 @@
   }
  ],
  "curiosidade": {
-  "texto": "O desenho do átomo com bolinhas girando em órbitas, como o desta seção, é de 1913. Hoje sabemos que o elétron é mais uma nuvem do que um planetinha.",
-  "porque": "O modelo de Bohr foi um passo enorme, mas a mecânica quântica mostrou que só dá para falar em probabilidade de encontrar o elétron.",
-  "tema": "atomo",
-  "area": "Física atômica",
-  "formula": "modelo de Bohr, 1913"
+  "texto": "A Ponta do Seixas, em João Pessoa, é o ponto mais a leste das Américas. Por isso a cidade é conhecida como o lugar onde o Sol nasce primeiro no continente.",
+  "porque": "Como a Terra gira de oeste para leste, quem está mais a leste vê o Sol primeiro.",
+  "tema": "rotacao",
+  "area": "Astronomia",
+  "formula": "34° 47′ O: o leste das Américas"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-07-0854.png",
- "link": "https://radar.secties.pb.gov.br/edicao/22/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 22\n_Sábado, 7 de novembro de 2026_\n\n*UNIVERSITY OF CAMBRIDGE JOINS UK QUANTUM COMMERCIALISATION INITIATIVE*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. *Prazo:* Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_\n2. Primeiros computadores quânticos da América Latina desembarcam no Brasil em força-tarefa que custou R$ 80 milhões _(Convergência Digital)_\n3. Oficinas de compostagem: uma proposta de educação ambiental no IFPB – Campus Cajazeiras e na ASCAMARC _(IFPB)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Workshop em comemoração aos 15 anos do PPGCF debate sobre tecnologia e química para inovação terapêutica\n*Brasil:* Hughes aposta em solução de conectividade híbrida para frotas\n*Mundo:* Horizon Quantum Plans to Acquire Entropica Labs for $27 Million\n\n> *Você sabia?* O desenho do átomo com bolinhas girando em órbitas, como o desta seção, é de 1913. Hoje sabemos que o elétron é mais uma nuvem do que um planetinha.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/22/"
+ "capa": "capa-2026-11-08-0737.png",
+ "link": "https://radar.secties.pb.gov.br/edicao/23/",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 23\n_Domingo, 8 de novembro de 2026_\n\n*QUANTUM SUPERCONNECTOR TO ACCELERATE COMMERCIAL SUCCESS OF UK QUANTUM RESEARCH*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Paraíba recebe computadores quânticos de última geração para impulsionar pesquisas científicas _(Poder Paraíba)_\n2. Pró-reitoria de Ensino Médio, Técnico e Educação a Distância abre seleção para docentes atuarem nos cursos da SECTIES _(UEPB)_\n3. Inovenow impulsiona desenvolvimento de startups e inovação na Paraíba _(Paraíba Business)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* 9º Seminário de Extensão é encerrado com homenagem e premiação de artigos publicados em e-book comemorativo\n*Brasil:* Agência de Inovação expõe projetos de laboratórios da Unemat na Semana de Inovação de Mato Grosso\n*Mundo:* UK Announces New Funding to Support Quantum Technology Commercialisation\n\n> *Você sabia?* A Ponta do Seixas, em João Pessoa, é o ponto mais a leste das Américas. Por isso a cidade é conhecida como o lugar onde o Sol nasce primeiro no continente.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/23/"
 }
