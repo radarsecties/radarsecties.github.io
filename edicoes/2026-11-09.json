@@ -154,6 +154,48 @@
    "origem": "auto"
   },
   {
+   "id": "0885f112ba85",
+   "titulo": "Enem: tema da redação é “Valorização do SUS como direito universal”",
+   "url": "https://portalcorreio.com.br/enem-tema-da-redacao-e-valorizacao-do-sus-como-direito-universal",
+   "resumo": "O tema da redação do Exame Nacional do Ensino Médio (Enem) de 2026 é “A valorização do Sistema Único de Saúde (SUS) como direito universal”, conforme divulgado pelo ministro da Educação, Leonardo Barchini, em redes sociais. O Enem começou a ser aplicado em todo o país a partir das 13h30 (horário de Brasília). Os…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-08",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/e96e06d5eb87ac80f9ccd548f03ff247.jpg",
+   "coletadoEm": "2026-11-09T10:50:45Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 34,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "2ee4d5514b9e",
+   "titulo": "Feira Central de Campina Grande é tema de questão no Enem 2026",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/09/feira-central-de-campina-grande-e-tema-de-questao-no-enem-2026",
+   "resumo": "A Feira Central de Campina Grande integrou a prova do Exame Nacional do Ensino Médio (Enem) 2026 na Questão 89. A pergunta utilizou um trecho do Dossiê de Registro da Feira de Campina Grande, documento do Instituto do Patrimônio Histórico e Artístico Nacional (Iphan) que serviu de base para o reconhecimento do local…",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-09",
+   "imagem": "",
+   "coletadoEm": "2026-11-09T12:11:27Z",
+   "tipo": "evento",
+   "programas": [
+    "ensino",
+    "patrimonio"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "5729c71285f9",
    "titulo": "Mercedes-Benz leva a IA para dentro do carro com novo assistente de voz",
    "url": "https://paraibabusiness.com.br/mercedes-benz-leva-a-ia-para-dentro-do-carro-com-novo-assistente-de-voz",
@@ -277,7 +319,7 @@
    "escopo": "Paraíba",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -319,7 +361,7 @@
    "escopo": "Nacional",
    "pontos": 29,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -344,6 +386,28 @@
    "origem": "auto"
   },
   {
+   "id": "b96a4d84a785",
+   "titulo": "Projeto do Ibict para uso de inteligência artificial na Ciência Aberta recebe aprovação preliminar do CNPq",
+   "url": "https://consecti.org.br/projeto-do-ibict-para-uso-de-inteligencia-artificial-na-ciencia-aberta-recebe-aprovacao-preliminar-do-cnpq",
+   "resumo": "Com parecer preliminar favorável na Chamada Universal 2026 do CNPq, o projeto LAIA-Ibict prevê o desenvolvimento de uma plataforma experimental de inteligência artificial para Ciência Aberta e a criação do Observatório Semântico da Ciência Brasileira. O Instituto Brasileiro de Informação em Ciência e Tecnologia…",
+   "fonte": "Consecti",
+   "fonteId": "consecti",
+   "dataPub": "2026-11-09",
+   "imagem": "",
+   "coletadoEm": "2026-11-09T12:12:04Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "fomento",
+    "secretaria2030",
+    "astronomia"
+   ],
+   "escopo": "Nacional",
+   "pontos": 27,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
    "id": "6ad2d2bc3e80",
    "titulo": "Concurso da prefeitura de Conceição: inscrições para 129 vagas encerram neste domingo (8)",
    "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/concurso-prefeitura-de-conceicao-2026",
@@ -363,67 +427,6 @@
    "urgente": true,
    "relevancia": "radar",
    "origem": "auto"
-  },
-  {
-   "id": "fba35c8fc596",
-   "titulo": "Enem: confira as regras da redação e dicas para um texto nota 1.000",
-   "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/enem-confira-regras-da-redacao-e-dicas-para-um-texto-nota-1000",
-   "resumo": "A Prova de Redação será um dos desafios dos mais de 5 milhões de inscritos no Exame Nacional do Ensino Médio (Enem) neste domingo. A avaliação conta com textos de apoio para que o candidato discorra, em até 30 linhas, sobre o tema proposto. Notícias relacionadas: MEC Enem reúne recursos gratuitos para a reta final de…",
-   "fonte": "Agência Brasil",
-   "fonteId": "agenciabrasil",
-   "dataPub": "2026-11-07",
-   "imagem": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg",
-   "coletadoEm": "2026-11-07T11:52:43Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Nacional",
-   "pontos": 26,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "1c5f05edb463",
-   "titulo": "Governo da Paraíba amplia incentivo à literatura com publicação de 42 obras inéditas",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/06/governo-da-paraiba-amplia-incentivo-a-literatura-com-publicacao-de-42-obras-ineditas",
-   "resumo": "O governador Lucas Ribeiro entregou, nesta quinta-feira (5), aos autores os exemplares das 42 obras literárias inéditas cuja publicação foi viabilizada por meio de edital público de incentivo à produção cultural paraibana. A iniciativa contemplou escritores de 22 cidades e representa um investimento de R$ 500 mil do…",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:12Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 26,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "2ca57b5453ae",
-   "titulo": "Dólar sobe 0,44% e fecha a R$ 5,51; Ibovespa avança 1,39%",
-   "url": "https://paraibabusiness.com.br/dolar-sobe-044-e-fecha-a-r-551-ibovespa-avanca-139",
-   "resumo": "O dólar comercial fechou a sexta-feira (6) cotado a R$ 5,51, com alta de 0,44%. A valorização foi influenciada pelos dados de emprego dos Estados Unidos e pelas expectativas dos investidores em relação à política econômica do quarto mandato do presidente Luiz Inácio Lula da Silva, segundo informações da Agência…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:17Z",
-   "tipo": "evento",
-   "programas": [
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 26,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
   }
  ],
  "doe": {},
@@ -436,7 +439,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-09T07:52:18-03:00",
+ "geradoEm": "2026-11-09T09:13:17-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -613,7 +616,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 18,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -646,24 +649,6 @@
    "obs": ""
   },
   {
-   "id": "cnpq",
-   "nome": "CNPq",
-   "ok": true,
-   "itens": 28,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "codata",
-   "nome": "CODATA",
-   "ok": true,
-   "itens": 4,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "ec-digital",
    "nome": "Comissão Europeia Digital",
    "ok": true,
@@ -676,7 +661,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -703,7 +688,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -754,15 +739,6 @@
    "obs": ""
   },
   {
-   "id": "finep",
-   "nome": "Finep",
-   "ok": true,
-   "itens": 4,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "folhapatoense",
    "nome": "Folha Patoense",
    "ok": true,
@@ -802,7 +778,7 @@
    "id": "ibram",
    "nome": "Ibram",
    "ok": true,
-   "itens": 15,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -823,24 +799,6 @@
    "itens": 8,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
-   "obs": ""
-  },
-  {
-   "id": "ifpb",
-   "nome": "IFPB",
-   "ok": true,
-   "itens": 35,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "insa",
-   "nome": "INSA",
-   "ok": true,
-   "itens": 2,
-   "feed": "busca de notícias",
-   "via": "busca",
    "obs": ""
   },
   {
@@ -865,7 +823,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 6,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -901,7 +859,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 33,
+   "itens": 31,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1072,7 +1030,7 @@
    "id": "physorg-quantum",
    "nome": "Phys.org Quantum",
    "ok": true,
-   "itens": 24,
+   "itens": 25,
    "feed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
    "via": "feed",
    "obs": ""
@@ -1081,7 +1039,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 21,
+   "itens": 22,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1321,15 +1279,6 @@
    "obs": "Respondeu, mas sem notícias recentes"
   },
   {
-   "id": "wscom",
-   "nome": "WSCOM",
-   "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "xinhua",
    "nome": "Xinhua Ciência",
    "ok": true,
@@ -1379,6 +1328,22 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "cnpq",
+   "nome": "CNPq",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "codata",
+   "nome": "CODATA",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "europeana",
    "nome": "Europeana",
    "ok": false,
@@ -1395,6 +1360,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "finep",
+   "nome": "Finep",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "horizontes",
    "nome": "Horizontes de Inovação",
    "ok": false,
@@ -1405,6 +1378,22 @@
   {
    "id": "ifsertaopb",
    "nome": "IF Sertão Paraibano",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "ifpb",
+   "nome": "IFPB",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "insa",
+   "nome": "INSA",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1473,6 +1462,14 @@
    "itens": 0,
    "feed": null,
    "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "wscom",
+   "nome": "WSCOM",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
   }
  ],
  "curiosidade": {
@@ -1482,5 +1479,5 @@
   "area": "Termodinâmica",
   "formula": "efeito Mpemba"
  },
- "capa": "capa-2026-11-09-0752.png"
+ "capa": "capa-2026-11-09-0913.png"
 }
