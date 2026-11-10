@@ -3,7 +3,7 @@
  "numero": 25,
  "modo": "automatico",
  "destaque": "Google Researchers Use AI And Mathematical Proofs to Cut Quantum Computing Requirements",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica; e Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária; e Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers.",
  "itens": [
   {
    "id": "9d125a0423a8",
@@ -26,6 +26,27 @@
    "origem": "auto"
   },
   {
+   "id": "00d7bca2c370",
+   "titulo": "PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária",
+   "url": "https://uepb.edu.br/ppgcf-promove-feira-de-ciencias-para-aproximar-estudantes-da-educacao-basica-a-pesquisa-universitaria",
+   "resumo": "O Programa de Pós-graduação em Ciências Farmacêuticas (PPGCF), da Universidade Estadual da Paraíba (UEPB), realizará, no dia 25 de novembro, no Câmpus I, em Campina Grande, a “Feira de Ciências no Semiárido Brasileiro: (re)descobrindo as potencialidades e popularizando a ciência”. A iniciativa integra a programação do…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-10",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T18:42:13Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 41,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
    "id": "a0f48ebe7f6e",
    "titulo": "Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica",
    "url": "https://uepb.edu.br/coordenadoria-de-inovacao-tecnologica-obtem-concessao-de-novos-registros-de-softwares-voltados-a-saude-e-a-pesquisa-cientifica",
@@ -43,7 +64,7 @@
    "escopo": "Paraíba",
    "pontos": 38,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -63,26 +84,6 @@
    "escopo": "Paraíba",
    "pontos": 37,
    "urgente": true,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "f009bfc642a7",
-   "titulo": "Pró-reitoria de Graduação abre processo seletivo com vagas para ingresso de graduados no semestre letivo 2027.1",
-   "url": "https://uepb.edu.br/pro-reitoria-de-graduacao-abre-processo-seletivo-com-vagas-para-ingresso-de-graduados-no-semestre-letivo-2027-1",
-   "resumo": "A Pró-reitoria de Graduação (PROGRAD) da Universidade Estadual da Paraíba (UEPB) divulgou, nesta sexta-feira (6), a abertura do processo seletivo para ingresso de graduados. As vagas são destinadas ao período letivo 2027/1. As inscrições estarão abertas das 16h do dia 9 de novembro às 16h do dia 7 de dezembro e…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-06",
-   "imagem": "",
-   "coletadoEm": "2026-11-07T10:35:07Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 36,
-   "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
@@ -129,6 +130,27 @@
    "origem": "auto"
   },
   {
+   "id": "0d9e26dd3e07",
+   "titulo": "Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers",
+   "url": "https://paraibabusiness.com.br/governo-investe-r-463-milhoes-em-plataforma-de-ia-para-mini-data-centers",
+   "resumo": "O Ministério das Comunicações aprovou R$ 46,3 milhões do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel) para o projeto Prisma, plataforma que usa inteligência artificial para distribuir o processamento de dados entre infraestruturas, inclusive mini data centers, segundo o ministério em 9 de…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-10",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T18:42:29Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
    "id": "6ed503d743fe",
    "titulo": "Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11",
    "url": "https://consecti.org.br/finep-amplia-para-r-500-milhoes-chamada-de-transformacao-mineral-com-inscricoes-ate-30-11",
@@ -167,7 +189,7 @@
    "escopo": "Paraíba",
    "pontos": 33,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -314,26 +336,6 @@
    "escopo": "Paraíba",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "d50615606e21",
-   "titulo": "Estudo: IA resolveu dúvida de compra de 79% dos consumidores que pediram indicação",
-   "url": "https://paraibabusiness.com.br/estudo-ia-resolveu-duvida-de-compra-de-79-dos-consumidores-que-pediram-indicacao",
-   "resumo": "A inteligência artificial (IA) resolveu a dúvida de compra de 79% dos consumidores que pediram indicação de produtos a ferramentas do tipo, e 55% já deixaram de comprar de uma marca que a IA não recomendou, segundo o estudo “Jornada de compra na era da IA”, da Conversion com a Opinion Box, divulgado pelo Meio […]",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-10",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:13Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 29,
-   "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
   },
@@ -445,7 +447,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-10T14:33:45-03:00",
+ "geradoEm": "2026-11-10T15:44:01-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -460,7 +462,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -496,7 +498,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 10,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -550,7 +552,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 4,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -577,10 +579,10 @@
    "id": "alpb",
    "nome": "Assembleia Legislativa da Paraíba",
    "ok": true,
-   "itens": 0,
+   "itens": 1,
    "feed": "https://www.al.pb.leg.br/feed/",
    "via": "feed",
-   "obs": "Respondeu, mas sem notícias recentes"
+   "obs": ""
   },
   {
    "id": "baguete",
@@ -622,7 +624,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 19,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -658,7 +660,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 31,
+   "itens": 29,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -712,7 +714,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 16,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -901,7 +903,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 38,
+   "itens": 29,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1135,7 +1137,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 37,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1306,7 +1308,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 10,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1492,7 +1494,7 @@
   "formula": "átomo: 99,9999999% de vazio"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-10-1433.png",
+ "capa": "capa-2026-11-10-1544.png",
  "link": "https://radar.secties.pb.gov.br/edicao/25/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 25\n_Terça-feira, 10 de novembro de 2026_\n\n*GOOGLE RESEARCHERS USE AI AND MATHEMATICAL PROOFS TO CUT QUANTUM COMPUTING REQUIREMENTS*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja _(Jornal da Paraíba)_\n2. Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica _(UEPB)_\n3. *Prazo:* Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11 _(Consecti)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* EUA acusam três homens de desviar US$ 129 milhões com deepfakes de executivos\n*Brasil:* Pagamento das bolsas da CAPES\n*Mundo:* QCi Reports $9.5 Million in Quarterly Revenue as Acquisitions Expand Commercial Business\n\n> *Você sabia?* Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/25/"
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 25\n_Terça-feira, 10 de novembro de 2026_\n\n*GOOGLE RESEARCHERS USE AI AND MATHEMATICAL PROOFS TO CUT QUANTUM COMPUTING REQUIREMENTS*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja _(Jornal da Paraíba)_\n2. PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária _(UEPB)_\n3. Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers _(Paraíba Business)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica\n*Brasil:* Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11\n*Mundo:* QCi Reports $9.5 Million in Quarterly Revenue as Acquisitions Expand Commercial Business\n\n> *Você sabia?* Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/25/"
 }
