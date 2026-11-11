@@ -3,7 +3,7 @@
  "numero": 26,
  "modo": "automatico",
  "destaque": "Metade das empresas brasileiras usa IA, mas só 28% medem o retorno",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde; e Metade das empresas brasileiras usa IA, mas só 28% medem o retorno.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde; e Metade das empresas brasileiras usa IA, mas só 28% medem o retorno.",
  "itens": [
   {
    "id": "7dec14a6410c",
@@ -256,6 +256,27 @@
    "origem": "auto"
   },
   {
+   "id": "7469952274fc",
+   "titulo": "Sebrae e ApexBrasil anunciam 20 startups para incubação em Lisboa",
+   "url": "https://anprotec.org.br/site/2026/11/sebrae-e-apexbrasil-anunciam-20-startups-para-incubacao-em-lisboa",
+   "resumo": "Com 11 startups lideradas por mulheres, nova turma começa em […] O post Sebrae e ApexBrasil anunciam 20 startups para incubação em Lisboa apareceu primeiro em Anprotec .",
+   "fonte": "Anprotec",
+   "fonteId": "anprotec",
+   "dataPub": "2026-11-11",
+   "imagem": "https://anprotec.org.br/site/wp-content/uploads/2026/11/Summit-3-1-scaled_p44030_cover_image_resized-300x181.webp",
+   "coletadoEm": "2026-11-11T18:44:31Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "internacional"
+   ],
+   "escopo": "Nacional",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "b3f40e86119e",
    "titulo": "CAPES prorroga prazo para submissão de propostas de pesquisa na Amazônia Legal",
    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQREM0WHFqOVFsa2xrcVBwdlZLNVRNaXdhdGJwa1FlVG5KeHVYcmFLSkU3dGR6dEQtWGV6MDBMOTRXODh0clgtREZXUzlIZmpfa1ZqOXFTMGJFQkNoeW9tVElQeHJZdm1oVXZLdnFFbm1DaWQ2c04weWJZYkZuaFd6QUJaVk1wSnB0TF9OLUlDOEhlTFFNUlhfeVYzU1BCLTJOUzNQNmZQSThyUkFVbDYzdlhSQUdxTEFqN2ZSVmQzVE85bXNWNkE?oc=5",
@@ -290,28 +311,6 @@
     "inovacao",
     "secretaria2030",
     "internacional"
-   ],
-   "escopo": "Nacional",
-   "pontos": 29,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "4e83451cb667",
-   "titulo": "Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink",
-   "url": "https://telesintese.com.br/vivo-satelite-10-milhoes-de-clientes-ja-usaram-servico-com-starlink",
-   "resumo": "Operadora paga pelo uso da capacidade satelital e prevê cobrança adicional em alguns planos após o período gratuito. O post Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink apareceu primeiro em TeleSíntese .",
-   "fonte": "Tele.Síntese",
-   "fonteId": "telesintese",
-   "dataPub": "2026-11-11",
-   "imagem": "https://telesintese.com.br/wp-content/uploads/2022/08/campo-rural-foto-freepik.jpg",
-   "coletadoEm": "2026-11-11T17:45:17Z",
-   "tipo": "inclusao",
-   "programas": [
-    "inclusao",
-    "astronomia",
-    "fomento"
    ],
    "escopo": "Nacional",
    "pontos": 29,
@@ -401,21 +400,23 @@
    "origem": "auto"
   },
   {
-   "id": "5a7aa09510e4",
-   "titulo": "Edital de Chamada Pública de Projetos GEE 001/2026 – Programa de Eficiência Energética (PEE/ANEEL)",
-   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNN3o5dy0yTmY2bGMtS096ZkhyT1hvVWVKczhLZzh6OU5VNTQySzEwZTUyU3p6ZWZNaG5ENWlUSjkzNlZ0UFY0NDFaMWZMNXJPeHBqU3prYmQ4WHBEXzk5ZlB6a090Y0VRSEhCa0hDLXpveWtoYi1CckEzeWhkNWxIOERuUFFiUWk3WnhneHlYM0htVGhiUzEwLXUtY2tqTWJmcXhiREx2TzhNZXpLQzMwVHZJNXFYMG1DN0ljbUtnSHdhYjhMNFUwVEI2WENVS092eDF5TURHNGQ2LU9PTGc?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
-   "dataPub": "2026-11-08",
-   "imagem": "",
-   "coletadoEm": "2026-11-11T17:44:47Z",
-   "tipo": "edital",
+   "id": "4e83451cb667",
+   "titulo": "Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink",
+   "url": "https://telesintese.com.br/vivo-satelite-10-milhoes-de-clientes-ja-usaram-servico-com-starlink",
+   "resumo": "Operadora paga pelo uso da capacidade satelital e prevê cobrança adicional em alguns planos após o período gratuito. O post Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink apareceu primeiro em TeleSíntese .",
+   "fonte": "Tele.Síntese",
+   "fonteId": "telesintese",
+   "dataPub": "2026-11-11",
+   "imagem": "https://telesintese.com.br/wp-content/uploads/2022/08/campo-rural-foto-freepik.jpg",
+   "coletadoEm": "2026-11-11T17:45:17Z",
+   "tipo": "inclusao",
    "programas": [
+    "inclusao",
+    "astronomia",
     "fomento"
    ],
-   "escopo": "Paraíba",
-   "pontos": 28,
+   "escopo": "Nacional",
+   "pontos": 29,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -431,13 +432,13 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-11T14:46:29-03:00",
+ "geradoEm": "2026-11-11T15:45:23-03:00",
  "saude": [
   {
    "id": "abdi",
    "nome": "ABDI",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "https://www.abdi.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -491,7 +492,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 7,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -545,7 +546,7 @@
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 7,
+   "itens": 9,
    "feed": "https://anprotec.org.br/site/feed/",
    "via": "feed",
    "obs": ""
@@ -599,7 +600,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 27,
+   "itens": 26,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -617,7 +618,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 18,
+   "itens": 17,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -761,7 +762,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -866,15 +867,6 @@
    "obs": ""
   },
   {
-   "id": "iphan",
-   "nome": "Iphan",
-   "ok": true,
-   "itens": 11,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "cio",
    "nome": "IT Forum",
    "ok": true,
@@ -932,7 +924,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 23,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1193,10 +1185,10 @@
    "id": "science",
    "nome": "Science",
    "ok": true,
-   "itens": 10,
+   "itens": 0,
    "feed": "https://www.science.org/rss/news_current.xml",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "sebrae-pb",
@@ -1211,7 +1203,7 @@
    "id": "sebrae-startups",
    "nome": "Sebrae Startups",
    "ok": true,
-   "itens": 2,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1424,6 +1416,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "iphan",
+   "nome": "Iphan",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "jampanews",
    "nome": "Jampa News",
    "ok": false,
@@ -1480,7 +1480,7 @@
   "formula": "v = ω · R ≈ 1.650 km/h"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-11-1446.png",
+ "capa": "capa-2026-11-11-1545.png",
  "link": "https://radar.secties.pb.gov.br/edicao/26/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 26\n_Quarta-feira, 11 de novembro de 2026_\n\n*METADE DAS EMPRESAS BRASILEIRAS USA IA, MAS SÓ 28% MEDEM O RETORNO*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. 5ª edição de seminário realizado pela PROCULT discute papel da Universidade, cultura e sociedade democrática _(UEPB)_\n2. Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde _(UFPB)_\n3. Zhengyuan Quantum Raises Angel Funding For 1,000-Qubit Computer _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Divulgado resultado final do processo seletivo para Programa de Tutoria Especial nos Câmpus I, III, IV, V e VII\n*Brasil:* Governo do Paraná une IA, nuvem e segurança da Informação em megalicitação de TI\n*Mundo:* SEAFOOD Puts OCTOPUS and Quantum Computers on the Same Menu\n\n> *Você sabia?* Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/26/"
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 26\n_Quarta-feira, 11 de novembro de 2026_\n\n*METADE DAS EMPRESAS BRASILEIRAS USA IA, MAS SÓ 28% MEDEM O RETORNO*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. 5ª edição de seminário realizado pela PROCULT discute papel da Universidade, cultura e sociedade democrática _(UEPB)_\n2. Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde _(UFPB)_\n3. Zhengyuan Quantum Raises Angel Funding For 1,000-Qubit Computer _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Divulgado resultado final do processo seletivo para Programa de Tutoria Especial nos Câmpus I, III, IV, V e VII\n*Brasil:* Governo do Paraná une IA, nuvem e segurança da Informação em megalicitação de TI\n*Mundo:* SEAFOOD Puts OCTOPUS and Quantum Computers on the Same Menu\n\n> *Você sabia?* Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/26/"
 }
