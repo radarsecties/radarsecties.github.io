@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 25
-_Terça-feira, 10 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 26
+_Quarta-feira, 11 de novembro de 2026_
 
-*GOOGLE RESEARCHERS USE AI AND MATHEMATICAL PROOFS TO CUT QUANTUM COMPUTING REQUIREMENTS*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.
+*METADE DAS EMPRESAS BRASILEIRAS USA IA, MAS SÓ 28% MEDEM O RETORNO*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja _(Jornal da Paraíba)_
-2. PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária _(UEPB)_
-3. Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers _(Paraíba Business)_
+1. 5ª edição de seminário realizado pela PROCULT discute papel da Universidade, cultura e sociedade democrática _(UEPB)_
+2. Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde _(UFPB)_
+3. Zhengyuan Quantum Raises Angel Funding For 1,000-Qubit Computer _(The Quantum Insider)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica
-*Brasil:* Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11
-*Mundo:* QCi Reports $9.5 Million in Quarterly Revenue as Acquisitions Expand Commercial Business
+*Paraíba:* Divulgado resultado final do processo seletivo para Programa de Tutoria Especial nos Câmpus I, III, IV, V e VII
+*Brasil:* Governo do Paraná une IA, nuvem e segurança da Informação em megalicitação de TI
+*Mundo:* SEAFOOD Puts OCTOPUS and Quantum Computers on the Same Menu
 
-> *Você sabia?* Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.
+> *Você sabia?* Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.
 
-*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radar.secties.pb.gov.br/edicao/25/
+*Leia a edição completa*, com 20 notícias:
+https://radar.secties.pb.gov.br/edicao/26/

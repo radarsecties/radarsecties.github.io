@@ -1,358 +1,338 @@
 {
- "data": "2026-11-10",
- "numero": 25,
+ "data": "2026-11-11",
+ "numero": 26,
  "modo": "automatico",
- "destaque": "Google Researchers Use AI And Mathematical Proofs to Cut Quantum Computing Requirements",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária; e Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers.",
+ "destaque": "Metade das empresas brasileiras usa IA, mas só 28% medem o retorno",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde; e Metade das empresas brasileiras usa IA, mas só 28% medem o retorno.",
  "itens": [
   {
-   "id": "9d125a0423a8",
-   "titulo": "Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja",
-   "url": "https://jornaldaparaiba.com.br/tecnologia/primeiros-computadores-quanticos-da-america-latina-tem-replica-em-tamanho-real-na-paraiba-veja",
-   "resumo": "Veja como é computador quântico que vai ser instalado na Paraíba; Jornal da Paraíba visitou - Foto: Gustavo Demétrio. Uma réplica dos primeiros computadores quânticos da América Latina, que serão instalados no Centro de Computação Quântica da Paraíba (Ciquanta), em João Pessoa, foi construída e está disponível para…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-10",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/primeiros-computadores-quanticos-da-america-latina0022243400202611101419-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fprimeiros-computadores-quanticos-da-america-latina0022243400202611101419.jpg%3Fxid%3D1242590&amp;xid=1242590",
-   "coletadoEm": "2026-11-10T17:32:02Z",
-   "tipo": "oficial",
+   "id": "7dec14a6410c",
+   "titulo": "5ª edição de seminário realizado pela PROCULT discute papel da Universidade, cultura e sociedade democrática",
+   "url": "https://uepb.edu.br/5a-edicao-de-seminario-realizado-pela-procult-discute-papel-da-universidade-cultura-e-sociedade-democratica",
+   "resumo": "A Universidade Estadual da Paraíba (UEPB), por meio da Pró-reitoria de Cultura (PROCULT), realiza, entre os dias 11 e 13 de novembro, o 5º Seminário de Cultura e Artes (Secult), que nesta edição dispõe do tema “Universidade, Cultura e Sociedade Democrática – Um sonho possível!”. A programação traz apresentações…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-07",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Seminario-de-Cultura-e-Artes.jpeg",
+   "coletadoEm": "2026-11-07T11:52:28Z",
+   "tipo": "ensino",
    "programas": [
-    "ciquanta"
+    "ensino"
    ],
    "escopo": "Paraíba",
-   "pontos": 43,
+   "pontos": 36,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "00d7bca2c370",
-   "titulo": "PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária",
-   "url": "https://uepb.edu.br/ppgcf-promove-feira-de-ciencias-para-aproximar-estudantes-da-educacao-basica-a-pesquisa-universitaria",
-   "resumo": "O Programa de Pós-graduação em Ciências Farmacêuticas (PPGCF), da Universidade Estadual da Paraíba (UEPB), realizará, no dia 25 de novembro, no Câmpus I, em Campina Grande, a “Feira de Ciências no Semiárido Brasileiro: (re)descobrindo as potencialidades e popularizando a ciência”. A iniciativa integra a programação do…",
+   "id": "83c0de11c5e9",
+   "titulo": "Divulgado resultado final do processo seletivo para Programa de Tutoria Especial nos Câmpus I, III, IV, V e VII",
+   "url": "https://uepb.edu.br/divulgado-resultado-final-do-processo-seletivo-para-programa-de-tutoria-especial-nos-campus-i-iii-iv-v-e-vii",
+   "resumo": "A Pró-reitoria Estudantil (PROEST) da Universidade Estadual da Paraíba (UEPB) divulgou, nesta terça-feira (10), o resultado final para a seleção de candidatos(as) ao Programa de Tutoria Especial no Câmpus I de Campina Grande, Câmpus III de Guarabira, Câmpus IV de Catolé do Rocha, Câmpus V de João Pessoa e Câmpus VII…",
    "fonte": "UEPB",
    "fonteId": "uepb",
    "dataPub": "2026-11-10",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2023/04/Tutoria-Especial-1200x680-1.jpg",
+   "coletadoEm": "2026-11-10T17:31:56Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "6bb114e80b5a",
+   "titulo": "Comissão Permanente de Concursos abre inscrições para fiscais atuarem na aplicação de provas no Câmpus I",
+   "url": "https://uepb.edu.br/comissao-permanente-de-concursos-abre-inscricoes-para-fiscais-atuarem-na-aplicacao-de-provas-no-campus-i",
+   "resumo": "A Comissão Permanente de Concursos (CPCon) da Universidade Estadual da Paraíba (UEPB) divulgou as instruções para inscrições de estudantes, docentes e técnicos(as) administrativos(as) da Instituição interessados(as) em atuar como fiscais de sala, fiscais de setor e fiscais de inspeção durante a aplicação de provas no…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-09",
    "imagem": "",
-   "coletadoEm": "2026-11-10T18:42:13Z",
+   "coletadoEm": "2026-11-10T17:31:56Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "5de40ddbe8d0",
+   "titulo": "Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOaU9DYzZ1dDNkdUVsRjljWHViWnRyeE5RdF82eEExZWV4ck5nNjhzZ2hvMVdDVV9jaEEyVjctNEVoNUVNdTVSb3hjczdTZWcwVlk5VHBQUmlSMWM3YlM1MWExVnZJVXZvbmUyMnM3ZEFIYmhwSXNReHZzUkZiNFZCMVF3TDFzMVczMmp5TjN0enlUdmw1U0lFT1psakZWaEU2UEZpT05uN2lCSjEtNHJTZUEzdHlkOE9fOHpNNU5jUUNZZ3NPcHJXcXhCbm5DQQ?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-10",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T18:42:16Z",
    "tipo": "ensino",
    "programas": [
     "ensino",
     "transversal"
    ],
    "escopo": "Paraíba",
-   "pontos": 41,
+   "pontos": 35,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "a0f48ebe7f6e",
-   "titulo": "Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica",
-   "url": "https://uepb.edu.br/coordenadoria-de-inovacao-tecnologica-obtem-concessao-de-novos-registros-de-softwares-voltados-a-saude-e-a-pesquisa-cientifica",
-   "resumo": "A Coordenadoria de Inovação Tecnológica (INOVATEC), da Universidade Estadual da Paraíba (UEPB), obteve a concessão de novos registros de programas de computador junto ao Instituto Nacional da Propriedade Industrial (INPI). As tecnologias, desenvolvidas no âmbito do Centro de Ciências e Tecnologia (CCT) e do Centro de…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-09",
+   "id": "2dae4643a081",
+   "titulo": "Metade das empresas brasileiras usa IA, mas só 28% medem o retorno",
+   "url": "https://paraibabusiness.com.br/metade-das-empresas-brasileiras-usa-ia-mas-so-28-medem-o-retorno",
+   "resumo": "Metade das empresas brasileiras, cerca de 12 milhões de negócios, usa algum tipo de inteligência artificial (IA), mas apenas 28% têm estruturas efetivas para medir o retorno do investimento, segundo a pesquisa Desbloqueando o Potencial da IA, da AWS (Amazon Web Services) com a consultoria Strand Partners. O…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-11",
    "imagem": "",
-   "coletadoEm": "2026-11-10T17:31:56Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-11T17:44:58Z",
+   "tipo": "ia-gov",
    "programas": [
-    "ensino",
-    "inovacao"
+    "secretaria2030",
+    "fomento"
    ],
    "escopo": "Paraíba",
-   "pontos": 38,
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "7d12ed18aa00",
+   "titulo": "Zhengyuan Quantum Raises Angel Funding For 1,000-Qubit Computer",
+   "url": "https://thequantuminsider.com/2026/11/11/zhengyuan-quantum-raises-angel-funding-for-1000-qubit-computer",
+   "resumo": "Chinese quantum computing startup Zhengyuan Quantum has completed an angel funding round to support development of a 1,000-qubit superconducting computer, according to media reports. The company announced the financing Nov. 10, according to a Jiemian News report republished by Sohu. Investors include Shenzhen Capital…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-11",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Superconducting-quantum-chip-with-Chinese-flag-motif-1.png",
+   "coletadoEm": "2026-11-11T17:45:18Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "fomento",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "69c7452c6905",
+   "titulo": "SEAFOOD Puts OCTOPUS and Quantum Computers on the Same Menu",
+   "url": "https://thequantuminsider.com/2026/11/11/seafood-puts-octopus-and-quantum-computers-on-the-same-menu",
+   "resumo": "Researchers at D3 Center and the Center for Quantum Information and Quantum Biology (QIQB), the University of Osaka, have created SEAFOOD, a platform that allows the university’s OCTOPUS supercomputer and superconducting quantum computers to work together in a single computing workflow. It is the first case in Japan…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-11",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Low-Res_Fig.-1_D3.jpg",
+   "coletadoEm": "2026-11-11T17:45:18Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "escopo": "Global",
+   "pontos": 35,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "6b0b555efd9a",
-   "titulo": "Projeto de extensão Caravana Ondas do Saber oferece 30 vagas para participação em minicurso de audiovisual",
-   "url": "https://uepb.edu.br/projeto-de-extensao-caravana-ondas-do-saber-oferece-30-vagas-para-participacao-em-minicurso-de-audiovisual",
-   "resumo": "Para encerrar um ano de atividades, o projeto de extensão Caravana Ondas do Saber, da Universidade Estadual da Paraíba (UEPB), promove, nesta sexta-feira (13), um minicurso sobre técnicas de audiovisual, com 30 vagas. As inscrições podem ser feitas por este link. O minicurso é uma atividade de formação inicial e…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-09",
+   "id": "5d6026510372",
+   "titulo": "University of Chicago and Tohoku University Establish Joint Quantum Materials Hub in Japan",
+   "url": "https://quantumcomputingreport.com/university-of-chicago-and-tohoku-university-establish-joint-quantum-materials-hub-in-japan",
+   "resumo": "The University of Chicago and Tohoku University have partnered to establish a five-year Quantum Hub in Sendai, Japan, funded by the Japanese government. This collaboration, building on a 2023 alliance, combines UChicago's theoretical expertise with Tohoku's experimental capabilities to advance quantum materials…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-11",
    "imagem": "",
-   "coletadoEm": "2026-11-10T17:31:56Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-11T17:45:18Z",
+   "tipo": "quantica",
    "programas": [
+    "ciquanta",
     "ensino"
    ],
-   "escopo": "Paraíba",
-   "pontos": 37,
-   "urgente": true,
+   "escopo": "Global",
+   "pontos": 34,
+   "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "b32ed2487ef9",
-   "titulo": "Quem tem direito à reaplicação do Enem 2026? Veja as regras",
-   "url": "https://jornaldaparaiba.com.br/educacao/quem-tem-direito-a-reaplicacao-do-enem-2026-veja-as-regras",
-   "resumo": "Marcelo Camargo/Agência Brasil Candidatos que não conseguirem realizar o Enem 2026 por problemas logísticos específicos ou por diagnóstico de determinadas doenças infectocontagiosas poderão solicitar a reaplicação das provas. A possibilidade está prevista no edital do Instituto Nacional de Estudos e Pesquisas…",
+   "id": "838689834f80",
+   "titulo": "MEC cria regras para uso de inteligência artificial na educação brasileira",
+   "url": "https://jornaldaparaiba.com.br/educacao/mec-cria-regras-para-uso-de-inteligencia-artificial-na-educacao-brasileira",
+   "resumo": "Como fazer redação sobre Inteligência Artificial e mercado de trabalho para o ENEM. Reprodução / Freepik O uso da inteligência artificial (IA) em escolas e universidades brasileiras passa a contar com regras nacionais. O Ministério da Educação (MEC) homologou, nesta terça-feira (10), um parecer do Conselho Nacional de…",
    "fonte": "Jornal da Paraíba",
    "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-10",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Como-fazer-redacao-sobre-inteligencia-artificial-e0021319300202509220613-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FComo-fazer-redacao-sobre-inteligencia-artificial-e0021319300202509220613.jpg%3Fxid%3D1242645&amp;xid=1242645",
+   "coletadoEm": "2026-11-11T17:44:49Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030",
+    "ensino",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 34,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "48f164ee5fcf",
+   "titulo": "UFPB que Transforma: evento marca dois anos da gestão e apresenta resultados da Universidade",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZDFGUnVSOWtqaUpKR2QxNzJCeTdCcGFQUnJQNE8xdm9TSHVFOER5WE9sZUgxaXVkdkdZS2NpY2dxYkd3Zmp4Qms0Y0M2OU0ydXV2X0FnRVJxTmZyNDlHdFN2VG9JUkRTNEd0a3UtR01oZkwwWTQwYVJXaFJZVVJuTFR6N09OZHlDWVY2OGdLaFl1bE5Qa2JvbzdvMmhQcGJTOXFBSHJkdWpMNC1WeDZYOUZ1YmVvSUdNR0V1SElB?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
    "dataPub": "2026-11-09",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/enem-2026-comeca-neste-domingo-com-mais-de-140-mil0022237201202611080814-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fenem-2026-comeca-neste-domingo-com-mais-de-140-mil0022237201202611080814.webp%3Fxid%3D1242460&amp;xid=1242460",
-   "coletadoEm": "2026-11-10T17:32:02Z",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T17:31:59Z",
    "tipo": "ensino",
    "programas": [
-    "ensino",
-    "fomento"
+    "ensino"
    ],
    "escopo": "Paraíba",
-   "pontos": 35,
-   "urgente": true,
+   "pontos": 33,
+   "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "725ff732fcfc",
-   "titulo": "Google Researchers Use AI And Mathematical Proofs to Cut Quantum Computing Requirements",
-   "url": "https://thequantuminsider.com/2026/11/10/google-researchers-use-ai-and-mathematical-proofs-to-cut-quantum-computing-requirements",
-   "resumo": "Quantum computing could one day help artificial intelligence tackle more demanding calculations. Now, Google researchers have shown how AI can return the favor, using teams of agents to design quantum programs that need fewer computing resources. In a study, Google researchers used artificial intelligence and…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-10",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-10-at-4.28.33-AM.png",
-   "coletadoEm": "2026-11-10T17:32:35Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "secretaria2030"
-   ],
-   "escopo": "Global",
-   "pontos": 35,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "0d9e26dd3e07",
-   "titulo": "Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers",
-   "url": "https://paraibabusiness.com.br/governo-investe-r-463-milhoes-em-plataforma-de-ia-para-mini-data-centers",
-   "resumo": "O Ministério das Comunicações aprovou R$ 46,3 milhões do Fundo para o Desenvolvimento Tecnológico das Telecomunicações (Funttel) para o projeto Prisma, plataforma que usa inteligência artificial para distribuir o processamento de dados entre infraestruturas, inclusive mini data centers, segundo o ministério em 9 de…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-10",
+   "id": "27d92fa24ee2",
+   "titulo": "Governo do Paraná une IA, nuvem e segurança da Informação em megalicitação de TI",
+   "url": "https://convergenciadigital.com.br/governo/governo-do-parana-une-ia-nuvem-e-seguranca-da-informacao-em-megalicitacao-de-ti",
+   "resumo": "A licitação, conduzida pela Secretaria de Estado da Administração e da Previdência, reúne 15 categorias de serviços em um único lote, incluindo operação de servidores e redes, computação em nuvem, inteligência artificial e segurança da informação. Valores não foram revelados e há pedidos de impugnação do pregão.",
+   "fonte": "Convergência Digital",
+   "fonteId": "convergencia",
+   "dataPub": "2026-11-11",
    "imagem": "",
-   "coletadoEm": "2026-11-10T18:42:29Z",
-   "tipo": "ia-gov",
+   "coletadoEm": "2026-11-11T17:45:15Z",
+   "tipo": "seguranca",
    "programas": [
     "secretaria2030",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 35,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "6ed503d743fe",
-   "titulo": "Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11",
-   "url": "https://consecti.org.br/finep-amplia-para-r-500-milhoes-chamada-de-transformacao-mineral-com-inscricoes-ate-30-11",
-   "resumo": "A FINEP prorrogou o prazo de inscrição na segunda rodada do programa Finep Mais Inovação – Transformação Mineral até 30 de novembro. O programa destinará até R$ 500 milhões em recursos não reembolsáveis (subvenção econômica) para atividades de pesquisa, desenvolvimento tecnológico e inovação (PD&I) em projetos…",
-   "fonte": "Consecti",
-   "fonteId": "consecti",
-   "dataPub": "2026-11-10",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:29Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento",
-    "inovacao"
+    "seguranca"
    ],
    "escopo": "Nacional",
-   "pontos": 33,
-   "urgente": true,
+   "pontos": 32,
+   "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "d7e99a0ced33",
-   "titulo": "EUA acusam três homens de desviar US$ 129 milhões com deepfakes de executivos",
-   "url": "https://paraibabusiness.com.br/eua-acusam-tres-homens-de-desviar-us-129-milhoes-com-deepfakes-de-executivos",
-   "resumo": "Três homens são acusados nos Estados Unidos de usar voz e imagem de executivos falsificadas por inteligência artificial (IA) para desviar ao menos US$ 129 milhões, cerca de R$ 710 milhões, de bancos, hospitais e outras empresas entre 2024 e 2026, segundo acusação formal tornada pública pela Promotoria Federal de…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-10",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:13Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "fomento",
-    "secretaria2030"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "919c1f41f3e6",
-   "titulo": "QCi Reports $9.5 Million in Quarterly Revenue as Acquisitions Expand Commercial Business",
-   "url": "https://thequantuminsider.com/2026/11/10/qci-reports-9-5-million-in-quarterly-revenue-as-acquisitions-expand-commercial-business",
-   "resumo": "Quantum Computing Inc. reported third-quarter revenue of $9.5 million as acquisitions expanded its photonics and semiconductor manufacturing business, while new agreements extended the company’s quantum technology into pharmaceutical research and education. Revenue exceeded the $9.2 million generated during the entire…",
+   "id": "f056971f3902",
+   "titulo": "Researchers Explore Quantum Inspired AI Repair",
+   "url": "https://thequantuminsider.com/2026/11/11/researchers-explore-quantum-inspired-ai-repair",
+   "resumo": "Researchers have developed a method that repairs repetitive reasoning in small language models by changing selected internal weights, with a separate quantum hardware experiment testing a possible route for future work. The study, by Hadi Salloum of QDeep in Riyadh, Saudi Arabia, and Ammar Ali of ITMO University’s Lab…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
-   "dataPub": "2026-11-10",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/QCi-logo-with-elegant-quantum-waves-1.png",
-   "coletadoEm": "2026-11-10T17:32:35Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "fomento"
-   ],
-   "escopo": "Global",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "c82343c2ecf8",
-   "titulo": "Brasileiros vendem vídeos para treinar robôs; plataforma paga R$ 25 por gravação aprovada",
-   "url": "https://paraibabusiness.com.br/brasileiros-vendem-videos-para-treinar-robos-plataforma-paga-r-25-por-gravacao-aprovada",
-   "resumo": "A plataforma Flambra paga R$ 25 por gravação aprovada a brasileiros que filmam tarefas domésticas, material usado para treinar robôs e sistemas de inteligência artificial (IA), segundo reportagem do Diário do Nordeste de 18 de setembro de 2026. A empresa informa ter mais de 20 mil cadastrados, dos quais ao menos 3 mil…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-10",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:13Z",
-   "tipo": "norma",
-   "programas": [
-    "secretaria2030",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "d03968608c8d",
-   "titulo": "AI-Assisted Proof Settles Longstanding Question About Quantum Speedups",
-   "url": "https://thequantuminsider.com/2026/11/06/ai-assisted-proof-settles-longstanding-question-about-quantum-speedups",
-   "resumo": "A mathematical proof has resolved a conjecture open since 2008 about when quantum computers can achieve enormous advantages over conventional machines, establishing a limit on their ability to outperform classical algorithms on unstructured inputs. The result proves the Aaronson-Ambainis conjecture, which connects a…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-06",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-06-at-4.24.26-PM-1.png",
-   "coletadoEm": "2026-11-07T10:35:38Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "internacional"
-   ],
-   "escopo": "Global",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "bc51f10d21e5",
-   "titulo": "Scottish Widows and Aberdeen Allocate UK Workplace Pension Capital to Oxford Quantum Circuits and Quantum Motion via LTAF",
-   "url": "https://quantumcomputingreport.com/scottish-widows-and-aberdeen-allocate-uk-workplace-pension-capital-to-oxford-quantum-circuits-and-quantum-motion-via-ltaf",
-   "resumo": "Scottish Widows and Aberdeen Investments have allocated UK workplace pension capital to Oxford Quantum Circuits and Quantum Motion through the CG Scottish Widows Growth LTAF. This initiative aims to connect defined-contribution retirement assets with venture-stage technology firms, fostering domestic growth in deep…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-07",
-   "imagem": "",
-   "coletadoEm": "2026-11-08T10:36:15Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "d4a1363f229d",
-   "titulo": "IBM Deploys Quantum System Two at Hyde Park Labs to Anchor Illinois Quantum Ecosystem",
-   "url": "https://quantumcomputingreport.com/ibm-deploys-quantum-system-two-at-hyde-park-labs-to-anchor-illinois-quantum-ecosystem",
-   "resumo": "IBM, the University of Chicago, and the State of Illinois have deployed an on-premises IBM Quantum System Two in Chicago, powered by the 120-qubit Nighthawk processor. This system, initially at Hyde Park Labs, will anchor the National Quantum Algorithm Center (NQAC) and support research in various fields, including…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-07",
-   "imagem": "",
-   "coletadoEm": "2026-11-08T10:36:15Z",
+   "dataPub": "2026-11-11",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-11-at-10.29.34-AM.png",
+   "coletadoEm": "2026-11-11T17:45:18Z",
    "tipo": "quantica",
    "programas": [
     "ciquanta",
     "ensino"
    ],
    "escopo": "Global",
-   "pontos": 31,
+   "pontos": 32,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "c33a0d29cc56",
-   "titulo": "Pagamento das bolsas da CAPES",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVzMweVlkckx4ZmlOZndQcXVnTENBWFpHd1QyalRrNU5QR3Y2N2ZUSDdacTBZeUNZN1JZd2xPTWh0ZHVvZXBDOFdSUFFFc3FSYlJIWWdERkQ1MURkN0ZmSnQwdjAxcEFZOXIyaDItVFBkOHp3aUx4dVhqUHltOW8zWnRGRkg?oc=5",
+   "id": "b3f40e86119e",
+   "titulo": "CAPES prorroga prazo para submissão de propostas de pesquisa na Amazônia Legal",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQREM0WHFqOVFsa2xrcVBwdlZLNVRNaXdhdGJwa1FlVG5KeHVYcmFLSkU3dGR6dEQtWGV6MDBMOTRXODh0clgtREZXUzlIZmpfa1ZqOXFTMGJFQkNoeW9tVElQeHJZdm1oVXZLdnFFbm1DaWQ2c04weWJZYkZuaFd6QUJaVk1wSnB0TF9OLUlDOEhlTFFNUlhfeVYzU1BCLTJOUzNQNmZQSThyUkFVbDYzdlhSQUdxTEFqN2ZSVmQzVE85bXNWNkE?oc=5",
    "resumo": "",
    "fonte": "CAPES",
    "fonteId": "capes",
-   "dataPub": "2026-11-09",
+   "dataPub": "2026-11-10",
    "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:09Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-11T17:44:59Z",
+   "tipo": "edital",
    "programas": [
-    "ensino",
-    "fomento"
+    "ensino"
    ],
    "escopo": "Nacional",
-   "pontos": 30,
+   "pontos": 29,
+   "urgente": true,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "3ce6da2f6dbb",
+   "titulo": "Wedy apresenta motor de inteligência artificial sem interface própria durante o Web Summit Lisboa",
+   "url": "https://startupi.com.br/wedy-web-summit-lisboa-motor-ia-headless",
+   "resumo": "Startupi Wedy apresenta motor de inteligência artificial sem interface própria durante o Web Summit Lisboa Empreendimento gaúcho integrará ecossistema de eventos a agentes de IA como ChatGPT, Gemini e Claude, utilizando dados transacionais para alimentar respostas personalizadas. O post Wedy apresenta motor de…",
+   "fonte": "Startupi",
+   "fonteId": "startupi",
+   "dataPub": "2026-11-11",
+   "imagem": "https://startupi.com.br/wp-content/uploads/2023/10/web-summit.webp",
+   "coletadoEm": "2026-11-11T17:45:16Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "secretaria2030",
+    "internacional"
+   ],
+   "escopo": "Nacional",
+   "pontos": 29,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "be2c0bbf7a33",
-   "titulo": "Feira Central de Campina é tema de questão do Enem",
-   "url": "https://www.maispb.com.br/874246/feira-central-de-campina-e-tema-de-questao-do-enem.html",
-   "resumo": "A Feira Central de Campina Grande foi tema de questão do Exame Nacional do Ensino Médio (Enem), aplicado nesse domingo (8) em todo país. A pergunta utilizou um trecho do Dossiê de Registro da Feira de Campina Grande, documento do Instituto do Patrimônio Histórico e Artístico Nacional (Iphan), que serviu de base para o…",
-   "fonte": "MaisPB",
-   "fonteId": "maispb",
-   "dataPub": "2026-11-09",
-   "imagem": "https://www.maispb.com.br/wp-content/uploads/2026/11/questa.jpg",
-   "coletadoEm": "2026-11-09T12:11:30Z",
-   "tipo": "evento",
+   "id": "4e83451cb667",
+   "titulo": "Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink",
+   "url": "https://telesintese.com.br/vivo-satelite-10-milhoes-de-clientes-ja-usaram-servico-com-starlink",
+   "resumo": "Operadora paga pelo uso da capacidade satelital e prevê cobrança adicional em alguns planos após o período gratuito. O post Vivo Satélite: 10 milhões de clientes já usaram serviço com Starlink apareceu primeiro em TeleSíntese .",
+   "fonte": "Tele.Síntese",
+   "fonteId": "telesintese",
+   "dataPub": "2026-11-11",
+   "imagem": "https://telesintese.com.br/wp-content/uploads/2022/08/campo-rural-foto-freepik.jpg",
+   "coletadoEm": "2026-11-11T17:45:17Z",
+   "tipo": "inclusao",
    "programas": [
-    "ensino",
-    "patrimonio"
+    "inclusao",
+    "astronomia",
+    "fomento"
    ],
-   "escopo": "Paraíba",
-   "pontos": 30,
+   "escopo": "Nacional",
+   "pontos": 29,
    "urgente": false,
-   "relevancia": "radar",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "a62a240265a6",
-   "titulo": "UNESCO–Africa–China Workshop strengthens World Heritage capacity and cooperation in Quanzhou",
-   "url": "https://whc.unesco.org/en/news/2935",
-   "resumo": "The UNESCO-Africa-China Workshop on World Heritage, Capacity-Building and Cooperation brought together 26 heritage professionals from 17 African countries in Quanzhou, China, from 20 to 25 October 2026. Through six days of exchanges and practical training with Chinese experts and international partners, participants…",
-   "fonte": "UNESCO Patrimônio Mundial",
-   "fonteId": "unesco-whc",
-   "dataPub": "2026-11-09",
+   "id": "eaa305d69ac8",
+   "titulo": "HKMA and HKUST Launch PQC Toolkit to Accelerate Banking Sector Transition by 2030",
+   "url": "https://quantumcomputingreport.com/hkma-and-hkust-launch-pqc-toolkit-to-accelerate-banking-sector-transition-by-2030",
+   "resumo": "The Hong Kong Monetary Authority (HKMA) and The Hong Kong University of Science and Technology (HKUST) have jointly launched a Post-Quantum Cryptography (PQC) Toolkit. This toolkit provides a framework for Hong Kong's banking sector to transition to quantum-safe infrastructure by 2030, aiming to raise the Quantum…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-07",
    "imagem": "",
-   "coletadoEm": "2026-11-10T17:33:03Z",
-   "tipo": "patrimonio",
+   "coletadoEm": "2026-11-08T10:36:15Z",
+   "tipo": "quantica",
    "programas": [
-    "patrimonio",
-    "internacional"
+    "ciquanta",
+    "ensino"
    ],
    "escopo": "Global",
    "pontos": 29,
@@ -361,18 +341,77 @@
    "origem": "auto"
   },
   {
-   "id": "c8ef723ee82c",
-   "titulo": "Proc Sel para Especialização em Gestão dos Recursos Ambientais do Semiárido - Edital 16/2026",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOX0J1dElTQndLYnB0WXlLTGtPa19IS0dPN1BFdUlramVEVWstOVlQVnpQMTBpZV9OV0RVWnpPbGdSN19nOUY1MGV6cjNGbU9xbHg4VmpRQXN5MERDRk5UWmp5R2M4czVtTWl0eGhNN3N5QzlNY1VKWGd4U2J6aWJIUVotbkwwSVVVNDhhZU1MU3hySmEwdDlfaWJwS3Q?oc=5",
+   "id": "c1b317e9b22b",
+   "titulo": "Feira Central de Campina Grande é citada em questão do Enem 2026",
+   "url": "https://jornaldaparaiba.com.br/educacao/feira-central-de-campina-grande-e-citada-em-questao-do-enem-2026",
+   "resumo": "Feira Central de Campina Grande é citada em questão do Enem 2026. (Foto: Ligia Coeli) A Feira Central de Campina Grande, no Agreste da Paraíba, foi citada em uma das questões do Exame Nacional do Ensino Médio (Enem) 2026. O espaço foi tema de uma questão de Linguagens, no primeiro dia de provas, realizado no domingo…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-09",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/feira-central-de-campina-grande-e-citada-em-questa0022239000202611090901-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Ffeira-central-de-campina-grande-e-citada-em-questa0022239000202611090901.jpg%3Fxid%3D1242371&amp;xid=1242371",
+   "coletadoEm": "2026-11-09T12:11:29Z",
+   "tipo": "evento",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "d50615606e21",
+   "titulo": "Estudo: IA resolveu dúvida de compra de 79% dos consumidores que pediram indicação",
+   "url": "https://paraibabusiness.com.br/estudo-ia-resolveu-duvida-de-compra-de-79-dos-consumidores-que-pediram-indicacao",
+   "resumo": "A inteligência artificial (IA) resolveu a dúvida de compra de 79% dos consumidores que pediram indicação de produtos a ferramentas do tipo, e 55% já deixaram de comprar de uma marca que a IA não recomendou, segundo o estudo “Jornada de compra na era da IA”, da Conversion com a Opinion Box, divulgado pelo Meio […]",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-10",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T17:32:13Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "c31ea11748f2",
+   "titulo": "Itaú leva assistente de IA ia.i ao app Itaú Empresas, voltado a PMEs",
+   "url": "https://paraibabusiness.com.br/itau-leva-assistente-de-ia-ia-i-ao-app-itau-empresas-voltado-a-pmes",
+   "resumo": "O Itaú Unibanco anunciou em 9 de novembro de 2026 que a ia.i, sua assistente de inteligência artificial generativa, chegou ao aplicativo Itaú Empresas, voltado a pequenas e médias empresas (PMEs), segundo a CNN Brasil, com base em comunicado do banco. O acesso é restrito a um grupo de clientes. O banco não informou…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-10",
+   "imagem": "",
+   "coletadoEm": "2026-11-10T18:42:29Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "5a7aa09510e4",
+   "titulo": "Edital de Chamada Pública de Projetos GEE 001/2026 – Programa de Eficiência Energética (PEE/ANEEL)",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNN3o5dy0yTmY2bGMtS096ZkhyT1hvVWVKczhLZzh6OU5VNTQySzEwZTUyU3p6ZWZNaG5ENWlUSjkzNlZ0UFY0NDFaMWZMNXJPeHBqU3prYmQ4WHBEXzk5ZlB6a090Y0VRSEhCa0hDLXpveWtoYi1CckEzeWhkNWxIOERuUFFiUWk3WnhneHlYM0htVGhiUzEwLXUtY2tqTWJmcXhiREx2TzhNZXpLQzMwVHZJNXFYMG1DN0ljbUtnSHdhYjhMNFUwVEI2WENVS092eDF5TURHNGQ2LU9PTGc?oc=5",
    "resumo": "",
    "fonte": "IFPB",
    "fonteId": "ifpb",
-   "dataPub": "2026-11-09",
+   "dataPub": "2026-11-08",
    "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:01Z",
+   "coletadoEm": "2026-11-11T17:44:47Z",
    "tipo": "edital",
    "programas": [
-    "transversal",
     "fomento"
    ],
    "escopo": "Paraíba",
@@ -380,80 +419,25 @@
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
-  },
-  {
-   "id": "dacedc6b2be2",
-   "titulo": "Endeavor retoma programa Scale-Up com foco em empresas de IA e projeta R$ 200 milhões em receita para turma selecionada",
-   "url": "https://startupi.com.br/endeavor-retoma-programa-scale-up-com-foco-em-empresas-de-ia-e-projeta-r-200-milhoes-em-receita-para-turma-selecionada",
-   "resumo": "Startupi Endeavor retoma programa Scale-Up com foco em empresas de IA e projeta R$ 200 milhões em receita para turma selecionada Primeira edição do novo formato reúne 17 startups que utilizam IA na arquitetura central do negócio; organização prevê três novas turmas temáticas em 2027 O post Endeavor retoma programa…",
-   "fonte": "Startupi",
-   "fonteId": "startupi",
-   "dataPub": "2026-11-09",
-   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/image.jpg",
-   "coletadoEm": "2026-11-09T10:51:08Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030",
-    "inovacao",
-    "fomento"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "cb9dcf064157",
-   "titulo": "Inteligência Artificial brasileira para a indústria já é realidade",
-   "url": "https://embrapii.org.br/ia-brasileira-para-a-industria-ja-e-realidade",
-   "resumo": "Unidade Embrapii Ceia lança modelo de IA desenvolvida para a língua portuguesa para impulsionar negócios e reduzir dependência de tecnologias estrangeiras Uma Inteligência Artificial desenvolvida no Brasil já pode beneficiar a indústria do país. O Centro de Excelência em Inteligência Artificial (Ceia), da Universidade…",
-   "fonte": "Embrapii",
-   "fonteId": "embrapii",
-   "dataPub": "2026-11-09",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:22Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030",
-    "inovacao",
-    "ensino"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
   }
  ],
  "doe": {},
- "secom": [
-  {
-   "titulo": "Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja",
-   "portal": "Jornal da Paraíba",
-   "url": "https://jornaldaparaiba.com.br/tecnologia/primeiros-computadores-quanticos-da-america-latina-tem-replica-em-tamanho-real-na-paraiba-veja",
-   "dataPub": "2026-11-10",
-   "programas": [
-    "ciquanta"
-   ],
-   "resumo": ""
-  }
- ],
+ "secom": [],
  "propostas": [],
  "doeAuto": {
-  "data": "2026-11-10",
+  "data": "2026-11-11",
   "lido": false,
   "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-10T15:44:01-03:00",
+ "geradoEm": "2026-11-11T14:46:29-03:00",
  "saude": [
   {
    "id": "abdi",
    "nome": "ABDI",
    "ok": true,
-   "itens": 6,
+   "itens": 8,
    "feed": "https://www.abdi.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -462,7 +446,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 39,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -471,7 +455,7 @@
    "id": "agenciabori",
    "nome": "Agência Bori",
    "ok": true,
-   "itens": 5,
+   "itens": 6,
    "feed": "https://abori.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -498,7 +482,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 12,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -507,7 +491,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 6,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -543,7 +527,7 @@
    "id": "anatel",
    "nome": "Anatel",
    "ok": true,
-   "itens": 10,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -552,7 +536,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 5,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -561,7 +545,7 @@
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 4,
+   "itens": 7,
    "feed": "https://anprotec.org.br/site/feed/",
    "via": "feed",
    "obs": ""
@@ -579,7 +563,7 @@
    "id": "alpb",
    "nome": "Assembleia Legislativa da Paraíba",
    "ok": true,
-   "itens": 1,
+   "itens": 5,
    "feed": "https://www.al.pb.leg.br/feed/",
    "via": "feed",
    "obs": ""
@@ -594,10 +578,19 @@
    "obs": ""
   },
   {
+   "id": "worldbank-digital",
+   "nome": "Banco Mundial Digital",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "iadb",
    "nome": "BID",
    "ok": true,
-   "itens": 3,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -606,7 +599,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 40,
+   "itens": 27,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -615,7 +608,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 12,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -669,7 +662,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 1,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -687,7 +680,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -714,7 +707,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 15,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -723,7 +716,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 38,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -750,7 +743,7 @@
    "id": "eurekalert",
    "nome": "EurekAlert",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -759,7 +752,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 6,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -768,7 +761,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 10,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -801,6 +794,15 @@
    "obs": ""
   },
   {
+   "id": "horizontes",
+   "nome": "Horizontes de Inovação",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://horizontesdeinovacao.pb.gov.br/feed/",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
    "id": "hpcwire",
    "nome": "HPCwire",
    "ok": true,
@@ -831,7 +833,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -867,7 +869,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 12,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -903,7 +905,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 29,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -930,7 +932,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 22,
+   "itens": 23,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -984,7 +986,7 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 6,
+   "itens": 7,
    "feed": "https://nossaciencia.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1074,7 +1076,7 @@
    "id": "physorg-quantum",
    "nome": "Phys.org Quantum",
    "ok": true,
-   "itens": 28,
+   "itens": 29,
    "feed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
    "via": "feed",
    "obs": ""
@@ -1083,7 +1085,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 26,
+   "itens": 31,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1119,7 +1121,7 @@
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
    "ok": true,
-   "itens": 2,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1128,7 +1130,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 39,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1137,7 +1139,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 36,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1200,7 +1202,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 38,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1227,7 +1229,7 @@
    "id": "serpro",
    "nome": "Serpro",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "https://www.serpro.gov.br/RSS",
    "via": "feed",
    "obs": ""
@@ -1236,7 +1238,7 @@
    "id": "spacenews",
    "nome": "SpaceNews",
    "ok": true,
-   "itens": 9,
+   "itens": 11,
    "feed": "https://spacenews.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1272,7 +1274,7 @@
    "id": "theconversation-br",
    "nome": "The Conversation Brasil",
    "ok": true,
-   "itens": 36,
+   "itens": 40,
    "feed": "https://theconversation.com/br/articles.atom",
    "via": "feed",
    "obs": ""
@@ -1308,7 +1310,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 12,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1366,14 +1368,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "worldbank-digital",
-   "nome": "Banco Mundial Digital",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "brasilcg",
    "nome": "Brasil CG",
    "ok": false,
@@ -1400,14 +1394,6 @@
   {
    "id": "fapesq",
    "nome": "FAPESQ",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "horizontes",
-   "nome": "Horizontes de Inovação",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1487,14 +1473,14 @@
   }
  ],
  "curiosidade": {
-  "texto": "Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.",
-  "porque": "O átomo é quase todo vazio: o núcleo é minúsculo perto da nuvem de elétrons. Espremido como numa estrela de nêutrons, tudo fica absurdamente denso.",
-  "tema": "atomo",
-  "area": "Física atômica",
-  "formula": "átomo: 99,9999999% de vazio"
+  "texto": "Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.",
+  "porque": "É a velocidade da rotação da Terra perto do equador. Como tudo à sua volta gira junto, você não sente nada.",
+  "tema": "rotacao",
+  "area": "Mecânica",
+  "formula": "v = ω · R ≈ 1.650 km/h"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-10-1544.png",
- "link": "https://radar.secties.pb.gov.br/edicao/25/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 25\n_Terça-feira, 10 de novembro de 2026_\n\n*GOOGLE RESEARCHERS USE AI AND MATHEMATICAL PROOFS TO CUT QUANTUM COMPUTING REQUIREMENTS*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Primeiros computadores quânticos da América Latina têm réplica em tamanho real na Paraíba; veja _(Jornal da Paraíba)_\n2. PPGCF promove Feira de Ciências para aproximar estudantes da educação básica à pesquisa universitária _(UEPB)_\n3. Governo investe R$ 46,3 milhões em plataforma de IA para mini data centers _(Paraíba Business)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Coordenadoria de Inovação Tecnológica obtém concessão de novos registros de softwares voltados à saúde e à pesquisa científica\n*Brasil:* Finep amplia para R$ 500 milhões chamada de transformação mineral, com inscrições até 30/11\n*Mundo:* QCi Reports $9.5 Million in Quarterly Revenue as Acquisitions Expand Commercial Business\n\n> *Você sabia?* Se tirássemos todo o espaço vazio dos átomos de todas as pessoas do planeta, a humanidade inteira caberia num cubo do tamanho de um torrão de açúcar.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/25/"
+ "capa": "capa-2026-11-11-1446.png",
+ "link": "https://radar.secties.pb.gov.br/edicao/26/",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 26\n_Quarta-feira, 11 de novembro de 2026_\n\n*METADE DAS EMPRESAS BRASILEIRAS USA IA, MAS SÓ 28% MEDEM O RETORNO*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. 5ª edição de seminário realizado pela PROCULT discute papel da Universidade, cultura e sociedade democrática _(UEPB)_\n2. Centro de Educação da UFPB realiza projeto de formação docente em escola do campo no município do Conde _(UFPB)_\n3. Zhengyuan Quantum Raises Angel Funding For 1,000-Qubit Computer _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Divulgado resultado final do processo seletivo para Programa de Tutoria Especial nos Câmpus I, III, IV, V e VII\n*Brasil:* Governo do Paraná une IA, nuvem e segurança da Informação em megalicitação de TI\n*Mundo:* SEAFOOD Puts OCTOPUS and Quantum Computers on the Same Menu\n\n> *Você sabia?* Agora mesmo, em João Pessoa, você está girando a cerca de 1.650 km/h. E nem despenteou.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/26/"
 }
