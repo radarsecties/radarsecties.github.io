@@ -2,8 +2,8 @@
  "data": "2026-11-12",
  "numero": 27,
  "modo": "automatico",
- "destaque": "CyberRisk Collaborative Announces Virtual Event on Post-Quantum Readiness",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: IFPB - Repositório Digital: Desafios da agricultura familiar no semiárido: percepções dos agricultores e agricultoras do município de Frei Martinho - PB; e Cooperação Brasil-Suécia: CNPq seleciona 7 bolsistas de pós-doutorado e 3 de doutorado-sanduiche; inscrições até 12/03.",
+ "destaque": "Caixa sofre invasão hacker e dados de 7,6 milhões de clientes são vazados",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Caixa sofre invasão hacker e dados de 7,6 milhões de clientes são vazados; e IFPB - Repositório Digital: Desafios da agricultura familiar no semiárido: percepções dos agricultores e agricultoras do município de Frei Martinho - PB.",
  "itens": [
   {
    "id": "6fb4c7e9204d",
@@ -69,6 +69,27 @@
    "origem": "auto"
   },
   {
+   "id": "d2e78723dd32",
+   "titulo": "Caixa sofre invasão hacker e dados de 7,6 milhões de clientes são vazados",
+   "url": "https://portalcorreio.com.br/caixa-sofre-invasao-hacker-e-dados-de-76-milhoes-de-clientes-sao-vazados",
+   "resumo": "A Caixa Seguridade, controlada da Caixa Econômica Federal, informou nesta quinta-feira (12) o vazamento de dados pessoais de 7,6 milhões de clientes da CVP (Caixa Vida e Previdência). Segundo nota publicada no site da CVM (Comissão de Valores Mobiliários), nomes, CPFs, endereços, telefones, emails e datas de…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-12",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2025/04/a3cb966624ac67ed7d8e77c0f39ba36f.webp",
+   "coletadoEm": "2026-11-12T18:59:12Z",
+   "tipo": "seguranca",
+   "programas": [
+    "seguranca",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
    "id": "388570f0b5d7",
    "titulo": "IFPB - Repositório Digital: Desafios da agricultura familiar no semiárido: percepções dos agricultores e agricultoras do município de Frei Martinho - PB",
    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RNXhuNlBXbUhzUFc5aTgwZjYzalV3VjBfY1FsS2trWnVueDRtMWhyYTRzT09NYTVleER1UmdPaENwa2VtV1hGVkRaZUdvRk9tcHRyOXpCekdqcmlQSTFR?oc=5",
@@ -129,7 +150,7 @@
    "escopo": "Nacional",
    "pontos": 35,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -151,26 +172,6 @@
    "pontos": 34,
    "urgente": false,
    "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "ae569113da2e",
-   "titulo": "UFPB e Exército Brasileiro planejam firmar um acordo de cooperação técnica em pesquisa de pós-graduação sobre serviço militar voluntário feminino",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQM0c4a1RtdG0zTUNtNmZqUGl6bVIzRHgyQWpVNU1IcHhoYWlsSWdQQlFWWEs4S0dVa0M3bkU3WW83eEZ6TW1iRGZVTm5MM3lkdzlxeXRkU1d1T2dGb1YxTF9PYzRiclBOZkJWanRjdlZhQi1wUDJEanpyOWhTamJJZEdueHNBSnZJVlpqRWFTVUlWLVQ5aXBmYjBKSXFKUWFVcEdOOGxlMlNlM3pKYm4yNDFWTkc2bTlPRkNjNEdxYUVkZUtIM3dUSm9hM3JTc1RxRUp2YkxvNTdvdDQza0VnVFJtY2FzUl8wUWRPbVhmejNNMnIzTktEVkE3QWRqQkJUUU9N?oc=5",
-   "resumo": "",
-   "fonte": "UFPB",
-   "fonteId": "ufpb",
-   "dataPub": "2026-11-12",
-   "imagem": "",
-   "coletadoEm": "2026-11-12T17:56:55Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -300,6 +301,27 @@
    "origem": "auto"
   },
   {
+   "id": "9c16f7a37606",
+   "titulo": "Prefeitura de Guarabira e Instituto Alpargatas homenageiam 290 estudantes com o Prêmio Aluno Nota 10",
+   "url": "https://portalcorreio.com.br/prefeitura-de-guarabira-e-instituto-alpargatas-homenageiam-290-estudantes-com-o-premio-aluno-nota-10",
+   "resumo": "A Prefeitura de Guarabira, em parceria com o Instituto Alpargatas, realizou, na tarde desta quarta-feira (11), a entrega do Prêmio Aluno Nota 10, uma iniciativa que reconhece e valoriza o esforço, a dedicação e o compromisso dos estudantes da rede municipal de ensino. Ao todo, 290 alunos, de todas as escolas da rede…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-12",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/9b3fc5bf8c1d73a41c52a56fdfcd6ca7.jpg",
+   "coletadoEm": "2026-11-12T18:59:12Z",
+   "tipo": "evento",
+   "programas": [
+    "transversal",
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "350abe7ed676",
    "titulo": "No novo ciclo do SUS, as oportunidades para startups de saúde no Brasil",
    "url": "https://startupi.com.br/no-novo-ciclo-do-sus-as-oportunidades-para-startups-de-saude-no-brasil",
@@ -318,7 +340,7 @@
    "escopo": "Nacional",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -384,39 +406,18 @@
    "origem": "auto"
   },
   {
-   "id": "ccb9ed5b18d1",
-   "titulo": "Cartilha LGPD - CODATA",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0tUFZnN2RlZGUyUG5sd0hmVXZrbktLOFNyUW1zOXM0WDBzWFFFbWRYbDFzM1Bueld5S0VOaTZYdGR2Y19JcXM3aEtzQXNqUkpRbHJubGhRVzZxS3g1VE5EdHNrR1hZU3BhRU93NURnMHk5aE0?oc=5",
+   "id": "c90deb4d952d",
+   "titulo": "CAPES recebe solicitações de alteração em programas de pós-graduação com formas associativas",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYzYzZGJ4c3F6TC16Z3lfTTBTaWw5QzNOX1QtUzJDUVNCcjdBZVFWV1lyTnlBcG93WXhlTXBnUU4yT1FmbjlIZ2tUV0pxdHMxbi1IaDBLNVlhM1kzU0doeHdtMWRmYlBSd2phUUhUTWtockM1VlpTeE9RMGpBZUw0OWdXWkhGcVdDSWVNNkZBMFRJUTJNckFhRWo2LWNIMUJ4NTBGVTg2empBdFRSMTIwazNLWUxvN3BVajVVNGgxdW5idHlvU3FibnRUQzZoT2NsU0tKZFRPOXI?oc=5",
    "resumo": "",
-   "fonte": "CODATA",
-   "fonteId": "codata",
-   "dataPub": "2026-11-12",
+   "fonte": "CAPES",
+   "fonteId": "capes",
+   "dataPub": "2026-11-10",
    "imagem": "",
-   "coletadoEm": "2026-11-12T17:56:58Z",
-   "tipo": "seguranca",
+   "coletadoEm": "2026-11-10T17:32:09Z",
+   "tipo": "ensino",
    "programas": [
-    "seguranca"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 30,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "c92d8f36de82",
-   "titulo": "Financiamento Não Reembolsável — Ministério da Ciência, Tecnologia e Inovação",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSkxUcEcwUl9jWDY1cTNmOTh2YlhJbnMyQXZ1LXctME1kbl9uOXF2S29RRkVSRW85a0FkS3dmLWZ6SEtFZTB2a19aWVRyeFBfYTFiUU45Q3Bka2hlMDVLb2ZGRlh4SHdXcEtFbVBpNjhuREM4T3NyZzdQN1JSM3Zsc0RyalJfc0JWZ0RpOGEyZC04ZDFlRGVqckgyMXQ3ZFdGdHRRVVhOdTM?oc=5",
-   "resumo": "",
-   "fonte": "MCTI",
-   "fonteId": "mcti",
-   "dataPub": "2026-11-11",
-   "imagem": "",
-   "coletadoEm": "2026-11-11T17:45:03Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento",
-    "inovacao"
+    "ensino"
    ],
    "escopo": "Nacional",
    "pontos": 28,
@@ -435,7 +436,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-12T14:58:32-03:00",
+ "geradoEm": "2026-11-12T16:01:07-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -495,7 +496,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -558,9 +559,9 @@
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 9,
-   "feed": "https://anprotec.org.br/site/feed/",
-   "via": "feed",
+   "itens": 5,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -612,7 +613,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 17,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -630,7 +631,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 16,
+   "itens": 17,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -666,7 +667,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 27,
+   "itens": 26,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -675,7 +676,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 9,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -720,7 +721,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 15,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -765,7 +766,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -882,9 +883,9 @@
    "id": "cio",
    "nome": "IT Forum",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 32,
+   "feed": "https://itforum.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1188,10 +1189,10 @@
    "id": "science",
    "nome": "Science",
    "ok": true,
-   "itens": 10,
+   "itens": 0,
    "feed": "https://www.science.org/rss/news_current.xml",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "sebrae-pb",
@@ -1305,7 +1306,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1315,15 +1316,6 @@
    "nome": "UNESCO",
    "ok": true,
    "itens": 3,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "iesalc",
-   "nome": "UNESCO IESALC",
-   "ok": true,
-   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1341,9 +1333,9 @@
    "id": "wscom",
    "nome": "WSCOM",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 10,
+   "feed": "https://www.wscom.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1468,6 +1460,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "iesalc",
+   "nome": "UNESCO IESALC",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "uwn",
    "nome": "University World News",
    "ok": false,
@@ -1483,5 +1483,5 @@
   "area": "Óptica",
   "formula": "t = d / c ≈ 8 min 20 s"
  },
- "capa": "capa-2026-11-12-1458.png"
+ "capa": "capa-2026-11-12-1601.png"
 }
