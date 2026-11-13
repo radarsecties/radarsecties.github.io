@@ -3,7 +3,7 @@
  "numero": 28,
  "modo": "automatico",
  "destaque": "Brasil terá ação inédita de até R$ 81 milhões para descarbonizar setor de aço e cimento",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Concurso da prefeitura de Parari: inscrições abertas para 29 vagas e salários de até R$ 10 mil; e UFPB e Exército Brasileiro planejam firmar um acordo de cooperação técnica em pesquisa de pós-graduação sobre serviço militar voluntário feminino.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Concurso da prefeitura de Parari: inscrições abertas para 29 vagas e salários de até R$ 10 mil; e IFPB e Receita Federal transformam equipamentos apreendidos em oportunidades de inclusão digital e cidadania.",
  "itens": [
   {
    "id": "905a9f08e67f",
@@ -89,21 +89,22 @@
    "origem": "auto"
   },
   {
-   "id": "ae569113da2e",
-   "titulo": "UFPB e Exército Brasileiro planejam firmar um acordo de cooperação técnica em pesquisa de pós-graduação sobre serviço militar voluntário feminino",
-   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQM0c4a1RtdG0zTUNtNmZqUGl6bVIzRHgyQWpVNU1IcHhoYWlsSWdQQlFWWEs4S0dVa0M3bkU3WW83eEZ6TW1iRGZVTm5MM3lkdzlxeXRkU1d1T2dGb1YxTF9PYzRiclBOZkJWanRjdlZhQi1wUDJEanpyOWhTamJJZEdueHNBSnZJVlpqRWFTVUlWLVQ5aXBmYjBKSXFKUWFVcEdOOGxlMlNlM3pKYm4yNDFWTkc2bTlPRkNjNEdxYUVkZUtIM3dUSm9hM3JTc1RxRUp2YkxvNTdvdDQza0VnVFJtY2FzUl8wUWRPbVhmejNNMnIzTktEVkE3QWRqQkJUUU9N?oc=5",
+   "id": "26614b291975",
+   "titulo": "IFPB e Receita Federal transformam equipamentos apreendidos em oportunidades de inclusão digital e cidadania",
+   "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPY3RPNjcyNlFWS1FGS1R2NmdlZ0V4Z25tS0N6Ym1NZk94QWlsaEJMS1JBaEk5RHMxRlFxT2RlRkhpOVdVOUl5cXJ3R3haRjV1YWdVRWZHZTBBTGRidjVYMnFQOGVEbmwwd2UwS28yQW43QkZyODJtUlpLbm1NWFkxZFZQcjNHeTJ4Q09VRG5jbkpoMTdEcEtSRWw1d3pDT3l6LWswUzE1cnhfaXlIdHFYQUpuaWxpZXc0MGM5Mk1NT2hoNUFDeUY1YldBNG9fQnMtaV92N0lqMndiX3hHOW4yMXBuTQ?oc=5",
    "resumo": "",
-   "fonte": "UFPB",
-   "fonteId": "ufpb",
-   "dataPub": "2026-11-12",
+   "fonte": "IFPB",
+   "fonteId": "ifpb",
+   "dataPub": "2026-11-13",
    "imagem": "",
-   "coletadoEm": "2026-11-12T17:56:55Z",
+   "coletadoEm": "2026-11-13T18:34:09Z",
    "tipo": "ensino",
    "programas": [
-    "ensino"
+    "ensino",
+    "inclusao"
    ],
    "escopo": "Paraíba",
-   "pontos": 33,
+   "pontos": 34,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
@@ -234,6 +235,28 @@
    "origem": "auto"
   },
   {
+   "id": "fdbe672c7eda",
+   "titulo": "Q-CTRL Raises $290 Million in Series C Funding Led by Salesforce Ventures to Scale Quantum Infrastructure Software",
+   "url": "https://quantumcomputingreport.com/q-ctrl-raises-290-million-in-series-c-funding-led-by-salesforce-ventures-to-scale-quantum-infrastructure-software",
+   "resumo": "Q-CTRL, a quantum infrastructure software provider, has raised $290 million in Series C funding led by Salesforce Ventures, valuing the company at over $1 billion. This funding will be used to expand its AI-driven control software and scale global commercial deployments in various sectors. The company's software…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-13",
+   "imagem": "",
+   "coletadoEm": "2026-11-13T18:34:31Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "ccb9ed5b18d1",
    "titulo": "Cartilha LGPD - CODATA",
    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0tUFZnN2RlZGUyUG5sd0hmVXZrbktLOFNyUW1zOXM0WDBzWFFFbWRYbDFzM1Bueld5S0VOaTZYdGR2Y19JcXM3aEtzQXNqUkpRbHJubGhRVzZxS3g1VE5EdHNrR1hZU3BhRU93NURnMHk5aE0?oc=5",
@@ -313,27 +336,6 @@
     "internacional"
    ],
    "escopo": "Nacional",
-   "pontos": 29,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "e2b3c3ecf888",
-   "titulo": "Why Quantum Hardware Needs Its Own Threat Model",
-   "url": "https://quantumcomputingreport.com/why-quantum-hardware-needs-its-own-threat-model",
-   "resumo": "Contributed article by Garrv Sipani describes how quantum computer themselves (QEC/decoder pipeline, classical control stack, multi-tenant isolation, covert channels) could be vulnerable to hacker attacks. Hardware vendors need to take care to implement the necessary security to prevent an intruder from compromising…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-09",
-   "imagem": "",
-   "coletadoEm": "2026-11-10T17:32:35Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "seguranca"
-   ],
-   "escopo": "Global",
    "pontos": 29,
    "urgente": false,
    "relevancia": "radar",
@@ -431,7 +433,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-13T14:33:34-03:00",
+ "geradoEm": "2026-11-13T15:35:40-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -626,7 +628,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 21,
+   "itens": 22,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -662,7 +664,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 26,
+   "itens": 25,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -716,7 +718,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 16,
+   "itens": 19,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -761,7 +763,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 7,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -932,7 +934,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 20,
+   "itens": 19,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1139,7 +1141,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 24,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1202,7 +1204,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 37,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1238,7 +1240,7 @@
    "id": "spacenews",
    "nome": "SpaceNews",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "https://spacenews.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1481,7 +1483,7 @@
   "formula": "1 dia venusiano > 1 ano venusiano"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-13-1433.png",
+ "capa": "capa-2026-11-13-1535.png",
  "link": "https://radar.secties.pb.gov.br/edicao/28/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 28\n_Sexta-feira, 13 de novembro de 2026_\n\n*BRASIL TERÁ AÇÃO INÉDITA DE ATÉ R$ 81 MILHÕES PARA DESCARBONIZAR SETOR DE AÇO E CIMENTO*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Simpósio Brasileiro de Geofísica Espacial e Aeronomia é realizado na Paraíba com organização da UEPB e UFCG _(UEPB)_\n2. *Prazo:* Concurso da prefeitura de Parari: inscrições abertas para 29 vagas e salários de até R$ 10 mil _(Jornal da Paraíba)_\n3. UFPB e Exército Brasileiro planejam firmar um acordo de cooperação técnica em pesquisa de pós-graduação sobre serviço militar voluntário feminino _(UFPB)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Eneida Agra Maracajá recebe título de Doutora Honoris Causa da UEPB em solenidade no Teatro Municipal\n*Brasil:* Depois do porto de Santos, ataques hackers miram órgãos do governo e atingem Tesouro Nacional, Petrobras e Caixa\n*Mundo:* University at Buffalo Study Decodes Quantum Material’s ‘Optical Fingerprints’\n\n> *Você sabia?* Um dia em Vênus é mais longo que um ano em Vênus.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/28/"
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 28\n_Sexta-feira, 13 de novembro de 2026_\n\n*BRASIL TERÁ AÇÃO INÉDITA DE ATÉ R$ 81 MILHÕES PARA DESCARBONIZAR SETOR DE AÇO E CIMENTO*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Simpósio Brasileiro de Geofísica Espacial e Aeronomia é realizado na Paraíba com organização da UEPB e UFCG _(UEPB)_\n2. *Prazo:* Concurso da prefeitura de Parari: inscrições abertas para 29 vagas e salários de até R$ 10 mil _(Jornal da Paraíba)_\n3. IFPB e Receita Federal transformam equipamentos apreendidos em oportunidades de inclusão digital e cidadania _(IFPB)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Eneida Agra Maracajá recebe título de Doutora Honoris Causa da UEPB em solenidade no Teatro Municipal\n*Brasil:* Depois do porto de Santos, ataques hackers miram órgãos do governo e atingem Tesouro Nacional, Petrobras e Caixa\n*Mundo:* University at Buffalo Study Decodes Quantum Material’s ‘Optical Fingerprints’\n\n> *Você sabia?* Um dia em Vênus é mais longo que um ano em Vênus.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/28/"
 }
