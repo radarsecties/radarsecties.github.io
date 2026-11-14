@@ -461,7 +461,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-14T13:25:44-03:00",
+ "geradoEm": "2026-11-14T14:13:06-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -521,7 +521,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 11,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -656,7 +656,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 22,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -872,7 +872,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 33,
+   "itens": 32,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -962,7 +962,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 19,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1169,7 +1169,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 20,
+   "itens": 19,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1223,10 +1223,10 @@
    "id": "science",
    "nome": "Science",
    "ok": true,
-   "itens": 10,
+   "itens": 0,
    "feed": "https://www.science.org/rss/news_current.xml",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "sebrae-pb",
@@ -1331,7 +1331,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 11,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1510,7 +1510,7 @@
   "formula": "⁴⁰K → ⁴⁰Ca + e⁻ + ν̄"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-14-1325.png",
+ "capa": "capa-2026-11-14-1413.png",
  "link": "https://radar.secties.pb.gov.br/edicao/29/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 29\n_Sábado, 14 de novembro de 2026_\n\n*PARAÍBA ENCERRA MISSÃO EM LISBOA COM APRESENTAÇÃO DO CIQUANTA E PARAHYBA TECHUB*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Divulgado resultado final da etapa complementar para preenchimento de vagas remanescentes do Processo Seletivo Especial PRONERA _(UEPB)_\n2. Atom Computing Finalizes $100 Million U.S. Department of Commerce R&D Agreement for Fault-Tolerant Quantum Systems _(Quantum Computing Report)_\n3. Financiamento Não Reembolsável — Ministério da Ciência, Tecnologia e Inovação _(MCTI)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* UEPB participa da 4ª Semana Brasileira de Educação Midiática com oficina e curso pioneiro de integridade da informação\n*Brasil:* Inclusão digital: edital prevê R$ 24 milhões para levar internet a localidades rurais\n*Mundo:* QFactorial and Monash University Secure A$1.12 Million ($$758.6K USD) Australian Government Grant for Quantum Logistics Optimization\n\n> *Você sabia?* Bananas são levemente radioativas. Para fazer mal, porém, seria preciso comer milhões delas de uma vez.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/29/"
 }

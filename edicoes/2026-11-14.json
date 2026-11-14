@@ -461,7 +461,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-14T13:25:44-03:00",
+ "geradoEm": "2026-11-14T14:13:06-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -521,7 +521,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 11,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -656,7 +656,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 22,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -872,7 +872,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 33,
+   "itens": 32,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -962,7 +962,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 19,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1169,7 +1169,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 20,
+   "itens": 19,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1223,10 +1223,10 @@
    "id": "science",
    "nome": "Science",
    "ok": true,
-   "itens": 10,
+   "itens": 0,
    "feed": "https://www.science.org/rss/news_current.xml",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "sebrae-pb",
@@ -1331,7 +1331,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 11,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1509,5 +1509,5 @@
   "area": "Física nuclear",
   "formula": "⁴⁰K → ⁴⁰Ca + e⁻ + ν̄"
  },
- "capa": "capa-2026-11-14-1325.png"
+ "capa": "capa-2026-11-14-1413.png"
 }

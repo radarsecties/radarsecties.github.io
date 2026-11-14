@@ -125305,6 +125305,277 @@
 "escopo": "Global",
 "pontos": 22,
 "urgente": false
+},
+"2d89e4987c6d": {
+"id": "2d89e4987c6d",
+"titulo": "Painel Macaé Empreendedora - DELAS",
+"url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iUmRXc0d0NklDbGE5RkpyNVB2LWJyN0h2SF9mM1FXZFJWNnFlQnhycU9oVWR1Xzh1Wk9zbm9xbmtWRlFySWM1T2oyRE4wcWFWYUE3Q0ZTSWxfcWI3ZnlvRjQyRHI0UXZ2R002Z3VMN29Rci1WM0U3MlBFMnRZdw?oc=5",
+"resumo": "",
+"fonte": "Sebrae Paraíba",
+"fonteId": "sebrae-pb",
+"dataPub": "2026-11-09",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:39Z",
+"tipo": "inovacao",
+"programas": [
+"inovacao"
+],
+"escopo": "Paraíba",
+"pontos": 16,
+"urgente": false
+},
+"8a342b5449e2": {
+"id": "8a342b5449e2",
+"titulo": "Paraíba oferta mais de mil vagas de trabalho a partir de segunda",
+"url": "https://www.maispb.com.br/883724/paraiba-oferta-mais-de-mil-vagas-de-trabalho-a-partir-de-segunda.html",
+"resumo": "O Sistema Nacional de Emprego da Paraíba (Sine-PB), a partir desta segunda-feira (16), oferta 1.005 vagas de trabalho para diferentes perfis profissionais, desde o primeiro emprego a cargos de liderança e diversos níveis de escolaridades. As oportunidades de emprego podem ser procuradas em 14 postos do Sine…",
+"fonte": "MaisPB",
+"fonteId": "maispb",
+"dataPub": "2026-11-14",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:40Z",
+"tipo": "evento",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": -16,
+"urgente": false
+},
+"1bed08153a2a": {
+"id": "1bed08153a2a",
+"titulo": "Pode andar de patinete elétrico na orla de João Pessoa? A resposta não é simples",
+"url": "https://paraibabusiness.com.br/pode-andar-de-patinete-eletrico-na-orla-de-joao-pessoa-a-resposta-nao-e-simples",
+"resumo": "Os patinetes elétricos ganharam espaço na circulação pela orla de João Pessoa. Moradores e turistas utilizam os equipamentos para passeios e deslocamentos, atraídos pela facilidade de acesso por aplicativo. A expansão do serviço, porém, levanta questões sobre as regras de circulação, a ocupação dos espaços públicos e…",
+"fonte": "Paraíba Business",
+"fonteId": "paraibabusiness",
+"dataPub": "2026-11-14",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:40Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 8,
+"urgente": false
+},
+"68d7a2940e6a": {
+"id": "68d7a2940e6a",
+"titulo": "Cagepa realiza mutirão de regularização de ligações de água em Lucena",
+"url": "https://www.polemicaparaiba.com.br/cidades/cagepa-realiza-mutirao-de-regularizacao-de-ligacoes-de-agua-em-lucena",
+"resumo": "A Companhia de Água e Esgotos da Paraíba (Cagepa) iniciou neste sábado (14) uma ação especial de atendimento e regularização de ligações de água no município de Lucena, no Litoral Norte paraibano. A iniciativa acontece no Centro de Capacitação José do Patrocínio de Oliveira Lima, no bairro Gameleira, e terá…",
+"fonte": "Polêmica Paraíba",
+"fonteId": "polemicapb",
+"dataPub": "2026-11-14",
+"imagem": "https://uploads.polemicaparaiba.com.br/2026/11/WhatsApp-Image-2026-11-14-at-12.25.20.jpeg",
+"coletadoEm": "2026-11-14T17:11:40Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 4,
+"urgente": false
+},
+"32687a3384f3": {
+"id": "32687a3384f3",
+"titulo": "Enem 2026: revisão e gestão do tempo são foco na reta final",
+"url": "https://portalcorreio.com.br/enem-2026-revisao-e-gestao-do-tempo-sao-foco-na-reta-final",
+"resumo": "A reta final para o segundo dia do Exame Nacional do Ensino Médio (Enem) de 2026, neste domingo (15), é de revisão acelerada dos conteúdos de matemática, física, química e biologia. Muitos candidatos pretendem estudar até o último momento possível. A estudante da 3º série do ensino médio de uma escola privada de…",
+"fonte": "Portal Correio",
+"fonteId": "portalcorreio",
+"dataPub": "2026-11-14",
+"imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/3125ada00e0b7b9654d4cb725405c183.jpg",
+"coletadoEm": "2026-11-14T17:11:41Z",
+"tipo": "ensino",
+"programas": [
+"ensino",
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 31,
+"urgente": false
+},
+"02c05d30a75d": {
+"id": "02c05d30a75d",
+"titulo": "Ministro Gustavo Feliciano participa de agenda oficial nas Filipinas para atrair turistas e investidores asiáticos",
+"url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxNckt4d1p3cDc3WDN3QzZKWjNmamkybHB5bzRvb0xZS3FVXzdzaGUyN3hWaDNJelpkcC04M01wMmF3Y2tiN3JDNTFrYXBMR0dxa09ndmNCVGdtU0tDNm0xSVpRWTNhckJPUldnZmkxSjBBWUZma1JROEVuSXNKdTEyQlZRNzFrU3pMUWZMR0R5MmFmankxM3ViZU1nZkUxRmtTRkQ3VmpTcnlvX0I2ekdhUE1ISEhNcmlVa0RzdGhmSVd2d01DTGh1cUJFY2dTOEtjXzJtU2hKYzdPVGE2VGJvcDlWMVZmNVZPVjFPcXRCZDRVb3NIRDlDd09tMFhYb3IweHc?oc=5",
+"resumo": "",
+"fonte": "WSCOM",
+"fonteId": "wscom",
+"dataPub": "2026-11-14",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:41Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"b25dfe53ba1c": {
+"id": "b25dfe53ba1c",
+"titulo": "Ministro do Planejamento destaca que ajuste preserva políticas sociais",
+"url": "https://agenciagov.ebc.com.br/noticias/202611/ministro-do-planejamento-afirma-que-ajuste-preserva-politicas-sociais",
+"resumo": "Bruno Moretti publica vídeo em que reafirma conquistas populares, ao mesmo tempo em que Governo Federal busca responsabilidade fiscal",
+"fonte": "Agência Gov",
+"fonteId": "agenciagov",
+"dataPub": "2026-11-14",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:46Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -4,
+"urgente": false
+},
+"048e63700fdb": {
+"id": "048e63700fdb",
+"titulo": "Enem 2026: confira as orientações para o segundo dia de provas — Ministério da Educação",
+"url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPeWNOb29Ed1JIOGJNYVExbU1qLXN4RXE2QnFJQ3RkUlNKeGFxSl9Zdzg4WWduRFh5Zm1LYjJRbmV2UXpRUWl3eWtoeFgtYmJsVjVRMlE1Q1Q2VUFIZWtmajBmdnJmTVVVTDJmbHAza1BuTUVrTFBMTHd5dXpkU2dQNVU3VVZLSUZVbDRMaDYtS1pYSUR1aExZMmZjandnb1ozblBsQ0N1azNBdW1aT3VZTFVRN1V2TFVUVm5tQzBtQQ?oc=5",
+"resumo": "",
+"fonte": "MEC",
+"fonteId": "mec",
+"dataPub": "2026-11-13",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:49Z",
+"tipo": "ensino",
+"programas": [
+"ensino"
+],
+"escopo": "Nacional",
+"pontos": 21,
+"urgente": false
+},
+"1da8a7b2e3e7": {
+"id": "1da8a7b2e3e7",
+"titulo": "Boletim Temático do OCTI revela oportunidades para fortalecer a CT&I em Mato Grosso",
+"url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZFhZM2lvdHJ0dGY1a3lyelNwc3JHNE1yS2U5N3F3ZHVQT0h3aW9YYmtOTmhoNnd3dnp2VW0yaXFjZkwySkpyMWdtcHh6V0NFb3AwVlIwbkNfelpldlEwNGJJY2gtVWxfX2ZHUnlPU19zeUNKb1hrcGJBTGlOLTRyM1hUNWh1NEF0Y1Zwa3BESXVUeFdDdHNJa2x2bWFKX2VxWTdDLVdzVXZoMFhHM0p1eFF2OHM?oc=5",
+"resumo": "",
+"fonte": "CGEE",
+"fonteId": "cgee",
+"dataPub": "2026-11-12",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:11:58Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
+},
+"ddcf0b06da6d": {
+"id": "ddcf0b06da6d",
+"titulo": "Leo Bezerra promove novas exonerações e amplia mudanças na estrutura da Prefeitura de João Pessoa",
+"url": "https://poderparaiba.com.br/leo-bezerra-promove-novas-exoneracoes-e-amplia-mudancas-na-estrutura-da-prefeitura-de-joao-pessoa",
+"resumo": "O prefeito de João Pessoa, Leo Bezerra (PSDB), deu continuidade ao processo de reorganização administrativa da gestão municipal e oficializou novas exonerações e mudanças na estrutura da Prefeitura. As medidas foram publicadas no Diário Oficial do Município desta sexta-feira (13). Entre as alterações estão as…",
+"fonte": "Poder Paraíba",
+"fonteId": "poderparaiba",
+"dataPub": "2026-11-14",
+"imagem": "https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png",
+"coletadoEm": "2026-11-14T17:12:02Z",
+"tipo": "evento",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": -48,
+"urgente": false
+},
+"05efb822f9ca": {
+"id": "05efb822f9ca",
+"titulo": "Violência contra a mulher associada ao vício em apostas cresce 75% em um ano",
+"url": "https://paraibaja.com.br/violencia-contra-a-mulher-associada-ao-vicio-em-apostas-cresce-75-em-um-ano",
+"resumo": "Relatos revelam situações em que perdas financeiras com jogos são acompanhadas de ameaças, agressões e apropriação do dinheiro das vítimas O post Violência contra a mulher associada ao vício em apostas cresce 75% em um ano apareceu primeiro em Paraíba Já .",
+"fonte": "Paraíba Já",
+"fonteId": "paraibaja",
+"dataPub": "2026-11-14",
+"imagem": "",
+"coletadoEm": "2026-11-14T17:12:02Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": -24,
+"urgente": false
+},
+"0552d2ed84c4": {
+"id": "0552d2ed84c4",
+"titulo": "Hora de renovar o seu setup: seleção de notebooks e acessórios em promoção na Amazon",
+"url": "https://olhardigital.com.br/2026/11/14/reviews/hora-de-renovar-o-seu-setup-selecao-de-notebooks-e-acessorios-em-promocao-na-amazon",
+"resumo": "Se você está pensando em trocar o notebook ou turbinar o home office, esta seleção chegou na hora certa. Reunimos três opções que vão desde notebooks compactos e leves até acessórios que melhoram a ergonomia do dia a dia — tudo disponível agora na Amazon. Confira! Notebook Multi Ultra 15.6″ Full HD Intel Pentium Gold…",
+"fonte": "Olhar Digital",
+"fonteId": "olhardigital",
+"dataPub": "2026-11-14",
+"imagem": "https://m.media-amazon.com/images/I/31H7tZFP2lL._SL500_.jpg",
+"coletadoEm": "2026-11-14T17:12:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
+},
+"be0c7e27e65d": {
+"id": "be0c7e27e65d",
+"titulo": "Suspensão de voos nos EUA provoca cancelamentos e alterações no tráfego aéreo do Brasil",
+"url": "https://olhardigital.com.br/2026/11/14/carros-e-tecnologia/suspensao-de-voos-nos-eua-provoca-cancelamentos-e-alteracoes-no-trafego-aereo-do-brasil",
+"resumo": "Medida adotada pela autoridade de aviação norte-americana afetou voos entre os dois países; ao menos 15 operações foram canceladas entre sexta-feira (13) e sábado (14), e reflexos ainda podem ocorrer nos próximos dias. O post Suspensão de voos nos EUA provoca cancelamentos e alterações no tráfego aéreo do Brasil…",
+"fonte": "Olhar Digital",
+"fonteId": "olhardigital",
+"dataPub": "2026-11-14",
+"imagem": "https://olhardigital.com.br/wp-content/uploads/2026/11/Alteraes-de-trfego-areo-entre-Brasil-e-EUA-1-1024x576.jpg",
+"coletadoEm": "2026-11-14T17:12:17Z",
+"tipo": "evento",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -2,
+"urgente": false
+},
+"f8c3469aacdb": {
+"id": "f8c3469aacdb",
+"titulo": "EUA ainda enfrentam caos aéreo após retomada dos voos – mais de 3 mil cancelamentos neste sábado (14)",
+"url": "https://olhardigital.com.br/2026/11/14/carros-e-tecnologia/eua-ainda-enfrentam-caos-aereo-apos-retomada-dos-voos-mais-de-3-mil-cancelamentos-neste-sabado-14",
+"resumo": "A falha nos sistemas de controle aéreo dos EUA provocou uma onda de cancelamentos que ainda afeta passageiros neste fim de semana O post EUA ainda enfrentam caos aéreo após retomada dos voos – mais de 3 mil cancelamentos neste sábado (14) apareceu primeiro em Olhar Digital .",
+"fonte": "Olhar Digital",
+"fonteId": "olhardigital",
+"dataPub": "2026-11-14",
+"imagem": "https://olhardigital.com.br/wp-content/uploads/2025/01/avio-1024x634.jpg",
+"coletadoEm": "2026-11-14T17:12:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": 3,
+"urgente": false
+},
+"ca73ea2d43ce": {
+"id": "ca73ea2d43ce",
+"titulo": "Notebooks gamer em promoção: Lenovo LOQ e ASUS TUF estão entre as melhores escolhas do momento",
+"url": "https://olhardigital.com.br/2026/11/14/reviews/notebooks-gamer-em-promocao-lenovo-loq-e-asus-tuf-estao-entre-as-melhores-escolhas-do-momento",
+"resumo": "Se você está pensando em montar um setup para jogos ou simplesmente quer um notebook com desempenho acima da média, o momento é favorável. Reunimos três opções de notebooks gamer em oferta na Amazon Brasil, cobrindo diferentes perfis de uso e configurações — do mais acessível ao mais robusto. Confira. Notebook Gamer…",
+"fonte": "Olhar Digital",
+"fonteId": "olhardigital",
+"dataPub": "2026-11-14",
+"imagem": "https://m.media-amazon.com/images/I/41j+kGmUhYL._SL500_.jpg",
+"coletadoEm": "2026-11-14T17:12:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -28,
+"urgente": false
 }
 }
 }
