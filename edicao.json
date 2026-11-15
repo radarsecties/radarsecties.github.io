@@ -427,7 +427,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-15T13:52:28-03:00",
+ "geradoEm": "2026-11-15T14:48:03-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -487,7 +487,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -577,7 +577,7 @@
    "id": "iadb",
    "nome": "BID",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -703,7 +703,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 39,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -748,7 +748,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -910,7 +910,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 20,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -919,7 +919,7 @@
    "id": "mec",
    "nome": "MEC",
    "ok": true,
-   "itens": 39,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1099,7 +1099,7 @@
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
    "ok": true,
-   "itens": 2,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1171,10 +1171,10 @@
    "id": "science",
    "nome": "Science",
    "ok": true,
-   "itens": 10,
+   "itens": 0,
    "feed": "https://www.science.org/rss/news_current.xml",
    "via": "feed",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "sebrae-pb",
@@ -1279,7 +1279,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1474,7 +1474,7 @@
   "formula": "≈ 6,5 × 10¹⁰ neutrinos por cm² a cada segundo"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-15-1352.png",
+ "capa": "capa-2026-11-15-1448.png",
  "link": "https://radar.secties.pb.gov.br/edicao/30/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 30\n_Domingo, 15 de novembro de 2026_\n\n*ATOM COMPUTING FINALIZES $100 MILLION U.S. DEPARTMENT OF COMMERCE R&D AWARD*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. 4º Seminário de Cultura e Artes debate políticas culturais e reúne atividades acadêmicas e artísticas _(UEPB)_\n2. IFPB - Repositório Digital: Estratégias pedagógicas para o ensino de língua portuguesa como L2 para estudantes surdos: A experiência da CLAI do IFPB campus PicuÍ _(IFPB)_\n3. *Prazo:* FLIC 2026 encerra programação neste domingo com atividades gratuitas em Campina Grande _(Jornal da Paraíba)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Até 22 de dezembro: Comissão Própria inicia novo período de Avaliação Institucional para comunidade universitária\n*Brasil:* Startup acelerada pelo Unifor Hub é aprovada em edital da FUNCAP e fortalece protagonismo feminino na ciência\n*Mundo:* Conductor and Elevate Quantum Partner on Training and Quantum Component Testing\n\n> *Você sabia?* A cada segundo, dezenas de bilhões de neutrinos vindos do Sol atravessam a ponta do seu dedo. Sem pedir licença.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/30/"
 }
