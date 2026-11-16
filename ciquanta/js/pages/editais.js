@@ -20,6 +20,7 @@ const FONTES = [
 
 export async function render(view) {
   const mecs = await loadMecanismos();
+  const auto = await store.ref('editais-auto').catch(() => null);
   const draw = () => {
     const hoje = isoDay();
     const l = [...store.list('editais')].sort((a, b) => (a.prazo || '9999').localeCompare(b.prazo || '9999'));
@@ -33,8 +34,11 @@ export async function render(view) {
       </div>
       <div class="table-wrap" style="margin-bottom:18px"><table><thead><tr><th>Chamada</th><th>Órgão</th><th>Mecanismo</th><th>Prazo</th><th class="num">Valor</th><th>Situação</th><th>Parceiros</th></tr></thead><tbody>${l.length ? l.map(e => { const [st, k] = ST[e.status] || ST.aberto; return `<tr class="row-link" data-id="${esc(e.id)}"><td class="title">${esc(e.titulo)}${safeUrl(e.link) ? ` <a href="${esc(e.link)}" target="_blank" rel="noopener" title="Abrir edital">${icon('externo', 13)}</a>` : ''}</td><td>${esc(e.orgao || '—')}</td><td class="small">${e.mecanismo ? esc(mecCurto(e.mecanismo)) : '—'}</td>
         <td class="nowrap">${e.prazo ? `${fmtDate(e.prazo)} <span class="muted small" style="color:${e.prazo < hoje && ['aberto', 'preparacao'].includes(e.status) ? 'var(--bad)' : ''}">(${relTime(e.prazo)})</span>` : '—'}</td><td class="num">${e.valor ? money(e.valor) : '—'}</td><td><span class="badge ${k}">${st}</span></td><td class="small">${esc((e.parceiros || []).map(id => store.get('orgs', id)?.nome).filter(Boolean).join(', ') || '—')}</td></tr>`; }).join('') : '<tr><td colspan="7"><div class="empty">Nenhum edital cadastrado. Consulte as fontes abaixo e registre as chamadas de interesse.</div></td></tr>'}</tbody></table></div>
+      ${(() => { const ja = new Set(store.list('editais').map(e => e.origemId).filter(Boolean)); const l = (auto?.itens || []).filter(x => !ja.has(x.id)).slice(0, 12);
+        return `<div class="card" style="margin-bottom:18px"><h3>Chamadas identificadas automaticamente <span class="muted">${auto?.atualizadoEm ? 'coleta ' + relTime(auto.atualizadoEm) : 'aguardando a coleta diária'}</span></h3>${l.length ? `<div class="list">${l.map(x => `<div class="list-item"><div style="flex:1;min-width:0"><a class="title" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)} ${icon('externo', 12)}</a><div class="meta">${esc(x.orgao)} · publicada ${fmtDate(x.publicado)}${x.prazo ? ` · <b>prazo ${fmtDate(x.prazo)}</b>` : ''}</div></div><button class="btn sm" data-seguir="${esc(x.id)}">${icon('mais', 13)} Acompanhar</button></div>`).join('')}</div>` : '<div class="empty">Nenhuma chamada nova. A coleta procura duas vezes por dia em notícias, EMBRAPII e Agência FAPESP.</div>'}</div>`; })()}
       <div class="card"><h3>Onde acompanhar novas chamadas</h3><div class="grid g2">${FONTES.map(f => `<div class="list-item" style="border:0;padding:6px 0"><div><a class="title" href="${f[1]}" target="_blank" rel="noopener">${f[0]} ${icon('externo', 12)}</a><div class="meta">${f[2]}</div></div></div>`).join('')}</div></div>`;
     view.querySelector('#novo').onclick = () => form({}, mecs, draw);
+    view.querySelectorAll('[data-seguir]').forEach(b => b.onclick = () => { const x = auto.itens.find(i => i.id === b.dataset.seguir); store.upsert('editais', { titulo: x.titulo, orgao: x.orgao, link: x.link, prazo: x.prazo || '', status: 'aberto', origemId: x.id, notas: 'Identificada pela coleta diária; confirme regras e prazo na página oficial.' }, 'edt'); toast('Chamada em acompanhamento.', 'ok'); draw(); });
     view.querySelector('tbody').onclick = e => { if (e.target.closest('a')) return; const tr = e.target.closest('tr[data-id]'); if (tr) form(store.get('editais', tr.dataset.id), mecs, draw); };
   };
   draw();

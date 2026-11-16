@@ -4,7 +4,9 @@ import * as monitor from '../monitor.js';
 import * as cad from '../cadencia.js';
 import { esc, num, money, pct, relTime, FUNIL, isoDay, fmtDateTime, MESES_LONGOS } from '../util.js';
 import { chart } from '../charts.js';
-import { brMap } from '../components.js';
+import { mapaFluxo } from '../components.js';
+import { sinais, TEMAS } from '../sinais.js';
+import * as auto from '../automacao.js';
 import { loadMecanismos } from '../email.js';
 import { proximasAcoes, receitaPorFonte, pontuar, contexto } from '../score.js';
 import { icon } from '../icons.js';
@@ -33,7 +35,8 @@ function guia(s, g) {
 
 export async function render(view) {
   await loadMecanismos();
-  const charts = []; let gcal = [];
+  const charts = []; let gcal = [], modoMapa = 'orgs';
+  await import('../sinais.js').then(m => m.carregarSinais());
   const draw = () => {
     charts.splice(0).forEach(c => c.destroy());
     const s = store.state(), conf = s.config, hoje = isoDay(), d = new Date();
@@ -66,11 +69,11 @@ export async function render(view) {
 
     ${guia(s, g)}
     <div class="grid g5" style="margin-bottom:18px">
-      <a class="card kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
-      <a class="card kpi" href="#/captacao"><span class="label">Contratado</span><span class="value">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta no plano de captação'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>
-      <a class="card kpi" href="#/organizacoes"><span class="label">Em relacionamento</span><span class="value">${num(ativas)}</span><span class="sub">de ${num(s.orgs.length)} organizações mapeadas</span></a>
-      <a class="card kpi" href="#/interacoes"><span class="label">Taxa de resposta</span><span class="value">${enviados.length ? pct(resp, enviados.length) + '%' : '—'}</span><span class="sub">${resp} resposta(s) a ${enviados.length} e-mail(s) · ${insResp} em cadências</span></a>
-      <a class="card kpi" href="#/visitas"><span class="label">Visitas à réplica</span><span class="value">${t.visitas ?? '—'}</span><span class="sub">${t.visitas === undefined ? 'conecte o Painel CIQUANTA' : `${t.pessoas} visitantes · ${t.cadastros} cadastros`}</span></a>
+      <a class="card kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value" data-contar="${Math.round(ponderado)}" data-formato="moeda">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
+      <a class="card kpi" href="#/captacao"><span class="label">Contratado</span><span class="value" data-contar="${Math.round(contratado)}" data-formato="moeda">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta no plano de captação'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>
+      <a class="card kpi" href="#/organizacoes"><span class="label">Em relacionamento</span><span class="value" data-contar="${ativas}">${num(ativas)}</span><span class="sub">de ${num(s.orgs.length)} organizações mapeadas</span></a>
+      <a class="card kpi" href="#/interacoes"><span class="label">Taxa de resposta</span><span class="value" data-contar="${enviados.length ? pct(resp, enviados.length) : 0}" data-sufixo="%">${enviados.length ? pct(resp, enviados.length) + '%' : '—'}</span><span class="sub">${resp} resposta(s) a ${enviados.length} e-mail(s) · ${insResp} em cadências</span></a>
+      <a class="card kpi" href="#/visitas"><span class="label">Visitantes da réplica</span><span class="value" data-contar="${t.pessoas || 0}">${t.pessoas ?? '—'}</span><span class="sub">${t.visitas === undefined ? 'aguardando o Painel CIQUANTA' : `${t.recebidos ? num(t.recebidos) + ' já recebidos · ' : ''}${num(t.cadastros)} cadastros na rede`}</span></a>
     </div>
 
     <div class="grid dash-a" style="margin-bottom:18px">
@@ -81,16 +84,33 @@ export async function render(view) {
     <div class="grid g3" style="margin-bottom:18px">
       <div class="card"><h3>Funil de oportunidades</h3><div class="funil">${FUNIL.filter(f => f.id !== 'perdida').map(f => { const os = s.oportunidades.filter(o => (o.etapa || 'qualificacao') === f.id), v = os.reduce((a, o) => a + (Number(o.valor) || 0), 0); return `<a href="#/oportunidades"><span class="l">${esc(f.nome)}</span><span class="b"><i style="width:${Math.max(v ? 6 : 0, 100 * v / fmax)}%;background:${f.cor}"></i></span><span class="v">${os.length} · ${compacto(v)}</span></a>`; }).join('')}</div></div>
       <div class="card"><h3>Receita por fonte <span class="muted">contratado e ponderado</span></h3>${Object.keys(fontes).length ? `<div class="funil">${Object.entries(fontes).map(([k, v]) => { const mx = Math.max(1, ...Object.values(fontes).map(x => x.contratado + x.ponderado)); return `<div><span class="l">${esc(k)}</span><span class="b"><i style="width:${100 * v.contratado / mx}%;background:#12805C"></i><i style="width:${100 * v.ponderado / mx}%;background:#3056D5"></i></span><span class="v">${compacto(v.contratado)} · ${compacto(v.ponderado)}</span></div>`; }).join('')}</div><p class="muted small" style="margin:10px 0 0"><span class="dot-i" style="background:#12805C"></span> contratado <span class="dot-i" style="background:#3056D5;margin-left:10px"></span> ponderado em aberto</p>` : '<div class="empty">As três fontes da política de sustentabilidade (financiamento público, receita contratual e parcerias) aparecem aqui conforme as oportunidades são registradas.</div>'}</div>
-      <div class="card"><h3>Organizações por estado</h3><div id="map"></div></div>
+      <div class="card"><h3>Rede pelo Brasil <span class="seg-mini"><button data-mapa="orgs" class="${modoMapa === 'orgs' ? 'on' : ''}">Organizações</button><button data-mapa="painel" class="${modoMapa === 'painel' ? 'on' : ''}">Cadastros no Painel</button></span></h3><div id="map"></div></div>
     </div>
 
     <div class="grid g3" style="margin-bottom:18px">
       <div class="card span2"><h3>Potencial por setor <span class="muted">organizações com potencial alto e pipeline ponderado</span></h3><div class="chart-box"><canvas id="c-setor"></canvas></div></div>
       <div class="card"><h3>Interações recentes <a class="small" href="#/interacoes">${live.ativo ? '<span class="badge ok">ao vivo</span>' : 'abrir'}</a></h3><div class="list" id="feed"></div></div>
+    </div>
+
+    <div class="grid g3">
+      <div class="card span2"><h3>Sinais do mercado <a class="small" href="#/sinais">ver todos</a></h3>${(() => {
+        const l = sinais().itens.filter(x => x.orgs.length || x.temas.includes('quantica') || x.temas.includes('ciquanta') || x.edital).slice(0, 6);
+        return l.length ? `<div class="sinais compacto">${l.map(x => `<article class="sinal"><div class="quando">${relTime(x.data)}<small>${esc(x.fonte)}</small></div><div><a class="title" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a><div class="tags">${x.edital ? '<span class="badge warn">Chamada aberta</span>' : ''}${x.temas.slice(0, 2).map(t => `<span class="badge gray">${esc(TEMAS[t] || t)}</span>`).join('')}${x.orgs.map(id => store.get('orgs', 'org-' + id.replace(/^(ref|auto)-/, ''))).filter(Boolean).slice(0, 3).map(o => `<a class="badge" href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a>`).join('')}</div></div></article>`).join('')}</div>` : '<div class="empty">Os sinais aparecem depois da primeira coleta diária.</div>';
+      })()}</div>
+      <div class="card"><h3>${icon('robo', 16)} Automação <a class="small" href="#/automacao">central</a></h3>${(() => {
+        const hojeLog = auto.registro().filter(x => x.em.slice(0, 10) === hoje && x.n);
+        const est = auto.estado();
+        return `<div class="auto-resumo"><span class="estado ${est.rodando ? 'girando' : 'ok'}"></span><span>${est.rodando ? 'Executando as rotinas…' : est.ultima ? 'Rotinas executadas ' + relTime(est.ultima) : 'Rotinas aguardando a primeira execução'}</span></div>
+          ${hojeLog.length ? `<div class="list">${hojeLog.slice(0, 6).map(x => `<div class="list-item"><div><div class="title">${esc(auto.ROTINAS.find(r => r.id === x.rotina)?.nome || x.rotina)}</div><div class="meta">${esc(x.msg)}</div></div></div>`).join('')}</div>` : '<p class="muted small">Nenhuma novidade aplicada hoje.</p>'}
+          <p class="muted small" style="margin-bottom:0">Piloto automático ${s.config.pilotoAutomatico ? '<b>ligado</b>' : 'desligado'} · ${num(s.inscricoes.filter(i => i.origem === 'piloto').length)} abordagens iniciadas por ele.</p>`;
+      })()}</div>
     </div>`;
 
-    const ufCount = {}; s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
-    view.querySelector('#map').appendChild(brMap(ufCount, { onClick: uf => location.hash = `#/organizacoes?uf=${uf}` }));
+    const ufCount = {};
+    if (modoMapa === 'painel') (p.publico?.porUf || []).forEach(u => { ufCount[u.uf] = u.total; });
+    else s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
+    view.querySelector('#map').appendChild(mapaFluxo(ufCount, { label: modoMapa === 'painel' ? 'cadastros no Painel CIQUANTA' : 'organizações', onClick: uf => location.hash = modoMapa === 'painel' ? '#/visitas' : `#/organizacoes?uf=${uf}` }));
+    view.querySelectorAll('[data-mapa]').forEach(b => b.onclick = () => { modoMapa = b.dataset.mapa; draw(); });
     view.querySelector('#kbtn').onclick = () => window.dispatchEvent(new Event('ciq:paleta'));
     view.querySelector('#guia-x')?.addEventListener('click', () => { store.setConfig({ guiaOculto: true }); draw(); });
     const l = [...s.interacoes].sort((a, b) => (b.data || '').localeCompare(a.data || '')).slice(0, 6);
@@ -100,14 +120,15 @@ export async function render(view) {
     s.orgs.forEach(o => { const k = o.setor || ''; if (!k) return; (por[k] ||= { alto: 0, pipe: 0 }); if (pontuar(o, ctx).total >= 65) por[k].alto++; });
     abertas.forEach(o => { if (o.setor) (por[o.setor] ||= { alto: 0, pipe: 0 }).pipe += store.pipelineValor(o); });
     const top = Object.entries(por).filter(([, v]) => v.alto || v.pipe).sort((a, b) => b[1].pipe - a[1].pipe || b[1].alto - a[1].alto).slice(0, 12);
-    charts.push(chart(view.querySelector('#c-setor'), { data: { labels: top.length ? top.map(([k]) => store.setorCurto(k)) : ['Sem dados'], datasets: [
+    if (!top.length) view.querySelector('#c-setor').parentElement.outerHTML = '<div class="empty">As organizações de potencial alto e o pipeline por setor aparecem aqui conforme os contatos e as oportunidades são registrados.</div>';
+    else charts.push(chart(view.querySelector('#c-setor'), { data: { labels: top.length ? top.map(([k]) => store.setorCurto(k)) : ['Sem dados'], datasets: [
       { type: 'bar', label: 'Organizações com potencial alto', data: top.map(([, v]) => v.alto), backgroundColor: '#C9D3F3', borderRadius: 4, yAxisID: 'y' },
       { type: 'bar', label: 'Pipeline ponderado (R$)', data: top.map(([, v]) => Math.round(v.pipe)), backgroundColor: '#3056D5', borderRadius: 4, yAxisID: 'y1' }] },
       options: { scales: { y1: { position: 'right', beginAtZero: true, grid: { display: false }, ticks: { callback: v => compacto(v) } } }, onClick: (_, el) => { if (el[0] && top[el[0].index]) location.hash = `#/setores/${top[el[0].index][0]}`; } } }));
   };
   draw();
   if (G.status().conectado && G.hasScope('calendar')) G.calendarEvents({ dias: 14, passado: 0 }).then(r => { gcal = (r.items || []).filter(e => e.status !== 'cancelled').map(e => ({ data: (e.start.dateTime || e.start.date).slice(0, 10), hora: e.start.dateTime ? new Date(e.start.dateTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) : '', titulo: e.summary || '(sem título)', tipo: 'Google Agenda', k: 'ok' })); if (view.isConnected) draw(); }).catch(() => {});
-  const off = [store.onChange(w => { if (['recebidos', 'inscricoes', 'painel'].includes(w) && !document.querySelector('.modal-back, .paleta')) draw(); }), monitor.onLive(e => { if (e.tipo === 'estado') draw(); }), cad.onCadencia(() => {})];
+  const off = [store.onChange(w => { if (['recebidos', 'inscricoes', 'painel'].includes(w) && !document.querySelector('.modal-back, .paleta')) draw(); }), monitor.onLive(e => { if (e.tipo === 'estado') draw(); }), cad.onCadencia(() => {}), auto.onAutomacao(res => { if (!res || !res.some(x => x.n)) draw(); })];
   const onTheme = () => draw(); window.addEventListener('themechange', onTheme);
   return () => { charts.forEach(c => c.destroy()); window.removeEventListener('themechange', onTheme); off.forEach(f => f()); };
 }

@@ -1,0 +1,20 @@
+{
+ "porOrg": {
+  "ref-itau-unibanco": {
+   "cnpj": "60872504000123",
+   "razao": "ITAU UNIBANCO HOLDING S.A.",
+   "fantasia": "",
+   "situacao": "ATIVA",
+   "cnae": "6431000",
+   "cnaeDesc": "Bancos múltiplos, sem carteira comercial",
+   "porte": "DEMAIS",
+   "natureza": "Sociedade Anônima Aberta",
+   "municipio": "SAO PAULO",
+   "uf": "SP",
+   "capital": 124063060000,
+   "abertura": "1965-12-31",
+   "atualizadoEm": "2026-11-16T22:32:45.236Z"
+  }
+ },
+ "atualizadoEm": "2026-11-16T22:36:49.821Z"
+}

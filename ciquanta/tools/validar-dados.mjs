@@ -72,6 +72,21 @@ for (const a of agenda.itens) {
 }
 if (!Array.isArray(inst.paginas) || !inst.paginas.length) erro('institucional', 'sem páginas');
 
+// Bases da coleta diária (quando existem)
+import { existsSync } from 'node:fs';
+const opcional = n => existsSync(`${raiz}data/${n}.json`) ? ler(n) : null;
+const sin = opcional('sinais');
+if (sin) { if (!Array.isArray(sin.itens)) erro('sinais', 'sem lista de itens'); else for (const x of sin.itens) if (!x.id || !x.titulo || !/^https?:\/\//.test(x.link || '')) erro('sinais', `item inválido: ${x.id || x.titulo}`); }
+const can = opcional('canais');
+if (can) for (const [id, v] of Object.entries(can.porOrg || {})) for (const e of v.emails || []) {
+  if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(e.email)) erro('canais', `${id}: e-mail inválido ${e.email}`);
+  if (!e.papel) erro('canais', `${id}: e-mail sem papel institucional (${e.email})`);
+}
+const rec = opcional('receita');
+if (rec) for (const [id, v] of Object.entries(rec.porOrg || {})) if (!/^\d{14}$/.test(v.cnpj || '')) erro('receita', `${id}: CNPJ inválido`);
+const desc = opcional('descobertas');
+if (desc) for (const d of desc.itens || []) { if (!SEG.has(d.segmento)) erro('descobertas', `${d.nome}: segmento inválido`); if (d.setor && !idSetor.has(d.setor)) erro('descobertas', `${d.nome}: setor inexistente`); if (nomes.has(norm(d.nome))) aviso('descobertas', `${d.nome}: já está no mapeamento curado`); }
+
 // Referências a modelos nas cadências iniciais (definidas em js/store.js)
 const store = readFileSync(`${raiz}js/store.js`, 'utf8');
 for (const m of store.matchAll(/modeloId: '([\w-]+)'/g)) if (!idModelo.has(m[1])) erro('cadências', `modelo inexistente (${m[1]})`);

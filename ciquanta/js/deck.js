@@ -89,13 +89,16 @@ export async function buildDeck(id) {
 // ---------- Visualização
 function fit(stage) { const sl = stage.querySelector('.slide'); if (sl) sl.style.transform = `scale(${stage.clientWidth / 1280})`; }
 
+/** Entrada do conteúdo do slide em sequência (o slide em si mantém a escala calculada por fit). */
+function animarSlide(stage) { stage.classList.remove('anima'); void stage.offsetWidth; stage.classList.add('anima'); }
+
 export function mountViewer(el, deck, { start = 0, onChange } = {}) {
   let i = Math.min(start, deck.slides.length - 1);
   el.innerHTML = `<div class="deck-viewer"><div class="deck-stage"></div>
     <div class="deck-bar"><button class="btn sm" data-a="prev" aria-label="Slide anterior">‹</button><span class="pg"></span><button class="btn sm" data-a="next" aria-label="Próximo slide">›</button>
     <span style="flex:1"></span><button class="btn sm" data-a="full">Tela cheia</button><button class="btn sm" data-a="print">${deck.pdf ? 'Baixar PDF' : 'Gerar PDF'}</button></div></div>`;
   const stage = el.querySelector('.deck-stage');
-  const show = () => { stage.innerHTML = deck.slides[i]; fit(stage); el.querySelector('.pg').textContent = `${i + 1} / ${deck.slides.length}`; onChange?.(i); };
+  const show = () => { stage.innerHTML = deck.slides[i]; fit(stage); animarSlide(stage); el.querySelector('.pg').textContent = `${i + 1} / ${deck.slides.length}`; onChange?.(i); };
   const go = d => { i = Math.max(0, Math.min(deck.slides.length - 1, i + d)); show(); };
   el.querySelector('.deck-bar').onclick = ev => {
     const a = ev.target.closest('[data-a]')?.dataset.a; if (!a) return;
@@ -117,7 +120,7 @@ export function present(deck, start = 0) {
   ov.className = 'deck-full'; ov.innerHTML = '<div class="deck-stage"></div><div class="hint">← → navegar · Esc sair</div>';
   document.body.appendChild(ov);
   const stage = ov.querySelector('.deck-stage');
-  const show = () => { stage.innerHTML = deck.slides[i]; fit(stage); };
+  const show = () => { stage.innerHTML = deck.slides[i]; fit(stage); animarSlide(stage); };
   const close = () => { ov.remove(); document.removeEventListener('keydown', key); window.removeEventListener('resize', show); if (document.fullscreenElement) document.exitFullscreen().catch(() => {}); };
   const key = ev => {
     if (ev.key === 'Escape') close();

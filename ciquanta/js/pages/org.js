@@ -8,11 +8,13 @@ import { quickMail } from '../quickmail.js';
 import { buildDeck, present } from '../deck.js';
 import { icon } from '../icons.js';
 import * as G from '../google.js';
+import { carregarSinais, sinaisDe } from '../sinais.js';
 import { pontuar } from '../score.js';
 import { gerarProposta } from '../proposta.js';
 
 export async function render(view, { arg, params }) {
   const mecs = await loadMecanismos();
+  await carregarSinais();
   const fontes = Object.fromEntries((await store.ref('fontes')).itens.map(f => [f.id, f]));
   let tab = params.get('aba') || 'geral';
   const draw = () => {
@@ -71,6 +73,8 @@ export async function render(view, { arg, params }) {
             <div class="span2 muted">Fonte: ${esc(r.fonte)} · consultado em ${fmtDateTime(r.consultadoEm)}</div></div>`
           : `<p class="muted">${o.cnpj ? 'Clique em Atualizar para buscar razão social, CNAE, porte, e-mail, telefone e administradores.' : 'Cadastre o CNPJ (Editar) para consultar os dados públicos da Receita Federal.'}</p>`}
         </div>
+        ${(() => { const l = sinaisDe(o.id).slice(0, 6); return l.length ? `<div class="card span2"><h3>${icon('sinal', 16)} Na imprensa <span class="muted">coleta diária de notícias</span></h3><div class="sinais compacto">${l.map(x => `<article class="sinal"><div class="quando">${fmtDate(x.data)}<small>${esc(x.fonte)}</small></div><div><a class="title" href="${esc(x.link)}" target="_blank" rel="noopener">${esc(x.titulo)}</a>${x.edital ? '<div class="tags"><span class="badge warn">Chamada aberta</span></div>' : ''}</div></article>`).join('')}</div></div>` : ''; })()}
+        ${o.links?.length ? `<div class="card span2"><h3>Origem da descoberta</h3><ul class="small" style="margin:0;padding-left:18px">${o.links.map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, '').slice(0, 90))}</a></li>`).join('')}</ul></div>` : ''}
         <div class="card span2"><h3>Últimos registros</h3>${histList(hist.slice(0, 6))}</div>
       </div>`;
       T.querySelector('#rf')?.addEventListener('click', async e => {

@@ -9,7 +9,7 @@ export const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanh
 const empty = () => ({
   version: VERSION,
   orgs: [], contatos: [], interacoes: [], oportunidades: [], campanhas: [], envios: [], recebidos: [],
-  modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], supressao: [],
+  modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], supressao: [], descartadas: [],
   painel: { atualizadoEm: '', visitas: [], cadastros: {}, temas: {}, totais: {} },
   config: {
     clientId: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
@@ -19,6 +19,8 @@ const empty = () => ({
     planilhaVisitas: '', planilhaCadastros: '', painelUrl: 'https://painelciquanta.secties.pb.gov.br',
     metaAnual: 0, metas: {}, horarioComercial: true, cadenciasAtivas: true,
     sincronizar: false, baseFileId: '', cfgEm: {}, guiaOculto: false,
+    autoMapeamento: true, autoCanais: true, autoReceita: true, autoPainel: true, autoGmailContatos: true,
+    pilotoAutomatico: false, pilotoLimite: 12, pilotoMinimo: 55,
     historyId: '', driveFileId: '', seed: 0,
   },
 });
@@ -38,6 +40,7 @@ export function sanear(d) {
   corta('inscricoes', i => cts.has(i.contatoId) && cads.has(i.cadenciaId));
   d.contatos.forEach(c => { if (c.orgId && !orgs.has(c.orgId)) { c.orgId = ''; n++; } });
   d.supressao = Array.isArray(d.supressao) ? [...new Set(d.supressao.filter(x => typeof x === 'string' && x))] : [];
+  d.descartadas = Array.isArray(d.descartadas) ? [...new Set(d.descartadas.filter(x => typeof x === 'string' && x))] : [];
   if (!d.painel || typeof d.painel !== 'object') delete d.painel;
   if (n) console.info(`CRM: ${n} registro(s) inconsistente(s) corrigido(s) ao carregar.`);
   return d;
@@ -95,7 +98,8 @@ window.addEventListener('storage', e => {
 export const state = () => db;
 export const cfg = () => db.config;
 /** Preferências que valem para toda a equipe e seguem para a base compartilhada. As demais são de cada computador. */
-export const CONFIG_COMUM = ['remetenteNome', 'remetenteCargo', 'remetenteTelefone', 'replyTo', 'enderecoPublico', 'intervaloSeg', 'limiteDiario', 'rodape', 'planilhaVisitas', 'planilhaCadastros', 'painelUrl', 'metaAnual', 'metas', 'horarioComercial', 'cadenciasAtivas'];
+export const CONFIG_COMUM = ['remetenteNome', 'remetenteCargo', 'remetenteTelefone', 'replyTo', 'enderecoPublico', 'intervaloSeg', 'limiteDiario', 'rodape', 'planilhaVisitas', 'planilhaCadastros', 'painelUrl', 'metaAnual', 'metas', 'horarioComercial', 'cadenciasAtivas',
+  'autoMapeamento', 'autoCanais', 'autoReceita', 'autoPainel', 'autoGmailContatos', 'pilotoAutomatico', 'pilotoLimite', 'pilotoMinimo'];
 export function setConfig(patch) {
   // Cada preferência comum guarda quando foi alterada, para a mescla entre computadores valer item a item
   const em = { ...(db.config.cfgEm || {}) };
@@ -121,6 +125,7 @@ export function remove(col, id) {
   const fora = {};
   const tira = (c, sai) => { const l = db[c].filter(sai); if (l.length) { fora[c] = (fora[c] || []).concat(l); db[c] = db[c].filter(x => !sai(x)); } };
   if (col === 'orgs') {
+    if (!db.descartadas.includes(id)) db.descartadas.push(id);
     const cts = new Set(db.contatos.filter(c => c.orgId === id).map(c => c.id));
     tira('inscricoes', i => cts.has(i.contatoId));
     tira('contatos', c => c.orgId === id); tira('interacoes', i => i.orgId === id); tira('oportunidades', o => o.orgId === id);
@@ -132,6 +137,7 @@ export function remove(col, id) {
   emit(col);
   return () => {
     for (const [c, l] of Object.entries(fora)) { const ids = new Set(db[c].map(x => x.id)); l.forEach(x => { if (!ids.has(x.id)) db[c].push(x); }); }
+    if (col === 'orgs') db.descartadas = db.descartadas.filter(x => x !== id);
     emit(col);
   };
 }

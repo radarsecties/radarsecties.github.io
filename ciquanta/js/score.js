@@ -1,6 +1,7 @@
 // Pontuação de potencial das organizações e recomendação de próximas ações
 import * as store from './store.js';
 import { REGIAO, isEmail, isoDay } from './util.js';
+import { citadasRecentes } from './sinais.js';
 
 const OBRIGATORIOS = ['pdi-aneel', 'pdi-anp', 'lei-de-tics', 'lei-tics-zfm', 'brasil-semicon', 'mover', 'redata'];
 
@@ -17,6 +18,7 @@ export function pontuar(o, ctx = contexto()) {
   if (o.ultimaResposta || ctx.respondeu.has(o.id)) add(12, 'Já respondeu a mensagens');
   add({ engajada: 6, parceira: 10 }[o.relacionamento] || 0, o.relacionamento === 'parceira' ? 'Parceira' : 'Relacionamento engajado');
   if (ctx.comOpp.has(o.id)) add(10, 'Oportunidade em aberto');
+  if (ctx.citadas?.has(o.id)) add(5, 'Citada em notícia recente');
   const total = Math.min(100, m.reduce((a, x) => a + x[0], 0));
   return { total, faixa: total >= 65 ? 'alto' : total >= 40 ? 'medio' : 'baixo', motivos: m };
 }
@@ -25,7 +27,7 @@ export function contexto() {
   const comEmail = new Set(store.list('contatos').filter(c => isEmail(c.email) && !c.optout).map(c => c.orgId));
   const respondeu = new Set(store.list('recebidos').filter(r => r.direcao === 'entrada').map(r => r.orgId));
   const comOpp = new Set(store.list('oportunidades').filter(o => !['contratada', 'perdida'].includes(o.etapa)).map(o => o.orgId));
-  return { comEmail, respondeu, comOpp };
+  return { comEmail, respondeu, comOpp, citadas: citadasRecentes(30) };
 }
 
 /** Lista priorizada do que fazer agora. Cada item: { peso, titulo, detalhe, href, tipo }. */

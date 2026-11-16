@@ -43,7 +43,20 @@ Faça com a conta institucional do CIQUANTA.
 4. Ative **Base compartilhada** para que todos os computadores trabalhem sobre os mesmos dados. Em cada computador, basta abrir o endereço, colar o mesmo ID do cliente, conectar a mesma conta e ativar a opção.
 5. Em **Busca ativa**, importe o mapeamento. Em **Captação**, defina as metas. O painel mostra os "Primeiros passos" até tudo estar pronto.
 
-## 4. Confira depois de publicar
+## 4. Ligue a atualização automática
+
+A coleta diária roda no GitHub Actions do repositório publicado, sem servidor próprio.
+
+1. No repositório, abra **Actions** e, se o GitHub pedir, autorize os fluxos de trabalho.
+2. Confirme que o arquivo do fluxo está no lugar certo:
+   - repositório próprio (opção A): `.github/workflows/coleta.yml`, que já vem nesta pasta;
+   - repositório atual (opção C): `.github/workflows/ciquanta-coleta.yml`, na raiz.
+3. Em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions**: a coleta grava as bases atualizadas no próprio repositório.
+4. Rode a primeira vez em **Actions → CIQUANTA · Coleta diária → Run workflow**. Depois disso ela roda sozinha às 6h17 todos os dias e às 15h47 nos dias úteis. O GitHub só agenda fluxos que estão na branch principal.
+5. (Opcional) Descoberta com IA: em **Settings → Secrets and variables → Actions**, crie o segredo `ANTHROPIC_API_KEY` com uma chave da [Anthropic](https://console.anthropic.com/). Sem ela, essa etapa é apenas ignorada. O modelo padrão é o Claude Opus 5.5; para usar outro, crie a variável `CIQUANTA_MODELO` (por exemplo `claude-fable-5-2`).
+6. No sistema, abra **Central de automação** e confira o resultado da coleta. Para que a abordagem também seja automática, preencha o remetente em Configurações, ligue as cadências e o **piloto automático**, e deixe um computador da equipe com o sistema aberto no horário comercial.
+
+## 5. Confira depois de publicar
 
 - [ ] O endereço abre com cadeado (HTTPS) e o painel carrega.
 - [ ] Em Configurações, a conta conecta e aparecem as permissões concedidas.
@@ -51,17 +64,18 @@ Faça com a conta institucional do CIQUANTA.
 - [ ] Uma reunião de teste aparece no Google Agenda com link do Meet.
 - [ ] "Visitas e cadastros" lê as planilhas do Painel CIQUANTA.
 - [ ] Um segundo computador, com a base compartilhada ativa, mostra os mesmos dados.
+- [ ] A Central de automação mostra a última coleta diária sem falhas.
 - [ ] O navegador oferece "Instalar aplicativo" (opcional).
 
 Se o login do Google falhar depois da publicação, a causa mais comum é a origem não estar cadastrada exatamente como aparece na barra de endereços (passo 2.4).
 
-## 5. Quem enxerga o quê
+## 6. Quem enxerga o quê
 
-- O site publicado contém só o programa, o mapeamento público de organizações e as apresentações. **Nenhum dado do CRM fica no site.**
+- O site publicado contém só o programa, as bases públicas (mapeamento, notícias, editais, canais institucionais publicados pelas próprias organizações, dados da Receita e totais do Painel CIQUANTA) e as apresentações. **Nenhum dado do CRM fica no site.**
 - Contatos, oportunidades, histórico e e-mails ficam no navegador de quem usa e, com a base compartilhada, em um arquivo no Google Drive da conta do CIQUANTA. Só quem entra com essa conta tem acesso.
 - O site pede aos buscadores que não o indexem. Para restringir também a abertura da página, use um controle de acesso na frente do endereço (por exemplo, o proxy de autenticação da TI).
 - Cadências e respostas em tempo real funcionam enquanto o sistema estiver aberto em algum computador com a conta conectada. Convém manter um computador da equipe com a aba aberta no horário comercial.
 
-## 6. Atualizações
+## 7. Atualizações
 
 Toda mudança enviada à branch publicada entra no ar em seguida; os usuários recebem a versão nova na próxima abertura. Antes de publicar alterações nas bases de `data/`, rode `node tools/validar-dados.mjs`.

@@ -1,0 +1,26 @@
+{
+ "aviso": "Somente canais institucionais publicados nos sites oficiais. E-mails pessoais são descartados.",
+ "porOrg": {
+  "ref-itau-unibanco": {
+   "verificadoEm": "2026-11-16T22:32:19.359Z",
+   "status": "ok",
+   "emails": [],
+   "cnpj": "60872504000123",
+   "linkedin": ""
+  },
+  "ref-bndes": {
+   "verificadoEm": "2026-11-16T22:32:34.462Z",
+   "status": "ok",
+   "emails": [
+    {
+     "email": "imprensa@bndes.gov.br",
+     "papel": "Comunicação e imprensa",
+     "url": "https://www.bndes.gov.br/imprensa"
+    }
+   ],
+   "cnpj": "",
+   "linkedin": "https://br.linkedin.com/company/bndes"
+  }
+ },
+ "atualizadoEm": "2026-11-16T22:36:49.817Z"
+}

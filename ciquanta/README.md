@@ -9,6 +9,8 @@ Aplicação web autônoma, sem servidor próprio e sem dependência de outros si
 | Módulo | Função |
 |---|---|
 | Painel | Painel de comando: situação da conta Google, pipeline ponderado, contratado contra a meta anual, taxa de resposta, visitas à réplica, próximas ações ordenadas por impacto, agenda unificada, funil, receita por fonte, mapa por estado e potencial por setor. |
+| Sinais do mercado | Notícias do dia ligadas às organizações do CRM, por tema, e oportunidades identificadas com IA. Organizações citadas nos últimos 30 dias ganham pontos de potencial. |
+| Central de automação | Fluxo animado da coleta ao CRM, resultado de cada etapa da coleta diária, rotinas do aplicativo, piloto automático de abordagem e registro. |
 | Captação | Plano de captação: meta anual e metas por frente de financiamento, contratado e pipeline ponderado, previsão por trimestre, cobertura por mecanismo de fomento (organizações elegíveis ainda sem abordagem) e relatório executivo em PDF. |
 | Interações em tempo real | Acompanha a caixa da conta Google do CIQUANTA pelo histórico do Gmail; vincula cada resposta à organização, registra no histórico, encerra a cadência do contato e avisa a equipe. |
 | Agenda | Marcos institucionais, eventos potenciais para participação (marcados "a confirmar"), prazos de editais, visitas à réplica e compromissos do Google Agenda; reuniões com convite e link do Meet; exportação `.ics`. |
@@ -25,6 +27,26 @@ Aplicação web autônoma, sem servidor próprio e sem dependência de outros si
 | Fontes | Fontes do mapeamento e das apresentações, com o critério de cada nível de evidência. |
 
 A busca rápida (Ctrl K) localiza organizações, contatos, oportunidades e telas e executa ações (nova organização, nova oportunidade, relatório, cópia de segurança). A tecla `?` mostra os atalhos de teclado.
+
+## Automação
+
+O CRM se atualiza sozinho em duas camadas.
+
+**Coleta diária no servidor** (`tools/coleta/`, GitHub Actions, às 6h17 todos os dias e às 15h47 nos dias úteis):
+
+| Etapa | O que faz | Grava |
+|---|---|---|
+| Painel CIQUANTA | Totais públicos de cadastros e visitas à réplica, com histórico diário | `data/painel.json` |
+| Notícias e editais | Notícias sobre computação quântica, P&D, deep tech e fomento (Google Notícias, EMBRAPII, Agência FAPESP), ligadas às organizações citadas; chamadas abertas com prazo quando o texto informa | `data/sinais.json`, `data/editais-auto.json` |
+| Canais institucionais | Visita o site oficial de até 70 organizações por execução e guarda e-mails de setores (inovação, relações institucionais, contato), CNPJ do rodapé e LinkedIn. E-mails pessoais são descartados | `data/canais.json` |
+| Receita Federal | Situação cadastral, CNAE, porte e capital para os CNPJ conhecidos | `data/receita.json` |
+| Descoberta com IA | Com a chave da Anthropic configurada, o Claude lê as notícias novas e sugere organizações e oportunidades; só entra o que está escrito no texto da notícia | `data/descobertas.json` |
+
+Ao final, o validador confere a integridade das bases e o resultado vai para `data/coleta.json`. Uma etapa que falha não impede as outras.
+
+**Rotinas no aplicativo** (`js/automacao.js`, ao abrir e a cada três horas): levam ao CRM as organizações novas, criam os contatos institucionais, aplicam os dados da Receita, atualizam os totais do Painel CIQUANTA e transformam em contato quem responde de um domínio mapeado. O **piloto automático** (desligado por padrão) inscreve todo dia, na cadência do segmento, as organizações de maior potencial que ainda não foram abordadas. Tudo aparece na **Central de automação**, com registro e chaves para ligar e desligar cada rotina.
+
+Para rodar a coleta à mão: `cd tools/coleta && npm install && node coletar.mjs` (ou `node coletar.mjs sinais painel` para etapas específicas).
 
 ## Base de dados
 
@@ -76,6 +98,7 @@ A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agenda
 - `data/mecanismos.json`: mecanismos de fomento (revisar percentuais e prazos quando a legislação mudar).
 - `data/modelos.json` e `data/agenda.json`: modelos de e-mail e agenda iniciais. As datas dos eventos potenciais são referências e devem ser conferidas na página oficial de cada evento.
 
+- `tools/coleta/`: coletores da atualização diária (Node 20 ou superior; só a descoberta com IA usa dependências).
 - `tools/validar-dados.mjs`: verifica a integridade das bases (`node tools/validar-dados.mjs`). Rode antes de publicar alterações em `data/`.
 - `js/vendor/chart.umd.js`: Chart.js 4.4.1 (licença MIT), incluída no próprio sistema.
 

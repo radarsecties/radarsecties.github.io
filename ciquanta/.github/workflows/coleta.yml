@@ -1,0 +1,45 @@
+# CRM do CIQUANTA: coleta diária automática.
+# Atualiza notícias, editais, canais institucionais, dados da Receita Federal, totais do Painel CIQUANTA
+# e, com a chave da Anthropic configurada, descobre novas organizações nas notícias.
+# Este arquivo vale quando a pasta do CRM é a raiz do repositório.
+name: CIQUANTA · Coleta diária
+
+on:
+  schedule:
+    - cron: "17 9 * * *"    # 6h17 em Brasília
+    - cron: "47 18 * * 1-5" # 15h47 em Brasília, dias úteis
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ciquanta-coleta
+  cancel-in-progress: false
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Instalar dependências da coleta
+        working-directory: tools/coleta
+        run: npm install --no-audit --no-fund
+      - name: Coletar
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CIQUANTA_MODELO: ${{ vars.CIQUANTA_MODELO }}
+        run: node tools/coleta/coletar.mjs
+      - name: Publicar as bases atualizadas
+        run: |
+          git config user.name "CIQUANTA CRM"
+          git config user.email "ciquanta-crm@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "Nada mudou."; exit 0; fi
+          git commit -m "Coleta diária: $(date -u +%Y-%m-%d)"
+          for i in 1 2 3; do git pull --rebase --autostash && git push && exit 0; sleep 10; done
+          exit 1

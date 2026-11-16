@@ -33,7 +33,7 @@ export const podeAutomatizar = () => abaLider && (!habilitado() || est.motorAqui
 /** Suspende a sincronização enquanto um envio em série está em andamento. */
 export function pausar(sim) { pausas = Math.max(0, pausas + (sim ? 1 : -1)); }
 
-const pacote = () => { const s = store.state(), out = { app: 'ciquanta-crm', formato: 1, gravadoEm: new Date().toISOString(), gravadoPor: dispositivo, supressao: s.supressao, painel: s.painel, cfgEm: s.config.cfgEm || {}, config: {} };
+const pacote = () => { const s = store.state(), out = { app: 'ciquanta-crm', formato: 1, gravadoEm: new Date().toISOString(), gravadoPor: dispositivo, supressao: s.supressao, painel: s.painel, descartadas: s.descartadas, cfgEm: s.config.cfgEm || {}, config: {} };
   for (const c of store.COLS) out[c] = s[c];
   for (const k of store.CONFIG_COMUM) out.config[k] = s.config[k];
   return JSON.stringify(out); };
@@ -122,10 +122,12 @@ export async function sincronizar({ manual = false } = {}) {
         if (m.mudouLocal) await store.criarPonto('antes de receber mudanças de outro computador');
         const sup = [...new Set([...store.state().supressao, ...(remoto.supressao || [])])];
         if (sup.length !== store.state().supressao.length) extra.supressao = sup;
+        const desc = [...new Set([...(store.state().descartadas || []), ...(remoto.descartadas || [])])];
+        if (desc.length !== (store.state().descartadas || []).length) extra.descartadas = desc;
         if ((remoto.painel?.atualizadoEm || '') > (store.state().painel?.atualizadoEm || '')) extra.painel = remoto.painel;
         if (m.mudouLocal || Object.keys(extra).length) store.aplicar(m.cols, extra);
         const cfgNova = mesclarConfig(remoto);
-        enviar = m.mudouRemoto || cfgNova || sup.length !== (remoto.supressao || []).length || (store.state().painel?.atualizadoEm || '') > (remoto.painel?.atualizadoEm || '');
+        enviar = m.mudouRemoto || cfgNova || sup.length !== (remoto.supressao || []).length || desc.length !== (remoto.descartadas || []).length || (store.state().painel?.atualizadoEm || '') > (remoto.painel?.atualizadoEm || '');
       }
       if (enviar) rev = (await G.driveUpdate(id, pacote())).headRevisionId;
       gravarLocal(K_BASE, { rev, h: hashes(store.state()), cfg: carimbo() });

@@ -75,7 +75,11 @@ export async function processar(id, { aoVivo = false } = {}) {
   const envio = store.list('envios').find(e => e.threadId && e.threadId === m.threadId);
   if (!org && !envio) return null;
   const orgF = org || store.orgOf(store.get('contatos', envio?.contatoId));
-  const item = { id, threadId: m.threadId, direcao: 'entrada', email: de.email, nome: de.nome, assunto, snippet: m.snippet || '', data, orgId: orgF?.id || '', contatoId: contato?.id || envio?.contatoId || '', lido: false, campanhaId: envio?.campanhaId || '' };
+  let novoContato = null;
+  if (!contato && orgF && store.cfg().autoGmailContatos && !store.list('contatos').some(c => (c.email || '').toLowerCase() === de.email.toLowerCase())) {
+    novoContato = store.upsert('contatos', { nome: de.nome || de.email.split('@')[0], email: de.email.toLowerCase(), orgId: orgF.id, cargo: '', tratamento: 'Prezado(a)', fonte: 'Resposta recebida no Gmail', tags: ['automático'], auto: true }, 'ct');
+  }
+  const item = { id, threadId: m.threadId, direcao: 'entrada', email: de.email, nome: de.nome, assunto, snippet: m.snippet || '', data, orgId: orgF?.id || '', contatoId: contato?.id || novoContato?.id || envio?.contatoId || '', lido: false, campanhaId: envio?.campanhaId || '' };
   store.list('recebidos').push(item);
   if (envio) envio.respondido = true;
   marcarResposta(item.contatoId, de.email);

@@ -7,9 +7,12 @@ import { icon } from './icons.js';
 import * as cadencia from './cadencia.js';
 import { abrirPaleta } from './paleta.js';
 import * as sync from './sync.js';
+import * as automacao from './automacao.js';
+import { animarNumeros, revelar } from './motion.js';
 
 const ROUTES = {
   painel: ['Painel', 'painel', () => import('./pages/painel.js'), 'Visão geral'],
+  sinais: ['Sinais do mercado', 'sinal', () => import('./pages/sinais.js'), 'Visão geral'],
   captacao: ['Plano de captação', 'oportunidades', () => import('./pages/captacao.js'), 'Visão geral'],
   interacoes: ['Interações em tempo real', 'interacoes', () => import('./pages/interacoes.js'), 'Visão geral'],
   agenda: ['Agenda', 'agenda', () => import('./pages/agenda.js'), 'Visão geral'],
@@ -28,11 +31,12 @@ const ROUTES = {
   mecanismos: ['Leis e mecanismos de fomento', 'mecanismos', () => import('./pages/mecanismos.js'), 'Fomento'],
   editais: ['Editais e chamadas', 'modelos', () => import('./pages/editais.js'), 'Fomento'],
   simulador: ['Simulador de incentivos', 'simulador', () => import('./pages/simulador.js'), 'Fomento'],
+  automacao: ['Central de automação', 'robo', () => import('./pages/automacao.js'), 'Sistema'],
   fontes: ['Fontes e referências', 'fontes', () => import('./pages/fontes.js'), 'Sistema'],
   config: ['Configurações', 'config', () => import('./pages/config.js'), 'Sistema'],
   org: ['Organização', 'organizacoes', () => import('./pages/org.js'), null],
 };
-const NAV_LABEL = { captacao: 'Captação', interacoes: 'Interações', oportunidades: 'Oportunidades', setores: 'Setores', campanhas: 'Campanhas', mecanismos: 'Leis e mecanismos', simulador: 'Simulador', fontes: 'Fontes', cadencias: 'Cadências', rede: 'Rede', editais: 'Editais', visitas: 'Visitas e cadastros' };
+const NAV_LABEL = { sinais: 'Sinais do mercado', automacao: 'Automação', captacao: 'Captação', interacoes: 'Interações', oportunidades: 'Oportunidades', setores: 'Setores', campanhas: 'Campanhas', mecanismos: 'Leis e mecanismos', simulador: 'Simulador', fontes: 'Fontes', cadencias: 'Cadências', rede: 'Rede', editais: 'Editais', visitas: 'Visitas e cadastros' };
 
 let cleanup = null, current = '', seq = 0;
 
@@ -65,7 +69,8 @@ async function route() {
   $$('#nav a').forEach(a => a.classList.toggle('active', a.dataset.route === navId));
   $('#sidebar').classList.remove('open');
   const view = $('#view');
-  view.innerHTML = '<div class="empty">Carregando…</div>';
+  view.classList.remove('entrada');
+  view.innerHTML = '<div class="esqueleto" aria-busy="true" aria-label="Carregando"><i></i><i></i><i></i><i></i><b></b><b></b></div>';
   try {
     const mod = await loader();
     await store.loadSetores();
@@ -74,6 +79,8 @@ async function route() {
     const c = (await mod.render(view, { arg, params })) || null;
     if (my !== seq) { try { c?.(); } catch {} return; }
     cleanup = c;
+    void view.offsetWidth; view.classList.add('entrada');
+    animarNumeros(view); revelar(view);
     view.focus({ preventScroll: true }); window.scrollTo(0, 0);
   } catch (e) {
     console.error(e);
@@ -155,6 +162,8 @@ function init() {
     if (w === 'externo') { clearTimeout(reabrir); reabrir = setTimeout(() => { if (!$('#modal-root').children.length && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) route(); badges(); }, 400); }
   });
   store.pontoDiario();
+  automacao.iniciar();
+  automacao.onAutomacao(res => { if (res?.some(x => x.n) && ['painel', 'organizacoes', 'contatos', 'visitas'].includes(current) && !$('#modal-root').children.length && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) route(); });
   store.seedIfNeeded().then(novo => { if (novo && ['painel', 'agenda', 'modelos'].includes(current)) route(); });
   if (!location.hash) location.hash = '#/painel'; else route();
   badges();

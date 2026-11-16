@@ -1,0 +1,9 @@
+{
+  "name": "ciquanta-coleta",
+  "private": true,
+  "type": "module",
+  "description": "Coleta diária automática do CRM do CIQUANTA",
+  "engines": { "node": ">=20" },
+  "scripts": { "coletar": "node coletar.mjs" },
+  "dependencies": { "@anthropic-ai/sdk": "^1.9.0", "zod": "^3.25.0" }
+}

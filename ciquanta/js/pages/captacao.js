@@ -37,8 +37,8 @@ export async function render(view, { arg } = {}) {
 
     <div class="grid g4" style="margin-bottom:18px">
       <div class="card kpi"><span class="label">Meta anual</span><span class="value">${r.meta ? compacto(r.meta) : '—'}</span><span class="sub">${r.meta ? (r.somaMetas ? `${pct(r.somaMetas, r.meta)}% distribuídos nas frentes` : 'distribua a meta entre as frentes') : 'defina a meta para medir o avanço'}</span></div>
-      <div class="card kpi"><span class="label">Contratado</span><span class="value">${compacto(r.contratado)}</span><span class="sub">${r.fechadas} contrato(s)${r.meta ? ` · ${pct(r.contratado, r.meta)}% da meta` : ''}</span>${r.meta ? barra(r.contratado, r.ponderado, r.meta) : ''}</div>
-      <div class="card kpi"><span class="label">Pipeline ponderado</span><span class="value">${compacto(r.ponderado)}</span><span class="sub">${r.abertas} oportunidade(s) em aberto${r.medio ? ` · valor médio ${compacto(r.medio)}` : ''}</span></div>
+      <div class="card kpi"><span class="label">Contratado</span><span class="value" data-contar="${Math.round(r.contratado)}" data-formato="moeda">${compacto(r.contratado)}</span><span class="sub">${r.fechadas} contrato(s)${r.meta ? ` · ${pct(r.contratado, r.meta)}% da meta` : ''}</span>${r.meta ? barra(r.contratado, r.ponderado, r.meta) : ''}</div>
+      <div class="card kpi"><span class="label">Pipeline ponderado</span><span class="value" data-contar="${Math.round(r.ponderado)}" data-formato="moeda">${compacto(r.ponderado)}</span><span class="sub">${r.abertas} oportunidade(s) em aberto${r.medio ? ` · valor médio ${compacto(r.medio)}` : ''}</span></div>
       <div class="card kpi"><span class="label">${r.meta && !r.lacuna ? 'Meta coberta' : 'Falta gerar'}</span><span class="value">${r.meta ? (r.lacuna ? compacto(r.lacuna) : Math.round(r.cobertura * 100) + '%') : '—'}</span><span class="sub">${!r.meta ? 'contratado mais ponderado, contra a meta' : r.lacuna ? (r.novas ? `cerca de ${r.novas} nova(s) oportunidade(s) no perfil atual` : 'em novas oportunidades ponderadas') : 'contratado mais ponderado superam a meta'}</span></div>
     </div>
 

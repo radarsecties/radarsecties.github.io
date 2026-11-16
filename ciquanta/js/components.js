@@ -211,3 +211,39 @@ export function brMap(counts, { onClick, label = 'organizações' } = {}) {
   if (onClick) wrap.addEventListener('click', e => { const b = e.target.closest('[data-uf]'); if (b) onClick(b.dataset.uf); });
   return wrap;
 }
+
+/**
+ * Mapa de fluxo: cada estado é um bloco do mapa em grade e uma linha animada o liga à Paraíba, sede do CIQUANTA.
+ * A espessura da linha e a cor do bloco seguem a quantidade. Clique em um estado para filtrar.
+ */
+export function mapaFluxo(counts, { onClick, label = 'organizações' } = {}) {
+  const T = 46, P = 4, max = Math.max(1, ...Object.values(counts));
+  const centro = uf => { const [r, c] = TILES[uf]; return [c * T + T / 2, r * T + T / 2]; };
+  const [px, py] = centro('PB');
+  const ufs = Object.keys(TILES);
+  const arcos = ufs.filter(uf => uf !== 'PB' && counts[uf]).sort((a, b) => counts[a] - counts[b]).map((uf, i) => {
+    const [x, y] = centro(uf), mx = (x + px) / 2, my = (y + py) / 2, dx = px - x, dy = py - y, k = 0.22;
+    const d = `M${x} ${y} Q${mx - dy * k} ${my + dx * k} ${px} ${py}`;
+    const w = (1 + 3.5 * Math.sqrt(counts[uf] / max)).toFixed(2);
+    return `<path class="arco" d="${d}" style="--w:${w};--i:${i}"/><path class="arco-luz" d="${d}" style="--w:${w};--i:${i};--dur:${(2.4 + (i % 5) * 0.35).toFixed(2)}s"/>`;
+  }).join('');
+  const blocos = ufs.map(uf => {
+    const [r, c] = TILES[uf], n = counts[uf] || 0, a = n ? 0.18 + 0.82 * Math.sqrt(n / max) : 0;
+    return `<g class="uf ${uf === 'PB' ? 'sede' : ''}" data-uf="${uf}" tabindex="0" role="button" aria-label="${uf}: ${n} ${label}">
+      <rect x="${c * T + P / 2}" y="${r * T + P / 2}" width="${T - P}" height="${T - P}" rx="7" style="--a:${a.toFixed(2)}" class="${n ? 'com' : ''} ${a > .55 ? 'forte' : ''}"/>
+      <title>${uf}: ${n} ${label}</title></g>`;
+  }).join('');
+  const rotulos = ufs.map(uf => {
+    const [r, c] = TILES[uf], n = counts[uf] || 0, forte = uf === 'PB' || (n && 0.18 + 0.82 * Math.sqrt(n / max) > .55);
+    return `<text class="${forte ? 'claro' : ''}" x="${c * T + T / 2}" y="${r * T + T / 2 - (n ? 3 : -4)}" text-anchor="middle">${uf}</text>${n ? `<text class="n ${forte ? 'claro' : ''}" x="${c * T + T / 2}" y="${r * T + T / 2 + 11}" text-anchor="middle">${n}</text>` : ''}`;
+  }).join('');
+  const wrap = document.createElement('div');
+  wrap.className = 'mapa-fluxo';
+  wrap.innerHTML = `<svg viewBox="0 0 ${7 * T} ${8 * T}" role="img" aria-label="Distribuição de ${label} por estado, ligadas à Paraíba">${blocos}<g class="arcos">${arcos}</g><circle class="pulso" cx="${px}" cy="${py}" r="9"/><circle class="pulso p2" cx="${px}" cy="${py}" r="9"/><g class="rotulos">${rotulos}</g></svg>`;
+  if (onClick) {
+    const ir = e => { const g = e.target.closest('[data-uf]'); if (g) onClick(g.dataset.uf); };
+    wrap.addEventListener('click', ir);
+    wrap.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); ir(e); } });
+  }
+  return wrap;
+}

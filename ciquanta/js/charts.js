@@ -10,6 +10,7 @@ export function chart(canvas, config) {
   Chart.defaults.color = text;
   const base = {
     responsive: true, maintainAspectRatio: false,
+    animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : { duration: 900, easing: 'easeOutQuart', delay: c => c.type === 'data' && c.mode === 'default' ? c.dataIndex * 35 : 0 },
     plugins: { legend: { labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, color: text } }, tooltip: { backgroundColor: '#14224A', padding: 10, cornerRadius: 8 } },
   };
   const isCart = !['doughnut', 'pie', 'polarArea', 'radar'].includes(config.type);

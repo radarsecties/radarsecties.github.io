@@ -47,9 +47,9 @@ export function varsFor(contato, extra = {}) {
   const formal = /Excel|Magn|Ilustr|Senhor|Senhora/.test(t.saud);
   const mec = (org.mecanismos || [])[0];
   return {
-    saudacao: nome ? `${t.saud} ${formal ? nome : primeiro}` : 'Prezados',
-    pronome: t.pron,
-    nome, primeiro_nome: primeiro, cargo: contato?.cargo || '',
+    saudacao: contato?.canal ? 'Prezados senhores e senhoras' : nome ? `${t.saud} ${formal ? nome : primeiro}` : 'Prezados',
+    pronome: contato?.canal ? 'Vossas Senhorias' : t.pron,
+    nome: contato?.canal ? '' : nome, primeiro_nome: contato?.canal ? '' : primeiro, cargo: contato?.cargo || '',
     organizacao: org.nomeFantasia || org.nome || 'sua organização',
     setor: org.setor ? setorRef(org.setor) : 'o seu setor',
     uf: org.uf || '', cidade: org.cidade || '',
