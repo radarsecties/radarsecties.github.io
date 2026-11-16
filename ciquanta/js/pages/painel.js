@@ -30,7 +30,7 @@ export async function render(view) {
     const acoes = proximasAcoes(7);
     // agenda unificada
     const ag = [
-      ...s.eventos.filter(e => e.data >= hoje).map(e => ({ data: e.data, hora: e.hora, titulo: e.titulo, tipo: e.tipo === 'potencial' ? 'Evento potencial' : e.tipo === 'prazo' ? 'Prazo' : 'Institucional', k: e.tipo === 'prazo' ? 'red' : e.tipo === 'potencial' ? 'gray' : '', conf: e.aConfirmar })),
+      ...s.eventos.filter(e => e.data >= hoje).map(e => ({ data: e.data, hora: e.hora, titulo: e.titulo, tipo: ({ potencial: 'Evento potencial', prazo: 'Prazo', setorial: 'Data do setor', reuniao: 'Reunião' })[e.tipo] || 'Institucional', k: e.tipo === 'prazo' ? 'red' : e.tipo === 'potencial' ? 'gray' : '', conf: e.aConfirmar })),
       ...s.editais.filter(e => e.prazo && e.prazo >= hoje && ['aberto', 'preparacao'].includes(e.status)).map(e => ({ data: e.prazo, titulo: e.titulo, tipo: 'Edital', k: 'warn' })),
       ...(p.visitas || []).filter(v => v.data >= hoje).map(v => ({ data: v.data, titulo: v.grupos.length ? `Visita: ${v.grupos.slice(0, 2).join(', ')}${v.grupos.length > 2 ? ' e outras' : ''}` : `${v.visitas} visita(s) agendada(s)`, tipo: `${v.pessoas} visitantes`, k: 'info' })),
       ...gcal,
