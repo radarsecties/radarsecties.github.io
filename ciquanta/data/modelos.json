@@ -1,0 +1,53 @@
+{
+  "itens": [
+    {
+      "id": "mod-apresentacao-empresa",
+      "nome": "Apresentação do CIQuanta a empresas (P&D + incentivos)",
+      "categoria": "Empresas",
+      "assunto": "{{organizacao}} e o CIQuanta: P&D em computação quântica com incentivos da Lei de Inovação",
+      "corpo": "<p>{{saudacao}},</p><p>Escrevo em nome do <strong>CIQuanta-PB</strong>, o Centro Internacional de Computação e Tecnologias Quânticas da Paraíba, iniciativa do Governo da Paraíba, por meio da SECTIES, em parceria com o MCTI. O centro reúne os primeiros computadores quânticos operacionais do Brasil e está aberto a projetos de pesquisa, desenvolvimento e inovação com empresas.</p><p>Acreditamos que a {{organizacao}} pode se beneficiar em três frentes:</p><ul><li><strong>Casos de uso de {{setor}}</strong>: otimização, simulação de materiais e moléculas, aprendizado de máquina quântico e segurança pós-quântica;</li><li><strong>Incentivos</strong>: projetos executados com uma ICT podem ser enquadrados em mecanismos como {{mecanismo}}, reduzindo o custo líquido do investimento em P&D;</li><li><strong>Formação</strong>: capacitação de equipes técnicas pela residência em tecnologias quânticas.</li></ul><p>Gostaríamos de agendar uma conversa de 30 minutos com a área de P&D/Inovação para apresentar o centro e identificar um primeiro projeto-piloto. Qual seria a melhor data para a sua equipe?</p><p>Atenciosamente,</p>"
+    },
+    {
+      "id": "mod-convite-visita",
+      "nome": "Convite para visita técnica ao CIQuanta",
+      "categoria": "Empresas",
+      "assunto": "Convite: visita técnica ao CIQuanta-PB",
+      "corpo": "<p>{{saudacao}},</p><p>Temos a satisfação de convidar a {{organizacao}} para uma <strong>visita técnica ao CIQuanta-PB</strong>, em João Pessoa, para conhecer a infraestrutura de computação quântica, a equipe de pesquisa e as modalidades de parceria disponíveis (acordos de PD&I, compartilhamento de laboratório e horas de processamento).</p><p>A visita dura cerca de duas horas e pode incluir uma sessão técnica sobre aplicações em {{setor}}.</p><p>Se houver interesse, basta responder a este e-mail com duas ou três datas possíveis.</p><p>Cordialmente,</p>"
+    },
+    {
+      "id": "mod-oficio-autoridade",
+      "nome": "Ofício-convite a autoridades",
+      "categoria": "Autoridades",
+      "assunto": "CIQuanta-PB: convite para agenda institucional",
+      "corpo": "<p>{{saudacao}},</p><p>Cumprimentando-o(a) cordialmente, a Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba (SECTIES) apresenta o <strong>CIQuanta-PB</strong>, Centro Internacional de Computação e Tecnologias Quânticas da Paraíba, infraestrutura estratégica para a soberania tecnológica nacional e alinhada à Iniciativa Brasileira para Tecnologias Quânticas (IBQuântica).</p><p>Nesse contexto, solicitamos a gentileza de uma agenda institucional com {{organizacao}}, com o objetivo de:</p><ol><li>apresentar o estágio de implantação do centro e seu plano de uso compartilhado;</li><li>discutir instrumentos de cooperação e fomento aplicáveis;</li><li>articular ações conjuntas com o setor produtivo e a comunidade científica.</li></ol><p>Colocamo-nos à disposição para ajustar data e formato (presencial ou virtual) conforme a conveniência de Vossa Senhoria.</p><p>Respeitosamente,</p>"
+    },
+    {
+      "id": "mod-fomentador",
+      "nome": "Proposta de parceria com agência de fomento",
+      "categoria": "Fomentadores",
+      "assunto": "CIQuanta-PB: proposta de cooperação com {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>O <strong>CIQuanta-PB</strong> vem estruturando sua carteira de projetos com empresas e ICTs de todo o país e gostaria de discutir com {{organizacao}} possibilidades de cooperação, tais como:</p><ul><li>chamadas conjuntas para uso do computador quântico por pesquisadores e startups;</li><li>linhas de apoio a projetos cooperativos ICT-empresa em tecnologias quânticas;</li><li>programas de formação e fixação de recursos humanos especializados.</li></ul><p>Podemos enviar uma nota técnica com a proposta detalhada e agendar uma reunião com a equipe responsável.</p><p>Atenciosamente,</p>"
+    },
+    {
+      "id": "mod-followup",
+      "nome": "Follow-up (sem resposta)",
+      "categoria": "Geral",
+      "assunto": "Re: CIQuanta-PB e {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>Retomo o contato anterior sobre a possibilidade de uma conversa entre a {{organizacao}} e o CIQuanta-PB. Sei que a agenda é intensa; se for mais conveniente, posso enviar um material resumido ou falar com outra pessoa da equipe de Inovação/P&D.</p><p>Fico à disposição.</p><p>Abraço,</p>"
+    },
+    {
+      "id": "mod-evento",
+      "nome": "Convite para evento setorial",
+      "categoria": "Geral",
+      "assunto": "Convite: {{evento}}",
+      "corpo": "<p>{{saudacao}},</p><p>O CIQuanta-PB tem a honra de convidar {{organizacao}} para <strong>{{evento}}</strong>, em {{data_evento}}.</p><p>O encontro reunirá representantes do governo, de agências de fomento, da indústria e da academia para discutir a agenda nacional de tecnologias quânticas e oportunidades de cooperação.</p><p>Confirme sua presença respondendo a este e-mail.</p><p>Cordialmente,</p>"
+    },
+    {
+      "id": "mod-boletim",
+      "nome": "Boletim CIQuanta (novidades)",
+      "categoria": "Geral",
+      "assunto": "Boletim CIQuanta-PB | Novidades do ecossistema quântico",
+      "corpo": "<p>{{saudacao}},</p><p>Confira as novidades do CIQuanta-PB e do ecossistema de tecnologias quânticas:</p><ul><li><strong>Infraestrutura</strong>: [atualização sobre os computadores quânticos]</li><li><strong>Oportunidades</strong>: [chamadas abertas e mecanismos de fomento]</li><li><strong>Agenda</strong>: [próximos eventos]</li></ul><p>Quer conversar sobre um projeto? Responda a este e-mail.</p>"
+    }
+  ]
+}

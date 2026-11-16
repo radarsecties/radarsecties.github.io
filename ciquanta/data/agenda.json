@@ -1,0 +1,134 @@
+{
+ "itens": [
+  {
+   "id": "ag-00",
+   "data": "2026-12-01",
+   "titulo": "Inauguração prevista do CIQuanta-PB",
+   "tipo": "institucional",
+   "local": "Estação Ciência Cabo Branco, João Pessoa (PB)",
+   "descricao": "A confirmar com a SECTIES: a imprensa indica conclusão da montagem até dezembro de 2026.",
+   "link": "",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-01",
+   "data": "2026-12-08",
+   "titulo": "Q2B Silicon Valley (conferência de computação quântica aplicada)",
+   "tipo": "setorial",
+   "local": "Santa Clara (EUA)",
+   "descricao": "Evento anual de dezembro; confirmar datas no site oficial.",
+   "link": "https://q2b.qcware.com/",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-02",
+   "data": "2027-01-29",
+   "titulo": "Rodada de prospecção: setor elétrico (PD&I ANEEL)",
+   "tipo": "prospeccao",
+   "local": "On-line",
+   "descricao": "Apresentar casos de otimização de redes às concessionárias do Nordeste.",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-03",
+   "data": "2027-02-26",
+   "titulo": "Rodada de prospecção: petróleo e gás (cláusula ANP)",
+   "tipo": "prospeccao",
+   "local": "On-line",
+   "descricao": "Mapear projetos de química quântica e simulação de reservatórios.",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-04",
+   "data": "2027-03-15",
+   "titulo": "APS Global Physics Summit 2027",
+   "tipo": "setorial",
+   "local": "EUA",
+   "descricao": "Principal encontro mundial de física, com trilha de informação quântica. Confirmar datas.",
+   "link": "https://summit.aps.org/",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-05",
+   "data": "2027-04-14",
+   "titulo": "Dia Mundial Quântico (World Quantum Day)",
+   "tipo": "setorial",
+   "local": "Global",
+   "descricao": "Data fixa (14/4): oportunidade de comunicação e visitas institucionais.",
+   "link": "https://worldquantumday.org/",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-06",
+   "data": "2027-05-20",
+   "titulo": "Missão institucional a Brasília: MCTI, MDIC, Finep e BNDES",
+   "tipo": "institucional",
+   "local": "Brasília (DF)",
+   "descricao": "Agenda proposta: IBQuântica, PPI em tecnologias quânticas, chamadas Finep.",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-07",
+   "data": "2027-07-12",
+   "titulo": "Reunião Anual da SBPC 2027",
+   "tipo": "setorial",
+   "local": "A confirmar",
+   "descricao": "Realizada todo mês de julho; confirmar sede e datas.",
+   "link": "https://portal.sbpcnet.org.br/",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-08",
+   "data": "2027-07-31",
+   "titulo": "Prazo do FORMP&D (Lei do Bem, ano-base 2026)",
+   "tipo": "prazo",
+   "local": "MCTI",
+   "descricao": "Prazo legal usual: 31 de julho. Boa janela para lembrar empresas do art. 19-A (projetos com ICT).",
+   "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-09",
+   "data": "2027-07-31",
+   "titulo": "Relatório anual (RDA) da Lei de TICs",
+   "tipo": "prazo",
+   "local": "MCTI",
+   "descricao": "Empresas planejam os convênios com ICTs do ano seguinte nesta época. Confirmar prazo vigente.",
+   "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-de-tics",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-10",
+   "data": "2027-09-13",
+   "titulo": "IEEE Quantum Week (QCE 2027)",
+   "tipo": "setorial",
+   "local": "A confirmar",
+   "descricao": "Realizada em setembro; confirmar datas e sede.",
+   "link": "https://qce.quantum.ieee.org/",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-11",
+   "data": "2027-10-05",
+   "titulo": "Futurecom 2027",
+   "tipo": "setorial",
+   "local": "São Paulo (SP)",
+   "descricao": "Principal evento de telecom e TIC da América Latina; confirmar datas.",
+   "link": "https://www.futurecom.com.br/",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-12",
+   "data": "2027-10-18",
+   "titulo": "Semana Nacional de Ciência e Tecnologia (SNCT)",
+   "tipo": "setorial",
+   "local": "Nacional",
+   "descricao": "Realizada em outubro; programar portas abertas no CIQuanta.",
+   "link": "https://www.gov.br/mcti/pt-br",
+   "aConfirmar": true
+  }
+ ]
+}
