@@ -1,7 +1,8 @@
 import * as store from '../store.js';
+import { inscrever } from '../cadencia.js';
 import { esc, norm, debounce, options, UFS, REGIAO, SEGMENTOS, RELACIONAMENTO, EVIDENCIA, relNome, toCSV, download, parseCSV, readFile, toast, confirmDialog, money, onlyDigits, modal, uid } from '../util.js';
 import { openOrgForm, segBadge, relBadge, evBadge } from '../components.js';
-import { loadMecanismos, mecCurto, mecNome } from '../email.js';
+import { loadMecanismos, mecNome } from '../email.js';
 import { icon } from '../icons.js';
 import { pontuar, contexto } from '../score.js';
 
@@ -26,6 +27,7 @@ export async function render(view, { params }) {
   </div>
   <div class="toolbar hidden" id="bulk"><strong id="bulk-n"></strong>
     <select id="bulk-rel">${options(RELACIONAMENTO, '', { empty: 'Mudar relacionamento…' })}</select>
+    <select id="bulk-cad">${options(store.list('cadencias').filter(c => c.ativa).map(c => ({ id: c.id, nome: c.nome })), '', { empty: 'Inscrever contatos em cadência…' })}</select>
     <button class="btn sm" id="bulk-camp">${icon('campanhas', 14)} Campanha com os contatos</button>
     <button class="btn sm danger" id="bulk-del">Excluir</button><button class="btn sm ghost" id="bulk-clear">Limpar seleção</button></div>
   <div class="table-wrap"><table><thead><tr>
@@ -77,9 +79,16 @@ export async function render(view, { params }) {
   });
   view.querySelector('#all').onchange = e => { filtered().forEach(({ o }) => e.target.checked ? sel.add(o.id) : sel.delete(o.id)); draw(); };
   view.querySelector('#nova').onclick = () => openOrgForm({}, o => location.hash = `#/org/${o.id}`);
+  view.querySelector('#bulk-cad').onchange = e => {
+    const id = e.target.value; if (!id) return; e.target.value = '';
+    const cts = store.list('contatos').filter(c => sel.has(c.orgId) && c.email && !c.optout).map(c => c.id);
+    if (!cts.length) { toast('As organizações selecionadas ainda não têm contatos com e-mail. Use "Encontrar contatos" na ficha de cada uma.', 'bad'); return; }
+    const r = inscrever(id, cts);
+    toast(`${r.novos} contato(s) inscrito(s) na cadência${r.ignorados ? `, ${r.ignorados} já estavam em sequência ou pediram descadastro` : ''}.`, 'ok');
+  };
   view.querySelector('#bulk-clear').onclick = () => { sel.clear(); draw(); };
   view.querySelector('#bulk-rel').onchange = e => { const v = e.target.value; if (!v) return; store.list('orgs').forEach(o => { if (sel.has(o.id)) o.relacionamento = v; }); store.touch('orgs'); toast(`${sel.size} organização(ões): ${relNome(v)}.`, 'ok'); e.target.value = ''; draw(); };
-  view.querySelector('#bulk-del').onclick = async () => { if (!await confirmDialog(`Excluir ${sel.size} organização(ões) com contatos, oportunidades e histórico?`, { ok: 'Excluir', danger: true })) return; [...sel].forEach(id => store.remove('orgs', id)); sel.clear(); draw(); };
+  view.querySelector('#bulk-del').onclick = async () => { if (!await confirmDialog(`Excluir ${sel.size} organização(ões) com contatos, oportunidades e histórico?`, { ok: 'Excluir', danger: true })) return; const desfazer = [...sel].map(id => store.remove('orgs', id)); const n = sel.size; sel.clear(); draw(); toast(`${n} organização(ões) excluída(s).`, '', { acao: 'Desfazer', onAcao: () => { desfazer.reverse().forEach(f => f()); draw(); } }); };
   view.querySelector('#bulk-camp').onclick = () => {
     const ids = store.list('contatos').filter(c => sel.has(c.orgId)).map(c => c.id);
     if (!ids.length) { toast('As organizações selecionadas ainda não têm contatos.', 'bad'); return; }

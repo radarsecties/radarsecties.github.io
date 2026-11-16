@@ -1,9 +1,9 @@
 import * as store from '../store.js';
-import { esc, toast, options, UFS, SEGMENTOS, norm, debounce, fmtCNPJ, onlyDigits, validCNPJ, sleep, uid, money, isEmail, safeUrl } from '../util.js';
+import { esc, toast, options, UFS, SEGMENTOS, norm, debounce, fmtCNPJ, onlyDigits, validCNPJ, sleep, money, isEmail, safeUrl } from '../util.js';
 import { consultarCNPJ, paraOrganizacao } from '../cnpj.js';
 import { sugerirMecanismos, linksProspeccao } from '../dominio.js';
 import { fromRef } from './setores.js';
-import { loadMecanismos, mecNome, mecCurto } from '../email.js';
+import { loadMecanismos, mecNome } from '../email.js';
 import * as G from '../google.js';
 
 const ABAS = [['referencia', 'Mapeamento setorial'], ['cnpj', 'Consulta CNPJ'], ['lote', 'CNPJs em lote'], ['prospeccao', 'Prospecção guiada'], ['gmail', 'Contatos no Gmail']];

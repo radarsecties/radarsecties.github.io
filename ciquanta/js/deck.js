@@ -1,4 +1,5 @@
 // Motor de apresentações do CIQUANTA.
+import { mostrarDocumento } from './util.js';
 // Institucional: slides oficiais (imagens das páginas do PDF). Setoriais: gerados no mesmo template a partir de data/setores.json.
 const BASE = new URL('../', import.meta.url).href;
 const A = p => BASE + p;
@@ -18,7 +19,6 @@ const cache = {};
 const load = n => (cache[n] ||= fetch(A(`data/${n}.json`), { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('Falha ao carregar ' + n); return r.json(); }));
 
 export const deckUrl = id => A(`apresentacao.html?d=${encodeURIComponent(id)}`);
-export const pdfInstitucional = () => A('assets/docs/ciquanta-apresentacao-institucional.pdf');
 
 export async function listDecks() {
   const [set, inst] = await Promise.all([load('setores'), load('institucional')]);
@@ -134,9 +134,8 @@ export function printDeck(deck) {
   if (deck.pdf) { window.open(deck.pdf, '_blank', 'noopener'); return; }
   const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${e(deck.titulo)}</title>
   <link rel="stylesheet" href="${A('css/deck.css')}"><style>body{margin:0;background:#fff}.print-deck .slide{page-break-after:always;break-after:page}</style></head>
-  <body class="print-deck">${deck.slides.join('')}<script>window.onload=()=>setTimeout(()=>print(),600)<\/script></body></html>`;
+  <body class="print-deck">${deck.slides.join('')}</body></html>`;
   const w = window.open('', '_blank');
   if (!w) { alert('Permita janelas pop-up para gerar o PDF.'); return; }
-  const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
-  w.location.replace(url); setTimeout(() => URL.revokeObjectURL(url), 120000);
+  mostrarDocumento(w, html, { imprimir: true });
 }

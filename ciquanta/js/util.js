@@ -88,11 +88,14 @@ export const TRATAMENTOS = [
 export const tratamento = id => TRATAMENTOS.find(t => t.id === id) || TRATAMENTOS[0];
 
 // ---- UI: toast, modal
-export function toast(msg, kind = '') {
+/** Aviso rápido. Com `acao`, mostra um botão (por exemplo, "Desfazer") e fica mais tempo na tela. */
+export function toast(msg, kind = '', { acao, onAcao } = {}) {
   const el = document.createElement('div');
   el.className = 'toast ' + kind; el.textContent = msg;
+  el.setAttribute('role', kind === 'bad' ? 'alert' : 'status');
+  if (acao) { const b = document.createElement('button'); b.type = 'button'; b.textContent = acao; b.onclick = () => { el.remove(); onAcao?.(); }; el.appendChild(b); }
   $('#toasts').appendChild(el);
-  setTimeout(() => el.remove(), kind === 'bad' ? 7000 : 3800);
+  setTimeout(() => el.remove(), acao ? 9000 : kind === 'bad' ? 7000 : 3800);
 }
 
 export function modal({ title, body, footer = '', wide = false, onMount }) {
@@ -168,6 +171,27 @@ export function download(name, content, type = 'text/plain;charset=utf-8') {
   const blob = content instanceof Blob ? content : new Blob([content], { type });
   const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
   document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+/** Abre a janela do documento. Deve ser chamada direto no clique, antes de qualquer espera, para não ser barrada como pop-up. */
+export function abrirJanela() {
+  const w = window.open('', '_blank');
+  if (!w) toast('Permita janelas pop-up neste endereço para abrir o documento.', 'bad');
+  return w;
+}
+/** Mostra o HTML na janela aberta. Botões com `data-imprimir` acionam a impressão; `imprimir` abre o diálogo sozinho. */
+export function mostrarDocumento(w, html, { imprimir = false } = {}) {
+  const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
+  w.location.replace(url);
+  let n = 0;
+  const liga = () => {
+    try {
+      if (w.closed) return;
+      if (w.location.href !== url || w.document.readyState !== 'complete') { if (n++ < 80) setTimeout(liga, 150); return; }
+      w.document.querySelectorAll('[data-imprimir]').forEach(b => { b.onclick = () => w.print(); });
+      if (imprimir) setTimeout(() => w.print(), 500);
+    } catch (e) { console.warn(e); }
+  };
+  setTimeout(liga, 150); setTimeout(() => URL.revokeObjectURL(url), 180000);
 }
 export function readFile(file, as = 'text') {
   return new Promise((res, rej) => { const r = new FileReader(); r.onload = () => res(r.result); r.onerror = rej; as === 'dataurl' ? r.readAsDataURL(file) : as === 'buffer' ? r.readAsArrayBuffer(file) : r.readAsText(file); });

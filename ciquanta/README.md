@@ -2,13 +2,14 @@
 
 CRM e central de operações institucionais do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.
 
-Aplicação web autônoma, sem servidor próprio e sem dependência de outros sistemas: todo o conteúdo desta pasta pode ser copiado para um repositório próprio e publicado como site estático (GitHub Pages ou qualquer servidor HTTPS).
+Aplicação web autônoma, sem servidor próprio e sem dependência de outros sistemas ou de bibliotecas de terceiros carregadas da internet: todo o conteúdo desta pasta pode ser copiado para um repositório próprio e publicado como site estático. O passo a passo está em [PUBLICACAO.md](PUBLICACAO.md).
 
 ## Módulos
 
 | Módulo | Função |
 |---|---|
 | Painel | Painel de comando: situação da conta Google, pipeline ponderado, contratado contra a meta anual, taxa de resposta, visitas à réplica, próximas ações ordenadas por impacto, agenda unificada, funil, receita por fonte, mapa por estado e potencial por setor. |
+| Captação | Plano de captação: meta anual e metas por frente de financiamento, contratado e pipeline ponderado, previsão por trimestre, cobertura por mecanismo de fomento (organizações elegíveis ainda sem abordagem) e relatório executivo em PDF. |
 | Interações em tempo real | Acompanha a caixa da conta Google do CIQUANTA pelo histórico do Gmail; vincula cada resposta à organização, registra no histórico, encerra a cadência do contato e avisa a equipe. |
 | Agenda | Marcos institucionais, eventos potenciais para participação (marcados "a confirmar"), prazos de editais, visitas à réplica e compromissos do Google Agenda; reuniões com convite e link do Meet; exportação `.ics`. |
 | Visitas e cadastros | Integração com o Painel CIQUANTA (`painelciquanta.secties.pb.gov.br`): lê as planilhas de agendamentos de visita e de cadastros de perfis, mostra visitantes por dia, categorias e temas de interesse e leva pesquisadores, empreendedores e parceiros ao CRM. |
@@ -23,7 +24,16 @@ Aplicação web autônoma, sem servidor próprio e sem dependência de outros si
 | Leis, editais e simulador | 39 mecanismos de fomento e incentivo (leis federais, obrigações regulatórias de PD&I, agências, bancos, fundos e instrumentos estaduais), com base legal, gestor e papel do CIQUANTA; acompanhamento de editais com prazos; simuladores. |
 | Fontes | Fontes do mapeamento e das apresentações, com o critério de cada nível de evidência. |
 
-A busca rápida (Ctrl K) localiza organizações, contatos, oportunidades e telas.
+A busca rápida (Ctrl K) localiza organizações, contatos, oportunidades e telas e executa ações (nova organização, nova oportunidade, relatório, cópia de segurança). A tecla `?` mostra os atalhos de teclado.
+
+## Base de dados
+
+- **Base compartilhada:** com a opção ativada em Configurações, o CRM mantém uma única base em um arquivo no Google Drive da conta do CIQUANTA. Cada computador mescla as suas mudanças com as dos demais, registro a registro. Só um computador por vez executa cadências e campanhas agendadas.
+- **Várias abas:** abas abertas no mesmo navegador se atualizam entre si, e só uma conduz os envios automáticos.
+- **Pontos de restauração:** uma cópia automática por dia de uso e antes de qualquer operação que substitua dados, com restauração em Configurações.
+- **Desfazer:** exclusões mostram a opção "Desfazer".
+- **Integridade:** os dados são verificados ao carregar e ao importar (registros repetidos ou órfãos são corrigidos).
+- **Sem conexão:** depois do primeiro acesso, o sistema abre mesmo sem internet e pode ser instalado como aplicativo.
 
 ## Identidade visual
 
@@ -40,6 +50,8 @@ Segue a apresentação institucional oficial do CIQUANTA (`assets/docs/ciquanta-
 2. Configure a tela de consentimento OAuth (Interno, se a conta for Google Workspace).
 3. Crie um ID do cliente OAuth do tipo Aplicativo da Web, com o endereço do sistema como origem JavaScript autorizada.
 4. Em Configurações, cole o Client ID, escolha as permissões e conecte com a conta do CIQUANTA.
+
+A base compartilhada usa a permissão de guardar no Drive (`drive.file`), que só alcança os arquivos criados pelo próprio sistema.
 
 Permissões: envio (`gmail.send`, obrigatória); leitura para acompanhar respostas (`gmail.readonly`); rascunhos (`gmail.compose`); agenda e reuniões (`calendar.events`); busca de arquivos e apresentações no Drive (`drive.metadata.readonly`); planilhas do Painel CIQUANTA (`spreadsheets.readonly`); cópia de segurança (`drive.file`). Não há chave secreta: o token fica só na memória da aba aberta.
 
@@ -63,5 +75,10 @@ A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agenda
 - `data/institucional.json` e `assets/deck/institucional/`: apresentação institucional oficial.
 - `data/mecanismos.json`: mecanismos de fomento (revisar percentuais e prazos quando a legislação mudar).
 - `data/modelos.json` e `data/agenda.json`: modelos de e-mail e agenda iniciais. As datas dos eventos potenciais são referências e devem ser conferidas na página oficial de cada evento.
+
+- `tools/validar-dados.mjs`: verifica a integridade das bases (`node tools/validar-dados.mjs`). Rode antes de publicar alterações em `data/`.
+- `js/vendor/chart.umd.js`: Chart.js 4.4.1 (licença MIT), incluída no próprio sistema.
+
+Segurança: a página define uma política de conteúdo (CSP) que só permite programas do próprio endereço e do login do Google, e conexões com as APIs do Google e as bases públicas de CNPJ.
 
 Para testar localmente: `python3 -m http.server` nesta pasta e abrir `http://localhost:8000/`.

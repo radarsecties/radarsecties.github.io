@@ -76,7 +76,6 @@ async function ensureToken() {
   await connect({ silent: true });
   return token.access_token;
 }
-export const profileInfo = () => profile;
 
 async function api(url, opts = {}, tries = 0) {
   const t = token?.access_token || await ensureToken();
@@ -151,6 +150,21 @@ export async function driveSave(json, name = 'ciquanta-crm-backup.json') {
   const r = await api(`${UPLOAD}?uploadType=multipart&fields=id,name`, { method: 'POST', raw: true, body: new Blob([body]), headers: { 'Content-Type': 'multipart/related; boundary=' + boundary } });
   setConfig({ driveFileId: r.id });
   return r;
+}
+// Arquivos JSON criados pelo próprio sistema (base compartilhada e reserva do motor)
+export async function driveFindId(nome) {
+  await ensureToken();
+  const l = await api(`${DRIVE}?q=${encodeURIComponent(`name = '${nome}' and trashed = false`)}&orderBy=createdTime&pageSize=1&fields=files(id)`);
+  return l.files?.[0]?.id || '';
+}
+export async function driveMeta(id) { await ensureToken(); return api(`${DRIVE}/${id}?fields=id,headRevisionId,modifiedTime`); }
+export async function driveGet(id) { await ensureToken(); return api(`${DRIVE}/${id}?alt=media`, { text: true }); }
+export async function driveUpdate(id, json) { await ensureToken(); return api(`${UPLOAD}/${id}?uploadType=media&fields=id,headRevisionId`, { method: 'PATCH', body: new Blob([json], { type: 'application/json' }), headers: { 'Content-Type': 'application/json' } }); }
+export async function driveCreate(nome, json) {
+  await ensureToken();
+  const boundary = 'cq' + Math.random().toString(36).slice(2);
+  const body = `--${boundary}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n${JSON.stringify({ name: nome, mimeType: 'application/json' })}\r\n--${boundary}\r\nContent-Type: application/json\r\n\r\n${json}\r\n--${boundary}--`;
+  return api(`${UPLOAD}?uploadType=multipart&fields=id,headRevisionId`, { method: 'POST', raw: true, body: new Blob([body]), headers: { 'Content-Type': 'multipart/related; boundary=' + boundary } });
 }
 export async function driveLoad() {
   await ensureToken();

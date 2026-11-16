@@ -4,6 +4,7 @@ import * as store from './store.js';
 import * as G from './google.js';
 import { toast } from './util.js';
 import { marcarResposta } from './cadencia.js';
+import { podeAutomatizar } from './sync.js';
 
 let timer = null, rodando = false, ultimo = null, erro = '';
 const subs = new Set();
@@ -22,7 +23,7 @@ export function iniciar() {
 export function parar() { clearInterval(timer); timer = null; emit({ tipo: 'estado' }); }
 
 async function ciclo() {
-  if (rodando || !G.status().conectado) return;
+  if (rodando || !G.status().conectado || !podeAutomatizar()) return;
   rodando = true;
   try {
     let hid = store.cfg().historyId;

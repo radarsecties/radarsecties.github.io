@@ -27,7 +27,6 @@ export function contexto() {
   const comOpp = new Set(store.list('oportunidades').filter(o => !['contratada', 'perdida'].includes(o.etapa)).map(o => o.orgId));
   return { comEmail, respondeu, comOpp };
 }
-export const faixaBadge = p => `<span class="badge ${p.faixa === 'alto' ? 'ok' : p.faixa === 'medio' ? '' : 'gray'}" title="${p.motivos.map(x => `+${x[0]} ${x[1]}`).join('\n')}">${p.total}</span>`;
 
 /** Lista priorizada do que fazer agora. Cada item: { peso, titulo, detalhe, href, tipo }. */
 export function proximasAcoes(limite = 8) {

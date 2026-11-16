@@ -4,7 +4,7 @@ import { uid, toast, norm } from './util.js';
 const KEY = 'ciquanta:crm:v2';
 const VERSION = 2;
 const SEED = 3; // versão dos dados iniciais (modelos, agenda e cadências)
-const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos', 'cadencias', 'inscricoes', 'editais'];
+export const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos', 'cadencias', 'inscricoes', 'editais'];
 
 const empty = () => ({
   version: VERSION,
@@ -17,10 +17,31 @@ const empty = () => ({
     rodape: 'Você recebeu esta mensagem por sua atuação institucional em ciência, tecnologia e inovação. Para não receber novos contatos do CIQUANTA, responda com "REMOVER".',
     escopos: { rascunhos: true, leitura: true, agenda: true, drive: true, backup: false, planilhas: true },
     planilhaVisitas: '', planilhaCadastros: '', painelUrl: 'https://painelciquanta.secties.pb.gov.br',
-    metaAnual: 0, horarioComercial: true, cadenciasAtivas: true,
+    metaAnual: 0, metas: {}, horarioComercial: true, cadenciasAtivas: true,
+    sincronizar: false, baseFileId: '', cfgEm: {}, guiaOculto: false,
     historyId: '', driveFileId: '', seed: 0,
   },
 });
+
+/** Garante a forma das coleções: listas válidas, sem itens repetidos e sem registros órfãos. Devolve o próprio objeto. */
+export function sanear(d) {
+  if (!d || typeof d !== 'object') return empty();
+  let n = 0;
+  for (const c of COLS) {
+    const visto = new Set(), antes = Array.isArray(d[c]) ? d[c].length : 0;
+    d[c] = (Array.isArray(d[c]) ? d[c] : []).filter(x => x && typeof x === 'object' && x.id && !visto.has(x.id) && visto.add(x.id));
+    n += antes - d[c].length;
+  }
+  const orgs = new Set(d.orgs.map(o => o.id)), cts = new Set(d.contatos.map(c => c.id)), cads = new Set(d.cadencias.map(c => c.id));
+  const corta = (c, ok) => { const a = d[c].length; d[c] = d[c].filter(ok); n += a - d[c].length; };
+  corta('oportunidades', o => orgs.has(o.orgId));
+  corta('inscricoes', i => cts.has(i.contatoId) && cads.has(i.cadenciaId));
+  d.contatos.forEach(c => { if (c.orgId && !orgs.has(c.orgId)) { c.orgId = ''; n++; } });
+  d.supressao = Array.isArray(d.supressao) ? [...new Set(d.supressao.filter(x => typeof x === 'string' && x))] : [];
+  if (!d.painel || typeof d.painel !== 'object') delete d.painel;
+  if (n) console.info(`CRM: ${n} registro(s) inconsistente(s) corrigido(s) ao carregar.`);
+  return d;
+}
 
 let db = load();
 const listeners = new Set();
@@ -42,28 +63,46 @@ function load() {
       }
       return base;
     }
-    const d = JSON.parse(raw);
+    const d = sanear(JSON.parse(raw));
     return { ...base, ...d, config: { ...base.config, ...(d.config || {}), escopos: { ...base.config.escopos, ...(d.config?.escopos || {}) } } };
   } catch (e) { console.error(e); return empty(); }
 }
 
-let saveTimer;
-function persist() {
-  clearTimeout(saveTimer);
-  saveTimer = setTimeout(() => {
-    try { localStorage.setItem(KEY, JSON.stringify(db)); }
-    catch (e) { toast('Não foi possível salvar no navegador (espaço cheio?). Baixe um backup em Configurações.', 'bad'); }
-  }, 150);
+let saveTimer, avisouFalha = false;
+function gravar() {
+  try { localStorage.setItem(KEY, JSON.stringify(db)); avisouFalha = false; return true; }
+  catch (e) {
+    console.error(e);
+    if (!avisouFalha) toast('Não foi possível gravar no navegador (espaço cheio ou navegação privada). Baixe uma cópia em Configurações para não perder o trabalho.', 'bad');
+    avisouFalha = true; return false;
+  }
 }
-export function flush() { clearTimeout(saveTimer); try { localStorage.setItem(KEY, JSON.stringify(db)); } catch {} }
+function persist() { clearTimeout(saveTimer); saveTimer = setTimeout(gravar, 150); }
+export function flush() { clearTimeout(saveTimer); return gravar(); }
 window.addEventListener('beforeunload', flush);
+window.addEventListener('pagehide', flush);
 
 export const onChange = fn => (listeners.add(fn), () => listeners.delete(fn));
-function emit(what) { persist(); listeners.forEach(fn => { try { fn(what); } catch (e) { console.error(e); } }); }
+const avisar = what => listeners.forEach(fn => { try { fn(what); } catch (e) { console.error(e); } });
+function emit(what) { persist(); avisar(what); }
+
+// Outra aba deste navegador gravou: recarrega a base para as duas abas não se sobrescreverem
+window.addEventListener('storage', e => {
+  if (e.key !== KEY || !e.newValue) return;
+  clearTimeout(saveTimer); db = load(); avisar('externo');
+});
 
 export const state = () => db;
 export const cfg = () => db.config;
-export function setConfig(patch) { db.config = { ...db.config, ...patch }; emit('config'); }
+/** Preferências que valem para toda a equipe e seguem para a base compartilhada. As demais são de cada computador. */
+export const CONFIG_COMUM = ['remetenteNome', 'remetenteCargo', 'remetenteTelefone', 'replyTo', 'enderecoPublico', 'intervaloSeg', 'limiteDiario', 'rodape', 'planilhaVisitas', 'planilhaCadastros', 'painelUrl', 'metaAnual', 'metas', 'horarioComercial', 'cadenciasAtivas'];
+export function setConfig(patch) {
+  // Cada preferência comum guarda quando foi alterada, para a mescla entre computadores valer item a item
+  const em = { ...(db.config.cfgEm || {}) };
+  if (!('cfgEm' in patch)) for (const k of CONFIG_COMUM) if (k in patch && JSON.stringify(patch[k]) !== JSON.stringify(db.config[k])) em[k] = now();
+  db.config = { cfgEm: em, ...db.config, ...patch, ...('cfgEm' in patch ? {} : { cfgEm: em }) };
+  emit('config');
+}
 
 const now = () => new Date().toISOString();
 export function list(col) { return db[col]; }
@@ -77,18 +116,40 @@ export function upsert(col, obj, prefix) {
   const o = { ...obj, id: obj.id || uid(prefix || col.slice(0, 3)), criadoEm: obj.criadoEm || now() };
   db[col].push(o); emit(col); return o;
 }
+/** Exclui o registro e o que depende dele. Devolve uma função que desfaz a exclusão. */
 export function remove(col, id) {
-  db[col] = db[col].filter(x => x.id !== id);
+  const fora = {};
+  const tira = (c, sai) => { const l = db[c].filter(sai); if (l.length) { fora[c] = (fora[c] || []).concat(l); db[c] = db[c].filter(x => !sai(x)); } };
   if (col === 'orgs') {
-    db.contatos = db.contatos.filter(c => c.orgId !== id);
-    db.interacoes = db.interacoes.filter(i => i.orgId !== id);
-    db.oportunidades = db.oportunidades.filter(o => o.orgId !== id);
+    const cts = new Set(db.contatos.filter(c => c.orgId === id).map(c => c.id));
+    tira('inscricoes', i => cts.has(i.contatoId));
+    tira('contatos', c => c.orgId === id); tira('interacoes', i => i.orgId === id); tira('oportunidades', o => o.orgId === id);
   }
-  if (col === 'contatos') db.interacoes = db.interacoes.filter(i => i.contatoId !== id);
-  if (col === 'campanhas') db.envios = db.envios.filter(e => e.campanhaId !== id);
+  if (col === 'contatos') { tira('interacoes', i => i.contatoId === id); tira('inscricoes', i => i.contatoId === id); }
+  if (col === 'campanhas') tira('envios', e => e.campanhaId === id);
+  if (col === 'cadencias') tira('inscricoes', i => i.cadenciaId === id);
+  tira(col, x => x.id === id);
   emit(col);
+  return () => {
+    for (const [c, l] of Object.entries(fora)) { const ids = new Set(db[c].map(x => x.id)); l.forEach(x => { if (!ids.has(x.id)) db[c].push(x); }); }
+    emit(col);
+  };
+}
+/** Exclui e mostra o aviso com "Desfazer". */
+export function removerComDesfazer(col, id, rotulo, depois) {
+  const desfazer = remove(col, id);
+  toast(`${rotulo} excluído(a).`, '', { acao: 'Desfazer', onAcao: () => { desfazer(); depois?.(); } });
 }
 export function touch(col) { emit(col); }
+/** Troca coleções inteiras preservando as referências dos registros que continuam (usado pela sincronização). */
+export function aplicar(cols, extra = {}) {
+  for (const [c, nova] of Object.entries(cols)) {
+    const atual = new Map(db[c].map(x => [x.id, x]));
+    db[c] = nova.map(n => { const a = atual.get(n.id); if (!a) return n; if (a !== n) { for (const k of Object.keys(a)) delete a[k]; Object.assign(a, n); } return a; });
+  }
+  Object.assign(db, extra);
+  emit('externo');
+}
 
 // ---- Consultas de domínio
 export const orgOf = c => c && get('orgs', c.orgId);
@@ -157,8 +218,10 @@ export async function seedIfNeeded() {
 // ---- Backup
 export function exportJSON() { const { config, ...rest } = db; return JSON.stringify({ ...rest, config: { ...config, historyId: '' }, exportadoEm: now(), app: 'ciquanta-crm' }, null, 1); }
 export function importJSON(text, { merge = false } = {}) {
-  const d = JSON.parse(text);
-  if (!d || !Array.isArray(d.orgs)) throw new Error('O arquivo não é um backup do CRM CIQUANTA.');
+  let d; try { d = JSON.parse(text); } catch { throw new Error('O arquivo não é um JSON válido.'); }
+  if (!d || !Array.isArray(d.orgs)) throw new Error('O arquivo não é uma cópia do CRM CIQUANTA.');
+  criarPonto(merge ? 'antes de mesclar uma cópia' : 'antes de restaurar uma cópia');
+  sanear(d);
   if (!merge) {
     const keep = db.config;
     db = { ...empty(), ...d, config: { ...empty().config, ...keep, ...(d.config || {}), clientId: d.config?.clientId || keep.clientId, historyId: keep.historyId } };
@@ -168,17 +231,19 @@ export function importJSON(text, { merge = false } = {}) {
       (d[col] || []).forEach(x => { if (!ids.has(x.id)) db[col].push(x); });
     }
     db.supressao = Array.from(new Set([...db.supressao, ...(d.supressao || [])]));
+    sanear(db);
   }
   emit('import');
 }
-export function resetAll() { const c = db.config.clientId; db = empty(); db.config.clientId = c; emit('reset'); }
+export function resetAll() { criarPonto('antes de apagar todos os dados'); const c = db.config.clientId; db = empty(); db.config.clientId = c; emit('reset'); }
+export const contagem = (d = db) => ({ orgs: d.orgs.length, contatos: d.contatos.length, oportunidades: d.oportunidades.length, interacoes: d.interacoes.length });
 
 // ---- IndexedDB (arquivos de materiais)
 let idbp;
 function idb() {
   if (!idbp) idbp = new Promise((res, rej) => {
-    const r = indexedDB.open('ciquanta-arquivos', 1);
-    r.onupgradeneeded = () => r.result.createObjectStore('arquivos');
+    const r = indexedDB.open('ciquanta-arquivos', 2);
+    r.onupgradeneeded = () => { for (const n of ['arquivos', 'pontos']) if (!r.result.objectStoreNames.contains(n)) r.result.createObjectStore(n); };
     r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
   });
   return idbp;
@@ -186,3 +251,29 @@ function idb() {
 export async function fileput(id, value) { const d = await idb(); return new Promise((res, rej) => { const t = d.transaction('arquivos', 'readwrite'); t.objectStore('arquivos').put(value, id); t.oncomplete = res; t.onerror = () => rej(t.error); }); }
 export async function fileGet(id) { const d = await idb(); return new Promise((res, rej) => { const r = d.transaction('arquivos').objectStore('arquivos').get(id); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); }); }
 export async function fileDel(id) { const d = await idb(); return new Promise(res => { const t = d.transaction('arquivos', 'readwrite'); t.objectStore('arquivos').delete(id); t.oncomplete = res; }); }
+
+// ---- Pontos de restauração: cópias automáticas guardadas neste navegador
+const MAX_PONTOS = 12;
+const tx = async (modo, fn) => { const d = await idb(); return new Promise((res, rej) => { const t = d.transaction('pontos', modo), r = fn(t.objectStore('pontos')); t.oncomplete = () => res(r?.result); t.onerror = () => rej(t.error); }); };
+export async function listarPontos() {
+  try { const ks = await tx('readonly', o => o.getAllKeys()); const vs = await tx('readonly', o => o.getAll()); return ks.map((k, i) => ({ id: k, motivo: vs[i].motivo, n: vs[i].n })).sort((a, b) => b.id.localeCompare(a.id)); }
+  catch (e) { console.warn(e); return []; }
+}
+export async function criarPonto(motivo = 'automático') {
+  if (!db.orgs.length && !db.contatos.length) return;
+  const reg = { motivo, n: contagem(), dados: exportJSON() }, id = now(); // fotografa antes de qualquer espera
+  try {
+    await tx('readwrite', o => o.put(reg, id));
+    const l = await listarPontos();
+    for (const p of l.slice(MAX_PONTOS)) await tx('readwrite', o => o.delete(p.id));
+  } catch (e) { console.warn('ponto de restauração', e); }
+}
+export async function restaurarPonto(id) {
+  const p = await tx('readonly', o => o.get(id)); if (!p) throw new Error('Ponto de restauração não encontrado.');
+  importJSON(p.dados);
+}
+/** Uma cópia automática por dia de uso. */
+export async function pontoDiario() {
+  const l = await listarPontos(); const hoje = now().slice(0, 10);
+  if (!l.some(p => p.id.slice(0, 10) === hoje && p.motivo === 'automático')) await criarPonto('automático');
+}

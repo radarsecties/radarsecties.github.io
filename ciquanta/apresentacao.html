@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CIQUANTA · Apresentação</title>
 <meta name="description" content="Apresentação do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/deck.css">
@@ -27,19 +28,6 @@
   <div id="viewer"></div>
   <footer><span><span id="fonte"></span><br>Contato: <a href="mailto:ciquanta@secties.pb.gov.br">ciquanta@secties.pb.gov.br</a> · <a href="https://ciquanta.secties.pb.gov.br">ciquanta.secties.pb.gov.br</a></span><img src="assets/secties-govpb.png" alt="SECTIES, Governo da Paraíba"></footer>
 </div>
-<script type="module">
-  import { buildDeck, mountViewer } from './js/deck.js';
-  const p = new URLSearchParams(location.search);
-  const id = p.get('d') || 'institucional';
-  try {
-    const deck = await buildDeck(id);
-    document.title = deck.titulo;
-    document.getElementById('titulo').textContent = deck.titulo;
-    document.getElementById('fonte').textContent = 'Fonte: ' + deck.fonte;
-    mountViewer(document.getElementById('viewer'), deck, { start: Math.max(0, (+p.get('s') || 1) - 1) });
-  } catch (err) {
-    document.getElementById('titulo').textContent = 'Apresentação não encontrada';
-  }
-</script>
+<script type="module" src="js/apresentacao.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 import * as store from '../store.js';
 import * as G from '../google.js';
 import { openReuniaoForm } from '../components.js';
-import { esc, modal, formData, options, toast, confirmDialog, isoDay, fmtDate, MESES_LONGOS, download, safeUrl, dayChip, relTime } from '../util.js';
+import { esc, modal, formData, options, toast, isoDay, fmtDate, MESES_LONGOS, download, safeUrl, dayChip, relTime } from '../util.js';
 
 export const TIPOS = { institucional: 'Institucional', potencial: 'Evento potencial', setorial: 'Data do setor', prazo: 'Prazo ou edital', visita: 'Visitas à réplica', reuniao: 'Reunião', google: 'Google Agenda' };
 
@@ -65,7 +65,7 @@ function form(e, done) {
     <label class="check full"><input type="checkbox" name="aConfirmar" ${e.aConfirmar ? 'checked' : ''}> Data ainda a confirmar</label></form>`,
     footer: `${e.id ? '<button class="btn danger" id="del" style="margin-right:auto">Excluir</button>' : ''}<button class="btn" data-close>Cancelar</button><button class="btn primary" id="ok">Salvar</button>` });
   el.querySelector('#ok').onclick = () => { const f = el.querySelector('#f'); if (!f.reportValidity()) return; const d = formData(f); d.link = safeUrl(d.link); store.upsert('eventos', { ...e, ...d }, 'ev'); toast('Evento salvo.', 'ok'); close(); done(); };
-  el.querySelector('#del')?.addEventListener('click', async () => { close(); if (await confirmDialog('Excluir este evento?', { ok: 'Excluir', danger: true })) { store.remove('eventos', e.id); done(); } });
+  el.querySelector('#del')?.addEventListener('click', async () => { close(); store.removerComDesfazer('eventos', e.id, 'Evento', done); done(); });
 }
 
 function gcalLink(e) {

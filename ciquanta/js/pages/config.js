@@ -1,11 +1,13 @@
 import * as store from '../store.js';
 import * as G from '../google.js';
 import * as monitor from '../monitor.js';
-import { esc, toast, download, readFile, confirmDialog, isEmail } from '../util.js';
+import { esc, toast, download, readFile, confirmDialog, isEmail, fmtDateTime } from '../util.js';
+import * as sync from '../sync.js';
 
 export async function render(view) {
+  let pontos = await store.listarPontos();
   const draw = () => {
-    const c = store.cfg(); const s = G.status(); const st = store.state();
+    const c = store.cfg(); const s = G.status(); const st = store.state(), y = sync.estado();
     const pub = (c.enderecoPublico || '').trim() || (location.protocol === 'https:' ? new URL('.', location.href).href : '');
     view.innerHTML = `<div class="section-head"><div><h2>Configurações</h2><p>Conta Google do CIQUANTA, remetente, ritmo de envio, lista de descadastro e cópias de segurança.</p></div></div>
     <div class="grid g2">
@@ -62,15 +64,23 @@ export async function render(view) {
         <form class="toolbar" id="sup"><input type="email" class="grow" name="e" placeholder="email@dominio.com"><button class="btn">Adicionar</button></form>
         <div class="tags">${st.supressao.map(e => `<span class="badge gray">${esc(e)} <button class="btn ghost sm" style="padding:0 2px" data-unsup="${esc(e)}" aria-label="Remover">×</button></span>`).join('') || '<span class="muted small">Vazia.</span>'}</div></div>
 
+      <div class="card span2 acento"><h3>Base compartilhada ${y.ativo ? `<span class="badge ${y.fase === 'erro' ? 'bad' : 'ok'}">${y.fase === 'erro' ? 'com erro' : 'ativa'}</span>` : '<span class="badge gray">desligada</span>'}</h3>
+        <p class="muted">Mantém uma única base do CRM no Google Drive da conta do CIQUANTA. Todo computador conectado com essa conta trabalha sobre os mesmos dados: as mudanças são mescladas registro a registro, a cada dois minutos e logo após cada alteração. Só um computador por vez executa cadências e campanhas agendadas, para nenhum e-mail sair em duplicidade.</p>
+        <div class="toolbar" style="margin:0"><label class="check"><input type="checkbox" id="sy-on" ${c.sincronizar ? 'checked' : ''}> Usar a base compartilhada no Google Drive</label>
+          <button class="btn" id="sy-now" ${y.ativo ? '' : 'disabled'}>Sincronizar agora</button>
+          <span class="muted small">${!c.sincronizar ? '' : !s.conectado ? 'Conecte a conta Google para sincronizar.' : !G.hasScope('backup') ? 'Reconecte a conta para conceder a permissão de guardar no Drive.' : y.fase === 'erro' ? esc(y.erro) : y.ultimo ? `Última sincronização: ${fmtDateTime(y.ultimo)}. ${y.motorAqui ? 'Este computador executa os envios automáticos.' : 'Os envios automáticos estão a cargo de outro computador.'}` : 'Aguardando a primeira sincronização.'}</span></div></div>
+
       <div class="card span2"><h3>Dados e cópias de segurança</h3>
-        <p class="muted">Os dados ficam guardados <strong>neste navegador</strong>: ${st.orgs.length} organizações, ${st.contatos.length} contatos, ${st.oportunidades.length} oportunidades, ${st.campanhas.length} campanhas. Faça cópias regulares e use o arquivo para levar a base a outro computador ou colega.</p>
+        <p class="muted">Os dados ficam guardados <strong>neste navegador</strong>${c.sincronizar ? ' e na base compartilhada' : ''}: ${st.orgs.length} organizações, ${st.contatos.length} contatos, ${st.oportunidades.length} oportunidades, ${st.campanhas.length} campanhas.</p>
         <div class="toolbar"><button class="btn primary" id="exp">Baixar cópia (.json)</button>
           <label class="btn">Restaurar cópia<input type="file" accept=".json,application/json" id="imp" hidden></label>
           <label class="btn">Mesclar cópia<input type="file" accept=".json,application/json" id="mer" hidden></label>
           <button class="btn" id="dsave" ${s.conectado && G.hasScope('backup') ? '' : 'disabled'}>Salvar no Google Drive</button>
           <button class="btn" id="dload" ${s.conectado && G.hasScope('backup') ? '' : 'disabled'}>Carregar do Google Drive</button>
           <button class="btn danger" id="reset" style="margin-left:auto">Apagar todos os dados</button></div>
-        <p class="muted small">Arquivos anexados aos materiais ficam só neste navegador e não entram na cópia; materiais com link entram normalmente.</p></div>
+        <p class="muted small">Arquivos anexados aos materiais ficam só neste navegador e não entram na cópia; materiais com link entram normalmente.</p>
+        <h3 style="margin-top:18px">Pontos de restauração <span class="muted">cópias automáticas neste navegador</span></h3>
+        ${pontos.length ? `<div class="table-wrap"><table><thead><tr><th>Quando</th><th>Motivo</th><th class="num">Organizações</th><th class="num">Contatos</th><th class="num">Oportunidades</th><th></th></tr></thead><tbody>${pontos.map(p => `<tr><td class="nowrap">${fmtDateTime(p.id)}</td><td>${esc(p.motivo)}</td><td class="num">${p.n?.orgs ?? '—'}</td><td class="num">${p.n?.contatos ?? '—'}</td><td class="num">${p.n?.oportunidades ?? '—'}</td><td><button class="btn sm" data-ponto="${esc(p.id)}">Restaurar</button></td></tr>`).join('')}</tbody></table></div>` : '<p class="muted small">O sistema guarda uma cópia por dia de uso e antes de operações que substituem dados. Ainda não há cópias.</p>'}</div>
     </div>`;
     const form = (id, fn) => view.querySelector(id).onsubmit = e => { e.preventDefault(); fn(Object.fromEntries(new FormData(e.target))); };
     form('#rem', d => { store.setConfig(d); toast('Remetente salvo.', 'ok'); });
@@ -81,6 +91,16 @@ export async function render(view) {
     view.querySelectorAll('[data-unsup]').forEach(b => b.onclick = () => { store.suprimir(b.dataset.unsup, false); draw(); });
     view.querySelector('#on')?.addEventListener('click', async () => { try { await G.connect(); toast('Conta Google conectada.', 'ok'); draw(); } catch (e) { toast(e.message, 'bad'); } });
     view.querySelector('#off')?.addEventListener('click', () => { G.disconnect(); draw(); });
+    view.querySelector('#sy-on').onchange = e => {
+      store.setConfig({ sincronizar: e.target.checked, escopos: { ...store.cfg().escopos, ...(e.target.checked ? { backup: true } : {}) } });
+      if (e.target.checked && s.conectado && G.hasScope('backup')) sync.iniciar(); else if (!e.target.checked) sync.parar();
+      toast(e.target.checked ? (G.hasScope('backup') ? 'Base compartilhada ativada.' : 'Ativada. Reconecte a conta Google para conceder a permissão de guardar no Drive.') : 'Base compartilhada desligada neste computador.', 'ok'); draw();
+    };
+    view.querySelector('#sy-now').onclick = async () => { if (await sync.sincronizar({ manual: true })) toast('Base sincronizada.', 'ok'); };
+    view.querySelectorAll('[data-ponto]').forEach(b => b.onclick = async () => {
+      if (!await confirmDialog('Restaurar este ponto substitui os dados atuais. O estado de agora também fica guardado como ponto de restauração. Continuar?', { ok: 'Restaurar', danger: true })) return;
+      try { await store.restaurarPonto(b.dataset.ponto); pontos = await store.listarPontos(); toast('Ponto restaurado.', 'ok'); draw(); } catch (err) { toast(err.message, 'bad'); }
+    });
     view.querySelector('#exp').onclick = () => download(`ciquanta-crm-${new Date().toISOString().slice(0, 10)}.json`, store.exportJSON(), 'application/json');
     const imp = merge => async e => {
       const f = e.target.files[0]; if (!f) return;
@@ -97,5 +117,6 @@ export async function render(view) {
     view.querySelector('#reset').onclick = async () => { if (await confirmDialog('Apagar todos os dados (organizações, contatos, oportunidades, campanhas e histórico)? Baixe uma cópia antes.', { ok: 'Apagar tudo', danger: true })) { store.resetAll(); await store.seedIfNeeded(); toast('Dados apagados.'); draw(); } };
   };
   draw();
-  return G.onAuth(draw);
+  const offs = [G.onAuth(draw), sync.onSync(() => { if (!view.contains(document.activeElement) || document.activeElement === document.body) draw(); })];
+  return () => offs.forEach(f => f());
 }

@@ -5,6 +5,7 @@ import * as G from './google.js';
 import { compose, buildMime, loadMecanismos } from './email.js';
 import { enviadosHoje } from './runner.js';
 import { isEmail, sleep, toast } from './util.js';
+import * as sync from './sync.js';
 
 let rodando = false, timer = null, ultimo = null;
 const subs = new Set();
@@ -47,9 +48,10 @@ export function marcarResposta(contatoId, email) {
 export async function ciclo({ manual = false } = {}) {
   if (rodando) return 0;
   const conf = store.cfg();
-  if (!manual && (!conf.cadenciasAtivas || (conf.horarioComercial && !dentroDoHorario()))) return 0;
+  if (!manual && (!conf.cadenciasAtivas || !sync.podeAutomatizar() || (conf.horarioComercial && !dentroDoHorario()))) return 0;
   if (!G.status().conectado) { if (manual) toast('Conecte a conta Google para executar as cadências.', 'bad'); return 0; }
-  rodando = true; emit();
+  if (manual) await sync.sincronizar(); // traz o que outros computadores já enviaram
+  rodando = true; emit(); sync.pausar(true);
   await loadMecanismos();
   let enviados = 0;
   try {
@@ -83,7 +85,7 @@ export async function ciclo({ manual = false } = {}) {
       await sleep(Math.max(1, Number(conf.intervaloSeg) || 5) * 1000);
     }
   } finally {
-    rodando = false; ultimo = now().toISOString();
+    rodando = false; ultimo = now().toISOString(); sync.pausar(false);
     store.touch('inscricoes'); store.touch('envios'); store.touch('orgs'); emit();
   }
   if (enviados && manual) toast(`${enviados} e-mail(s) de cadência enviado(s).`, 'ok');

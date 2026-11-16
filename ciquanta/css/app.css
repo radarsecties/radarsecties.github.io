@@ -90,6 +90,10 @@ button, input, select, textarea { font: inherit; color: inherit; }
 #global-search { width: 320px; }
 .icon-btn.menu-btn { display: none; }
 #live-btn { position: relative; }
+#sync-btn.on { color: #12805C; } #sync-btn.bad { color: var(--red); }
+#sync-btn.girando svg { animation: gira 1s linear infinite; }
+@keyframes gira { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { #sync-btn.girando svg { animation: none; } }
 #live-btn.on::after { content: ''; position: absolute; top: 6px; right: 6px; width: 7px; height: 7px; border-radius: 50%; background: #12805C; box-shadow: 0 0 0 2px var(--surface); }
 .view { padding: 24px 28px 64px; outline: none; max-width: 1480px; width: 100%; }
 
@@ -234,6 +238,9 @@ td .title, .title { font-weight: 600; }
 .toast.bad { border-left-color: #F58193; }
 .toast.ok { border-left-color: #4ED3A0; }
 .toast a { color: #fff; }
+.toast { display: flex; align-items: center; gap: 12px; }
+.toast button { margin-left: auto; background: rgba(255,255,255,.14); color: #fff; border: 0; border-radius: 6px; padding: 5px 10px; font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.toast button:hover { background: rgba(255,255,255,.26); }
 
 /* E-mail e progresso */
 .preview-frame { width: 100%; height: 540px; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
@@ -352,3 +359,21 @@ kbd { font: 11px ui-monospace, Menlo, monospace; border: 1px solid var(--line-st
 
 .ev.t-potencial { background: var(--surface-2); color: var(--text-2); border: 1px dashed var(--line-strong); }
 .ev.t-visita { background: var(--info-soft); color: var(--info); }
+
+
+/* Plano de captação e primeiros passos */
+.frentes { display: grid; }
+.frente { display: grid; grid-template-columns: minmax(0, 2.4fr) repeat(4, minmax(0, 1fr)); gap: 6px 18px; align-items: center; padding: 14px 6px; border-bottom: 1px solid var(--line); text-decoration: none; color: var(--text); }
+.frente:last-child { border-bottom: 0; } .frente:hover { background: var(--surface-2); }
+.frente b { display: block; font-size: 14.5px; } .frente small { color: var(--muted); font-size: 12.5px; }
+.frente .n { text-align: right; } .frente .n b { font-variant-numeric: tabular-nums; }
+.frente .b { grid-column: 1 / -1; }
+.guia { border-top: 3px solid var(--primary); margin-bottom: 18px; }
+.guia .passos { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; margin-top: 12px; }
+.guia .passo { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; text-decoration: none; color: var(--text); background: var(--surface); }
+.guia .passo:hover { border-color: var(--primary); }
+.guia .passo .n { flex: none; width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--line); display: grid; place-items: center; font-size: 11px; font-weight: 700; color: var(--muted); }
+.guia .passo.ok { background: var(--surface-2); } .guia .passo.ok .n { background: var(--ok); border-color: var(--ok); color: #fff; } .guia .passo.ok b { color: var(--text-2); }
+.guia .passo b { display: block; font-size: 13.5px; } .guia .passo small { color: var(--muted); font-size: 12px; }
+.atalhos { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; align-items: center; }
+@media (max-width: 860px) { .frente { grid-template-columns: 1fr 1fr; } .frente > div:first-child { grid-column: 1 / -1; } .frente .n { text-align: left; } }

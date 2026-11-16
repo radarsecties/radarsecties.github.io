@@ -1,15 +1,14 @@
 // Gera a proposta técnica e comercial de uma oportunidade, no template do CIQUANTA, pronta para PDF.
 import * as store from './store.js';
 import { loadMecanismos } from './email.js';
-import { esc, money, modNome, MESES_LONGOS, toast } from './util.js';
+import { esc, money, modNome, MESES_LONGOS, abrirJanela, mostrarDocumento } from './util.js';
 
 const BASE = new URL('../', import.meta.url).href;
 const hoje = () => { const d = new Date(); return `${d.getDate()} de ${MESES_LONGOS[d.getMonth()]} de ${d.getFullYear()}`; };
 
 export async function gerarProposta(opId) {
   // A janela é aberta antes das leituras assíncronas para não ser barrada pelo bloqueador de pop-ups
-  const w = window.open('', '_blank');
-  if (!w) { toast('Permita janelas pop-up para abrir a proposta.', 'bad'); return; }
+  const w = abrirJanela(); if (!w) return;
   const mecs = await loadMecanismos();
   const S = await store.loadSetores();
   const op = store.get('oportunidades', opId); if (!op) { w.close(); return; }
@@ -32,7 +31,7 @@ h1{font-size:20pt;margin:0 0 4px;line-height:1.2}h2{font-size:13pt;margin:22px 0
 table{width:100%;border-collapse:collapse;margin-top:6px}td,th{padding:7px 8px;border-bottom:1.5px solid #D5DCEA;text-align:left;vertical-align:top}th{font-size:9.5pt;color:#C8232C}td.n{text-align:right;font-weight:700;white-space:nowrap}
 .val{font-size:22pt;font-weight:700;color:#3056D5}footer{margin-top:26px;border-top:1.5px solid #D5DCEA;padding-top:10px;font-size:9pt;color:#5B6680}footer img{width:120mm;display:block;margin-bottom:8px}
 .barra{position:fixed;top:0;left:0;right:0;background:#14224A;color:#fff;padding:10px 16px;font:13px Arial;display:flex;gap:12px;align-items:center}.barra button{font:inherit;padding:6px 14px;border-radius:6px;border:0;background:#3056D5;color:#fff;cursor:pointer}@media print{.barra{display:none}}@media screen{body{max-width:210mm;margin:60px auto 40px;padding:0 18mm}}</style></head><body>
-<div class="barra"><span style="flex:1">Proposta ${num}. Revise o texto antes de enviar: valores, prazos e condições são definidos no instrumento jurídico.</span><button onclick="print()">Salvar em PDF ou imprimir</button></div>
+<div class="barra"><span style="flex:1">Proposta ${num}. Revise o texto antes de enviar: valores, prazos e condições são definidos no instrumento jurídico.</span><button data-imprimir>Salvar em PDF ou imprimir</button></div>
 <header><img class="l" src="${BASE}assets/logo-azul.png" alt="CIQUANTA"><img class="g" src="${BASE}assets/secties-govpb.png" alt="SECTIES, Governo da Paraíba"></header>
 <div class="k">Proposta técnica e comercial · ${num} · ${hoje()}</div>
 <h1>${esc(op.titulo)}</h1><div class="m">Para ${esc(org.nome || '')}${org.cidade ? `, ${esc(org.cidade)}${org.uf ? '/' + esc(org.uf) : ''}` : ''}</div>
@@ -62,8 +61,7 @@ ${bem ? `<table><tr><th>Lei do Bem, art. 19-A: cenários de exclusão</th><th st
 
 <footer><img src="${BASE}assets/parceiros-marinho.png" alt="CETC, Ministério da Ciência, Tecnologia e Inovação, Governo do Brasil, SECTIES e Governo da Paraíba">
 ${esc(c.remetenteNome || 'CIQUANTA')}${c.remetenteCargo ? ' · ' + esc(c.remetenteCargo) : ''} · ${esc(c.replyTo || 'ciquanta@secties.pb.gov.br')} · ciquanta.secties.pb.gov.br<br>Estação das Artes Luciano Agra, Altiplano Cabo Branco, João Pessoa (PB)</footer></body></html>`;
-  const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
-  w.location.replace(url); setTimeout(() => URL.revokeObjectURL(url), 120000);
+  mostrarDocumento(w, html);
   op.propostaEm = new Date().toISOString(); op.propostaNum = num; store.touch('oportunidades');
   store.logInteracao({ orgId: op.orgId, tipo: 'nota', titulo: `Proposta ${num} gerada: ${op.titulo}` });
 }

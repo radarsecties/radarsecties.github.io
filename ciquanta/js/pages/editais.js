@@ -1,6 +1,6 @@
 // Editais e chamadas: acompanhamento de oportunidades de fomento com prazo
 import * as store from '../store.js';
-import { esc, modal, formData, options, toast, confirmDialog, fmtDate, relTime, isoDay, money, safeUrl } from '../util.js';
+import { esc, modal, formData, options, toast, fmtDate, relTime, isoDay, money, safeUrl } from '../util.js';
 import { loadMecanismos, mecCurto } from '../email.js';
 import { icon } from '../icons.js';
 
@@ -55,5 +55,5 @@ function form(e, mecs, done) {
     <label class="field full">Notas<textarea name="notas">${esc(e.notas)}</textarea></label></form>`,
     footer: `${e.id ? '<button class="btn danger" id="del" style="margin-right:auto">Excluir</button>' : ''}<button class="btn" data-close>Cancelar</button><button class="btn primary" id="ok">Salvar</button>` });
   el.querySelector('#ok').onclick = () => { const f = el.querySelector('#f'); if (!f.reportValidity()) return; const d = formData(f); d.valor = Number(d.valor) || 0; d.link = safeUrl(d.link); store.upsert('editais', { ...e, ...d }, 'edt'); toast('Edital salvo.', 'ok'); close(); done(); };
-  el.querySelector('#del')?.addEventListener('click', async () => { close(); if (await confirmDialog('Excluir este edital?', { ok: 'Excluir', danger: true })) { store.remove('editais', e.id); done(); } });
+  el.querySelector('#del')?.addEventListener('click', async () => { close(); store.removerComDesfazer('editais', e.id, 'Edital', done); done(); });
 }

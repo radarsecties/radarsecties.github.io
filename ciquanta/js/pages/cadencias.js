@@ -59,7 +59,7 @@ export async function render(view) {
     view.querySelectorAll('[data-mod]').forEach(i => i.onchange = () => { c.passos[+i.dataset.mod].modeloId = i.value; save(); });
     view.querySelectorAll('[data-rmp]').forEach(b => b.onclick = () => { c.passos.splice(+b.dataset.rmp, 1); c.passos[0].dias = 0; save(); draw(); });
     $('#addp').onclick = () => { c.passos.push({ dias: 5, modeloId: 'mod-followup' }); save(); draw(); };
-    $('#delc').onclick = async () => { if (await confirmDialog(`Excluir a cadência "${c.nome}" e as inscrições?`, { ok: 'Excluir', danger: true })) { store.state().inscricoes = store.list('inscricoes').filter(i => i.cadenciaId !== c.id); store.remove('cadencias', c.id); sel = store.list('cadencias')[0]?.id || ''; draw(); } };
+    $('#delc').onclick = async () => { if (await confirmDialog(`Excluir a cadência "${c.nome}" e as inscrições?`, { ok: 'Excluir', danger: true })) { store.remove('cadencias', c.id); sel = store.list('cadencias')[0]?.id || ''; draw(); } };
     $('#insc').onclick = () => publico(c, draw);
     $('#det').addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;

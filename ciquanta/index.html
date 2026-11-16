@@ -6,12 +6,15 @@
 <title>CIQUANTA · Relações Institucionais</title>
 <meta name="description" content="Sistema de relações institucionais do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.">
 <meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://accounts.google.com; style-src 'self' 'unsafe-inline' https://accounts.google.com; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://*.googleapis.com https://accounts.google.com https://brasilapi.com.br https://publica.cnpj.ws https://minhareceita.org; frame-src https://accounts.google.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icone-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#14224A">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/deck.css">
-<script>
-  try { const t = localStorage.getItem('ciquanta:tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-</script>
+<script src="js/tema.js"></script>
 </head>
 <body>
 <div class="app">
@@ -32,6 +35,7 @@
       <h1 id="page-title">Painel</h1>
       <div class="topbar-actions">
         <input type="search" id="global-search" placeholder="Buscar (Ctrl K)" aria-label="Busca" readonly>
+        <button class="icon-btn hidden" id="sync-btn" aria-label="Base compartilhada"></button>
         <button class="icon-btn" id="live-btn" title="Interações em tempo real" aria-label="Interações em tempo real"></button>
         <button class="icon-btn" id="theme-btn" title="Alternar tema claro e escuro" aria-label="Alternar tema"></button>
       </div>
@@ -41,7 +45,7 @@
 </div>
 <div id="modal-root"></div>
 <div id="toasts" aria-live="polite"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="js/vendor/chart.umd.js"></script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

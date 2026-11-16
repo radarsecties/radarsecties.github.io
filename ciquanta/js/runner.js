@@ -1,6 +1,7 @@
 // Fila de envio de campanhas pelo Gmail: ritmo controlado, limite diário, pausa/retomada, registro por destinatário
 import * as store from './store.js';
 import * as G from './google.js';
+import { podeAutomatizar } from './sync.js';
 import { compose, buildMime, loadMecanismos } from './email.js';
 import { isEmail, norm, sleep, toast, isoDay } from './util.js';
 
@@ -130,7 +131,7 @@ export async function checkReplies(campId) {
 
 // Agendador: dispara campanhas agendadas enquanto o app estiver aberto
 setInterval(() => {
-  if (running || !G.status().conectado) return;
+  if (running || !G.status().conectado || !podeAutomatizar()) return;
   const due = store.list('campanhas').find(c => c.status === 'agendada' && c.agendadaPara && new Date(c.agendadaPara) <= new Date());
   if (due) { toast(`Iniciando campanha agendada: ${due.nome}`); run(due.id); }
 }, 30000);

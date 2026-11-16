@@ -1,5 +1,5 @@
-import { esc, money } from '../util.js';
-import { chart, PALETTE } from '../charts.js';
+import { money } from '../util.js';
+import { chart } from '../charts.js';
 
 const SIMS = {
   'lei-do-bem': 'Lei do Bem',

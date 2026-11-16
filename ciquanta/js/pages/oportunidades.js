@@ -1,5 +1,5 @@
 import * as store from '../store.js';
-import { esc, money, norm, debounce, options, FUNIL, MODALIDADES, modNome, fmtDate, toCSV, download, confirmDialog, toast } from '../util.js';
+import { esc, money, norm, debounce, options, FUNIL, MODALIDADES, modNome, fmtDate, toCSV, download, toast } from '../util.js';
 import { openOportunidadeForm } from '../components.js';
 import { loadMecanismos, mecCurto } from '../email.js';
 import { chart, PALETTE } from '../charts.js';
@@ -80,7 +80,7 @@ export async function render(view, { params }) {
         <td><button class="btn sm ghost danger" data-del="${esc(o.id)}" aria-label="Excluir">${icon('x', 14)}</button></td></tr>`; }).join('')}</tbody></table></div>`;
     C.querySelector('tbody').onclick = async e => {
       const d = e.target.closest('[data-del]');
-      if (d) { e.stopPropagation(); if (await confirmDialog('Excluir esta oportunidade?', { ok: 'Excluir', danger: true })) { store.remove('oportunidades', d.dataset.del); draw(); } return; }
+      if (d) { e.stopPropagation(); store.removerComDesfazer('oportunidades', d.dataset.del, 'Oportunidade', draw); draw(); return; }
       if (e.target.closest('a')) return;
       const tr = e.target.closest('tr[data-id]'); if (tr) openOportunidadeForm(store.get('oportunidades', tr.dataset.id), draw);
     };

@@ -1,5 +1,5 @@
 import * as store from '../store.js';
-import { esc, fmtCNPJ, fmtDate, fmtDateTime, money, toast, confirmDialog, TIPOS_INTERACAO, safeUrl, isEmail, RELACIONAMENTO, options, FUNIL, modNome, blocoNome } from '../util.js';
+import { esc, fmtCNPJ, fmtDate, fmtDateTime, money, toast, confirmDialog, TIPOS_INTERACAO, safeUrl, isEmail, RELACIONAMENTO, options, modNome, blocoNome } from '../util.js';
 import { openOrgForm, openContatoForm, openInteracaoForm, openOportunidadeForm, openReuniaoForm, segBadge, relBadge, evBadge, funilBadge } from '../components.js';
 import { loadMecanismos, mecCurto, linkApresentacao } from '../email.js';
 import { sugerirMecanismos, linksBusca } from '../dominio.js';
@@ -91,7 +91,7 @@ export async function render(view, { arg, params }) {
         if (b.dataset.mail) quickMail(store.get('contatos', b.dataset.mail));
         if (b.dataset.meet) openReuniaoForm({ orgId: o.id, contatoIds: [b.dataset.meet] }, draw);
         if (b.dataset.edit) openContatoForm(store.get('contatos', b.dataset.edit), draw);
-        if (b.dataset.delc && await confirmDialog('Excluir este contato?', { ok: 'Excluir', danger: true })) { store.remove('contatos', b.dataset.delc); draw(); }
+        if (b.dataset.delc) store.removerComDesfazer('contatos', b.dataset.delc, 'Contato', draw), draw();
       };
     }
     if (tab === 'oportunidades') {
@@ -107,7 +107,7 @@ export async function render(view, { arg, params }) {
       T.querySelector('.card').onclick = async e => {
         const b = e.target.closest('button'); if (!b) return;
         if (b.dataset.ei) openInteracaoForm(store.get('interacoes', b.dataset.ei), draw);
-        if (b.dataset.di && await confirmDialog('Excluir este registro?', { ok: 'Excluir', danger: true })) { store.remove('interacoes', b.dataset.di); draw(); }
+        if (b.dataset.di) store.removerComDesfazer('interacoes', b.dataset.di, 'Registro', draw), draw();
       };
     }
     if (tab === 'agenda') {

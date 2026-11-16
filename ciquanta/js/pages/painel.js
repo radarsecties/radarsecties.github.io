@@ -2,7 +2,7 @@ import * as store from '../store.js';
 import * as G from '../google.js';
 import * as monitor from '../monitor.js';
 import * as cad from '../cadencia.js';
-import { esc, num, money, pct, relTime, FUNIL, RELACIONAMENTO, isoDay, fmtDateTime, MESES_LONGOS } from '../util.js';
+import { esc, num, money, pct, relTime, FUNIL, isoDay, fmtDateTime, MESES_LONGOS } from '../util.js';
 import { chart } from '../charts.js';
 import { brMap } from '../components.js';
 import { loadMecanismos } from '../email.js';
@@ -12,6 +12,24 @@ import { icon } from '../icons.js';
 const compacto = v => v >= 1e9 ? `R$ ${(v / 1e9).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} bi` : v >= 1e6 ? `R$ ${(v / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi` : v >= 1e3 ? `R$ ${Math.round(v / 1e3)} mil` : money(v);
 const MES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
 const TIPO_COR = { Responder: 'ok', Atrasado: 'red', Proposta: '', Edital: 'warn', Oportunidade: '', Cadência: 'info', Contato: 'gray', Retomar: 'warn' };
+
+/** Primeiros passos: some quando tudo está feito ou quando a pessoa oculta. */
+function guia(s, g) {
+  const c = s.config; if (c.guiaOculto) return '';
+  const passos = [
+    [g.conectado || !!c.clientId && s.envios.length > 0, 'Conectar a conta Google', 'E-mails, agenda, Drive e planilhas do painel', '#/config'],
+    [s.orgs.length > 0, 'Importar o mapeamento', '471 organizações com nível de evidência', '#/busca?aba=referencia'],
+    [s.contatos.some(x => x.email), 'Cadastrar contatos', 'Busca ativa, Gmail ou cadastros do painel', '#/busca'],
+    [Number(c.metaAnual) > 0, 'Definir a meta de captação', 'Meta anual e metas por frente', '#/captacao'],
+    [s.inscricoes.length > 0 || s.envios.length > 0, 'Iniciar a primeira cadência', 'Sequência automática por público', '#/cadencias'],
+    [s.oportunidades.length > 0, 'Registrar uma oportunidade', 'Valor, etapa e mecanismo de fomento', '#/oportunidades'],
+    [!!c.sincronizar, 'Ativar a base compartilhada', 'Mesma base em todos os computadores', '#/config'],
+  ];
+  const feitos = passos.filter(p => p[0]).length; if (feitos === passos.length) return '';
+  return `<div class="card guia"><h3>Primeiros passos <span class="muted">${feitos} de ${passos.length} concluídos</span><button class="btn ghost sm" id="guia-x">Ocultar</button></h3>
+    <div class="meta-bar"><i style="width:${feitos / passos.length * 100}%"></i></div>
+    <div class="passos">${passos.map(([ok, t, d, h], i) => `<a class="passo ${ok ? 'ok' : ''}" href="${h}"><span class="n">${ok ? '✓' : i + 1}</span><span><b>${t}</b><small>${d}</small></span></a>`).join('')}</div></div>`;
+}
 
 export async function render(view) {
   await loadMecanismos();
@@ -46,9 +64,10 @@ export async function render(view) {
         <a class="btn" href="#/oportunidades">${icon('mais', 15)} Oportunidade</a><a class="btn" href="#/cadencias">${icon('campanhas', 15)} Cadências</a><a class="btn" href="#/apresentacoes">${icon('apresentacoes', 15)} Apresentações</a><button class="btn" id="kbtn">${icon('busca', 15)} Buscar <kbd>Ctrl K</kbd></button></div>
     </section>
 
+    ${guia(s, g)}
     <div class="grid g5" style="margin-bottom:18px">
       <a class="card kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
-      <a class="card kpi" href="#/oportunidades?visao=previsao"><span class="label">Contratado</span><span class="value">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta anual em Configurações'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>
+      <a class="card kpi" href="#/captacao"><span class="label">Contratado</span><span class="value">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta no plano de captação'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>
       <a class="card kpi" href="#/organizacoes"><span class="label">Em relacionamento</span><span class="value">${num(ativas)}</span><span class="sub">de ${num(s.orgs.length)} organizações mapeadas</span></a>
       <a class="card kpi" href="#/interacoes"><span class="label">Taxa de resposta</span><span class="value">${enviados.length ? pct(resp, enviados.length) + '%' : '—'}</span><span class="sub">${resp} resposta(s) a ${enviados.length} e-mail(s) · ${insResp} em cadências</span></a>
       <a class="card kpi" href="#/visitas"><span class="label">Visitas à réplica</span><span class="value">${t.visitas ?? '—'}</span><span class="sub">${t.visitas === undefined ? 'conecte o Painel CIQUANTA' : `${t.pessoas} visitantes · ${t.cadastros} cadastros`}</span></a>
@@ -73,6 +92,7 @@ export async function render(view) {
     const ufCount = {}; s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
     view.querySelector('#map').appendChild(brMap(ufCount, { onClick: uf => location.hash = `#/organizacoes?uf=${uf}` }));
     view.querySelector('#kbtn').onclick = () => window.dispatchEvent(new Event('ciq:paleta'));
+    view.querySelector('#guia-x')?.addEventListener('click', () => { store.setConfig({ guiaOculto: true }); draw(); });
     const l = [...s.interacoes].sort((a, b) => (b.data || '').localeCompare(a.data || '')).slice(0, 6);
     view.querySelector('#feed').innerHTML = l.length ? l.map(i => { const o = store.get('orgs', i.orgId); return `<div class="list-item"><span class="badge ${i.tipo === 'recebido' ? 'ok' : i.tipo === 'reuniao' || i.tipo === 'visita' ? 'info' : 'gray'}">${esc(i.tipo === 'recebido' ? 'recebido' : i.tipo === 'email' ? 'enviado' : i.tipo)}</span><div style="min-width:0"><div class="title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(i.titulo)}</div><div class="meta">${o ? `<a href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a> · ` : ''}${fmtDateTime(i.data)}</div></div></div>`; }).join('') : '<div class="empty">Nenhuma interação registrada.</div>';
     // potencial por setor
