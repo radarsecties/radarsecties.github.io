@@ -19,7 +19,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Citado como parceiro sugerido na Política de Parcerias.",
-   "id": "ref-itau-unibanco"
+   "id": "ref-itau-unibanco",
+   "tags": []
   },
   {
    "nome": "Bradesco",
@@ -38,7 +39,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-bradesco"
+   "id": "ref-bradesco",
+   "tags": []
   },
   {
    "nome": "Banco do Brasil",
@@ -56,7 +58,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Apresentação executiva do CIQUANTA já realizada ao banco (março de 2026). Citado como parceiro sugerido.",
-   "id": "ref-banco-do-brasil"
+   "id": "ref-banco-do-brasil",
+   "tags": []
   },
   {
    "nome": "Santander Brasil",
@@ -73,7 +76,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-santander-brasil"
+   "id": "ref-santander-brasil",
+   "tags": []
   },
   {
    "nome": "Caixa Econômica Federal",
@@ -88,7 +92,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-caixa-economica-federal"
+   "id": "ref-caixa-economica-federal",
+   "tags": []
   },
   {
    "nome": "Nubank",
@@ -103,7 +108,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Citado como parceiro sugerido na Política de Parcerias (modelagem, segurança e residência).",
-   "id": "ref-nubank"
+   "id": "ref-nubank",
+   "tags": []
   },
   {
    "nome": "BTG Pactual",
@@ -118,7 +124,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-btg-pactual"
+   "id": "ref-btg-pactual",
+   "tags": []
   },
   {
    "nome": "XP Inc.",
@@ -133,7 +140,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-xp-inc"
+   "id": "ref-xp-inc",
+   "tags": []
   },
   {
    "nome": "Banco Inter",
@@ -148,7 +156,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-banco-inter"
+   "id": "ref-banco-inter",
+   "tags": []
   },
   {
    "nome": "Banco Safra",
@@ -163,7 +172,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-banco-safra"
+   "id": "ref-banco-safra",
+   "tags": []
   },
   {
    "nome": "Banco BV",
@@ -178,7 +188,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-banco-bv"
+   "id": "ref-banco-bv",
+   "tags": []
   },
   {
    "nome": "Sicredi",
@@ -193,7 +204,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sicredi"
+   "id": "ref-sicredi",
+   "tags": []
   },
   {
    "nome": "Sicoob",
@@ -208,7 +220,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sicoob"
+   "id": "ref-sicoob",
+   "tags": []
   },
   {
    "nome": "Stone",
@@ -223,7 +236,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-stone"
+   "id": "ref-stone",
+   "tags": []
   },
   {
    "nome": "PagBank",
@@ -238,7 +252,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-pagbank"
+   "id": "ref-pagbank",
+   "tags": []
   },
   {
    "nome": "Mercado Pago",
@@ -253,7 +268,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-mercado-pago"
+   "id": "ref-mercado-pago",
+   "tags": []
   },
   {
    "nome": "Cielo",
@@ -268,7 +284,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cielo"
+   "id": "ref-cielo",
+   "tags": []
   },
   {
    "nome": "B3",
@@ -283,7 +300,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Fonte de dados de referência para a agenda financeira.",
-   "id": "ref-b3"
+   "id": "ref-b3",
+   "tags": []
   },
   {
    "nome": "ANBIMA",
@@ -298,7 +316,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fonte de dados de referência para a agenda financeira.",
-   "id": "ref-anbima"
+   "id": "ref-anbima",
+   "tags": []
   },
   {
    "nome": "Febraban",
@@ -315,7 +334,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-febraban"
+   "id": "ref-febraban",
+   "tags": []
   },
   {
    "nome": "Banco do Nordeste",
@@ -330,7 +350,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Parceiro institucional sugerido: CIQUANTA como estrutura de apoio à inovação no Nordeste.",
-   "id": "ref-banco-do-nordeste"
+   "id": "ref-banco-do-nordeste",
+   "tags": []
   },
   {
    "nome": "BNDES",
@@ -345,7 +366,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-bndes"
+   "id": "ref-bndes",
+   "tags": []
   },
   {
    "nome": "Banco Central do Brasil",
@@ -363,7 +385,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-banco-central-do-brasil"
+   "id": "ref-banco-central-do-brasil",
+   "tags": []
   },
   {
    "nome": "Porto",
@@ -378,7 +401,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-porto"
+   "id": "ref-porto",
+   "tags": []
   },
   {
    "nome": "BB Seguridade",
@@ -393,7 +417,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-bb-seguridade"
+   "id": "ref-bb-seguridade",
+   "tags": []
   },
   {
    "nome": "Bradesco Seguros",
@@ -408,7 +433,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-bradesco-seguros"
+   "id": "ref-bradesco-seguros",
+   "tags": []
   },
   {
    "nome": "Caixa Seguridade",
@@ -423,7 +449,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-caixa-seguridade"
+   "id": "ref-caixa-seguridade",
+   "tags": []
   },
   {
    "nome": "IRB(Re)",
@@ -438,7 +465,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-irb-re"
+   "id": "ref-irb-re",
+   "tags": []
   },
   {
    "nome": "Brasilprev",
@@ -453,7 +481,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-brasilprev"
+   "id": "ref-brasilprev",
+   "tags": []
   },
   {
    "nome": "Mapfre Brasil",
@@ -468,7 +497,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-mapfre-brasil"
+   "id": "ref-mapfre-brasil",
+   "tags": []
   },
   {
    "nome": "Tokio Marine Brasil",
@@ -483,7 +513,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-tokio-marine-brasil"
+   "id": "ref-tokio-marine-brasil",
+   "tags": []
   },
   {
    "nome": "Hospital Israelita Albert Einstein",
@@ -501,7 +532,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-hospital-israelita-albert-einstein"
+   "id": "ref-hospital-israelita-albert-einstein",
+   "tags": []
   },
   {
    "nome": "Fiocruz",
@@ -516,7 +548,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Produção de vacinas e fármacos para o SUS; doenças tropicais negligenciadas.",
-   "id": "ref-fiocruz"
+   "id": "ref-fiocruz",
+   "tags": []
   },
   {
    "nome": "Instituto Butantan",
@@ -531,7 +564,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-instituto-butantan"
+   "id": "ref-instituto-butantan",
+   "tags": []
   },
   {
    "nome": "Hospital Sírio-Libanês",
@@ -546,7 +580,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-hospital-sirio-libanes"
+   "id": "ref-hospital-sirio-libanes",
+   "tags": []
   },
   {
    "nome": "Rede D'Or",
@@ -561,7 +596,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-rede-d-or"
+   "id": "ref-rede-d-or",
+   "tags": []
   },
   {
    "nome": "Dasa",
@@ -576,7 +612,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-dasa"
+   "id": "ref-dasa",
+   "tags": []
   },
   {
    "nome": "Grupo Fleury",
@@ -591,7 +628,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-grupo-fleury"
+   "id": "ref-grupo-fleury",
+   "tags": []
   },
   {
    "nome": "Hapvida NotreDame Intermédica",
@@ -606,7 +644,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-hapvida-notredame-intermedica"
+   "id": "ref-hapvida-notredame-intermedica",
+   "tags": []
   },
   {
    "nome": "Hospital Moinhos de Vento",
@@ -621,7 +660,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-hospital-moinhos-de-vento"
+   "id": "ref-hospital-moinhos-de-vento",
+   "tags": []
   },
   {
    "nome": "BP, A Beneficência Portuguesa de São Paulo",
@@ -636,7 +676,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-bp-a-beneficencia-portuguesa-de-sao-paul"
+   "id": "ref-bp-a-beneficencia-portuguesa-de-sao-paul",
+   "tags": []
   },
   {
    "nome": "HCor",
@@ -651,7 +692,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-hcor"
+   "id": "ref-hcor",
+   "tags": []
   },
   {
    "nome": "Sabin Diagnóstico e Saúde",
@@ -666,7 +708,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sabin-diagnostico-e-saude"
+   "id": "ref-sabin-diagnostico-e-saude",
+   "tags": []
   },
   {
    "nome": "Eurofarma",
@@ -681,7 +724,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-eurofarma"
+   "id": "ref-eurofarma",
+   "tags": []
   },
   {
    "nome": "Aché Laboratórios",
@@ -696,7 +740,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-ache-laboratorios"
+   "id": "ref-ache-laboratorios",
+   "tags": []
   },
   {
    "nome": "EMS",
@@ -711,7 +756,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-ems"
+   "id": "ref-ems",
+   "tags": []
   },
   {
    "nome": "Hypera Pharma",
@@ -726,7 +772,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-hypera-pharma"
+   "id": "ref-hypera-pharma",
+   "tags": []
   },
   {
    "nome": "Libbs",
@@ -741,7 +788,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-libbs"
+   "id": "ref-libbs",
+   "tags": []
   },
   {
    "nome": "Cristália",
@@ -756,7 +804,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-cristalia"
+   "id": "ref-cristalia",
+   "tags": []
   },
   {
    "nome": "Biomm",
@@ -771,7 +820,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-biomm"
+   "id": "ref-biomm",
+   "tags": []
   },
   {
    "nome": "União Química",
@@ -786,7 +836,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-uniao-quimica"
+   "id": "ref-uniao-quimica",
+   "tags": []
   },
   {
    "nome": "Blau Farmacêutica",
@@ -801,7 +852,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Indústria farmacêutica nacional: simulação molecular e descoberta de fármacos.",
-   "id": "ref-blau-farmaceutica"
+   "id": "ref-blau-farmaceutica",
+   "tags": []
   },
   {
    "nome": "Embrapa",
@@ -820,7 +872,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-embrapa"
+   "id": "ref-embrapa",
+   "tags": []
   },
   {
    "nome": "Bayer Brasil",
@@ -837,7 +890,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-bayer-brasil"
+   "id": "ref-bayer-brasil",
+   "tags": []
   },
   {
    "nome": "Fine Instrument Technology (FIT)",
@@ -854,7 +908,10 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-fine-instrument-technology-fit"
+   "id": "ref-fine-instrument-technology-fit",
+   "tags": [
+    "deep tech"
+   ]
   },
   {
    "nome": "JBS",
@@ -869,7 +926,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-jbs"
+   "id": "ref-jbs",
+   "tags": []
   },
   {
    "nome": "BRF",
@@ -884,7 +942,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-brf"
+   "id": "ref-brf",
+   "tags": []
   },
   {
    "nome": "Marfrig",
@@ -899,7 +958,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-marfrig"
+   "id": "ref-marfrig",
+   "tags": []
   },
   {
    "nome": "Minerva Foods",
@@ -914,7 +974,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-minerva-foods"
+   "id": "ref-minerva-foods",
+   "tags": []
   },
   {
    "nome": "Cargill Brasil",
@@ -929,7 +990,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cargill-brasil"
+   "id": "ref-cargill-brasil",
+   "tags": []
   },
   {
    "nome": "Bunge Brasil",
@@ -944,7 +1006,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-bunge-brasil"
+   "id": "ref-bunge-brasil",
+   "tags": []
   },
   {
    "nome": "Amaggi",
@@ -959,7 +1022,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-amaggi"
+   "id": "ref-amaggi",
+   "tags": []
   },
   {
    "nome": "SLC Agrícola",
@@ -974,7 +1038,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-slc-agricola"
+   "id": "ref-slc-agricola",
+   "tags": []
   },
   {
    "nome": "Syngenta Brasil",
@@ -989,7 +1054,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-syngenta-brasil"
+   "id": "ref-syngenta-brasil",
+   "tags": []
   },
   {
    "nome": "Corteva Agriscience Brasil",
@@ -1004,7 +1070,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-corteva-agriscience-brasil"
+   "id": "ref-corteva-agriscience-brasil",
+   "tags": []
   },
   {
    "nome": "BASF Brasil",
@@ -1019,7 +1086,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-basf-brasil"
+   "id": "ref-basf-brasil",
+   "tags": []
   },
   {
    "nome": "Yara Brasil",
@@ -1034,7 +1102,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-yara-brasil"
+   "id": "ref-yara-brasil",
+   "tags": []
   },
   {
    "nome": "Mosaic Fertilizantes",
@@ -1049,7 +1118,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-mosaic-fertilizantes"
+   "id": "ref-mosaic-fertilizantes",
+   "tags": []
   },
   {
    "nome": "Coamo",
@@ -1064,7 +1134,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-coamo"
+   "id": "ref-coamo",
+   "tags": []
   },
   {
    "nome": "Cooxupé",
@@ -1079,7 +1150,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-cooxupe"
+   "id": "ref-cooxupe",
+   "tags": []
   },
   {
    "nome": "Jacto",
@@ -1094,7 +1166,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-jacto"
+   "id": "ref-jacto",
+   "tags": []
   },
   {
    "nome": "John Deere Brasil",
@@ -1109,7 +1182,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-john-deere-brasil"
+   "id": "ref-john-deere-brasil",
+   "tags": []
   },
   {
    "nome": "CNH Industrial Brasil",
@@ -1124,7 +1198,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cnh-industrial-brasil"
+   "id": "ref-cnh-industrial-brasil",
+   "tags": []
   },
   {
    "nome": "Solinftec",
@@ -1139,7 +1214,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-solinftec"
+   "id": "ref-solinftec",
+   "tags": []
   },
   {
    "nome": "São Martinho",
@@ -1154,7 +1230,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-sao-martinho"
+   "id": "ref-sao-martinho",
+   "tags": []
   },
   {
    "nome": "QuaTI",
@@ -1172,7 +1249,10 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-quati"
+   "id": "ref-quati",
+   "tags": [
+    "deep tech"
+   ]
   },
   {
    "nome": "INPE",
@@ -1187,7 +1267,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Previsão numérica de tempo e monitoramento de biomas.",
-   "id": "ref-inpe"
+   "id": "ref-inpe",
+   "tags": []
   },
   {
    "nome": "Cemaden",
@@ -1202,7 +1283,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cemaden"
+   "id": "ref-cemaden",
+   "tags": []
   },
   {
    "nome": "INMET",
@@ -1217,7 +1299,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-inmet"
+   "id": "ref-inmet",
+   "tags": []
   },
   {
    "nome": "Instituto Tecnológico Vale (ITV)",
@@ -1232,7 +1315,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-instituto-tecnologico-vale-itv"
+   "id": "ref-instituto-tecnologico-vale-itv",
+   "tags": []
   },
   {
    "nome": "Climatempo",
@@ -1247,7 +1331,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-climatempo"
+   "id": "ref-climatempo",
+   "tags": []
   },
   {
    "nome": "Ambipar",
@@ -1262,7 +1347,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-ambipar"
+   "id": "ref-ambipar",
+   "tags": []
   },
   {
    "nome": "re.green",
@@ -1277,7 +1363,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-re-green"
+   "id": "ref-re-green",
+   "tags": []
   },
   {
    "nome": "Mombak",
@@ -1292,7 +1379,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-mombak"
+   "id": "ref-mombak",
+   "tags": []
   },
   {
    "nome": "Moss",
@@ -1307,7 +1395,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-moss"
+   "id": "ref-moss",
+   "tags": []
   },
   {
    "nome": "Eletrobras",
@@ -1322,7 +1411,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-eletrobras"
+   "id": "ref-eletrobras",
+   "tags": []
   },
   {
    "nome": "Chesf",
@@ -1337,7 +1427,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Grupo Eletrobras; atuação no Nordeste.",
-   "id": "ref-chesf"
+   "id": "ref-chesf",
+   "tags": []
   },
   {
    "nome": "CEPEL",
@@ -1352,7 +1443,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Centro de pesquisas do setor elétrico; modelos de planejamento da operação.",
-   "id": "ref-cepel"
+   "id": "ref-cepel",
+   "tags": []
   },
   {
    "nome": "ONS",
@@ -1367,7 +1459,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Planejamento e operação do sistema interligado.",
-   "id": "ref-ons"
+   "id": "ref-ons",
+   "tags": []
   },
   {
    "nome": "EPE",
@@ -1382,7 +1475,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-epe"
+   "id": "ref-epe",
+   "tags": []
   },
   {
    "nome": "CCEE",
@@ -1397,7 +1491,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ccee"
+   "id": "ref-ccee",
+   "tags": []
   },
   {
    "nome": "Itaipu Binacional",
@@ -1412,7 +1507,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-itaipu-binacional"
+   "id": "ref-itaipu-binacional",
+   "tags": []
   },
   {
    "nome": "Neoenergia",
@@ -1427,7 +1523,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-neoenergia"
+   "id": "ref-neoenergia",
+   "tags": []
   },
   {
    "nome": "Energisa",
@@ -1442,7 +1539,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-energisa"
+   "id": "ref-energisa",
+   "tags": []
   },
   {
    "nome": "Energisa Paraíba",
@@ -1457,7 +1555,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-energisa-paraiba"
+   "id": "ref-energisa-paraiba",
+   "tags": []
   },
   {
    "nome": "CPFL Energia",
@@ -1472,7 +1571,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-cpfl-energia"
+   "id": "ref-cpfl-energia",
+   "tags": []
   },
   {
    "nome": "Enel Brasil",
@@ -1487,7 +1587,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-enel-brasil"
+   "id": "ref-enel-brasil",
+   "tags": []
   },
   {
    "nome": "Equatorial",
@@ -1502,7 +1603,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-equatorial"
+   "id": "ref-equatorial",
+   "tags": []
   },
   {
    "nome": "Cemig",
@@ -1517,7 +1619,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-cemig"
+   "id": "ref-cemig",
+   "tags": []
   },
   {
    "nome": "Copel",
@@ -1532,7 +1635,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-copel"
+   "id": "ref-copel",
+   "tags": []
   },
   {
    "nome": "EDP Brasil",
@@ -1547,7 +1651,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-edp-brasil"
+   "id": "ref-edp-brasil",
+   "tags": []
   },
   {
    "nome": "Engie Brasil",
@@ -1562,7 +1667,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-engie-brasil"
+   "id": "ref-engie-brasil",
+   "tags": []
   },
   {
    "nome": "Light",
@@ -1577,7 +1683,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-light"
+   "id": "ref-light",
+   "tags": []
   },
   {
    "nome": "Taesa",
@@ -1592,7 +1699,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-taesa"
+   "id": "ref-taesa",
+   "tags": []
   },
   {
    "nome": "ISA Energia Brasil",
@@ -1607,7 +1715,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-isa-energia-brasil"
+   "id": "ref-isa-energia-brasil",
+   "tags": []
   },
   {
    "nome": "Eneva",
@@ -1622,7 +1731,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-eneva"
+   "id": "ref-eneva",
+   "tags": []
   },
   {
    "nome": "Auren Energia",
@@ -1637,7 +1747,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-auren-energia"
+   "id": "ref-auren-energia",
+   "tags": []
   },
   {
    "nome": "Casa dos Ventos",
@@ -1652,7 +1763,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Obrigação de PD&I ANEEL.",
-   "id": "ref-casa-dos-ventos"
+   "id": "ref-casa-dos-ventos",
+   "tags": []
   },
   {
    "nome": "Petrobras",
@@ -1662,16 +1774,18 @@
    "cidade": "Rio de Janeiro",
    "site": "https://petrobras.com.br",
    "evidencia": "indicios",
-   "atuacao": "Projeta a computação quântica como operacional em cerca de cinco anos (2024); maior usuária de supercomputação da América Latina, com contrato de cinco supercomputadores e aporte na expansão do Santos Dumont.",
+   "atuacao": "Projeta a computação quântica como operacional em cerca de cinco anos (2024); maior usuária de supercomputação da América Latina, com contrato de cinco supercomputadores e aporte na expansão do Santos Dumont. A IBM cita a Petrobras entre as empresas brasileiras com as quais mantém parceria em computação quântica.",
    "fontes": [
     "bnamericas-petrobras",
     "dcd-lenovo-petrobras",
-    "dcd-petrobras-sd"
+    "dcd-petrobras-sd",
+    "timesbrasil-ibm"
    ],
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Cláusula de PD&I ANP; CENPES.",
-   "id": "ref-petrobras"
+   "id": "ref-petrobras",
+   "tags": []
   },
   {
    "nome": "Shell Brasil",
@@ -1686,7 +1800,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-shell-brasil"
+   "id": "ref-shell-brasil",
+   "tags": []
   },
   {
    "nome": "Equinor Brasil",
@@ -1701,7 +1816,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-equinor-brasil"
+   "id": "ref-equinor-brasil",
+   "tags": []
   },
   {
    "nome": "TotalEnergies Brasil",
@@ -1716,7 +1832,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-totalenergies-brasil"
+   "id": "ref-totalenergies-brasil",
+   "tags": []
   },
   {
    "nome": "Galp Brasil",
@@ -1731,7 +1848,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-galp-brasil"
+   "id": "ref-galp-brasil",
+   "tags": []
   },
   {
    "nome": "Repsol Sinopec Brasil",
@@ -1746,7 +1864,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-repsol-sinopec-brasil"
+   "id": "ref-repsol-sinopec-brasil",
+   "tags": []
   },
   {
    "nome": "PRIO",
@@ -1761,7 +1880,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-prio"
+   "id": "ref-prio",
+   "tags": []
   },
   {
    "nome": "ExxonMobil Brasil",
@@ -1776,7 +1896,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-exxonmobil-brasil"
+   "id": "ref-exxonmobil-brasil",
+   "tags": []
   },
   {
    "nome": "bp Brasil",
@@ -1791,7 +1912,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Cláusula de PD&I ANP.",
-   "id": "ref-bp-brasil"
+   "id": "ref-bp-brasil",
+   "tags": []
   },
   {
    "nome": "Raízen",
@@ -1806,7 +1928,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-raizen"
+   "id": "ref-raizen",
+   "tags": []
   },
   {
    "nome": "Acelen",
@@ -1821,7 +1944,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-acelen"
+   "id": "ref-acelen",
+   "tags": []
   },
   {
    "nome": "Vibra Energia",
@@ -1836,7 +1960,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-vibra-energia"
+   "id": "ref-vibra-energia",
+   "tags": []
   },
   {
    "nome": "Transpetro",
@@ -1851,7 +1976,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-transpetro"
+   "id": "ref-transpetro",
+   "tags": []
   },
   {
    "nome": "IBP, Instituto Brasileiro de Petróleo e Gás",
@@ -1866,7 +1992,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ibp-instituto-brasileiro-de-petroleo-e-g"
+   "id": "ref-ibp-instituto-brasileiro-de-petroleo-e-g",
+   "tags": []
   },
   {
    "nome": "Vale",
@@ -1881,7 +2008,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-vale"
+   "id": "ref-vale",
+   "tags": []
   },
   {
    "nome": "CBMM",
@@ -1896,7 +2024,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-cbmm"
+   "id": "ref-cbmm",
+   "tags": []
   },
   {
    "nome": "Gerdau",
@@ -1911,7 +2040,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-gerdau"
+   "id": "ref-gerdau",
+   "tags": []
   },
   {
    "nome": "CSN",
@@ -1926,7 +2056,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-csn"
+   "id": "ref-csn",
+   "tags": []
   },
   {
    "nome": "Usiminas",
@@ -1941,7 +2072,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-usiminas"
+   "id": "ref-usiminas",
+   "tags": []
   },
   {
    "nome": "ArcelorMittal Brasil",
@@ -1956,7 +2088,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-arcelormittal-brasil"
+   "id": "ref-arcelormittal-brasil",
+   "tags": []
   },
   {
    "nome": "Anglo American Brasil",
@@ -1971,7 +2104,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-anglo-american-brasil"
+   "id": "ref-anglo-american-brasil",
+   "tags": []
   },
   {
    "nome": "Nexa Resources",
@@ -1986,7 +2120,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-nexa-resources"
+   "id": "ref-nexa-resources",
+   "tags": []
   },
   {
    "nome": "Alcoa Brasil",
@@ -2001,7 +2136,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-alcoa-brasil"
+   "id": "ref-alcoa-brasil",
+   "tags": []
   },
   {
    "nome": "Braskem",
@@ -2016,7 +2152,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-braskem"
+   "id": "ref-braskem",
+   "tags": []
   },
   {
    "nome": "Unigel",
@@ -2031,7 +2168,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-unigel"
+   "id": "ref-unigel",
+   "tags": []
   },
   {
    "nome": "Dow Brasil",
@@ -2046,7 +2184,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-dow-brasil"
+   "id": "ref-dow-brasil",
+   "tags": []
   },
   {
    "nome": "Natura",
@@ -2061,7 +2200,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-natura"
+   "id": "ref-natura",
+   "tags": []
   },
   {
    "nome": "Grupo Boticário",
@@ -2076,7 +2216,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-grupo-boticario"
+   "id": "ref-grupo-boticario",
+   "tags": []
   },
   {
    "nome": "Suzano",
@@ -2091,7 +2232,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-suzano"
+   "id": "ref-suzano",
+   "tags": []
   },
   {
    "nome": "Klabin",
@@ -2106,7 +2248,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-klabin"
+   "id": "ref-klabin",
+   "tags": []
   },
   {
    "nome": "Oxiteno (Indorama)",
@@ -2121,7 +2264,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-oxiteno-indorama"
+   "id": "ref-oxiteno-indorama",
+   "tags": []
   },
   {
    "nome": "WEG",
@@ -2136,7 +2280,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-weg"
+   "id": "ref-weg",
+   "tags": []
   },
   {
    "nome": "Tupy",
@@ -2151,7 +2296,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-tupy"
+   "id": "ref-tupy",
+   "tags": []
   },
   {
    "nome": "Siemens Brasil",
@@ -2166,7 +2312,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-siemens-brasil"
+   "id": "ref-siemens-brasil",
+   "tags": []
   },
   {
    "nome": "ABB Brasil",
@@ -2181,7 +2328,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-abb-brasil"
+   "id": "ref-abb-brasil",
+   "tags": []
   },
   {
    "nome": "Schneider Electric Brasil",
@@ -2196,7 +2344,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-schneider-electric-brasil"
+   "id": "ref-schneider-electric-brasil",
+   "tags": []
   },
   {
    "nome": "Romi",
@@ -2211,7 +2360,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-romi"
+   "id": "ref-romi",
+   "tags": []
   },
   {
    "nome": "Whirlpool Brasil",
@@ -2226,7 +2376,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-whirlpool-brasil"
+   "id": "ref-whirlpool-brasil",
+   "tags": []
   },
   {
    "nome": "Ambev",
@@ -2241,7 +2392,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ambev"
+   "id": "ref-ambev",
+   "tags": []
   },
   {
    "nome": "Alpargatas",
@@ -2256,7 +2408,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Fábrica em Campina Grande (PB).",
-   "id": "ref-alpargatas"
+   "id": "ref-alpargatas",
+   "tags": []
   },
   {
    "nome": "Grupo Moura",
@@ -2271,7 +2424,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-grupo-moura"
+   "id": "ref-grupo-moura",
+   "tags": []
   },
   {
    "nome": "HT Micron",
@@ -2286,7 +2440,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-ht-micron"
+   "id": "ref-ht-micron",
+   "tags": []
   },
   {
    "nome": "Ceitec",
@@ -2301,7 +2456,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-ceitec"
+   "id": "ref-ceitec",
+   "tags": []
   },
   {
    "nome": "Chipus Microelectronics",
@@ -2316,7 +2472,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-chipus-microelectronics"
+   "id": "ref-chipus-microelectronics",
+   "tags": []
   },
   {
    "nome": "Positivo Tecnologia",
@@ -2331,7 +2488,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-positivo-tecnologia"
+   "id": "ref-positivo-tecnologia",
+   "tags": []
   },
   {
    "nome": "Samsung Brasil",
@@ -2346,7 +2504,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-samsung-brasil"
+   "id": "ref-samsung-brasil",
+   "tags": []
   },
   {
    "nome": "LG Electronics do Brasil",
@@ -2361,7 +2520,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-lg-electronics-do-brasil"
+   "id": "ref-lg-electronics-do-brasil",
+   "tags": []
   },
   {
    "nome": "Motorola Mobility",
@@ -2376,7 +2536,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-motorola-mobility"
+   "id": "ref-motorola-mobility",
+   "tags": []
   },
   {
    "nome": "Dell Technologies Brasil",
@@ -2391,7 +2552,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-dell-technologies-brasil"
+   "id": "ref-dell-technologies-brasil",
+   "tags": []
   },
   {
    "nome": "Lenovo Brasil",
@@ -2406,7 +2568,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-lenovo-brasil"
+   "id": "ref-lenovo-brasil",
+   "tags": []
   },
   {
    "nome": "HP Brasil",
@@ -2421,7 +2584,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-hp-brasil"
+   "id": "ref-hp-brasil",
+   "tags": []
   },
   {
    "nome": "Multi",
@@ -2436,7 +2600,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-multi"
+   "id": "ref-multi",
+   "tags": []
   },
   {
    "nome": "Flex Brasil",
@@ -2451,7 +2616,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "Beneficiária de incentivos com obrigação de PD&I (Lei de TICs ou Brasil Semicon).",
-   "id": "ref-flex-brasil"
+   "id": "ref-flex-brasil",
+   "tags": []
   },
   {
    "nome": "CTI Renato Archer",
@@ -2466,7 +2632,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cti-renato-archer"
+   "id": "ref-cti-renato-archer",
+   "tags": []
   },
   {
    "nome": "Rumo",
@@ -2481,7 +2648,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-rumo"
+   "id": "ref-rumo",
+   "tags": []
   },
   {
    "nome": "VLI",
@@ -2496,7 +2664,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-vli"
+   "id": "ref-vli",
+   "tags": []
   },
   {
    "nome": "MRS Logística",
@@ -2511,7 +2680,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-mrs-logistica"
+   "id": "ref-mrs-logistica",
+   "tags": []
   },
   {
    "nome": "Localiza",
@@ -2526,7 +2696,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-localiza"
+   "id": "ref-localiza",
+   "tags": []
   },
   {
    "nome": "Movida",
@@ -2541,7 +2712,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-movida"
+   "id": "ref-movida",
+   "tags": []
   },
   {
    "nome": "JSL",
@@ -2556,7 +2728,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-jsl"
+   "id": "ref-jsl",
+   "tags": []
   },
   {
    "nome": "Correios",
@@ -2571,7 +2744,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-correios"
+   "id": "ref-correios",
+   "tags": []
   },
   {
    "nome": "Azul Linhas Aéreas",
@@ -2586,7 +2760,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-azul-linhas-aereas"
+   "id": "ref-azul-linhas-aereas",
+   "tags": []
   },
   {
    "nome": "LATAM Brasil",
@@ -2601,7 +2776,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-latam-brasil"
+   "id": "ref-latam-brasil",
+   "tags": []
   },
   {
    "nome": "GOL",
@@ -2616,7 +2792,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-gol"
+   "id": "ref-gol",
+   "tags": []
   },
   {
    "nome": "Motiva (CCR)",
@@ -2631,7 +2808,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-motiva-ccr"
+   "id": "ref-motiva-ccr",
+   "tags": []
   },
   {
    "nome": "Santos Brasil",
@@ -2646,7 +2824,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-santos-brasil"
+   "id": "ref-santos-brasil",
+   "tags": []
   },
   {
    "nome": "Hidrovias do Brasil",
@@ -2661,7 +2840,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-hidrovias-do-brasil"
+   "id": "ref-hidrovias-do-brasil",
+   "tags": []
   },
   {
    "nome": "Loggi",
@@ -2676,7 +2856,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-loggi"
+   "id": "ref-loggi",
+   "tags": []
   },
   {
    "nome": "Porto de Suape",
@@ -2691,7 +2872,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-porto-de-suape"
+   "id": "ref-porto-de-suape",
+   "tags": []
   },
   {
    "nome": "Stellantis",
@@ -2706,7 +2888,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Polo Automotivo de Goiana (PE).",
-   "id": "ref-stellantis"
+   "id": "ref-stellantis",
+   "tags": []
   },
   {
    "nome": "Volkswagen do Brasil",
@@ -2721,7 +2904,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-volkswagen-do-brasil"
+   "id": "ref-volkswagen-do-brasil",
+   "tags": []
   },
   {
    "nome": "General Motors do Brasil",
@@ -2736,7 +2920,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-general-motors-do-brasil"
+   "id": "ref-general-motors-do-brasil",
+   "tags": []
   },
   {
    "nome": "Toyota do Brasil",
@@ -2751,7 +2936,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-toyota-do-brasil"
+   "id": "ref-toyota-do-brasil",
+   "tags": []
   },
   {
    "nome": "Renault do Brasil",
@@ -2766,7 +2952,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-renault-do-brasil"
+   "id": "ref-renault-do-brasil",
+   "tags": []
   },
   {
    "nome": "Hyundai Motor Brasil",
@@ -2781,7 +2968,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-hyundai-motor-brasil"
+   "id": "ref-hyundai-motor-brasil",
+   "tags": []
   },
   {
    "nome": "BYD Brasil",
@@ -2796,7 +2984,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Fábrica em Camaçari (BA).",
-   "id": "ref-byd-brasil"
+   "id": "ref-byd-brasil",
+   "tags": []
   },
   {
    "nome": "Mercedes-Benz do Brasil",
@@ -2811,7 +3000,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-mercedes-benz-do-brasil"
+   "id": "ref-mercedes-benz-do-brasil",
+   "tags": []
   },
   {
    "nome": "Scania Brasil",
@@ -2826,7 +3016,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-scania-brasil"
+   "id": "ref-scania-brasil",
+   "tags": []
   },
   {
    "nome": "Volvo do Brasil",
@@ -2841,7 +3032,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-volvo-do-brasil"
+   "id": "ref-volvo-do-brasil",
+   "tags": []
   },
   {
    "nome": "Bosch Brasil",
@@ -2856,7 +3048,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-bosch-brasil"
+   "id": "ref-bosch-brasil",
+   "tags": []
   },
   {
    "nome": "Marcopolo",
@@ -2871,7 +3064,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-marcopolo"
+   "id": "ref-marcopolo",
+   "tags": []
   },
   {
    "nome": "Randoncorp",
@@ -2886,7 +3080,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-randoncorp"
+   "id": "ref-randoncorp",
+   "tags": []
   },
   {
    "nome": "Mercado Livre",
@@ -2901,7 +3096,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-mercado-livre"
+   "id": "ref-mercado-livre",
+   "tags": []
   },
   {
    "nome": "Magazine Luiza",
@@ -2916,7 +3112,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-magazine-luiza"
+   "id": "ref-magazine-luiza",
+   "tags": []
   },
   {
    "nome": "Grupo Casas Bahia",
@@ -2931,7 +3128,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-grupo-casas-bahia"
+   "id": "ref-grupo-casas-bahia",
+   "tags": []
   },
   {
    "nome": "GPA",
@@ -2946,7 +3144,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-gpa"
+   "id": "ref-gpa",
+   "tags": []
   },
   {
    "nome": "Assaí Atacadista",
@@ -2961,7 +3160,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-assai-atacadista"
+   "id": "ref-assai-atacadista",
+   "tags": []
   },
   {
    "nome": "Carrefour Brasil",
@@ -2976,7 +3176,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-carrefour-brasil"
+   "id": "ref-carrefour-brasil",
+   "tags": []
   },
   {
    "nome": "RD Saúde",
@@ -2991,7 +3192,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-rd-saude"
+   "id": "ref-rd-saude",
+   "tags": []
   },
   {
    "nome": "iFood",
@@ -3006,7 +3208,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ifood"
+   "id": "ref-ifood",
+   "tags": []
   },
   {
    "nome": "Embraer",
@@ -3021,7 +3224,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-embraer"
+   "id": "ref-embraer",
+   "tags": []
   },
   {
    "nome": "Eve Air Mobility",
@@ -3036,7 +3240,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-eve-air-mobility"
+   "id": "ref-eve-air-mobility",
+   "tags": []
   },
   {
    "nome": "Avibras",
@@ -3051,7 +3256,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-avibras"
+   "id": "ref-avibras",
+   "tags": []
   },
   {
    "nome": "Atech",
@@ -3066,7 +3272,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-atech"
+   "id": "ref-atech",
+   "tags": []
   },
   {
    "nome": "Akaer",
@@ -3081,7 +3288,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-akaer"
+   "id": "ref-akaer",
+   "tags": []
   },
   {
    "nome": "Helibras",
@@ -3096,7 +3304,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-helibras"
+   "id": "ref-helibras",
+   "tags": []
   },
   {
    "nome": "IME, Instituto Militar de Engenharia",
@@ -3113,7 +3322,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-ime-instituto-militar-de-engenharia"
+   "id": "ref-ime-instituto-militar-de-engenharia",
+   "tags": []
   },
   {
    "nome": "ITA, Instituto Tecnológico de Aeronáutica",
@@ -3128,7 +3338,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ita-instituto-tecnologico-de-aeronautica"
+   "id": "ref-ita-instituto-tecnologico-de-aeronautica",
+   "tags": []
   },
   {
    "nome": "Ministério da Defesa",
@@ -3143,7 +3354,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-ministerio-da-defesa"
+   "id": "ref-ministerio-da-defesa",
+   "tags": []
   },
   {
    "nome": "GSI, Gabinete de Segurança Institucional",
@@ -3158,7 +3370,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Estratégia Nacional de Segurança Cibernética.",
-   "id": "ref-gsi-gabinete-de-seguranca-institucional"
+   "id": "ref-gsi-gabinete-de-seguranca-institucional",
+   "tags": []
   },
   {
    "nome": "CPQD",
@@ -3176,7 +3389,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-cpqd"
+   "id": "ref-cpqd",
+   "tags": []
   },
   {
    "nome": "RNP, Rede Nacional de Ensino e Pesquisa",
@@ -3193,7 +3407,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-rnp-rede-nacional-de-ensino-e-pesquisa"
+   "id": "ref-rnp-rede-nacional-de-ensino-e-pesquisa",
+   "tags": []
   },
   {
    "nome": "Vivo (Telefônica Brasil)",
@@ -3208,7 +3423,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-vivo-telefonica-brasil"
+   "id": "ref-vivo-telefonica-brasil",
+   "tags": []
   },
   {
    "nome": "TIM Brasil",
@@ -3223,7 +3439,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-tim-brasil"
+   "id": "ref-tim-brasil",
+   "tags": []
   },
   {
    "nome": "Claro Brasil",
@@ -3238,7 +3455,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-claro-brasil"
+   "id": "ref-claro-brasil",
+   "tags": []
   },
   {
    "nome": "Algar Telecom",
@@ -3253,7 +3471,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-algar-telecom"
+   "id": "ref-algar-telecom",
+   "tags": []
   },
   {
    "nome": "Brisanet",
@@ -3268,7 +3487,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-brisanet"
+   "id": "ref-brisanet",
+   "tags": []
   },
   {
    "nome": "V.tal",
@@ -3283,7 +3503,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-v-tal"
+   "id": "ref-v-tal",
+   "tags": []
   },
   {
    "nome": "Telebras",
@@ -3298,7 +3519,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-telebras"
+   "id": "ref-telebras",
+   "tags": []
   },
   {
    "nome": "Padtec",
@@ -3313,7 +3535,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Equipamentos ópticos: integração de QKD.",
-   "id": "ref-padtec"
+   "id": "ref-padtec",
+   "tags": []
   },
   {
    "nome": "Furukawa Electric LatAm",
@@ -3328,7 +3551,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-furukawa-electric-latam"
+   "id": "ref-furukawa-electric-latam",
+   "tags": []
   },
   {
    "nome": "Ericsson Brasil",
@@ -3343,7 +3567,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ericsson-brasil"
+   "id": "ref-ericsson-brasil",
+   "tags": []
   },
   {
    "nome": "Nokia Brasil",
@@ -3358,7 +3583,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-nokia-brasil"
+   "id": "ref-nokia-brasil",
+   "tags": []
   },
   {
    "nome": "Huawei do Brasil",
@@ -3373,7 +3599,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-huawei-do-brasil"
+   "id": "ref-huawei-do-brasil",
+   "tags": []
   },
   {
    "nome": "Intelbras",
@@ -3388,7 +3615,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-intelbras"
+   "id": "ref-intelbras",
+   "tags": []
   },
   {
    "nome": "Certisign",
@@ -3403,7 +3631,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Infraestrutura de chaves e certificação digital: migração pós-quântica.",
-   "id": "ref-certisign"
+   "id": "ref-certisign",
+   "tags": []
   },
   {
    "nome": "Valid",
@@ -3412,13 +3641,16 @@
    "uf": "RJ",
    "cidade": "Rio de Janeiro",
    "site": "",
-   "evidencia": "potencial",
-   "atuacao": "",
-   "fontes": [],
+   "evidencia": "confirmada",
+   "atuacao": "A V/Cert, empresa de certificação digital da Valid, adotou algoritmo pós-quântico integrado ao HSM kNET da Kryptus.",
+   "fontes": [
+    "itsection-kryptus"
+   ],
    "bloco": "industrial",
-   "prioridade": "B",
+   "prioridade": "A",
    "notas": "Infraestrutura de chaves e certificação digital: migração pós-quântica.",
-   "id": "ref-valid"
+   "id": "ref-valid",
+   "tags": []
   },
   {
    "nome": "Soluti",
@@ -3433,7 +3665,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Infraestrutura de chaves e certificação digital: migração pós-quântica.",
-   "id": "ref-soluti"
+   "id": "ref-soluti",
+   "tags": []
   },
   {
    "nome": "ITI, Instituto Nacional de Tecnologia da Informação",
@@ -3448,7 +3681,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Autoridade da ICP-Brasil.",
-   "id": "ref-iti-instituto-nacional-de-tecnologia-da-"
+   "id": "ref-iti-instituto-nacional-de-tecnologia-da-",
+   "tags": []
   },
   {
    "nome": "IBM Brasil",
@@ -3461,12 +3695,14 @@
    "atuacao": "Mantém a IBM Quantum Network, que reúne Itaú e Bradesco no Brasil; trabalha com o Bradesco na preparação para a computação quântica.",
    "fontes": [
     "ideas-ibm-qn",
-    "aciara-ibm"
+    "aciara-ibm",
+    "timesbrasil-ibm"
    ],
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-ibm-brasil"
+   "id": "ref-ibm-brasil",
+   "tags": []
   },
   {
    "nome": "Eviden (Atos)",
@@ -3484,7 +3720,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-eviden-atos"
+   "id": "ref-eviden-atos",
+   "tags": []
   },
   {
    "nome": "Venturus",
@@ -3501,7 +3738,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-venturus"
+   "id": "ref-venturus",
+   "tags": []
   },
   {
    "nome": "Instituto Eldorado",
@@ -3518,7 +3756,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-instituto-eldorado"
+   "id": "ref-instituto-eldorado",
+   "tags": []
   },
   {
    "nome": "CESAR",
@@ -3535,7 +3774,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cesar"
+   "id": "ref-cesar",
+   "tags": []
   },
   {
    "nome": "Microsoft Brasil",
@@ -3550,7 +3790,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Plataformas de computação quântica em nuvem.",
-   "id": "ref-microsoft-brasil"
+   "id": "ref-microsoft-brasil",
+   "tags": []
   },
   {
    "nome": "Google Brasil",
@@ -3565,7 +3806,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Plataformas de computação quântica em nuvem.",
-   "id": "ref-google-brasil"
+   "id": "ref-google-brasil",
+   "tags": []
   },
   {
    "nome": "Amazon Web Services Brasil",
@@ -3580,7 +3822,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Plataformas de computação quântica em nuvem.",
-   "id": "ref-amazon-web-services-brasil"
+   "id": "ref-amazon-web-services-brasil",
+   "tags": []
   },
   {
    "nome": "NVIDIA Brasil",
@@ -3595,7 +3838,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "Plataformas de simulação quântica em GPU.",
-   "id": "ref-nvidia-brasil"
+   "id": "ref-nvidia-brasil",
+   "tags": []
   },
   {
    "nome": "TOTVS",
@@ -3610,7 +3854,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-totvs"
+   "id": "ref-totvs",
+   "tags": []
   },
   {
    "nome": "Stefanini",
@@ -3625,7 +3870,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-stefanini"
+   "id": "ref-stefanini",
+   "tags": []
   },
   {
    "nome": "CI&T",
@@ -3640,7 +3886,8 @@
    "bloco": "industrial",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-ci-t"
+   "id": "ref-ci-t",
+   "tags": []
   },
   {
    "nome": "Sidia",
@@ -3655,7 +3902,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sidia"
+   "id": "ref-sidia",
+   "tags": []
   },
   {
    "nome": "Instituto Atlântico",
@@ -3670,7 +3918,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-instituto-atlantico"
+   "id": "ref-instituto-atlantico",
+   "tags": []
   },
   {
    "nome": "Serpro",
@@ -3685,7 +3934,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-serpro"
+   "id": "ref-serpro",
+   "tags": []
   },
   {
    "nome": "Dataprev",
@@ -3700,7 +3950,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-dataprev"
+   "id": "ref-dataprev",
+   "tags": []
   },
   {
    "nome": "Codata",
@@ -3715,7 +3966,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Empresa de tecnologia do Governo da Paraíba.",
-   "id": "ref-codata"
+   "id": "ref-codata",
+   "tags": []
   },
   {
    "nome": "SENAI CIMATEC",
@@ -3734,7 +3986,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-senai-cimatec"
+   "id": "ref-senai-cimatec",
+   "tags": []
   },
   {
    "nome": "Dobslit",
@@ -3744,14 +3997,18 @@
    "cidade": "",
    "site": "",
    "evidencia": "confirmada",
-   "atuacao": "Startup nacional de software para computação quântica; apresentou o Mini Gemini, computador quântico educacional.",
+   "atuacao": "Uma das primeiras iniciativas comerciais de computação quântica do Brasil: Mini Gemini, computador quântico educacional por ressonância magnética nuclear, e a plataforma em nuvem Bongo, em desenvolvimento.",
    "fontes": [
-    "ictp-empresas"
+    "ictp-empresas",
+    "fastcompany-quantica"
    ],
    "bloco": "industrial",
-   "prioridade": "B",
+   "prioridade": "A",
    "notas": "",
-   "id": "ref-dobslit"
+   "id": "ref-dobslit",
+   "tags": [
+    "deep tech"
+   ]
   },
   {
    "nome": "Quantuloop",
@@ -3768,7 +4025,10 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-quantuloop"
+   "id": "ref-quantuloop",
+   "tags": [
+    "deep tech"
+   ]
   },
   {
    "nome": "QuEra Computing",
@@ -3785,7 +4045,8 @@
    "bloco": "industrial",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-quera-computing"
+   "id": "ref-quera-computing",
+   "tags": []
   },
   {
    "nome": "CETC / Suzhou Quantum Center",
@@ -3803,7 +4064,8 @@
    "bloco": "industrial",
    "prioridade": "A",
    "notas": "Parceiro fundador.",
-   "id": "ref-cetc-suzhou-quantum-center"
+   "id": "ref-cetc-suzhou-quantum-center",
+   "tags": []
   },
   {
    "nome": "CBPF",
@@ -3820,7 +4082,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-cbpf"
+   "id": "ref-cbpf",
+   "tags": []
   },
   {
    "nome": "LNCC",
@@ -3835,7 +4098,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Supercomputador Santos Dumont.",
-   "id": "ref-lncc"
+   "id": "ref-lncc",
+   "tags": []
   },
   {
    "nome": "CNPEM",
@@ -3850,7 +4114,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cnpem"
+   "id": "ref-cnpem",
+   "tags": []
   },
   {
    "nome": "UFPE",
@@ -3867,7 +4132,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-ufpe"
+   "id": "ref-ufpe",
+   "tags": []
   },
   {
    "nome": "USP",
@@ -3882,7 +4148,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Parceria com o Bradesco em computação quântica citada na imprensa.",
-   "id": "ref-usp"
+   "id": "ref-usp",
+   "tags": []
   },
   {
    "nome": "FAPESP",
@@ -3899,7 +4166,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-fapesp"
+   "id": "ref-fapesp",
+   "tags": []
   },
   {
    "nome": "UFPB",
@@ -3914,7 +4182,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Base universitária do CIQUANTA (física, computação, matemática e engenharia elétrica).",
-   "id": "ref-ufpb"
+   "id": "ref-ufpb",
+   "tags": []
   },
   {
    "nome": "UFCG",
@@ -3929,7 +4198,8 @@
    "bloco": "academico",
    "prioridade": "A",
    "notas": "Base universitária do CIQUANTA (física, computação, matemática e engenharia elétrica).",
-   "id": "ref-ufcg"
+   "id": "ref-ufcg",
+   "tags": []
   },
   {
    "nome": "UEPB",
@@ -3944,7 +4214,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-uepb"
+   "id": "ref-uepb",
+   "tags": []
   },
   {
    "nome": "IFPB",
@@ -3959,7 +4230,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ifpb"
+   "id": "ref-ifpb",
+   "tags": []
   },
   {
    "nome": "Unicamp",
@@ -3974,7 +4246,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-unicamp"
+   "id": "ref-unicamp",
+   "tags": []
   },
   {
    "nome": "UFRJ",
@@ -3991,7 +4264,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ufrj"
+   "id": "ref-ufrj",
+   "tags": []
   },
   {
    "nome": "UFF",
@@ -4008,7 +4282,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-uff"
+   "id": "ref-uff",
+   "tags": []
   },
   {
    "nome": "PUC-Rio",
@@ -4025,7 +4300,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-puc-rio"
+   "id": "ref-puc-rio",
+   "tags": []
   },
   {
    "nome": "UFSC",
@@ -4040,7 +4316,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ufsc"
+   "id": "ref-ufsc",
+   "tags": []
   },
   {
    "nome": "UFMG",
@@ -4055,7 +4332,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ufmg"
+   "id": "ref-ufmg",
+   "tags": []
   },
   {
    "nome": "UnB",
@@ -4070,7 +4348,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "Parceria com o Banco do Brasil inclui computação quântica.",
-   "id": "ref-unb"
+   "id": "ref-unb",
+   "tags": []
   },
   {
    "nome": "UFRN",
@@ -4085,7 +4364,8 @@
    "bloco": "academico",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ufrn"
+   "id": "ref-ufrn",
+   "tags": []
   },
   {
    "nome": "UFC",
@@ -4100,7 +4380,8 @@
    "bloco": "academico",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-ufc"
+   "id": "ref-ufc",
+   "tags": []
   },
   {
    "nome": "UFBA",
@@ -4115,7 +4396,8 @@
    "bloco": "academico",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-ufba"
+   "id": "ref-ufba",
+   "tags": []
   },
   {
    "nome": "Finep",
@@ -4130,7 +4412,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Parceiro institucional sugerido na Política de Parcerias.",
-   "id": "ref-finep"
+   "id": "ref-finep",
+   "tags": []
   },
   {
    "nome": "EMBRAPII",
@@ -4145,7 +4428,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-embrapii"
+   "id": "ref-embrapii",
+   "tags": []
   },
   {
    "nome": "CNPq",
@@ -4160,7 +4444,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-cnpq"
+   "id": "ref-cnpq",
+   "tags": []
   },
   {
    "nome": "CAPES",
@@ -4175,7 +4460,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-capes"
+   "id": "ref-capes",
+   "tags": []
   },
   {
    "nome": "SEBRAE Nacional",
@@ -4190,7 +4476,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sebrae-nacional"
+   "id": "ref-sebrae-nacional",
+   "tags": []
   },
   {
    "nome": "ABDI",
@@ -4205,7 +4492,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-abdi"
+   "id": "ref-abdi",
+   "tags": []
   },
   {
    "nome": "Softex",
@@ -4223,7 +4511,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Parceiro institucional sugerido na Política de Parcerias.",
-   "id": "ref-softex"
+   "id": "ref-softex",
+   "tags": []
   },
   {
    "nome": "MCTI",
@@ -4241,7 +4530,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-mcti"
+   "id": "ref-mcti",
+   "tags": []
   },
   {
    "nome": "MDIC",
@@ -4256,7 +4546,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-mdic"
+   "id": "ref-mdic",
+   "tags": []
   },
   {
    "nome": "Ministério da Saúde",
@@ -4271,7 +4562,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ministerio-da-saude"
+   "id": "ref-ministerio-da-saude",
+   "tags": []
   },
   {
    "nome": "Ministério das Comunicações",
@@ -4286,7 +4578,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-ministerio-das-comunicacoes"
+   "id": "ref-ministerio-das-comunicacoes",
+   "tags": []
   },
   {
    "nome": "ANEEL",
@@ -4301,7 +4594,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-aneel"
+   "id": "ref-aneel",
+   "tags": []
   },
   {
    "nome": "ANP",
@@ -4316,7 +4610,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-anp"
+   "id": "ref-anp",
+   "tags": []
   },
   {
    "nome": "ANATEL",
@@ -4331,7 +4626,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-anatel"
+   "id": "ref-anatel",
+   "tags": []
   },
   {
    "nome": "SUFRAMA",
@@ -4346,7 +4642,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-suframa"
+   "id": "ref-suframa",
+   "tags": []
   },
   {
    "nome": "SUDENE",
@@ -4361,7 +4658,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-sudene"
+   "id": "ref-sudene",
+   "tags": []
   },
   {
    "nome": "SECTIES-PB",
@@ -4378,7 +4676,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-secties-pb"
+   "id": "ref-secties-pb",
+   "tags": []
   },
   {
    "nome": "FAPESQ",
@@ -4393,7 +4692,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Pós-doutorado PROFIX-PB dedicado à agenda do CIQUANTA.",
-   "id": "ref-fapesq"
+   "id": "ref-fapesq",
+   "tags": []
   },
   {
    "nome": "BID, Banco Interamericano de Desenvolvimento",
@@ -4408,7 +4708,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Parceiro institucional sugerido na Política de Parcerias.",
-   "id": "ref-bid-banco-interamericano-de-desenvolvime"
+   "id": "ref-bid-banco-interamericano-de-desenvolvime",
+   "tags": []
   },
   {
    "nome": "Banco Mundial",
@@ -4423,7 +4724,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Parceiro institucional sugerido na Política de Parcerias.",
-   "id": "ref-banco-mundial"
+   "id": "ref-banco-mundial",
+   "tags": []
   },
   {
    "nome": "UNESCO Brasil",
@@ -4438,7 +4740,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Parceiro institucional sugerido na Política de Parcerias.",
-   "id": "ref-unesco-brasil"
+   "id": "ref-unesco-brasil",
+   "tags": []
   },
   {
    "nome": "CNI, Confederação Nacional da Indústria",
@@ -4453,7 +4756,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Parceiro institucional sugerido: desafios industriais e projetos piloto.",
-   "id": "ref-cni-confederacao-nacional-da-industria"
+   "id": "ref-cni-confederacao-nacional-da-industria",
+   "tags": []
   },
   {
    "nome": "FIEP, Federação das Indústrias da Paraíba",
@@ -4468,7 +4772,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-fiep-federacao-das-industrias-da-paraiba"
+   "id": "ref-fiep-federacao-das-industrias-da-paraiba",
+   "tags": []
   },
   {
    "nome": "ANPEI",
@@ -4483,7 +4788,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "Reúne gestores de P&D das grandes empresas.",
-   "id": "ref-anpei"
+   "id": "ref-anpei",
+   "tags": []
   },
   {
    "nome": "Brasscom",
@@ -4498,7 +4804,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-brasscom"
+   "id": "ref-brasscom",
+   "tags": []
   },
   {
    "nome": "ABINEE",
@@ -4513,7 +4820,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-abinee"
+   "id": "ref-abinee",
+   "tags": []
   },
   {
    "nome": "CONFAP",
@@ -4528,7 +4836,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-confap"
+   "id": "ref-confap",
+   "tags": []
   },
   {
    "nome": "CONSECTI",
@@ -4543,7 +4852,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "",
-   "id": "ref-consecti"
+   "id": "ref-consecti",
+   "tags": []
   },
   {
    "nome": "ANFAVEA",
@@ -4558,7 +4868,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "",
-   "id": "ref-anfavea"
+   "id": "ref-anfavea",
+   "tags": []
   },
   {
    "nome": "Parque Tecnológico Horizontes de Inovação",
@@ -4575,7 +4886,8 @@
    "bloco": "institucional",
    "prioridade": "A",
    "notas": "",
-   "id": "ref-parque-tecnologico-horizontes-de-inovaca"
+   "id": "ref-parque-tecnologico-horizontes-de-inovaca",
+   "tags": []
   },
   {
    "nome": "FAPEMIG",
@@ -4590,7 +4902,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapemig"
+   "id": "ref-fapemig",
+   "tags": []
   },
   {
    "nome": "FAPERJ",
@@ -4605,7 +4918,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-faperj"
+   "id": "ref-faperj",
+   "tags": []
   },
   {
    "nome": "FACEPE",
@@ -4620,7 +4934,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-facepe"
+   "id": "ref-facepe",
+   "tags": []
   },
   {
    "nome": "FAPESB",
@@ -4635,7 +4950,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapesb"
+   "id": "ref-fapesb",
+   "tags": []
   },
   {
    "nome": "FUNCAP",
@@ -4650,7 +4966,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-funcap"
+   "id": "ref-funcap",
+   "tags": []
   },
   {
    "nome": "FAPERN",
@@ -4665,7 +4982,8 @@
    "bloco": "institucional",
    "prioridade": "B",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapern"
+   "id": "ref-fapern",
+   "tags": []
   },
   {
    "nome": "FAPEAL",
@@ -4680,7 +4998,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapeal"
+   "id": "ref-fapeal",
+   "tags": []
   },
   {
    "nome": "FAPITEC",
@@ -4695,7 +5014,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapitec"
+   "id": "ref-fapitec",
+   "tags": []
   },
   {
    "nome": "FAPEMA",
@@ -4710,7 +5030,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapema"
+   "id": "ref-fapema",
+   "tags": []
   },
   {
    "nome": "FAPEPI",
@@ -4725,7 +5046,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapepi"
+   "id": "ref-fapepi",
+   "tags": []
   },
   {
    "nome": "FAPEAM",
@@ -4740,7 +5062,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapeam"
+   "id": "ref-fapeam",
+   "tags": []
   },
   {
    "nome": "FAPESPA",
@@ -4755,7 +5078,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapespa"
+   "id": "ref-fapespa",
+   "tags": []
   },
   {
    "nome": "FAPEG",
@@ -4770,7 +5094,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapeg"
+   "id": "ref-fapeg",
+   "tags": []
   },
   {
    "nome": "FUNDECT",
@@ -4785,7 +5110,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fundect"
+   "id": "ref-fundect",
+   "tags": []
   },
   {
    "nome": "FAPEMAT",
@@ -4800,7 +5126,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapemat"
+   "id": "ref-fapemat",
+   "tags": []
   },
   {
    "nome": "FAPDF",
@@ -4815,7 +5142,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapdf"
+   "id": "ref-fapdf",
+   "tags": []
   },
   {
    "nome": "FAPES",
@@ -4830,7 +5158,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapes"
+   "id": "ref-fapes",
+   "tags": []
   },
   {
    "nome": "FAPESC",
@@ -4845,7 +5174,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapesc"
+   "id": "ref-fapesc",
+   "tags": []
   },
   {
    "nome": "FAPERGS",
@@ -4860,7 +5190,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapergs"
+   "id": "ref-fapergs",
+   "tags": []
   },
   {
    "nome": "Fundação Araucária",
@@ -4875,7 +5206,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fundacao-araucaria"
+   "id": "ref-fundacao-araucaria",
+   "tags": []
   },
   {
    "nome": "FAPT",
@@ -4890,7 +5222,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapt"
+   "id": "ref-fapt",
+   "tags": []
   },
   {
    "nome": "FAPAC",
@@ -4905,7 +5238,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapac"
+   "id": "ref-fapac",
+   "tags": []
   },
   {
    "nome": "FAPERO",
@@ -4920,7 +5254,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapero"
+   "id": "ref-fapero",
+   "tags": []
   },
   {
    "nome": "FAPEAP",
@@ -4935,7 +5270,8 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-fapeap"
+   "id": "ref-fapeap",
+   "tags": []
   },
   {
    "nome": "FAPERR",
@@ -4950,7 +5286,2604 @@
    "bloco": "institucional",
    "prioridade": "C",
    "notas": "Fundação estadual de amparo à pesquisa: editais conjuntos e acordos via CONFAP.",
-   "id": "ref-faperr"
+   "id": "ref-faperr",
+   "tags": []
+  },
+  {
+   "nome": "Kryptus",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "https://www.kryptus.com",
+   "evidencia": "confirmada",
+   "atuacao": "Fabricante nacional de HSM; o kNET recebeu algoritmo pós-quântico (CRYSTALS-Dilithium), adotado pela V/Cert. Fornece para as Forças Armadas e órgãos de Estado.",
+   "fontes": [
+    "itsection-kryptus",
+    "fapesp-empresas"
+   ],
+   "bloco": "industrial",
+   "prioridade": "A",
+   "notas": "",
+   "tags": [
+    "criptografia",
+    "defesa"
+   ],
+   "id": "ref-kryptus"
+  },
+  {
+   "nome": "Dinamo Networks",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "https://www.dinamonetworks.com",
+   "evidencia": "indicios",
+   "atuacao": "Fabricante nacional de HSM, usado pelo Banco Central no Pix; a empresa defende publicamente a adoção de criptografia híbrida, clássica e pós-quântica.",
+   "fontes": [
+    "exame-dinamo"
+   ],
+   "bloco": "industrial",
+   "prioridade": "A",
+   "notas": "",
+   "tags": [
+    "criptografia"
+   ],
+   "id": "ref-dinamo-networks"
+  },
+  {
+   "nome": "Brazil Quantum",
+   "segmento": "Startup",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Startup de tecnologias quânticas; confirmar atuação atual e contatos.",
+   "tags": [
+    "deep tech",
+    "quântica"
+   ],
+   "id": "ref-brazil-quantum"
+  },
+  {
+   "nome": "Quanby",
+   "segmento": "Startup",
+   "setor": "ecossistema",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Startup de software quântico; confirmar atuação atual e contatos.",
+   "tags": [
+    "deep tech",
+    "quântica"
+   ],
+   "id": "ref-quanby"
+  },
+  {
+   "nome": "Emerge",
+   "segmento": "Associação/Rede",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "https://emergebrasil.in",
+   "evidencia": "confirmada",
+   "atuacao": "Consultoria que publica o Deep Tech Radar, mapeamento anual de startups de base científica no Brasil e na América Latina.",
+   "fontes": [
+    "fapesp-deeptech"
+   ],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Não é empresa quântica: a confirmação refere-se ao mapeamento de deep techs.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-emerge"
+  },
+  {
+   "nome": "Cubo Itaú",
+   "segmento": "Associação/Rede",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "https://cubo.network",
+   "evidencia": "indicios",
+   "atuacao": "Hub de inovação parceiro do Deep Tech Radar Latam 2026.",
+   "fontes": [
+    "fapesp-deeptech"
+   ],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-cubo-itau"
+  },
+  {
+   "nome": "IQM Quantum Computers",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Espoo (Finlândia)",
+   "site": "https://www.meetiqm.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores quânticos supercondutores.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-iqm-quantum-computers"
+  },
+  {
+   "nome": "Pasqal",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Paris (França)",
+   "site": "https://www.pasqal.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores quânticos de átomos neutros.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-pasqal"
+  },
+  {
+   "nome": "Quantinuum",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Broomfield (EUA) e Cambridge (Reino Unido)",
+   "site": "https://www.quantinuum.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores de íons aprisionados e software quântico.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-quantinuum"
+  },
+  {
+   "nome": "IonQ",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "College Park (EUA)",
+   "site": "https://ionq.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores de íons aprisionados.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-ionq"
+  },
+  {
+   "nome": "D-Wave",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Burnaby (Canadá)",
+   "site": "https://www.dwavequantum.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: recozimento quântico e solvers híbridos.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-d-wave"
+  },
+  {
+   "nome": "Rigetti Computing",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Berkeley (EUA)",
+   "site": "https://www.rigetti.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores quânticos supercondutores.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-rigetti-computing"
+  },
+  {
+   "nome": "Xanadu",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Toronto (Canadá)",
+   "site": "https://www.xanadu.ai",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computação quântica fotônica e a biblioteca PennyLane.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-xanadu"
+  },
+  {
+   "nome": "Q-CTRL",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Sydney (Austrália)",
+   "site": "https://q-ctrl.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: software de controle e mitigação de erro.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-q-ctrl"
+  },
+  {
+   "nome": "Classiq",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Tel Aviv (Israel)",
+   "site": "https://www.classiq.io",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: software de projeto de circuitos quânticos.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-classiq"
+  },
+  {
+   "nome": "Multiverse Computing",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "San Sebastián (Espanha)",
+   "site": "https://multiversecomputing.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: algoritmos quânticos e de inspiração quântica para finanças e indústria.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-multiverse-computing"
+  },
+  {
+   "nome": "Terra Quantum",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "St. Gallen (Suíça)",
+   "site": "https://terraquantum.swiss",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: algoritmos híbridos e segurança quântica.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-terra-quantum"
+  },
+  {
+   "nome": "SandboxAQ",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Palo Alto (EUA)",
+   "site": "https://www.sandboxaq.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: segurança pós-quântica, simulação e sensoriamento.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-sandboxaq"
+  },
+  {
+   "nome": "QC Ware",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Palo Alto (EUA)",
+   "site": "https://www.qcware.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: software quântico para química e finanças.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-qc-ware"
+  },
+  {
+   "nome": "Origin Quantum",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Hefei (China)",
+   "site": "",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores quânticos supercondutores.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-origin-quantum"
+  },
+  {
+   "nome": "QuantumCTek",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Hefei (China)",
+   "site": "",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: comunicação quântica e distribuição de chaves.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-quantumctek"
+  },
+  {
+   "nome": "Oxford Quantum Circuits",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Reading (Reino Unido)",
+   "site": "https://oqc.tech",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: computadores quânticos supercondutores.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-oxford-quantum-circuits"
+  },
+  {
+   "nome": "Alice & Bob",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Paris (França)",
+   "site": "https://alice-bob.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: qubits de gato para correção de erros.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-alice-bob"
+  },
+  {
+   "nome": "Quantum Machines",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Tel Aviv (Israel)",
+   "site": "https://www.quantum-machines.co",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: eletrônica de controle de processadores quânticos.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-quantum-machines"
+  },
+  {
+   "nome": "Bluefors",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Helsinque (Finlândia)",
+   "site": "https://bluefors.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: refrigeradores de diluição e criogenia.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-bluefors"
+  },
+  {
+   "nome": "Zurich Instruments",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Zurique (Suíça)",
+   "site": "https://www.zhinst.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: instrumentação de controle e medição.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-zurich-instruments"
+  },
+  {
+   "nome": "Keysight Technologies",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Santa Rosa (EUA)",
+   "site": "https://www.keysight.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: instrumentação e sistemas de controle quântico.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-keysight-technologies"
+  },
+  {
+   "nome": "ID Quantique",
+   "segmento": "Empresa",
+   "setor": "ecossistema",
+   "uf": "",
+   "cidade": "Genebra (Suíça)",
+   "site": "https://www.idquantique.com",
+   "evidencia": "confirmada",
+   "atuacao": "Empresa de tecnologia quântica: distribuição quântica de chaves e geradores quânticos de números aleatórios.",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Potencial parceiro tecnológico internacional. Informação do perfil público da empresa.",
+   "tags": [
+    "quântica",
+    "internacional"
+   ],
+   "id": "ref-id-quantique"
+  },
+  {
+   "nome": "Mendelics",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: genômica e diagnóstico.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-mendelics"
+  },
+  {
+   "nome": "gen-t",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: genômica populacional.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-gen-t"
+  },
+  {
+   "nome": "Laura",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "PR",
+   "cidade": "Curitiba",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IA para gestão clínica.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-laura"
+  },
+  {
+   "nome": "Nintx",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: descoberta de fármacos.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-nintx"
+  },
+  {
+   "nome": "Aptah Bio",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: biotecnologia de RNA.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-aptah-bio"
+  },
+  {
+   "nome": "BiomeHub",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: microbioma.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-biomehub"
+  },
+  {
+   "nome": "Hoobox",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IA em saúde.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-hoobox"
+  },
+  {
+   "nome": "Portal Telemedicina",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: diagnóstico por IA.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-portal-telemedicina"
+  },
+  {
+   "nome": "Onkos",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "Ribeirão Preto",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: diagnóstico molecular.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-onkos"
+  },
+  {
+   "nome": "Neuralmed",
+   "segmento": "Startup",
+   "setor": "saude",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IA para diagnóstico por imagem.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-neuralmed"
+  },
+  {
+   "nome": "Agrosmart",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: agricultura digital e clima.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-agrosmart"
+  },
+  {
+   "nome": "Cromai",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: visão computacional no campo.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-cromai"
+  },
+  {
+   "nome": "Symbiomics",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: biológicos agrícolas.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-symbiomics"
+  },
+  {
+   "nome": "Krilltech",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "DF",
+   "cidade": "Brasília",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: nanotecnologia para nutrição vegetal.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-krilltech"
+  },
+  {
+   "nome": "Agrotools",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "SP",
+   "cidade": "São José dos Campos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: inteligência territorial.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-agrotools"
+  },
+  {
+   "nome": "Aegro",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: gestão agrícola.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-aegro"
+  },
+  {
+   "nome": "Decoy Smart Control",
+   "segmento": "Startup",
+   "setor": "agro",
+   "uf": "SP",
+   "cidade": "Ribeirão Preto",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: controle biológico.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-decoy-smart-control"
+  },
+  {
+   "nome": "Umgrauemeio",
+   "segmento": "Startup",
+   "setor": "clima",
+   "uf": "SP",
+   "cidade": "Jundiaí",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: monitoramento de incêndios florestais.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-umgrauemeio"
+  },
+  {
+   "nome": "Delfos",
+   "segmento": "Startup",
+   "setor": "energia",
+   "uf": "CE",
+   "cidade": "Fortaleza",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: manutenção preditiva em renováveis.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-delfos"
+  },
+  {
+   "nome": "Way2",
+   "segmento": "Startup",
+   "setor": "energia",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: medição e gestão de energia.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-way2"
+  },
+  {
+   "nome": "Fohat",
+   "segmento": "Startup",
+   "setor": "energia",
+   "uf": "PR",
+   "cidade": "Curitiba",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: plataformas para o mercado de energia.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-fohat"
+  },
+  {
+   "nome": "Clarke Energia",
+   "segmento": "Startup",
+   "setor": "energia",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: gestão de energia no mercado livre.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-clarke-energia"
+  },
+  {
+   "nome": "Stattus4",
+   "segmento": "Startup",
+   "setor": "industria",
+   "uf": "SP",
+   "cidade": "Sorocaba",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IoT para redes de água.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-stattus4"
+  },
+  {
+   "nome": "Nanox",
+   "segmento": "Startup",
+   "setor": "quimica",
+   "uf": "SP",
+   "cidade": "São Carlos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: nanotecnologia e materiais.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-nanox"
+  },
+  {
+   "nome": "Gerdau Graphene",
+   "segmento": "Empresa",
+   "setor": "quimica",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: aplicações de grafeno.",
+   "tags": [],
+   "id": "ref-gerdau-graphene"
+  },
+  {
+   "nome": "Tractian",
+   "segmento": "Startup",
+   "setor": "industria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: monitoramento industrial.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-tractian"
+  },
+  {
+   "nome": "Pix Force",
+   "segmento": "Startup",
+   "setor": "industria",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: visão computacional industrial.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-pix-force"
+  },
+  {
+   "nome": "Birmind",
+   "segmento": "Startup",
+   "setor": "industria",
+   "uf": "SP",
+   "cidade": "Sorocaba",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IA para automação.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-birmind"
+  },
+  {
+   "nome": "Altave",
+   "segmento": "Startup",
+   "setor": "aeroespacial",
+   "uf": "SP",
+   "cidade": "São José dos Campos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: plataformas aéreas de monitoramento.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-altave"
+  },
+  {
+   "nome": "Visiona Tecnologia Espacial",
+   "segmento": "Empresa",
+   "setor": "aeroespacial",
+   "uf": "SP",
+   "cidade": "São José dos Campos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: sistemas espaciais.",
+   "tags": [],
+   "id": "ref-visiona-tecnologia-espacial"
+  },
+  {
+   "nome": "AEL Sistemas",
+   "segmento": "Empresa",
+   "setor": "aeroespacial",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: aviônicos e sistemas de defesa.",
+   "tags": [],
+   "id": "ref-ael-sistemas"
+  },
+  {
+   "nome": "SIATT",
+   "segmento": "Empresa",
+   "setor": "aeroespacial",
+   "uf": "SP",
+   "cidade": "São José dos Campos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: sistemas de defesa.",
+   "tags": [],
+   "id": "ref-siatt"
+  },
+  {
+   "nome": "Tempest Security Intelligence",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "PE",
+   "cidade": "Recife",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: cibersegurança.",
+   "tags": [],
+   "id": "ref-tempest-security-intelligence"
+  },
+  {
+   "nome": "Axur",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: proteção contra riscos digitais.",
+   "tags": [],
+   "id": "ref-axur"
+  },
+  {
+   "nome": "Unico",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: identidade digital.",
+   "tags": [],
+   "id": "ref-unico"
+  },
+  {
+   "nome": "ClearSale",
+   "segmento": "Empresa",
+   "setor": "telecom",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: prevenção a fraude.",
+   "tags": [],
+   "id": "ref-clearsale"
+  },
+  {
+   "nome": "Kunumi",
+   "segmento": "Startup",
+   "setor": "tic",
+   "uf": "MG",
+   "cidade": "Belo Horizonte",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: inteligência artificial.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-kunumi"
+  },
+  {
+   "nome": "NeuralMind",
+   "segmento": "Startup",
+   "setor": "tic",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: IA para documentos e linguagem.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-neuralmind"
+  },
+  {
+   "nome": "Maritaca AI",
+   "segmento": "Startup",
+   "setor": "tic",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Atuação: modelos de linguagem em português.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-maritaca-ai"
+  },
+  {
+   "nome": "Semantix",
+   "segmento": "Empresa",
+   "setor": "tic",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: plataforma de dados e IA.",
+   "tags": [],
+   "id": "ref-semantix"
+  },
+  {
+   "nome": "Neoway",
+   "segmento": "Empresa",
+   "setor": "tic",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: big data e análise.",
+   "tags": [],
+   "id": "ref-neoway"
+  },
+  {
+   "nome": "Aquarela Analytics",
+   "segmento": "Startup",
+   "setor": "tic",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: IA industrial.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-aquarela-analytics"
+  },
+  {
+   "nome": "Datarisk",
+   "segmento": "Startup",
+   "setor": "tic",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: modelagem de risco.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-datarisk"
+  },
+  {
+   "nome": "QI Tech",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: infraestrutura financeira.",
+   "tags": [],
+   "id": "ref-qi-tech"
+  },
+  {
+   "nome": "Dock",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "Barueri",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: infraestrutura de pagamentos.",
+   "tags": [],
+   "id": "ref-dock"
+  },
+  {
+   "nome": "C6 Bank",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: banco digital.",
+   "tags": [],
+   "id": "ref-c6-bank"
+  },
+  {
+   "nome": "PicPay",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: carteira digital.",
+   "tags": [],
+   "id": "ref-picpay"
+  },
+  {
+   "nome": "Banco Pan",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: banco.",
+   "tags": [],
+   "id": "ref-banco-pan"
+  },
+  {
+   "nome": "Banrisul",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: banco estadual.",
+   "tags": [],
+   "id": "ref-banrisul"
+  },
+  {
+   "nome": "BRB",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "DF",
+   "cidade": "Brasília",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: banco público.",
+   "tags": [],
+   "id": "ref-brb"
+  },
+  {
+   "nome": "Creditas",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: crédito com garantia.",
+   "tags": [],
+   "id": "ref-creditas"
+  },
+  {
+   "nome": "Cobli",
+   "segmento": "Startup",
+   "setor": "logistica",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: gestão de frotas.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-cobli"
+  },
+  {
+   "nome": "Frete.com",
+   "segmento": "Empresa",
+   "setor": "logistica",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: fretes rodoviários.",
+   "tags": [],
+   "id": "ref-frete-com"
+  },
+  {
+   "nome": "nstech",
+   "segmento": "Empresa",
+   "setor": "logistica",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: software para logística.",
+   "tags": [],
+   "id": "ref-nstech"
+  },
+  {
+   "nome": "Intelipost",
+   "segmento": "Startup",
+   "setor": "logistica",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: gestão de entregas.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-intelipost"
+  },
+  {
+   "nome": "Speedbird Aero",
+   "segmento": "Startup",
+   "setor": "logistica",
+   "uf": "SP",
+   "cidade": "Franca",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Atuação: entregas por drones.",
+   "tags": [
+    "deep tech"
+   ],
+   "id": "ref-speedbird-aero"
+  },
+  {
+   "nome": "VIRTUS (UFCG)",
+   "segmento": "Academia/ICT",
+   "setor": "tic",
+   "uf": "PB",
+   "cidade": "Campina Grande",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "A",
+   "notas": "Núcleo de pesquisa, desenvolvimento e inovação em TIC da UFCG.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-virtus-ufcg"
+  },
+  {
+   "nome": "Fundação Parque Tecnológico da Paraíba (PaqTcPB)",
+   "segmento": "Associação/Rede",
+   "setor": "ecossistema",
+   "uf": "PB",
+   "cidade": "Campina Grande",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Parque tecnológico, incubação e gestão de projetos.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-fundacao-parque-tecnologico-da-paraiba-p"
+  },
+  {
+   "nome": "NUTES (UEPB)",
+   "segmento": "Academia/ICT",
+   "setor": "saude",
+   "uf": "PB",
+   "cidade": "Campina Grande",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Núcleo de tecnologias estratégicas em saúde.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-nutes-uepb"
+  },
+  {
+   "nome": "INSA, Instituto Nacional do Semiárido",
+   "segmento": "Academia/ICT",
+   "setor": "clima",
+   "uf": "PB",
+   "cidade": "Campina Grande",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Unidade de pesquisa do MCTI para o semiárido.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-insa-instituto-nacional-do-semiarido"
+  },
+  {
+   "nome": "Phoebus",
+   "segmento": "Empresa",
+   "setor": "financeiro",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Tecnologia para meios de pagamento.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-phoebus"
+  },
+  {
+   "nome": "Unimed João Pessoa",
+   "segmento": "Empresa",
+   "setor": "saude",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Operadora e rede hospitalar.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-unimed-joao-pessoa"
+  },
+  {
+   "nome": "Cagepa",
+   "segmento": "Empresa",
+   "setor": "industria",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Companhia de água e esgotos da Paraíba.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-cagepa"
+  },
+  {
+   "nome": "PBGás",
+   "segmento": "Empresa",
+   "setor": "oleo-gas",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Distribuidora de gás canalizado da Paraíba.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-pbgas"
+  },
+  {
+   "nome": "São Braz",
+   "segmento": "Empresa",
+   "setor": "agro",
+   "uf": "PB",
+   "cidade": "Cabedelo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Indústria de alimentos.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-sao-braz"
+  },
+  {
+   "nome": "Hospital Universitário Lauro Wanderley (UFPB)",
+   "segmento": "Academia/ICT",
+   "setor": "saude",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Hospital universitário federal.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-hospital-universitario-lauro-wanderley-u"
+  },
+  {
+   "nome": "Porto de Cabedelo",
+   "segmento": "Empresa",
+   "setor": "logistica",
+   "uf": "PB",
+   "cidade": "Cabedelo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Porto público da Paraíba.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-porto-de-cabedelo"
+  },
+  {
+   "nome": "SEBRAE Paraíba",
+   "segmento": "Fomentador",
+   "setor": "deeptech",
+   "uf": "PB",
+   "cidade": "João Pessoa",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Apoio a pequenas empresas e startups.",
+   "tags": [
+    "Paraíba"
+   ],
+   "id": "ref-sebrae-paraiba"
+  },
+  {
+   "nome": "Inmetro",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RJ",
+   "cidade": "Duque de Caxias",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "A",
+   "notas": "Metrologia científica, incluindo padrões e metrologia quântica.",
+   "tags": [],
+   "id": "ref-inmetro"
+  },
+  {
+   "nome": "IPT, Instituto de Pesquisas Tecnológicas",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Instituto de pesquisa aplicada.",
+   "tags": [],
+   "id": "ref-ipt-instituto-de-pesquisas-tecnologicas"
+  },
+  {
+   "nome": "INT, Instituto Nacional de Tecnologia",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RJ",
+   "cidade": "Rio de Janeiro",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Unidade de pesquisa do MCTI.",
+   "tags": [],
+   "id": "ref-int-instituto-nacional-de-tecnologia"
+  },
+  {
+   "nome": "Inatel",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "MG",
+   "cidade": "Santa Rita do Sapucaí",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Ensino e pesquisa em telecomunicações.",
+   "tags": [],
+   "id": "ref-inatel"
+  },
+  {
+   "nome": "Fundação CERTI",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SC",
+   "cidade": "Florianópolis",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Instituto de inovação e tecnologia.",
+   "tags": [],
+   "id": "ref-fundacao-certi"
+  },
+  {
+   "nome": "FITec",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "PE",
+   "cidade": "Recife",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "Instituto de P&D em TIC.",
+   "tags": [],
+   "id": "ref-fitec"
+  },
+  {
+   "nome": "COPPE/UFRJ",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RJ",
+   "cidade": "Rio de Janeiro",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "Pós-graduação e pesquisa em engenharia.",
+   "tags": [],
+   "id": "ref-coppe-ufrj"
+  },
+  {
+   "nome": "Tecgraf (PUC-Rio)",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RJ",
+   "cidade": "Rio de Janeiro",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "Instituto de computação técnico-científica.",
+   "tags": [],
+   "id": "ref-tecgraf-puc-rio"
+  },
+  {
+   "nome": "IFSC-USP",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "São Carlos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "A",
+   "notas": "Instituto de Física de São Carlos.",
+   "tags": [],
+   "id": "ref-ifsc-usp"
+  },
+  {
+   "nome": "IFGW-Unicamp",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "A",
+   "notas": "Instituto de Física Gleb Wataghin.",
+   "tags": [],
+   "id": "ref-ifgw-unicamp"
+  },
+  {
+   "nome": "UFRGS",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RS",
+   "cidade": "Porto Alegre",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufrgs"
+  },
+  {
+   "nome": "UFSCar",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "São Carlos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufscar"
+  },
+  {
+   "nome": "UFABC",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SP",
+   "cidade": "Santo André",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "B",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufabc"
+  },
+  {
+   "nome": "UFPR",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "PR",
+   "cidade": "Curitiba",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufpr"
+  },
+  {
+   "nome": "UFG",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "GO",
+   "cidade": "Goiânia",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufg"
+  },
+  {
+   "nome": "UFAL",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "AL",
+   "cidade": "Maceió",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufal"
+  },
+  {
+   "nome": "UFS",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "SE",
+   "cidade": "São Cristóvão",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufs"
+  },
+  {
+   "nome": "UFRPE",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "PE",
+   "cidade": "Recife",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufrpe"
+  },
+  {
+   "nome": "UPE",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "PE",
+   "cidade": "Recife",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-upe"
+  },
+  {
+   "nome": "UFERSA",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "RN",
+   "cidade": "Mossoró",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufersa"
+  },
+  {
+   "nome": "UFMA",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "MA",
+   "cidade": "São Luís",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufma"
+  },
+  {
+   "nome": "UFPI",
+   "segmento": "Academia/ICT",
+   "setor": "ecossistema",
+   "uf": "PI",
+   "cidade": "Teresina",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "academico",
+   "prioridade": "C",
+   "notas": "",
+   "tags": [],
+   "id": "ref-ufpi"
+  },
+  {
+   "nome": "KPTL",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Gestora de venture capital com fundos de base tecnológica.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-kptl"
+  },
+  {
+   "nome": "Indicator Capital",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Gestora de venture capital em tecnologias de base.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-indicator-capital"
+  },
+  {
+   "nome": "Pitanga Fund",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Fundo de investimento em ciência.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-pitanga-fund"
+  },
+  {
+   "nome": "Vesper Ventures",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Venture capital em biotecnologia.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-vesper-ventures"
+  },
+  {
+   "nome": "MSW Capital",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Gestora de fundos de corporate venture.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-msw-capital"
+  },
+  {
+   "nome": "Criatec (BNDES)",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "RJ",
+   "cidade": "Rio de Janeiro",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Fundos de capital semente apoiados pelo BNDES.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-criatec-bndes"
+  },
+  {
+   "nome": "Baita Aceleradora",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "Campinas",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Aceleradora de startups de base tecnológica.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-baita-aceleradora"
+  },
+  {
+   "nome": "Wylinka",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "MG",
+   "cidade": "Belo Horizonte",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Organização de apoio à transferência de tecnologia e deep techs.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-wylinka"
+  },
+  {
+   "nome": "Fundepar (UFMG)",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "MG",
+   "cidade": "Belo Horizonte",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "C",
+   "notas": "Gestora ligada ao ecossistema da UFMG.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-fundepar-ufmg"
+  },
+  {
+   "nome": "Vale Ventures",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "RJ",
+   "cidade": "Rio de Janeiro",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Corporate venture da Vale.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-vale-ventures"
+  },
+  {
+   "nome": "Embraer-X",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São José dos Campos",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Braço de inovação disruptiva da Embraer.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-embraer-x"
+  },
+  {
+   "nome": "inovabra (Bradesco)",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "A",
+   "notas": "Ecossistema de inovação e corporate venture do Bradesco.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-inovabra-bradesco"
+  },
+  {
+   "nome": "Oxygea (Braskem)",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Corporate venture e venture builder ligado à Braskem.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-oxygea-braskem"
+  },
+  {
+   "nome": "Suzano Ventures",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Corporate venture da Suzano.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-suzano-ventures"
+  },
+  {
+   "nome": "Gerdau Next Ventures",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "C",
+   "notas": "Corporate venture da Gerdau.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-gerdau-next-ventures"
+  },
+  {
+   "nome": "EDP Ventures Brasil",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "C",
+   "notas": "Corporate venture da EDP.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-edp-ventures-brasil"
+  },
+  {
+   "nome": "Qualcomm Ventures",
+   "segmento": "Investidor",
+   "setor": "investidores",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "C",
+   "notas": "Corporate venture com atuação no Brasil.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-qualcomm-ventures"
+  },
+  {
+   "nome": "Porto Digital",
+   "segmento": "Associação/Rede",
+   "setor": "investidores",
+   "uf": "PE",
+   "cidade": "Recife",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "institucional",
+   "prioridade": "B",
+   "notas": "Parque tecnológico do Recife.",
+   "tags": [
+    "capital"
+   ],
+   "id": "ref-porto-digital"
+  },
+  {
+   "nome": "Accenture Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Consultoria e integração de tecnologia.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-accenture-brasil"
+  },
+  {
+   "nome": "Deloitte Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Consultoria e auditoria.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-deloitte-brasil"
+  },
+  {
+   "nome": "EY Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Consultoria e auditoria.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-ey-brasil"
+  },
+  {
+   "nome": "PwC Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Consultoria e auditoria.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-pwc-brasil"
+  },
+  {
+   "nome": "KPMG Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "B",
+   "notas": "Consultoria e auditoria.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-kpmg-brasil"
+  },
+  {
+   "nome": "McKinsey & Company Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Consultoria de gestão.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-mckinsey-company-brasil"
+  },
+  {
+   "nome": "BCG Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Consultoria de gestão.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-bcg-brasil"
+  },
+  {
+   "nome": "Capgemini Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Consultoria e serviços de tecnologia.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-capgemini-brasil"
+  },
+  {
+   "nome": "NTT DATA Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "C",
+   "notas": "Serviços de tecnologia.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-ntt-data-brasil"
+  },
+  {
+   "nome": "FI Group Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "A",
+   "notas": "Consultoria em incentivos à inovação, como a Lei do Bem: canal para empresas que já declaram P&D.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-fi-group-brasil"
+  },
+  {
+   "nome": "ABGI Brasil",
+   "segmento": "Empresa",
+   "setor": "consultoria",
+   "uf": "SP",
+   "cidade": "São Paulo",
+   "site": "",
+   "evidencia": "potencial",
+   "atuacao": "",
+   "fontes": [],
+   "bloco": "industrial",
+   "prioridade": "A",
+   "notas": "Consultoria em incentivos e gestão da inovação: canal para empresas que já declaram P&D.",
+   "tags": [
+    "canal"
+   ],
+   "id": "ref-abgi-brasil"
   }
  ]
 }

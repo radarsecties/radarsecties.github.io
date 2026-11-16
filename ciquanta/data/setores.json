@@ -300,7 +300,8 @@
     "finep",
     "bndes",
     "marco-legal-cti",
-    "fne-bnb"
+    "fne-bnb",
+    "sandbox"
    ],
    "fonte": "ciq-agenda-fin",
    "oficial": true,
@@ -423,7 +424,8 @@
     "finep",
     "etec",
     "faps",
-    "marco-legal-cti"
+    "marco-legal-cti",
+    "ceis"
    ],
    "ref": "saúde e ciências da vida",
    "estrategico": true
@@ -665,7 +667,8 @@
     "faps",
     "fne-bnb",
     "fundos-patrimoniais",
-    "lei-do-bem"
+    "lei-do-bem",
+    "fundo-clima"
    ],
    "ref": "clima e meio ambiente",
    "estrategico": true
@@ -1283,7 +1286,9 @@
     "funttel",
     "lei-do-bem",
     "embrapii",
-    "finep"
+    "finep",
+    "fust",
+    "sandbox"
    ],
    "ref": "telecomunicações e cibersegurança",
    "estrategico": false
@@ -1404,7 +1409,9 @@
     "ibquantica",
     "nib",
     "finep",
-    "funttel"
+    "funttel",
+    "compras-inovacao",
+    "retid"
    ],
    "ref": "governo, defesa e soberania",
    "estrategico": false
@@ -1513,7 +1520,9 @@
     "lei-do-bem",
     "etec",
     "finep",
-    "nib"
+    "nib",
+    "compras-inovacao",
+    "retid"
    ],
    "linhas": [],
    "desafios": [],
@@ -1532,7 +1541,8 @@
     "lei-de-tics",
     "ppi",
     "lei-do-bem",
-    "redata"
+    "redata",
+    "pbia"
    ],
    "linhas": [],
    "desafios": [],
@@ -1569,12 +1579,74 @@
     "faps",
     "marco-startups",
     "sebrae",
-    "ibquantica"
+    "ibquantica",
+    "coop-internacional",
+    "fndct-setoriais",
+    "importacao-pesquisa"
    ],
    "linhas": [],
    "desafios": [],
    "contexto": [],
    "ref": "ecossistema quântico",
+   "estrategico": false
+  },
+  {
+   "id": "deeptech",
+   "nome": "Deep techs e startups",
+   "curto": "Deep techs",
+   "ref": "deep techs e startups",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Startups de base científica em saúde, agro, energia, materiais, IA e segurança. São parceiras para provas de conceito, residência e desenvolvimento de produtos sobre a infraestrutura do centro.",
+   "mecanismos": [
+    "programas-startups",
+    "venture",
+    "embrapii",
+    "faps",
+    "marco-startups",
+    "sebrae",
+    "inova-simples"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "estrategico": false
+  },
+  {
+   "id": "investidores",
+   "nome": "Investidores e capital de risco",
+   "curto": "Investidores",
+   "ref": "investidores",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Gestoras de venture capital, fundos de base científica, aceleradoras e áreas de corporate venture de grandes empresas.",
+   "mecanismos": [
+    "venture",
+    "marco-startups",
+    "bndes",
+    "finep"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "estrategico": false
+  },
+  {
+   "id": "consultoria",
+   "nome": "Consultorias e integradores",
+   "curto": "Consultorias",
+   "ref": "consultorias e integradores",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Consultorias de gestão e de tecnologia e especialistas em incentivos à inovação. Funcionam como canais: levam o CIQUANTA a carteiras de clientes que já investem em P&D.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "lei-de-tics"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
    "estrategico": false
   }
  ]

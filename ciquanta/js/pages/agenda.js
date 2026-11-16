@@ -3,7 +3,7 @@ import * as G from '../google.js';
 import { openReuniaoForm } from '../components.js';
 import { esc, modal, formData, options, toast, confirmDialog, isoDay, fmtDate, MESES_LONGOS, download, safeUrl, dayChip, relTime } from '../util.js';
 
-export const TIPOS = { institucional: 'Institucional', setorial: 'Evento setorial', prazo: 'Prazo ou edital', reuniao: 'Reunião', google: 'Google Agenda' };
+export const TIPOS = { institucional: 'Institucional', potencial: 'Evento potencial', setorial: 'Data do setor', prazo: 'Prazo ou edital', visita: 'Visitas à réplica', reuniao: 'Reunião', google: 'Google Agenda' };
 
 export async function render(view) {
   const now = new Date(); let ym = [now.getFullYear(), now.getMonth()]; let filtro = '';
@@ -18,12 +18,14 @@ export async function render(view) {
     } catch (e) { gmsg = 'Não foi possível ler o Google Agenda: ' + e.message; }
   };
   function draw() {
-    const evs = [...store.list('eventos'), ...gevs].filter(e => !filtro || e.tipo === filtro);
+    const vis = (store.state().painel?.visitas || []).map(v => ({ id: 'v-' + v.data, visita: true, data: v.data, tipo: 'visita', titulo: `${v.visitas} visita(s), ${v.pessoas} pessoas`, local: v.grupos.join(', ') }));
+    const eds = store.list('editais').filter(e => e.prazo).map(e => ({ id: 'e-' + e.id, edital: true, data: e.prazo, tipo: 'prazo', titulo: `Edital: ${e.titulo}` }));
+    const evs = [...store.list('eventos'), ...gevs, ...vis, ...eds].filter(e => !filtro || e.tipo === filtro);
     const [y, m] = ym; const first = new Date(y, m, 1); const start = new Date(y, m, 1 - first.getDay());
     const days = Array.from({ length: 42 }, (_, i) => new Date(start.getFullYear(), start.getMonth(), start.getDate() + i));
     const hoje = isoDay();
     const prox = evs.filter(e => e.data >= hoje).sort((a, b) => a.data.localeCompare(b.data)).slice(0, 12);
-    view.innerHTML = `<div class="section-head"><div><h2>Agenda</h2><p>Agenda institucional do CIQUANTA, eventos do setor, prazos de mecanismos de fomento e as reuniões do Google Agenda da conta conectada. Itens marcados como "a confirmar" precisam de checagem na fonte oficial.</p>${gmsg ? `<p class="small" style="color:var(--warn)">${esc(gmsg)}</p>` : ''}</div>
+    view.innerHTML = `<div class="section-head"><div><h2>Agenda</h2><p>Agenda institucional do CIQUANTA, eventos potenciais para participação, prazos de editais e de mecanismos, visitas à réplica e as reuniões do Google Agenda da conta conectada. Itens marcados como "a confirmar" precisam de checagem na fonte oficial.</p>${gmsg ? `<p class="small" style="color:var(--warn)">${esc(gmsg)}</p>` : ''}</div>
       <div class="toolbar" style="margin:0"><button class="btn" id="ics">Exportar .ics</button><button class="btn" id="reun">Agendar reunião</button><button class="btn primary" id="novo">Novo evento</button></div></div>
       <div class="grid split-21">
         <div class="card"><div class="toolbar" style="justify-content:space-between"><div class="toolbar" style="margin:0"><button class="btn sm" id="prev" aria-label="Mês anterior">‹</button><strong style="min-width:150px;text-align:center;text-transform:capitalize">${MESES_LONGOS[m]} ${y}</strong><button class="btn sm" id="next" aria-label="Próximo mês">›</button><button class="btn sm ghost" id="today">Hoje</button></div>
@@ -42,7 +44,7 @@ export async function render(view) {
     view.querySelector('#ics').onclick = () => { download('ciquanta-agenda.ics', ics(store.list('eventos')), 'text/calendar;charset=utf-8'); };
   }
   const onClick = e => {
-    const ev = e.target.closest('[data-ev]'); if (ev) { e.stopPropagation(); const g = gevs.find(x => x.id === ev.dataset.ev); if (g) detalheGoogle(g); else detalhe(store.get('eventos', ev.dataset.ev), draw); return; }
+    const ev = e.target.closest('[data-ev]'); if (ev) { e.stopPropagation(); if (ev.dataset.ev.startsWith('v-')) { location.hash = '#/visitas'; return; } if (ev.dataset.ev.startsWith('e-')) { location.hash = '#/editais'; return; } const g = gevs.find(x => x.id === ev.dataset.ev); if (g) detalheGoogle(g); else detalhe(store.get('eventos', ev.dataset.ev), draw); return; }
     const d = e.target.closest('[data-day]'); if (d) form({ data: d.dataset.day }, draw);
   };
   view.addEventListener('click', onClick);

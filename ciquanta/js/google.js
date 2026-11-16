@@ -15,6 +15,7 @@ export const SCOPES = {
   calendar: 'https://www.googleapis.com/auth/calendar.events',
   driveMeta: 'https://www.googleapis.com/auth/drive.metadata.readonly',
   driveFile: 'https://www.googleapis.com/auth/drive.file',
+  sheets: 'https://www.googleapis.com/auth/spreadsheets.readonly',
 };
 
 let token = null, profile = null, tokenClient = null;
@@ -23,7 +24,7 @@ export const onAuth = fn => (subs.add(fn), () => subs.delete(fn));
 const notify = () => subs.forEach(f => { try { f(status()); } catch (e) { console.error(e); } });
 
 export function status() { return { conectado: !!token && token.expires_at > Date.now(), email: profile?.emailAddress || '', escopos: token?.scope || '' }; }
-const MAP = { send: 'send', compose: 'compose', read: 'read', calendar: 'calendar', drive: 'driveMeta', backup: 'driveFile' };
+const MAP = { send: 'send', compose: 'compose', read: 'read', calendar: 'calendar', drive: 'driveMeta', backup: 'driveFile', planilhas: 'sheets' };
 export const hasScope = s => !!token && (token.scope || '').includes(SCOPES[MAP[s] || s]);
 
 export function wantedScopes() {
@@ -34,6 +35,7 @@ export function wantedScopes() {
   if (e.agenda) l.push(SCOPES.calendar);
   if (e.drive) l.push(SCOPES.driveMeta);
   if (e.backup) l.push(SCOPES.driveFile);
+  if (e.planilhas) l.push(SCOPES.sheets);
   return l.join(' ');
 }
 
@@ -160,4 +162,45 @@ export async function driveLoad() {
     setConfig({ driveFileId: id });
   }
   return api(`${DRIVE}/${id}?alt=media`, { text: true });
+}
+
+// ---- Busca por organização em e-mails, arquivos e agenda
+export async function driveSearch(termo, max = 15) {
+  await ensureToken();
+  const t = termo.replace(/['\\]/g, ' ');
+  return api(`${DRIVE}?q=${encodeURIComponent(`fullText contains '${t}' and trashed = false and mimeType != 'application/vnd.google-apps.folder'`)}&pageSize=${max}&orderBy=modifiedTime desc&supportsAllDrives=true&includeItemsFromAllDrives=true&fields=files(id,name,mimeType,modifiedTime,webViewLink,owners(displayName))`);
+}
+export async function driveFindByName(nome) {
+  await ensureToken();
+  const r = await api(`${DRIVE}?q=${encodeURIComponent(`name = '${nome.replace(/'/g, "\\'")}' and trashed = false and mimeType = 'application/vnd.google-apps.spreadsheet'`)}&pageSize=3&orderBy=modifiedTime desc&fields=files(id,name)`);
+  return r.files?.[0]?.id || '';
+}
+export async function calendarSearch(q, { dias = 365, passado = 365 } = {}) {
+  await ensureToken();
+  const min = new Date(Date.now() - passado * 864e5).toISOString(), max = new Date(Date.now() + dias * 864e5).toISOString();
+  return api(`${CAL}/calendars/primary/events?singleEvents=true&orderBy=startTime&maxResults=20&q=${encodeURIComponent(q)}&timeMin=${encodeURIComponent(min)}&timeMax=${encodeURIComponent(max)}`);
+}
+export async function threadsDetalhe(q, max = 8) {
+  const l = await searchThreads(q, max); const out = [];
+  for (const t of l.threads || []) { const th = await thread(t.id); const m = th.messages?.[th.messages.length - 1]; if (m) out.push({ id: t.id, assunto: header(th.messages[0], 'Subject') || '(sem assunto)', de: header(m, 'From'), data: m.internalDate ? new Date(Number(m.internalDate)).toISOString() : '', n: th.messages.length }); }
+  return out;
+}
+
+// ---- Planilhas (Google Sheets): leitura das bases do Painel CIQUANTA
+const SHEETS = 'https://sheets.googleapis.com/v4/spreadsheets';
+export const sheetId = v => (String(v || '').match(/\/d\/([a-zA-Z0-9_-]{20,})/) || [null, String(v || '').trim()])[1];
+/** Lê todas as abas de uma planilha e devolve { aba: [ {coluna: valor} ] }. */
+export async function sheetRead(idOuLink) {
+  await ensureToken();
+  const id = sheetId(idOuLink); if (!id) throw new Error('Informe o link ou o identificador da planilha.');
+  const meta = await api(`${SHEETS}/${id}?fields=sheets.properties.title`);
+  const out = {};
+  for (const sh of meta.sheets || []) {
+    const t = sh.properties.title;
+    const v = await api(`${SHEETS}/${id}/values/${encodeURIComponent(t)}?majorDimension=ROWS`);
+    const rows = v.values || []; if (rows.length < 2) { out[t] = []; continue; }
+    const head = rows[0].map(h => String(h).trim());
+    out[t] = rows.slice(1).filter(r => r.some(c => String(c).trim())).map(r => Object.fromEntries(head.map((h, i) => [h, String(r[i] ?? '').trim()])));
+  }
+  return out;
 }

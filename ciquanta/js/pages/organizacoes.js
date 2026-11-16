@@ -3,11 +3,12 @@ import { esc, norm, debounce, options, UFS, REGIAO, SEGMENTOS, RELACIONAMENTO, E
 import { openOrgForm, segBadge, relBadge, evBadge } from '../components.js';
 import { loadMecanismos, mecCurto, mecNome } from '../email.js';
 import { icon } from '../icons.js';
+import { pontuar, contexto } from '../score.js';
 
 export async function render(view, { params }) {
   const mecs = await loadMecanismos();
   const f = { q: params.get('q') || '', segmento: params.get('segmento') || '', setor: params.get('setor') || '', uf: params.get('uf') || '', regiao: '', rel: params.get('rel') || '',
-    evidencia: params.get('evidencia') || '', prioridade: '', mecanismo: params.get('mecanismo') || '', sort: 'prioridade', dir: 1 };
+    evidencia: params.get('evidencia') || '', prioridade: '', mecanismo: params.get('mecanismo') || '', sort: '_pot', dir: -1 };
   const sel = new Set();
   view.innerHTML = `
   <div class="section-head"><div><h2>Organizações</h2><p>Empresas que investem em P&D, fomentadores, autoridades e instituições de pesquisa acompanhadas pelo CIQUANTA. Clique numa linha para ver contatos, oportunidades e histórico.</p></div>
@@ -30,7 +31,7 @@ export async function render(view, { params }) {
   <div class="table-wrap"><table><thead><tr>
     <th style="width:28px"><input type="checkbox" id="all" aria-label="Selecionar todas"></th>
     <th class="sortable" data-s="nome">Organização</th><th class="sortable" data-s="setor">Setor</th><th>Segmento</th><th class="sortable" data-s="evidencia">Atuação quântica</th>
-    <th class="sortable" data-s="relacionamento">Relacionamento</th><th class="sortable" data-s="uf">UF</th><th class="num">Contatos</th><th class="num sortable" data-s="_pipe">Pipeline</th>
+    <th class="sortable" data-s="relacionamento">Relacionamento</th><th class="sortable" data-s="_pot" title="Pontuação de 0 a 100; passe o mouse sobre o número para ver os critérios">Potencial</th><th class="sortable" data-s="uf">UF</th><th class="num">Contatos</th><th class="num sortable" data-s="_pipe">Pipeline</th>
   </tr></thead><tbody id="tb"></tbody></table></div>
   <p class="muted small" id="count"></p>`;
 
@@ -38,26 +39,27 @@ export async function render(view, { params }) {
   const filtered = () => {
     const q = norm(f.q);
     const ct = {}; store.list('contatos').forEach(c => ct[c.orgId] = (ct[c.orgId] || 0) + 1);
+    const ctxS = contexto();
     const pp = {}; store.list('oportunidades').filter(o => !['contratada', 'perdida'].includes(o.etapa)).forEach(o => pp[o.orgId] = (pp[o.orgId] || 0) + store.pipelineValor(o));
     let l = store.list('orgs').filter(o =>
       (!f.segmento || o.segmento === f.segmento) && (!f.setor || o.setor === f.setor) && (!f.uf || o.uf === f.uf) && (!f.regiao || REGIAO[o.uf] === f.regiao) &&
       (!f.rel || (o.relacionamento || 'mapeada') === f.rel) && (!f.evidencia || (o.evidencia || 'potencial') === f.evidencia) && (!f.prioridade || o.prioridade === f.prioridade) &&
       (!f.mecanismo || (o.mecanismos || []).includes(f.mecanismo)) &&
       (!q || norm([o.nome, o.nomeFantasia, store.setorNome(o.setor), o.cidade, o.uf, (o.tags || []).join(' '), o.notas, o.atuacao, o.cnpj].join(' ')).includes(q)))
-      .map(o => ({ o, ct: ct[o.id] || 0, pipe: pp[o.id] || 0 }));
+      .map(o => ({ o, ct: ct[o.id] || 0, pipe: pp[o.id] || 0, pot: pontuar(o, ctxS) }));
     const key = { prioridade: x => (x.o.prioridade || 'B') + (EVO[x.o.evidencia] ?? 2) + x.o.nome, nome: x => x.o.nome, setor: x => store.setorNome(x.o.setor), evidencia: x => (EVO[x.o.evidencia] ?? 2) + x.o.nome,
-      relacionamento: x => RELACIONAMENTO.findIndex(r => r.id === (x.o.relacionamento || 'mapeada')) + x.o.nome, uf: x => (x.o.uf || 'ZZ') + x.o.nome, _pipe: x => x.pipe }[f.sort];
+      relacionamento: x => RELACIONAMENTO.findIndex(r => r.id === (x.o.relacionamento || 'mapeada')) + x.o.nome, uf: x => (x.o.uf || 'ZZ') + x.o.nome, _pipe: x => x.pipe, _pot: x => x.pot.total }[f.sort];
     l.sort((a, b) => { const x = key(a), y = key(b); return (typeof x === 'number' ? x - y : String(x).localeCompare(String(y), 'pt-BR')) * f.dir; });
     return l;
   };
   const draw = () => {
     const l = filtered();
-    view.querySelector('#tb').innerHTML = l.length ? l.slice(0, 600).map(({ o, ct, pipe }) => `<tr class="row-link" data-id="${esc(o.id)}">
+    view.querySelector('#tb').innerHTML = l.length ? l.slice(0, 600).map(({ o, ct, pipe, pot }) => `<tr class="row-link" data-id="${esc(o.id)}">
       <td><input type="checkbox" data-sel="${esc(o.id)}" ${sel.has(o.id) ? 'checked' : ''} aria-label="Selecionar"></td>
       <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="badge">A</span>' : ''}</div><div class="muted small">${esc(o.cidade || '')}${o.site ? ` · ${esc(store.dominio(o.site))}` : ''}</div></td>
-      <td class="small">${esc(store.setorCurto(o.setor))}</td><td>${segBadge(o.segmento)}</td><td>${evBadge(o.evidencia)}</td><td>${relBadge(o.relacionamento)}</td><td>${esc(o.uf || '—')}</td>
+      <td class="small">${esc(store.setorCurto(o.setor))}</td><td>${segBadge(o.segmento)}</td><td>${evBadge(o.evidencia)}</td><td>${relBadge(o.relacionamento)}</td><td><span class="pot" title="${esc(pot.motivos.map(m => `+${m[0]} ${m[1]}`).join('\n'))}"><i><b style="width:${pot.total}%"></b></i>${pot.total}</span></td><td>${esc(o.uf || '—')}</td>
       <td class="num">${ct || '<span class="muted">0</span>'}</td><td class="num nowrap">${pipe ? money(pipe) : '<span class="muted">—</span>'}</td></tr>`).join('')
-      : `<tr><td colspan="9"><div class="empty">${store.list('orgs').length ? 'Nenhuma organização com esses filtros.' : 'Nenhuma organização ainda. <a href="#/busca?aba=referencia">Importe o mapeamento setorial</a> ou use a <a href="#/busca">busca por CNPJ</a>.'}</div></td></tr>`;
+      : `<tr><td colspan="10"><div class="empty">${store.list('orgs').length ? 'Nenhuma organização com esses filtros.' : 'Nenhuma organização ainda. <a href="#/busca?aba=referencia">Importe o mapeamento setorial</a> ou use a <a href="#/busca">busca por CNPJ</a>.'}</div></td></tr>`;
     view.querySelector('#count').textContent = `${l.length} de ${store.list('orgs').length} organizações${l.length > 600 ? ' (exibindo 600; use os filtros)' : ''}`;
     view.querySelector('#bulk').classList.toggle('hidden', !sel.size);
     view.querySelector('#bulk-n').textContent = `${sel.size} selecionada(s)`;
@@ -67,7 +69,7 @@ export async function render(view, { params }) {
 
   view.querySelector('#q').addEventListener('input', debounce(e => { f.q = e.target.value; draw(); }));
   ['segmento', 'setor', 'uf', 'regiao', 'rel', 'evidencia', 'prioridade', 'mecanismo'].forEach(k => view.querySelector('#' + k).onchange = e => { f[k] = e.target.value; draw(); });
-  view.querySelectorAll('th.sortable').forEach(th => th.onclick = () => { const s = th.dataset.s; f.dir = f.sort === s ? -f.dir : (s === '_pipe' ? -1 : 1); f.sort = s; draw(); });
+  view.querySelectorAll('th.sortable').forEach(th => th.onclick = () => { const s = th.dataset.s; f.dir = f.sort === s ? -f.dir : (s === '_pipe' || s === '_pot' ? -1 : 1); f.sort = s; draw(); });
   view.querySelector('#tb').addEventListener('click', e => {
     const cb = e.target.closest('[data-sel]');
     if (cb) { cb.checked ? sel.add(cb.dataset.sel) : sel.delete(cb.dataset.sel); draw(); return; }

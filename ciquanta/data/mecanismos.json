@@ -436,6 +436,334 @@
       "link": "https://www.gov.br/mdic/pt-br/composicao/se/cndi/plano-de-acao",
       "status": "Vigente",
       "prioridade": 2
+    },
+    {
+      "id": "sudene",
+      "nome": "Incentivos fiscais da SUDENE",
+      "curto": "Incentivos SUDENE",
+      "baseLegal": "Medida Provisória nº 2.199-14/2001 e prorrogações · regulamentos da SUDENE",
+      "tipo": "Incentivo fiscal regional",
+      "gestor": "SUDENE · Receita Federal",
+      "quemUsa": "Empresas com projetos em setores prioritários na área de atuação da SUDENE (Nordeste e partes de MG e ES).",
+      "beneficio": "Redução do IRPJ sobre o lucro da exploração e possibilidade de reinvestir parte do imposto devido em modernização. Confirmar percentuais e prazo de vigência.",
+      "contrapartida": "Aprovação de pleito na SUDENE e fruição conforme laudo constitutivo.",
+      "encaixeCiquanta": "Argumento de atração: empresas que instalem unidades de P&D ou operação no Nordeste somam o incentivo regional à proximidade do CIQUANTA.",
+      "argumento": "Soma incentivo regional e infraestrutura quântica no mesmo território.",
+      "setores": [
+        "Todos (Nordeste)"
+      ],
+      "link": "https://www.gov.br/sudene/pt-br",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "fndct-setoriais",
+      "nome": "FNDCT e Fundos Setoriais",
+      "curto": "FNDCT",
+      "baseLegal": "Lei nº 11.540/2007 · leis dos fundos setoriais (CT-Info, CT-Energ, CT-Petro, CT-Infra, Verde-Amarelo e outros)",
+      "tipo": "Fundo público (não reembolsável e crédito)",
+      "gestor": "MCTI · Finep · CNPq",
+      "quemUsa": "ICTs, empresas em cooperação com ICTs e redes de pesquisa.",
+      "beneficio": "Chamadas públicas e encomendas para infraestrutura de pesquisa, projetos cooperativos e formação.",
+      "contrapartida": "Conforme chamada; contrapartida da empresa em projetos cooperativos.",
+      "encaixeCiquanta": "Disputar chamadas de infraestrutura (CT-Infra) e projetos cooperativos setoriais, com empresas dos setores de origem de cada fundo.",
+      "argumento": "Cada fundo setorial nasce da receita de um setor, o que aproxima as empresas do tema.",
+      "setores": [
+        "Todos"
+      ],
+      "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/fndct",
+      "status": "Vigente",
+      "prioridade": 1
+    },
+    {
+      "id": "importacao-pesquisa",
+      "nome": "Importação de bens para pesquisa",
+      "curto": "Importação para pesquisa",
+      "baseLegal": "Lei nº 8.010/1990",
+      "tipo": "Isenção tributária",
+      "gestor": "CNPq (credenciamento) · Receita Federal",
+      "quemUsa": "Instituições científicas e pesquisadores credenciados pelo CNPq.",
+      "beneficio": "Isenção de imposto de importação e de IPI na importação de máquinas, equipamentos e insumos destinados à pesquisa.",
+      "contrapartida": "Credenciamento no CNPq e uso exclusivo em pesquisa.",
+      "encaixeCiquanta": "Reduz o custo de peças, instrumentos e insumos criogênicos do centro e de projetos executados com parceiros.",
+      "argumento": "Custo menor de reposição e expansão do parque de equipamentos.",
+      "setores": [
+        "ICTs"
+      ],
+      "link": "https://www.gov.br/cnpq/pt-br",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "fundacoes-apoio",
+      "nome": "Fundações de apoio",
+      "curto": "Fundações de apoio",
+      "baseLegal": "Lei nº 8.958/1994 · Decreto nº 7.423/2010",
+      "tipo": "Instrumento de gestão de projetos",
+      "gestor": "ICTs e fundações credenciadas (MEC/MCTI)",
+      "quemUsa": "ICTs públicas e empresas contratantes de projetos.",
+      "beneficio": "Gestão administrativa e financeira de projetos de pesquisa, com agilidade na contratação e na prestação de contas.",
+      "contrapartida": "Contrato ou convênio com a fundação e plano de trabalho.",
+      "encaixeCiquanta": "Estrutura a execução de projetos com empresas enquanto o modelo institucional do centro se consolida.",
+      "argumento": "Dá à empresa um contratante ágil e auditável.",
+      "setores": [
+        "Todos"
+      ],
+      "link": "https://www.planalto.gov.br/ccivil_03/leis/l8958.htm",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "inova-simples",
+      "nome": "Inova Simples",
+      "curto": "Inova Simples",
+      "baseLegal": "Lei Complementar nº 167/2019",
+      "tipo": "Regime simplificado para startups",
+      "gestor": "Redesim · INPI",
+      "quemUsa": "Iniciativas empresariais de caráter inovador em fase inicial.",
+      "beneficio": "Abertura e fechamento simplificados de empresa e trâmite prioritário de marcas e patentes.",
+      "contrapartida": "Autodeclaração e limites de receita do regime.",
+      "encaixeCiquanta": "Formalização rápida de spin-offs da Residência Tecnológica e do hackathon do centro.",
+      "argumento": "Caminho curto entre o projeto de residência e a empresa.",
+      "setores": [
+        "Startups"
+      ],
+      "link": "https://www.gov.br/empresas-e-negocios/pt-br/empreendedor/inova-simples",
+      "status": "Vigente",
+      "prioridade": 3
+    },
+    {
+      "id": "programas-startups",
+      "nome": "Programas para startups: Centelha, Tecnova e Finep Startup",
+      "curto": "Centelha, Tecnova e Finep Startup",
+      "baseLegal": "Programas da Finep/MCTI executados com FAPs e parceiros estaduais",
+      "tipo": "Subvenção e investimento",
+      "gestor": "Finep · FAPs · parceiros estaduais",
+      "quemUsa": "Empreendedores, startups e pequenas empresas inovadoras.",
+      "beneficio": "Subvenção para ideias e empresas nascentes (Centelha, Tecnova) e investimento em startups com produto validado (Finep Startup).",
+      "contrapartida": "Conforme edital de cada rodada.",
+      "encaixeCiquanta": "Startups que usam o CIQUANTA concorrem com projetos de base quântica; o centro apoia a preparação das propostas.",
+      "argumento": "Primeiro capital para as deep techs do polo.",
+      "setores": [
+        "Startups"
+      ],
+      "link": "https://www.finep.gov.br/",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "cnpq-rhae",
+      "nome": "CNPq: bolsas de fomento tecnológico em empresas",
+      "curto": "Bolsas CNPq em empresas",
+      "baseLegal": "Programas do CNPq (RHAE, bolsas DTI e correlatas)",
+      "tipo": "Bolsas (não reembolsável)",
+      "gestor": "CNPq",
+      "quemUsa": "Empresas e ICTs com projetos de desenvolvimento tecnológico.",
+      "beneficio": "Bolsas para inserir mestres, doutores e especialistas em projetos de P&D empresariais.",
+      "contrapartida": "Conforme chamada; contrapartida da empresa.",
+      "encaixeCiquanta": "Fixa pesquisadores formados no centro em projetos de empresas parceiras.",
+      "argumento": "Reduz o custo de equipe da empresa no primeiro projeto.",
+      "setores": [
+        "Todos"
+      ],
+      "link": "https://www.gov.br/cnpq/pt-br",
+      "status": "Vigente",
+      "prioridade": 3
+    },
+    {
+      "id": "fust",
+      "nome": "FUST",
+      "curto": "FUST",
+      "baseLegal": "Lei nº 9.998/2000, alterada pela Lei nº 14.109/2020",
+      "tipo": "Fundo setorial de telecomunicações",
+      "gestor": "Ministério das Comunicações · Conselho Gestor · agentes financeiros",
+      "quemUsa": "Prestadoras de telecomunicações, entes públicos e projetos de conectividade.",
+      "beneficio": "Recursos reembolsáveis e não reembolsáveis para expansão e uso de redes.",
+      "contrapartida": "Conforme programa e agente financeiro.",
+      "encaixeCiquanta": "Projetos de redes seguras e conectividade de instituições de ensino e pesquisa que integrem comunicação quântica.",
+      "argumento": "Fonte complementar para infraestrutura de redes.",
+      "setores": [
+        "Telecom"
+      ],
+      "link": "https://www.gov.br/mcom/pt-br",
+      "status": "Vigente",
+      "prioridade": 3
+    },
+    {
+      "id": "retid",
+      "nome": "Base Industrial de Defesa (EED e RETID)",
+      "curto": "Defesa (EED/RETID)",
+      "baseLegal": "Lei nº 12.598/2012",
+      "tipo": "Regime especial e compras de defesa",
+      "gestor": "Ministério da Defesa",
+      "quemUsa": "Empresas Estratégicas de Defesa e fornecedores de Produtos Estratégicos de Defesa.",
+      "beneficio": "Regime especial tributário e normas próprias de compras e desenvolvimento de produtos de defesa.",
+      "contrapartida": "Credenciamento como empresa estratégica e habilitação no regime.",
+      "encaixeCiquanta": "Projetos de criptografia, comunicação quântica e sensoriamento com empresas estratégicas de defesa.",
+      "argumento": "Defesa é demandante natural de soberania criptográfica.",
+      "setores": [
+        "Defesa",
+        "Aeroespacial"
+      ],
+      "link": "https://www.gov.br/defesa/pt-br",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "ceis",
+      "nome": "Complexo Econômico-Industrial da Saúde (CEIS e PDP)",
+      "curto": "CEIS e PDP",
+      "baseLegal": "Decreto nº 11.715/2023 · normas do Ministério da Saúde",
+      "tipo": "Política setorial e compras públicas",
+      "gestor": "Ministério da Saúde",
+      "quemUsa": "Laboratórios públicos, indústria farmacêutica e de equipamentos.",
+      "beneficio": "Parcerias para o Desenvolvimento Produtivo, encomendas e programas de inovação em saúde com garantia de compra pública.",
+      "contrapartida": "Transferência de tecnologia e metas de produção.",
+      "encaixeCiquanta": "Simulação molecular e descoberta de fármacos com laboratórios oficiais e indústria nacional em projetos do CEIS.",
+      "argumento": "Liga a pesquisa quântica em saúde à demanda do SUS.",
+      "setores": [
+        "Saúde"
+      ],
+      "link": "https://www.gov.br/saude/pt-br",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "compras-inovacao",
+      "nome": "Compras públicas de inovação",
+      "curto": "Compras de inovação",
+      "baseLegal": "Lei nº 14.133/2021 (diálogo competitivo, PMI e concurso) · LC nº 182/2021 (CPSI)",
+      "tipo": "Compra pública",
+      "gestor": "Órgãos e entidades públicas",
+      "quemUsa": "Administração pública federal, estadual e municipal.",
+      "beneficio": "Modalidades que permitem contratar soluções ainda não disponíveis no mercado e testar inovações.",
+      "contrapartida": "Planejamento da contratação e critérios de julgamento técnicos.",
+      "encaixeCiquanta": "Governos podem contratar provas de conceito e soluções desenvolvidas no CIQUANTA.",
+      "argumento": "Abre o mercado público às soluções do polo.",
+      "setores": [
+        "Governo"
+      ],
+      "link": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "fundo-clima",
+      "nome": "Fundo Clima",
+      "curto": "Fundo Clima",
+      "baseLegal": "Lei nº 12.114/2009",
+      "tipo": "Crédito e não reembolsável",
+      "gestor": "Ministério do Meio Ambiente · BNDES",
+      "quemUsa": "Empresas e entes públicos com projetos de mitigação e adaptação.",
+      "beneficio": "Financiamento de projetos de redução de emissões e adaptação à mudança do clima.",
+      "contrapartida": "Conforme linha e agente.",
+      "encaixeCiquanta": "Projetos de previsão de eventos extremos, captura de carbono e otimização energética com uso do centro.",
+      "argumento": "Enquadra aplicações de clima e energia em fonte dedicada.",
+      "setores": [
+        "Clima",
+        "Energia"
+      ],
+      "link": "https://www.bndes.gov.br/wps/portal/site/home/financiamento/produto/fundo-clima",
+      "status": "Vigente",
+      "prioridade": 3
+    },
+    {
+      "id": "pbia",
+      "nome": "Plano Brasileiro de Inteligência Artificial (PBIA)",
+      "curto": "PBIA",
+      "baseLegal": "Plano 2024-2028 do MCTI (\"IA para o Bem de Todos\")",
+      "tipo": "Política pública setorial",
+      "gestor": "MCTI",
+      "quemUsa": "ICTs, empresas e órgãos públicos com projetos de IA e de infraestrutura de computação.",
+      "beneficio": "Ações em infraestrutura computacional, formação, aplicações no setor público e inovação empresarial.",
+      "contrapartida": "Conforme cada ação.",
+      "encaixeCiquanta": "Posicionar IA quântica e computação híbrida do centro nas ações de infraestrutura e de pesquisa do plano.",
+      "argumento": "IA quântica é um dos quatro domínios de aplicação do centro.",
+      "setores": [
+        "TIC",
+        "Todos"
+      ],
+      "link": "https://www.gov.br/mcti/pt-br",
+      "status": "Em execução",
+      "prioridade": 2
+    },
+    {
+      "id": "coop-internacional",
+      "nome": "Cooperação internacional (BRICS, Horizon Europe, BID e Banco Mundial)",
+      "curto": "Cooperação internacional",
+      "baseLegal": "Programas multilaterais e acordos bilaterais de CT&I",
+      "tipo": "Financiamento internacional",
+      "gestor": "MCTI · CNPq · Finep · organismos multilaterais",
+      "quemUsa": "Consórcios de ICTs e empresas.",
+      "beneficio": "Chamadas conjuntas de pesquisa, mobilidade de pesquisadores e projetos regionais com financiamento combinado.",
+      "contrapartida": "Contrapartida nacional e formação de consórcio.",
+      "encaixeCiquanta": "O centro integra consórcios como executor técnico, com a parceria Brasil–China como base.",
+      "argumento": "Legitimidade internacional e recursos fora do orçamento nacional.",
+      "setores": [
+        "Todos"
+      ],
+      "link": "https://www.gov.br/mcti/pt-br",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "venture",
+      "nome": "Fundos de investimento e corporate venture",
+      "curto": "Venture capital e CVC",
+      "baseLegal": "LC nº 182/2021 (investimento em startups) · regulamentação da CVM para fundos",
+      "tipo": "Capital de risco",
+      "gestor": "Gestoras, BNDES (Criatec), Finep e áreas de venture de empresas",
+      "quemUsa": "Startups de base científica e empresas com programas de inovação aberta.",
+      "beneficio": "Investimento em participação e programas de inovação aberta com grandes empresas.",
+      "contrapartida": "Diligência e termos de investimento.",
+      "encaixeCiquanta": "O centro apresenta as deep techs do polo a fundos e a áreas de corporate venture e serve de ambiente de validação técnica.",
+      "argumento": "Validação no CIQUANTA reduz o risco técnico percebido pelo investidor.",
+      "setores": [
+        "Startups"
+      ],
+      "link": "https://www.bndes.gov.br/",
+      "status": "Vigente",
+      "prioridade": 2
+    },
+    {
+      "id": "senai-plataforma",
+      "nome": "Plataforma Inovação para a Indústria (SENAI e SESI)",
+      "curto": "Plataforma SENAI",
+      "baseLegal": "Chamadas do SENAI e do SESI",
+      "tipo": "Cofinanciamento de projetos",
+      "gestor": "SENAI · SESI",
+      "quemUsa": "Indústrias e startups em parceria com Institutos SENAI de Inovação.",
+      "beneficio": "Cofinanciamento de projetos de inovação industrial em categorias temáticas.",
+      "contrapartida": "Contrapartida da empresa conforme categoria.",
+      "encaixeCiquanta": "Projetos em rede com Institutos SENAI de Inovação e com o SENAI CIMATEC.",
+      "argumento": "Canal direto com a base industrial.",
+      "setores": [
+        "Indústria"
+      ],
+      "link": "https://www.portaldaindustria.com.br/",
+      "status": "Vigente",
+      "prioridade": 3
+    },
+    {
+      "id": "sandbox",
+      "nome": "Sandbox regulatório",
+      "curto": "Sandbox regulatório",
+      "baseLegal": "LC nº 182/2021, art. 11 · normas de cada regulador",
+      "tipo": "Ambiente regulatório experimental",
+      "gestor": "Reguladores setoriais (Banco Central, CVM, Susep, ANEEL e outros)",
+      "quemUsa": "Empresas com modelos de negócio ou tecnologias inovadoras em setores regulados.",
+      "beneficio": "Autorização temporária para testar soluções com regras adaptadas.",
+      "contrapartida": "Seleção em edital do regulador e monitoramento.",
+      "encaixeCiquanta": "Pilotos de segurança pós-quântica e de otimização em setores regulados podem ser testados em sandbox, com o centro como parceiro técnico.",
+      "argumento": "Reduz a barreira regulatória para o primeiro piloto.",
+      "setores": [
+        "Financeiro",
+        "Energia",
+        "Seguros"
+      ],
+      "link": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp182.htm",
+      "status": "Vigente",
+      "prioridade": 3
     }
   ]
 }

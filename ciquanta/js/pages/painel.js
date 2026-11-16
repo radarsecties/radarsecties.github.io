@@ -1,125 +1,93 @@
 import * as store from '../store.js';
 import * as G from '../google.js';
 import * as monitor from '../monitor.js';
-import { esc, num, money, pct, dayChip, relTime, FUNIL, RELACIONAMENTO, isoDay, fmtDate, fmtDateTime, isEmail } from '../util.js';
-import { chart, PALETTE } from '../charts.js';
+import * as cad from '../cadencia.js';
+import { esc, num, money, pct, relTime, FUNIL, RELACIONAMENTO, isoDay, fmtDateTime, MESES_LONGOS } from '../util.js';
+import { chart } from '../charts.js';
 import { brMap } from '../components.js';
-import { loadMecanismos, mecCurto } from '../email.js';
+import { loadMecanismos } from '../email.js';
+import { proximasAcoes, receitaPorFonte, pontuar, contexto } from '../score.js';
 import { icon } from '../icons.js';
+
+const compacto = v => v >= 1e9 ? `R$ ${(v / 1e9).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} bi` : v >= 1e6 ? `R$ ${(v / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi` : v >= 1e3 ? `R$ ${Math.round(v / 1e3)} mil` : money(v);
+const MES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
+const TIPO_COR = { Responder: 'ok', Atrasado: 'red', Proposta: '', Edital: 'warn', Oportunidade: '', Cadência: 'info', Contato: 'gray', Retomar: 'warn' };
 
 export async function render(view) {
   await loadMecanismos();
-  const s = store.state();
-  const charts = [];
-  const abertas = s.oportunidades.filter(o => !['contratada', 'perdida'].includes(o.etapa));
-  const ponderado = abertas.reduce((a, o) => a + store.pipelineValor(o), 0);
-  const bruto = abertas.reduce((a, o) => a + (Number(o.valor) || 0), 0);
-  const contratado = s.oportunidades.filter(o => o.etapa === 'contratada').reduce((a, o) => a + (Number(o.valor) || 0), 0);
-  const enviados = s.envios.filter(e => e.status === 'enviado');
-  const resp = enviados.filter(e => e.respondido).length;
-  const d7 = Date.now() - 7 * 864e5;
-  const inter7 = s.interacoes.filter(i => new Date(i.data) >= d7).length;
-  const recebidos7 = s.recebidos.filter(r => r.direcao === 'entrada' && new Date(r.data) >= d7).length;
-  const hoje = isoDay();
-  const eventos = s.eventos.filter(e => e.data >= hoje).sort((a, b) => a.data.localeCompare(b.data)).slice(0, 5);
-  const comEmail = s.contatos.filter(c => isEmail(c.email) && !c.optout).length;
-  const live = monitor.estado();
-
-  view.innerHTML = `
-  <section class="hero"><div class="tx">
-    <img class="logo l-light" src="assets/logo-azul.png" alt="CIQUANTA"><img class="logo l-dark" src="assets/logo-branco.png" alt="CIQUANTA">
-    <h2>Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba</h2>
-    <p>Relações institucionais: empresas que investem em P&D, fomentadores e autoridades, oportunidades de negócio, cadências de contato pela conta Google do centro e apresentações.</p>
-    <div class="hero-actions">
-      ${s.orgs.length ? '' : '<a class="btn primary" href="#/busca?aba=referencia">Importar mapeamento setorial</a>'}
-      <a class="btn primary" href="#/oportunidades">${icon('oportunidades', 16)} Oportunidades</a>
-      <a class="btn" href="#/cadencias">${icon('campanhas', 16)} Cadências</a>
-      <a class="btn" href="#/apresentacoes/institucional">${icon('apresentacoes', 16)} Apresentação institucional</a>
-    </div></div><div class="foto" role="img" aria-label="Criostato do computador quântico"></div>
-  </section>
-
-  <div class="grid g4" style="margin-bottom:16px">
-    ${kpi('Pipeline ponderado', money(ponderado), `${abertas.length} oportunidades abertas · ${money(bruto)} em valor bruto`)}
-    ${kpi('Contratado', money(contratado), `${s.oportunidades.filter(o => o.etapa === 'contratada').length} oportunidades contratadas`)}
-    ${kpi('Organizações', num(s.orgs.length), `${s.orgs.filter(o => o.relacionamento === 'parceira').length} parceiras · ${s.orgs.filter(o => o.evidencia === 'confirmada').length} com atuação quântica confirmada`)}
-    ${kpi('Interações (7 dias)', num(inter7), `${recebidos7} e-mails recebidos · ${pct(resp, enviados.length)}% de resposta às campanhas`)}
-  </div>
-
-  <div class="grid g3" style="margin-bottom:16px">
-    <div class="card span2"><h3>Pipeline por setor <span class="muted">valor ponderado pela probabilidade</span></h3><div class="chart-box"><canvas id="c-setor"></canvas></div></div>
-    <div class="card"><h3>Organizações no Brasil <span class="muted">clique num estado</span></h3><div id="map"></div></div>
-  </div>
-
-  <div class="grid g3" style="margin-bottom:16px">
-    <div class="card"><h3>Funil de oportunidades <a class="small" href="#/oportunidades">abrir</a></h3><div class="chart-box"><canvas id="c-funil"></canvas></div></div>
-    <div class="card"><h3>Relacionamento</h3><div class="chart-box"><canvas id="c-rel"></canvas></div></div>
-    <div class="card"><h3>Mecanismos nas oportunidades</h3><div class="chart-box"><canvas id="c-mec"></canvas></div></div>
-  </div>
-
-  <div class="grid g3" style="margin-bottom:16px">
-    <div class="card"><h3>Interações recentes <a class="small" href="#/interacoes">${live.ativo ? '<span class="badge ok">ao vivo</span>' : 'abrir'}</a></h3><div class="list" id="feed"></div></div>
-    <div class="card"><h3>Próximos passos</h3><div class="list" id="tarefas"></div></div>
-    <div class="card"><h3>Agenda <a class="small" href="#/agenda">abrir</a></h3><div class="list">
-      ${eventos.length ? eventos.map(e => `<div class="list-item">${dayChip(e.data)}<div><div class="title">${esc(e.titulo)}</div><div class="meta">${esc(e.hora || '')} ${esc(e.local || '')} · ${relTime(e.data)} ${e.aConfirmar ? '<span class="badge warn">a confirmar</span>' : ''}</div></div></div>`).join('') : '<div class="empty">Sem eventos futuros.</div>'}
-    </div></div>
-  </div>
-  ${!G.status().conectado ? `<div class="callout info">${icon('mail')} Conecte a conta Google do CIQUANTA em <a href="#/config">Configurações</a> para enviar campanhas, acompanhar respostas em tempo real e agendar reuniões no Google Agenda. Contatos com e-mail válido: ${comEmail}.</div>` : ''}`;
-
-  const ufCount = {}; s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
-  view.querySelector('#map').appendChild(brMap(ufCount, { onClick: uf => location.hash = `#/organizacoes?uf=${uf}` }));
-
-  const drawFeed = () => {
-    const el = view.querySelector('#feed'); if (!el) return;
-    const l = [...store.list('interacoes')].sort((a, b) => (b.data || '').localeCompare(a.data || '')).slice(0, 7);
-    el.innerHTML = l.length ? l.map(i => { const o = store.get('orgs', i.orgId); return `<div class="list-item"><span class="badge ${i.tipo === 'recebido' ? 'ok' : i.tipo === 'reuniao' ? 'marinho' : 'gray'}">${esc(i.tipo === 'recebido' ? 'recebido' : i.tipo === 'email' ? 'enviado' : i.tipo)}</span><div style="min-width:0"><div class="title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(i.titulo)}</div><div class="meta">${o ? `<a href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a> · ` : ''}${fmtDateTime(i.data)}</div></div></div>`; }).join('') : '<div class="empty">Nenhuma interação registrada.</div>';
-  };
-  drawFeed();
-  const off = store.onChange(w => { if (['interacoes', 'recebidos'].includes(w)) drawFeed(); });
-
-  const tEl = view.querySelector('#tarefas');
-  const drawTarefas = () => {
-    const a = store.list('interacoes').filter(i => i.venc && !i.concluida).map(i => ({ id: i.id, t: i.titulo, d: i.venc, org: i.orgId, k: 'int' }));
-    const b = store.list('oportunidades').filter(o => o.proximoEm && !['contratada', 'perdida'].includes(o.etapa)).map(o => ({ id: o.id, t: o.proximoPasso || o.titulo, d: o.proximoEm, org: o.orgId, k: 'opp' }));
-    const l = [...a, ...b].sort((x, y) => x.d.localeCompare(y.d)).slice(0, 7);
-    tEl.innerHTML = l.length ? l.map(t => { const o = store.get('orgs', t.org); return `<div class="list-item">${t.k === 'int' ? `<input type="checkbox" data-done="${esc(t.id)}" aria-label="Concluir">` : `<span class="badge">${icon('oportunidades', 12)}</span>`}
-      <div style="flex:1"><div class="title">${esc(t.t)}</div><div class="meta">${o ? `<a href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a> · ` : ''}<span style="color:${t.d < hoje ? 'var(--bad)' : 'inherit'}">${fmtDate(t.d)} (${relTime(t.d)})</span></div></div></div>`; }).join('')
-      : '<div class="empty">Nenhum próximo passo pendente.</div>';
-  };
-  drawTarefas();
-  tEl.addEventListener('change', e => { const id = e.target.dataset.done; if (id) { store.get('interacoes', id).concluida = true; store.touch('interacoes'); drawTarefas(); } });
-
+  const charts = []; let gcal = [];
   const draw = () => {
     charts.splice(0).forEach(c => c.destroy());
-    const porSetor = {}; abertas.forEach(o => { const k = o.setor || 'sem-setor'; porSetor[k] = (porSetor[k] || 0) + store.pipelineValor(o); });
-    const top = Object.entries(porSetor).sort((a, b) => b[1] - a[1]).slice(0, 10);
-    charts.push(chart(view.querySelector('#c-setor'), {
-      type: 'bar',
-      data: { labels: top.length ? top.map(([k]) => k === 'sem-setor' ? 'Sem setor' : store.setorCurto(k)) : ['Sem oportunidades'], datasets: [{ data: top.length ? top.map(([, v]) => Math.round(v)) : [0], backgroundColor: '#3056D5', borderRadius: 6, barThickness: 22 }] },
-      options: { indexAxis: 'y', plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => money(c.raw) } } }, scales: { x: { ticks: { callback: v => money(v) } } } },
-    }));
-    const byE = FUNIL.map(f => s.oportunidades.filter(o => (o.etapa || 'qualificacao') === f.id).length);
-    charts.push(chart(view.querySelector('#c-funil'), {
-      type: 'bar', data: { labels: FUNIL.map(f => f.nome.split(' ')[0]), datasets: [{ data: byE, backgroundColor: FUNIL.map(f => f.cor), borderRadius: 6 }] },
-      options: { plugins: { legend: { display: false } }, onClick: () => location.hash = '#/oportunidades' },
-    }));
-    const byR = RELACIONAMENTO.map(r => s.orgs.filter(o => (o.relacionamento || 'mapeada') === r.id).length);
-    charts.push(chart(view.querySelector('#c-rel'), {
-      type: 'doughnut', data: { labels: RELACIONAMENTO.map(r => r.nome), datasets: [{ data: byR.some(Boolean) ? byR : [1], backgroundColor: byR.some(Boolean) ? RELACIONAMENTO.map(r => r.cor) : ['#DCE1EF'], borderWidth: 0 }] },
-      options: { cutout: '62%', plugins: { legend: { position: 'bottom' } } },
-    }));
-    const mc = {}; s.oportunidades.forEach(o => { if (o.mecanismo) mc[o.mecanismo] = (mc[o.mecanismo] || 0) + (Number(o.valor) || 0); });
-    const tm = Object.entries(mc).sort((a, b) => b[1] - a[1]).slice(0, 6);
-    charts.push(chart(view.querySelector('#c-mec'), {
-      type: 'bar', data: { labels: tm.length ? tm.map(([k]) => mecCurto(k)) : ['Sem dados'], datasets: [{ data: tm.length ? tm.map(([, v]) => v) : [0], backgroundColor: PALETTE[0], borderRadius: 6 }] },
-      options: { indexAxis: 'y', plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => money(c.raw) } } }, scales: { x: { ticks: { callback: v => money(v) } } } },
-    }));
+    const s = store.state(), conf = s.config, hoje = isoDay(), d = new Date();
+    const abertas = s.oportunidades.filter(o => !['contratada', 'perdida'].includes(o.etapa));
+    const ponderado = abertas.reduce((a, o) => a + store.pipelineValor(o), 0);
+    const contratado = s.oportunidades.filter(o => o.etapa === 'contratada').reduce((a, o) => a + (Number(o.valor) || 0), 0);
+    const enviados = s.envios.filter(e => e.status === 'enviado'), resp = enviados.filter(e => e.respondido).length;
+    const ativas = s.orgs.filter(o => o.relacionamento && o.relacionamento !== 'mapeada').length;
+    const insAtivas = s.inscricoes.filter(i => i.status === 'ativa').length, insResp = s.inscricoes.filter(i => i.status === 'respondeu').length;
+    const g = G.status(), live = monitor.estado(), p = s.painel || {}, t = p.totais || {};
+    const meta = Number(conf.metaAnual) || 0;
+    const acoes = proximasAcoes(7);
+    // agenda unificada
+    const ag = [
+      ...s.eventos.filter(e => e.data >= hoje).map(e => ({ data: e.data, hora: e.hora, titulo: e.titulo, tipo: e.tipo === 'potencial' ? 'Evento potencial' : e.tipo === 'prazo' ? 'Prazo' : 'Institucional', k: e.tipo === 'prazo' ? 'red' : e.tipo === 'potencial' ? 'gray' : '', conf: e.aConfirmar })),
+      ...s.editais.filter(e => e.prazo && e.prazo >= hoje && ['aberto', 'preparacao'].includes(e.status)).map(e => ({ data: e.prazo, titulo: e.titulo, tipo: 'Edital', k: 'warn' })),
+      ...(p.visitas || []).filter(v => v.data >= hoje).map(v => ({ data: v.data, titulo: v.grupos.length ? `Visita: ${v.grupos.slice(0, 2).join(', ')}${v.grupos.length > 2 ? ' e outras' : ''}` : `${v.visitas} visita(s) agendada(s)`, tipo: `${v.pessoas} visitantes`, k: 'info' })),
+      ...gcal,
+    ].sort((a, b) => (a.data + (a.hora || '')).localeCompare(b.data + (b.hora || ''))).slice(0, 8);
+    const fontes = receitaPorFonte();
+    const fmax = Math.max(1, ...FUNIL.map(f => s.oportunidades.filter(o => (o.etapa || 'qualificacao') === f.id).reduce((a, o) => a + (Number(o.valor) || 0), 0)));
+
+    view.innerHTML = `
+    <section class="cmd">
+      <div><div class="kicker">${d.getDate()} de ${MESES_LONGOS[d.getMonth()]} de ${d.getFullYear()}</div><h2>Relações institucionais do CIQUANTA</h2>
+        <div class="chips"><span class="chip ${g.conectado ? 'on' : ''}">${icon('mail', 13)} ${g.conectado ? esc(g.email) : 'Conta Google desconectada'}</span><span class="chip ${live.ativo ? 'on' : ''}">${icon('sino', 13)} Respostas em tempo real ${live.ativo ? 'ativas' : 'paradas'}</span><span class="chip ${g.conectado && conf.cadenciasAtivas ? 'on' : ''}">${icon('campanhas', 13)} ${insAtivas} contato(s) em cadência</span></div></div>
+      <div class="toolbar" style="margin:0">${s.orgs.length ? '' : '<a class="btn primary" href="#/busca?aba=referencia">Importar mapeamento setorial</a>'}${g.conectado ? '' : '<a class="btn primary" href="#/config">Conectar conta Google</a>'}
+        <a class="btn" href="#/oportunidades">${icon('mais', 15)} Oportunidade</a><a class="btn" href="#/cadencias">${icon('campanhas', 15)} Cadências</a><a class="btn" href="#/apresentacoes">${icon('apresentacoes', 15)} Apresentações</a><button class="btn" id="kbtn">${icon('busca', 15)} Buscar <kbd>Ctrl K</kbd></button></div>
+    </section>
+
+    <div class="grid g5" style="margin-bottom:18px">
+      <a class="card kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
+      <a class="card kpi" href="#/oportunidades?visao=previsao"><span class="label">Contratado</span><span class="value">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta anual em Configurações'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>
+      <a class="card kpi" href="#/organizacoes"><span class="label">Em relacionamento</span><span class="value">${num(ativas)}</span><span class="sub">de ${num(s.orgs.length)} organizações mapeadas</span></a>
+      <a class="card kpi" href="#/interacoes"><span class="label">Taxa de resposta</span><span class="value">${enviados.length ? pct(resp, enviados.length) + '%' : '—'}</span><span class="sub">${resp} resposta(s) a ${enviados.length} e-mail(s) · ${insResp} em cadências</span></a>
+      <a class="card kpi" href="#/visitas"><span class="label">Visitas à réplica</span><span class="value">${t.visitas ?? '—'}</span><span class="sub">${t.visitas === undefined ? 'conecte o Painel CIQUANTA' : `${t.pessoas} visitantes · ${t.cadastros} cadastros`}</span></a>
+    </div>
+
+    <div class="grid dash-a" style="margin-bottom:18px">
+      <div class="card"><h3>Próximas ações <span class="muted">ordenadas por impacto</span></h3><div class="acoes">${acoes.length ? acoes.map(a => `<a class="acao" href="${esc(a.href)}"><span class="badge ${TIPO_COR[a.tipo] || ''}">${esc(a.tipo)}</span><span class="tx"><b>${esc(a.titulo)}</b><small>${esc(a.detalhe || '')}</small></span>${icon('direita', 16)}</a>`).join('') : `<div class="empty">Nada pendente. ${s.orgs.length ? 'Cadastre contatos nas organizações de maior potencial para iniciar as cadências.' : 'Comece importando o mapeamento setorial.'}</div>`}</div></div>
+      <div class="card"><h3>Agenda <a class="small" href="#/agenda">abrir</a></h3><div class="list">${ag.length ? ag.map(e => `<div class="list-item"><div class="date-chip">${e.data.slice(8)}<small>${MES[+e.data.slice(5, 7) - 1]}</small></div><div style="min-width:0"><div class="title">${esc(e.titulo)}</div><div class="meta"><span class="badge ${e.k}">${esc(e.tipo)}</span> ${e.hora ? esc(e.hora) + ' · ' : ''}${relTime(e.data)}${e.conf ? ' · a confirmar' : ''}</div></div></div>`).join('') : '<div class="empty">Sem compromissos futuros.</div>'}</div></div>
+    </div>
+
+    <div class="grid g3" style="margin-bottom:18px">
+      <div class="card"><h3>Funil de oportunidades</h3><div class="funil">${FUNIL.filter(f => f.id !== 'perdida').map(f => { const os = s.oportunidades.filter(o => (o.etapa || 'qualificacao') === f.id), v = os.reduce((a, o) => a + (Number(o.valor) || 0), 0); return `<a href="#/oportunidades"><span class="l">${esc(f.nome)}</span><span class="b"><i style="width:${Math.max(v ? 6 : 0, 100 * v / fmax)}%;background:${f.cor}"></i></span><span class="v">${os.length} · ${compacto(v)}</span></a>`; }).join('')}</div></div>
+      <div class="card"><h3>Receita por fonte <span class="muted">contratado e ponderado</span></h3>${Object.keys(fontes).length ? `<div class="funil">${Object.entries(fontes).map(([k, v]) => { const mx = Math.max(1, ...Object.values(fontes).map(x => x.contratado + x.ponderado)); return `<div><span class="l">${esc(k)}</span><span class="b"><i style="width:${100 * v.contratado / mx}%;background:#12805C"></i><i style="width:${100 * v.ponderado / mx}%;background:#3056D5"></i></span><span class="v">${compacto(v.contratado)} · ${compacto(v.ponderado)}</span></div>`; }).join('')}</div><p class="muted small" style="margin:10px 0 0"><span class="dot-i" style="background:#12805C"></span> contratado <span class="dot-i" style="background:#3056D5;margin-left:10px"></span> ponderado em aberto</p>` : '<div class="empty">As três fontes da política de sustentabilidade (financiamento público, receita contratual e parcerias) aparecem aqui conforme as oportunidades são registradas.</div>'}</div>
+      <div class="card"><h3>Organizações por estado</h3><div id="map"></div></div>
+    </div>
+
+    <div class="grid g3" style="margin-bottom:18px">
+      <div class="card span2"><h3>Potencial por setor <span class="muted">organizações com potencial alto e pipeline ponderado</span></h3><div class="chart-box"><canvas id="c-setor"></canvas></div></div>
+      <div class="card"><h3>Interações recentes <a class="small" href="#/interacoes">${live.ativo ? '<span class="badge ok">ao vivo</span>' : 'abrir'}</a></h3><div class="list" id="feed"></div></div>
+    </div>`;
+
+    const ufCount = {}; s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
+    view.querySelector('#map').appendChild(brMap(ufCount, { onClick: uf => location.hash = `#/organizacoes?uf=${uf}` }));
+    view.querySelector('#kbtn').onclick = () => window.dispatchEvent(new Event('ciq:paleta'));
+    const l = [...s.interacoes].sort((a, b) => (b.data || '').localeCompare(a.data || '')).slice(0, 6);
+    view.querySelector('#feed').innerHTML = l.length ? l.map(i => { const o = store.get('orgs', i.orgId); return `<div class="list-item"><span class="badge ${i.tipo === 'recebido' ? 'ok' : i.tipo === 'reuniao' || i.tipo === 'visita' ? 'info' : 'gray'}">${esc(i.tipo === 'recebido' ? 'recebido' : i.tipo === 'email' ? 'enviado' : i.tipo)}</span><div style="min-width:0"><div class="title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(i.titulo)}</div><div class="meta">${o ? `<a href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a> · ` : ''}${fmtDateTime(i.data)}</div></div></div>`; }).join('') : '<div class="empty">Nenhuma interação registrada.</div>';
+    // potencial por setor
+    const ctx = contexto(), por = {};
+    s.orgs.forEach(o => { const k = o.setor || ''; if (!k) return; (por[k] ||= { alto: 0, pipe: 0 }); if (pontuar(o, ctx).total >= 65) por[k].alto++; });
+    abertas.forEach(o => { if (o.setor) (por[o.setor] ||= { alto: 0, pipe: 0 }).pipe += store.pipelineValor(o); });
+    const top = Object.entries(por).filter(([, v]) => v.alto || v.pipe).sort((a, b) => b[1].pipe - a[1].pipe || b[1].alto - a[1].alto).slice(0, 12);
+    charts.push(chart(view.querySelector('#c-setor'), { data: { labels: top.length ? top.map(([k]) => store.setorCurto(k)) : ['Sem dados'], datasets: [
+      { type: 'bar', label: 'Organizações com potencial alto', data: top.map(([, v]) => v.alto), backgroundColor: '#C9D3F3', borderRadius: 4, yAxisID: 'y' },
+      { type: 'bar', label: 'Pipeline ponderado (R$)', data: top.map(([, v]) => Math.round(v.pipe)), backgroundColor: '#3056D5', borderRadius: 4, yAxisID: 'y1' }] },
+      options: { scales: { y1: { position: 'right', beginAtZero: true, grid: { display: false }, ticks: { callback: v => compacto(v) } } }, onClick: (_, el) => { if (el[0] && top[el[0].index]) location.hash = `#/setores/${top[el[0].index][0]}`; } } }));
   };
   draw();
-  const onTheme = () => draw();
-  window.addEventListener('themechange', onTheme);
-  return () => { charts.forEach(c => c.destroy()); window.removeEventListener('themechange', onTheme); off(); };
-}
-
-function kpi(label, value, sub) {
-  return `<div class="card kpi"><span class="label">${esc(label)}</span><span class="value">${value}</span><span class="sub">${sub}</span></div>`;
+  if (G.status().conectado && G.hasScope('calendar')) G.calendarEvents({ dias: 14, passado: 0 }).then(r => { gcal = (r.items || []).filter(e => e.status !== 'cancelled').map(e => ({ data: (e.start.dateTime || e.start.date).slice(0, 10), hora: e.start.dateTime ? new Date(e.start.dateTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) : '', titulo: e.summary || '(sem título)', tipo: 'Google Agenda', k: 'ok' })); if (view.isConnected) draw(); }).catch(() => {});
+  const off = [store.onChange(w => { if (['recebidos', 'inscricoes', 'painel'].includes(w) && !document.querySelector('.modal-back, .paleta')) draw(); }), monitor.onLive(e => { if (e.tipo === 'estado') draw(); }), cad.onCadencia(() => {})];
+  const onTheme = () => draw(); window.addEventListener('themechange', onTheme);
+  return () => { charts.forEach(c => c.destroy()); window.removeEventListener('themechange', onTheme); off.forEach(f => f()); };
 }

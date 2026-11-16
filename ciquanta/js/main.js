@@ -4,27 +4,33 @@ import * as store from './store.js';
 import * as G from './google.js';
 import * as monitor from './monitor.js';
 import { icon } from './icons.js';
+import * as cadencia from './cadencia.js';
+import { abrirPaleta } from './paleta.js';
 
 const ROUTES = {
   painel: ['Painel', 'painel', () => import('./pages/painel.js'), 'Visão geral'],
   interacoes: ['Interações em tempo real', 'interacoes', () => import('./pages/interacoes.js'), 'Visão geral'],
   agenda: ['Agenda', 'agenda', () => import('./pages/agenda.js'), 'Visão geral'],
+  visitas: ['Visitas e cadastros', 'contatos', () => import('./pages/visitas.js'), 'Visão geral'],
   organizacoes: ['Organizações', 'organizacoes', () => import('./pages/organizacoes.js'), 'Relacionamento'],
   contatos: ['Contatos', 'contatos', () => import('./pages/contatos.js'), 'Relacionamento'],
   oportunidades: ['Oportunidades de negócio', 'oportunidades', () => import('./pages/oportunidades.js'), 'Relacionamento'],
+  rede: ['Rede de relacionamento', 'link', () => import('./pages/rede.js'), 'Relacionamento'],
   setores: ['Setores e aplicações', 'setores', () => import('./pages/setores.js'), 'Relacionamento'],
   busca: ['Busca ativa', 'busca', () => import('./pages/busca.js'), 'Relacionamento'],
+  cadencias: ['Cadências automáticas', 'play', () => import('./pages/cadencias.js'), 'Comunicação'],
   campanhas: ['Campanhas de e-mail', 'campanhas', () => import('./pages/campanhas.js'), 'Comunicação'],
   modelos: ['Modelos de e-mail', 'modelos', () => import('./pages/modelos.js'), 'Comunicação'],
   apresentacoes: ['Apresentações', 'apresentacoes', () => import('./pages/apresentacoes.js'), 'Comunicação'],
   materiais: ['Materiais', 'materiais', () => import('./pages/materiais.js'), 'Comunicação'],
-  mecanismos: ['Mecanismos de fomento', 'mecanismos', () => import('./pages/mecanismos.js'), 'Fomento'],
+  mecanismos: ['Leis e mecanismos de fomento', 'mecanismos', () => import('./pages/mecanismos.js'), 'Fomento'],
+  editais: ['Editais e chamadas', 'modelos', () => import('./pages/editais.js'), 'Fomento'],
   simulador: ['Simulador de incentivos', 'simulador', () => import('./pages/simulador.js'), 'Fomento'],
   fontes: ['Fontes e referências', 'fontes', () => import('./pages/fontes.js'), 'Sistema'],
   config: ['Configurações', 'config', () => import('./pages/config.js'), 'Sistema'],
   org: ['Organização', 'organizacoes', () => import('./pages/org.js'), null],
 };
-const NAV_LABEL = { interacoes: 'Interações', oportunidades: 'Oportunidades', setores: 'Setores', campanhas: 'Campanhas', mecanismos: 'Mecanismos', simulador: 'Simulador', fontes: 'Fontes' };
+const NAV_LABEL = { interacoes: 'Interações', oportunidades: 'Oportunidades', setores: 'Setores', campanhas: 'Campanhas', mecanismos: 'Leis e mecanismos', simulador: 'Simulador', fontes: 'Fontes', cadencias: 'Cadências', rede: 'Rede', editais: 'Editais', visitas: 'Visitas e cadastros' };
 
 let cleanup = null, current = '', seq = 0;
 
@@ -98,10 +104,14 @@ function init() {
     window.dispatchEvent(new Event('themechange'));
   };
   $('#live-btn').onclick = () => { location.hash = '#/interacoes'; };
-  $('#global-search').addEventListener('keydown', e => { if (e.key === 'Enter') location.hash = `#/organizacoes?q=${encodeURIComponent(e.target.value.trim())}`; });
+  const paleta = () => abrirPaleta(Object.entries(ROUTES).filter(([, r]) => r[3]).map(([id, r]) => ({ id, titulo: r[0] })));
+  $('#global-search').addEventListener('focus', e => { e.target.blur(); paleta(); });
+  window.addEventListener('ciq:paleta', paleta);
+  document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); paleta(); } });
   $('#gmail-status').onclick = () => { location.hash = '#/config'; };
   G.onAuth(s => {
     badges();
+    if (s.conectado) cadencia.iniciar(); else cadencia.parar();
     if (s.conectado && G.hasScope('read')) {
       monitor.iniciar();
       if (store.cfg().notificacoes && 'Notification' in window && Notification.permission === 'default') Notification.requestPermission().catch(() => {});

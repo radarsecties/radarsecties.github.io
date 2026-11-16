@@ -17,14 +17,15 @@ export async function render(view) {
             <label class="check"><input type="checkbox" name="leitura" ${c.escopos.leitura ? 'checked' : ''}> Ler respostas e acompanhar interações em tempo real (somente leitura)</label>
             <label class="check"><input type="checkbox" name="rascunhos" ${c.escopos.rascunhos ? 'checked' : ''}> Criar rascunhos para revisão antes do envio</label>
             <label class="check"><input type="checkbox" name="agenda" ${c.escopos.agenda ? 'checked' : ''}> Agendar reuniões e ler eventos no Google Agenda</label>
-            <label class="check"><input type="checkbox" name="drive" ${c.escopos.drive ? 'checked' : ''}> Listar apresentações do Google Drive (somente nomes e links)</label>
+            <label class="check"><input type="checkbox" name="drive" ${c.escopos.drive ? 'checked' : ''}> Buscar arquivos e apresentações no Google Drive (somente nomes e links)</label>
+            <label class="check"><input type="checkbox" name="planilhas" ${c.escopos.planilhas ? 'checked' : ''}> Ler as planilhas do Painel CIQUANTA (visitas e cadastros)</label>
             <label class="check"><input type="checkbox" name="backup" ${c.escopos.backup ? 'checked' : ''}> Guardar cópia de segurança no Google Drive</label></div>
           <div class="full toolbar" style="margin:0"><button class="btn">Salvar</button>${s.conectado ? `<button type="button" class="btn" id="off">Desconectar ${esc(s.email)}</button>` : `<button type="button" class="btn primary" id="on" ${c.clientId ? '' : 'disabled'}>Conectar conta Google</button>`}</div>
-          ${s.conectado ? `<p class="full muted small" style="margin:0">Permissões concedidas: ${['send', 'read', 'compose', 'calendar', 'drive', 'backup'].filter(G.hasScope).map(x => ({ send: 'envio', read: 'leitura', compose: 'rascunhos', calendar: 'agenda', drive: 'Drive', backup: 'cópia no Drive' })[x]).join(', ')}.</p>` : ''}
+          ${s.conectado ? `<p class="full muted small" style="margin:0">Permissões concedidas: ${['send', 'read', 'compose', 'calendar', 'drive', 'planilhas', 'backup'].filter(G.hasScope).map(x => ({ send: 'envio', read: 'leitura', compose: 'rascunhos', calendar: 'agenda', drive: 'Drive', planilhas: 'planilhas', backup: 'cópia no Drive' })[x]).join(', ')}.</p>` : ''}
         </form>
         <details style="margin-top:12px"><summary><strong>Como obter o Client ID (uma vez, cerca de 10 minutos)</strong></summary><ol class="steps" style="margin-top:10px">
           <li>No <a href="https://console.cloud.google.com/" target="_blank" rel="noopener">Google Cloud Console</a>, com a conta institucional, crie um projeto (por exemplo, "CIQUANTA CRM").</li>
-          <li>Em APIs e serviços, Biblioteca, ative <strong>Gmail API</strong>, <strong>Google Calendar API</strong> e <strong>Google Drive API</strong>.</li>
+          <li>Em APIs e serviços, Biblioteca, ative <strong>Gmail API</strong>, <strong>Google Calendar API</strong>, <strong>Google Drive API</strong> e <strong>Google Sheets API</strong>.</li>
           <li>Na tela de consentimento OAuth, escolha <strong>Interno</strong> se a conta for Google Workspace; caso contrário, Externo, com os e-mails da equipe como usuários de teste.</li>
           <li>Em Credenciais, crie um <strong>ID do cliente OAuth</strong> do tipo Aplicativo da Web, com a origem JavaScript autorizada <code>${esc(location.origin)}</code> e a do endereço definitivo do sistema.</li>
           <li>Cole o ID do cliente acima. Não há chave secreta: o login acontece no navegador e o acesso vale só para a aba aberta.</li>
@@ -38,6 +39,14 @@ export async function render(view) {
         <label class="field full">Endereço público do sistema<input type="url" name="enderecoPublico" value="${esc(c.enderecoPublico)}" placeholder="${esc(pub || 'https://…/')}"></label>
         <p class="full muted small" style="margin:-6px 0 0">Usado nos links das apresentações e nas imagens do cabeçalho dos e-mails. Em branco, o sistema usa o endereço atual quando ele é público (${esc(pub || 'não detectado')}).</p>
         <label class="field full">Rodapé dos e-mails (inclua a forma de descadastro)<textarea name="rodape">${esc(c.rodape)}</textarea></label>
+        <div class="full"><button class="btn primary">Salvar</button></div></form></div>
+
+      <div class="card"><h3>Metas e Painel CIQUANTA</h3><form class="form-grid" id="mp">
+        <label class="field">Meta anual de captação (R$)<input type="number" name="metaAnual" min="0" step="10000" value="${esc(c.metaAnual || '')}"></label>
+        <label class="field">Endereço do Painel CIQUANTA<input type="url" name="painelUrl" value="${esc(c.painelUrl)}"></label>
+        <label class="field full">Planilha de agendamentos de visita (link)<input type="text" name="planilhaVisitas" value="${esc(c.planilhaVisitas)}" placeholder="https://docs.google.com/spreadsheets/d/…"></label>
+        <label class="field full">Planilha de cadastros de perfis (link)<input type="text" name="planilhaCadastros" value="${esc(c.planilhaCadastros)}" placeholder="https://docs.google.com/spreadsheets/d/…"></label>
+        <p class="full muted small" style="margin:0">Com a busca no Drive ativada, as planilhas "CIQUANTA | Agendamentos de visita" e "CIQUANTA | Cadastros de perfis" são localizadas automaticamente.</p>
         <div class="full"><button class="btn primary">Salvar</button></div></form></div>
 
       <div class="card"><h3>Envio e acompanhamento</h3><form class="form-grid" id="rit">
@@ -65,7 +74,8 @@ export async function render(view) {
     </div>`;
     const form = (id, fn) => view.querySelector(id).onsubmit = e => { e.preventDefault(); fn(Object.fromEntries(new FormData(e.target))); };
     form('#rem', d => { store.setConfig(d); toast('Remetente salvo.', 'ok'); });
-    form('#gm', d => { store.setConfig({ clientId: (d.clientId || '').trim(), escopos: { rascunhos: !!d.rascunhos, leitura: !!d.leitura, agenda: !!d.agenda, drive: !!d.drive, backup: !!d.backup } }); toast('Salvo. Reconecte a conta para aplicar novas permissões.', 'ok'); draw(); });
+    form('#mp', d => { store.setConfig({ metaAnual: Math.max(0, +d.metaAnual || 0), painelUrl: d.painelUrl || 'https://painelciquanta.secties.pb.gov.br', planilhaVisitas: d.planilhaVisitas.trim(), planilhaCadastros: d.planilhaCadastros.trim() }); toast('Salvo.', 'ok'); });
+    form('#gm', d => { store.setConfig({ clientId: (d.clientId || '').trim(), escopos: { rascunhos: !!d.rascunhos, leitura: !!d.leitura, agenda: !!d.agenda, drive: !!d.drive, backup: !!d.backup, planilhas: !!d.planilhas } }); toast('Salvo. Reconecte a conta para aplicar novas permissões.', 'ok'); draw(); });
     form('#rit', d => { store.setConfig({ intervaloSeg: Math.max(1, +d.intervaloSeg || 5), limiteDiario: Math.max(1, +d.limiteDiario || 400), monitorSeg: Math.max(15, +d.monitorSeg || 30), notificacoes: !!d.notificacoes }); if (monitor.estado().ativo) { monitor.parar(); monitor.iniciar(); } toast('Salvo.', 'ok'); });
     form('#sup', d => { if (!isEmail(d.e)) { toast('E-mail inválido.', 'bad'); return; } store.suprimir(d.e, true); draw(); });
     view.querySelectorAll('[data-unsup]').forEach(b => b.onclick = () => { store.suprimir(b.dataset.unsup, false); draw(); });

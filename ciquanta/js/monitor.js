@@ -3,6 +3,7 @@
 import * as store from './store.js';
 import * as G from './google.js';
 import { toast } from './util.js';
+import { marcarResposta } from './cadencia.js';
 
 let timer = null, rodando = false, ultimo = null, erro = '';
 const subs = new Set();
@@ -76,6 +77,7 @@ export async function processar(id, { aoVivo = false } = {}) {
   const item = { id, threadId: m.threadId, direcao: 'entrada', email: de.email, nome: de.nome, assunto, snippet: m.snippet || '', data, orgId: orgF?.id || '', contatoId: contato?.id || envio?.contatoId || '', lido: false, campanhaId: envio?.campanhaId || '' };
   store.list('recebidos').push(item);
   if (envio) envio.respondido = true;
+  marcarResposta(item.contatoId, de.email);
   if (orgF) {
     store.logInteracao({ orgId: orgF.id, contatoId: item.contatoId, tipo: 'recebido', titulo: assunto, descricao: (m.snippet || '').slice(0, 280), data, threadId: m.threadId, messageId: id });
     if (!orgF.relacionamento || ['mapeada', 'contato'].includes(orgF.relacionamento)) orgF.relacionamento = 'engajada';

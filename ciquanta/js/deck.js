@@ -137,5 +137,6 @@ export function printDeck(deck) {
   <body class="print-deck">${deck.slides.join('')}<script>window.onload=()=>setTimeout(()=>print(),600)<\/script></body></html>`;
   const w = window.open('', '_blank');
   if (!w) { alert('Permita janelas pop-up para gerar o PDF.'); return; }
-  w.document.open(); w.document.write(html); w.document.close();
+  const url = URL.createObjectURL(new Blob([html], { type: 'text/html' }));
+  w.location.replace(url); setTimeout(() => URL.revokeObjectURL(url), 120000);
 }

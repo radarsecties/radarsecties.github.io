@@ -3,18 +3,22 @@ import { uid, toast, norm } from './util.js';
 
 const KEY = 'ciquanta:crm:v2';
 const VERSION = 2;
-const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos'];
+const SEED = 3; // versão dos dados iniciais (modelos, agenda e cadências)
+const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos', 'cadencias', 'inscricoes', 'editais'];
 
 const empty = () => ({
   version: VERSION,
   orgs: [], contatos: [], interacoes: [], oportunidades: [], campanhas: [], envios: [], recebidos: [],
-  modelos: [], materiais: [], eventos: [], supressao: [],
+  modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], supressao: [],
+  painel: { atualizadoEm: '', visitas: [], cadastros: {}, temas: {}, totais: {} },
   config: {
     clientId: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
     enderecoPublico: '', intervaloSeg: 5, limiteDiario: 400, monitorSeg: 30, notificacoes: true,
     rodape: 'Você recebeu esta mensagem por sua atuação institucional em ciência, tecnologia e inovação. Para não receber novos contatos do CIQUANTA, responda com "REMOVER".',
-    escopos: { rascunhos: true, leitura: true, agenda: true, drive: false, backup: false },
-    historyId: '', driveFileId: '', seeded: false,
+    escopos: { rascunhos: true, leitura: true, agenda: true, drive: true, backup: false, planilhas: true },
+    planilhaVisitas: '', planilhaCadastros: '', painelUrl: 'https://painelciquanta.secties.pb.gov.br',
+    metaAnual: 0, horarioComercial: true, cadenciasAtivas: true,
+    historyId: '', driveFileId: '', seed: 0,
   },
 });
 
@@ -132,14 +136,20 @@ export const setorCurto = id => setoresMap?.[id]?.curto || id || '—';
 export const setoresLista = () => Object.values(setoresMap || {}).filter(x => x && x.id);
 
 export async function seedIfNeeded() {
-  if (db.config.seeded) return false;
+  if ((db.config.seed || 0) >= SEED) return false;
   try {
     const [m, a] = await Promise.all([ref('modelos'), ref('agenda')]);
     const ids = new Set(db.modelos.map(x => x.id));
-    m.itens.forEach(x => { if (!ids.has(x.id)) db.modelos.push({ ...x, criadoEm: now(), padrao: true }); });
-    const ev = new Set(db.eventos.map(x => x.id));
-    a.itens.forEach(x => { if (!ev.has(x.id)) db.eventos.push({ ...x, criadoEm: now(), padrao: true }); });
-    db.config.seeded = true; emit('seed');
+    m.itens.forEach(x => { const cur = db.modelos.find(y => y.id === x.id); if (!cur) db.modelos.push({ ...x, criadoEm: now(), padrao: true }); else if (cur.padrao && !cur.atualizadoEm) Object.assign(cur, x); });
+    db.eventos = db.eventos.filter(x => !x.padrao);
+    a.itens.forEach(x => db.eventos.push({ ...x, criadoEm: now(), padrao: true }));
+    const cad = (id, nome, publico, passos) => { if (!db.cadencias.some(c => c.id === id)) db.cadencias.push({ id, nome, publico, passos, ativa: true, padrao: true, criadoEm: now() }); };
+    cad('cad-empresas', 'Empresas: primeira abordagem', 'Gestores de P&D e inovação', [{ dias: 0, modeloId: 'mod-empresa-agenda' }, { dias: 5, modeloId: 'mod-followup' }, { dias: 9, modeloId: 'mod-followup-2' }]);
+    cad('cad-autoridades', 'Autoridades: agenda institucional', 'Gabinetes e assessorias', [{ dias: 0, modeloId: 'mod-autoridade' }, { dias: 10, modeloId: 'mod-followup' }]);
+    cad('cad-fomento', 'Fomentadores e bancos: cooperação', 'Agências, bancos e fundações', [{ dias: 0, modeloId: 'mod-fomento' }, { dias: 7, modeloId: 'mod-followup' }]);
+    cad('cad-investidores', 'Investidores e corporate venture', 'Gestoras e áreas de venture', [{ dias: 0, modeloId: 'mod-investidor' }, { dias: 7, modeloId: 'mod-followup' }]);
+    cad('cad-canais', 'Consultorias: parceria de canal', 'Consultorias de inovação e tecnologia', [{ dias: 0, modeloId: 'mod-canal' }, { dias: 7, modeloId: 'mod-followup' }]);
+    db.config.seed = SEED; emit('seed');
     return true;
   } catch (e) { console.warn('seed', e); return false; }
 }

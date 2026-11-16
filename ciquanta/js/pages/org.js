@@ -7,6 +7,9 @@ import { consultarCNPJ, paraOrganizacao } from '../cnpj.js';
 import { quickMail } from '../quickmail.js';
 import { buildDeck, present } from '../deck.js';
 import { icon } from '../icons.js';
+import * as G from '../google.js';
+import { pontuar } from '../score.js';
+import { gerarProposta } from '../proposta.js';
 
 export async function render(view, { arg, params }) {
   const mecs = await loadMecanismos();
@@ -20,13 +23,14 @@ export async function render(view, { arg, params }) {
     const setor = store.setoresLista().find(s => s.id === o.setor);
     const agenda = setor?.deck ? setor : store.setoresLista().find(s => s.id === setor?.deckId);
     const site = safeUrl(o.site);
+    const pot = pontuar(o);
     view.innerHTML = `
     <div class="toolbar"><a href="#/organizacoes" class="btn ghost">${icon('esquerda', 16)} Organizações</a></div>
     <div class="card acento" style="margin-bottom:16px">
       <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start">
         <div><h2 style="font-size:22px">${esc(o.nome)}</h2>
           <div class="muted">${o.nomeFantasia ? esc(o.nomeFantasia) + ' · ' : ''}${esc(store.setorNome(o.setor))} · ${esc([o.cidade, o.uf].filter(Boolean).join('/') || '—')}</div>
-          <div class="tags" style="margin-top:8px">${segBadge(o.segmento)} ${evBadge(o.evidencia)} ${relBadge(o.relacionamento)} ${o.prioridade ? `<span class="badge">Prioridade ${esc(o.prioridade)}</span>` : ''} ${o.bloco ? `<span class="badge gray">${esc(blocoNome(o.bloco))}</span>` : ''} ${(o.tags || []).map(t => `<span class="badge gray">#${esc(t)}</span>`).join('')}</div></div>
+          <div class="tags" style="margin-top:8px"><span class="pot" title="${esc(pot.motivos.map(m => `+${m[0]} ${m[1]}`).join('\n'))}">Potencial <i><b style="width:${pot.total}%"></b></i>${pot.total}</span> ${segBadge(o.segmento)} ${evBadge(o.evidencia)} ${relBadge(o.relacionamento)} ${o.prioridade ? `<span class="badge">Prioridade ${esc(o.prioridade)}</span>` : ''} ${o.bloco ? `<span class="badge gray">${esc(blocoNome(o.bloco))}</span>` : ''} ${(o.tags || []).map(t => `<span class="badge gray">#${esc(t)}</span>`).join('')}</div></div>
         <div class="toolbar" style="margin:0">
           <select id="rel" aria-label="Relacionamento" style="width:auto">${options(RELACIONAMENTO, o.relacionamento || 'mapeada')}</select>
           <button class="btn" id="edit">Editar</button>
@@ -44,7 +48,7 @@ export async function render(view, { arg, params }) {
       </div>
     </div>
     <div class="tabs" role="tablist">
-      ${[['geral', 'Visão geral'], ['contatos', `Contatos (${contatos.length})`], ['oportunidades', `Oportunidades (${ops.length})`], ['historico', `Histórico (${hist.length})`], ['agenda', 'Agenda setorial'], ['busca', 'Encontrar contatos']].map(([k, l]) => `<button role="tab" data-tab="${k}" class="${tab === k ? 'active' : ''}">${l}</button>`).join('')}
+      ${[['geral', 'Visão geral'], ['contatos', `Contatos (${contatos.length})`], ['oportunidades', `Oportunidades (${ops.length})`], ['historico', `Histórico (${hist.length})`], ['agenda', 'Agenda setorial'], ['google', 'E-mails, arquivos e agenda'], ['busca', 'Encontrar contatos']].map(([k, l]) => `<button role="tab" data-tab="${k}" class="${tab === k ? 'active' : ''}">${l}</button>`).join('')}
     </div><div id="tab"></div>`;
     const T = view.querySelector('#tab');
 
@@ -91,10 +95,10 @@ export async function render(view, { arg, params }) {
       };
     }
     if (tab === 'oportunidades') {
-      T.innerHTML = ops.length ? `<div class="table-wrap"><table><thead><tr><th>Oportunidade</th><th>Linha</th><th>Modalidade</th><th>Mecanismo</th><th>Etapa</th><th class="num">Valor</th><th class="num">Ponderado</th><th>Próximo passo</th></tr></thead><tbody>
-        ${ops.map(x => `<tr class="row-link" data-op="${esc(x.id)}"><td class="title">${esc(x.titulo)}</td><td class="small">${esc(agenda?.linhas.find(l => l.id === x.linha)?.nome || '—')}</td><td class="small">${esc(modNome(x.modalidade))}</td><td class="small">${x.mecanismo ? esc(mecCurto(x.mecanismo)) : '—'}</td><td>${funilBadge(x.etapa)}</td><td class="num">${money(x.valor)}</td><td class="num">${money(store.pipelineValor(x))}</td><td class="small">${esc(x.proximoPasso || '—')}${x.proximoEm ? ` (${fmtDate(x.proximoEm)})` : ''}</td></tr>`).join('')}</tbody></table></div>`
+      T.innerHTML = ops.length ? `<div class="table-wrap"><table><thead><tr><th>Oportunidade</th><th>Linha</th><th>Modalidade</th><th>Mecanismo</th><th>Etapa</th><th class="num">Valor</th><th class="num">Ponderado</th><th>Próximo passo</th><th></th></tr></thead><tbody>
+        ${ops.map(x => `<tr class="row-link" data-op="${esc(x.id)}"><td class="title">${esc(x.titulo)}</td><td class="small">${esc(agenda?.linhas.find(l => l.id === x.linha)?.nome || '—')}</td><td class="small">${esc(modNome(x.modalidade))}</td><td class="small">${x.mecanismo ? esc(mecCurto(x.mecanismo)) : '—'}</td><td>${funilBadge(x.etapa)}</td><td class="num">${money(x.valor)}</td><td class="num">${money(store.pipelineValor(x))}</td><td class="small">${esc(x.proximoPasso || '—')}${x.proximoEm ? ` (${fmtDate(x.proximoEm)})` : ''}</td><td class="nowrap"><button class="btn sm" data-prop="${esc(x.id)}">${x.propostaEm ? 'Proposta ' + esc(x.propostaNum || '') : 'Gerar proposta'}</button></td></tr>`).join('')}</tbody></table></div>`
         : `<div class="card"><div class="empty">Nenhuma oportunidade. <button class="btn sm" id="opp2">Criar oportunidade</button></div></div>`;
-      T.querySelectorAll('[data-op]').forEach(tr => tr.onclick = () => openOportunidadeForm(store.get('oportunidades', tr.dataset.op), draw));
+      T.querySelectorAll('[data-op]').forEach(tr => tr.onclick = e => { const b = e.target.closest('[data-prop]'); if (b) { gerarProposta(b.dataset.prop).then(draw); return; } openOportunidadeForm(store.get('oportunidades', tr.dataset.op), draw); });
       T.querySelector('#opp2')?.addEventListener('click', () => openOportunidadeForm({ orgId: o.id, setor: o.setor }, draw));
     }
     if (tab === 'historico') {
@@ -120,6 +124,20 @@ export async function render(view, { arg, params }) {
         if (b.dataset.add) { o.mecanismos = [...new Set([...(o.mecanismos || []), b.dataset.add])]; store.touch('orgs'); draw(); }
         if (b.dataset.rm) { o.mecanismos = (o.mecanismos || []).filter(x => x !== b.dataset.rm); store.touch('orgs'); draw(); }
       };
+    }
+    if (tab === 'google') {
+      const g = G.status(), dom = o.site ? store.dominio(o.site) : '', nome = o.nomeFantasia || o.nome;
+      if (!g.conectado) T.innerHTML = '<div class="card"><div class="empty">Conecte a conta Google em <a href="#/config">Configurações</a> para ver aqui os e-mails, os arquivos do Drive e os compromissos ligados a esta organização.</div></div>';
+      else {
+        T.innerHTML = `<div class="grid g3"><div class="card"><h3>E-mails ${icon('mail', 15)}</h3><div id="g-mail"><div class="empty">Buscando…</div></div></div><div class="card"><h3>Arquivos no Drive ${icon('materiais', 15)}</h3><div id="g-drive"><div class="empty">Buscando…</div></div></div><div class="card"><h3>Agenda ${icon('agenda', 15)}</h3><div id="g-cal"><div class="empty">Buscando…</div></div></div></div>`;
+        const put = (id, h) => { const el = T.querySelector(id); if (el) el.innerHTML = h; };
+        const falha = (id, e, perm) => put(id, `<div class="empty">${G.hasScope(perm) ? esc(e.message) : 'Permissão não concedida. Ative em Configurações e reconecte.'}</div>`);
+        const emails = contatos.map(c => c.email).filter(isEmail);
+        const q = [dom && `from:${dom} OR to:${dom}`, ...emails.slice(0, 6).map(e => `from:${e} OR to:${e}`)].filter(Boolean).join(' OR ') || `"${nome}"`;
+        G.threadsDetalhe(q, 8).then(l => put('#g-mail', l.length ? `<div class="list">${l.map(t => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="https://mail.google.com/mail/u/0/#all/${esc(t.id)}">${esc(t.assunto)}</a><div class="meta">${esc(t.de.replace(/<.*>/, '').trim())} · ${t.n} mensagem(ns) · ${fmtDate(t.data)}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhuma conversa encontrada.</div>')).catch(e => falha('#g-mail', e, 'read'));
+        G.driveSearch(nome, 10).then(r => put('#g-drive', (r.files || []).length ? `<div class="list">${r.files.map(f => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="${esc(f.webViewLink)}">${esc(f.name)}</a><div class="meta">${esc(f.owners?.[0]?.displayName || '')} · ${fmtDate(f.modifiedTime)}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhum arquivo cita esta organização.</div>')).catch(e => falha('#g-drive', e, 'drive'));
+        G.calendarSearch(nome).then(r => put('#g-cal', (r.items || []).length ? `<div class="list">${r.items.map(ev => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="${esc(ev.htmlLink)}">${esc(ev.summary || '(sem título)')}</a><div class="meta">${fmtDateTime(ev.start.dateTime || ev.start.date)}${ev.hangoutLink ? ` · <a target="_blank" rel="noopener" href="${esc(ev.hangoutLink)}">Meet</a>` : ''}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhum compromisso com esta organização.</div>')).catch(e => falha('#g-cal', e, 'calendar'));
+      }
     }
     if (tab === 'busca') {
       const links = linksBusca(o.nomeFantasia || o.nome, { site: o.site });

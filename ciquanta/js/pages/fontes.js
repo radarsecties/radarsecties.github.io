@@ -8,7 +8,7 @@ export async function render(view) {
   const grupos = [...new Set(fontes.itens.map(f => f.tipo))];
   view.innerHTML = `<div class="section-head"><div><h2>Fontes e referências</h2><p>Origem das informações usadas no mapeamento setorial, nas apresentações e na base de mecanismos. Documentos oficiais internos do CIQUANTA aparecem sem link público.</p></div></div>
     <div class="grid g3" style="margin-bottom:16px">
-      <div class="card acento"><h3>Atuação quântica confirmada</h3><p class="small" style="margin:0">Há registro público, em fonte identificada, de projeto, equipe, programa ou parceria em computação ou tecnologias quânticas.</p></div>
+      <div class="card acento"><h3>Atuação quântica confirmada</h3><p class="small" style="margin:0">Há registro público, em fonte identificada, de projeto, equipe, programa ou parceria em computação ou tecnologias quânticas. Para empresas cujo negócio é a própria tecnologia quântica, a referência é o perfil público da empresa.</p></div>
       <div class="card acento"><h3>Indícios públicos</h3><p class="small" style="margin:0">Há sinal público relacionado (declaração, participação em evento, infraestrutura de computação de alto desempenho), sem projeto quântico documentado.</p></div>
       <div class="card acento"><h3>Perfil compatível</h3><p class="small" style="margin:0">Sem atuação quântica documentada; a organização investe em P&D, tem obrigação regulatória de PD&I ou atua em setor com aplicação identificada.</p></div>
     </div>

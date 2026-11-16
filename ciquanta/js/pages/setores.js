@@ -87,5 +87,5 @@ async function detalhe(view, id, mecs, ref) {
 
 export function fromRef(r) {
   return { id: 'org-' + r.id.slice(4), nome: r.nome, segmento: r.segmento, setor: r.setor, uf: r.uf, cidade: r.cidade, site: r.site, evidencia: r.evidencia, atuacao: r.atuacao,
-    fontes: r.fontes, bloco: r.bloco, prioridade: r.prioridade, notas: r.notas, mecanismos: [...(store.setoresLista().find(x => x.id === r.setor)?.mecanismos || [])], relacionamento: 'mapeada', origem: 'Mapeamento setorial CIQUANTA', refId: r.id, criadoEm: new Date().toISOString() };
+    fontes: r.fontes, bloco: r.bloco, prioridade: r.prioridade, notas: r.notas, tags: [...(r.tags || [])], mecanismos: [...(store.setoresLista().find(x => x.id === r.setor)?.mecanismos || [])], relacionamento: 'mapeada', origem: 'Mapeamento setorial CIQUANTA', refId: r.id, criadoEm: new Date().toISOString() };
 }

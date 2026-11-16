@@ -136,8 +136,9 @@ export async function openOportunidadeForm(op = {}, onSave) {
     <label class="field full">Notas<textarea name="notas">${esc(op.notas)}</textarea></label>
   </form>`;
   const { el, close } = modal({ title: op.id ? 'Editar oportunidade' : 'Nova oportunidade', body, wide: true,
-    footer: `<button class="btn" data-close>Cancelar</button><button class="btn primary" id="op-save">Salvar</button>` });
+    footer: `${op.id ? '<button class="btn" id="op-prop" style="margin-right:auto">Gerar proposta em PDF</button>' : ''}<button class="btn" data-close>Cancelar</button><button class="btn primary" id="op-save">Salvar</button>` });
   const f = el.querySelector('#op-form');
+  el.querySelector('#op-prop')?.addEventListener('click', async () => { const { gerarProposta } = await import('./proposta.js'); gerarProposta(op.id); });
   f.etapa.onchange = () => { f.probabilidade.value = (FUNIL.find(x => x.id === f.etapa.value) || FUNIL[0]).prob; };
   f.orgId.onchange = () => { const o = store.get('orgs', f.orgId.value); if (o?.setor && !f.setor.value) { f.setor.value = o.setor; f.setor.dispatchEvent(new Event('change')); } };
   f.setor.onchange = () => { const ls = store.setoresLista().find(s => s.id === f.setor.value)?.linhas || []; f.linha.innerHTML = options(ls.map(l => ({ id: l.id, nome: l.nome })), '', { empty: '—' }); };
