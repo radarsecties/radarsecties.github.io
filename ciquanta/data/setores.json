@@ -85,25 +85,25 @@
     "ano": "2026",
     "fase": "Implantação",
     "itens": [
-     "Equipe formada em treinamento na China",
-     "Linhas de pesquisa estruturadas",
-     "Linhas de base clássicas e emuladores",
-     "Instâncias brasileiras de referência"
+     "Capacitação da primeira equipe paraibana na CETC-ICQ, em Suzhou",
+     "Chegada do primeiro lote de equipamentos e início da instalação",
+     "Início do comissionamento em 20 de novembro",
+     "Linhas de base clássicas, emuladores e instâncias brasileiras de referência"
     ]
    },
    {
     "ano": "2027",
-    "fase": "Comissionamento",
+    "fase": "Operação plena",
     "itens": [
-     "Comissionamento e certificação das máquinas",
-     "Primeiros experimentos híbridos no GJQ-20",
-     "Plataforma em nuvem e Hub Nacional",
-     "Primeiras chamadas com empresas"
+     "Conclusão do comissionamento e certificação das duas máquinas",
+     "Abertura da plataforma em nuvem e do Hub Nacional de Experimentação Quântica",
+     "Primeiras chamadas de pesquisa aplicada com empresas e bancos",
+     "Primeiros experimentos híbridos no GJQ-20"
     ]
    },
    {
     "ano": "2027+",
-    "fase": "Operação plena",
+    "fase": "Pesquisa aplicada",
     "itens": [
      "Experimentos de fronteira no GJQ-100",
      "Validações aplicadas com instituições",
@@ -304,7 +304,8 @@
    ],
    "fonte": "ciq-agenda-fin",
    "oficial": true,
-   "ref": "o sistema financeiro"
+   "ref": "o sistema financeiro",
+   "estrategico": true
   },
   {
    "id": "saude",
@@ -424,7 +425,8 @@
     "faps",
     "marco-legal-cti"
    ],
-   "ref": "saúde e ciências da vida"
+   "ref": "saúde e ciências da vida",
+   "estrategico": true
   },
   {
    "id": "agro",
@@ -544,7 +546,8 @@
     "bndes",
     "faps"
    ],
-   "ref": "o agronegócio"
+   "ref": "o agronegócio",
+   "estrategico": true
   },
   {
    "id": "clima",
@@ -664,7 +667,8 @@
     "fundos-patrimoniais",
     "lei-do-bem"
    ],
-   "ref": "clima e meio ambiente"
+   "ref": "clima e meio ambiente",
+   "estrategico": true
   },
   {
    "id": "energia",
@@ -790,7 +794,8 @@
     "bndes",
     "fne-bnb"
    ],
-   "ref": "energia elétrica"
+   "ref": "energia elétrica",
+   "estrategico": true
   },
   {
    "id": "oleo-gas",
@@ -910,7 +915,8 @@
     "finep",
     "bndes"
    ],
-   "ref": "petróleo, gás e biocombustíveis"
+   "ref": "petróleo, gás e biocombustíveis",
+   "estrategico": false
   },
   {
    "id": "logistica",
@@ -1030,7 +1036,8 @@
     "bndes",
     "fne-bnb"
    ],
-   "ref": "logística, transporte e mobilidade"
+   "ref": "logística, transporte e mobilidade",
+   "estrategico": false
   },
   {
    "id": "industria",
@@ -1151,7 +1158,8 @@
     "bndes",
     "nib"
    ],
-   "ref": "indústria, materiais e mineração"
+   "ref": "indústria, materiais e mineração",
+   "estrategico": false
   },
   {
    "id": "telecom",
@@ -1277,7 +1285,8 @@
     "embrapii",
     "finep"
    ],
-   "ref": "telecomunicações e cibersegurança"
+   "ref": "telecomunicações e cibersegurança",
+   "estrategico": false
   },
   {
    "id": "governo-defesa",
@@ -1397,7 +1406,8 @@
     "finep",
     "funttel"
    ],
-   "ref": "governo, defesa e soberania"
+   "ref": "governo, defesa e soberania",
+   "estrategico": false
   },
   {
    "id": "seguros",
@@ -1414,7 +1424,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "seguros e previdência"
+   "ref": "seguros e previdência",
+   "estrategico": false
   },
   {
    "id": "mineracao",
@@ -1432,7 +1443,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "mineração e siderurgia"
+   "ref": "mineração e siderurgia",
+   "estrategico": false
   },
   {
    "id": "quimica",
@@ -1450,7 +1462,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "química e materiais"
+   "ref": "química e materiais",
+   "estrategico": false
   },
   {
    "id": "semicondutores",
@@ -1468,7 +1481,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "eletrônica e semicondutores"
+   "ref": "eletrônica e semicondutores",
+   "estrategico": false
   },
   {
    "id": "automotivo",
@@ -1485,7 +1499,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "automotivo e autopeças"
+   "ref": "automotivo e autopeças",
+   "estrategico": false
   },
   {
    "id": "aeroespacial",
@@ -1503,7 +1518,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "aeroespacial e defesa"
+   "ref": "aeroespacial e defesa",
+   "estrategico": false
   },
   {
    "id": "tic",
@@ -1521,7 +1537,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "tIC, nuvem e software"
+   "ref": "tIC, nuvem e software",
+   "estrategico": false
   },
   {
    "id": "varejo",
@@ -1537,7 +1554,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "varejo e consumo"
+   "ref": "varejo e consumo",
+   "estrategico": false
   },
   {
    "id": "ecossistema",
@@ -1556,7 +1574,8 @@
    "linhas": [],
    "desafios": [],
    "contexto": [],
-   "ref": "ecossistema quântico"
+   "ref": "ecossistema quântico",
+   "estrategico": false
   }
  ]
 }

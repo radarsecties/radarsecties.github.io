@@ -1,43 +1,31 @@
 {
   "id": "institucional",
   "titulo": "CIQUANTA: apresentação institucional",
-  "fonte": "Apresentação CIQUANTA, Reunião Executiva; Booklet institucional; Convite oficial de inauguração (SECTIES-PB, 2026)",
-  "slides": [
-    { "tipo": "capa", "titulo": "Centro Internacional de Computação Quântica", "sub": "Investimento em pesquisa e inovação para o desenvolvimento da indústria e a soberania nacional" },
-    { "tipo": "numeros", "titulo": "O que é o CIQUANTA", "texto": [
-        "O Centro Internacional de Computação Quântica do Estado da Paraíba é o primeiro centro internacional dedicado à computação quântica operacional no Brasil, concebido para integrar infraestrutura científica avançada, formação de recursos humanos e articulação com o setor produtivo.",
-        "O projeto é uma parceria entre o Governo do Estado da Paraíba (Secretaria de Ciência, Tecnologia, Inovação e Ensino Superior), o Ministério da Ciência, Tecnologia e Inovação e o Suzhou Quantum Center (CETC-ICQ)."],
-      "numeros": [ { "n": "R$ 100 mi +", "d": "investidos na aquisição e construção da infraestrutura em João Pessoa" }, { "n": "1º", "d": "computador quântico operacional da América Latina" }, { "n": "100 / 20", "d": "qubits nos dois computadores supercondutores" } ] },
-    { "tipo": "cards", "titulo": "Estrutura pioneira da América Latina", "cards": [
-        { "t": "Infraestrutura científica avançada", "d": "Ambiente para pesquisas aplicadas em computação quântica, integrando experimentação, espaços colaborativos e cooperação nacional e internacional." },
-        { "t": "Plataforma de formação", "d": "Formação dos profissionais e especialistas responsáveis pelo ecossistema das novas fronteiras tecnológicas." },
-        { "t": "Sustentabilidade planejada", "d": "Modelo de parcerias voltado à pesquisa de fronteira para setores estratégicos, conexões acadêmicas e parceiros institucionais." } ], "imagem": "assets/img/chip.png" },
-    { "tipo": "foto", "titulo": "Estação Cabo Branco, João Pessoa", "texto": "Mais de 5.100 m² dedicados ao centro, no complexo projetado por Oscar Niemeyer, próximo ao ponto mais oriental das Américas. Salas técnicas isoladas, área criogênica dedicada, racks de instrumentação, datacenter clássico e estações de controle integradas.", "imagem": "assets/img/predio.jpg",
-      "itens": [ { "t": "Salas blindadas", "d": "Proteção eletromagnética até 18 GHz" }, { "t": "Vibração", "d": "Piso com estabilidade nível VC-E" }, { "t": "Áreas técnicas", "d": "Chillers dedicados e proteção contra incêndio" } ] },
-    { "tipo": "hardware", "titulo": "Hardware quântico", "lead": "Dois computadores quânticos supercondutores, estruturados em quatro camadas: processamento quântico, ambiente criogênico, controle eletrônico de alta precisão e sistemas de operação clássicos.",
-      "blocos": [
-        { "t": "Núcleo quântico", "itens": ["100 qubits (GJQ-100) e 20 qubits (GJQ-20)", "Arquitetura supercondutora", "180 ou mais acopladores sintonizáveis (100q); 19 ou mais (20q)", "Chip com encapsulamento criogênico dedicado"] },
-        { "t": "Ambiente criogênico", "itens": ["Refrigerador de diluição XS1000 (100q) e XS400 (20q)", "Temperatura de operação próxima de 10 mK", "Resfriamento em até 36 h (100q) e 30 h (20q)", "Compressão e resfriamento a água"] },
-        { "t": "Controle e medição", "itens": ["Geração de sinais RF, IF e formas de onda", "Leitura quântica por excitação e coleta", "Amplificação criogênica e em temperatura ambiente", "Sincronização de alta precisão"] },
-        { "t": "Desempenho", "itens": ["Fidelidade de porta de 1 e 2 qubits de 99% ou mais", "Leitura de 95% ou mais", "Coerência de 50 μs / 30 μs (100q) e 30 μs / 20 μs (20q)", "Peso de até 3,5 toneladas"] } ] },
-    { "tipo": "cards", "titulo": "Plataforma e redes quânticas", "lead": "A infraestrutura combina computação quântica em nuvem com redes de distribuição de chaves baseadas em variáveis contínuas, integradas a redes ópticas existentes.", "cards": [
-        { "t": "Plataforma em nuvem", "d": "Acesso remoto multiusuário, execução híbrida e integração com a plataforma Tiangong e com Qiskit, Cirq e OpenQASM." },
-        { "t": "Integração", "d": "Usuários, nuvem, processador quântico e redes QKD em um mesmo fluxo; chaves quânticas alimentando TLS e IPsec." },
-        { "t": "Redes quânticas (CV-QKD)", "d": "Modulação em amplitude e fase com estados coerentes gaussianos e detecção por medição coerente." } ] },
-    { "tipo": "cards", "titulo": "Programas de capacitação", "cards": [
-        { "t": "Residência Tecnológica em Computação Quântica", "d": "Programa anual com a Softex, com base no termo de referência aprovado pela Resolução CATI nº 1.109/2025, com trilhas introdutória, intermediária e avançada e módulos de empreendedorismo deep tech." },
-        { "t": "Q-CiQ Brasil Hackathon", "d": "Ciclos temáticos ao longo do ano, com desafios científicos e industriais reais, como porta de entrada para a residência e a pesquisa aplicada." },
-        { "t": "Computação quântica aplicada à indústria", "d": "Laboratórios de aplicação industrial, formação executiva e técnica e residências corporativas." } ] },
-    { "tipo": "cards", "titulo": "Ecossistema de parceiros", "lead": "O programa de parceiros amplia o impacto e a operação do centro em território nacional e internacional.", "cards": [
-        { "t": "Institucionais", "d": "Integração do CIQUANTA a políticas públicas de CT&I, mobilização de recursos estruturantes por agências de fomento, bancos de desenvolvimento e organismos internacionais." },
-        { "t": "Industriais e tecnológicos", "d": "Projetos conjuntos de P&D com empresas, uso da infraestrutura para testes e simulações e aplicações em IA, otimização e segurança digital." },
-        { "t": "Acadêmicos", "d": "Pós-graduação, intercâmbio científico, formação de pesquisadores e produção científica em algoritmos e aplicações quânticas." } ] },
-    { "tipo": "cards", "titulo": "Instrumentos de financiamento de projetos", "lead": "Projetos com o CIQUANTA podem combinar instrumentos do marco legal de ciência, tecnologia e inovação.", "cards": [
-        { "t": "Lei do Bem", "d": "Exclusão adicional de dispêndios de P&D; projetos executados por ICT podem ter exclusão de 50% a 250% (art. 19-A)." },
-        { "t": "Lei de TICs e EMBRAPII", "d": "Obrigações de PD&I aplicadas com instituições credenciadas e cofinanciamento não reembolsável de projetos industriais." },
-        { "t": "FNDCT, Finep e encomenda tecnológica", "d": "Chamadas cooperativas, subvenção e contratação pública de soluções com risco tecnológico." } ] },
-    { "tipo": "cronograma", "titulo": "Da fundação à operação plena" },
-    { "tipo": "evento", "titulo": "Inauguração", "data": "Sexta-feira, 11 de dezembro de 2026, às 17 horas", "local": "Av. João Cirilo da Silva, s/n, Altiplano Cabo Branco, João Pessoa, Paraíba" },
-    { "tipo": "encerramento", "titulo": "A nova fronteira quântica chegou ao Brasil no Estado da Paraíba." }
+  "fonte": "CIQUANTA, Apresentação Institucional (SECTIES-PB, novembro de 2026)",
+  "pdf": "assets/docs/ciquanta-apresentacao-institucional.pdf",
+  "pasta": "assets/deck/institucional/",
+  "paginas": [
+    "CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba. O primeiro centro operacional de tecnologias quânticas da América Latina.",
+    "O projeto em números: R$ 200 milhões de investimento total (R$ 140 milhões do Governo da Paraíba e R$ 60 milhões do MCTI); primeiro centro com computadores quânticos operacionais da América Latina; 120 qubits supercondutores em duas máquinas, de 100 e de 20 qubits; 8.500 m² de área total, com 5 laboratórios multiusuário e 5 auditórios; 10 mK de temperatura de operação; chegada dos equipamentos e início do comissionamento em 20 de novembro de 2026.",
+    "O mercado quântico global: mais de US$ 20 bilhões de capital acumulado em empresas do setor; 830 empresas quantum core e 4.622 organizações mapeadas; pedidos internacionais de patentes multiplicados por 7; crescimento anual projetado de 20%; 1,1% do investimento mundial em P&D; os Estados Unidos concentram 60% do funding global e 31% das patentes recentes. Fonte: OCDE.",
+    "Operação quântica atual: onze países concentram a infraestrutura quântica instalada (Estados Unidos, China, Canadá, Alemanha, Japão, Reino Unido, França, Finlândia, Austrália, Coreia do Sul e Índia). Brasil a partir de 2026, com o CIQUANTA, em João Pessoa.",
+    "Ponto de inflexão da América Latina: 11 países com máquinas em território próprio, nenhuma instalação na América Latina antes do CIQUANTA, uma em João Pessoa.",
+    "Sede: Estação das Artes Luciano Agra. Governo do Estado da Paraíba (SECTIES-PB), proponente e sede; Ministério da Ciência, Tecnologia e Inovação, contrapartidas federais e inserção na IBQuântica; CETC-ICQ, Suzhou, China, fornecimento, instalação, comissionamento e transferência tecnológica.",
+    "Três pilares estruturantes: infraestrutura de classe mundial; capital humano, com formação e fixação; indústria, com conversão em valor.",
+    "Infraestrutura física de alta precisão: salas blindadas até 18 GHz; estabilidade vibracional nível VC-E; área criogênica com N₂, He-3 e He-4; computação clássica integrada.",
+    "Arquitetura do hardware quântico: núcleo quântico, ambiente criogênico, controle e medição, operação clássica.",
+    "Mapa de acoplamento do GJQ-100: 100 qubits em grade 10 × 10, 180 ou mais acopladores sintonizáveis, fidelidade de porta de 2 qubits de 99% ou mais, tempo de coerência T₁ de 50 μs.",
+    "A cadeia criogênica até 10 mK: 300 K, 50 K, 4 K, 800 mK, 100 mK e 10 mK. Resfriamento completo em até 36 h no GJQ-100 e 30 h no GJQ-20.",
+    "Duas máquinas, dois papéis: GJQ-100, principal ativo de pesquisa; GJQ-20, formação, testes e desenvolvimento de algoritmos.",
+    "Cooperação Brasil–China: transferência de tecnologia, capacitação técnica internacional e ponte federativa e diplomática.",
+    "Roadmap de implantação: 2025, concepção e pactuação; 2026, implantação; 2027, operação plena.",
+    "Capital humano e atração de talentos: atração de pesquisadores, formação avançada e operação especializada.",
+    "Domínios de aplicação: otimização, química e materiais, IA quântica, segurança e criptografia.",
+    "Aplicações setoriais estratégicas: finanças, energia, agro e clima, saúde.",
+    "Hub Nacional de Experimentação Quântica: CIQUANTA-PB, plataforma em nuvem, universidades, empresas, governo e startups.",
+    "O ecossistema paraibano: João Pessoa, Campina Grande e sertão paraibano.",
+    "Popularização da ciência: população, educação básica e interiorização.",
+    "A equipe do projeto.",
+    "CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba. ciquanta.secties.pb.gov.br"
   ]
 }

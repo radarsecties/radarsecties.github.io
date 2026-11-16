@@ -8,7 +8,7 @@ export const VARIAVEIS = [
   ['pronome', 'Pronome de tratamento (Vossa Excelência, Vossa Magnificência, Vossa Senhoria)'],
   ['nome', 'Nome do contato'], ['primeiro_nome', 'Primeiro nome'], ['cargo', 'Cargo'],
   ['organizacao', 'Organização'], ['setor', 'Setor da organização'], ['uf', 'UF'], ['cidade', 'Cidade'],
-  ['mecanismo', 'Mecanismo de fomento associado'], ['apresentacao', 'Link da apresentação setorial'],
+  ['mecanismo', 'Mecanismo de fomento associado'], ['apresentacao', 'Link da apresentação setorial'], ['institucional', 'Link da apresentação institucional'],
   ['remetente', 'Seu nome'], ['cargo_remetente', 'Seu cargo'], ['telefone_remetente', 'Seu telefone'],
   ['data', 'Data de hoje por extenso'], ['evento', 'Nome do evento (campanha)'], ['data_evento', 'Data do evento (campanha)'],
 ];
@@ -55,6 +55,7 @@ export function varsFor(contato, extra = {}) {
     uf: org.uf || '', cidade: org.cidade || '',
     mecanismo: mec ? mecNome(mec) : 'a Lei do Bem (art. 19-A, projetos executados por ICT)',
     apresentacao: linkApresentacao(org.setor),
+    institucional: linkApresentacao('institucional'),
     remetente: c.remetenteNome || '', cargo_remetente: c.remetenteCargo || '', telefone_remetente: c.remetenteTelefone || '',
     data: hoje(), evento: '', data_evento: '',
     ...Object.fromEntries(Object.entries(extra || {}).filter(([, v]) => v)),
@@ -82,37 +83,38 @@ export function sanitize(html) {
 export function signatureHTML() {
   const c = cfg();
   if (!c.remetenteNome) return '';
-  const l = (t, w = 400, cor = '#464A5E') => `<tr><td style="font:${w} 13px 'Open Sans',Arial,sans-serif;color:${cor};padding:1px 0 1px 12px">${t}</td></tr>`;
+  const l = (t, w = 400, cor = '#5B6680') => `<tr><td style="font:${w} 13px Arial,Helvetica,sans-serif;color:${cor};padding:1px 0 1px 12px">${t}</td></tr>`;
   return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;border-left:3px solid #3056D5">
-  ${l(esc(c.remetenteNome), 700, '#0A122D')}${c.remetenteCargo ? l(esc(c.remetenteCargo)) : ''}
-  ${l('CIQUANTA · Centro Internacional de Computação Quântica')}${l('SECTIES · Governo da Paraíba')}
+  ${l(esc(c.remetenteNome), 700, '#14224A')}${c.remetenteCargo ? l(esc(c.remetenteCargo)) : ''}
+  ${l('CIQUANTA · Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba')}
   ${c.remetenteTelefone ? l(esc(c.remetenteTelefone)) : ''}${c.replyTo ? l(`<a href="mailto:${esc(c.replyTo)}" style="color:#3056D5">${esc(c.replyTo)}</a>`) : ''}</table>`;
 }
 
 export function wrapHTML(bodyHtml, { links = [], preheader = '' } = {}) {
   const c = cfg();
   const base = enderecoPublico();
-  const logo = base ? `<img src="${esc(base)}assets/logo-branco.png" width="220" alt="CIQUANTA" style="display:block;width:220px;height:auto;border:0">` : `<div style="font:800 24px Arial,sans-serif;color:#fff;letter-spacing:1px">CIQUANTA</div>`;
-  const parceiros = base ? `<img src="${esc(base)}assets/parceiros-marinho.png" width="420" alt="CETC · SECTIES · Governo da Paraíba · MCTI · Governo Federal" style="display:block;width:420px;max-width:100%;height:auto;border:0;margin:0 0 10px">` : '';
+  const logo = base ? `<img src="${esc(base)}assets/logo-azul.png" width="250" alt="CIQUANTA" style="display:block;width:250px;height:auto;border:0">` : `<div style="font:700 24px Arial,sans-serif;color:#3056D5;letter-spacing:2px">CIQUANTA</div>`;
+  const gov = base ? `<img src="${esc(base)}assets/secties-govpb.png" width="190" alt="Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior · Governo da Paraíba" style="display:block;width:190px;height:auto;border:0">` : '';
+  const parceiros = base ? `<img src="${esc(base)}assets/parceiros-marinho.png" width="480" alt="CETC · Ministério da Ciência, Tecnologia e Inovação · Governo do Brasil · SECTIES · Governo da Paraíba" style="display:block;width:480px;max-width:100%;height:auto;border:0;margin:0 0 12px">` : '';
   const linkBlock = links.length ? `<tr><td style="padding:0 36px 22px">
-      <div style="background:#EBEEF7;border-left:4px solid #3056D5;border-radius:0 10px 10px 0;padding:14px 18px">
-        <div style="font:700 11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#3056D5;margin-bottom:6px">Materiais</div>
-        ${links.map(l => `<div style="font:14px Arial,sans-serif;margin:5px 0"><a href="${esc(l.url)}" style="color:#0A122D;font-weight:600">${esc(l.titulo)}</a></div>`).join('')}
+      <div style="background:#EEF2FB;border-radius:8px;padding:16px 20px">
+        <div style="font:700 12px Arial,sans-serif;color:#C8232C;margin-bottom:6px">Materiais</div>
+        ${links.map(l => `<div style="font:14px Arial,sans-serif;margin:5px 0"><a href="${esc(l.url)}" style="color:#3056D5;font-weight:700">${esc(l.titulo)}</a></div>`).join('')}
       </div></td></tr>` : '';
   return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
-<body style="margin:0;background:#EBEEF7;padding:0">
+<body style="margin:0;background:#EEF2FB;padding:0">
 <span style="display:none;max-height:0;overflow:hidden;opacity:0">${esc(preheader)}</span>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EBEEF7;padding:26px 0">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EEF2FB;padding:26px 0">
 <tr><td align="center">
-<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden">
-<tr><td style="background:#0A122D;background-image:linear-gradient(115deg,#010209 0%,#0A122D 30%,#172A68 60%,#3056D5 100%);padding:28px 36px 24px">
-  ${logo}
-  <div style="font:600 12px Arial,sans-serif;color:#C8CFEA;margin-top:10px;letter-spacing:.04em">Centro Internacional de Computação Quântica do Estado da Paraíba</div>
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#ffffff;border-radius:10px;overflow:hidden">
+<tr><td style="padding:28px 36px 22px;border-bottom:3px solid #3056D5">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td valign="middle">${logo}</td><td valign="middle" align="right">${gov}</td></tr></table>
+  <div style="font:700 13px Arial,sans-serif;color:#14224A;margin-top:14px">Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba</div>
 </td></tr>
-<tr><td style="padding:30px 36px 10px;font:15px/1.65 'Open Sans',Arial,sans-serif;color:#0A122D">${bodyHtml}${signatureHTML()}</td></tr>
+<tr><td style="padding:30px 36px 10px;font:15px/1.6 Arial,Helvetica,sans-serif;color:#14224A">${bodyHtml}${signatureHTML()}</td></tr>
 ${linkBlock}
-<tr><td style="padding:18px 36px 26px;border-top:1px solid #DCE1EF;font:11.5px/1.55 Arial,sans-serif;color:#727892">
-  ${parceiros}Estação Cabo Branco, Altiplano Cabo Branco, João Pessoa (PB)<br>${esc(c.rodape || '')}
+<tr><td style="padding:20px 36px 26px;border-top:1px solid #D5DCEA;font:11.5px/1.55 Arial,sans-serif;color:#5B6680">
+  ${parceiros}Estação das Artes Luciano Agra, Altiplano Cabo Branco, João Pessoa (PB) · <a href="https://ciquanta.secties.pb.gov.br" style="color:#3056D5">ciquanta.secties.pb.gov.br</a><br>${esc(c.rodape || '')}
 </td></tr>
 </table></td></tr></table></body></html>`;
 }

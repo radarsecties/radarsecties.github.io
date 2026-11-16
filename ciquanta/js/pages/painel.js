@@ -26,16 +26,16 @@ export async function render(view) {
   const live = monitor.estado();
 
   view.innerHTML = `
-  <section class="hero">
-    <img class="logo" src="assets/logo-branco.png" alt="CIQUANTA">
-    <p>Relações institucionais do Centro Internacional de Computação Quântica: empresas, fomentadores e autoridades, oportunidades de negócio, campanhas pela conta Google do centro e apresentações setoriais.</p>
+  <section class="hero"><div class="tx">
+    <img class="logo l-light" src="assets/logo-azul.png" alt="CIQUANTA"><img class="logo l-dark" src="assets/logo-branco.png" alt="CIQUANTA">
+    <h2>Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba</h2>
+    <p>Relações institucionais: empresas que investem em P&D, fomentadores e autoridades, oportunidades de negócio, cadências de contato pela conta Google do centro e apresentações.</p>
     <div class="hero-actions">
       ${s.orgs.length ? '' : '<a class="btn primary" href="#/busca?aba=referencia">Importar mapeamento setorial</a>'}
-      <a class="btn" href="#/oportunidades">${icon('oportunidades', 16)} Oportunidades</a>
-      <a class="btn" href="#/campanhas">${icon('campanhas', 16)} Campanhas</a>
-      <a class="btn" href="#/apresentacoes">${icon('apresentacoes', 16)} Apresentações</a>
-    </div>
-    <img class="chip-img" src="assets/img/chip.png" alt="">
+      <a class="btn primary" href="#/oportunidades">${icon('oportunidades', 16)} Oportunidades</a>
+      <a class="btn" href="#/cadencias">${icon('campanhas', 16)} Cadências</a>
+      <a class="btn" href="#/apresentacoes/institucional">${icon('apresentacoes', 16)} Apresentação institucional</a>
+    </div></div><div class="foto" role="img" aria-label="Criostato do computador quântico"></div>
   </section>
 
   <div class="grid g4" style="margin-bottom:16px">

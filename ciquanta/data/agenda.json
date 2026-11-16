@@ -1,8 +1,59 @@
 {
-  "itens": [
-    { "id": "ag-rsvp", "data": "2026-12-10", "hora": "", "titulo": "Prazo de confirmação de presença na inauguração", "tipo": "prazo", "local": "ciquanta@secties.pb.gov.br", "descricao": "Data-limite indicada no convite oficial.", "link": "", "aConfirmar": false },
-    { "id": "ag-inauguracao", "data": "2026-12-11", "hora": "17:00", "titulo": "Inauguração do CIQUANTA", "tipo": "institucional", "local": "Av. João Cirilo da Silva, s/n, Altiplano Cabo Branco, João Pessoa (PB)", "descricao": "Solenidade de inauguração. Recepção a partir das 16h30; coquetel após a solenidade.", "link": "", "aConfirmar": false },
-    { "id": "ag-wqd", "data": "2027-04-14", "hora": "", "titulo": "Dia Mundial Quântico", "tipo": "setorial", "local": "", "descricao": "Data anual fixa, adequada a visitas técnicas e comunicação institucional.", "link": "https://worldquantumday.org/", "aConfirmar": false },
-    { "id": "ag-formpd", "data": "2027-07-31", "hora": "", "titulo": "Prazo do FORMP&D da Lei do Bem (ano-base 2026)", "tipo": "prazo", "local": "MCTI", "descricao": "Prazo usual de prestação de informações das empresas ao MCTI. Momento oportuno para tratar de projetos executados com ICT (art. 19-A). Confirmar o prazo vigente.", "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem", "aConfirmar": true }
-  ]
+ "itens": [
+  {
+   "id": "ag-comiss",
+   "data": "2026-11-20",
+   "hora": "",
+   "titulo": "Início do comissionamento do computador quântico",
+   "tipo": "institucional",
+   "local": "Estação das Artes Luciano Agra, João Pessoa (PB)",
+   "descricao": "Marco do roadmap de implantação (Apresentação Institucional).",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-hall",
+   "data": "2026-12-10",
+   "hora": "",
+   "titulo": "Abertura do hall de exposição, com o computador montado",
+   "tipo": "institucional",
+   "local": "Estação das Artes Luciano Agra, João Pessoa (PB)",
+   "descricao": "Marco do roadmap de implantação (Apresentação Institucional). Também é a data-limite de confirmação de presença indicada no convite da solenidade de 11/12.",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-inauguracao",
+   "data": "2026-12-11",
+   "hora": "17:00",
+   "titulo": "Solenidade de inauguração (conforme convite)",
+   "tipo": "institucional",
+   "local": "Av. João Cirilo da Silva, s/n, Altiplano Cabo Branco, João Pessoa (PB)",
+   "descricao": "Data do convite oficial. O roadmap da Apresentação Institucional situa a inauguração oficial nos 100 primeiros dias de 2027: confirmar qual data prevalece.",
+   "link": "",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-wqd",
+   "data": "2027-04-14",
+   "hora": "",
+   "titulo": "Dia Mundial Quântico",
+   "tipo": "setorial",
+   "local": "",
+   "descricao": "Data anual fixa, adequada a visitas técnicas e comunicação institucional.",
+   "link": "https://worldquantumday.org/",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-formpd",
+   "data": "2027-07-31",
+   "hora": "",
+   "titulo": "Prazo do FORMP&D da Lei do Bem (ano-base 2026)",
+   "tipo": "prazo",
+   "local": "MCTI",
+   "descricao": "Prazo usual de prestação de informações das empresas ao MCTI. Momento oportuno para tratar de projetos executados com ICT (art. 19-A). Confirmar o prazo vigente.",
+   "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem",
+   "aConfirmar": true
+  }
+ ]
 }

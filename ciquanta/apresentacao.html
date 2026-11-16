@@ -1,33 +1,31 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CIQUANTA · Apresentação</title>
-<meta name="description" content="Apresentação do CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba.">
+<meta name="description" content="Apresentação do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/deck.css">
 <style>
-  body { background: #010209; color: #EEF1FA; }
-  .pub { max-width: 1180px; margin: 0 auto; padding: 22px 18px 40px; }
-  .pub header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
-  .pub header img { width: 200px; height: auto; }
-  .pub h1 { font-size: 17px; font-weight: 600; color: #C8CFEA; margin: 0; }
-  .pub .deck-bar .btn { background: #0E1736; color: #EEF1FA; border-color: #2C3D78; }
-  .pub .deck-bar .pg { color: #C8CFEA; }
-  .pub footer { margin-top: 22px; color: #8790B5; font-size: 13px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-  .pub footer a { color: #A9B8EE; }
+  html { color-scheme: light; }
+  body { background: #F7F9FD; color: #14224A; }
+  .pub { max-width: 1180px; margin: 0 auto; padding: 24px 18px 40px; }
+  .pub header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  .pub header img { width: 230px; height: auto; }
+  .pub h1 { font-size: 17px; font-weight: 700; color: #14224A; margin: 0; }
+  .pub .btn { background: #fff; color: #14224A; border-color: #BCC6DB; }
+  .pub footer { margin-top: 22px; color: #5B6680; font-size: 13px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .pub footer a { color: #3056D5; }
+  .pub footer img { height: 30px; width: auto; }
 </style>
 </head>
 <body>
 <div class="pub">
-  <header><img src="assets/logo-branco.png" alt="CIQUANTA"><h1 id="titulo">Carregando…</h1></header>
+  <header><img src="assets/logo-azul.png" alt="CIQUANTA"><h1 id="titulo">Carregando…</h1></header>
   <div id="viewer"></div>
-  <footer><span id="fonte"></span><span>Contato: <a href="mailto:ciquanta@secties.pb.gov.br">ciquanta@secties.pb.gov.br</a></span></footer>
+  <footer><span><span id="fonte"></span><br>Contato: <a href="mailto:ciquanta@secties.pb.gov.br">ciquanta@secties.pb.gov.br</a> · <a href="https://ciquanta.secties.pb.gov.br">ciquanta.secties.pb.gov.br</a></span><img src="assets/secties-govpb.png" alt="SECTIES, Governo da Paraíba"></footer>
 </div>
 <script type="module">
   import { buildDeck, mountViewer } from './js/deck.js';

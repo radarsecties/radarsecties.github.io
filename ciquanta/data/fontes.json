@@ -1,6 +1,12 @@
 {
   "itens": [
     {
+      "id": "ciq-institucional",
+      "titulo": "CIQUANTA, Apresentação Institucional (SECTIES-PB, novembro de 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
       "id": "ciq-deck-exec",
       "titulo": "Apresentação CIQUANTA, Reunião Executiva (SECTIES-PB, março de 2026)",
       "tipo": "Documento oficial",
@@ -233,6 +239,36 @@
       "titulo": "CESAR: Petrobras e CESAR em HPC para simulação de reservatórios",
       "tipo": "Fonte institucional",
       "url": "https://www.cesar.org.br/web/english/w/brazils-energy-giant-petrobras-taps-cesars-hpc-coding-prowess-to-cut-the-time-and-cost-for-reservoir-simulations"
+    },
+    {
+      "id": "itsection-kryptus",
+      "titulo": "IT Section: V/Cert adota algoritmo pós-quântico com HSM da Kryptus (junho de 2024)",
+      "tipo": "Imprensa",
+      "url": "https://itsection.com.br/2024/06/10/v-cert-adota-algoritmo-pos-quantico-com-hsm-da-kryptus-para-protecao-de-dados"
+    },
+    {
+      "id": "exame-dinamo",
+      "titulo": "Exame: o futuro da criptografia na era da computação quântica (Dinamo Networks, 2025)",
+      "tipo": "Imprensa",
+      "url": "https://exame.com/bussola/o-futuro-da-criptografia-na-era-da-computacao-quantica/"
+    },
+    {
+      "id": "fastcompany-quantica",
+      "titulo": "Fast Company Brasil: o futuro da computação quântica no Brasil",
+      "tipo": "Imprensa",
+      "url": "https://fastcompanybrasil.com/tech/o-futuro-da-computacao-quantica-no-brasil-potencial-desafios-e-oportunidades/"
+    },
+    {
+      "id": "timesbrasil-ibm",
+      "titulo": "Times Brasil: Brasil avança em computação quântica com parcerias da IBM",
+      "tipo": "Imprensa",
+      "url": "https://timesbrasil.com.br/empresas-e-negocios/tecnologia-e-inovacao/brasil-avanca-como-player-em-computacao-quantica-com-parcerias-da-ibm/"
+    },
+    {
+      "id": "fapesp-deeptech",
+      "titulo": "Agência FAPESP: Brasil tem o maior número de deep techs da América Latina (relatórios Emerge)",
+      "tipo": "Imprensa científica",
+      "url": "https://agencia.fapesp.br/brasil-tem-o-maior-numero-de-deeptechs-na-america-latina-mas-e-o-terceiro-em-investimento-privado/55955"
     }
   ]
 }

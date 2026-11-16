@@ -14,9 +14,9 @@ async function biblioteca(view) {
   const mats = store.list('materiais').filter(m => m.deckId);
   view.innerHTML = `<div class="section-head"><div><h2>Apresentações</h2><p>Apresentação institucional e agendas setoriais com a identidade do CIQUANTA. Cada uma tem um link público que pode seguir nas campanhas e nos e-mails; o destinatário vê os slides no navegador e pode salvar em PDF.</p></div></div>
     <div class="deck-grid" id="decks">${decks.map(d => `<div class="deck-thumb" data-id="${esc(d.id)}">
-      <div class="cover"><img src="assets/logo-branco.png" alt="CIQUANTA"><div><b>${esc(d.id === 'institucional' ? 'Apresentação institucional' : d.setor.nome)}</b><div class="small" style="opacity:.8">${d.id === 'institucional' ? 'Centro, infraestrutura e parceiros' : `${d.setor.linhas.length} linhas de pesquisa`}</div></div></div>
-      <div class="info"><div class="small muted" style="flex:1">${esc(d.sub)}</div>
-        <div class="tags">${d.oficial ? '<span class="badge ok">baseada em material oficial</span>' : '<span class="badge gray">formato da agenda oficial</span>'}${mats.some(m => m.deckId === d.id) ? '<span class="badge">nos materiais</span>' : ''}</div>
+      ${d.capa ? `<div class="cover img" style="background-image:url('${esc(d.capa)}')"></div>` : `<div class="cover"><img src="assets/logo-azul.png" alt="CIQUANTA"><div><div class="kicker">Agenda de pesquisa aplicada</div><b>${esc(d.setor.nome)}</b><div class="small muted">${d.setor.linhas.length} linhas de pesquisa</div></div></div>`}
+      <div class="info"><div class="title">${esc(d.titulo)}</div><div class="small muted" style="flex:1">${esc(d.sub)}</div>
+        <div class="tags">${d.id === 'institucional' ? '<span class="badge ok">apresentação oficial</span>' : d.oficial ? '<span class="badge ok">baseada em material oficial</span>' : '<span class="badge gray">formato da agenda oficial</span>'}<span class="badge gray">${d.slides} slides</span>${mats.some(m => m.deckId === d.id) ? '<span class="badge">nos materiais</span>' : ''}</div>
         <div class="toolbar" style="margin:0"><a class="btn sm primary" href="#/apresentacoes/${esc(d.id)}">Abrir</a><button class="btn sm" data-play="${esc(d.id)}">${icon('play', 13)} Apresentar</button><button class="btn sm" data-link="${esc(d.id)}">${icon('link', 13)} Link</button></div></div></div>`).join('')}</div>
     <div class="card" style="margin-top:20px"><h3>Apresentações no Google Drive <span class="muted">arquivos com "CIQUANTA" no nome ou no conteúdo</span></h3><div id="drive"></div></div>`;
   view.querySelector('#decks').addEventListener('click', async e => {
@@ -69,7 +69,7 @@ async function visualizar(view, id) {
       <div class="list" style="margin-top:6px">
         <div class="list-item"><button class="btn" id="mat">${icon('materiais', 15)} Incluir nos materiais das campanhas</button></div>
         ${setor ? `<div class="list-item"><button class="btn" id="camp">${icon('campanhas', 15)} Campanha para contatos do setor</button></div><div class="list-item"><a class="btn" href="#/setores/${esc(id)}">${icon('setores', 15)} Ver setor e organizações</a></div>` : ''}
-        <div class="list-item"><button class="btn" id="pdf">${icon('imprimir', 15)} Gerar PDF</button></div>
+        <div class="list-item"><button class="btn" id="pdf">${icon('imprimir', 15)} ${deck.pdf ? 'Baixar PDF oficial' : 'Gerar PDF'}</button></div>
       </div>
       <p class="muted small">Use as setas do teclado para navegar. Em tela cheia, clique na metade direita para avançar e na esquerda para voltar.</p></div></div>`;
   const off = mountViewer(view.querySelector('#viewer'), deck);
@@ -77,7 +77,7 @@ async function visualizar(view, id) {
   view.querySelector('#pdf').onclick = () => printDeck(deck);
   view.querySelector('#mat').onclick = () => {
     if (store.list('materiais').some(m => m.deckId === id)) { toast('Esta apresentação já está nos materiais.'); return; }
-    store.upsert('materiais', { titulo: deck.titulo.replace('CIQUANTA: ', 'Apresentação CIQUANTA: '), categoria: 'Apresentação institucional', url: link, deckId: id, descricao: 'Apresentação on-line com a identidade do CIQUANTA.' }, 'mat');
+    store.upsert('materiais', { titulo: deck.titulo.replace('CIQUANTA: ', 'Apresentação CIQUANTA: '), categoria: 'Apresentação institucional', url: link, deckId: id, descricao: deck.pdf ? 'Apresentação oficial, com versão em PDF.' : 'Apresentação on-line no template oficial do CIQUANTA.' }, 'mat');
     toast('Incluída nos materiais. Selecione-a ao montar uma campanha.', 'ok');
   };
   view.querySelector('#camp')?.addEventListener('click', () => {
