@@ -8,7 +8,7 @@ export async function render(view) {
   const draw = () => {
     const mods = store.list('modelos');
     const m = store.get('modelos', curId);
-    view.innerHTML = `<div class="section-head"><div><h2>Modelos de e-mail</h2><p>Textos-base para empresas, autoridades e fomentadores. Use variáveis como <code>{{saudacao}}</code> e <code>{{organizacao}}</code>: cada destinatário recebe a versão personalizada, no layout institucional do CIQuanta.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Modelos de e-mail</h2><p>Textos-base para empresas, autoridades e fomentadores. Use variáveis como <code>{{saudacao}}</code> e <code>{{organizacao}}</code>: cada destinatário recebe a versão personalizada, no layout institucional do CIQUANTA.</p></div>
       <div class="toolbar" style="margin:0"><button class="btn" id="restore">Restaurar modelos padrão</button><button class="btn primary" id="novo">+ Novo modelo</button></div></div>
       <div class="grid split">
         <div class="card" style="padding:8px"><div class="list">${mods.map(x => `<button class="list-item btn ghost" style="justify-content:flex-start;text-align:left;border-radius:8px;${x.id === curId ? 'background:var(--primary-soft)' : ''}" data-id="${esc(x.id)}"><div><div class="title">${esc(x.nome)}</div><div class="meta">${esc(x.categoria || 'Geral')}</div></div></button>`).join('') || '<div class="empty">Sem modelos.</div>'}</div></div>
@@ -34,8 +34,8 @@ export async function render(view) {
     };
     if (!m) return;
     const preview = () => {
-      const c = compose({ assunto: m.assunto, corpo: m.corpo, vars: { evento: 'Encontro CIQuanta de Tecnologias Quânticas', data_evento: '10 de março de 2027' } },
-        { nome: 'Ana Souza', tratamento: 'Prezada', cargo: 'Gerente de P&D', orgId: store.list('orgs')[0]?.id });
+      const c = compose({ assunto: m.assunto, corpo: m.corpo, vars: { evento: 'Encontro CIQUANTA de Tecnologias Quânticas', data_evento: '10 de março de 2027' } },
+        { nome: 'Ana Souza', tratamento: 'Prezada Senhora', cargo: 'Gerente de P&D', orgId: store.list('orgs')[0]?.id });
       view.querySelector('#pv').srcdoc = c.html; view.querySelector('#pv-s').textContent = c.subject;
     };
     preview();

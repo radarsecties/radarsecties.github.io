@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CIQuanta · Relações Institucionais</title>
-<meta name="description" content="Central de relações institucionais do CIQuanta-PB: CRM de empresas e fomentadores, mecanismos de incentivo à inovação, campanhas por Gmail, agenda setorial e painel.">
+<title>CIQUANTA · Relações Institucionais</title>
+<meta name="description" content="Sistema de relações institucionais do CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba.">
 <meta name="robots" content="noindex">
-<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/deck.css">
 <script>
   try { const t = localStorage.getItem('ciquanta:tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 </script>
@@ -18,42 +19,24 @@
 <body>
 <div class="app">
   <aside class="sidebar" id="sidebar">
-    <a class="brand" href="#/painel">
-      <img src="assets/logo.svg" alt="" width="40" height="40">
-      <span><strong>CIQuanta</strong><small>Relações Institucionais</small></span>
+    <a class="brand" href="#/painel" aria-label="CIQUANTA, início">
+      <img src="assets/logo-branco.png" alt="CIQUANTA" width="190" height="24">
+      <span>Relações Institucionais</span>
     </a>
-    <nav class="nav" id="nav">
-      <div class="nav-group">Visão geral</div>
-      <a href="#/painel" data-route="painel"><i>◈</i>Painel</a>
-      <a href="#/agenda" data-route="agenda"><i>◷</i>Agenda setorial</a>
-      <a href="#/radar" data-route="radar"><i>◉</i>Radar quântico</a>
-      <div class="nav-group">Relacionamento</div>
-      <a href="#/organizacoes" data-route="organizacoes"><i>▣</i>Organizações</a>
-      <a href="#/contatos" data-route="contatos"><i>☺</i>Contatos</a>
-      <a href="#/pipeline" data-route="pipeline"><i>▥</i>Funil de parcerias</a>
-      <a href="#/busca" data-route="busca"><i>⌕</i>Busca ativa</a>
-      <div class="nav-group">Comunicação</div>
-      <a href="#/campanhas" data-route="campanhas"><i>✉</i>Campanhas Gmail</a>
-      <a href="#/modelos" data-route="modelos"><i>✎</i>Modelos de e-mail</a>
-      <a href="#/materiais" data-route="materiais"><i>❒</i>Materiais</a>
-      <div class="nav-group">Fomento</div>
-      <a href="#/mecanismos" data-route="mecanismos"><i>§</i>Mecanismos e leis</a>
-      <a href="#/simulador" data-route="simulador"><i>∑</i>Simulador de incentivos</a>
-      <div class="nav-group">Sistema</div>
-      <a href="#/config" data-route="config"><i>⚙</i>Configurações</a>
-    </nav>
+    <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
     <div class="sidebar-foot">
-      <div id="gmail-status" class="gstatus off"><span class="dot"></span><span class="txt">Gmail desconectado</span></div>
-      <a href="../" class="secties">SECTIES · Governo da Paraíba</a>
+      <button id="gmail-status" class="gstatus off" type="button"><span class="dot"></span><span class="txt">Google desconectado</span></button>
+      <img src="assets/parceiros-branco.png" alt="CETC, SECTIES, Governo da Paraíba e Ministério da Ciência, Tecnologia e Inovação" class="parceiros">
     </div>
   </aside>
   <div class="main">
     <header class="topbar">
-      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir menu">☰</button>
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir menu"></button>
       <h1 id="page-title">Painel</h1>
       <div class="topbar-actions">
-        <input type="search" id="global-search" placeholder="Buscar organização ou contato…" aria-label="Busca global">
-        <button class="icon-btn" id="theme-btn" title="Alternar tema" aria-label="Alternar tema"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg></button>
+        <input type="search" id="global-search" placeholder="Buscar organização, contato ou oportunidade" aria-label="Busca">
+        <button class="icon-btn" id="live-btn" title="Interações em tempo real" aria-label="Interações em tempo real"></button>
+        <button class="icon-btn" id="theme-btn" title="Alternar tema claro e escuro" aria-label="Alternar tema"></button>
       </div>
     </header>
     <main id="view" class="view" tabindex="-1"></main>

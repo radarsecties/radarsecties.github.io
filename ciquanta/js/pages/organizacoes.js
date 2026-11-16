@@ -1,120 +1,121 @@
 import * as store from '../store.js';
-import { esc, norm, debounce, options, UFS, REGIAO, SEGMENTOS, ESTAGIOS, toCSV, download, parseCSV, readFile, toast, confirmDialog, money, estagioNome, onlyDigits, modal, uid } from '../util.js';
-import { openOrgForm, segBadge, estBadge } from '../components.js';
-import { loadMecanismos, mecNome, mecCurto } from '../email.js';
+import { esc, norm, debounce, options, UFS, REGIAO, SEGMENTOS, RELACIONAMENTO, EVIDENCIA, relNome, toCSV, download, parseCSV, readFile, toast, confirmDialog, money, onlyDigits, modal, uid } from '../util.js';
+import { openOrgForm, segBadge, relBadge, evBadge } from '../components.js';
+import { loadMecanismos, mecCurto, mecNome } from '../email.js';
+import { icon } from '../icons.js';
 
 export async function render(view, { params }) {
   const mecs = await loadMecanismos();
-  const f = { q: params.get('q') || '', segmento: params.get('segmento') || '', uf: params.get('uf') || '', regiao: '', estagio: params.get('estagio') || '', mecanismo: params.get('mecanismo') || '', sort: 'nome', dir: 1 };
+  const f = { q: params.get('q') || '', segmento: params.get('segmento') || '', setor: params.get('setor') || '', uf: params.get('uf') || '', regiao: '', rel: params.get('rel') || '',
+    evidencia: params.get('evidencia') || '', prioridade: '', mecanismo: params.get('mecanismo') || '', sort: 'prioridade', dir: 1 };
   const sel = new Set();
-
   view.innerHTML = `
-  <div class="section-head"><div><h2>Organizações</h2><p>Empresas, fomentadores, autoridades e ICTs acompanhados pelo CIQuanta. Clique numa linha para ver contatos, histórico e mecanismos.</p></div>
-    <div class="toolbar" style="margin:0">
-      <button class="btn" id="imp">Importar CSV</button><button class="btn" id="exp">Exportar CSV</button>
-      <button class="btn primary" id="nova">+ Nova organização</button></div></div>
+  <div class="section-head"><div><h2>Organizações</h2><p>Empresas que investem em P&D, fomentadores, autoridades e instituições de pesquisa acompanhadas pelo CIQUANTA. Clique numa linha para ver contatos, oportunidades e histórico.</p></div>
+    <div class="toolbar" style="margin:0"><a class="btn" href="#/busca?aba=referencia">Importar mapeamento</a><button class="btn" id="imp">Importar CSV</button><button class="btn" id="exp">Exportar CSV</button><button class="btn primary" id="nova">${icon('mais', 16)} Nova organização</button></div></div>
   <div class="toolbar">
-    <input type="search" class="grow" id="q" placeholder="Buscar por nome, setor, cidade, tag…" value="${esc(f.q)}">
+    <input type="search" class="grow" id="q" placeholder="Nome, cidade, tag, atuação" value="${esc(f.q)}">
+    <select id="setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), f.setor, { empty: 'Setor' })}</select>
     <select id="segmento">${options(SEGMENTOS, f.segmento, { empty: 'Segmento' })}</select>
+    <select id="evidencia">${options(Object.entries(EVIDENCIA).map(([id, [nome]]) => ({ id, nome })), f.evidencia, { empty: 'Atuação quântica' })}</select>
+    <select id="rel">${options(RELACIONAMENTO, f.rel, { empty: 'Relacionamento' })}</select>
+    <select id="prioridade">${options(['A', 'B', 'C'].map(x => ({ id: x, nome: 'Prioridade ' + x })), '', { empty: 'Prioridade' })}</select>
     <select id="regiao">${options(['Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul'], '', { empty: 'Região' })}</select>
     <select id="uf">${options(UFS, f.uf, { empty: 'UF' })}</select>
-    <select id="estagio">${options(ESTAGIOS, f.estagio, { empty: 'Estágio' })}</select>
-    <select id="mecanismo">${options(Object.values(mecs).map(m => ({ id: m.id, nome: m.nome })), f.mecanismo, { empty: 'Mecanismo' })}</select>
+    <select id="mecanismo">${options(Object.values(mecs).map(m => ({ id: m.id, nome: m.curto || m.nome })), f.mecanismo, { empty: 'Mecanismo' })}</select>
   </div>
   <div class="toolbar hidden" id="bulk"><strong id="bulk-n"></strong>
-    <select id="bulk-est">${options(ESTAGIOS, '', { empty: 'Mover para estágio…' })}</select>
-    <button class="btn sm" id="bulk-camp">✉ Criar campanha com os contatos</button>
-    <button class="btn sm danger" id="bulk-del">Excluir</button>
-    <button class="btn sm ghost" id="bulk-clear">Limpar seleção</button></div>
+    <select id="bulk-rel">${options(RELACIONAMENTO, '', { empty: 'Mudar relacionamento…' })}</select>
+    <button class="btn sm" id="bulk-camp">${icon('campanhas', 14)} Campanha com os contatos</button>
+    <button class="btn sm danger" id="bulk-del">Excluir</button><button class="btn sm ghost" id="bulk-clear">Limpar seleção</button></div>
   <div class="table-wrap"><table><thead><tr>
     <th style="width:28px"><input type="checkbox" id="all" aria-label="Selecionar todas"></th>
-    <th class="sortable" data-s="nome">Organização</th><th class="sortable" data-s="segmento">Segmento</th><th class="sortable" data-s="setor">Setor</th>
-    <th class="sortable" data-s="uf">UF</th><th class="sortable" data-s="estagio">Estágio</th><th>Contatos</th><th>Mecanismos</th><th class="sortable" data-s="potencial">Potencial</th>
+    <th class="sortable" data-s="nome">Organização</th><th class="sortable" data-s="setor">Setor</th><th>Segmento</th><th class="sortable" data-s="evidencia">Atuação quântica</th>
+    <th class="sortable" data-s="relacionamento">Relacionamento</th><th class="sortable" data-s="uf">UF</th><th class="num">Contatos</th><th class="num sortable" data-s="_pipe">Pipeline</th>
   </tr></thead><tbody id="tb"></tbody></table></div>
   <p class="muted small" id="count"></p>`;
 
+  const EVO = { confirmada: 0, indicios: 1, potencial: 2 };
   const filtered = () => {
     const q = norm(f.q);
     const ct = {}; store.list('contatos').forEach(c => ct[c.orgId] = (ct[c.orgId] || 0) + 1);
+    const pp = {}; store.list('oportunidades').filter(o => !['contratada', 'perdida'].includes(o.etapa)).forEach(o => pp[o.orgId] = (pp[o.orgId] || 0) + store.pipelineValor(o));
     let l = store.list('orgs').filter(o =>
-      (!f.segmento || o.segmento === f.segmento) && (!f.uf || o.uf === f.uf) && (!f.regiao || REGIAO[o.uf] === f.regiao) &&
-      (!f.estagio || (o.estagio || 'prospeccao') === f.estagio) && (!f.mecanismo || (o.mecanismos || []).includes(f.mecanismo)) &&
-      (!q || norm([o.nome, o.nomeFantasia, o.setor, o.cidade, o.uf, (o.tags || []).join(' '), o.notas, o.cnpj].join(' ')).includes(q)));
-    l = l.map(o => ({ ...o, _ct: ct[o.id] || 0 }));
-    l.sort((a, b) => { const k = f.sort; const x = k === 'potencial' ? (a[k] || 0) - (b[k] || 0) : String(a[k] || '').localeCompare(String(b[k] || ''), 'pt-BR'); return x * f.dir; });
+      (!f.segmento || o.segmento === f.segmento) && (!f.setor || o.setor === f.setor) && (!f.uf || o.uf === f.uf) && (!f.regiao || REGIAO[o.uf] === f.regiao) &&
+      (!f.rel || (o.relacionamento || 'mapeada') === f.rel) && (!f.evidencia || (o.evidencia || 'potencial') === f.evidencia) && (!f.prioridade || o.prioridade === f.prioridade) &&
+      (!f.mecanismo || (o.mecanismos || []).includes(f.mecanismo)) &&
+      (!q || norm([o.nome, o.nomeFantasia, store.setorNome(o.setor), o.cidade, o.uf, (o.tags || []).join(' '), o.notas, o.atuacao, o.cnpj].join(' ')).includes(q)))
+      .map(o => ({ o, ct: ct[o.id] || 0, pipe: pp[o.id] || 0 }));
+    const key = { prioridade: x => (x.o.prioridade || 'B') + (EVO[x.o.evidencia] ?? 2) + x.o.nome, nome: x => x.o.nome, setor: x => store.setorNome(x.o.setor), evidencia: x => (EVO[x.o.evidencia] ?? 2) + x.o.nome,
+      relacionamento: x => RELACIONAMENTO.findIndex(r => r.id === (x.o.relacionamento || 'mapeada')) + x.o.nome, uf: x => (x.o.uf || 'ZZ') + x.o.nome, _pipe: x => x.pipe }[f.sort];
+    l.sort((a, b) => { const x = key(a), y = key(b); return (typeof x === 'number' ? x - y : String(x).localeCompare(String(y), 'pt-BR')) * f.dir; });
     return l;
   };
   const draw = () => {
     const l = filtered();
-    view.querySelector('#tb').innerHTML = l.length ? l.map(o => `<tr class="row-link" data-id="${esc(o.id)}">
+    view.querySelector('#tb').innerHTML = l.length ? l.slice(0, 600).map(({ o, ct, pipe }) => `<tr class="row-link" data-id="${esc(o.id)}">
       <td><input type="checkbox" data-sel="${esc(o.id)}" ${sel.has(o.id) ? 'checked' : ''} aria-label="Selecionar"></td>
-      <td><div class="title">${esc(o.nome)}</div><div class="muted small">${esc(o.cidade || '')}${o.site ? ` · ${esc(o.site.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, ''))}` : ''}</div></td>
-      <td>${segBadge(o.segmento)}</td><td>${esc(o.setor || '—')}</td><td>${esc(o.uf || '—')}</td><td>${estBadge(o.estagio)}</td>
-      <td>${o._ct || '<span class="muted">0</span>'}</td>
-      <td><div class="tags">${(o.mecanismos || []).slice(0, 3).map(m => `<span class="badge gray">${esc(mecCurto(m))}</span>`).join('')}${(o.mecanismos || []).length > 3 ? `<span class="badge gray">+${o.mecanismos.length - 3}</span>` : ''}</div></td>
-      <td class="nowrap">${o.potencial ? money(o.potencial) : '<span class="muted">—</span>'}</td></tr>`).join('')
-      : `<tr><td colspan="9"><div class="empty">${store.list('orgs').length ? 'Nenhuma organização com esses filtros.' : 'Nenhuma organização ainda. <a href="#/busca?aba=referencia">Importe a base de referência</a> ou use a <a href="#/busca">busca ativa por CNPJ</a>.'}</div></td></tr>`;
-    view.querySelector('#count').textContent = `${l.length} de ${store.list('orgs').length} organizações`;
+      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="badge">A</span>' : ''}</div><div class="muted small">${esc(o.cidade || '')}${o.site ? ` · ${esc(store.dominio(o.site))}` : ''}</div></td>
+      <td class="small">${esc(store.setorCurto(o.setor))}</td><td>${segBadge(o.segmento)}</td><td>${evBadge(o.evidencia)}</td><td>${relBadge(o.relacionamento)}</td><td>${esc(o.uf || '—')}</td>
+      <td class="num">${ct || '<span class="muted">0</span>'}</td><td class="num nowrap">${pipe ? money(pipe) : '<span class="muted">—</span>'}</td></tr>`).join('')
+      : `<tr><td colspan="9"><div class="empty">${store.list('orgs').length ? 'Nenhuma organização com esses filtros.' : 'Nenhuma organização ainda. <a href="#/busca?aba=referencia">Importe o mapeamento setorial</a> ou use a <a href="#/busca">busca por CNPJ</a>.'}</div></td></tr>`;
+    view.querySelector('#count').textContent = `${l.length} de ${store.list('orgs').length} organizações${l.length > 600 ? ' (exibindo 600; use os filtros)' : ''}`;
     view.querySelector('#bulk').classList.toggle('hidden', !sel.size);
     view.querySelector('#bulk-n').textContent = `${sel.size} selecionada(s)`;
-    view.querySelector('#all').checked = l.length > 0 && l.every(o => sel.has(o.id));
+    view.querySelector('#all').checked = l.length > 0 && l.every(x => sel.has(x.o.id));
   };
   draw();
 
   view.querySelector('#q').addEventListener('input', debounce(e => { f.q = e.target.value; draw(); }));
-  ['segmento', 'uf', 'regiao', 'estagio', 'mecanismo'].forEach(k => view.querySelector('#' + k).onchange = e => { f[k] = e.target.value; draw(); });
-  view.querySelectorAll('th.sortable').forEach(th => th.onclick = () => { const s = th.dataset.s; f.dir = f.sort === s ? -f.dir : 1; f.sort = s; draw(); });
+  ['segmento', 'setor', 'uf', 'regiao', 'rel', 'evidencia', 'prioridade', 'mecanismo'].forEach(k => view.querySelector('#' + k).onchange = e => { f[k] = e.target.value; draw(); });
+  view.querySelectorAll('th.sortable').forEach(th => th.onclick = () => { const s = th.dataset.s; f.dir = f.sort === s ? -f.dir : (s === '_pipe' ? -1 : 1); f.sort = s; draw(); });
   view.querySelector('#tb').addEventListener('click', e => {
     const cb = e.target.closest('[data-sel]');
     if (cb) { cb.checked ? sel.add(cb.dataset.sel) : sel.delete(cb.dataset.sel); draw(); return; }
     const tr = e.target.closest('tr[data-id]'); if (tr && !e.target.closest('a,input')) location.hash = `#/org/${tr.dataset.id}`;
   });
-  view.querySelector('#all').onchange = e => { filtered().forEach(o => e.target.checked ? sel.add(o.id) : sel.delete(o.id)); draw(); };
+  view.querySelector('#all').onchange = e => { filtered().forEach(({ o }) => e.target.checked ? sel.add(o.id) : sel.delete(o.id)); draw(); };
   view.querySelector('#nova').onclick = () => openOrgForm({}, o => location.hash = `#/org/${o.id}`);
   view.querySelector('#bulk-clear').onclick = () => { sel.clear(); draw(); };
-  view.querySelector('#bulk-est').onchange = e => { const v = e.target.value; if (!v) return; store.list('orgs').forEach(o => { if (sel.has(o.id)) o.estagio = v; }); store.touch('orgs'); toast(`${sel.size} movida(s) para ${estagioNome(v)}.`, 'ok'); e.target.value = ''; draw(); };
-  view.querySelector('#bulk-del').onclick = async () => { if (!await confirmDialog(`Excluir ${sel.size} organização(ões) e seus contatos e histórico?`, { ok: 'Excluir', danger: true })) return; [...sel].forEach(id => store.remove('orgs', id)); sel.clear(); draw(); };
+  view.querySelector('#bulk-rel').onchange = e => { const v = e.target.value; if (!v) return; store.list('orgs').forEach(o => { if (sel.has(o.id)) o.relacionamento = v; }); store.touch('orgs'); toast(`${sel.size} organização(ões): ${relNome(v)}.`, 'ok'); e.target.value = ''; draw(); };
+  view.querySelector('#bulk-del').onclick = async () => { if (!await confirmDialog(`Excluir ${sel.size} organização(ões) com contatos, oportunidades e histórico?`, { ok: 'Excluir', danger: true })) return; [...sel].forEach(id => store.remove('orgs', id)); sel.clear(); draw(); };
   view.querySelector('#bulk-camp').onclick = () => {
     const ids = store.list('contatos').filter(c => sel.has(c.orgId)).map(c => c.id);
     if (!ids.length) { toast('As organizações selecionadas ainda não têm contatos.', 'bad'); return; }
-    const camp = store.upsert('campanhas', { nome: `Campanha ${new Date().toLocaleDateString('pt-BR')}`, destinatarios: ids, status: 'rascunho', modo: 'enviar', assunto: '', corpo: '', materiais: [] }, 'cmp');
+    const camp = store.upsert('campanhas', { nome: `Campanha ${new Date().toLocaleDateString('pt-BR')}`, destinatarios: ids, status: 'rascunho', modo: 'enviar', assunto: '', corpo: '', materiais: [], vars: {} }, 'cmp');
     location.hash = `#/campanhas/${camp.id}`;
   };
-  view.querySelector('#exp').onclick = () => {
-    const l = filtered();
-    download(`ciquanta-organizacoes-${new Date().toISOString().slice(0, 10)}.csv`, toCSV(l, [
-      { label: 'nome', key: 'nome' }, { label: 'nome_fantasia', key: 'nomeFantasia' }, { label: 'cnpj', key: 'cnpj' }, { label: 'segmento', key: 'segmento' }, { label: 'setor', key: 'setor' },
-      { label: 'uf', key: 'uf' }, { label: 'cidade', key: 'cidade' }, { label: 'site', key: 'site' }, { label: 'email', key: 'email' }, { label: 'telefone', key: 'telefone' },
-      { label: 'estagio', get: o => estagioNome(o.estagio) }, { label: 'mecanismos', get: o => (o.mecanismos || []).map(mecNome) }, { label: 'potencial', key: 'potencial' },
-      { label: 'tags', key: 'tags' }, { label: 'responsavel', key: 'responsavel' }, { label: 'notas', key: 'notas' },
-    ]), 'text/csv;charset=utf-8');
-  };
+  view.querySelector('#exp').onclick = () => download(`ciquanta-organizacoes-${new Date().toISOString().slice(0, 10)}.csv`, toCSV(filtered().map(x => x.o), [
+    { label: 'nome', key: 'nome' }, { label: 'nome_fantasia', key: 'nomeFantasia' }, { label: 'cnpj', key: 'cnpj' }, { label: 'segmento', key: 'segmento' }, { label: 'setor', get: o => store.setorNome(o.setor) },
+    { label: 'atuacao_quantica', get: o => (EVIDENCIA[o.evidencia] || EVIDENCIA.potencial)[0] }, { label: 'relacionamento', get: o => relNome(o.relacionamento) }, { label: 'prioridade', key: 'prioridade' },
+    { label: 'uf', key: 'uf' }, { label: 'cidade', key: 'cidade' }, { label: 'site', key: 'site' }, { label: 'email', key: 'email' }, { label: 'telefone', key: 'telefone' },
+    { label: 'mecanismos', get: o => (o.mecanismos || []).map(mecNome) }, { label: 'atuacao', key: 'atuacao' }, { label: 'tags', key: 'tags' }, { label: 'notas', key: 'notas' },
+  ]), 'text/csv;charset=utf-8');
   view.querySelector('#imp').onclick = () => importOrgs(draw);
 }
 
 function importOrgs(done) {
   const { el, close } = modal({ title: 'Importar organizações (CSV)', body: `
-    <p>Colunas reconhecidas (cabeçalho na primeira linha, separador <code>;</code> ou <code>,</code>): <code>nome</code>, <code>nome_fantasia</code>, <code>cnpj</code>, <code>segmento</code>, <code>setor</code>, <code>uf</code>, <code>cidade</code>, <code>site</code>, <code>email</code>, <code>telefone</code>, <code>tags</code>, <code>notas</code>.</p>
-    <p class="muted small">Dica: listas públicas do MCTI (beneficiárias da Lei do Bem, empresas habilitadas na Lei de TICs) podem ser convertidas em planilha e importadas aqui. Organizações com mesmo CNPJ ou mesmo nome são atualizadas, não duplicadas.</p>
-    <input type="file" accept=".csv,text/csv" id="file">`,
-    footer: '<button class="btn" data-close>Fechar</button>' });
+    <p>Primeira linha com os nomes das colunas, separador <code>;</code> ou <code>,</code>. Colunas reconhecidas: <code>nome</code>, <code>nome_fantasia</code>, <code>cnpj</code>, <code>segmento</code>, <code>setor</code>, <code>uf</code>, <code>cidade</code>, <code>site</code>, <code>email</code>, <code>telefone</code>, <code>tags</code>, <code>notas</code>.</p>
+    <p class="muted small">Listas públicas do MCTI (beneficiárias da Lei do Bem, empresas habilitadas na Lei de TICs) podem ser convertidas em planilha e importadas aqui. Organizações com mesmo CNPJ ou mesmo nome são atualizadas.</p>
+    <input type="file" accept=".csv,text/csv" id="file">`, footer: '<button class="btn" data-close>Fechar</button>' });
   el.querySelector('#file').onchange = async e => {
     const file = e.target.files[0]; if (!file) return;
     const rows = parseCSV(await readFile(file));
     let novos = 0, atual = 0;
     const pick = (r, ...ks) => { for (const k of ks) if (r[k]) return r[k]; return ''; };
+    const setores = store.setoresLista();
     for (const r of rows) {
       const nome = pick(r, 'nome', 'razao social', 'razao_social', 'empresa', 'organizacao'); if (!nome) continue;
       const cnpj = onlyDigits(pick(r, 'cnpj'));
       const ex = (cnpj && store.findOrgByCNPJ(cnpj)) || store.findOrgByName(nome);
-      const seg = SEGMENTOS.find(s => norm(s) === norm(pick(r, 'segmento'))) || 'Empresa';
-      const d = { nome, nomeFantasia: pick(r, 'nome_fantasia', 'nome fantasia'), cnpj, segmento: seg, setor: pick(r, 'setor', 'atividade'), uf: pick(r, 'uf', 'estado').toUpperCase().slice(0, 2),
+      const st = norm(pick(r, 'setor'));
+      const d = { nome, nomeFantasia: pick(r, 'nome_fantasia', 'nome fantasia'), cnpj, segmento: SEGMENTOS.find(s => norm(s) === norm(pick(r, 'segmento'))) || 'Empresa',
+        setor: st ? (setores.find(s => norm(s.nome) === st || norm(s.curto) === st || s.id === st)?.id || '') : '', uf: pick(r, 'uf', 'estado').toUpperCase().slice(0, 2),
         cidade: pick(r, 'cidade', 'municipio'), site: pick(r, 'site', 'website', 'url'), email: pick(r, 'email', 'e-mail'), telefone: pick(r, 'telefone', 'fone'),
         tags: pick(r, 'tags') ? pick(r, 'tags').split(/[;,]/).map(s => s.trim()).filter(Boolean) : [], notas: pick(r, 'notas', 'observacoes'), origem: 'Importação CSV' };
       Object.keys(d).forEach(k => { if (!d[k] || (Array.isArray(d[k]) && !d[k].length)) delete d[k]; });
-      if (ex) { Object.assign(ex, d); atual++; } else { store.list('orgs').push({ id: uid('org'), estagio: 'prospeccao', mecanismos: [], criadoEm: new Date().toISOString(), ...d }); novos++; }
+      if (ex) { Object.assign(ex, d); atual++; } else { store.list('orgs').push({ id: uid('org'), relacionamento: 'mapeada', evidencia: 'potencial', prioridade: 'B', mecanismos: [], criadoEm: new Date().toISOString(), ...d }); novos++; }
     }
-    store.touch('orgs');
-    toast(`${novos} nova(s), ${atual} atualizada(s).`, 'ok'); close(); done();
+    store.touch('orgs'); toast(`${novos} nova(s), ${atual} atualizada(s).`, 'ok'); close(); done();
   };
 }

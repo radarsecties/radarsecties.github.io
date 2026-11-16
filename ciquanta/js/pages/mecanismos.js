@@ -5,10 +5,10 @@ export async function render(view) {
   const ref = await store.ref('mecanismos');
   const tipos = [...new Set(ref.itens.map(m => m.tipo))].sort();
   const f = { q: '', tipo: '', prio: '' };
-  view.innerHTML = `<div class="section-head"><div><h2>Mecanismos e leis de inovação</h2><p>Os instrumentos brasileiros que movem investimento privado e público em P&D e como o CIQuanta entra em cada um. Use os argumentos nas abordagens e associe os mecanismos às organizações do CRM.</p></div></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Mecanismos e leis de inovação</h2><p>Instrumentos brasileiros que movimentam investimento público e privado em P&D, com o papel que o CIQUANTA pode ter em cada um. Os argumentos servem às abordagens; os mecanismos podem ser associados às organizações e às oportunidades.</p></div></div>
     <div class="callout warn" style="margin-bottom:14px"><strong>Atenção:</strong> ${esc(ref.aviso)} <span class="muted">Revisado em ${fmtDate(ref.verificadoEm)}.</span></div>
     <div class="grid g4" style="margin-bottom:16px" id="kpis"></div>
-    <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Buscar por lei, setor, órgão…"><select id="tipo">${options(tipos, '', { empty: 'Todos os tipos' })}</select>
+    <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Lei, setor ou órgão"><select id="tipo">${options(tipos, '', { empty: 'Todos os tipos' })}</select>
       <select id="prio"><option value="">Todas as prioridades</option><option value="1">Prioridade alta</option><option value="2">Média</option><option value="3">Complementar</option></select></div>
     <div class="grid g2" id="list"></div>`;
   const orgs = store.list('orgs');
@@ -26,9 +26,9 @@ export async function render(view) {
       <div class="tags" style="justify-content:flex-end"><span class="badge ${PR[m.prioridade][1]}">prioridade ${PR[m.prioridade][0]}</span><span class="badge gray">${esc(m.status)}</span></div></header>
       <div class="tags"><span class="badge">${esc(m.tipo)}</span><span class="badge gray">Gestor: ${esc(m.gestor)}</span></div>
       <dl><dt>Quem usa</dt><dd>${esc(m.quemUsa)}</dd><dt>Benefício</dt><dd>${esc(m.beneficio)}</dd><dt>Contrapartida / obrigação</dt><dd>${esc(m.contrapartida)}</dd></dl>
-      <div class="fit"><strong>Como o CIQuanta entra:</strong> ${esc(m.encaixeCiquanta)}</div>
+      <div class="fit"><strong>Papel do CIQUANTA:</strong> ${esc(m.encaixeCiquanta)}</div>
       <div class="small"><strong>Argumento de abordagem:</strong> ${esc(m.argumento)}</div>
-      <div class="toolbar" style="margin:4px 0 0"><a class="btn sm" href="${esc(m.link)}" target="_blank" rel="noopener">Fonte oficial ↗</a>
+      <div class="toolbar" style="margin:4px 0 0"><a class="btn sm" href="${esc(m.link)}" target="_blank" rel="noopener">Fonte oficial</a>
       <a class="btn sm" href="#/organizacoes?mecanismo=${esc(m.id)}">${count(m.id)} organização(ões) no CRM</a>
       ${['lei-do-bem', 'lei-de-tics', 'pdi-aneel', 'pdi-anp'].includes(m.id) ? `<a class="btn sm" href="#/simulador?m=${esc(m.id)}">Simular</a>` : ''}</div></article>`).join('') || '<div class="empty">Nada encontrado.</div>';
   };

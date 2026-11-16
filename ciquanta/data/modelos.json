@@ -1,53 +1,60 @@
 {
   "itens": [
     {
-      "id": "mod-apresentacao-empresa",
-      "nome": "Apresentação do CIQuanta a empresas (P&D + incentivos)",
+      "id": "mod-empresa-agenda",
+      "nome": "Empresa: apresentação e convite para agenda técnica",
       "categoria": "Empresas",
-      "assunto": "{{organizacao}} e o CIQuanta: P&D em computação quântica com incentivos da Lei de Inovação",
-      "corpo": "<p>{{saudacao}},</p><p>Escrevo em nome do <strong>CIQuanta-PB</strong>, o Centro Internacional de Computação e Tecnologias Quânticas da Paraíba, iniciativa do Governo da Paraíba, por meio da SECTIES, em parceria com o MCTI. O centro reúne os primeiros computadores quânticos operacionais do Brasil e está aberto a projetos de pesquisa, desenvolvimento e inovação com empresas.</p><p>Acreditamos que a {{organizacao}} pode se beneficiar em três frentes:</p><ul><li><strong>Casos de uso de {{setor}}</strong>: otimização, simulação de materiais e moléculas, aprendizado de máquina quântico e segurança pós-quântica;</li><li><strong>Incentivos</strong>: projetos executados com uma ICT podem ser enquadrados em mecanismos como {{mecanismo}}, reduzindo o custo líquido do investimento em P&D;</li><li><strong>Formação</strong>: capacitação de equipes técnicas pela residência em tecnologias quânticas.</li></ul><p>Gostaríamos de agendar uma conversa de 30 minutos com a área de P&D/Inovação para apresentar o centro e identificar um primeiro projeto-piloto. Qual seria a melhor data para a sua equipe?</p><p>Atenciosamente,</p>"
+      "assunto": "CIQUANTA e {{organizacao}}: agenda de pesquisa aplicada para {{setor}}",
+      "corpo": "<p>{{saudacao}},</p><p>O CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba, reúne os dois primeiros computadores quânticos supercondutores operacionais da América Latina, com 100 e 20 qubits, instalados na Estação Cabo Branco, em João Pessoa. O projeto é uma parceria entre o Governo da Paraíba, por meio da SECTIES, o Ministério da Ciência, Tecnologia e Inovação e o Suzhou Quantum Center (CETC).</p><p>Estruturamos uma agenda de pesquisa aplicada para {{setor}}, com linhas definidas, linha de base clássica em todo experimento e resultados publicados. A apresentação está disponível em {{apresentacao}}.</p><p>A {{organizacao}} pode participar de quatro formas: pesquisa conjunta, validação aplicada de um cenário real em 6 a 10 semanas, capacitação e residência de profissionais, ou acesso à infraestrutura pela plataforma em nuvem. Projetos executados com o centro podem ser enquadrados em instrumentos como {{mecanismo}}.</p><p>Gostaríamos de agendar uma reunião técnica de 45 minutos com a área de P&D e inovação. Há disponibilidade nas próximas semanas?</p><p>Atenciosamente,</p>"
     },
     {
-      "id": "mod-convite-visita",
-      "nome": "Convite para visita técnica ao CIQuanta",
+      "id": "mod-validacao",
+      "nome": "Empresa: proposta de validação aplicada (6 a 10 semanas)",
       "categoria": "Empresas",
-      "assunto": "Convite: visita técnica ao CIQuanta-PB",
-      "corpo": "<p>{{saudacao}},</p><p>Temos a satisfação de convidar a {{organizacao}} para uma <strong>visita técnica ao CIQuanta-PB</strong>, em João Pessoa, para conhecer a infraestrutura de computação quântica, a equipe de pesquisa e as modalidades de parceria disponíveis (acordos de PD&I, compartilhamento de laboratório e horas de processamento).</p><p>A visita dura cerca de duas horas e pode incluir uma sessão técnica sobre aplicações em {{setor}}.</p><p>Se houver interesse, basta responder a este e-mail com duas ou três datas possíveis.</p><p>Cordialmente,</p>"
+      "assunto": "Proposta de validação aplicada: CIQUANTA e {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>Agradecemos a conversa sobre os desafios da {{organizacao}}. Como próximo passo, propomos uma validação aplicada com o CIQUANTA, nos seguintes termos:</p><ul><li><strong>Problema:</strong> um cenário real definido em conjunto com a equipe técnica da {{organizacao}};</li><li><strong>Dados:</strong> anonimizados ou sintéticos, sob a LGPD e acordo de confidencialidade;</li><li><strong>Método:</strong> comparação entre o melhor método clássico disponível e a abordagem híbrida, com o mesmo orçamento computacional e métricas definidas antes do experimento;</li><li><strong>Prazo:</strong> 6 a 10 semanas, com relatório de aceitação.</li></ul><p>O instrumento jurídico é definido conforme a natureza da instituição. Podemos enviar a minuta do plano de trabalho para análise.</p><p>Atenciosamente,</p>"
     },
     {
-      "id": "mod-oficio-autoridade",
-      "nome": "Ofício-convite a autoridades",
+      "id": "mod-autoridade",
+      "nome": "Autoridade: ofício-convite para agenda institucional",
       "categoria": "Autoridades",
-      "assunto": "CIQuanta-PB: convite para agenda institucional",
-      "corpo": "<p>{{saudacao}},</p><p>Cumprimentando-o(a) cordialmente, a Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba (SECTIES) apresenta o <strong>CIQuanta-PB</strong>, Centro Internacional de Computação e Tecnologias Quânticas da Paraíba, infraestrutura estratégica para a soberania tecnológica nacional e alinhada à Iniciativa Brasileira para Tecnologias Quânticas (IBQuântica).</p><p>Nesse contexto, solicitamos a gentileza de uma agenda institucional com {{organizacao}}, com o objetivo de:</p><ol><li>apresentar o estágio de implantação do centro e seu plano de uso compartilhado;</li><li>discutir instrumentos de cooperação e fomento aplicáveis;</li><li>articular ações conjuntas com o setor produtivo e a comunidade científica.</li></ol><p>Colocamo-nos à disposição para ajustar data e formato (presencial ou virtual) conforme a conveniência de Vossa Senhoria.</p><p>Respeitosamente,</p>"
+      "assunto": "CIQUANTA: solicitação de agenda institucional",
+      "corpo": "<p>{{saudacao}},</p><p>Cumprimentando {{pronome}} cordialmente, a Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior da Paraíba (SECTIES-PB) apresenta o CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba, implantado em parceria com o Ministério da Ciência, Tecnologia e Inovação e o Suzhou Quantum Center (CETC), no âmbito da Iniciativa Brasileira para Tecnologias Quânticas.</p><p>O centro abriga dois computadores quânticos supercondutores, de 100 e 20 qubits, e foi concebido para integrar infraestrutura científica, formação de recursos humanos e cooperação com o setor produtivo.</p><p>Nesse contexto, solicitamos a gentileza de uma agenda com {{organizacao}}, com o objetivo de apresentar o estágio de implantação do centro, discutir instrumentos de cooperação e alinhar ações conjuntas.</p><p>Colocamo-nos à disposição para ajustar data e formato conforme a conveniência de {{pronome}}.</p><p>Respeitosamente,</p>"
     },
     {
-      "id": "mod-fomentador",
-      "nome": "Proposta de parceria com agência de fomento",
+      "id": "mod-reitor",
+      "nome": "Universidade ou ICT: cooperação acadêmica",
+      "categoria": "Academia",
+      "assunto": "CIQUANTA: cooperação acadêmica com {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>O CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba, convida {{organizacao}} a integrar sua rede de parceiros acadêmicos.</p><p>O centro atua como infraestrutura compartilhada, oferecendo acesso a equipamentos e ambientes experimentais, e não pretende sobrepor estruturas universitárias existentes. A cooperação pode incluir programas de pós-graduação, intercâmbio de pesquisadores, coexecução de projetos financiados e uso dos computadores quânticos pela plataforma em nuvem.</p><p>Solicitamos uma reunião para apresentar o modelo de cooperação e identificar grupos de pesquisa com interesse nas linhas do centro.</p><p>Respeitosamente,</p>"
+    },
+    {
+      "id": "mod-fomento",
+      "nome": "Agência de fomento ou banco: cooperação institucional",
       "categoria": "Fomentadores",
-      "assunto": "CIQuanta-PB: proposta de cooperação com {{organizacao}}",
-      "corpo": "<p>{{saudacao}},</p><p>O <strong>CIQuanta-PB</strong> vem estruturando sua carteira de projetos com empresas e ICTs de todo o país e gostaria de discutir com {{organizacao}} possibilidades de cooperação, tais como:</p><ul><li>chamadas conjuntas para uso do computador quântico por pesquisadores e startups;</li><li>linhas de apoio a projetos cooperativos ICT-empresa em tecnologias quânticas;</li><li>programas de formação e fixação de recursos humanos especializados.</li></ul><p>Podemos enviar uma nota técnica com a proposta detalhada e agendar uma reunião com a equipe responsável.</p><p>Atenciosamente,</p>"
+      "assunto": "CIQUANTA: proposta de cooperação institucional com {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>O CIQUANTA estrutura seu programa de parceiros institucionais e gostaria de discutir com {{organizacao}} uma cooperação com funções definidas e projetos concretos, tais como:</p><ul><li>chamadas em que o CIQUANTA atue como executor ou coexecutor técnico;</li><li>integração do centro a projetos já financiados, permitindo que empresas executem parte das atividades na infraestrutura;</li><li>programas de capacitação e residência em tecnologias quânticas.</li></ul><p>Podemos encaminhar nota técnica com a proposta e agendar reunião com a equipe responsável.</p><p>Atenciosamente,</p>"
+    },
+    {
+      "id": "mod-inauguracao",
+      "nome": "Convite: inauguração do CIQUANTA (11/12/2026)",
+      "categoria": "Eventos",
+      "assunto": "Convite: inauguração do CIQUANTA, 11 de dezembro de 2026",
+      "corpo": "<p>{{saudacao}},</p><p>O Governador do Estado da Paraíba, Lucas Ribeiro Novais de Araújo, tem a honra de convidar {{pronome}} para a solenidade de inauguração do <strong>CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba</strong>.</p><p><strong>Sexta-feira, 11 de dezembro de 2026, às 17 horas</strong><br>Av. João Cirilo da Silva, s/n, Altiplano Cabo Branco<br>João Pessoa, Paraíba</p><p>Recepção a partir das 16h30. Coquetel após a solenidade. Convite pessoal e intransferível.</p><p>Solicitamos a confirmação de presença até 10 de dezembro de 2026, em resposta a este e-mail.</p>"
+    },
+    {
+      "id": "mod-reserve-data",
+      "nome": "Reserve a data: inauguração",
+      "categoria": "Eventos",
+      "assunto": "Reserve a data: inauguração do CIQUANTA, 11/12/2026",
+      "corpo": "<p>{{saudacao}},</p><p>Pedimos que {{pronome}} reserve a data de <strong>11 de dezembro de 2026, às 17 horas</strong>, para a inauguração do CIQUANTA, em João Pessoa. O convite oficial será encaminhado nos próximos dias.</p><p>Atenciosamente,</p>"
     },
     {
       "id": "mod-followup",
-      "nome": "Follow-up (sem resposta)",
+      "nome": "Retomada de contato",
       "categoria": "Geral",
-      "assunto": "Re: CIQuanta-PB e {{organizacao}}",
-      "corpo": "<p>{{saudacao}},</p><p>Retomo o contato anterior sobre a possibilidade de uma conversa entre a {{organizacao}} e o CIQuanta-PB. Sei que a agenda é intensa; se for mais conveniente, posso enviar um material resumido ou falar com outra pessoa da equipe de Inovação/P&D.</p><p>Fico à disposição.</p><p>Abraço,</p>"
-    },
-    {
-      "id": "mod-evento",
-      "nome": "Convite para evento setorial",
-      "categoria": "Geral",
-      "assunto": "Convite: {{evento}}",
-      "corpo": "<p>{{saudacao}},</p><p>O CIQuanta-PB tem a honra de convidar {{organizacao}} para <strong>{{evento}}</strong>, em {{data_evento}}.</p><p>O encontro reunirá representantes do governo, de agências de fomento, da indústria e da academia para discutir a agenda nacional de tecnologias quânticas e oportunidades de cooperação.</p><p>Confirme sua presença respondendo a este e-mail.</p><p>Cordialmente,</p>"
-    },
-    {
-      "id": "mod-boletim",
-      "nome": "Boletim CIQuanta (novidades)",
-      "categoria": "Geral",
-      "assunto": "Boletim CIQuanta-PB | Novidades do ecossistema quântico",
-      "corpo": "<p>{{saudacao}},</p><p>Confira as novidades do CIQuanta-PB e do ecossistema de tecnologias quânticas:</p><ul><li><strong>Infraestrutura</strong>: [atualização sobre os computadores quânticos]</li><li><strong>Oportunidades</strong>: [chamadas abertas e mecanismos de fomento]</li><li><strong>Agenda</strong>: [próximos eventos]</li></ul><p>Quer conversar sobre um projeto? Responda a este e-mail.</p>"
+      "assunto": "Re: CIQUANTA e {{organizacao}}",
+      "corpo": "<p>{{saudacao}},</p><p>Retomo o contato anterior sobre uma agenda entre a {{organizacao}} e o CIQUANTA. Se for mais adequado, posso falar com outra pessoa da equipe ou enviar um resumo técnico por escrito.</p><p>Atenciosamente,</p>"
     }
   ]
 }

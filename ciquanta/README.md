@@ -1,42 +1,57 @@
-# CIQuanta · Relações Institucionais
+# CIQUANTA · Relações Institucionais
 
-Central de operações institucionais do **CIQuanta-PB** (Centro Internacional de Computação e Tecnologias Quânticas da Paraíba / SECTIES).
+Sistema de relações institucionais do CIQUANTA, Centro Internacional de Computação Quântica do Estado da Paraíba.
 
-Endereço: `https://radarsecties.github.io/ciquanta/` (e `https://radar.secties.pb.gov.br/ciquanta/` no servidor espelho).
+Aplicação web autônoma, sem servidor próprio e sem dependência de outros sistemas: todo o conteúdo desta pasta pode ser copiado para um repositório próprio e publicado como site estático (GitHub Pages ou qualquer servidor HTTPS).
 
-## O que faz
+## Módulos
 
-| Módulo | Para quê |
+| Módulo | Função |
 |---|---|
-| **Painel** | Indicadores, funil de parcerias, mapa do Brasil por UF, envios e respostas, follow-ups, próximas agendas e notícias quânticas. |
-| **Organizações / Contatos / Funil** | CRM de empresas, fomentadores, autoridades e ICTs: estágios, histórico, tarefas, mecanismos associados, importação e exportação em CSV. |
-| **Busca ativa** | Consulta de CNPJ na Receita (BrasilAPI, Minha Receita, CNPJ.ws), CNPJs em lote, prospecção guiada por setor/UF/mecanismo, base de referência com 140 organizações e descoberta de contatos nas conversas do Gmail. |
-| **Campanhas Gmail** | Disparo personalizado pela conta Gmail do usuário: variáveis, layout institucional, materiais (link ou anexo), modo rascunho, envio de teste, agendamento, ritmo controlado, limite diário, lista de descadastro e verificação de respostas. |
-| **Modelos / Materiais** | Modelos de e-mail para empresas, autoridades e fomentadores; biblioteca de materiais; gerador de one-pager em PDF. |
-| **Mecanismos e leis / Simulador** | 22 instrumentos (Lei do Bem, Lei de TICs, PPI, ZFM, Brasil Semicon, MOVER, PD&I ANEEL e ANP, REDATA, Marco Legal de CT&I, ETEC, Marco das Startups, Finep, BNDES, EMBRAPII, FUNTTEL, BNB, FAPs, SEBRAE, IBQuântica, NIB etc.), com o encaixe do CIQuanta e simuladores. |
-| **Agenda setorial / Radar quântico** | Calendário com exportação `.ics` e Google Agenda, convite por campanha; notícias quânticas do Radar SECTIES (`../data/noticias.json`). |
+| Painel | Pipeline ponderado, contratado, mapa por estado, funil, relacionamento, mecanismos, interações recentes, próximos passos e agenda. |
+| Interações em tempo real | Acompanha a caixa da conta Google do CIQUANTA pelo histórico do Gmail; vincula cada resposta à organização, registra no histórico, marca a campanha como respondida e avisa a equipe (aviso na tela e notificação na área de trabalho). |
+| Agenda | Agenda institucional, prazos de mecanismos e eventos do Google Agenda; agendamento de reuniões com convite e link do Meet. |
+| Organizações e contatos | CRM com setor, segmento, nível de evidência de atuação quântica, relacionamento, prioridade, bloco de parceria (institucional, industrial e tecnológico, acadêmico), mecanismos e dados da Receita Federal. |
+| Oportunidades de negócio | Funil com valor estimado, probabilidade por etapa, valor ponderado, modalidade de participação, linha de pesquisa, mecanismo de financiamento e previsão por trimestre. |
+| Setores e aplicações | Dez agendas de pesquisa aplicada (financeiro, saúde, agro, clima, energia, óleo e gás, logística, indústria, telecom, governo e defesa) no formato da agenda oficial do sistema financeiro. |
+| Busca ativa | Mapeamento setorial com 324 organizações e nível de evidência, consulta e lote de CNPJ, buscas prontas para encontrar contatos e descoberta de contatos nas conversas do Gmail. |
+| Campanhas e modelos | Envio personalizado pela conta Google, com tratamento formal (Vossa Excelência, Vossa Magnificência, Vossa Senhoria), link da apresentação do setor, materiais, rascunhos, teste, agendamento, limite diário e descadastro. |
+| Apresentações | Deck institucional e decks setoriais com a identidade do CIQUANTA, modo apresentação, PDF e link público (`apresentacao.html?d=<setor>`); biblioteca das apresentações do Google Drive. |
+| Mecanismos e simulador | Lei do Bem, Lei de TICs, PPI, ZFM, Brasil Semicon, MOVER, PD&I ANEEL e ANP, REDATA, Marco Legal de CT&I, ETEC, Marco das Startups, Finep, BNDES, EMBRAPII, FUNTTEL, BNB, FAPs, SEBRAE, IBQuântica e NIB, com o papel do CIQUANTA e simuladores. |
+| Fontes | Todas as fontes do mapeamento e das apresentações, com o critério de cada nível de evidência. |
 
-## Configurar o Gmail (uma vez)
+## Identidade visual
 
-1. No [Google Cloud Console](https://console.cloud.google.com/), crie um projeto e ative a **Gmail API** (e a **Google Drive API**, para backup).
-2. Configure a tela de consentimento OAuth (**Interno** se a conta for Google Workspace).
-3. Crie um **ID do cliente OAuth** do tipo *Aplicativo da Web* com as origens JavaScript `https://radarsecties.github.io` e `https://radar.secties.pb.gov.br`.
-4. Cole o Client ID em **Configurações → Integração Gmail** e clique em *Conectar Gmail*.
+Extraída das apresentações oficiais do CIQUANTA (reunião executiva, 2026) e do convite de inauguração:
 
-Não há chave secreta nem servidor: o login usa o Google Identity Services no navegador e o token fica só na memória da aba.
+- Logotipo: `assets/logo-azul.png`, `assets/logo-branco.png`, `assets/logo-marinho.png`
+- Parceiros: `assets/parceiros-branco.png`, `assets/parceiros-marinho.png`
+- Cores: azul-marinho `#0A122D`, azul `#3056D5`, lavanda `#EBEEF7`, intermediários `#172A68` e `#233F9C`
+- Tipografia: Open Sans (300 a 800)
 
-Permissões: `gmail.send` (obrigatória); `gmail.compose` (rascunhos), `gmail.readonly` (respostas e contatos) e `drive.file` (backup) são opcionais.
+## Conta Google (uma vez)
 
-## Dados e privacidade
+1. No [Google Cloud Console](https://console.cloud.google.com/), crie um projeto e ative Gmail API, Google Calendar API e Google Drive API.
+2. Configure a tela de consentimento OAuth (Interno, se a conta for Google Workspace).
+3. Crie um ID do cliente OAuth do tipo Aplicativo da Web, com o endereço do sistema como origem JavaScript autorizada.
+4. Em Configurações, cole o Client ID, escolha as permissões e conecte com a conta do CIQUANTA.
 
-- Organizações, contatos, campanhas e histórico ficam no **navegador de quem usa** (localStorage; arquivos anexos em IndexedDB). Nada disso é publicado no repositório.
-- Use **Configurações → Baixar backup** com frequência, ou o backup no Google Drive, para levar a base a outro computador.
-- A base de referência (`data/organizacoes.json`) traz só dados públicos (nome, setor, sede, site), sem e-mails nem pessoas.
-- Campanhas respeitam a lista de descadastro e incluem rodapé com opção de remoção (LGPD).
+Permissões: envio (`gmail.send`, obrigatória); leitura para acompanhar respostas (`gmail.readonly`); rascunhos (`gmail.compose`); reuniões (`calendar.events`); lista de apresentações do Drive (`drive.metadata.readonly`); cópia de segurança (`drive.file`). Não há chave secreta: o token fica só na memória da aba aberta.
+
+O acompanhamento em tempo real funciona enquanto o sistema estiver aberto em alguma aba com a conta conectada.
+
+## Dados
+
+- Organizações, contatos, oportunidades, campanhas e histórico ficam no navegador de quem usa. Use Configurações para baixar cópias, restaurar, mesclar ou guardar no Google Drive.
+- O mapeamento (`data/empresas.json`) contém apenas dados públicos e não inclui pessoas nem e-mails.
+- Campanhas respeitam a lista de descadastro e o rodapé informa como deixar de receber mensagens (LGPD).
 
 ## Manutenção
 
-- Mecanismos de fomento: `data/mecanismos.json` (revise percentuais e prazos quando a legislação mudar).
-- Base de referência: `data/organizacoes.json` · Agenda inicial: `data/agenda.json` · Modelos padrão: `data/modelos.json`.
-- Site estático, sem etapa de build. Para testar localmente: `python3 -m http.server` na raiz do repositório e abrir `http://localhost:8000/ciquanta/`.
-- A rotina do Radar (`.github/workflows/doe.yml`) não altera esta pasta.
+- `data/setores.json`: setores, linhas de pesquisa e conteúdo comum dos decks.
+- `data/empresas.json` e `data/fontes.json`: mapeamento e fontes.
+- `data/institucional.json`: deck institucional.
+- `data/mecanismos.json`: mecanismos de fomento (revisar percentuais e prazos quando a legislação mudar).
+- `data/modelos.json` e `data/agenda.json`: modelos e agenda iniciais.
+
+Para testar localmente: `python3 -m http.server` nesta pasta e abrir `http://localhost:8000/`.

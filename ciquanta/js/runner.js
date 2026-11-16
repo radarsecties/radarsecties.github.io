@@ -48,7 +48,7 @@ export async function run(campId) {
   const camp = store.get('campanhas', campId); if (!camp) return;
   const conf = store.cfg();
   const modo = camp.modo === 'rascunho' ? 'rascunho' : 'enviar';
-  if (modo === 'rascunho' && !G.hasScope('compose')) { toast('Para criar rascunhos, ative "Rascunhos" em Configurações e reconecte o Gmail.', 'bad'); return; }
+  if (modo === 'rascunho' && !G.hasScope('compose')) { toast('Para criar rascunhos, ative essa permissão em Configurações e reconecte a conta Google.', 'bad'); return; }
   if (!G.status().conectado) await G.connect();
   await loadMecanismos();
 
@@ -87,7 +87,7 @@ export async function run(campId) {
       if (modo === 'enviar') {
         store.logInteracao({ orgId: contato.orgId, contatoId: contato.id, tipo: 'email', titulo: subject, descricao: `Campanha: ${camp.nome}`, campanhaId: campId, threadId: msg?.threadId });
         const org = store.orgOf(contato);
-        if (org && (!org.estagio || org.estagio === 'prospeccao')) { org.estagio = 'contato'; store.touch('orgs'); }
+        if (org && (!org.relacionamento || org.relacionamento === 'mapeada')) { org.relacionamento = 'contato'; store.touch('orgs'); }
       }
       emit(campId, { tipo: 'item', contato, status: modo === 'rascunho' ? 'rascunho' : 'enviado' });
     } catch (e) {
@@ -110,7 +110,7 @@ export function cancel() { if (running) running.cancel = true; }
 
 /** Verifica respostas no Gmail para envios com threadId. */
 export async function checkReplies(campId) {
-  if (!G.hasScope('read')) throw new Error('Ative "Ler respostas" em Configurações e reconecte o Gmail.');
+  if (!G.hasScope('read')) throw new Error('Ative a leitura do Gmail em Configurações e reconecte a conta Google.');
   const envios = store.list('envios').filter(e => e.threadId && e.status === 'enviado' && !e.respondido && (!campId || e.campanhaId === campId));
   let n = 0;
   for (const e of envios) {

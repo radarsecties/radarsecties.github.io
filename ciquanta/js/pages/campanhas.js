@@ -2,7 +2,7 @@ import * as store from '../store.js';
 import * as G from '../google.js';
 import * as runner from '../runner.js';
 import { compose, buildMime, loadMecanismos, VARIAVEIS, mecNome } from '../email.js';
-import { esc, toast, options, SEGMENTOS, UFS, ESTAGIOS, REGIAO, norm, fmtDateTime, confirmDialog, pct, isEmail, toCSV, download } from '../util.js';
+import { esc, toast, options, SEGMENTOS, UFS, RELACIONAMENTO, EVIDENCIA, REGIAO, norm, fmtDateTime, confirmDialog, pct, isEmail, toCSV, download } from '../util.js';
 import { AREAS } from '../components.js';
 
 const STATUS = { rascunho: ['Rascunho', 'gray'], agendada: ['Agendada', 'info'], enviando: ['Enviando', 'warn'], pausada: ['Pausada', 'warn'], concluida: ['Concluída', 'ok'] };
@@ -17,7 +17,7 @@ function lista(view) {
   const draw = () => {
     const camps = [...store.list('campanhas')].sort((a, b) => (b.criadoEm || '').localeCompare(a.criadoEm || ''));
     const env = store.list('envios');
-    view.innerHTML = `<div class="section-head"><div><h2>Campanhas Gmail</h2><p>Disparos personalizados para empresas, fomentadores e autoridades, enviados da sua conta Gmail, com ritmo controlado, limite diário, lista de descadastro e acompanhamento de respostas.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Campanhas de e-mail</h2><p>Envios personalizados a empresas, fomentadores e autoridades a partir da conta Google do CIQUANTA, com ritmo controlado, limite diário, lista de descadastro e acompanhamento das respostas em tempo real.</p></div>
       <button class="btn primary" id="nova">+ Nova campanha</button></div>
       ${gmailCard()}
       <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Campanha</th><th>Status</th><th>Destinatários</th><th>Enviados</th><th>Respostas</th><th>Criada</th><th></th></tr></thead><tbody>
@@ -41,9 +41,9 @@ function lista(view) {
 function gmailCard() {
   const s = G.status(); const c = store.cfg();
   return `<div class="card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-    <div><div class="title">${s.conectado ? `Conectado como <strong>${esc(s.email)}</strong>` : 'Gmail não conectado'}</div>
+    <div><div class="title">${s.conectado ? `Conectado como <strong>${esc(s.email)}</strong>` : 'Conta Google não conectada'}</div>
     <div class="muted small">${c.clientId ? `Ritmo: 1 e-mail a cada ${c.intervaloSeg}s · limite diário ${c.limiteDiario} · enviados hoje: ${runner.enviadosHoje()}` : 'Configure o Client ID do Google em Configurações para habilitar o envio.'}</div></div>
-    <div class="toolbar" style="margin:0">${s.conectado ? '<button class="btn" id="g-off">Desconectar</button>' : c.clientId ? '<button class="btn grad" id="g-on">Conectar Gmail</button>' : '<a class="btn primary" href="#/config">Configurar integração</a>'}</div></div>`;
+    <div class="toolbar" style="margin:0">${s.conectado ? '<button class="btn" id="g-off">Desconectar</button>' : c.clientId ? '<button class="btn primary" id="g-on">Conectar conta Google</button>' : '<a class="btn primary" href="#/config">Configurar integração</a>'}</div></div>`;
 }
 function bindGmailCard(view, redraw) {
   view.querySelector('#g-on')?.addEventListener('click', async () => { try { await G.connect(); toast('Gmail conectado.', 'ok'); redraw(); } catch (e) { toast(e.message, 'bad'); } });
@@ -78,15 +78,17 @@ function editor(view, id) {
       <div class="card"><h3>3. Materiais institucionais</h3><div id="mats"></div></div>
       <div class="card"><h3>4. Destinatários <span class="muted" id="dest-sum"></span></h3>
         <div class="form-grid">
+          <label class="field">Setor<select id="a-setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), '', { empty: 'Todos' })}</select></label>
           <label class="field">Segmento<select id="a-seg">${options(SEGMENTOS, '', { empty: 'Todos' })}</select></label>
+          <label class="field">Atuação quântica<select id="a-ev">${options(Object.entries(EVIDENCIA).map(([id, [nome]]) => ({ id, nome })), '', { empty: 'Todas' })}</select></label>
           <label class="field">Região<select id="a-reg">${options(['Norte', 'Nordeste', 'Centro-Oeste', 'Sudeste', 'Sul'], '', { empty: 'Todas' })}</select></label>
           <label class="field">UF<select id="a-uf">${options(UFS, '', { empty: 'Todas' })}</select></label>
-          <label class="field">Estágio<select id="a-est">${options(ESTAGIOS, '', { empty: 'Todos' })}</select></label>
+          <label class="field">Relacionamento<select id="a-est">${options(RELACIONAMENTO, '', { empty: 'Todos' })}</select></label>
           <label class="field">Mecanismo<select id="a-mec">${options(Object.values(store.state().orgs.flatMap(o => o.mecanismos || []).reduce((a, m) => (a[m] = { id: m, nome: mecNome(m) }, a), {})), '', { empty: 'Todos' })}</select></label>
           <label class="field">Área do contato<select id="a-area">${options(AREAS, '', { empty: 'Todas' })}</select></label>
           <label class="field full">Texto (nome, cargo, organização, tag)<input type="search" id="a-q"></label>
         </div>
-        <div class="toolbar" style="margin:10px 0"><button class="btn" id="a-add">+ Adicionar contatos filtrados (<span id="a-n">0</span>)</button><button class="btn ghost danger" id="a-clear">Remover todos</button></div>
+        <div class="toolbar" style="margin:10px 0"><button class="btn" id="a-add">Adicionar contatos filtrados (<span id="a-n">0</span>)</button><button class="btn ghost danger" id="a-clear">Remover todos</button></div>
         <div class="table-wrap" style="max-height:300px;overflow:auto"><table><tbody id="dest"></tbody></table></div>
       </div>
     </div>
@@ -137,10 +139,10 @@ function editor(view, id) {
 
   // Audiência
   const audiencia = () => {
-    const q = norm($('#a-q').value), seg = $('#a-seg').value, reg = $('#a-reg').value, uf = $('#a-uf').value, est = $('#a-est').value, mec = $('#a-mec').value, area = $('#a-area').value;
+    const q = norm($('#a-q').value), setor = $('#a-setor').value, ev = $('#a-ev').value, seg = $('#a-seg').value, reg = $('#a-reg').value, uf = $('#a-uf').value, est = $('#a-est').value, mec = $('#a-mec').value, area = $('#a-area').value;
     return store.list('contatos').filter(c => {
       const o = store.orgOf(c) || {};
-      return isEmail(c.email) && !c.optout && (!seg || o.segmento === seg) && (!reg || REGIAO[o.uf] === reg) && (!uf || o.uf === uf) && (!est || (o.estagio || 'prospeccao') === est) &&
+      return isEmail(c.email) && !c.optout && (!seg || o.segmento === seg) && (!reg || REGIAO[o.uf] === reg) && (!uf || o.uf === uf) && (!est || (o.relacionamento || 'mapeada') === est) && (!setor || o.setor === setor) && (!ev || (o.evidencia || 'potencial') === ev) &&
         (!mec || (o.mecanismos || []).includes(mec)) && (!area || c.area === area) && (!q || norm([c.nome, c.cargo, o.nome, o.nomeFantasia, (o.tags || []).join(' ')].join(' ')).includes(q));
     });
   };
@@ -160,7 +162,7 @@ function editor(view, id) {
   // Pré-visualização
   const preview = () => {
     const ds = camp().destinatarios.map(i => store.get('contatos', i)).filter(Boolean);
-    const sample = ds.length ? ds[((previewIdx % ds.length) + ds.length) % ds.length] : { nome: 'Ana Souza', cargo: 'Gerente de P&D', tratamento: 'Prezada', email: 'exemplo@empresa.com.br' };
+    const sample = ds.length ? ds[((previewIdx % ds.length) + ds.length) % ds.length] : { nome: 'Ana Souza', cargo: 'Gerente de P&D', tratamento: 'Prezada Senhora', email: 'exemplo@empresa.com.br' };
     const mats = camp().materiais.map(i => store.get('materiais', i)).filter(Boolean);
     const m = compose(camp(), sample, { materiais: mats });
     $('#pv').srcdoc = m.html; $('#pv-subj').textContent = m.subject || '(sem assunto)';
@@ -177,7 +179,7 @@ function editor(view, id) {
     const total = c.destinatarios.length;
     const run = runner.isRunning(id);
     $('#send-box').innerHTML = `
-      ${!conf.clientId ? '<div class="callout warn">Configure o Client ID do Google em <a href="#/config">Configurações</a>.</div>' : !s.conectado ? '<button class="btn grad" id="g-on" style="width:100%;justify-content:center">Conectar Gmail</button>' : `<div class="muted small">Remetente: <strong>${esc(s.email)}</strong></div>`}
+      ${!conf.clientId ? '<div class="callout warn">Configure o Client ID do Google em <a href="#/config">Configurações</a>.</div>' : !s.conectado ? '<button class="btn primary" id="g-on" style="width:100%;justify-content:center">Conectar conta Google</button>' : `<div class="muted small">Remetente: <strong>${esc(s.email)}</strong></div>`}
       <div class="progress" style="margin:10px 0 6px"><span style="width:${pct(done, total)}%"></span></div>
       <div class="small muted">${done} de ${total} processados · enviados hoje: ${runner.enviadosHoje()}/${conf.limiteDiario}</div>
       <div class="toolbar" style="margin:10px 0 0">
@@ -186,7 +188,7 @@ function editor(view, id) {
            <button class="btn primary" id="start" ${!s.conectado || !total ? 'disabled' : ''}>${c.modo === 'rascunho' ? 'Criar rascunhos' : done && done < total ? 'Continuar envio' : 'Iniciar envio'}</button>`}
       </div>
       ${!run ? `<details style="margin-top:10px"><summary class="small">Agendar envio</summary><div class="toolbar" style="margin-top:8px"><input type="datetime-local" id="ag" value="${esc(c.agendadaPara ? c.agendadaPara.slice(0, 16) : '')}" style="width:auto"><button class="btn sm" id="ag-ok">Agendar</button>${c.status === 'agendada' ? '<button class="btn sm ghost" id="ag-x">Cancelar agendamento</button>' : ''}</div>
-        <p class="muted small">O envio agendado começa no horário se o CIQuanta estiver aberto em alguma aba com o Gmail conectado.</p></details>` : ''}
+        <p class="muted small">O envio agendado começa no horário se o CIQUANTA estiver aberto em alguma aba com o Gmail conectado.</p></details>` : ''}
       <div class="log" id="log" style="margin-top:10px">${esc(logText.join('\n')) || 'Registro do envio aparecerá aqui.'}</div>`;
     $('#g-on')?.addEventListener('click', async () => { try { await G.connect(); drawSend(); } catch (e) { toast(e.message, 'bad'); } });
     $('#test')?.addEventListener('click', sendTest);

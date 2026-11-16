@@ -2,15 +2,16 @@ import * as store from '../store.js';
 import { esc, toast, options, UFS, SEGMENTOS, norm, debounce, fmtCNPJ, onlyDigits, validCNPJ, sleep, uid, money, isEmail, safeUrl } from '../util.js';
 import { consultarCNPJ, paraOrganizacao } from '../cnpj.js';
 import { sugerirMecanismos, linksProspeccao } from '../dominio.js';
+import { fromRef } from './setores.js';
 import { loadMecanismos, mecNome, mecCurto } from '../email.js';
 import * as G from '../google.js';
 
-const ABAS = [['cnpj', 'Consulta CNPJ'], ['lote', 'CNPJs em lote'], ['prospeccao', 'Prospecção guiada'], ['referencia', 'Base de referência'], ['gmail', 'Contatos no meu Gmail']];
+const ABAS = [['referencia', 'Mapeamento setorial'], ['cnpj', 'Consulta CNPJ'], ['lote', 'CNPJs em lote'], ['prospeccao', 'Prospecção guiada'], ['gmail', 'Contatos no Gmail']];
 
 export async function render(view, { params }) {
   const mecs = await loadMecanismos();
-  let aba = params.get('aba') || 'cnpj';
-  view.innerHTML = `<div class="section-head"><div><h2>Busca ativa</h2><p>Encontre empresas que investem em P&D, fomentadores e autoridades, enriqueça com dados públicos da Receita Federal e leve para o CRM com os mecanismos de fomento já sugeridos.</p></div></div>
+  let aba = params.get('aba') || 'referencia';
+  view.innerHTML = `<div class="section-head"><div><h2>Busca ativa</h2><p>Mapeamento de empresas e instituições com relação a P&D e computação quântica, consulta de dados públicos da Receita Federal e buscas prontas para encontrar as pessoas certas em cada organização.</p></div></div>
     <div class="tabs">${ABAS.map(([k, l]) => `<button data-aba="${k}" class="${aba === k ? 'active' : ''}">${l}</button>`).join('')}</div><div id="aba"></div>`;
   const A = view.querySelector('#aba');
   const go = k => { aba = k; view.querySelectorAll('[data-aba]').forEach(b => b.classList.toggle('active', b.dataset.aba === k)); ({ cnpj, lote, prospeccao, referencia, gmail })[k](A, mecs); };
@@ -21,7 +22,7 @@ export async function render(view, { params }) {
 function addOrg(dados, { abrir = true } = {}) {
   const ex = (dados.cnpj && store.findOrgByCNPJ(dados.cnpj)) || store.findOrgByName(dados.nome);
   if (ex) { Object.entries(dados).forEach(([k, v]) => { if (v && (k === 'receita' || !ex[k] || (Array.isArray(ex[k]) && !ex[k].length))) ex[k] = v; }); store.touch('orgs'); if (abrir) location.hash = `#/org/${ex.id}`; return { org: ex, novo: false }; }
-  const org = store.upsert('orgs', { segmento: 'Empresa', estagio: 'prospeccao', ...dados, mecanismos: dados.mecanismos?.length ? dados.mecanismos : sugerirMecanismos({ segmento: 'Empresa', ...dados }) }, 'org');
+  const org = store.upsert('orgs', { segmento: 'Empresa', relacionamento: 'mapeada', evidencia: 'potencial', prioridade: 'B', ...dados, mecanismos: dados.mecanismos?.length ? dados.mecanismos : sugerirMecanismos({ segmento: 'Empresa', ...dados }) }, 'org');
   if (abrir) location.hash = `#/org/${org.id}`;
   return { org, novo: true };
 }
@@ -51,7 +52,7 @@ function cnpj(A, mecs) {
       R.innerHTML = `<div class="callout" style="margin-top:10px">
         <div class="title" style="font-size:16px">${esc(r.razao)}</div><div class="muted">${esc(r.fantasia || '')} · ${esc(fmtCNPJ(r.cnpj))} · ${esc(r.situacao)}</div>
         <div class="grid g2 small" style="margin-top:10px">
-          <div><span class="muted">CNAE</span><br>${esc(r.cnae)} ${esc(r.cnaeDesc)}</div><div><span class="muted">Porte · capital</span><br>${esc(r.porte || '—')} · ${r.capital ? money(r.capital) : '—'}</div>
+          <div><span class="muted">CNAE</span><br>${esc(r.cnae)} ${esc(r.cnaeDesc)}<br><span class="muted">Setor sugerido:</span> ${esc(store.setorNome(dados.setor) || '—')}</div><div><span class="muted">Porte · capital</span><br>${esc(r.porte || '—')} · ${r.capital ? money(r.capital) : '—'}</div>
           <div><span class="muted">Local</span><br>${esc(r.municipio)}/${esc(r.uf)}</div><div><span class="muted">E-mail · telefone</span><br>${esc(r.email || '—')} · ${esc(r.telefone || '—')}</div>
           <div class="span2"><span class="muted">Administradores</span><br>${r.socios.slice(0, 8).map(s => `${esc(s.nome)} <span class="muted">(${esc(s.qualificacao)})</span>`).join('<br>') || '—'}</div>
           <div class="span2"><span class="muted">Mecanismos sugeridos</span><div class="tags" style="margin-top:4px">${sug.map(id => `<span class="badge">${esc(mecNome(id))}</span>`).join('')}</div></div>
@@ -92,7 +93,7 @@ function lote(A) {
     A.querySelector('#st').textContent = `${ok.length} encontrados`;
     if (ok.length) A.querySelector('#imp').classList.remove('hidden');
   };
-  A.querySelector('#imp').onclick = () => { let n = 0; ok.forEach(d => { if (addOrg({ ...d, origem: 'CNPJs em lote' }, { abrir: false }).novo) n++; }); toast(`${n} organização(ões) nova(s); demais atualizadas.`, 'ok'); };
+  A.querySelector('#imp').onclick = () => { let n = 0; ok.forEach(d => { if (addOrg({ ...d, origem: 'CNPJs em lote' }, { abrir: false }).novo) n++; }); toast(`${n} organização(ões) nova(s); as demais foram atualizadas.`, 'ok'); };
 }
 
 function prospeccao(A, mecs) {
@@ -112,48 +113,51 @@ function prospeccao(A, mecs) {
   A.querySelectorAll('select').forEach(s => s.onchange = draw); draw();
 }
 
-async function referencia(A, mecs) {
-  const ref = await store.ref('organizacoes');
-  const sel = new Set(); const f = { q: '', seg: '', uf: '' };
-  A.innerHTML = `<div class="callout info" style="margin-bottom:12px">${esc(ref.aviso)} <span class="muted">(Revisado em ${esc(ref.verificadoEm.split('-').reverse().join('/'))}.)</span></div>
-    <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Filtrar ${ref.itens.length} organizações…"><select id="seg">${options(SEGMENTOS, '', { empty: 'Segmento' })}</select><select id="uf">${options(UFS, '', { empty: 'UF' })}</select>
+async function referencia(A) {
+  const ref = await store.ref('empresas');
+  const fontes = Object.fromEntries((await store.ref('fontes')).itens.map(f => [f.id, f]));
+  const sel = new Set(); const f = { q: '', seg: '', uf: '', setor: '', ev: '' };
+  const EV = { confirmada: 'Atuação quântica confirmada', indicios: 'Indícios públicos', potencial: 'Perfil compatível' };
+  A.innerHTML = `<div class="callout info" style="margin-bottom:12px">${esc(ref.aviso)} <span class="muted">Revisado em ${esc(ref.verificadoEm.split('-').reverse().join('/'))}.</span></div>
+    <div class="grid g4" style="margin-bottom:14px">${Object.entries(EV).map(([k, l]) => `<div class="card kpi"><span class="label">${l}</span><span class="value">${ref.itens.filter(r => r.evidencia === k).length}</span></div>`).join('')}<div class="card kpi"><span class="label">Total mapeado</span><span class="value">${ref.itens.length}</span><span class="sub">${new Set(ref.itens.map(r => r.setor)).size} setores</span></div></div>
+    <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Filtrar organizações">
+    <select id="setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), '', { empty: 'Setor' })}</select>
+    <select id="ev">${options(Object.entries(EV).map(([id, nome]) => ({ id, nome })), '', { empty: 'Atuação quântica' })}</select>
+    <select id="seg">${options(SEGMENTOS, '', { empty: 'Segmento' })}</select><select id="uf">${options(UFS, '', { empty: 'UF' })}</select>
     <button class="btn" id="sel-all">Selecionar visíveis</button><button class="btn primary" id="imp">Importar selecionadas</button></div>
-    <div class="table-wrap"><table><thead><tr><th></th><th>Organização</th><th>Segmento</th><th>Setor</th><th>UF</th><th>Mecanismos</th><th></th></tr></thead><tbody id="tb"></tbody></table></div><p class="muted small" id="cnt"></p>`;
+    <div class="table-wrap"><table><thead><tr><th></th><th>Organização</th><th>Setor</th><th>Atuação quântica</th><th>UF</th><th>Fonte</th></tr></thead><tbody id="tb"></tbody></table></div><p class="muted small" id="cnt"></p>`;
   const inCRM = o => !!store.findOrgByName(o.nome);
-  const list = () => { const q = norm(f.q); return ref.itens.filter(o => (!f.seg || o.segmento === f.seg) && (!f.uf || o.uf === f.uf) && (!q || norm(`${o.nome} ${o.setor} ${o.cidade} ${o.notas}`).includes(q))); };
+  const ordem = { confirmada: 0, indicios: 1, potencial: 2 };
+  const list = () => { const q = norm(f.q); return ref.itens.filter(o => (!f.seg || o.segmento === f.seg) && (!f.uf || o.uf === f.uf) && (!f.setor || o.setor === f.setor) && (!f.ev || o.evidencia === f.ev) &&
+    (!q || norm(`${o.nome} ${o.cidade} ${o.notas} ${o.atuacao} ${store.setorNome(o.setor)}`).includes(q))).sort((a, b) => ordem[a.evidencia] - ordem[b.evidencia] || a.prioridade.localeCompare(b.prioridade) || a.nome.localeCompare(b.nome)); };
   const draw = () => {
     const l = list();
     A.querySelector('#tb').innerHTML = l.map(o => { const has = inCRM(o); return `<tr>
       <td><input type="checkbox" data-id="${esc(o.id)}" ${sel.has(o.id) ? 'checked' : ''} ${has ? 'disabled' : ''} aria-label="Selecionar"></td>
-      <td><div class="title">${esc(o.nome)}</div><div class="muted small">${esc(o.cidade)}${o.notas ? ' · ' + esc(o.notas) : ''}</div></td><td>${esc(o.segmento)}</td><td>${esc(o.setor)}</td><td>${esc(o.uf)}</td>
-      <td><div class="tags">${o.mecanismos.slice(0, 3).map(m => `<span class="badge gray">${esc(mecCurto(m))}</span>`).join('')}</div></td>
-      <td class="nowrap">${has ? '<span class="badge ok">no CRM</span>' : ''} ${safeUrl(o.site) ? `<a class="small" href="${esc(o.site)}" target="_blank" rel="noopener">site ↗</a>` : ''}</td></tr>`; }).join('');
+      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="badge">A</span>' : ''} ${has ? '<span class="badge ok">no CRM</span>' : ''}</div><div class="muted small">${esc(o.segmento)}${o.cidade ? ' · ' + esc(o.cidade) : ''}${o.atuacao ? '<br>' + esc(o.atuacao) : (o.notas ? ' · ' + esc(o.notas) : '')}</div></td>
+      <td class="small">${esc(store.setorCurto(o.setor))}</td><td><span class="badge ${o.evidencia === 'confirmada' ? 'ok' : o.evidencia === 'indicios' ? 'info' : 'gray'}">${EV[o.evidencia]}</span></td><td>${esc(o.uf || '—')}</td>
+      <td class="small">${o.fontes.map(id => fontes[id]).filter(Boolean).map(ff => ff.url ? `<a href="${esc(ff.url)}" target="_blank" rel="noopener" title="${esc(ff.titulo)}">${esc(ff.titulo.split(':')[0])}</a>` : esc(ff.titulo.split(',')[0])).join('<br>') || (safeUrl(o.site) ? `<a href="${esc(o.site)}" target="_blank" rel="noopener">site</a>` : '—')}</td></tr>`; }).join('');
     A.querySelector('#cnt').textContent = `${l.length} exibidas · ${sel.size} selecionadas`;
   };
   draw();
   A.querySelector('#q').addEventListener('input', debounce(e => { f.q = e.target.value; draw(); }));
-  A.querySelector('#seg').onchange = e => { f.seg = e.target.value; draw(); };
-  A.querySelector('#uf').onchange = e => { f.uf = e.target.value; draw(); };
+  ['seg', 'uf', 'setor', 'ev'].forEach(k => A.querySelector('#' + k).onchange = e => { f[k] = e.target.value; draw(); });
   A.querySelector('#tb').onchange = e => { const id = e.target.dataset.id; if (id) { e.target.checked ? sel.add(id) : sel.delete(id); draw(); } };
   A.querySelector('#sel-all').onclick = () => { list().filter(o => !inCRM(o)).forEach(o => sel.add(o.id)); draw(); };
   A.querySelector('#imp').onclick = () => {
     if (!sel.size) { toast('Selecione organizações para importar.', 'bad'); return; }
     let n = 0;
-    ref.itens.filter(o => sel.has(o.id)).forEach(o => {
-      if (inCRM(o)) return;
-      store.list('orgs').push({ id: uid('org'), nome: o.nome, segmento: o.segmento, setor: o.setor, uf: o.uf, cidade: o.cidade, site: o.site, mecanismos: o.mecanismos, notas: o.notas, estagio: 'prospeccao', origem: 'Base de referência', refId: o.id, criadoEm: new Date().toISOString() });
-      n++;
-    });
+    ref.itens.filter(o => sel.has(o.id) && !inCRM(o)).forEach(o => { store.list('orgs').push(fromRef(o)); n++; });
     store.touch('orgs'); sel.clear(); draw();
-    toast(`${n} organização(ões) importada(s). Agora encontre os contatos na aba "Busca ativa de contatos" de cada uma.`, 'ok');
+    toast(`${n} organização(ões) importada(s). Em cada uma, a aba "Encontrar contatos" ajuda a localizar as pessoas responsáveis.`, 'ok');
   };
 }
 
 function gmail(A) {
   const s = G.status();
   A.innerHTML = `<div class="card"><h3>Descobrir contatos nas suas conversas do Gmail</h3>
-    <p class="muted">Procura remetentes e destinatários de conversas que você já teve com um domínio ou tema (ex.: <code>petrobras.com.br</code>, <code>"Lei do Bem"</code>, <code>quântica</code>). Útil para reaproveitar relacionamentos existentes. Requer a permissão "Ler respostas" (somente leitura).</p>
-    ${!s.conectado || !G.hasScope('read') ? `<div class="callout warn">Conecte o Gmail com a permissão de leitura: ative "Ler respostas" em <a href="#/config">Configurações</a> e clique em Conectar.</div>` : ''}
+    <p class="muted">Procura remetentes e destinatários de conversas que você já teve com um domínio ou tema (ex.: <code>petrobras.com.br</code>, <code>"Lei do Bem"</code>, <code>quântica</code>). Útil para reaproveitar relacionamentos existentes. Requer a permissão de leitura do Gmail.</p>
+    ${!s.conectado || !G.hasScope('read') ? `<div class="callout warn">Conecte o Gmail com a permissão de leitura: ative a leitura do Gmail em <a href="#/config">Configurações</a> e reconecte a conta.</div>` : ''}
     <form class="toolbar" id="f" style="margin-top:10px"><input class="grow" type="text" id="q" placeholder="Domínio, nome da empresa ou termo de busca do Gmail"><button class="btn primary">Buscar</button></form>
     <div id="r"></div></div>`;
   A.querySelector('#f').onsubmit = async e => {
@@ -188,7 +192,7 @@ function gmail(A) {
         const i = ev.target.dataset.add; if (i === undefined) return;
         const orgId = R.querySelector(`[data-o="${i}"]`).value; if (!orgId) { toast('Escolha a organização.', 'bad'); return; }
         const p = arr[+i];
-        store.upsert('contatos', { nome: R.querySelector(`[data-n="${i}"]`).value || p.email, email: p.email, orgId, fonte: 'Conversas no Gmail', optout: store.suprimido(p.email) }, 'ct');
+        store.upsert('contatos', { nome: R.querySelector(`[data-n="${i}"]`).value || p.email, email: p.email, orgId, fonte: 'Conversas no Gmail', tratamento: 'Prezado(a)', optout: store.suprimido(p.email) }, 'ct');
         ev.target.outerHTML = '<span class="badge ok">adicionado</span>';
       };
     } catch (err) { R.innerHTML = `<div class="callout warn">${esc(err.message)}</div>`; }

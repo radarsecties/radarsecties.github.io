@@ -1,16 +1,16 @@
-// Gráficos (Chart.js) com cores do CIQuanta e suporte a tema claro/escuro
-export const PALETTE = ['#6366F1', '#22D3EE', '#A855F7', '#10B981', '#F59E0B', '#F43F5E', '#0EA5E9', '#64748B', '#84CC16', '#EC4899'];
+// Gráficos (Chart.js) com cores do CIQUANTA e suporte a tema claro/escuro
+export const PALETTE = ['#3056D5', '#0A122D', '#5B7BE3', '#12805C', '#9AA3C0', '#172A68', '#0B7A99', '#C2283F', '#A9B8EE', '#727892'];
 
 function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
 
 export function chart(canvas, config) {
   if (!window.Chart) { canvas.parentElement.innerHTML = '<div class="empty">Gráficos indisponíveis (sem conexão com a biblioteca).</div>'; return { destroy() {} }; }
   const text = css('--text-2'), grid = css('--line');
-  Chart.defaults.font.family = 'Inter, system-ui, sans-serif';
+  Chart.defaults.font.family = "'Open Sans', system-ui, sans-serif";
   Chart.defaults.color = text;
   const base = {
     responsive: true, maintainAspectRatio: false,
-    plugins: { legend: { labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, color: text } }, tooltip: { backgroundColor: '#0B1033', padding: 10, cornerRadius: 8 } },
+    plugins: { legend: { labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, color: text } }, tooltip: { backgroundColor: '#0A122D', padding: 10, cornerRadius: 8 } },
   };
   const isCart = !['doughnut', 'pie', 'polarArea', 'radar'].includes(config.type);
   if (isCart) base.scales = {

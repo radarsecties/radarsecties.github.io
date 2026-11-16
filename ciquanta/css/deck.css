@@ -1,0 +1,107 @@
+/* Slides CIQUANTA: tela base de 1280×720, escalada para caber no contêiner */
+.deck-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 12px; background: #0A122D; }
+.deck-stage .slide { position: absolute; top: 0; left: 0; transform-origin: 0 0; }
+.slide { width: 1280px; height: 720px; font-family: 'Open Sans', Arial, sans-serif; color: #0A122D; background: #EBEEF7; position: relative; overflow: hidden; box-sizing: border-box; }
+.slide * { box-sizing: border-box; }
+.slide h2 { font-size: 40px; font-weight: 700; letter-spacing: -.01em; margin: 0; line-height: 1.15; }
+.slide p { margin: 0; }
+.s-pad { position: absolute; inset: 56px 72px 76px; display: flex; flex-direction: column; gap: 22px; }
+.s-foot { position: absolute; left: 72px; right: 72px; bottom: 26px; display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #727892; }
+.s-foot img { height: 16px; width: auto; }
+.s-lead { font-size: 19px; line-height: 1.5; color: #464A5E; font-weight: 300; max-width: 1050px; }
+.s-kicker { font-size: 14px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #3056D5; }
+
+/* Capa */
+.s-capa { background: linear-gradient(115deg, #010209 0%, #0A122D 22%, #172A68 42%, #3056D5 66%, #A9B8EE 88%, #EBEEF7 100%); color: #fff; }
+.s-capa .logo { position: absolute; left: 80px; top: 250px; width: 620px; height: auto; }
+.s-capa .t { position: absolute; left: 82px; top: 352px; font-size: 26px; font-weight: 600; }
+.s-capa .sub { position: absolute; left: 82px; top: 398px; font-size: 18px; font-weight: 300; max-width: 640px; color: #DCE3FA; line-height: 1.45; }
+.s-capa .parc { position: absolute; left: 80px; bottom: 44px; width: 560px; height: auto; }
+.s-capa .tag { position: absolute; left: 82px; top: 200px; font-size: 14px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #A9B8EE; }
+
+/* Números e cartões */
+.s-two { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: center; flex: 1; }
+.s-text p { font-size: 19px; line-height: 1.6; color: #464A5E; margin-bottom: 16px; font-weight: 400; }
+.s-nums { background: #fff; border-radius: 18px; border-left: 8px solid #3056D5; padding: 26px 34px; display: grid; gap: 18px; box-shadow: 0 10px 30px rgba(10,18,45,.08); }
+.s-nums b { display: block; font-size: 40px; font-weight: 800; line-height: 1.05; }
+.s-nums span { font-size: 15px; color: #464A5E; }
+.s-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; flex: 1; align-content: center; }
+.s-cards.c4 { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.s-cards.c4 .s-card { padding: 24px 22px; }
+.s-cards.c4 .s-card h4 { font-size: 19px; }
+.s-cards.c4 .s-card p, .s-cards.c4 .s-card li { font-size: 15.5px; }
+.s-cards.c2 { grid-template-columns: repeat(2, 1fr); }
+.s-card { border-radius: 16px; padding: 30px 28px 32px; background: #fff; border-left: 6px solid #3056D5; box-shadow: 0 8px 24px rgba(10,18,45,.07); }
+.s-card h4 { font-size: 22px; margin: 0 0 12px; font-weight: 700; line-height: 1.25; }
+.s-card p, .s-card li { font-size: 17px; line-height: 1.55; color: #464A5E; }
+.s-card ul { margin: 0; padding-left: 18px; }
+.s-card.azul { background: #3056D5; border-left-color: #0A122D; color: #fff; }
+.s-card.azul p, .s-card.azul li { color: #E3E9FB; }
+.s-card.marinho { background: #0A122D; border-left-color: #3056D5; color: #fff; }
+.s-card.marinho p, .s-card.marinho li { color: #C8CFEA; }
+
+/* Fundo escuro */
+.s-escuro { background: linear-gradient(135deg, #010209 0%, #0A122D 45%, #172A68 100%); color: #fff; }
+.s-escuro .s-lead { color: #C8CFEA; }
+.s-escuro .s-foot { color: #8F9BCB; }
+.s-escuro .s-kicker { color: #8FA6F5; }
+
+/* Foto */
+.s-foto { display: grid; grid-template-columns: 1.1fr 1fr; height: 100%; }
+.s-foto .img { background-size: cover; background-position: center; }
+.s-foto .tx { padding: 64px 60px 80px; display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+
+/* Linha de pesquisa */
+.s-q { background: #fff; border-left: 6px solid #3056D5; border-radius: 0 14px 14px 0; padding: 18px 24px; font-size: 22px; line-height: 1.45; }
+.s-q small { display: block; font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #3056D5; margin-bottom: 4px; }
+.s-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.s-3 > div { background: #fff; border-radius: 14px; padding: 20px 22px; }
+.s-3 > div:nth-child(2) { background: #E3E9FB; }
+.s-3 > div:nth-child(3) { background: #0A122D; color: #fff; }
+.s-3 h5 { margin: 0 0 8px; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: #3056D5; }
+.s-3 > div:nth-child(3) h5 { color: #8FA6F5; }
+.s-3 ul { margin: 0; padding-left: 20px; font-size: 17px; line-height: 1.55; }
+.s-3 > div:nth-child(3) ul { color: #DCE3FA; }
+.s-ei { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; font-size: 17px; line-height: 1.5; color: #464A5E; }
+.s-ei b { color: #0A122D; display: block; font-size: 12.5px; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 2px; }
+
+/* Passos e cronograma */
+.s-steps { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.s-step { background: #fff; border-radius: 14px; padding: 24px 18px; border-top: 5px solid #3056D5; min-height: 190px; }
+.s-step b { display: block; font-size: 19px; margin: 8px 0 6px; }
+.s-step span { font-size: 16px; color: #464A5E; }
+.s-step i { font-style: normal; font-weight: 800; color: #3056D5; font-size: 28px; }
+.s-gate { background: #0A122D; color: #fff; border-radius: 14px; padding: 20px 26px; font-size: 19px; }
+.s-time { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; flex: 1; align-content: center; align-items: stretch; max-height: 440px; margin-top: 20px; }
+.s-time > div { background: #fff; border-radius: 16px; padding: 22px 24px; border-top: 6px solid #3056D5; }
+.s-time > div:nth-child(2) { border-top-color: #172A68; }
+.s-time > div:nth-child(3) { border-top-color: #0A122D; }
+.s-time b { font-size: 34px; font-weight: 800; display: block; }
+.s-time em { font-style: normal; font-weight: 700; color: #3056D5; display: block; margin-bottom: 10px; }
+.s-time ul { margin: 0; padding-left: 20px; font-size: 18px; line-height: 1.7; color: #464A5E; }
+
+/* Tabela */
+.s-table { width: 100%; border-collapse: separate; border-spacing: 0 10px; font-size: 18px; }
+.s-table th { text-align: left; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: #3056D5; padding: 0 18px; background: none; position: static; }
+.s-table td { background: #fff; padding: 15px 20px; border: 0; }
+.s-table td:first-child { border-radius: 12px 0 0 12px; font-weight: 700; width: 36%; }
+.s-table td:last-child { border-radius: 0 12px 12px 0; color: #464A5E; }
+
+/* Encerramento */
+.s-fim { background: radial-gradient(900px 420px at 50% 115%, #3056D5 0%, rgba(48,86,213,.35) 40%, transparent 70%), #EBEEF7; }
+.s-fim .logo { position: absolute; left: 50%; top: 160px; transform: translateX(-50%); width: 760px; height: auto; }
+.s-fim .t { position: absolute; left: 0; right: 0; top: 330px; text-align: center; font-size: 34px; line-height: 1.35; font-weight: 400; padding: 0 160px; }
+.s-fim .ct { position: absolute; left: 0; right: 0; top: 470px; text-align: center; font-size: 17px; color: #172A68; }
+.s-fim .parc { position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); width: 560px; height: auto; }
+
+/* Visualizador */
+.deck-viewer { display: flex; flex-direction: column; gap: 12px; }
+.deck-bar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.deck-bar .pg { font-variant-numeric: tabular-nums; min-width: 70px; text-align: center; font-weight: 600; }
+.deck-full { position: fixed; inset: 0; z-index: 300; background: #010209; display: grid; place-items: center; }
+.deck-full .deck-stage { width: min(100vw, calc(100vh * 16 / 9)); border-radius: 0; }
+.deck-full .hint { position: fixed; bottom: 10px; right: 14px; color: #6874A8; font: 12px 'Open Sans', sans-serif; }
+@media print {
+  @page { size: 1280px 720px; margin: 0; }
+  .print-deck .slide { page-break-after: always; break-after: page; }
+}

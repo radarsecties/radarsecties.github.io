@@ -1,18 +1,30 @@
 import * as store from '../store.js';
+import * as G from '../google.js';
+import { openReuniaoForm } from '../components.js';
 import { esc, modal, formData, options, toast, confirmDialog, isoDay, fmtDate, MESES_LONGOS, download, safeUrl, dayChip, relTime } from '../util.js';
 
-export const TIPOS = { institucional: 'Institucional', setorial: 'Evento setorial', prazo: 'Prazo / edital', prospeccao: 'Rodada de prospecção', reuniao: 'Reunião' };
+export const TIPOS = { institucional: 'Institucional', setorial: 'Evento setorial', prazo: 'Prazo ou edital', reuniao: 'Reunião', google: 'Google Agenda' };
 
 export async function render(view) {
   const now = new Date(); let ym = [now.getFullYear(), now.getMonth()]; let filtro = '';
+  let gevs = [], gmsg = '';
+  const carregarGoogle = async () => {
+    if (!G.status().conectado || !G.hasScope('calendar')) { gmsg = G.status().conectado ? 'Ative a Agenda em Configurações e reconecte para ver os eventos do Google Agenda.' : ''; return; }
+    try {
+      const r = await G.calendarEvents({ dias: 120, passado: 30 });
+      gevs = (r.items || []).filter(e => e.status !== 'cancelled').map(e => ({ id: 'g-' + e.id, google: true, titulo: e.summary || '(sem título)', data: (e.start.dateTime || e.start.date).slice(0, 10),
+        hora: e.start.dateTime ? new Date(e.start.dateTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' }) : '', tipo: 'google', local: e.location || '', link: e.htmlLink, meet: e.hangoutLink || '', descricao: e.description || '' }));
+      gmsg = '';
+    } catch (e) { gmsg = 'Não foi possível ler o Google Agenda: ' + e.message; }
+  };
   function draw() {
-    const evs = store.list('eventos').filter(e => !filtro || e.tipo === filtro);
+    const evs = [...store.list('eventos'), ...gevs].filter(e => !filtro || e.tipo === filtro);
     const [y, m] = ym; const first = new Date(y, m, 1); const start = new Date(y, m, 1 - first.getDay());
     const days = Array.from({ length: 42 }, (_, i) => new Date(start.getFullYear(), start.getMonth(), start.getDate() + i));
     const hoje = isoDay();
     const prox = evs.filter(e => e.data >= hoje).sort((a, b) => a.data.localeCompare(b.data)).slice(0, 12);
-    view.innerHTML = `<div class="section-head"><div><h2>Agenda setorial</h2><p>Eventos do setor de computação quântica e de CT&I, prazos de editais e de mecanismos (como o FORMP&D da Lei do Bem) e a agenda institucional do CIQuanta. Itens marcados como "a confirmar" precisam de checagem no site oficial.</p></div>
-      <div class="toolbar" style="margin:0"><button class="btn" id="ics">Exportar .ics</button><button class="btn primary" id="novo">+ Novo evento</button></div></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Agenda</h2><p>Agenda institucional do CIQUANTA, eventos do setor, prazos de mecanismos de fomento e as reuniões do Google Agenda da conta conectada. Itens marcados como "a confirmar" precisam de checagem na fonte oficial.</p>${gmsg ? `<p class="small" style="color:var(--warn)">${esc(gmsg)}</p>` : ''}</div>
+      <div class="toolbar" style="margin:0"><button class="btn" id="ics">Exportar .ics</button><button class="btn" id="reun">Agendar reunião</button><button class="btn primary" id="novo">Novo evento</button></div></div>
       <div class="grid split-21">
         <div class="card"><div class="toolbar" style="justify-content:space-between"><div class="toolbar" style="margin:0"><button class="btn sm" id="prev" aria-label="Mês anterior">‹</button><strong style="min-width:150px;text-align:center;text-transform:capitalize">${MESES_LONGOS[m]} ${y}</strong><button class="btn sm" id="next" aria-label="Próximo mês">›</button><button class="btn sm ghost" id="today">Hoje</button></div>
           <select id="tipo" style="width:auto">${options(Object.entries(TIPOS).map(([id, nome]) => ({ id, nome })), filtro, { empty: 'Todos os tipos' })}</select></div>
@@ -26,14 +38,16 @@ export async function render(view) {
     view.querySelector('#today').onclick = () => { ym = [now.getFullYear(), now.getMonth()]; draw(); };
     view.querySelector('#tipo').onchange = e => { filtro = e.target.value; draw(); };
     view.querySelector('#novo').onclick = () => form({ data: hoje }, draw);
+    view.querySelector('#reun').onclick = () => escolherOrg(async () => { await carregarGoogle(); draw(); });
     view.querySelector('#ics').onclick = () => { download('ciquanta-agenda.ics', ics(store.list('eventos')), 'text/calendar;charset=utf-8'); };
   }
   const onClick = e => {
-    const ev = e.target.closest('[data-ev]'); if (ev) { e.stopPropagation(); detalhe(store.get('eventos', ev.dataset.ev), draw); return; }
+    const ev = e.target.closest('[data-ev]'); if (ev) { e.stopPropagation(); const g = gevs.find(x => x.id === ev.dataset.ev); if (g) detalheGoogle(g); else detalhe(store.get('eventos', ev.dataset.ev), draw); return; }
     const d = e.target.closest('[data-day]'); if (d) form({ data: d.dataset.day }, draw);
   };
   view.addEventListener('click', onClick);
   draw();
+  carregarGoogle().then(draw);
   return () => view.removeEventListener('click', onClick);
 }
 
@@ -79,7 +93,7 @@ function detalhe(e, done) {
 function ics(evs) {
   const escI = s => String(s || '').replace(/\\/g, '\\\\').replace(/\n/g, '\\n').replace(/[,;]/g, m => '\\' + m);
   const fold = l => l.match(/.{1,73}/g).join('\r\n ');
-  const out = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//CIQuanta-PB//Relacoes Institucionais//PT-BR', 'CALSCALE:GREGORIAN'];
+  const out = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//CIQUANTA-PB//Relacoes Institucionais//PT-BR', 'CALSCALE:GREGORIAN'];
   const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
   for (const e of evs) {
     const d = e.data.replace(/-/g, ''); const n = new Date(e.data + 'T12:00:00'); n.setDate(n.getDate() + 1);
@@ -93,4 +107,16 @@ function ics(evs) {
   }
   out.push('END:VCALENDAR');
   return out.join('\r\n');
+}
+
+function detalheGoogle(e) {
+  modal({ title: e.titulo, body: `<p><strong>${fmtDate(e.data, { long: true })}${e.hora ? ' · ' + esc(e.hora) : ''}</strong>${e.local ? `<br>${esc(e.local)}` : ''}</p>${e.descricao ? `<p style="white-space:pre-wrap">${esc(e.descricao)}</p>` : ''}`,
+    footer: `${e.meet ? `<a class="btn" target="_blank" rel="noopener" href="${esc(safeUrl(e.meet))}">Entrar no Meet</a>` : ''}<a class="btn primary" target="_blank" rel="noopener" href="${esc(safeUrl(e.link))}">Abrir no Google Agenda</a>` });
+}
+
+function escolherOrg(done) {
+  const orgs = [...store.list('orgs')].sort((a, b) => a.nome.localeCompare(b.nome));
+  const { el, close } = modal({ title: 'Agendar reunião', body: `<label class="field">Organização<select id="o">${options(orgs.map(o => ({ id: o.id, nome: o.nome })), '', { empty: 'Sem organização (reunião interna)' })}</select></label>`,
+    footer: '<button class="btn" data-close>Cancelar</button><button class="btn primary" id="ok">Continuar</button>' });
+  el.querySelector('#ok').onclick = () => { const id = el.querySelector('#o').value; close(); openReuniaoForm({ orgId: id || undefined }, done); };
 }

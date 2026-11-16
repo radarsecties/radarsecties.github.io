@@ -43,17 +43,49 @@ export function validCNPJ(c) {
 export const UFS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
 export const REGIAO = { AC:'Norte',AP:'Norte',AM:'Norte',PA:'Norte',RO:'Norte',RR:'Norte',TO:'Norte', AL:'Nordeste',BA:'Nordeste',CE:'Nordeste',MA:'Nordeste',PB:'Nordeste',PE:'Nordeste',PI:'Nordeste',RN:'Nordeste',SE:'Nordeste', DF:'Centro-Oeste',GO:'Centro-Oeste',MT:'Centro-Oeste',MS:'Centro-Oeste', ES:'Sudeste',MG:'Sudeste',RJ:'Sudeste',SP:'Sudeste', PR:'Sul',RS:'Sul',SC:'Sul' };
 export const SEGMENTOS = ['Empresa', 'Startup', 'Fomentador', 'Autoridade', 'Academia/ICT', 'Associação/Rede', 'Imprensa', 'Outro'];
-export const ESTAGIOS = [
-  { id: 'prospeccao', nome: 'Prospecção', cor: '#94A3B8' },
-  { id: 'contato', nome: 'Contato inicial', cor: '#22D3EE' },
-  { id: 'reuniao', nome: 'Reunião', cor: '#6366F1' },
-  { id: 'proposta', nome: 'Proposta', cor: '#A855F7' },
-  { id: 'negociacao', nome: 'Negociação', cor: '#F59E0B' },
-  { id: 'parceria', nome: 'Parceria firmada', cor: '#10B981' },
-  { id: 'pausado', nome: 'Pausado', cor: '#64748B' },
+// Relacionamento com a organização (independente das oportunidades)
+export const RELACIONAMENTO = [
+  { id: 'mapeada', nome: 'Mapeada', cor: '#9AA3C0' },
+  { id: 'contato', nome: 'Em contato', cor: '#5B7BE3' },
+  { id: 'engajada', nome: 'Engajada', cor: '#3056D5' },
+  { id: 'parceira', nome: 'Parceira', cor: '#12805C' },
+  { id: 'pausada', nome: 'Pausada', cor: '#727892' },
 ];
-export const estagioNome = id => (ESTAGIOS.find(e => e.id === id) || ESTAGIOS[0]).nome;
-export const TIPOS_INTERACAO = { email: 'E-mail', reuniao: 'Reunião', ligacao: 'Ligação', visita: 'Visita', evento: 'Evento', nota: 'Anotação', tarefa: 'Tarefa' };
+export const relNome = id => (RELACIONAMENTO.find(e => e.id === id) || RELACIONAMENTO[0]).nome;
+// Funil de oportunidades de negócio, com probabilidade padrão por etapa
+export const FUNIL = [
+  { id: 'qualificacao', nome: 'Qualificação', prob: 10, cor: '#9AA3C0' },
+  { id: 'reuniao', nome: 'Reunião técnica', prob: 25, cor: '#5B7BE3' },
+  { id: 'proposta', nome: 'Proposta técnica', prob: 45, cor: '#3056D5' },
+  { id: 'negociacao', nome: 'Negociação e instrumento jurídico', prob: 70, cor: '#172A68' },
+  { id: 'contratada', nome: 'Contratada', prob: 100, cor: '#12805C' },
+  { id: 'perdida', nome: 'Não avançou', prob: 0, cor: '#C2283F' },
+];
+export const funilNome = id => (FUNIL.find(e => e.id === id) || FUNIL[0]).nome;
+export const MODALIDADES = [
+  { id: 'pesquisa', nome: 'Pesquisa conjunta' }, { id: 'validacao', nome: 'Validação aplicada (6 a 10 semanas)' },
+  { id: 'capacitacao', nome: 'Capacitação e residência' }, { id: 'acesso', nome: 'Acesso à infraestrutura' },
+  { id: 'institucional', nome: 'Cooperação institucional' }, { id: 'patrocinio', nome: 'Patrocínio ou naming rights' },
+];
+export const modNome = id => (MODALIDADES.find(e => e.id === id) || { nome: id || '—' }).nome;
+export const BLOCOS = [ { id: 'institucional', nome: 'Institucional' }, { id: 'industrial', nome: 'Industrial e tecnológico' }, { id: 'academico', nome: 'Acadêmico' } ];
+export const blocoNome = id => (BLOCOS.find(e => e.id === id) || { nome: '—' }).nome;
+export const EVIDENCIA = { confirmada: ['Atuação quântica confirmada', 'ok'], indicios: ['Indícios públicos', 'info'], potencial: ['Perfil compatível', 'gray'] };
+export const TIPOS_INTERACAO = { email: 'E-mail enviado', recebido: 'E-mail recebido', reuniao: 'Reunião', ligacao: 'Ligação', visita: 'Visita', evento: 'Evento', nota: 'Anotação', tarefa: 'Tarefa' };
+// Formas de tratamento (mesmo padrão da planilha de convites da equipe)
+export const TRATAMENTOS = [
+  { id: 'Prezado(a)', saud: 'Prezado(a)', pron: 'Vossa Senhoria' },
+  { id: 'Prezado Senhor', saud: 'Prezado Senhor', pron: 'Vossa Senhoria' },
+  { id: 'Prezada Senhora', saud: 'Prezada Senhora', pron: 'Vossa Senhoria' },
+  { id: 'Excelentíssimo Senhor', saud: 'Excelentíssimo Senhor', pron: 'Vossa Excelência' },
+  { id: 'Excelentíssima Senhora', saud: 'Excelentíssima Senhora', pron: 'Vossa Excelência' },
+  { id: 'Magnífico Reitor', saud: 'Magnífico Reitor', pron: 'Vossa Magnificência' },
+  { id: 'Magnífica Reitora', saud: 'Magnífica Reitora', pron: 'Vossa Magnificência' },
+  { id: 'Ilustríssimo Senhor', saud: 'Ilustríssimo Senhor', pron: 'Vossa Senhoria' },
+  { id: 'Ilustríssima Senhora', saud: 'Ilustríssima Senhora', pron: 'Vossa Senhoria' },
+  { id: 'Caro', saud: 'Caro', pron: 'você' }, { id: 'Cara', saud: 'Cara', pron: 'você' },
+];
+export const tratamento = id => TRATAMENTOS.find(t => t.id === id) || TRATAMENTOS[0];
 
 // ---- UI: toast, modal
 export function toast(msg, kind = '') {

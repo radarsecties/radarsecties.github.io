@@ -49,7 +49,7 @@ export async function quickMail(contato) {
       if (!draft) {
         store.upsert('envios', { campanhaId: '', contatoId: contato.id, email: contato.email, status: 'enviado', messageId: msg?.id, threadId: msg?.threadId, assunto: m.subject, data: new Date().toISOString() }, 'env');
         store.logInteracao({ orgId: contato.orgId, contatoId: contato.id, tipo: 'email', titulo: m.subject, descricao: 'E-mail avulso', threadId: msg?.threadId });
-        const org = store.orgOf(contato); if (org && (!org.estagio || org.estagio === 'prospeccao')) { org.estagio = 'contato'; store.touch('orgs'); }
+        const org = store.orgOf(contato); if (org && (!org.relacionamento || org.relacionamento === 'mapeada')) { org.relacionamento = 'contato'; store.touch('orgs'); }
       }
       toast(draft ? 'Rascunho criado no Gmail.' : 'E-mail enviado.', 'ok'); close();
     } catch (e) { toast(e.message, 'bad'); }

@@ -1,32 +1,19 @@
 // Regras de negócio: sugestão de mecanismos por perfil e links de busca ativa
-import { norm, REGIAO } from './util.js';
+import { REGIAO } from './util.js';
+import * as store from './store.js';
 
-const REGRAS = [
-  [/energia|eletric|transmiss|distribui|geracao|renovav|solar|eolic/, ['pdi-aneel', 'marco-startups']],
-  [/petrol|gas natural|oleo|offshore|refin/, ['pdi-anp', 'marco-startups']],
-  [/automo|autopec|mobilid|veicul|montadora|bateria/, ['mover']],
-  [/semicond|microeletr|chip|design house/, ['brasil-semicon', 'lei-de-tics']],
-  [/eletroeletr|hardware|informatica|automacao|eletronic/, ['lei-de-tics', 'ppi']],
-  [/telecom|telefon|comunicac|rede/, ['funttel', 'lei-de-tics']],
-  [/data ?center|nuvem|cloud/, ['redata']],
-  [/^tic$|tecnologia da informacao|software|ti\b/, ['lei-do-bem', 'ppi']],
-  [/defesa|aeroesp|aeronaut/, ['etec', 'nib']],
-  [/farma|saude|quimic|cosmet|bio/, ['lei-do-bem', 'embrapii']],
-  [/financ|banco|segur|bolsa/, ['lei-do-bem']],
-];
-
-/** Sugere mecanismos aplicáveis a uma organização, em ordem de relevância. */
+/** Sugere mecanismos aplicáveis a uma organização: padrão do setor, regras regionais e de porte. */
 export function sugerirMecanismos(org) {
-  const s = norm(`${org.setor || ''} ${org.cnae || ''} ${org.nome || ''}`);
   const out = new Set();
+  const setor = store.setoresLista().find(s => s.id === org.setor);
+  (setor?.mecanismos || []).forEach(m => out.add(m));
   const seg = org.segmento || 'Empresa';
   if (seg === 'Empresa' || seg === 'Startup') {
-    REGRAS.forEach(([re, ids]) => { if (re.test(s)) ids.forEach(i => out.add(i)); });
-    out.add('lei-do-bem'); out.add('embrapii'); out.add('finep'); out.add('marco-legal-cti');
+    out.add('lei-do-bem'); out.add('embrapii'); out.add('marco-legal-cti');
     if (REGIAO[org.uf] === 'Nordeste') out.add('fne-bnb');
     if (seg === 'Startup' || /micro|pequen|^ME$|^EPP$/i.test(org.porte || '')) { out.add('sebrae'); out.add('faps'); out.add('marco-startups'); }
-  } else if (seg === 'Fomentador') { ['finep', 'bndes', 'embrapii', 'faps'].forEach(i => out.add(i)); }
-  else if (seg === 'Autoridade') { ['ibquantica', 'etec', 'nib'].forEach(i => out.add(i)); }
+  } else if (seg === 'Fomentador') ['finep', 'bndes', 'embrapii', 'faps'].forEach(i => out.add(i));
+  else if (seg === 'Autoridade') ['ibquantica', 'etec', 'nib'].forEach(i => out.add(i));
   return [...out];
 }
 

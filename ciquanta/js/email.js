@@ -1,12 +1,14 @@
-// Montagem de e-mails: variáveis, layout institucional em HTML e mensagem MIME
-import { cfg, orgOf, ref } from './store.js';
-import { esc, MESES_LONGOS, safeUrl } from './util.js';
+// Montagem de e-mails: variáveis, layout institucional CIQUANTA em HTML e mensagem MIME
+import { cfg, orgOf, ref, setorRef, loadSetores } from './store.js';
+import { esc, MESES_LONGOS, safeUrl, tratamento } from './util.js';
+import { deckUrl } from './deck.js';
 
 export const VARIAVEIS = [
-  ['saudacao', 'Saudação completa (ex.: "Prezada Ana")'],
+  ['saudacao', 'Saudação com tratamento (ex.: "Excelentíssimo Senhor João Silva")'],
+  ['pronome', 'Pronome de tratamento (Vossa Excelência, Vossa Magnificência, Vossa Senhoria)'],
   ['nome', 'Nome do contato'], ['primeiro_nome', 'Primeiro nome'], ['cargo', 'Cargo'],
-  ['organizacao', 'Organização'], ['setor', 'Setor'], ['uf', 'UF'], ['cidade', 'Cidade'],
-  ['mecanismo', 'Mecanismo de fomento sugerido'],
+  ['organizacao', 'Organização'], ['setor', 'Setor da organização'], ['uf', 'UF'], ['cidade', 'Cidade'],
+  ['mecanismo', 'Mecanismo de fomento associado'], ['apresentacao', 'Link da apresentação setorial'],
   ['remetente', 'Seu nome'], ['cargo_remetente', 'Seu cargo'], ['telefone_remetente', 'Seu telefone'],
   ['data', 'Data de hoje por extenso'], ['evento', 'Nome do evento (campanha)'], ['data_evento', 'Data do evento (campanha)'],
 ];
@@ -14,6 +16,7 @@ export const VARIAVEIS = [
 let mecMap = null;
 export async function loadMecanismos() {
   if (!mecMap) { const m = await ref('mecanismos'); mecMap = Object.fromEntries(m.itens.map(x => [x.id, x])); }
+  await loadSetores();
   return mecMap;
 }
 export const mecNome = id => mecMap?.[id]?.nome || id;
@@ -21,34 +24,52 @@ export const mecCurto = id => mecMap?.[id]?.curto || mecNome(id);
 
 function hoje() { const d = new Date(); return `${d.getDate()} de ${MESES_LONGOS[d.getMonth()]} de ${d.getFullYear()}`; }
 
+/** Endereço público do sistema (para links de apresentações e imagens no e-mail). */
+export function enderecoPublico() {
+  const c = (cfg().enderecoPublico || '').trim();
+  if (c) return c.endsWith('/') ? c : c + '/';
+  if (location.protocol === 'https:' && !/localhost|127\.0\.0\.1/.test(location.hostname)) return new URL('.', location.href).href;
+  return '';
+}
+export function linkApresentacao(setorId) {
+  const base = enderecoPublico();
+  const s = setorId || 'institucional';
+  const rel = deckUrl(s).replace(new URL('../', import.meta.url).href, '');
+  return base ? base + rel : deckUrl(s);
+}
+
 export function varsFor(contato, extra = {}) {
   const org = orgOf(contato) || {};
   const c = cfg();
   const nome = (contato?.nome || '').trim();
   const primeiro = nome.split(/\s+/)[0] || '';
-  const trat = contato?.tratamento || 'Prezado(a)';
+  const t = tratamento(contato?.tratamento);
+  const formal = /Excel|Magn|Ilustr|Senhor|Senhora/.test(t.saud);
   const mec = (org.mecanismos || [])[0];
   return {
-    saudacao: nome ? `${trat} ${/Senhor|Senhora|Excel|Ilustr/.test(trat) ? nome : primeiro}` : 'Prezados(as)',
+    saudacao: nome ? `${t.saud} ${formal ? nome : primeiro}` : 'Prezados',
+    pronome: t.pron,
     nome, primeiro_nome: primeiro, cargo: contato?.cargo || '',
-    organizacao: org.nomeFantasia || org.nome || contato?.organizacao || 'sua organização',
-    setor: org.setor || 'seu setor', uf: org.uf || '', cidade: org.cidade || '',
-    mecanismo: mec ? mecNome(mec) : 'a Lei do Bem (art. 19-A, projetos com ICT)',
+    organizacao: org.nomeFantasia || org.nome || 'sua organização',
+    setor: org.setor ? setorRef(org.setor) : 'o seu setor',
+    uf: org.uf || '', cidade: org.cidade || '',
+    mecanismo: mec ? mecNome(mec) : 'a Lei do Bem (art. 19-A, projetos executados por ICT)',
+    apresentacao: linkApresentacao(org.setor),
     remetente: c.remetenteNome || '', cargo_remetente: c.remetenteCargo || '', telefone_remetente: c.remetenteTelefone || '',
     data: hoje(), evento: '', data_evento: '',
     ...Object.fromEntries(Object.entries(extra || {}).filter(([, v]) => v)),
   };
 }
 
-/** Substitui {{variavel}}. Em HTML, os valores são escapados. */
+/** Substitui {{variavel}}. Em HTML os valores são escapados e links viram âncoras. */
 export function merge(tpl, vars, { html = false } = {}) {
   return String(tpl || '').replace(/\{\{\s*([a-z_]+)\s*\}\}/gi, (m, k) => {
     const v = vars[k.toLowerCase()]; if (v === undefined) return m;
+    if (html && /^https?:\/\//.test(v)) return `<a href="${esc(v)}" style="color:#3056D5">${esc(v)}</a>`;
     return html ? esc(v) : v;
   });
 }
 
-/** Remove scripts/handlers de HTML vindo de modelos (defesa em profundidade). */
 export function sanitize(html) {
   const t = document.createElement('template'); t.innerHTML = html;
   t.content.querySelectorAll('script,iframe,object,embed,form,style,link,meta').forEach(n => n.remove());
@@ -61,36 +82,37 @@ export function sanitize(html) {
 export function signatureHTML() {
   const c = cfg();
   if (!c.remetenteNome) return '';
-  return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:8px;border-left:3px solid #6366F1;padding-left:12px">
-  <tr><td style="font:600 14px Arial,sans-serif;color:#11142B;padding-left:12px">${esc(c.remetenteNome)}</td></tr>
-  ${c.remetenteCargo ? `<tr><td style="font:13px Arial,sans-serif;color:#4A4F6A;padding-left:12px">${esc(c.remetenteCargo)}</td></tr>` : ''}
-  <tr><td style="font:13px Arial,sans-serif;color:#4A4F6A;padding-left:12px">CIQuanta-PB · SECTIES · Governo da Paraíba</td></tr>
-  ${c.remetenteTelefone ? `<tr><td style="font:13px Arial,sans-serif;color:#4A4F6A;padding-left:12px">${esc(c.remetenteTelefone)}</td></tr>` : ''}
-  </table>`;
+  const l = (t, w = 400, cor = '#464A5E') => `<tr><td style="font:${w} 13px 'Open Sans',Arial,sans-serif;color:${cor};padding:1px 0 1px 12px">${t}</td></tr>`;
+  return `<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:14px;border-left:3px solid #3056D5">
+  ${l(esc(c.remetenteNome), 700, '#0A122D')}${c.remetenteCargo ? l(esc(c.remetenteCargo)) : ''}
+  ${l('CIQUANTA · Centro Internacional de Computação Quântica')}${l('SECTIES · Governo da Paraíba')}
+  ${c.remetenteTelefone ? l(esc(c.remetenteTelefone)) : ''}${c.replyTo ? l(`<a href="mailto:${esc(c.replyTo)}" style="color:#3056D5">${esc(c.replyTo)}</a>`) : ''}</table>`;
 }
 
 export function wrapHTML(bodyHtml, { links = [], preheader = '' } = {}) {
   const c = cfg();
-  const linkBlock = links.length ? `<tr><td style="padding:0 32px 20px">
-      <div style="background:#F4F6FB;border-radius:10px;padding:14px 16px">
-        <div style="font:700 12px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#4F46E5;margin-bottom:6px">Materiais institucionais</div>
-        ${links.map(l => `<div style="font:14px Arial,sans-serif;margin:4px 0"><a href="${esc(l.url)}" style="color:#4F46E5">${esc(l.titulo)}</a></div>`).join('')}
+  const base = enderecoPublico();
+  const logo = base ? `<img src="${esc(base)}assets/logo-branco.png" width="220" alt="CIQUANTA" style="display:block;width:220px;height:auto;border:0">` : `<div style="font:800 24px Arial,sans-serif;color:#fff;letter-spacing:1px">CIQUANTA</div>`;
+  const parceiros = base ? `<img src="${esc(base)}assets/parceiros-marinho.png" width="420" alt="CETC · SECTIES · Governo da Paraíba · MCTI · Governo Federal" style="display:block;width:420px;max-width:100%;height:auto;border:0;margin:0 0 10px">` : '';
+  const linkBlock = links.length ? `<tr><td style="padding:0 36px 22px">
+      <div style="background:#EBEEF7;border-left:4px solid #3056D5;border-radius:0 10px 10px 0;padding:14px 18px">
+        <div style="font:700 11px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#3056D5;margin-bottom:6px">Materiais</div>
+        ${links.map(l => `<div style="font:14px Arial,sans-serif;margin:5px 0"><a href="${esc(l.url)}" style="color:#0A122D;font-weight:600">${esc(l.titulo)}</a></div>`).join('')}
       </div></td></tr>` : '';
   return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"></head>
-<body style="margin:0;background:#EEF0F7;padding:0">
+<body style="margin:0;background:#EBEEF7;padding:0">
 <span style="display:none;max-height:0;overflow:hidden;opacity:0">${esc(preheader)}</span>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EEF0F7;padding:24px 0">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EBEEF7;padding:26px 0">
 <tr><td align="center">
 <table role="presentation" width="640" cellpadding="0" cellspacing="0" style="max-width:640px;width:100%;background:#ffffff;border-radius:14px;overflow:hidden">
-<tr><td style="background:#0B1033;padding:22px 32px">
-  <div style="font:700 22px Arial,sans-serif;color:#ffffff;letter-spacing:-.3px">CIQuanta<span style="color:#22D3EE">·</span>PB</div>
-  <div style="font:12px Arial,sans-serif;color:#AEB3E6;margin-top:2px">Centro Internacional de Computação e Tecnologias Quânticas da Paraíba</div>
+<tr><td style="background:#0A122D;background-image:linear-gradient(115deg,#010209 0%,#0A122D 30%,#172A68 60%,#3056D5 100%);padding:28px 36px 24px">
+  ${logo}
+  <div style="font:600 12px Arial,sans-serif;color:#C8CFEA;margin-top:10px;letter-spacing:.04em">Centro Internacional de Computação Quântica do Estado da Paraíba</div>
 </td></tr>
-<tr><td style="height:4px;background:#6366F1;background-image:linear-gradient(90deg,#22D3EE,#6366F1,#A855F7)"></td></tr>
-<tr><td style="padding:28px 32px 8px;font:15px/1.6 Arial,sans-serif;color:#11142B">${bodyHtml}${signatureHTML()}</td></tr>
+<tr><td style="padding:30px 36px 10px;font:15px/1.65 'Open Sans',Arial,sans-serif;color:#0A122D">${bodyHtml}${signatureHTML()}</td></tr>
 ${linkBlock}
-<tr><td style="padding:16px 32px 24px;border-top:1px solid #E3E6F0;font:11.5px/1.5 Arial,sans-serif;color:#7A7F99">
-  SECTIES · Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior · Governo da Paraíba<br>${esc(c.rodape || '')}
+<tr><td style="padding:18px 36px 26px;border-top:1px solid #DCE1EF;font:11.5px/1.55 Arial,sans-serif;color:#727892">
+  ${parceiros}Estação Cabo Branco, Altiplano Cabo Branco, João Pessoa (PB)<br>${esc(c.rodape || '')}
 </td></tr>
 </table></td></tr></table></body></html>`;
 }
@@ -98,8 +120,9 @@ ${linkBlock}
 export function htmlToText(html) {
   const t = document.createElement('div');
   t.innerHTML = html.replace(/<(br|\/p|\/div|\/li|\/h\d|\/tr)>/gi, '$&\n').replace(/<li>/gi, '• ');
-  t.querySelectorAll('a').forEach(a => { const h = a.getAttribute('href'); if (h && h !== a.textContent) a.textContent = `${a.textContent} (${h})`; });
-  return t.textContent.replace(/\n{3,}/g, '\n\n').trim();
+  t.querySelectorAll('img').forEach(i => i.replaceWith(i.alt || ''));
+  t.querySelectorAll('a').forEach(a => { const h = a.getAttribute('href'); if (h && h !== a.textContent && !h.startsWith('mailto:')) a.textContent = `${a.textContent} (${h})`; });
+  return t.textContent.replace(/[ \t]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
 }
 
 // ---- MIME
@@ -115,9 +138,6 @@ function encWord(s) {
 const addr = (name, email) => name ? `${encWord(String(name).replace(/["\r\n]/g, ''))} <${email}>` : email;
 const clean = s => String(s || '').replace(/[\r\n]+/g, ' ').trim();
 
-/**
- * @param {{to:string,toName?:string,from?:string,fromName?:string,replyTo?:string,cc?:string,subject:string,html:string,text?:string,attachments?:{name:string,type:string,base64:string}[]}} m
- */
 export function buildMime(m) {
   const B1 = 'cqm' + Math.random().toString(36).slice(2), B2 = 'cqa' + Math.random().toString(36).slice(2);
   const h = [];
@@ -143,7 +163,6 @@ export function buildMime(m) {
   return [...h, `Content-Type: multipart/mixed; boundary="${B1}"`, '', ...parts].join('\r\n');
 }
 
-/** Monta a mensagem final de uma campanha para um contato. */
 export function compose(camp, contato, { materiais = [], extra = {} } = {}) {
   const vars = varsFor(contato, { ...(camp.vars || {}), ...extra });
   const subject = merge(camp.assunto, vars);

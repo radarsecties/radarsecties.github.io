@@ -53,11 +53,24 @@ export async function consultarCNPJ(cnpj) {
   throw new Error('Não foi possível consultar o CNPJ. ' + erros.join(' · '));
 }
 
+/** Sugere o setor do CRM a partir do CNAE. */
+export function setorPorCnae(t) {
+  const n = t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const R = [[/banco|credito|financ|pagamento|corretora|investimento|bolsa/, 'financeiro'], [/seguro|previdencia|ressegur/, 'seguros'], [/hospital|saude|farmac|medicament|diagnost|laborator/, 'saude'],
+    [/agricult|pecuar|soja|graos|fertiliz|defensiv|sement|abate|frigorif|aliment/, 'agro'], [/energia eletrica|geracao de energia|transmissao de energia|distribuicao de energia/, 'energia'],
+    [/petroleo|gas natural|refino|combustiv|etanol/, 'oleo-gas'], [/minerio|mineracao|extracao de|siderur|metalurg/, 'mineracao'], [/quimic|petroquim|cosmet|celulose|papel/, 'quimica'],
+    [/semicondut|componentes eletronicos|equipamentos de informatica|computadores/, 'semicondutores'], [/veiculos|automove|autopec|caminhoes/, 'automotivo'], [/aeronave|aeroespac|defesa|armamento/, 'aeroespacial'],
+    [/telecomunica|telefonia|internet|certificacao digital/, 'telecom'], [/software|tecnologia da informacao|processamento de dados|computacao/, 'tic'], [/transporte|logistic|armazenamento|portuar|ferrovi|aere/, 'logistica'],
+    [/comercio varejista|supermercado|varejo/, 'varejo'], [/fabricacao|industria/, 'industria']];
+  for (const [re, id] of R) if (re.test(n)) return id;
+  return '';
+}
+
 /** Converte o resultado da Receita no formato de organização do CRM. */
 export function paraOrganizacao(r) {
   return {
     nome: r.razao, nomeFantasia: r.fantasia, cnpj: r.cnpj, uf: r.uf, municipio: r.municipio, cidade: r.municipio,
-    email: r.email, telefone: r.telefone, setor: r.cnaeDesc ? r.cnaeDesc.split(/[,;]/)[0].slice(0, 60) : '', cnae: `${r.cnae} ${r.cnaeDesc}`.trim(), porte: r.porte,
+    email: r.email, telefone: r.telefone, setor: setorPorCnae(`${r.cnae} ${r.cnaeDesc}`), cnae: `${r.cnae} ${r.cnaeDesc}`.trim(), porte: r.porte,
     receita: { situacao: r.situacao, abertura: r.abertura, capital: r.capital, endereco: r.endereco, cep: r.cep, socios: r.socios, consultadoEm: new Date().toISOString(), fonte: r.fonte },
   };
 }
