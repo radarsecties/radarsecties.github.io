@@ -48,9 +48,19 @@ function loadGIS() {
   });
 }
 
+/** Confere o formato do ID do cliente OAuth e explica o engano mais comum. */
+export function problemaClientId(v) {
+  const s = String(v || '').trim();
+  if (/^\d+-[a-z0-9]+\.apps\.googleusercontent\.com$/.test(s)) return '';
+  if (/^AIza/.test(s)) return 'Isto é uma chave de API, não o ID do cliente. No Google Cloud, abra Credenciais e copie o "ID do cliente" do item em "IDs do cliente OAuth 2.0".';
+  if (/^GOCSPX-/.test(s)) return 'Isto é a chave secreta do cliente. Copie o "ID do cliente", que termina em .apps.googleusercontent.com.';
+  if (/^\d+$/.test(s)) return 'Isto é o número do projeto. Copie o "ID do cliente", que termina em .apps.googleusercontent.com.';
+  return 'O ID do cliente deve ter o formato 000000000000-xxxxxxxx.apps.googleusercontent.com. Confira se foi copiado inteiro, sem espaços.';
+}
 export async function connect({ silent = false } = {}) {
   const clientId = (cfg().clientId || '').trim();
   if (!clientId) throw new Error('Informe o Client ID do Google em Configurações para conectar a conta.');
+  const aviso = problemaClientId(clientId); if (aviso) throw new Error(aviso);
   await loadGIS();
   return new Promise((resolve, reject) => {
     tokenClient = google.accounts.oauth2.initTokenClient({
