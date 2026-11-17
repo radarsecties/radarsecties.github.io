@@ -1,0 +1,274 @@
+{
+  "itens": [
+    {
+      "id": "ciq-institucional",
+      "titulo": "CIQUANTA, Apresentação Institucional (SECTIES-PB, novembro de 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "ciq-deck-exec",
+      "titulo": "Apresentação CIQUANTA, Reunião Executiva (SECTIES-PB, março de 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "ciq-booklet",
+      "titulo": "CIQUANTA, Booklet institucional (SECTIES-PB, 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "ciq-agenda-fin",
+      "titulo": "Agenda CIQUANTA para o Sistema Financeiro, v2 (SECTIES-PB, setembro de 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "ciq-parcerias",
+      "titulo": "Política de Sustentabilidade e Parcerias do CIQUANTA (SECTIES-PB, 2026)",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "ciq-convite",
+      "titulo": "Convite oficial para a inauguração do CIQUANTA, 11 de dezembro de 2026",
+      "tipo": "Documento oficial",
+      "url": ""
+    },
+    {
+      "id": "dcd-pb",
+      "titulo": "DatacenterDynamics: Paraíba monta centro de computação e tecnologia quântico",
+      "tipo": "Imprensa",
+      "url": "https://www.datacenterdynamics.com/br/not%C3%ADcias/para%C3%ADba-monta-centro-de-computa%C3%A7%C3%A3o-e-tecnologia-qu%C3%A2ntico/"
+    },
+    {
+      "id": "conv-pb-qubits",
+      "titulo": "Convergência Digital: Paraíba terá os dois primeiros computadores quânticos operacionais do Brasil",
+      "tipo": "Imprensa",
+      "url": "https://convergenciadigital.com.br/governo/paraiba-tera-os-dois-primeiros-computadores-quanticos-operacionais-do-brasil-com-capacidades-de-20-e-100-qubits/"
+    },
+    {
+      "id": "ideas-ibm-qn",
+      "titulo": "IDEAS Hub: Bradesco e Itaú entram na IBM Quantum Network",
+      "tipo": "Imprensa",
+      "url": "https://www.ideashub.com.br/en/blog/computacao-quantica-bradesco-itau-ibm-quantum-network-brasil-2026"
+    },
+    {
+      "id": "aciara-ibm",
+      "titulo": "ACIARA: Bradesco e Itaú integram rede de computação quântica da IBM",
+      "tipo": "Imprensa",
+      "url": "https://aciara.com.br/computacao-quantica-ibm-bradesco-itau/"
+    },
+    {
+      "id": "mobiletime-bb",
+      "titulo": "Mobile Time: Bradesco e BB se preparam para avançar na computação quântica (abril de 2024)",
+      "tipo": "Imprensa",
+      "url": "https://www.mobiletime.com.br/noticias/18/04/2024/bradesco-e-bb-se-preparam-para-avancar-na-computacao-quantica/"
+    },
+    {
+      "id": "finsiders-bb-unb",
+      "titulo": "Finsiders: Banco do Brasil e UnB fecham parceria em soluções com IA e computação quântica",
+      "tipo": "Imprensa",
+      "url": "https://finsidersbrasil.com.br/tecnologia-para-fintechs/banco-do-brasil-e-unb-fecham-parceria-para-desenvolver-solucoes-com-ia/"
+    },
+    {
+      "id": "empdig-bancos",
+      "titulo": "Empresário Digital: computação quântica entra no radar dos bancos (junho de 2025)",
+      "tipo": "Imprensa",
+      "url": "https://www.empresariodigital.com.br/2025/06/23/computacao-quantica-entra-no-radar-dos-bancos-e-transforma-o-debate-sobre-inovacao-no-brasil/"
+    },
+    {
+      "id": "tiinside-coop",
+      "titulo": "TI Inside: com computação quântica a caminho, cooperação em pesquisa entra na agenda das empresas (setembro de 2026)",
+      "tipo": "Imprensa",
+      "url": "https://tiinside.com.br/08/09/2026/com-computacao-quantica-a-caminho-cooperacao-em-pesquisa-entra-na-agenda-das-empresas/"
+    },
+    {
+      "id": "fapesp-empresas",
+      "titulo": "Agência FAPESP: empresas brasileiras começam a explorar aplicações da computação quântica",
+      "tipo": "Imprensa científica",
+      "url": "https://agencia.fapesp.br/empresas-brasileiras-comecam-a-explorar-aplicacoes-da-computacao-quantica/54333"
+    },
+    {
+      "id": "futurodasaude-einstein",
+      "titulo": "Futuro da Saúde: computação quântica pode reinventar o desenvolvimento de fármacos (Einstein)",
+      "tipo": "Imprensa",
+      "url": "https://futurodasaude.com.br/computacao-quantica-einstein/"
+    },
+    {
+      "id": "itforum-radar",
+      "titulo": "IT Forum: computação quântica entra no radar global; Brasil ainda patina na infraestrutura",
+      "tipo": "Imprensa",
+      "url": "https://itforum.com.br/noticias/ciencia-quantica-radar-global-brasil-infraestrutura/"
+    },
+    {
+      "id": "fapesp-qutia",
+      "titulo": "FAPESP: programa QuTIa (tecnologias quânticas)",
+      "tipo": "Fonte oficial",
+      "url": "https://fapesp.br/qutia/"
+    },
+    {
+      "id": "bnamericas-petrobras",
+      "titulo": "BNamericas: Petrobras sees quantum computing operational in 5 years (2024)",
+      "tipo": "Imprensa",
+      "url": "https://www.bnamericas.com/en/news/petrobras-sees-quantum-computing-operational-in-5-years"
+    },
+    {
+      "id": "dcd-petrobras-sd",
+      "titulo": "DatacenterDynamics: Petrobras e parceiros investem R$ 63 milhões na expansão do supercomputador Santos Dumont",
+      "tipo": "Imprensa",
+      "url": "https://www.datacenterdynamics.com/br/opini%C3%B5es/petrobras-e-parceiros-investem-r-63-milh%C3%B5es-na-expans%C3%A3o-do-supercomputador-santos-dumont-que-volta-a-ser-o-maior-da-am%C3%A9rica-latina/"
+    },
+    {
+      "id": "dcd-lenovo-petrobras",
+      "titulo": "DatacenterDynamics: Lenovo entrega o primeiro de cinco supercomputadores à Petrobras",
+      "tipo": "Imprensa",
+      "url": "https://www.datacenterdynamics.com/br/not%C3%ADcias/lenovo-entrega-primeiro-de-cinco-novos-supercomputadores-%C3%A0-petrobras-em-contrato-de-r-500-milh%C3%B5es/"
+    },
+    {
+      "id": "teletime-cpqd",
+      "titulo": "Teletime: CPQD vai desenvolver tecnologias quânticas para cibersegurança (fevereiro de 2025)",
+      "tipo": "Imprensa",
+      "url": "https://teletime.com.br/17/02/2025/cpqd-vai-desenvolver-tecnologias-quanticas-para-ciberseguranca/"
+    },
+    {
+      "id": "inforchannel-cpqd",
+      "titulo": "Inforchannel: CPQD chega a 200 km na transmissão de informações quânticas por fibra óptica (abril de 2026)",
+      "tipo": "Imprensa",
+      "url": "https://inforchannel.com.br/2026/04/24/cpqd-atinge-distancia-de-200-quilometros-na-transmissao-de-informacoes-quanticas-por-fibra-optica/"
+    },
+    {
+      "id": "mcti-recife",
+      "titulo": "MCTI: infraestrutura quântica desenvolvida no Recife (maio de 2026)",
+      "tipo": "Fonte oficial",
+      "url": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/noticias/2026/05/infraestrutura-quantica-desenvolvida-no-recife-coloca-o-brasil-na-fronteira-da-ciberseguranca"
+    },
+    {
+      "id": "ime-qkd",
+      "titulo": "IME: canal quântico pioneiro rumo à Internet Quântica no Brasil",
+      "tipo": "Fonte oficial",
+      "url": "https://www.ime.eb.mil.br/home/noticias/ime-internet-quantica-no-brasil"
+    },
+    {
+      "id": "fieb-cimatec",
+      "titulo": "FIEB: inauguração do CIMATEC QUANTUM",
+      "tipo": "Fonte institucional",
+      "url": "https://www.fieb.org.br/noticias/inauguracao-do-cimatec-quantum-marca-avanco-em-tecnologias-quanticas-no-brasil/"
+    },
+    {
+      "id": "quiin-laqcc",
+      "titulo": "QuIIN / SENAI CIMATEC: LAQCC",
+      "tipo": "Fonte institucional",
+      "url": "https://quiin.senaicimatec.com.br/laqcc/"
+    },
+    {
+      "id": "badevalor-laqcc",
+      "titulo": "BA de Valor: Senai Cimatec e Atos lançam o primeiro centro de computação quântica no Brasil",
+      "tipo": "Imprensa",
+      "url": "https://badevalor.com.br/senai-cimatec-e-atos-lancam-o-1o-centro-de-computacao-quantica-no-brasil/"
+    },
+    {
+      "id": "quera-venturus",
+      "titulo": "QuEra: Venturus and QuEra announce a partnership to develop quantum computing in Latin America (junho de 2024)",
+      "tipo": "Fonte institucional",
+      "url": "https://www.quera.com/press-releases/venturus-and-quera-announce-a-partnership-to-develop-quantum-computing-in-latin-america"
+    },
+    {
+      "id": "cultivar-embrapa",
+      "titulo": "Revista Cultivar: Embrapa promove discussão sobre aplicação das tecnologias quânticas no agro",
+      "tipo": "Imprensa",
+      "url": "https://revistacultivar.com.br/noticias/embrapa-promove-discussao-sobre-aplicacao-das-tecnologias-quanticas-no-agro"
+    },
+    {
+      "id": "forbes-agro-quantica",
+      "titulo": "Forbes Agro: por que a computação quântica é estratégica para o agro do Brasil (dezembro de 2024)",
+      "tipo": "Imprensa",
+      "url": "https://forbes.com.br/forbes-agro/2024/12/por-que-a-computacao-quantica-e-estrategica-para-o-agro-do-brasil/"
+    },
+    {
+      "id": "embrapa-alice-qc",
+      "titulo": "Embrapa (Alice): revisão sobre computação quântica na agricultura",
+      "tipo": "Publicação científica",
+      "url": "https://www.alice.cnptia.embrapa.br/handle/doc/1168099?locale=en"
+    },
+    {
+      "id": "ictp-empresas",
+      "titulo": "ICTP-SAIFR: Especial Quântica, empresas nacionais",
+      "tipo": "Divulgação científica",
+      "url": "https://outreach.ictp-saifr.org/quantica-empresas-nacionais/"
+    },
+    {
+      "id": "sindpd-china",
+      "titulo": "Sindpd: equipamentos chineses colocam o Brasil na corrida pela computação quântica (novembro de 2026)",
+      "tipo": "Imprensa",
+      "url": "https://sindpd.org.br/2026/11/09/chineses-brasil-computacao-quantica/"
+    },
+    {
+      "id": "bcb-ref",
+      "titulo": "Banco Central do Brasil: Relatório de Estabilidade Financeira, 1º semestre de 2025",
+      "tipo": "Fonte oficial",
+      "url": "https://www.bcb.gov.br/publicacoes/ref"
+    },
+    {
+      "id": "nist-pqc",
+      "titulo": "NIST: padrões de criptografia pós-quântica FIPS 203, 204 e 205 (agosto de 2024)",
+      "tipo": "Fonte oficial",
+      "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+    },
+    {
+      "id": "lei-9991",
+      "titulo": "Lei nº 9.991/2000 (PD&I do setor elétrico)",
+      "tipo": "Legislação",
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/l9991.htm"
+    },
+    {
+      "id": "lei-11196",
+      "titulo": "Lei nº 11.196/2005 (Lei do Bem)",
+      "tipo": "Legislação",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11196.htm"
+    },
+    {
+      "id": "lei-10973",
+      "titulo": "Lei nº 10.973/2004 (Lei de Inovação), com alterações da Lei nº 13.243/2016",
+      "tipo": "Legislação",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2004/lei/l10.973.htm"
+    },
+    {
+      "id": "cesar-petrobras",
+      "titulo": "CESAR: Petrobras e CESAR em HPC para simulação de reservatórios",
+      "tipo": "Fonte institucional",
+      "url": "https://www.cesar.org.br/web/english/w/brazils-energy-giant-petrobras-taps-cesars-hpc-coding-prowess-to-cut-the-time-and-cost-for-reservoir-simulations"
+    },
+    {
+      "id": "itsection-kryptus",
+      "titulo": "IT Section: V/Cert adota algoritmo pós-quântico com HSM da Kryptus (junho de 2024)",
+      "tipo": "Imprensa",
+      "url": "https://itsection.com.br/2024/06/10/v-cert-adota-algoritmo-pos-quantico-com-hsm-da-kryptus-para-protecao-de-dados"
+    },
+    {
+      "id": "exame-dinamo",
+      "titulo": "Exame: o futuro da criptografia na era da computação quântica (Dinamo Networks, 2025)",
+      "tipo": "Imprensa",
+      "url": "https://exame.com/bussola/o-futuro-da-criptografia-na-era-da-computacao-quantica/"
+    },
+    {
+      "id": "fastcompany-quantica",
+      "titulo": "Fast Company Brasil: o futuro da computação quântica no Brasil",
+      "tipo": "Imprensa",
+      "url": "https://fastcompanybrasil.com/tech/o-futuro-da-computacao-quantica-no-brasil-potencial-desafios-e-oportunidades/"
+    },
+    {
+      "id": "timesbrasil-ibm",
+      "titulo": "Times Brasil: Brasil avança em computação quântica com parcerias da IBM",
+      "tipo": "Imprensa",
+      "url": "https://timesbrasil.com.br/empresas-e-negocios/tecnologia-e-inovacao/brasil-avanca-como-player-em-computacao-quantica-com-parcerias-da-ibm/"
+    },
+    {
+      "id": "fapesp-deeptech",
+      "titulo": "Agência FAPESP: Brasil tem o maior número de deep techs da América Latina (relatórios Emerge)",
+      "tipo": "Imprensa científica",
+      "url": "https://agencia.fapesp.br/brasil-tem-o-maior-numero-de-deeptechs-na-america-latina-mas-e-o-terceiro-em-investimento-privado/55955"
+    }
+  ]
+}

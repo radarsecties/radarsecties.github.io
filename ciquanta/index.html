@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CIQUANTA CRM</title>
+<meta name="description" content="Sistema de relações institucionais do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.">
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://brasilapi.com.br https://publica.cnpj.ws https://minhareceita.org; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icone-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1120" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="assets/fonts/libre-franklin-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/deck.css">
+<script src="js/tema.js"></script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#/painel" aria-label="CIQUANTA, início">
+      <img class="claro" src="assets/logo-marinho.png" alt="CIQUANTA" width="118" height="12"><img class="escuro" src="assets/logo-branco.png" alt="" width="118" height="12" aria-hidden="true"><span class="crm">CRM</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
+    <div class="sidebar-foot">
+      <div class="conta-menu" id="conta-menu" role="menu" aria-label="Conta" hidden>
+        <button type="button" role="menuitem" data-ir="automacao">Automação</button>
+        <button type="button" role="menuitem" data-ir="config">Configurações</button>
+        <button type="button" role="menuitem" id="m-tema">Tema escuro</button>
+        <button type="button" role="menuitem" id="m-sair" class="sair">Sair</button>
+      </div>
+      <button id="conta" class="conta" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="conta-menu">
+        <span class="av" aria-hidden="true">C</span>
+        <span class="quem"><b>CIQUANTA</b><small id="conta-estado" class="off"><i></i><span>E-mail desconectado</span></small></span>
+        <svg class="seta" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 7.5 6 4.5l3 3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir menu"></button>
+      <h1 id="page-title">Hoje</h1>
+      <div class="topbar-actions">
+        <button class="busca-btn" id="global-search" type="button" aria-label="Busca rápida"><i id="busca-ic"></i><span>Buscar ou executar</span><kbd>Ctrl K</kbd></button>
+        <button class="icon-btn hidden" id="sync-btn" aria-label="Base compartilhada"></button>
+        <button class="icon-btn" id="live-btn" title="Caixa de entrada" aria-label="Caixa de entrada"></button>
+        <button class="icon-btn" id="theme-btn" title="Tema claro ou escuro" aria-label="Alternar tema"></button>
+      </div>
+    </header>
+    <main id="view" class="view" tabindex="-1"></main>
+  </div>
+</div>
+<div id="modal-root"></div>
+<div id="toasts" aria-live="polite"></div>
+<script src="js/vendor/chart.umd.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+{
+ "itens": [
+  {
+   "id": "ag-comiss",
+   "data": "2026-11-20",
+   "hora": "",
+   "titulo": "Início do comissionamento do computador quântico",
+   "tipo": "institucional",
+   "local": "Estação das Artes Luciano Agra, João Pessoa (PB)",
+   "descricao": "Marco do roadmap de implantação (Apresentação Institucional).",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-hall",
+   "data": "2026-12-10",
+   "hora": "",
+   "titulo": "Abertura do hall de exposição, com o computador montado",
+   "tipo": "institucional",
+   "local": "Estação das Artes Luciano Agra, João Pessoa (PB)",
+   "descricao": "Marco do roadmap de implantação (Apresentação Institucional). Também é a data-limite de confirmação de presença indicada no convite da solenidade de 11/12.",
+   "link": "",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-inauguracao",
+   "data": "2026-12-11",
+   "hora": "17:00",
+   "titulo": "Solenidade de inauguração (conforme convite)",
+   "tipo": "institucional",
+   "local": "Av. João Cirilo da Silva, s/n, Altiplano Cabo Branco, João Pessoa (PB)",
+   "descricao": "Data do convite oficial. O roadmap da Apresentação Institucional situa a inauguração oficial nos 100 primeiros dias de 2027: confirmar qual data prevalece.",
+   "link": "",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-pot-00",
+   "data": "2027-03-01",
+   "hora": "",
+   "titulo": "APS Global Physics Summit",
+   "tipo": "potencial",
+   "local": "Estados Unidos",
+   "descricao": "Maior encontro mundial de física, com trilha de informação quântica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
+  },
+  {
+   "id": "ag-pot-01",
+   "data": "2027-04-01",
+   "hora": "",
+   "titulo": "LAAD Defence & Security",
+   "tipo": "potencial",
+   "local": "Rio de Janeiro (RJ)",
+   "descricao": "Feira de defesa e segurança, realizada em anos ímpares. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "governo-defesa",
+    "aeroespacial"
+   ]
+  },
+  {
+   "id": "ag-wqd",
+   "data": "2027-04-14",
+   "hora": "",
+   "titulo": "Dia Mundial Quântico",
+   "tipo": "setorial",
+   "local": "",
+   "descricao": "Data anual fixa, adequada a visitas técnicas e comunicação institucional.",
+   "link": "https://worldquantumday.org/",
+   "aConfirmar": false
+  },
+  {
+   "id": "ag-pot-02",
+   "data": "2027-04-26",
+   "hora": "",
+   "titulo": "Agrishow",
+   "tipo": "potencial",
+   "local": "Ribeirão Preto (SP)",
+   "descricao": "Feira de tecnologia agrícola. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "agro"
+   ]
+  },
+  {
+   "id": "ag-pot-03",
+   "data": "2027-05-01",
+   "hora": "",
+   "titulo": "Hospitalar",
+   "tipo": "potencial",
+   "local": "São Paulo (SP)",
+   "descricao": "Feira do setor de saúde. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "saude"
+   ]
+  },
+  {
+   "id": "ag-pot-04",
+   "data": "2027-06-01",
+   "hora": "",
+   "titulo": "Febraban Tech",
+   "tipo": "potencial",
+   "local": "São Paulo (SP)",
+   "descricao": "Congresso de tecnologia do setor financeiro. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "financeiro",
+    "seguros"
+   ]
+  },
+  {
+   "id": "ag-pot-05",
+   "data": "2027-06-08",
+   "hora": "",
+   "titulo": "Web Summit Rio",
+   "tipo": "potencial",
+   "local": "Rio de Janeiro (RJ)",
+   "descricao": "Conferência de tecnologia e startups. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "deeptech",
+    "investidores"
+   ]
+  },
+  {
+   "id": "ag-pot-06",
+   "data": "2027-07-11",
+   "hora": "",
+   "titulo": "Reunião Anual da SBPC",
+   "tipo": "potencial",
+   "local": "A definir",
+   "descricao": "Encontro anual da comunidade científica brasileira. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
+  },
+  {
+   "id": "ag-formpd",
+   "data": "2027-07-31",
+   "hora": "",
+   "titulo": "Prazo do FORMP&D da Lei do Bem (ano-base 2026)",
+   "tipo": "prazo",
+   "local": "MCTI",
+   "descricao": "Prazo usual de prestação de informações das empresas ao MCTI. Momento oportuno para tratar de projetos executados com ICT (art. 19-A). Confirmar o prazo vigente.",
+   "link": "https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/lei-do-bem",
+   "aConfirmar": true
+  },
+  {
+   "id": "ag-pot-07",
+   "data": "2027-08-01",
+   "hora": "",
+   "titulo": "Deep Tech Summit",
+   "tipo": "potencial",
+   "local": "São Paulo (SP)",
+   "descricao": "Encontro do ecossistema de startups de base científica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "deeptech",
+    "investidores"
+   ]
+  },
+  {
+   "id": "ag-pot-08",
+   "data": "2027-08-24",
+   "hora": "",
+   "titulo": "Intersolar South America",
+   "tipo": "potencial",
+   "local": "São Paulo (SP)",
+   "descricao": "Feira do setor de energia solar e armazenamento. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "energia",
+    "clima"
+   ]
+  },
+  {
+   "id": "ag-pot-09",
+   "data": "2027-09-12",
+   "hora": "",
+   "titulo": "IEEE Quantum Week",
+   "tipo": "potencial",
+   "local": "A definir",
+   "descricao": "Conferência internacional de computação e engenharia quântica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema",
+    "tic"
+   ]
+  },
+  {
+   "id": "ag-pot-10",
+   "data": "2027-10-05",
+   "hora": "",
+   "titulo": "Futurecom",
+   "tipo": "potencial",
+   "local": "São Paulo (SP)",
+   "descricao": "Evento de telecomunicações e tecnologia. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "telecom",
+    "tic"
+   ]
+  },
+  {
+   "id": "ag-pot-11",
+   "data": "2027-10-18",
+   "hora": "",
+   "titulo": "Semana Nacional de Ciência e Tecnologia",
+   "tipo": "potencial",
+   "local": "Nacional",
+   "descricao": "Programação de divulgação científica em todo o país. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
+  },
+  {
+   "id": "ag-pot-12",
+   "data": "2027-12-07",
+   "hora": "",
+   "titulo": "Q2B",
+   "tipo": "potencial",
+   "local": "Vale do Silício (EUA)",
+   "descricao": "Conferência de computação quântica aplicada a negócios. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
+   "link": "",
+   "aConfirmar": true,
+   "setores": [
+    "tic",
+    "financeiro"
+   ]
+  }
+ ]
+}

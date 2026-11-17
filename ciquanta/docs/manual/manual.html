@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>CIQUANTA CRM · Manual de operação</title>
+<style>
+@font-face { font-family: 'Libre Franklin'; font-weight: 100 900; src: url(../../assets/fonts/libre-franklin-latin-wght-normal.woff2) format('woff2-variations'); unicode-range: U+0000-00FF, U+2000-206F, U+20AC; }
+@font-face { font-family: 'Libre Franklin'; font-weight: 100 900; src: url(../../assets/fonts/libre-franklin-latin-ext-wght-normal.woff2) format('woff2-variations'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@page { size: A4; margin: 18mm 18mm 20mm; }
+@page :first { margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Libre Franklin', Arial, sans-serif; color: #101934; font-size: 10.2pt; line-height: 1.6; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3 { margin: 0; letter-spacing: -.01em; }
+h2 { font-size: 24pt; font-weight: 700; line-height: 1.1; letter-spacing: -.025em; margin: 0 0 5mm; display: flex; align-items: center; gap: 4mm; }
+h2::before { content: ''; flex: none; width: 1.3mm; height: .78em; background: currentColor; }
+h3 { font-size: 11pt; font-weight: 700; margin: 7mm 0 2mm; padding-top: 2.5mm; border-top: 1px solid #E2E2DA; }
+p { margin: 0 0 3mm; }
+i, em { font-style: normal; font-weight: 600; }
+a { color: #2F55D4; }
+.capa { height: 297mm; padding: 28mm 24mm 24mm; background: #F7F7F4; position: relative; page-break-after: always; display: flex; flex-direction: column; }
+.capa .marca { display: flex; align-items: center; gap: 4mm; }
+.capa img.logo { width: 58mm; }
+.capa .crm { font-size: 8.5pt; font-weight: 600; letter-spacing: .2em; color: #858A9A; padding-left: 4mm; border-left: 1px solid #C9C9BF; }
+.capa h1 { font-weight: 700; font-size: 58pt; line-height: 1; letter-spacing: -.035em; margin-top: auto; }
+.capa h1 em { color: #2F55D4; font-style: normal; font-weight: inherit; }
+.capa .sub { font-size: 12.5pt; color: #4B5470; margin-top: 7mm; max-width: 135mm; line-height: 1.5; }
+.capa .rodape { margin-top: 22mm; padding-top: 4mm; border-top: 1px solid #101934; display: flex; justify-content: space-between; font-size: 8.5pt; color: #858A9A; }
+.sec { page-break-before: always; }
+.k { font-size: 8pt; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #858A9A; margin-bottom: 3mm; }
+.lead { font-size: 11.5pt; line-height: 1.55; color: #2B3350; margin-bottom: 6mm; }
+figure { margin: 4mm 0 6mm; break-inside: avoid; }
+h3 { break-after: avoid; }
+table, .caixa, ol.passos > li { break-inside: avoid; }
+figure img { width: 100%; border-radius: 1.5mm; border: 1px solid #E2E2DA; display: block; }
+figcaption { font-size: 8.5pt; color: #858A9A; margin-top: 2mm; }
+ol.passos { counter-reset: p; list-style: none; padding: 0; margin: 0 0 4mm; display: grid; gap: 2.4mm; }
+ol.passos > li { counter-increment: p; padding-left: 10mm; position: relative; }
+ol.passos > li::before { content: counter(p, decimal-leading-zero); position: absolute; left: 0; top: .2mm; font-size: 9pt; font-weight: 700; letter-spacing: .06em; color: #2F55D4; }
+ul { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1.2mm; }
+.caixa { border-left: 2px solid #2F55D4; padding: .5mm 0 .5mm 4.5mm; margin: 4mm 0 5mm; color: #2B3350; }
+.caixa.alerta { border-left-color: #9C620F; }
+.caixa b:first-child { display: block; margin-bottom: 1mm; color: #101934; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 5mm; font-size: 9.4pt; border-top: 1px solid #101934; }
+th, td { text-align: left; padding: 2.2mm 3mm 2.2mm 0; border-bottom: 1px solid #E2E2DA; vertical-align: top; }
+th { font-size: 7.5pt; color: #858A9A; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+kbd { font: 8.5pt ui-monospace, Menlo, monospace; border: 1px solid #C9C9BF; border-radius: 1mm; padding: 0 1.2mm; color: #4B5470; }
+code { font: 8.8pt ui-monospace, Menlo, monospace; background: #EEEEE8; border-radius: 1mm; padding: 0 1mm; }
+.sumario { columns: 2; column-gap: 12mm; padding: 0; list-style: none; counter-reset: s; border-top: 1px solid #101934; }
+.sumario li { counter-increment: s; padding: 2.4mm 0 2.4mm 10mm; border-bottom: 1px solid #E2E2DA; position: relative; break-inside: avoid; }
+.sumario li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; color: #2F55D4; font-weight: 700; font-size: 9pt; top: 2.5mm; }
+.sumario small { display: block; color: #858A9A; font-size: 8.8pt; }
+.mini { font-size: 8.8pt; color: #858A9A; }
+</style>
+</head>
+<body>
+
+<section class="capa">
+  <div class="marca"><img class="logo" src="../../assets/logo-marinho.png" alt="CIQUANTA"><span class="crm">CRM</span></div>
+  <h1>Manual<br>de <em>operação</em></h1>
+  <p class="sub">Relações institucionais, captação de recursos e comunicação do Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.</p>
+  <div class="rodape"><span>Versão de novembro de 2026</span><span>ciquanta@secties.pb.gov.br</span></div>
+</section>
+
+<section>
+  <div class="k">Sumário</div>
+  <h2>O que está neste manual</h2>
+  <ol class="sumario">
+    <li>Visão geral<small>O que o CRM faz e onde ficam os dados</small></li>
+    <li>Conectar o e-mail do CIQUANTA<small>A ponte com a conta ciquanta@, em três passos</small></li>
+    <li>A rotina do dia<small>Hoje, caixa de entrada e agenda</small></li>
+    <li>Relacionamento<small>Organizações, contatos, oportunidades, rede</small></li>
+    <li>Programa de parceiros<small>Cotas anuais e receita recorrente</small></li>
+    <li>Captação de recursos<small>Plano, editais, leis, simulador e relatório</small></li>
+    <li>Comunicação<small>Campanhas, cadências, convites da agenda, modelos</small></li>
+    <li>Automação<small>Coleta diária, contatos de diretorias, piloto automático</small></li>
+    <li>Inteligência<small>Sinais do mercado, busca ativa, setores, visitas</small></li>
+    <li>Dados, segurança e LGPD<small>Base compartilhada, cópias e descadastro</small></li>
+    <li>Atalhos e busca rápida</li>
+    <li>Problemas comuns</li>
+    <li>Publicação e manutenção</li>
+  </ol>
+</section>
+
+<section class="sec">
+  <div class="k">01 · Visão geral</div>
+  <h2>Um centro de comando para captar e se relacionar</h2>
+  <p class="lead">O CRM reúne num só lugar as organizações que podem investir em pesquisa com computação quântica, as conversas com elas, os mecanismos de financiamento e a agenda institucional do CIQUANTA. Ele trabalha sozinho boa parte do tempo: coleta dados todos os dias, cria contatos, acompanha respostas e pode iniciar abordagens.</p>
+  <figure><img src="hoje.jpg" alt="Tela Hoje"><figcaption>Tela Hoje: ações que pedem atenção, indicadores de captação, agenda, mapa da rede e notícias do dia.</figcaption></figure>
+  <h3>Como o sistema está organizado</h3>
+  <table><tr><th>Área</th><th>Para que serve</th></tr>
+    <tr><td><b>Hoje, Caixa de entrada, Agenda</b></td><td>O dia a dia: o que fazer agora, respostas recebidas e compromissos.</td></tr>
+    <tr><td><b>Relacionamento</b></td><td>Organizações (471 mapeadas), contatos, oportunidades de negócio, programa de parceiros e mapa da rede.</td></tr>
+    <tr><td><b>Captação</b></td><td>Metas, frentes de financiamento, editais, leis de incentivo e simulador.</td></tr>
+    <tr><td><b>Comunicação</b></td><td>Campanhas de e-mail, cadências automáticas, modelos, apresentações e materiais.</td></tr>
+    <tr><td><b>Inteligência</b></td><td>Notícias do mercado, pessoas de P&amp;D das organizações, busca de empresas e contatos, setores e visitas à réplica.</td></tr>
+    <tr><td><b>Automação e Configurações</b></td><td>No menu da conta (CIQUANTA, no rodapé do menu lateral): rotinas automáticas, conexão de e-mail, remetente, cópias, tema e Sair.</td></tr></table>
+  <h3>Onde ficam os dados</h3>
+  <p>Os dados do CRM ficam no navegador de cada computador e, com a <b>base compartilhada</b> ligada, num arquivo da pasta <i>CIQUANTA CRM</i> do Google Drive da conta ciquanta@. Assim todos os computadores trabalham sobre a mesma base. O site publicado guarda só o programa e as bases públicas (organizações, notícias, editais); nenhum contato ou conversa fica nele.</p>
+</section>
+
+<section class="sec">
+  <div class="k">02 · Conectar o e-mail</div>
+  <h2>A ponte com a conta do CIQUANTA</h2>
+  <p class="lead">O CRM envia e lê e-mails, cria reuniões e guarda a base compartilhada por meio de uma <b>ponte</b>: um pequeno programa que roda dentro da própria conta ciquanta@secties.pb.gov.br, no Google Apps Script. Não é preciso Google Cloud, projeto, credencial nem ID de cliente. A configuração leva cerca de dez minutos e é feita uma única vez.</p>
+  <figure><img src="config-passos.jpg" alt="Configurações antes de conectar"><figcaption>Configurações: os três passos aparecem enquanto o e-mail não está conectado.</figcaption></figure>
+  <h3>Passo 01 · Copiar o código</h3>
+  <p>Em <b>Configurações</b>, clique em <b>Copiar código da ponte</b>. O código já vem com uma chave de acesso exclusiva, gerada neste computador.</p>
+  <h3>Passo 02 · Publicar no Apps Script</h3>
+  <ol class="passos">
+    <li>Entre no Google com a conta <b>ciquanta@secties.pb.gov.br</b> e clique em <b>Abrir com a conta do CIQUANTA</b>. Abre um projeto novo no Apps Script.</li>
+    <li>Apague o conteúdo do arquivo <code>Código.gs</code> e cole o código copiado. Dê um nome ao projeto, por exemplo <i>CIQUANTA CRM ponte</i>.</li>
+    <li>No menu da esquerda, clique em <b>Serviços</b> (sinal de +), escolha <b>Gmail API</b> e clique em <b>Adicionar</b>. Repita com <b>Google Calendar API</b>, que cria o link do Meet nas reuniões.</li>
+    <li>Salve (ícone de disquete). Clique em <b>Implantar → Nova implantação</b>; na engrenagem de <i>Selecionar tipo</i>, escolha <b>App da Web</b>.</li>
+    <li>Preencha: <b>Executar como: Eu</b> (a conta do CIQUANTA) e <b>Quem pode acessar: Qualquer pessoa</b>. Clique em <b>Implantar</b>.</li>
+    <li>Clique em <b>Autorizar acesso</b> e escolha a conta do CIQUANTA. Se aparecer “O Google não verificou este app”, clique em <b>Avançado → Acessar CIQUANTA CRM ponte</b> e em <b>Permitir</b>. O aviso aparece porque o programa é da própria conta; ele não é publicado em loja nenhuma.</li>
+    <li>Copie o <b>URL do app da Web</b>, que termina em <code>/exec</code>.</li>
+  </ol>
+  <div class="caixa"><b>Por que “Qualquer pessoa”?</b>É o que permite ao CRM, aberto em qualquer computador, falar com a ponte. A ponte só atende pedidos que trazem a chave de acesso: sem ela, responde “chave incorreta” e não faz nada.</div>
+  <h3>Passo 03 · Colar o endereço</h3>
+  <p>Volte ao CRM, cole o endereço no campo do passo 03 e clique em <b>Conectar</b>. O cartão mostra o e-mail conectado, quantos envios ainda cabem no dia e se as reuniões terão Meet. A base compartilhada é ligada automaticamente.</p>
+  <figure><img src="config.jpg" alt="Configurações com o e-mail conectado"><figcaption>E-mail conectado: a cota diária vem da própria conta Google.</figcaption></figure>
+  <h3>Outros computadores da equipe</h3>
+  <p>No computador já conectado, clique em <b>Link para a equipe</b> e envie o link por um canal interno. Quem abrir o link vê a tela <b>Entrar</b>.</p>
+  <h3>Entrar no CRM</h3>
+  <figure><img src="entrar.jpg" alt="Tela de entrada"><figcaption>Entrar: o código vai para o e-mail do CIQUANTA.</figcaption></figure>
+  <ol class="passos">
+    <li>Confira o nome do computador (aparece na lista de acessos) e clique em <b>Enviar código</b>.</li>
+    <li>Abra a caixa ciquanta@secties.pb.gov.br: chega o e-mail “Código de acesso ao CIQUANTA CRM”, com seis dígitos.</li>
+    <li>Digite o código e clique em <b>Entrar</b>. O código vale 10 minutos e uma única entrada; este computador fica liberado por 30 dias.</li>
+  </ol>
+  <p>Em <b>Configurações → Acesso ao CRM</b> aparecem os computadores com acesso; <b>Encerrar</b> desliga um deles na hora. <b>Sair</b>, no menu da conta (CIQUANTA, no rodapé do menu lateral), encerra o acesso deste computador e pode apagar os dados dele, o que é recomendado em computadores compartilhados. Para que qualquer pessoa que abra o endereço caia na tela de entrada, publique o arquivo <code>data/acesso.json</code> (botão <b>Baixar acesso.json</b>).</p>
+  <h3>Atualizar a ponte ou trocar a chave</h3>
+  <ul>
+    <li><b>Nova versão do código:</b> cole o código novo no Apps Script e use <b>Implantar → Gerenciar implantações → editar (lápis) → Versão: Nova versão → Implantar</b>. O endereço continua o mesmo.</li>
+    <li><b>Trocar a chave</b> (por exemplo, se o computador que instalou a ponte foi perdido): em Configurações, desconecte, copie o código de novo (vem com chave nova), publique uma nova versão e reconecte. Os computadores da equipe continuam entrando pelo código.</li>
+    <li><b>Ponte da versão 2</b>: Configurações mostra o aviso <i>Atualize a ponte para a versão 3</i>. Copie o código atualizado e publique uma nova versão; só então a entrada por código funciona.</li>
+  </ul>
+</section>
+
+<section class="sec">
+  <div class="k">03 · A rotina do dia</div>
+  <h2>Hoje, caixa de entrada e agenda</h2>
+  <p><b>Hoje</b> é a tela de abertura. O topo traz a data e os atalhos para nova oportunidade e nova campanha; abaixo vêm os indicadores (pipeline ponderado, contratado contra a meta, organizações em relacionamento, taxa de resposta e visitantes da réplica), as <b>próximas ações</b> ordenadas por impacto e a agenda unificada. Clique em qualquer indicador ou ação para ir direto ao ponto.</p>
+  <table><tr><th>Ação sugerida</th><th>O que fazer</th></tr>
+    <tr><td>Responder</td><td>Há mensagens recebidas sem leitura. Abra a caixa de entrada.</td></tr>
+    <tr><td>Proposta</td><td>Oportunidade em proposta ou negociação sem documento. Gere a proposta em PDF na ficha.</td></tr>
+    <tr><td>Atrasado / Retomar</td><td>Próximo passo vencido ou oportunidade parada há mais de 14 dias.</td></tr>
+    <tr><td>Edital</td><td>Chamada acompanhada com prazo em menos de três semanas.</td></tr>
+    <tr><td>Cadência</td><td>Organização de alto potencial com contato e sem abordagem.</td></tr>
+    <tr><td>Contato</td><td>Organização de alto potencial ainda sem e-mail cadastrado.</td></tr>
+    <tr><td>Pesquisa</td><td>Organização de alto potencial com pessoas publicando sobre computação quântica que ainda não estão nos contatos. Abra a aba Pessoas de P&amp;D da ficha.</td></tr></table>
+  <p><b>Caixa de entrada</b> mostra, quase em tempo real, as mensagens trocadas com organizações do CRM. Cada resposta encerra a cadência daquele contato, muda o relacionamento para “engajada” e fica no histórico. Quem responde de um domínio mapeado vira contato sozinho.</p>
+  <p><b>Agenda</b> junta marcos do CIQUANTA, eventos do setor, prazos de editais, visitas à réplica e os compromissos do Google Agenda da conta. Em um evento, o botão <b>Convidar público</b> (eventos do CIQUANTA) ou <b>Marcar encontros</b> (eventos externos) cria uma campanha já com o público sugerido.</p>
+  <figure><img src="agenda.jpg" alt="Agenda"><figcaption>Agenda: os itens marcados como “a confirmar” precisam de checagem na fonte oficial.</figcaption></figure>
+</section>
+
+<section class="sec">
+  <div class="k">04 · Relacionamento</div>
+  <h2>Organizações, contatos e oportunidades</h2>
+  <figure><img src="organizacoes.jpg" alt="Organizações"><figcaption>Organizações ordenadas por potencial. Selecione várias para mudar o relacionamento, inscrever em cadência ou montar uma campanha.</figcaption></figure>
+  <p><b>Potencial</b> é uma nota de 0 a 100 com critérios visíveis (passe o mouse sobre a barra): atuação quântica, prioridade, obrigação de PD&amp;I, setor estratégico, Nordeste, contato com e-mail, respostas, relacionamento, oportunidade aberta, notícias recentes e pesquisadores publicando sobre computação quântica.</p>
+  <h3>Ficha da organização</h3>
+  <figure><img src="ficha.jpg" alt="Ficha da organização"><figcaption>Ficha: dados da Receita Federal chegam sozinhos pela coleta diária.</figcaption></figure>
+  <ul>
+    <li><b>Visão geral</b>: atuação em P&amp;D e computação quântica, fontes, mecanismos, dados da Receita e notícias que citam a organização.</li>
+    <li><b>Contatos, Oportunidades, Histórico</b>: tudo o que foi registrado, com e-mail rápido e proposta em PDF.</li>
+    <li><b>Pessoas de P&amp;D</b>: quem publica pela organização, com temas, trabalho de destaque e, quando públicos, cargo e e-mail profissional; e lideranças de inovação citadas em fontes públicas. <b>Adicionar</b> leva a pessoa aos contatos.</li>
+    <li><b>E-mails, arquivos e agenda</b>: conversas do Gmail, arquivos do Drive e reuniões ligados à organização.</li>
+    <li><b>Encontrar contatos</b>: buscas prontas para localizar a pessoa responsável.</li>
+  </ul>
+  <h3>Oportunidades</h3>
+  <p>O funil tem cinco etapas, cada uma com probabilidade padrão (qualificação 10%, reunião 25%, proposta 45%, negociação 70%, contratada 100%). Arraste os cartões entre as colunas. O valor ponderado (valor × probabilidade) alimenta o plano de captação e a previsão por trimestre.</p>
+  <figure><img src="oportunidades.jpg" alt="Oportunidades"><figcaption>Funil de oportunidades; as abas Tabela e Previsão mostram os mesmos dados de outro jeito.</figcaption></figure>
+</section>
+
+<section class="sec">
+  <div class="k">05 · Programa de parceiros</div>
+  <h2>Receita recorrente com cotas anuais</h2>
+  <p class="lead">O programa transforma relacionamento em contribuição anual previsível. Cada cota tem valor, número de vagas e contrapartidas, como horas de processador quântico, laboratório conjunto e capacitação.</p>
+  <figure><img src="parceiros.jpg" alt="Programa de parceiros"><figcaption>Cotas, adesões e candidatas por potencial.</figcaption></figure>
+  <ol class="passos">
+    <li>Ajuste as cotas em <b>Cotas</b>. Os valores iniciais (Fundador, Estratégico, Associado e Deep tech) são uma proposta de partida e devem ser validados pela direção do CIQUANTA.</li>
+    <li>Em <b>Candidatas</b>, clique em <b>Propor</b>: o CRM sugere a cota pelo perfil. Ao salvar, a adesão entra como oportunidade em negociação no funil.</li>
+    <li>Quando assinar, mude a situação para <b>Ativa</b>: a organização passa a “parceira”, a receita recorrente anual é atualizada e a renovação fica marcada para doze meses depois.</li>
+    <li>Use <b>Carta de adesão</b> para gerar o documento em PDF com valor e contrapartidas.</li>
+  </ol>
+</section>
+
+<section class="sec">
+  <div class="k">06 · Captação</div>
+  <h2>Plano, editais, leis e simulador</h2>
+  <figure><img src="captacao.jpg" alt="Plano de captação"><figcaption>Plano de captação: meta anual, frentes de financiamento e previsão por trimestre.</figcaption></figure>
+  <ul>
+    <li><b>Plano de captação</b>: defina a meta anual e, se quiser, a meta de cada frente (incentivos fiscais, obrigações regulatórias, fomento, compras públicas, cooperação e receita direta). A tabela de cobertura mostra os mecanismos com organizações elegíveis ainda sem abordagem. O botão <b>Relatório executivo</b> gera o PDF para a direção.</li>
+    <li><b>Editais</b>: chamadas acompanhadas, com prazo e valor. A coleta diária encontra chamadas abertas em notícias, na EMBRAPII e na Agência FAPESP; clique em <b>Acompanhar</b> para trazê-las à lista.</li>
+    <li><b>Leis e mecanismos</b>: 39 instrumentos (Lei do Bem, Lei de TICs, PD&amp;I ANEEL e ANP, Finep, BNDES, EMBRAPII e outros), com base legal, gestor e papel do CIQUANTA.</li>
+    <li><b>Simulador</b>: estimativas de benefício fiscal para conversas iniciais. A apuração real depende do regime tributário e do enquadramento do projeto.</li>
+  </ul>
+</section>
+
+<section class="sec">
+  <div class="k">07 · Comunicação</div>
+  <h2>Campanhas, cadências e modelos</h2>
+  <figure><img src="campanha.jpg" alt="Editor de campanha"><figcaption>Campanha: público, mensagem com variáveis, pré-visualização por destinatário e envio.</figcaption></figure>
+  <h3>Campanhas</h3>
+  <ol class="passos">
+    <li>Crie a campanha e escolha um modelo. Variáveis como <code>{{saudacao}}</code>, <code>{{organizacao}}</code> e <code>{{setor}}</code> são preenchidas para cada contato, com o tratamento formal correto (Vossa Excelência, Vossa Magnificência, Vossa Senhoria).</li>
+    <li>Monte o público por setor, segmento, estado, relacionamento e evidência. Contatos descadastrados ficam de fora sempre.</li>
+    <li>Use <b>Enviar teste para mim</b> e confira a pré-visualização de alguns destinatários.</li>
+    <li>Escolha enviar agora, agendar ou criar rascunhos no Gmail. O envio respeita o intervalo e o limite diário definidos em Configurações.</li>
+  </ol>
+  <h3>Campanhas ligadas à agenda</h3>
+  <p>Na Agenda, abra um evento e use <b>Convidar público</b> ou <b>Marcar encontros</b>. O CRM escolhe o modelo e sugere o público: para eventos do CIQUANTA, autoridades, fomentadores, parceiros e organizações de maior potencial; para feiras e congressos externos, as organizações dos setores do evento (por exemplo, Febraban Tech para o sistema financeiro).</p>
+  <h3>Cadências</h3>
+  <figure><img src="cadencias.jpg" alt="Cadências"><figcaption>Cadências: sequências de e-mails que param na primeira resposta.</figcaption></figure>
+  <p>Uma cadência é uma sequência de mensagens (por exemplo, apresentação, retomada em cinco dias e material do setor em quatorze). As mensagens seguintes saem na mesma conversa do primeiro e-mail. A sequência para sozinha quando o contato responde ou pede descadastro. As cadências só enviam com algum computador da equipe aberto no CRM e conectado; com a base compartilhada, um único computador conduz os envios.</p>
+</section>
+
+<section class="sec">
+  <div class="k">08 · Automação</div>
+  <h2>O que acontece sozinho</h2>
+  <figure><img src="automacao.jpg" alt="Central de automação"><figcaption>Central de automação: o fluxo das fontes públicas às respostas, o resultado da coleta e as rotinas.</figcaption></figure>
+  <h3>Coleta diária no servidor</h3>
+  <p>Todos os dias às 6h17, e às 15h47 nos dias úteis, o GitHub executa a coleta e publica as bases atualizadas:</p>
+  <table><tr><th>Etapa</th><th>Resultado</th></tr>
+    <tr><td>Painel CIQUANTA</td><td>Cadastros, visitantes previstos e recebidos, por estado.</td></tr>
+    <tr><td>Notícias e editais</td><td>Notícias sobre computação quântica, P&amp;D e fomento, ligadas às organizações citadas, e chamadas abertas.</td></tr>
+    <tr><td>Contatos de diretorias</td><td>Lê as páginas de diretoria, governança, estrutura, contato e imprensa dos sites oficiais e guarda os e-mails de presidência, gabinete, reitoria, diretorias, relações institucionais, inovação, investidores, imprensa e contato.</td></tr>
+    <tr><td>Receita Federal</td><td>Situação cadastral, atividade, porte, capital e e-mail do cadastro.</td></tr>
+    <tr><td>Pessoas de P&amp;D</td><td>Na OpenAlex, quem publica pela organização nos últimos seis anos, com temas e trabalhos; no ORCID, o cargo atual e o e-mail profissional, só quando o próprio pesquisador o tornou público e o domínio é o da organização.</td></tr>
+    <tr><td>Descoberta com IA</td><td>Com a chave da Anthropic, o Claude lê as notícias e sugere novas organizações e oportunidades.</td></tr>
+    <tr><td>Diretorias na web com IA</td><td>O Claude busca na web os e-mails de diretorias publicados fora da página inicial. Cada e-mail só entra depois que o CRM abre a página indicada e confirma que ele está escrito lá, no domínio da organização. Também traz as lideranças de P&amp;D e inovação citadas pelo nome (só nome, cargo e fonte).</td></tr></table>
+  <div class="caixa"><b>Regra dos contatos automáticos</b>Só entram caixas de setores (diretoria@, gabinete@, inovacao@, nit@ e similares) publicadas pela própria organização. E-mails pessoais, como nome.sobrenome@, são descartados, assim como ouvidoria, LGPD, RH e vendas. De pesquisadores, só entra o e-mail profissional que a própria pessoa tornou público no ORCID, e só quando alguém da equipe clica em Adicionar. Todos os envios têm descadastro.</div>
+  <h3>Rotinas do aplicativo</h3>
+  <p>Ao abrir o CRM e a cada três horas, as rotinas levam ao CRM as organizações novas, os contatos de diretorias, os dados da Receita e os totais do Painel CIQUANTA. Cada rotina pode ser ligada ou desligada na Central de automação.</p>
+  <h3>Piloto automático de abordagem</h3>
+  <p>Desligado por padrão. Ligado, ele escolhe todos os dias as organizações de maior potencial que têm e-mail e nunca foram abordadas e as inscreve na cadência do seu segmento (empresas, autoridades, fomentadores, investidores ou consultorias). Antes de ligar, preencha o remetente, revise os modelos e ajuste o limite diário e o potencial mínimo; a lista “Próximas organizações” mostra quem seria abordado.</p>
+</section>
+
+<section class="sec">
+  <div class="k">09 · Inteligência</div>
+  <h2>Sinais, pessoas de P&amp;D, setores e visitas</h2>
+  <figure><img src="sinais.jpg" alt="Sinais do mercado"><figcaption>Sinais do mercado: notícias por tema, com as organizações do CRM citadas.</figcaption></figure>
+  <h3>Pessoas de P&amp;D</h3>
+  <p>Em <b>Busca ativa → Pessoas de P&amp;D</b> estão os pesquisadores e as lideranças de inovação de todas as organizações, para ir além dos e-mails institucionais. Filtre por computação quântica, por setor ou por quem tem e-mail profissional público; abra o perfil (ORCID ou OpenAlex), procure a pessoa no LinkedIn ou leve-a aos contatos com <b>Adicionar</b>. O botão <b>Adicionar os que têm e-mail</b> leva de uma vez as pessoas filtradas com e-mail público.</p>
+  <figure><img src="pesquisa.jpg" alt="Pessoas de P&amp;D"><figcaption>Pessoas de P&amp;D: nomes e trabalhos ilustrativos.</figcaption></figure>
+  <ul>
+    <li><b>Sinais</b>: notícias coletadas duas vezes por dia. Organizações citadas nos últimos 30 dias ganham pontos de potencial. As oportunidades identificadas com IA aparecem no topo; confirme antes de agir.</li>
+    <li><b>Busca ativa</b>: pessoas de P&amp;D, mapeamento de referência, consulta e lote de CNPJ, buscas prontas e descoberta de contatos nas conversas do Gmail.</li>
+    <li><b>Setores</b>: 22 setores, dez com agenda de pesquisa aplicada e apresentação própria.</li>
+    <li><b>Visitas</b>: totais do Painel CIQUANTA sem login; com o e-mail conectado, a lista de agendamentos e cadastros, para levar ao CRM quem aceitou receber notícias.</li>
+  </ul>
+</section>
+
+<section class="sec">
+  <div class="k">10 · Dados, segurança e LGPD</div>
+  <h2>Cuidados com a base</h2>
+  <ul>
+    <li><b>Base compartilhada</b>: mescla as mudanças de todos os computadores registro a registro, a cada dois minutos e logo após cada alteração. O ícone de sincronização no topo mostra o estado.</li>
+    <li><b>Pontos de restauração</b>: uma cópia automática por dia e antes de operações que substituem dados, em Configurações.</li>
+    <li><b>Desfazer</b>: toda exclusão mostra o botão Desfazer por alguns segundos.</li>
+    <li><b>Cópias</b>: “Baixar cópia” gera um arquivo do CRM; “Guardar no Drive” mantém uma cópia na pasta CIQUANTA CRM. A chave da ponte nunca vai para as cópias.</li>
+    <li><b>Descadastro</b>: quem responder “REMOVER” deve entrar na lista de descadastro em Configurações. Ninguém da lista recebe campanha ou cadência.</li>
+    <li><b>Planilhas do Painel</b>: CPF, documento, telefone, endereço e data de nascimento não saem das planilhas; só totais ficam guardados.</li>
+  </ul>
+  <div class="caixa alerta"><b>Acesso ao CRM</b>Ninguém entra sem o código enviado ao e-mail do CIQUANTA, e cada computador liberado aparece em Configurações → Acesso ao CRM, onde pode ser encerrado. Ao publicar no domínio da SECTIES, peça à TI a porta de acesso na frente do endereço (seção 3 do guia de publicação).</div>
+</section>
+
+<section class="sec">
+  <div class="k">11 · Atalhos</div>
+  <h2>Busca rápida e teclado</h2>
+  <figure><img src="busca.jpg" alt="Busca rápida"><figcaption>Busca rápida: telas, organizações, contatos, oportunidades e ações.</figcaption></figure>
+  <table><tr><th>Atalho</th><th>Ação</th></tr>
+    <tr><td><kbd>Ctrl K</kbd> ou <kbd>/</kbd></td><td>Busca rápida e ações (nova organização, nova oportunidade, relatório, cópia, tema)</td></tr>
+    <tr><td><kbd>?</kbd></td><td>Lista de atalhos</td></tr>
+    <tr><td><kbd>g</kbd> e depois <kbd>h</kbd> <kbd>o</kbd> <kbd>c</kbd> <kbd>n</kbd> <kbd>p</kbd> <kbd>m</kbd> <kbd>a</kbd> <kbd>i</kbd> <kbd>e</kbd> <kbd>s</kbd> <kbd>l</kbd></td><td>Hoje, Organizações, Contatos, Oportunidades, Parceiros, Captação, Agenda, Caixa de entrada, Cadências, Sinais, Leis e mecanismos</td></tr>
+    <tr><td><kbd>Esc</kbd></td><td>Fechar janelas</td></tr></table>
+</section>
+
+<section class="sec">
+  <div class="k">12 · Problemas comuns</div>
+  <h2>Quando algo não funciona</h2>
+  <table><tr><th>Sintoma</th><th>Causa provável e solução</th></tr>
+    <tr><td>“Chave de acesso incorreta”</td><td>O código publicado não é o copiado deste computador. Copie o código de novo, publique uma nova versão e conecte.</td></tr>
+    <tr><td>“Resposta inesperada da ponte”</td><td>A implantação não está como “Qualquer pessoa” ou o endereço não termina em <code>/exec</code>. Revise o passo 02.</td></tr>
+    <tr><td>“Qualquer pessoa” não aparece no Apps Script</td><td>A administração do Google Workspace da SECTIES restringe apps da Web. Peça à TI que permita, para esta conta, apps da Web acessíveis a qualquer pessoa.</td></tr>
+    <tr><td>Aviso para ativar o serviço Gmail API</td><td>No Apps Script, Serviços (+) → Gmail API → Adicionar, e publique uma nova versão.</td></tr>
+    <tr><td>Reuniões sem link do Meet</td><td>Adicione o serviço Google Calendar API e publique uma nova versão.</td></tr>
+    <tr><td>Cadências não enviam</td><td>Nenhum computador conectado e aberto, envio automático desligado em Cadências ou fora do horário comercial.</td></tr>
+    <tr><td>Limite diário atingido</td><td>O Google limita envios por dia (1.500 destinatários no Workspace, por script). Os envios continuam no dia seguinte.</td></tr>
+    <tr><td>O código não chega</td><td>Confira a caixa e o spam de ciquanta@secties.pb.gov.br. Depois de seis pedidos seguidos, a ponte espera 15 minutos antes de enviar outro.</td></tr>
+    <tr><td>“Acesso encerrado ou expirado”</td><td>A sessão venceu (30 dias) ou foi encerrada em Configurações. Entre de novo com um código.</td></tr>
+    <tr><td>Dados diferentes entre computadores</td><td>Base compartilhada desligada em um deles. Ligue em Configurações e use “Sincronizar agora”.</td></tr>
+    <tr><td>A Central mostra coleta antiga</td><td>Veja a aba Actions do repositório no GitHub; o resultado de cada execução fica registrado lá.</td></tr></table>
+</section>
+
+<section class="sec">
+  <div class="k">13 · Publicação e manutenção</div>
+  <h2>Onde o sistema vive</h2>
+  <ul>
+    <li><b>Site</b>: repositório <code>radarsecties/ciquanta-crm</code> no GitHub, publicado pelo GitHub Pages (Settings → Pages → branch <code>main</code>). Cada mudança enviada à branch principal entra no ar em minutos.</li>
+    <li><b>Coleta diária</b>: arquivo <code>.github/workflows/coleta.yml</code>. Em Settings → Actions → General, a permissão de gravação precisa estar ligada.</li>
+    <li><b>IA</b>: segredo <code>ANTHROPIC_API_KEY</code> em Settings → Secrets and variables → Actions. Opcionalmente, a variável <code>CIQUANTA_MODELO</code> escolhe o modelo e <code>CIQUANTA_LOTE_IA</code> quantas organizações pesquisar por dia.</li>
+    <li><b>Pessoas de P&amp;D</b>: funciona sem chave. O segredo opcional <code>OPENALEX_API_KEY</code> amplia a cota na OpenAlex, e a variável <code>CIQUANTA_LOTE_PESQUISA</code> define quantas organizações pesquisar por execução (padrão 45). Para rodar só uma etapa, use Run workflow e informe, por exemplo, <code>pesquisadores</code>.</li>
+    <li><b>Design</b>: as regras visuais estão em <code>.claude/skills/design-ciquanta/SKILL.md</code>; <code>node tools/design/revisar.mjs</code> captura todas as telas e aponta desvios.</li>
+    <li><b>Ponte de e-mail</b>: código em <code>ponte/ponte.gs</code>. Quando o repositório trouxer uma versão nova, copie e publique de novo no Apps Script.</li>
+    <li><b>Bases de referência</b>: arquivos em <code>data/</code>. Antes de publicar alterações manuais, rode <code>node tools/validar-dados.mjs</code>.</li>
+  </ul>
+  <p class="mini">CIQUANTA · Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba · Estação das Artes Luciano Agra, João Pessoa (PB) · ciquanta@secties.pb.gov.br</p>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "id": "institucional",
+  "titulo": "CIQUANTA: apresentação institucional",
+  "fonte": "CIQUANTA, Apresentação Institucional (SECTIES-PB, novembro de 2026)",
+  "pdf": "assets/docs/ciquanta-apresentacao-institucional.pdf",
+  "pasta": "assets/deck/institucional/",
+  "paginas": [
+    "CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba. O primeiro centro operacional de tecnologias quânticas da América Latina.",
+    "O projeto em números: R$ 200 milhões de investimento total (R$ 140 milhões do Governo da Paraíba e R$ 60 milhões do MCTI); primeiro centro com computadores quânticos operacionais da América Latina; 120 qubits supercondutores em duas máquinas, de 100 e de 20 qubits; 8.500 m² de área total, com 5 laboratórios multiusuário e 5 auditórios; 10 mK de temperatura de operação; chegada dos equipamentos e início do comissionamento em 20 de novembro de 2026.",
+    "O mercado quântico global: mais de US$ 20 bilhões de capital acumulado em empresas do setor; 830 empresas quantum core e 4.622 organizações mapeadas; pedidos internacionais de patentes multiplicados por 7; crescimento anual projetado de 20%; 1,1% do investimento mundial em P&D; os Estados Unidos concentram 60% do funding global e 31% das patentes recentes. Fonte: OCDE.",
+    "Operação quântica atual: onze países concentram a infraestrutura quântica instalada (Estados Unidos, China, Canadá, Alemanha, Japão, Reino Unido, França, Finlândia, Austrália, Coreia do Sul e Índia). Brasil a partir de 2026, com o CIQUANTA, em João Pessoa.",
+    "Ponto de inflexão da América Latina: 11 países com máquinas em território próprio, nenhuma instalação na América Latina antes do CIQUANTA, uma em João Pessoa.",
+    "Sede: Estação das Artes Luciano Agra. Governo do Estado da Paraíba (SECTIES-PB), proponente e sede; Ministério da Ciência, Tecnologia e Inovação, contrapartidas federais e inserção na IBQuântica; CETC-ICQ, Suzhou, China, fornecimento, instalação, comissionamento e transferência tecnológica.",
+    "Três pilares estruturantes: infraestrutura de classe mundial; capital humano, com formação e fixação; indústria, com conversão em valor.",
+    "Infraestrutura física de alta precisão: salas blindadas até 18 GHz; estabilidade vibracional nível VC-E; área criogênica com N₂, He-3 e He-4; computação clássica integrada.",
+    "Arquitetura do hardware quântico: núcleo quântico, ambiente criogênico, controle e medição, operação clássica.",
+    "Mapa de acoplamento do GJQ-100: 100 qubits em grade 10 × 10, 180 ou mais acopladores sintonizáveis, fidelidade de porta de 2 qubits de 99% ou mais, tempo de coerência T₁ de 50 μs.",
+    "A cadeia criogênica até 10 mK: 300 K, 50 K, 4 K, 800 mK, 100 mK e 10 mK. Resfriamento completo em até 36 h no GJQ-100 e 30 h no GJQ-20.",
+    "Duas máquinas, dois papéis: GJQ-100, principal ativo de pesquisa; GJQ-20, formação, testes e desenvolvimento de algoritmos.",
+    "Cooperação Brasil–China: transferência de tecnologia, capacitação técnica internacional e ponte federativa e diplomática.",
+    "Roadmap de implantação: 2025, concepção e pactuação; 2026, implantação; 2027, operação plena.",
+    "Capital humano e atração de talentos: atração de pesquisadores, formação avançada e operação especializada.",
+    "Domínios de aplicação: otimização, química e materiais, IA quântica, segurança e criptografia.",
+    "Aplicações setoriais estratégicas: finanças, energia, agro e clima, saúde.",
+    "Hub Nacional de Experimentação Quântica: CIQUANTA-PB, plataforma em nuvem, universidades, empresas, governo e startups.",
+    "O ecossistema paraibano: João Pessoa, Campina Grande e sertão paraibano.",
+    "Popularização da ciência: população, educação básica e interiorização.",
+    "A equipe do projeto.",
+    "CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba. ciquanta.secties.pb.gov.br"
+  ]
+}

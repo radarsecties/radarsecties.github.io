@@ -1,0 +1,1653 @@
+{
+ "comum": {
+  "infra": [
+   {
+    "t": "GJQ-100",
+    "d": "100 qubits supercondutores, 180 ou mais acopladores sintonizáveis, fidelidade de porta de 2 qubits de 99% ou mais. Principal ativo de pesquisa."
+   },
+   {
+    "t": "GJQ-20",
+    "d": "20 qubits dedicados a formação, testes e desenvolvimento de algoritmos, liberando o GJQ-100 para cargas de fronteira."
+   },
+   {
+    "t": "Datacenter clássico",
+    "d": "Estações de controle e computação clássica integradas para execução de algoritmos híbridos."
+   },
+   {
+    "t": "Plataforma em nuvem",
+    "d": "Acesso remoto de pesquisadores, universidades e empresas pelo Hub Nacional de Experimentação Quântica."
+   }
+  ],
+  "infraNota": "Dados das instituições parceiras permanecem no Brasil, em operação local sob a LGPD.",
+  "metodo": [
+   {
+    "t": "Linha de base clássica sempre",
+    "d": "Todo experimento parte do melhor método clássico disponível, que também garante o uso em produção."
+   },
+   {
+    "t": "Mesmo orçamento computacional",
+    "d": "A comparação entre abordagens usa o mesmo tempo, custo e dados, com métricas definidas antes do experimento."
+   },
+   {
+    "t": "Resultado aberto e reproduzível",
+    "d": "Vantagem confirmada ou não, o resultado é registrado, versionado e publicado. Resultado negativo também é conhecimento."
+   }
+  ],
+  "metodoLead": "O quântico não substitui o clássico. A pergunta de pesquisa do CIQUANTA é onde, quando e quanto ele agrega a problemas reais.",
+  "medicao": [
+   {
+    "t": "Problema real",
+    "d": "Definido com a instituição"
+   },
+   {
+    "t": "Dados e instâncias",
+    "d": "Anonimizados ou sintéticos"
+   },
+   {
+    "t": "Linha de base",
+    "d": "Melhor método clássico"
+   },
+   {
+    "t": "Execução híbrida",
+    "d": "Emulador ou máquina"
+   },
+   {
+    "t": "Comparação",
+    "d": "Mesmo orçamento"
+   },
+   {
+    "t": "Publicação",
+    "d": "Resultado aberto"
+   }
+  ],
+  "portao": "Portão de cômputo: o subproblema é adequado ao quântico? Se não for, a solução segue no clássico.",
+  "participacao": [
+   {
+    "t": "Pesquisa conjunta",
+    "d": "Projetos nas linhas da agenda, com equipes mistas e dados anonimizados."
+   },
+   {
+    "t": "Validação aplicada",
+    "d": "Um cenário real, de 6 a 10 semanas, com relatório de aceitação."
+   },
+   {
+    "t": "Capacitação e residência",
+    "d": "Profissionais da instituição trabalhando com pesquisadores do CIQUANTA."
+   },
+   {
+    "t": "Acesso à infraestrutura",
+    "d": "Uso das máquinas pela plataforma em nuvem e pelo Hub Nacional."
+   }
+  ],
+  "participacaoNota": "O instrumento jurídico de cada cooperação é definido conforme a natureza da instituição.",
+  "cronograma": [
+   {
+    "ano": "2026",
+    "fase": "Implantação",
+    "itens": [
+     "Capacitação da primeira equipe paraibana na CETC-ICQ, em Suzhou",
+     "Chegada do primeiro lote de equipamentos e início da instalação",
+     "Início do comissionamento em 20 de novembro",
+     "Linhas de base clássicas, emuladores e instâncias brasileiras de referência"
+    ]
+   },
+   {
+    "ano": "2027",
+    "fase": "Operação plena",
+    "itens": [
+     "Conclusão do comissionamento e certificação das duas máquinas",
+     "Abertura da plataforma em nuvem e do Hub Nacional de Experimentação Quântica",
+     "Primeiras chamadas de pesquisa aplicada com empresas e bancos",
+     "Primeiros experimentos híbridos no GJQ-20"
+    ]
+   },
+   {
+    "ano": "2027+",
+    "fase": "Pesquisa aplicada",
+    "itens": [
+     "Experimentos de fronteira no GJQ-100",
+     "Validações aplicadas com instituições",
+     "Benchmarks setoriais publicados",
+     "Guia de migração pós-quântica"
+    ]
+   }
+  ],
+  "riscos": [
+   [
+    "Vantagem quântica não se confirmar",
+    "Resultado negativo também é resultado: benchmark público e foco em soluções híbridas"
+   ],
+   [
+    "Ruído e limites do hardware",
+    "Emulação, mitigação de erro, compressão do problema e retorno ao clássico"
+   ],
+   [
+    "Acesso a dados reais",
+    "Instâncias públicas, dados sintéticos e acordos de uso anonimizado sob a LGPD"
+   ],
+   [
+    "Retenção de talentos",
+    "Bolsas, pós-doutorado e parcerias com universidades e empresas"
+   ],
+   [
+    "Expectativa exagerada do mercado",
+    "Comunicação baseada em métricas e evidência, sem promessa de retorno"
+   ],
+   [
+    "Soberania e confiança",
+    "Operação no CIQUANTA, com dados e código sob controle nacional"
+   ]
+  ]
+ },
+ "itens": [
+  {
+   "id": "financeiro",
+   "nome": "Sistema financeiro",
+   "curto": "Financeiro",
+   "deck": true,
+   "cor": "#3056D5",
+   "resumo": "Bancos, gestoras, previdência, cooperativas, fintechs e infraestruturas de mercado. É o setor mais ativo em pesquisa aplicada de computação quântica no mundo e no Brasil.",
+   "contexto": [
+    {
+     "n": "71%",
+     "d": "dos bancos consideram a computação quântica de alta relevância no curto ou médio prazo",
+     "f": "Pesquisa Febraban de Tecnologia Bancária 2026"
+    },
+    {
+     "n": "R$ 50,4 bi",
+     "d": "orçamento de tecnologia dos bancos em 2026, alta de 8%",
+     "f": "Agenda CIQUANTA para o Sistema Financeiro"
+    },
+    {
+     "n": "95,7%",
+     "d": "das instituições citam aumento de eficiência como principal benefício da IA",
+     "f": "BCB, Relatório de Estabilidade Financeira, 1º sem. 2025"
+    },
+    {
+     "n": "318 mi",
+     "d": "transações Pix em um único dia, recorde de 04/09/2026",
+     "f": "Agenda CIQUANTA para o Sistema Financeiro"
+    }
+   ],
+   "desafios": [
+    "Construção e rebalanceamento de carteiras com restrições regulatórias",
+    "Medição de risco e precificação com custo computacional alto",
+    "Transição criptográfica antes da chegada de computadores quânticos capazes de quebrar RSA e ECC",
+    "Governança e explicabilidade de modelos de IA"
+   ],
+   "linhas": [
+    {
+     "id": "otimizacao-carteiras",
+     "nome": "Otimização de carteiras",
+     "sub": "Construção e rebalanceamento com restrições reais",
+     "pergunta": "Em que tamanho e estrutura de problema algoritmos quânticos melhoram a construção e o rebalanceamento de carteiras brasileiras?",
+     "classico": [
+      "Programação linear, quadrática e inteira mista (Gurobi, CPLEX, HiGHS)",
+      "Restrições de duração, liquidez, emissor e limites regulatórios",
+      "Linha de base de produção"
+     ],
+     "hibrido": [
+      "Formulação QUBO e decomposição mestre-subproblema",
+      "Partida a quente e fixação de variáveis",
+      "Retorno automático ao clássico"
+     ],
+     "quantico": [
+      "QAOA com estado de Dicke e mixer XY",
+      "Busca adaptativa de Grover (GAS)",
+      "Execução no GJQ-20 e no GJQ-100"
+     ],
+     "entregas": "Conjunto de instâncias brasileiras de renda fixa e crédito; biblioteca de formulações; relatório de benchmark.",
+     "indicadores": "Distância do ótimo, taxa de soluções viáveis e tempo de solução, com o mesmo orçamento computacional."
+    },
+    {
+     "id": "risco-simulacao",
+     "nome": "Risco e simulação",
+     "sub": "VaR, CVaR, estresse e precificação",
+     "pergunta": "A estimativa de amplitude quântica reduz o custo de medir risco e precificar ativos em relação ao Monte Carlo clássico?",
+     "classico": [
+      "Monte Carlo e simulação histórica para VaR e CVaR",
+      "Testes de estresse com cenários adversos",
+      "Precificação de derivativos e renda fixa"
+     ],
+     "hibrido": [
+      "Carregamento de distribuições por circuitos parametrizados",
+      "Divisão entre amostragem clássica e estimativa quântica",
+      "Mitigação de erro com pós-processamento clássico"
+     ],
+     "quantico": [
+      "Estimativa de amplitude quântica (QAE) e variantes iterativas",
+      "Profundidade de circuito versus ruído",
+      "Emulação antes da execução em hardware"
+     ],
+     "entregas": "Protocolo comparativo Monte Carlo × QAE; estudo de requisitos de hardware para vantagem prática.",
+     "indicadores": "Erro de estimativa por custo computacional, profundidade de circuito viável e estabilidade."
+    },
+    {
+     "id": "ia-quantica",
+     "nome": "IA e aprendizado quântico",
+     "sub": "Modelos, agentes e kernels quânticos",
+     "pergunta": "Como combinar IA clássica e aprendizado de máquina quântico, com governança, em decisões financeiras?",
+     "classico": [
+      "Modelos de IA para pesquisa, regime de mercado e fraude",
+      "Agentes com permissões e trilha de aprovação",
+      "Aprendizado por reforço (PPO/SAC) treinado fora de linha"
+     ],
+     "hibrido": [
+      "IA recomendando profundidade e parâmetros de circuitos",
+      "Seleção automática entre máquina e simulador",
+      "Aprendizado por reforço na otimização de circuitos"
+     ],
+     "quantico": [
+      "Kernels quânticos para classificação, como fraude e crédito",
+      "Circuitos variacionais para séries financeiras",
+      "Comparação com modelos clássicos equivalentes"
+     ],
+     "entregas": "Agentes de pesquisa com trilha auditável; estudo de kernels quânticos em dados anonimizados.",
+     "indicadores": "Acurácia fora da amostra, explicabilidade, custo de treinamento e deriva dos modelos."
+    },
+    {
+     "id": "pos-quantica",
+     "nome": "Segurança pós-quântica",
+     "sub": "Transição criptográfica do sistema financeiro",
+     "pergunta": "Como preparar a criptografia do sistema financeiro para computadores quânticos capazes de quebrar os padrões atuais?",
+     "classico": [
+      "Algoritmos pós-quânticos padronizados pelo NIST (FIPS 203, 204 e 205)",
+      "Inventário criptográfico e cripto-agilidade",
+      "Testes de desempenho em sistemas legados"
+     ],
+     "hibrido": [
+      "Esquemas híbridos clássico e pós-quântico na transição",
+      "Priorização pelo risco de coletar agora e decifrar depois",
+      "Pilotos em interfaces de Open Finance"
+     ],
+     "quantico": [
+      "Estimativa de recursos para ataques quânticos",
+      "Acompanhamento da evolução do hardware",
+      "Modelagem do horizonte de ameaça"
+     ],
+     "entregas": "Guia de migração pós-quântica para o setor; laboratório de testes de algoritmos.",
+     "indicadores": "Cobertura do inventário, sobrecarga e latência dos algoritmos e prazo de migração."
+    },
+    {
+     "id": "benchmark",
+     "nome": "Benchmark e governança",
+     "sub": "Medição rigorosa de vantagem",
+     "pergunta": "Como medir, com rigor e transparência, quando uma solução quântica supera a melhor alternativa clássica?",
+     "classico": [
+      "Linha de base com os melhores solvers e heurísticas",
+      "Conjuntos de instâncias padrão e públicos",
+      "Métricas de carteira, otimização e processo"
+     ],
+     "hibrido": [
+      "Mesmo orçamento computacional para as duas abordagens",
+      "Portões de cômputo e de risco, com retorno ao clássico",
+      "Registro de versões, parâmetros e execuções"
+     ],
+     "quantico": [
+      "Caracterização de ruído e fidelidade das máquinas",
+      "Índice de adequação quântica",
+      "Reprodutibilidade entre execuções e máquinas"
+     ],
+     "entregas": "Benchmark nacional aberto de finanças quânticas; relatório periódico de vantagem.",
+     "indicadores": "Reprodutibilidade, completude da trilha de auditoria e adoção do benchmark por instituições."
+    }
+   ],
+   "dados": "Instâncias públicas, dados sintéticos e dados anonimizados ou autorizados de B3, ANBIMA e Open Finance, sob a LGPD.",
+   "parceiros": "Bancos S1 e S2, gestoras de recursos, regimes próprios de previdência, cooperativas de crédito e fintechs, universidades e centros de pesquisa.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "bndes",
+    "marco-legal-cti",
+    "fne-bnb",
+    "sandbox"
+   ],
+   "fonte": "ciq-agenda-fin",
+   "oficial": true,
+   "ref": "o sistema financeiro",
+   "estrategico": true
+  },
+  {
+   "id": "saude",
+   "nome": "Saúde e ciências da vida",
+   "curto": "Saúde",
+   "deck": true,
+   "cor": "#0E9F6E",
+   "resumo": "Hospitais, laboratórios, indústria farmacêutica, vacinas e institutos públicos de pesquisa. A expectativa principal está na simulação de moléculas e na otimização de operações.",
+   "contexto": [],
+   "desafios": [
+    "Custo e tempo das etapas iniciais de descoberta de fármacos",
+    "Simulação de interações moleculares com precisão química",
+    "Escalas, leitos e logística em redes hospitalares",
+    "Modelos de diagnóstico com poucos dados rotulados"
+   ],
+   "linhas": [
+    {
+     "id": "farmacos",
+     "nome": "Simulação molecular para fármacos",
+     "sub": "Energias de ligação e mecanismos de reação",
+     "pergunta": "Em que tamanho de sistema molecular os métodos quânticos variacionais calculam energias com precisão superior à DFT e custo aceitável?",
+     "classico": [
+      "Teoria do funcional da densidade (DFT) e métodos de coupled cluster em HPC",
+      "Docking e dinâmica molecular",
+      "Bibliotecas de referência de química computacional"
+     ],
+     "hibrido": [
+      "Fragmentação e embedding (DMET) com espaço ativo reduzido no processador quântico",
+      "Pré-otimização de geometria no clássico",
+      "Pós-processamento e correção de erro no clássico"
+     ],
+     "quantico": [
+      "VQE com ansatz adaptativo (ADAPT-VQE)",
+      "Estimativa de energia de estado fundamental e excitado",
+      "Mitigação de erro por extrapolação a ruído zero"
+     ],
+     "entregas": "Conjunto de moléculas de referência ligadas a doenças tropicais negligenciadas; protocolo comparativo DFT × VQE.",
+     "indicadores": "Erro em kcal/mol frente à referência, tamanho de espaço ativo viável e custo por molécula."
+    },
+    {
+     "id": "operacoes-saude",
+     "nome": "Otimização de operações em saúde",
+     "sub": "Escalas, leitos, centro cirúrgico e transporte sanitário",
+     "pergunta": "Formulações QUBO melhoram escalas de equipes, alocação de leitos e roteamento de transporte sanitário em instâncias reais?",
+     "classico": [
+      "Programação inteira mista e heurísticas",
+      "Regras trabalhistas e assistenciais como restrições",
+      "Linha de base usada pela instituição"
+     ],
+     "hibrido": [
+      "Decomposição por unidade e turno",
+      "QAOA em subproblemas, com retorno ao clássico",
+      "Validação com gestores hospitalares"
+     ],
+     "quantico": [
+      "QAOA e variantes com mixer restrito",
+      "Recozimento quântico em emulação",
+      "Execução no GJQ-20 para instâncias reduzidas"
+     ],
+     "entregas": "Instâncias anonimizadas de hospitais e da rede pública; ferramenta de comparação de escalas.",
+     "indicadores": "Custo da escala, cobertura assistencial, taxa de soluções viáveis e tempo de solução."
+    },
+    {
+     "id": "diagnostico",
+     "nome": "Aprendizado quântico em diagnóstico e genômica",
+     "sub": "Classificação com dados escassos e de alta dimensão",
+     "pergunta": "Kernels quânticos melhoram a classificação em conjuntos pequenos e de alta dimensão, como genômica e imagem médica?",
+     "classico": [
+      "SVM, gradient boosting e redes profundas",
+      "Validação cruzada estratificada",
+      "Explicabilidade por SHAP"
+     ],
+     "hibrido": [
+      "Redução de dimensionalidade no clássico",
+      "Kernel quântico sobre as componentes principais",
+      "Escolha automática entre simulador e máquina"
+     ],
+     "quantico": [
+      "Kernels quânticos de fidelidade",
+      "Circuitos variacionais classificadores",
+      "Estudo de expressividade versus ruído"
+     ],
+     "entregas": "Estudo com dados anonimizados, aprovado por comitê de ética e sob a LGPD.",
+     "indicadores": "AUC fora da amostra, sensibilidade e especificidade, explicabilidade e custo de treinamento."
+    },
+    {
+     "id": "biofluidos",
+     "nome": "Simulação de escoamentos biomédicos",
+     "sub": "Sistemas lineares em dinâmica de fluidos",
+     "pergunta": "Algoritmos quânticos para sistemas lineares são aplicáveis a subproblemas de simulação de fluxo sanguíneo, como aneurismas?",
+     "classico": [
+      "Dinâmica de fluidos computacional (CFD) em malhas clínicas",
+      "Solvers iterativos com precondicionadores",
+      "Validação com imagem médica"
+     ],
+     "hibrido": [
+      "Subproblemas lineares extraídos da malha",
+      "Resolução variacional (VQLS) no quântico",
+      "Reintegração ao solver clássico"
+     ],
+     "quantico": [
+      "VQLS em emulação",
+      "Estimativa de recursos para HHL",
+      "Análise de condicionamento e profundidade"
+     ],
+     "entregas": "Estudo de viabilidade e estimativa de recursos para escoamentos biomédicos.",
+     "indicadores": "Erro relativo frente ao CFD, número de condição tratável e recursos quânticos necessários."
+    }
+   ],
+   "dados": "Dados clínicos somente anonimizados, com aprovação de comitê de ética em pesquisa e sob a LGPD; preferência por bases públicas e sintéticas.",
+   "parceiros": "Hospitais de ensino e de excelência, indústria farmacêutica nacional, laboratórios oficiais, institutos de pesquisa em saúde e universidades.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "etec",
+    "faps",
+    "marco-legal-cti",
+    "ceis"
+   ],
+   "ref": "saúde e ciências da vida",
+   "estrategico": true
+  },
+  {
+   "id": "agro",
+   "nome": "Agronegócio e alimentos",
+   "curto": "Agro",
+   "deck": true,
+   "cor": "#5BA829",
+   "resumo": "Produção agrícola e pecuária, insumos, fertilizantes, cooperativas, tradings, agroindústria e máquinas agrícolas.",
+   "contexto": [],
+   "desafios": [
+    "Dependência de fertilizantes nitrogenados com produção intensiva em energia",
+    "Logística da safra entre fazenda, armazém, ferrovia e porto",
+    "Risco climático na produção e no seguro rural",
+    "Melhoramento genético com muitos candidatos e poucas gerações"
+   ],
+   "linhas": [
+    {
+     "id": "fertilizantes",
+     "nome": "Química de fertilizantes e catalisadores",
+     "sub": "Fixação de nitrogênio e insumos de menor impacto",
+     "pergunta": "Métodos quânticos ajudam a descrever etapas de reação de catalisadores para fertilizantes nitrogenados com precisão útil ao desenvolvimento?",
+     "classico": [
+      "DFT para superfícies catalíticas",
+      "Cinética microcinética em HPC",
+      "Dados experimentais de referência"
+     ],
+     "hibrido": [
+      "Embedding do sítio ativo no processador quântico",
+      "Ambiente químico tratado no clássico",
+      "Seleção de candidatos por triagem clássica"
+     ],
+     "quantico": [
+      "VQE para o sítio ativo",
+      "Estimativa de recursos para estimação de fase",
+      "Mitigação de erro"
+     ],
+     "entregas": "Estudo de catalisadores candidatos e mapa de requisitos de hardware.",
+     "indicadores": "Erro de energia de ativação frente à referência e número de candidatos avaliados por ciclo."
+    },
+    {
+     "id": "logistica-safra",
+     "nome": "Logística da safra",
+     "sub": "Fazenda, armazém, ferrovia e porto",
+     "pergunta": "Algoritmos híbridos reduzem custo e atraso no planejamento intermodal do escoamento da safra?",
+     "classico": [
+      "Modelos de fluxo em rede e programação inteira",
+      "Janelas de colheita, capacidade de armazéns e berços",
+      "Linha de base usada pela empresa"
+     ],
+     "hibrido": [
+      "Decomposição por corredor logístico",
+      "QAOA em subproblemas de alocação",
+      "Retorno automático ao clássico"
+     ],
+     "quantico": [
+      "QAOA com restrições de capacidade",
+      "Formulações QUBO para alocação",
+      "Execução em instâncias reduzidas no GJQ-20"
+     ],
+     "entregas": "Instâncias de referência de escoamento e relatório de benchmark.",
+     "indicadores": "Custo logístico, atraso médio, taxa de soluções viáveis e tempo de solução."
+    },
+    {
+     "id": "risco-agro",
+     "nome": "Risco climático e seguro rural",
+     "sub": "Produtividade, sinistro e crédito",
+     "pergunta": "A estimativa de amplitude quântica reduz o custo de simular risco de produtividade e sinistro em carteiras de seguro rural e crédito agrícola?",
+     "classico": [
+      "Monte Carlo com cenários climáticos",
+      "Modelos de produtividade por região",
+      "Precificação atuarial"
+     ],
+     "hibrido": [
+      "Distribuições carregadas em circuitos parametrizados",
+      "Divisão de amostragem entre clássico e quântico",
+      "Pós-processamento clássico"
+     ],
+     "quantico": [
+      "QAE iterativa",
+      "Estudo de profundidade versus ruído",
+      "Emulação antes do hardware"
+     ],
+     "entregas": "Protocolo comparativo de risco para seguro e crédito rural.",
+     "indicadores": "Erro de estimativa por custo computacional e estabilidade entre execuções."
+    },
+    {
+     "id": "genomica-agro",
+     "nome": "Melhoramento genético",
+     "sub": "Seleção genômica e cruzamentos",
+     "pergunta": "A escolha de cruzamentos em programas de melhoramento, tratada como otimização combinatória, se beneficia de abordagens híbridas?",
+     "classico": [
+      "Seleção genômica (GBLUP, modelos bayesianos)",
+      "Otimização de cruzamentos por heurísticas",
+      "Dados de genotipagem"
+     ],
+     "hibrido": [
+      "Formulação QUBO de cruzamentos",
+      "Kernels quânticos para predição de fenótipo",
+      "Validação com dados históricos"
+     ],
+     "quantico": [
+      "QAOA para seleção de pares",
+      "Kernels quânticos",
+      "Comparação com modelos clássicos equivalentes"
+     ],
+     "entregas": "Estudo com dados de melhoramento públicos ou cedidos sob acordo.",
+     "indicadores": "Ganho genético esperado, diversidade preservada e acurácia preditiva."
+    }
+   ],
+   "dados": "Dados de campo, clima e genotipagem sob acordo de uso; bases públicas da Embrapa, INMET e CONAB quando disponíveis.",
+   "parceiros": "Embrapa, cooperativas, empresas de insumos e fertilizantes, tradings, agroindústria e fabricantes de máquinas.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "fne-bnb",
+    "bndes",
+    "faps"
+   ],
+   "ref": "o agronegócio",
+   "estrategico": true
+  },
+  {
+   "id": "clima",
+   "nome": "Clima e meio ambiente",
+   "curto": "Clima",
+   "deck": true,
+   "cor": "#0891B2",
+   "resumo": "Previsão de eventos extremos, captura e uso de carbono, mercado de carbono, monitoramento de biomas e recursos hídricos.",
+   "contexto": [],
+   "desafios": [
+    "Previsão de tempestades e eventos extremos com antecedência útil",
+    "Materiais para captura e conversão de CO2",
+    "Seleção de projetos e risco em carteiras de carbono",
+    "Monitoramento de grandes áreas com dados de satélite"
+   ],
+   "linhas": [
+    {
+     "id": "eventos-extremos",
+     "nome": "Previsão de eventos extremos",
+     "sub": "Tempestades, cheias e secas",
+     "pergunta": "Modelos híbridos com componentes quânticos melhoram a previsão de curto prazo de eventos severos em séries meteorológicas brasileiras?",
+     "classico": [
+      "Modelos numéricos de tempo e reanálises",
+      "Aprendizado de máquina em séries e imagens de radar",
+      "Métricas operacionais de previsão"
+     ],
+     "hibrido": [
+      "Extração de atributos no clássico",
+      "Classificadores com kernel quântico",
+      "Combinação de modelos"
+     ],
+     "quantico": [
+      "Kernels quânticos",
+      "Redes neurais quânticas variacionais",
+      "Estudo de ruído e generalização"
+     ],
+     "entregas": "Estudo com dados públicos de radar e estações; comparação com modelos operacionais.",
+     "indicadores": "Taxa de acerto e de falso alarme, antecedência da previsão e custo computacional."
+    },
+    {
+     "id": "captura-carbono",
+     "nome": "Captura e conversão de carbono",
+     "sub": "Adsorventes e catalisadores",
+     "pergunta": "Cálculos quânticos de estrutura eletrônica ajudam a selecionar adsorventes e catalisadores para captura e conversão de CO2?",
+     "classico": [
+      "DFT e dinâmica molecular",
+      "Triagem de alto desempenho de estruturas porosas",
+      "Dados experimentais"
+     ],
+     "hibrido": [
+      "Embedding do sítio de adsorção no quântico",
+      "Triagem prévia no clássico",
+      "Validação experimental com parceiros"
+     ],
+     "quantico": [
+      "VQE para energias de adsorção",
+      "Estimativa de recursos",
+      "Mitigação de erro"
+     ],
+     "entregas": "Ranking de materiais candidatos e estudo de requisitos de hardware.",
+     "indicadores": "Erro de energia de adsorção frente à referência e número de candidatos avaliados."
+    },
+    {
+     "id": "carteiras-carbono",
+     "nome": "Carteiras de carbono e risco climático",
+     "sub": "Seleção de projetos e cenários",
+     "pergunta": "Abordagens híbridas melhoram a seleção de carteiras de projetos de carbono sob restrições de risco, região e certificação?",
+     "classico": [
+      "Programação inteira e análise de cenários",
+      "Modelos de risco físico e de transição",
+      "Linha de base da instituição"
+     ],
+     "hibrido": [
+      "Formulação QUBO de seleção",
+      "QAE para risco de cenário",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "QAE iterativa",
+      "Emulação e execução em instâncias reduzidas"
+     ],
+     "entregas": "Instâncias de referência e relatório comparativo.",
+     "indicadores": "Retorno ajustado a risco, aderência a restrições e tempo de solução."
+    },
+    {
+     "id": "biomas",
+     "nome": "Monitoramento de biomas",
+     "sub": "Classificação de imagens de satélite",
+     "pergunta": "Classificadores com componentes quânticos agregam precisão na detecção de desmatamento e degradação com poucos rótulos?",
+     "classico": [
+      "Redes convolucionais e florestas aleatórias",
+      "Séries temporais de satélite",
+      "Dados de referência públicos"
+     ],
+     "hibrido": [
+      "Atributos extraídos no clássico",
+      "Kernel quântico na etapa de classificação",
+      "Validação cruzada espacial"
+     ],
+     "quantico": [
+      "Kernels quânticos",
+      "Circuitos variacionais",
+      "Estudo de escalabilidade"
+     ],
+     "entregas": "Estudo com imagens públicas de Amazônia, Cerrado e Caatinga.",
+     "indicadores": "Acurácia por classe, custo de rotulagem e tempo de processamento."
+    }
+   ],
+   "dados": "Dados públicos de satélite, radar, estações meteorológicas e inventários de emissões; dados privados sob acordo.",
+   "parceiros": "Institutos de meteorologia e monitoramento, empresas de energia e mineração, desenvolvedores de projetos de carbono, seguradoras e universidades.",
+   "mecanismos": [
+    "finep",
+    "bndes",
+    "faps",
+    "fne-bnb",
+    "fundos-patrimoniais",
+    "lei-do-bem",
+    "fundo-clima"
+   ],
+   "ref": "clima e meio ambiente",
+   "estrategico": true
+  },
+  {
+   "id": "energia",
+   "nome": "Energia elétrica",
+   "curto": "Energia",
+   "deck": true,
+   "cor": "#F59E0B",
+   "resumo": "Geração, transmissão, distribuição, operação do sistema e comercialização. O setor aplica anualmente parte da receita em PD&I regulado pela ANEEL.",
+   "contexto": [
+    {
+     "n": "Lei 9.991/2000",
+     "d": "obriga as empresas do setor elétrico a aplicar parte da receita operacional líquida em pesquisa e desenvolvimento e eficiência energética",
+     "f": "Legislação federal"
+    }
+   ],
+   "desafios": [
+    "Despacho e planejamento com alta participação de fontes variáveis",
+    "Reconfiguração e expansão de redes de distribuição",
+    "Materiais para baterias, hidrogênio e eletrolisadores",
+    "Segurança de sistemas de controle frente à ameaça quântica"
+   ],
+   "linhas": [
+    {
+     "id": "despacho",
+     "nome": "Planejamento da operação",
+     "sub": "Comprometimento de unidades e despacho",
+     "pergunta": "Em que porte de problema algoritmos quânticos contribuem para o comprometimento de unidades e o despacho com renováveis variáveis?",
+     "classico": [
+      "Programação inteira mista e decomposição de Benders",
+      "Modelos de planejamento usados pelo setor",
+      "Restrições de rede e de reservatório"
+     ],
+     "hibrido": [
+      "Decomposição mestre-subproblema",
+      "Subproblemas binários em QUBO",
+      "Retorno automático ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Busca adaptativa de Grover",
+      "Execução em instâncias reduzidas"
+     ],
+     "entregas": "Instâncias de referência do sistema brasileiro e relatório de benchmark.",
+     "indicadores": "Custo de operação, viabilidade, distância do ótimo e tempo de solução."
+    },
+    {
+     "id": "redes",
+     "nome": "Redes de distribuição",
+     "sub": "Reconfiguração, perdas e expansão",
+     "pergunta": "Formulações híbridas encontram configurações de rede com menos perdas e melhor confiabilidade em tempo útil?",
+     "classico": [
+      "Fluxo de potência ótimo e heurísticas",
+      "Programação inteira para expansão",
+      "Indicadores regulatórios de continuidade"
+     ],
+     "hibrido": [
+      "Subproblemas de chaveamento em QUBO",
+      "Avaliação de fluxo de potência no clássico",
+      "Laço iterativo"
+     ],
+     "quantico": [
+      "QAOA com restrições de radialidade",
+      "Emulação e hardware",
+      "Estudo de escala"
+     ],
+     "entregas": "Estudo com redes de teste e alimentadores reais anonimizados.",
+     "indicadores": "Perdas técnicas, indicadores de continuidade e tempo de solução."
+    },
+    {
+     "id": "materiais-energia",
+     "nome": "Materiais para armazenamento e hidrogênio",
+     "sub": "Baterias, eletrolisadores e catalisadores",
+     "pergunta": "Cálculos quânticos de estrutura eletrônica aceleram a avaliação de materiais para baterias e produção de hidrogênio?",
+     "classico": [
+      "DFT e triagem de alto desempenho",
+      "Dinâmica molecular",
+      "Dados experimentais"
+     ],
+     "hibrido": [
+      "Embedding do sítio ativo",
+      "Triagem prévia no clássico",
+      "Validação experimental"
+     ],
+     "quantico": [
+      "VQE",
+      "Estimativa de recursos para estimação de fase",
+      "Mitigação de erro"
+     ],
+     "entregas": "Ranking de materiais candidatos e mapa de requisitos de hardware.",
+     "indicadores": "Erro de energia frente à referência e candidatos avaliados por ciclo."
+    },
+    {
+     "id": "previsao-energia",
+     "nome": "Previsão de geração e carga",
+     "sub": "Eólica, solar e demanda",
+     "pergunta": "Modelos com componentes quânticos melhoram a previsão de curto prazo de geração renovável e carga?",
+     "classico": [
+      "Modelos estatísticos e redes neurais",
+      "Previsão numérica de tempo",
+      "Métricas do operador"
+     ],
+     "hibrido": [
+      "Atributos no clássico, kernel quântico na regressão",
+      "Combinação de modelos",
+      "Escolha entre simulador e máquina"
+     ],
+     "quantico": [
+      "Regressão com kernel quântico",
+      "Circuitos variacionais",
+      "Estudo de generalização"
+     ],
+     "entregas": "Estudo comparativo com dados públicos de geração e carga.",
+     "indicadores": "Erro de previsão por horizonte e custo computacional."
+    }
+   ],
+   "dados": "Dados públicos do operador e da agência reguladora; dados de rede e de ativos sob acordo com as concessionárias.",
+   "parceiros": "Geradoras, transmissoras, distribuidoras, operador e planejador do sistema e centros de pesquisa do setor elétrico.",
+   "mecanismos": [
+    "pdi-aneel",
+    "lei-do-bem",
+    "marco-startups",
+    "finep",
+    "bndes",
+    "fne-bnb"
+   ],
+   "ref": "energia elétrica",
+   "estrategico": true
+  },
+  {
+   "id": "oleo-gas",
+   "nome": "Petróleo, gás e biocombustíveis",
+   "curto": "Óleo e gás",
+   "deck": true,
+   "cor": "#7C3AED",
+   "resumo": "Exploração e produção, refino, logística offshore e biocombustíveis. O setor tem cláusula contratual de PD&I e grande demanda por computação de alto desempenho.",
+   "contexto": [],
+   "desafios": [
+    "Simulação de reservatórios com sistemas lineares muito grandes",
+    "Catalisadores de refino, corrosão e captura de carbono",
+    "Logística offshore de embarcações, helicópteros e sondas",
+    "Inversão sísmica e caracterização de subsuperfície"
+   ],
+   "linhas": [
+    {
+     "id": "reservatorios",
+     "nome": "Simulação de reservatórios",
+     "sub": "Sistemas lineares e escoamento em meios porosos",
+     "pergunta": "Que requisitos de hardware tornariam algoritmos quânticos para sistemas lineares úteis em simulação de reservatórios?",
+     "classico": [
+      "Simuladores de reservatório em HPC",
+      "Solvers iterativos e precondicionadores",
+      "Casos de referência públicos"
+     ],
+     "hibrido": [
+      "Subproblemas lineares extraídos do simulador",
+      "VQLS em emulação e hardware",
+      "Reintegração ao solver clássico"
+     ],
+     "quantico": [
+      "VQLS",
+      "Estimativa de recursos para HHL",
+      "Análise de condicionamento"
+     ],
+     "entregas": "Estudo de viabilidade e estimativa de recursos com casos de referência.",
+     "indicadores": "Erro relativo, número de condição tratável e recursos quânticos necessários."
+    },
+    {
+     "id": "quimica-refino",
+     "nome": "Química de refino e de carbono",
+     "sub": "Catalisadores, corrosão e CO2",
+     "pergunta": "Cálculos quânticos melhoram a descrição de sítios catalíticos e mecanismos de corrosão relevantes ao refino?",
+     "classico": [
+      "DFT e cinética",
+      "Triagem de catalisadores",
+      "Dados de planta piloto"
+     ],
+     "hibrido": [
+      "Embedding do sítio ativo",
+      "Ambiente tratado no clássico",
+      "Validação experimental"
+     ],
+     "quantico": [
+      "VQE",
+      "Estimativa de recursos",
+      "Mitigação de erro"
+     ],
+     "entregas": "Ranking de candidatos e mapa de requisitos de hardware.",
+     "indicadores": "Erro de energia frente à referência e candidatos avaliados."
+    },
+    {
+     "id": "logistica-offshore",
+     "nome": "Logística offshore",
+     "sub": "Embarcações, voos e sondas",
+     "pergunta": "Abordagens híbridas reduzem custo e atraso no planejamento de embarcações de apoio, voos e cronograma de sondas?",
+     "classico": [
+      "Roteirização e programação inteira",
+      "Restrições de janela, carga e clima",
+      "Linha de base da operadora"
+     ],
+     "hibrido": [
+      "Decomposição por base e janela",
+      "QAOA em subproblemas",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Formulações QUBO",
+      "Instâncias reduzidas no GJQ-20"
+     ],
+     "entregas": "Instâncias anonimizadas e relatório de benchmark.",
+     "indicadores": "Custo, atraso, taxa de soluções viáveis e tempo de solução."
+    },
+    {
+     "id": "sismica",
+     "nome": "Inversão sísmica",
+     "sub": "Otimização e aprendizado em subsuperfície",
+     "pergunta": "Componentes quânticos de otimização ou aprendizado agregam qualidade a etapas de inversão e interpretação sísmica?",
+     "classico": [
+      "Inversão de forma de onda completa em HPC",
+      "Interpretação com aprendizado profundo",
+      "Dados sísmicos de referência"
+     ],
+     "hibrido": [
+      "Subproblemas de regularização em QUBO",
+      "Kernels quânticos em classificação de fácies",
+      "Laço híbrido"
+     ],
+     "quantico": [
+      "QAOA",
+      "Kernels quânticos",
+      "Estudo de escala"
+     ],
+     "entregas": "Estudo de viabilidade com dados públicos.",
+     "indicadores": "Erro de inversão, acurácia de classificação e custo computacional."
+    }
+   ],
+   "dados": "Casos de referência públicos e dados da operadora sob acordo de confidencialidade.",
+   "parceiros": "Operadoras com cláusula de PD&I, refinadoras, empresas de serviços e unidades de pesquisa credenciadas.",
+   "mecanismos": [
+    "pdi-anp",
+    "lei-do-bem",
+    "marco-startups",
+    "embrapii",
+    "finep",
+    "bndes"
+   ],
+   "ref": "petróleo, gás e biocombustíveis",
+   "estrategico": false
+  },
+  {
+   "id": "logistica",
+   "nome": "Logística, transporte e mobilidade",
+   "curto": "Logística",
+   "deck": true,
+   "cor": "#DB2777",
+   "resumo": "Ferrovias, rodovias, portos, aviação, comércio eletrônico, locação de veículos e indústria automotiva.",
+   "contexto": [],
+   "desafios": [
+    "Roteirização com janelas de tempo e frota heterogênea",
+    "Planejamento intermodal e alocação de berços",
+    "Escalas de tripulação e malha aérea",
+    "Materiais e gestão de baterias para veículos elétricos"
+   ],
+   "linhas": [
+    {
+     "id": "roteirizacao",
+     "nome": "Roteirização de veículos",
+     "sub": "Entregas, coleta e última milha",
+     "pergunta": "Em que tamanho de instância abordagens híbridas melhoram a roteirização com janelas de tempo e frota heterogênea?",
+     "classico": [
+      "Heurísticas e meta-heurísticas de roteirização",
+      "Programação inteira para subproblemas",
+      "Linha de base de produção"
+     ],
+     "hibrido": [
+      "Agrupamento no clássico e sequenciamento no quântico",
+      "QAOA em subproblemas",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA com mixer restrito",
+      "Busca adaptativa de Grover",
+      "Instâncias reduzidas no GJQ-20"
+     ],
+     "entregas": "Instâncias brasileiras de referência e relatório de benchmark.",
+     "indicadores": "Distância e custo total, atraso, taxa de soluções viáveis e tempo de solução."
+    },
+    {
+     "id": "intermodal",
+     "nome": "Planejamento intermodal e portuário",
+     "sub": "Ferrovia, cabotagem, pátios e berços",
+     "pergunta": "Formulações híbridas reduzem tempo de espera de navios e custo do planejamento intermodal?",
+     "classico": [
+      "Programação inteira e simulação de eventos discretos",
+      "Restrições de pátio, berço e janela",
+      "Linha de base do terminal"
+     ],
+     "hibrido": [
+      "Decomposição por terminal",
+      "Subproblemas de alocação em QUBO",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Recozimento quântico em emulação",
+      "Execução em instâncias reduzidas"
+     ],
+     "entregas": "Instâncias anonimizadas e estudo comparativo.",
+     "indicadores": "Tempo de espera, ocupação de berço e tempo de solução."
+    },
+    {
+     "id": "escalas",
+     "nome": "Malha aérea e escalas",
+     "sub": "Tripulações e frota",
+     "pergunta": "Abordagens híbridas melhoram a montagem de pares de voo e escalas de tripulação sob regras regulatórias?",
+     "classico": [
+      "Geração de colunas e programação inteira",
+      "Regras regulatórias de jornada",
+      "Linha de base da companhia"
+     ],
+     "hibrido": [
+      "Subproblemas de cobertura em QUBO",
+      "Geração de colunas com oráculo quântico",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Busca adaptativa de Grover",
+      "Estudo de escala"
+     ],
+     "entregas": "Instâncias de referência e relatório comparativo.",
+     "indicadores": "Custo de tripulação, cobertura, robustez a atrasos e tempo de solução."
+    },
+    {
+     "id": "baterias-veiculos",
+     "nome": "Baterias e mobilidade elétrica",
+     "sub": "Materiais e gestão de frota",
+     "pergunta": "Cálculos quânticos de estrutura eletrônica aceleram a avaliação de materiais de catodo e eletrólito?",
+     "classico": [
+      "DFT e dinâmica molecular",
+      "Triagem de alto desempenho",
+      "Dados experimentais"
+     ],
+     "hibrido": [
+      "Embedding do sítio ativo",
+      "Triagem prévia no clássico",
+      "Validação experimental"
+     ],
+     "quantico": [
+      "VQE",
+      "Estimativa de recursos",
+      "Mitigação de erro"
+     ],
+     "entregas": "Ranking de materiais candidatos.",
+     "indicadores": "Erro de energia frente à referência e candidatos avaliados."
+    }
+   ],
+   "dados": "Instâncias anonimizadas fornecidas pelas empresas e bases públicas de transporte.",
+   "parceiros": "Operadores ferroviários e portuários, companhias aéreas, comércio eletrônico, locadoras e montadoras.",
+   "mecanismos": [
+    "lei-do-bem",
+    "mover",
+    "embrapii",
+    "finep",
+    "bndes",
+    "fne-bnb"
+   ],
+   "ref": "logística, transporte e mobilidade",
+   "estrategico": false
+  },
+  {
+   "id": "industria",
+   "nome": "Indústria, materiais e mineração",
+   "curto": "Indústria",
+   "deck": true,
+   "cor": "#475569",
+   "resumo": "Química, siderurgia, mineração, papel e celulose, bens de capital, eletrônica e semicondutores.",
+   "contexto": [],
+   "desafios": [
+    "Desenvolvimento de ligas, polímeros e catalisadores",
+    "Programação e sequenciamento da produção",
+    "Planejamento de lavra e mistura de minérios",
+    "Projeto e teste de componentes eletrônicos"
+   ],
+   "linhas": [
+    {
+     "id": "materiais",
+     "nome": "Simulação de materiais",
+     "sub": "Ligas, polímeros, catalisadores e semicondutores",
+     "pergunta": "Em que classes de materiais cálculos quânticos de estrutura eletrônica agregam precisão útil ao desenvolvimento industrial?",
+     "classico": [
+      "DFT e métodos de cluster em HPC",
+      "Triagem de alto desempenho",
+      "Dados de laboratório"
+     ],
+     "hibrido": [
+      "Embedding do sítio ou defeito no quântico",
+      "Ambiente tratado no clássico",
+      "Validação experimental"
+     ],
+     "quantico": [
+      "VQE",
+      "Estimativa de recursos para estimação de fase",
+      "Mitigação de erro"
+     ],
+     "entregas": "Ranking de candidatos e mapa de requisitos de hardware por classe de material.",
+     "indicadores": "Erro frente à referência experimental e candidatos avaliados por ciclo."
+    },
+    {
+     "id": "producao",
+     "nome": "Programação da produção",
+     "sub": "Sequenciamento e alocação de máquinas",
+     "pergunta": "Abordagens híbridas reduzem atraso e trocas de ferramenta na programação de plantas com muitas restrições?",
+     "classico": [
+      "Programação por restrições e inteira mista",
+      "Heurísticas de despacho",
+      "Linha de base da planta"
+     ],
+     "hibrido": [
+      "Decomposição por linha ou turno",
+      "Subproblemas em QUBO",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Recozimento quântico em emulação",
+      "Instâncias reduzidas no GJQ-20"
+     ],
+     "entregas": "Instâncias anonimizadas e relatório de benchmark.",
+     "indicadores": "Atraso total, trocas de ferramenta, utilização e tempo de solução."
+    },
+    {
+     "id": "lavra",
+     "nome": "Planejamento de lavra e mistura",
+     "sub": "Sequenciamento de blocos e blending",
+     "pergunta": "Formulações híbridas melhoram o valor presente do sequenciamento de lavra respeitando teor e capacidade?",
+     "classico": [
+      "Programação inteira e algoritmos de cava",
+      "Restrições de teor, mistura e capacidade",
+      "Linha de base da mineradora"
+     ],
+     "hibrido": [
+      "Decomposição por período",
+      "Subproblemas em QUBO",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Busca adaptativa de Grover",
+      "Estudo de escala"
+     ],
+     "entregas": "Instâncias de referência e estudo comparativo.",
+     "indicadores": "Valor presente, aderência a teor e tempo de solução."
+    },
+    {
+     "id": "qualidade",
+     "nome": "Controle de qualidade com aprendizado quântico",
+     "sub": "Defeitos, sensores e processo",
+     "pergunta": "Classificadores com kernel quântico detectam defeitos raros com menos dados rotulados que modelos clássicos equivalentes?",
+     "classico": [
+      "Visão computacional e modelos de séries",
+      "Detecção de anomalias",
+      "Dados de processo"
+     ],
+     "hibrido": [
+      "Atributos no clássico, kernel quântico na classificação",
+      "Escolha entre simulador e máquina",
+      "Validação na planta"
+     ],
+     "quantico": [
+      "Kernels quânticos",
+      "Circuitos variacionais",
+      "Estudo de ruído"
+     ],
+     "entregas": "Estudo com dados de processo anonimizados.",
+     "indicadores": "Recall de defeitos raros, falsos positivos e custo de treinamento."
+    }
+   ],
+   "dados": "Dados de processo e de laboratório sob acordo de confidencialidade; bases públicas de materiais.",
+   "parceiros": "Indústria química e siderúrgica, mineradoras, bens de capital, eletrônica e design de circuitos integrados.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "lei-de-tics",
+    "brasil-semicon",
+    "finep",
+    "bndes",
+    "nib"
+   ],
+   "ref": "indústria, materiais e mineração",
+   "estrategico": false
+  },
+  {
+   "id": "telecom",
+   "nome": "Telecomunicações e cibersegurança",
+   "curto": "Telecom",
+   "deck": true,
+   "cor": "#0EA5E9",
+   "resumo": "Operadoras, provedores, redes ópticas, certificação digital, nuvem e software. O CIQUANTA dispõe de plataforma de redes quânticas com CV-QKD.",
+   "contexto": [
+    {
+     "n": "FIPS 203, 204 e 205",
+     "d": "primeiros padrões de criptografia pós-quântica publicados pelo NIST em agosto de 2024",
+     "f": "NIST"
+    }
+   ],
+   "desafios": [
+    "Migração de chaves e certificados para algoritmos pós-quânticos",
+    "Distribuição de chaves com segurança física em redes ópticas",
+    "Planejamento de espectro, rotas e antenas",
+    "Geração de números aleatórios certificados"
+   ],
+   "linhas": [
+    {
+     "id": "pqc-telecom",
+     "nome": "Migração pós-quântica",
+     "sub": "Inventário, cripto-agilidade e certificados",
+     "pergunta": "Qual é o custo de desempenho e o prazo realista para migrar chaves, certificados e protocolos para algoritmos pós-quânticos?",
+     "classico": [
+      "Algoritmos FIPS 203, 204 e 205",
+      "Inventário criptográfico e cripto-agilidade",
+      "Testes em sistemas legados"
+     ],
+     "hibrido": [
+      "Esquemas híbridos clássico e pós-quântico",
+      "Priorização por risco de coletar agora e decifrar depois",
+      "Pilotos em TLS e VPN"
+     ],
+     "quantico": [
+      "Estimativa de recursos para ataques",
+      "Acompanhamento do hardware",
+      "Horizonte de ameaça"
+     ],
+     "entregas": "Guia de migração e laboratório de testes de algoritmos.",
+     "indicadores": "Cobertura do inventário, latência e sobrecarga e prazo de migração."
+    },
+    {
+     "id": "qkd",
+     "nome": "Redes quânticas (CV-QKD)",
+     "sub": "Distribuição de chaves em redes ópticas",
+     "pergunta": "Em que distâncias e topologias a distribuição quântica de chaves com variáveis contínuas se integra às redes ópticas existentes?",
+     "classico": [
+      "Gestão de chaves clássica e IPsec/TLS",
+      "Redes ópticas em operação",
+      "Requisitos de disponibilidade"
+     ],
+     "hibrido": [
+      "Chaves QKD alimentando TLS e IPsec",
+      "Gestão de chaves híbrida",
+      "Monitoramento integrado"
+     ],
+     "quantico": [
+      "CV-QKD com estados coerentes gaussianos",
+      "Detecção por medição coerente",
+      "Taxa de chave segura versus distância"
+     ],
+     "entregas": "Enlace de demonstração e relatório de integração.",
+     "indicadores": "Taxa de chave segura, distância, disponibilidade e custo por enlace."
+    },
+    {
+     "id": "otimizacao-redes",
+     "nome": "Otimização de redes",
+     "sub": "Espectro, rotas e posicionamento de antenas",
+     "pergunta": "Abordagens híbridas melhoram a alocação de espectro e o roteamento em redes ópticas e móveis?",
+     "classico": [
+      "Programação inteira e heurísticas",
+      "Simuladores de rede",
+      "Linha de base da operadora"
+     ],
+     "hibrido": [
+      "Subproblemas de alocação em QUBO",
+      "Avaliação de desempenho no clássico",
+      "Laço iterativo"
+     ],
+     "quantico": [
+      "QAOA",
+      "Busca adaptativa de Grover",
+      "Instâncias reduzidas"
+     ],
+     "entregas": "Instâncias de referência e relatório comparativo.",
+     "indicadores": "Bloqueio de demanda, uso de espectro e tempo de solução."
+    },
+    {
+     "id": "qrng",
+     "nome": "Aleatoriedade quântica",
+     "sub": "Geração de números aleatórios",
+     "pergunta": "Geradores de números aleatórios de origem quântica atendem aos requisitos de certificação de chaves e sorteios?",
+     "classico": [
+      "Geradores pseudoaleatórios certificados",
+      "Baterias de testes estatísticos",
+      "Requisitos de certificação"
+     ],
+     "hibrido": [
+      "Extração e pós-processamento clássico",
+      "Integração com módulos de segurança",
+      "Auditoria"
+     ],
+     "quantico": [
+      "Fontes quânticas de entropia",
+      "Certificação por testes",
+      "Taxa de geração"
+     ],
+     "entregas": "Estudo de integração e conformidade.",
+     "indicadores": "Taxa de geração, aprovação em testes e custo de integração."
+    }
+   ],
+   "dados": "Dados de rede sob confidencialidade; ambientes de teste isolados.",
+   "parceiros": "Operadoras, provedores regionais, fabricantes de equipamentos ópticos, autoridades certificadoras, nuvem e centros de pesquisa em telecom.",
+   "mecanismos": [
+    "lei-de-tics",
+    "ppi",
+    "funttel",
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "fust",
+    "sandbox"
+   ],
+   "ref": "telecomunicações e cibersegurança",
+   "estrategico": false
+  },
+  {
+   "id": "governo-defesa",
+   "nome": "Governo, defesa e soberania",
+   "curto": "Governo",
+   "deck": true,
+   "cor": "#1E293B",
+   "resumo": "Órgãos federais e estaduais, Forças Armadas, empresas públicas de tecnologia e reguladores.",
+   "contexto": [],
+   "desafios": [
+    "Preparação da criptografia de Estado para a ameaça quântica",
+    "Comunicações seguras entre órgãos e infraestrutura crítica",
+    "Alocação de recursos em políticas públicas",
+    "Compras públicas de soluções com risco tecnológico"
+   ],
+   "linhas": [
+    {
+     "id": "pqc-governo",
+     "nome": "Soberania criptográfica",
+     "sub": "Transição pós-quântica no Estado",
+     "pergunta": "Como planejar a transição pós-quântica de sistemas de governo com prazos, custos e prioridades definidos?",
+     "classico": [
+      "Inventário criptográfico de sistemas críticos",
+      "Algoritmos FIPS 203, 204 e 205",
+      "Requisitos de certificação nacional"
+     ],
+     "hibrido": [
+      "Esquemas híbridos na transição",
+      "Priorização por risco de coletar agora e decifrar depois",
+      "Pilotos em serviços digitais"
+     ],
+     "quantico": [
+      "Estimativa de recursos para ataques",
+      "Horizonte de ameaça",
+      "Acompanhamento do hardware"
+     ],
+     "entregas": "Plano de transição de referência e laboratório de testes.",
+     "indicadores": "Cobertura do inventário, prazo de migração e impacto no desempenho."
+    },
+    {
+     "id": "comunicacoes",
+     "nome": "Comunicações seguras",
+     "sub": "Redes quânticas para infraestrutura crítica",
+     "pergunta": "Em que trechos e serviços a distribuição quântica de chaves agrega segurança à comunicação entre órgãos?",
+     "classico": [
+      "Criptografia clássica e gestão de chaves",
+      "Redes governamentais existentes",
+      "Requisitos de disponibilidade"
+     ],
+     "hibrido": [
+      "Chaves QKD alimentando IPsec",
+      "Gestão de chaves híbrida",
+      "Monitoramento"
+     ],
+     "quantico": [
+      "CV-QKD",
+      "Taxa de chave versus distância",
+      "Integração em fibra existente"
+     ],
+     "entregas": "Enlace de demonstração e estudo de viabilidade.",
+     "indicadores": "Taxa de chave segura, disponibilidade e custo por enlace."
+    },
+    {
+     "id": "politicas",
+     "nome": "Otimização de políticas públicas",
+     "sub": "Rotas, redes de atendimento e alocação",
+     "pergunta": "Abordagens híbridas melhoram a alocação de recursos em transporte escolar, saúde e segurança pública?",
+     "classico": [
+      "Programação inteira e heurísticas",
+      "Dados administrativos",
+      "Linha de base do órgão"
+     ],
+     "hibrido": [
+      "Decomposição territorial",
+      "Subproblemas em QUBO",
+      "Retorno ao clássico"
+     ],
+     "quantico": [
+      "QAOA",
+      "Instâncias reduzidas no GJQ-20",
+      "Estudo de escala"
+     ],
+     "entregas": "Instâncias de referência com dados públicos e relatório comparativo.",
+     "indicadores": "Custo, cobertura, equidade territorial e tempo de solução."
+    },
+    {
+     "id": "encomenda",
+     "nome": "Encomenda tecnológica",
+     "sub": "Soluções sob demanda com risco tecnológico",
+     "pergunta": "Que problemas de Estado justificam encomenda tecnológica com etapas de validação no CIQUANTA?",
+     "classico": [
+      "Mapeamento de demandas",
+      "Estudos de viabilidade",
+      "Indicadores de resultado"
+     ],
+     "hibrido": [
+      "Provas de conceito híbridas",
+      "Marcos tecnológicos",
+      "Avaliação independente"
+     ],
+     "quantico": [
+      "Execução no GJQ-20 e GJQ-100",
+      "Relatórios de desempenho",
+      "Transferência de tecnologia"
+     ],
+     "entregas": "Carteira de demandas e modelo de encomenda tecnológica.",
+     "indicadores": "Marcos atingidos, custo e transferência de conhecimento."
+    }
+   ],
+   "dados": "Dados públicos e administrativos sob acordo de cooperação; ambientes isolados para temas sensíveis.",
+   "parceiros": "Ministérios, Forças Armadas, empresas públicas de tecnologia, reguladores e governos estaduais.",
+   "mecanismos": [
+    "etec",
+    "marco-legal-cti",
+    "ibquantica",
+    "nib",
+    "finep",
+    "funttel",
+    "compras-inovacao",
+    "retid"
+   ],
+   "ref": "governo, defesa e soberania",
+   "estrategico": false
+  },
+  {
+   "id": "seguros",
+   "nome": "Seguros e previdência",
+   "curto": "Seguros",
+   "deck": false,
+   "deckId": "financeiro",
+   "resumo": "Seguradoras, resseguradoras e previdência complementar. Usam modelos atuariais, risco de catástrofe e otimização de investimentos.",
+   "mecanismos": [
+    "lei-do-bem",
+    "finep",
+    "embrapii"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "seguros e previdência",
+   "estrategico": false
+  },
+  {
+   "id": "mineracao",
+   "nome": "Mineração e siderurgia",
+   "curto": "Mineração",
+   "deck": false,
+   "deckId": "industria",
+   "resumo": "Mineradoras e siderúrgicas. Planejamento de lavra, mistura de minérios, novos materiais e descarbonização.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "bndes"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "mineração e siderurgia",
+   "estrategico": false
+  },
+  {
+   "id": "quimica",
+   "nome": "Química e materiais",
+   "curto": "Química",
+   "deck": false,
+   "deckId": "industria",
+   "resumo": "Petroquímica, química fina, cosméticos e materiais avançados. Simulação molecular é a aplicação mais citada.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "finep",
+    "bndes"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "química e materiais",
+   "estrategico": false
+  },
+  {
+   "id": "semicondutores",
+   "nome": "Eletrônica e semicondutores",
+   "curto": "Semicondutores",
+   "deck": false,
+   "deckId": "industria",
+   "resumo": "Fabricantes de eletrônicos, design houses e encapsulamento. Base de obrigação de PD&I da Lei de TICs e do Brasil Semicon.",
+   "mecanismos": [
+    "lei-de-tics",
+    "brasil-semicon",
+    "ppi",
+    "lei-tics-zfm"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "eletrônica e semicondutores",
+   "estrategico": false
+  },
+  {
+   "id": "automotivo",
+   "nome": "Automotivo e autopeças",
+   "curto": "Automotivo",
+   "deck": false,
+   "deckId": "logistica",
+   "resumo": "Montadoras e fornecedores com compromissos de P&D no Programa MOVER.",
+   "mecanismos": [
+    "mover",
+    "lei-do-bem",
+    "embrapii"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "automotivo e autopeças",
+   "estrategico": false
+  },
+  {
+   "id": "aeroespacial",
+   "nome": "Aeroespacial e defesa",
+   "curto": "Aeroespacial",
+   "deck": false,
+   "deckId": "governo-defesa",
+   "resumo": "Fabricantes aeronáuticos, sistemas de defesa e institutos militares de pesquisa.",
+   "mecanismos": [
+    "lei-do-bem",
+    "etec",
+    "finep",
+    "nib",
+    "compras-inovacao",
+    "retid"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "aeroespacial e defesa",
+   "estrategico": false
+  },
+  {
+   "id": "tic",
+   "nome": "TIC, nuvem e software",
+   "curto": "TIC",
+   "deck": false,
+   "deckId": "telecom",
+   "resumo": "Provedores de nuvem, fabricantes de computadores, integradores e institutos de pesquisa em TIC.",
+   "mecanismos": [
+    "lei-de-tics",
+    "ppi",
+    "lei-do-bem",
+    "redata",
+    "pbia"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "tIC, nuvem e software",
+   "estrategico": false
+  },
+  {
+   "id": "varejo",
+   "nome": "Varejo e consumo",
+   "curto": "Varejo",
+   "deck": false,
+   "deckId": "logistica",
+   "resumo": "Comércio eletrônico, varejo físico e bens de consumo. Otimização de estoque, sortimento e entregas.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "varejo e consumo",
+   "estrategico": false
+  },
+  {
+   "id": "ecossistema",
+   "nome": "Ecossistema quântico",
+   "curto": "Ecossistema",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Startups, centros de competência, universidades e fornecedores de tecnologia quântica.",
+   "mecanismos": [
+    "embrapii",
+    "faps",
+    "marco-startups",
+    "sebrae",
+    "ibquantica",
+    "coop-internacional",
+    "fndct-setoriais",
+    "importacao-pesquisa"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "ref": "ecossistema quântico",
+   "estrategico": false
+  },
+  {
+   "id": "deeptech",
+   "nome": "Deep techs e startups",
+   "curto": "Deep techs",
+   "ref": "deep techs e startups",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Startups de base científica em saúde, agro, energia, materiais, IA e segurança. São parceiras para provas de conceito, residência e desenvolvimento de produtos sobre a infraestrutura do centro.",
+   "mecanismos": [
+    "programas-startups",
+    "venture",
+    "embrapii",
+    "faps",
+    "marco-startups",
+    "sebrae",
+    "inova-simples"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "estrategico": false
+  },
+  {
+   "id": "investidores",
+   "nome": "Investidores e capital de risco",
+   "curto": "Investidores",
+   "ref": "investidores",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Gestoras de venture capital, fundos de base científica, aceleradoras e áreas de corporate venture de grandes empresas.",
+   "mecanismos": [
+    "venture",
+    "marco-startups",
+    "bndes",
+    "finep"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "estrategico": false
+  },
+  {
+   "id": "consultoria",
+   "nome": "Consultorias e integradores",
+   "curto": "Consultorias",
+   "ref": "consultorias e integradores",
+   "deck": false,
+   "deckId": "institucional",
+   "resumo": "Consultorias de gestão e de tecnologia e especialistas em incentivos à inovação. Funcionam como canais: levam o CIQUANTA a carteiras de clientes que já investem em P&D.",
+   "mecanismos": [
+    "lei-do-bem",
+    "embrapii",
+    "lei-de-tics"
+   ],
+   "linhas": [],
+   "desafios": [],
+   "contexto": [],
+   "estrategico": false
+  }
+ ]
+}
