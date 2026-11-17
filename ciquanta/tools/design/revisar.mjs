@@ -20,7 +20,7 @@ const TELAS = (arg('telas') || 'painel,interacoes,agenda,organizacoes,org/org-it
 const SO_VERIFICAR = !!arg('so-verificar'), ESCURO = !!arg('escuro');
 
 // Fontes permitidas e regras do sistema visual (ver .claude/skills/design-ciquanta/SKILL.md)
-const FONTES = ['Hanken Grotesk', 'Newsreader', 'ui-monospace', 'Arial'];
+const FONTES = ['Libre Franklin', 'ui-monospace', 'Arial'];
 
 const TIPOS = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json', '.pdf': 'application/pdf', '.gs': 'text/plain' };
 function servidor() {

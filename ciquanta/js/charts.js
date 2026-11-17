@@ -6,7 +6,7 @@ function css(v) { return getComputedStyle(document.documentElement).getPropertyV
 export function chart(canvas, config) {
   if (!window.Chart) { canvas.parentElement.innerHTML = '<div class="empty">Gráficos indisponíveis (sem conexão com a biblioteca).</div>'; return { destroy() {} }; }
   const text = css('--text-2'), grid = css('--line');
-  Chart.defaults.font.family = "'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif"; Chart.defaults.font.size = 12;
+  Chart.defaults.font.family = "'Libre Franklin', 'Helvetica Neue', Arial, sans-serif"; Chart.defaults.font.size = 12;
   Chart.defaults.color = text;
   const base = {
     responsive: true, maintainAspectRatio: false,

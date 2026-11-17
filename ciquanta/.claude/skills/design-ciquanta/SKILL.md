@@ -1,15 +1,15 @@
 ---
 name: design-ciquanta
-description: Sistema visual do CIQUANTA CRM (editorial e científico, sem caixas nem selos). Use antes de criar ou alterar qualquer tela, componente, estilo ou movimento do CRM, e rode a revisão de design ao terminar.
+description: Sistema visual do CIQUANTA CRM (tipografia do portal do CIQUANTA, papel e tinta, sem caixas nem selos). Use antes de criar ou alterar qualquer tela, componente, estilo ou movimento do CRM, e rode a revisão de design ao terminar.
 ---
 
 # Sistema visual do CIQUANTA CRM
 
-O CRM tem uma linguagem própria, editorial e científica: papel e tinta, filetes no lugar de caixas, texto no lugar de selos. A elegância vem da tipografia, do alinhamento e do espaço, não de enfeites. Toda tela nova segue estas regras. O código de referência é `css/app.css`.
+O CRM segue a tipografia do portal do CIQUANTA (ciquanta.secties.pb.gov.br) sobre uma base sóbria de papel e tinta: filetes no lugar de caixas, texto no lugar de selos. A elegância vem da tipografia, do alinhamento e do espaço, não de enfeites. Toda tela nova segue estas regras. O código de referência é `css/app.css`.
 
 ## Fundamentos
 
-- **Tipografia.** Hanken Grotesk na interface (13 a 14 px no corpo). Newsreader nos títulos de página (38 px, peso 400), nos números de indicadores (38 a 44 px), nas datas da agenda e nos nomes de pessoas. Itálico da Newsreader para rótulos de grupo do menu, datas por extenso e ênfases pontuais. Nada de outras fontes; as duas ficam em `assets/fonts/` (licença OFL).
+- **Tipografia.** Libre Franklin em tudo, a mesma do portal do CIQUANTA (em `assets/fonts/`, licença OFL). Títulos de página em 700, 34 px, espaçamento −0,02 em, precedidos pela barra vertical do logotipo. Títulos de bloco em 700, 14 px. Rótulos (grupos do menu, indicadores, datas por extenso) em caixa-alta de 11 px, peso 600, espaçamento 0,14 em, como os "eyebrows" do portal. Números de indicadores em 600, 32 a 38 px. Corpo em 400, 13,5 a 14 px. Sem itálico, sem serifadas e sem outras famílias.
 - **Cor.** Papel `--papel`, tinta `--tinta` (marinho quase preto), tinta secundária `--tinta-2` e `--tinta-3`, filetes `--filete` e `--filete-forte`. Azul CIQUANTA `--acento` só como acento: link, marcador ativo, um número ou uma palavra em destaque. Verde, ocre e vermelho (`--ok`, `--warn`, `--bad`) só para estado; vermelho apenas para erro ou perda.
 - **Estrutura.** Blocos são separados por um filete superior (`.card` desenha um filete de 1 px, sem fundo, borda ou sombra). Tabelas e listas usam linhas finas entre itens. Caixas com fundo e borda ficam para o que é de fato um objeto: campos de formulário, cartões arrastáveis do funil, janelas e a busca rápida.
 - **Raios.** 8 px em campos e botões, 12 px em janelas. Nunca cantos de pílula.
@@ -22,17 +22,18 @@ O CRM tem uma linguagem própria, editorial e científica: papel e tinta, filete
 | Estado, tipo, categoria | Texto (`.badge`), colorido só quando o estado importa; nunca com fundo |
 | Relacionamento e etapa do funil | Ponto de 6 px e texto (`relBadge`, `funilBadge`, classe `.marca`) |
 | Nível de evidência | Três traços como um sinal e texto curto (`evBadge`, classe `.nivel`) |
-| Prioridade A | Letra em itálico da Newsreader (`.prio`) |
+| Prioridade A | Letra em negrito no azul de acento (`.prio`) |
 | Filtros e alternâncias | Texto sublinhado quando ativo (`button.chip`, `.seg-mini`, `.tabs`) |
-| Indicadores | Rótulo pequeno, número grande em Newsreader e linha de contexto (`.kpi`; em Hoje, `.regua`) |
-| Pessoa | Nome em Newsreader, cargo ou temas abaixo, ações à direita (`.pessoa`) |
+| Indicadores | Rótulo em caixa-alta espaçada, número grande em 600 e linha de contexto (`.kpi`; em Hoje, `.regua`) |
+| Pessoa | Nome em 600, cargo ou temas abaixo, ações à direita (`.pessoa`) |
 
 ## Proibido
 
 - Pílulas: rótulos com fundo colorido ou contorno e cantos totalmente arredondados.
 - Cartões com fundo, borda e sombra para agrupar conteúdo comum.
 - Faixas de destaque em degradê, órbitas, brilhos, partículas e ícones decorativos em quadrados coloridos.
-- Rótulos pequenos em caixa-alta com espaçamento largo como padrão de título.
+- Fontes serifadas, itálicos decorativos e famílias que não sejam a do portal.
+- Caixa-alta espaçada em títulos: ela é só para rótulos curtos.
 - Ícones no menu lateral. O menu é tipográfico; o item ativo ganha peso e o marcador de 2 px desliza até ele.
 - Logotipos de terceiros na interface. O CRM mostra só a marca do CIQUANTA; documentos oficiais (propostas, cartas, apresentações) seguem o modelo institucional.
 - Textos explicativos dentro das telas. Instruções vão para o manual em PDF (`docs/manual/`).

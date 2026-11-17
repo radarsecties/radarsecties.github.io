@@ -62,9 +62,9 @@ Para rodar a coleta à mão: `cd tools/coleta && npm install && node coletar.mjs
 
 ## Identidade visual
 
-A interface tem linguagem própria, editorial e científica: papel e tinta, filetes no lugar de caixas, texto no lugar de selos. As regras completas, com o que é proibido, estão em `.claude/skills/design-ciquanta/SKILL.md`.
+A interface segue a tipografia do portal do CIQUANTA sobre uma base sóbria de papel e tinta: filetes no lugar de caixas, texto no lugar de selos. As regras completas, com o que é proibido, estão em `.claude/skills/design-ciquanta/SKILL.md`.
 
-- Tipografia: Hanken Grotesk na interface e Newsreader nos títulos, números e nomes, incluídas em `assets/fonts/` (licença OFL)
+- Tipografia: Libre Franklin, a mesma do portal do CIQUANTA, incluída em `assets/fonts/` (licença OFL); títulos em negrito com a barra do logotipo e rótulos em caixa-alta espaçada, como no portal
 - Cores: papel `#F7F7F4`, tinta `#101934`, azul CIQUANTA `#2F55D4` só como acento; vermelho apenas para erro. Tema escuro automático
 - Movimento: filetes que se desenham na entrada das telas, números que contam, frase de abertura palavra por palavra e marcador do menu que desliza; respeita a preferência do sistema por menos movimento
 - Marca: a interface mostra só o logotipo do CIQUANTA (`assets/logo-marinho.png` e `assets/logo-branco.png`). Propostas, cartas, e-mails e apresentações seguem o modelo institucional oficial, com os parceiros (`assets/parceiros-*.png`, `assets/secties-govpb*.png`)
