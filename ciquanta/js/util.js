@@ -23,8 +23,9 @@ export function dayChip(d) { const x = parseDate(d); return x ? `<div class="dat
 export const isoDay = (d = new Date()) => { const x = parseDate(d); return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}-${String(x.getDate()).padStart(2, '0')}`; };
 export function relTime(d) {
   const x = parseDate(d); if (!x) return '';
-  const diff = (x - new Date()) / 86400000; const r = Math.round(diff);
-  if (Math.abs(diff) < 1 && x.toDateString() === new Date().toDateString()) return 'hoje';
+  const dia = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());
+  const r = Math.round((dia(x) - dia(new Date())) / 86400000);
+  if (r === 0) return 'hoje';
   if (r === 1) return 'amanhã'; if (r === -1) return 'ontem';
   return r > 0 ? `em ${r} dias` : `há ${-r} dias`;
 }

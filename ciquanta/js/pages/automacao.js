@@ -48,7 +48,7 @@ export async function render(view) {
     const canaisN = canais?.porOrg ? Object.values(canais.porOrg).filter(x => x.emails?.length).length : 0;
     const cand = auto.candidatosPiloto(8);
     const log = auto.registro().slice(0, 40);
-    view.innerHTML = `<div class="section-head"><div><h2>Central de automação</h2><p>A coleta diária roda sozinha no servidor do GitHub e publica as bases em <code>data/</code>. Ao abrir, o CRM aplica as novidades: organizações, contatos institucionais, dados da Receita, notícias, editais e os totais do Painel CIQUANTA. Com o piloto automático ligado, a abordagem também começa sozinha.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Central de automação</h2></div>
       <div class="toolbar" style="margin:0"><button class="btn primary" id="agora" ${est.rodando ? 'disabled' : ''}>${icon('sync', 15)} ${est.rodando ? 'Executando…' : 'Executar agora'}</button></div></div>
 
       <div class="card fluxo-card">${fluxo(n)}</div>
@@ -63,14 +63,14 @@ export async function render(view) {
       <div class="grid g2" style="margin-bottom:18px">
         <div class="card"><h3>Coleta diária no servidor <span class="muted">${ult ? 'última execução' : ''}</span></h3>
           ${ult ? `<div class="list">${ult.etapas.map(e => `<div class="list-item"><span class="estado ${e.ok ? (e.ignorada ? 'neutro' : 'ok') : 'bad'}"></span><div style="flex:1;min-width:0"><div class="title">${esc(e.nome)}</div><div class="meta">${esc(e.msg || '')}</div></div><span class="muted small nowrap">${e.segundos}s</span></div>`).join('')}</div>
-            <p class="muted small" style="margin-bottom:0">Roda às 6h17 todos os dias e às 15h47 nos dias úteis. ${coleta.execucoes?.length > 1 ? `${coleta.execucoes.filter(x => x.etapas.every(e => e.ok)).length} de ${coleta.execucoes.length} execuções recentes sem falha.` : ''}</p>`
+            `
             : '<div class="empty">Quando o sistema estiver publicado com o GitHub Actions ativo, o resultado de cada coleta aparece aqui. Veja PUBLICACAO.md.</div>'}</div>
         <div class="card"><h3>Rotinas do aplicativo <span class="muted">${est.ultima ? 'última: ' + relTime(est.ultima) : ''}</span></h3>
           <div class="rotinas">${auto.ROTINAS.map(r => `<label class="rotina"><span class="chave"><input type="checkbox" data-chave="${r.chave}" ${c[r.chave] ? 'checked' : ''}><i></i></span><span><b>${esc(r.nome)}</b><small>${esc(r.desc)}</small></span></label>`).join('')}</div></div>
       </div>
 
       <div class="card piloto ${c.pilotoAutomatico ? 'on' : ''}" style="margin-bottom:18px"><h3>${icon('robo', 17)} Piloto automático de abordagem <span class="badge ${c.pilotoAutomatico ? 'ok' : 'gray'}">${c.pilotoAutomatico ? 'ligado' : 'desligado'}</span></h3>
-        <p class="muted" style="margin-top:0">Todo dia, escolhe as organizações de maior potencial com contato de e-mail que ainda não receberam nenhuma mensagem e as inscreve na cadência do seu segmento. Os envios respeitam o horário comercial, o limite diário do Gmail e a lista de descadastro, e param na primeira resposta. Com a base compartilhada ativa, só um computador conduz os envios.</p>
+        
         <div class="toolbar"><label class="field" style="width:200px">Organizações por dia<input type="number" id="pl-lim" min="1" max="60" value="${esc(c.pilotoLimite)}"></label>
           <label class="field" style="width:200px">Potencial mínimo<input type="number" id="pl-min" min="0" max="100" value="${esc(c.pilotoMinimo)}"></label>
           <span class="muted small" style="align-self:end">${c.remetenteNome ? '' : 'Preencha o remetente em Configurações antes de ligar. '}${s.config.cadenciasAtivas ? '' : 'O envio automático das cadências está desligado. '}</span></div>

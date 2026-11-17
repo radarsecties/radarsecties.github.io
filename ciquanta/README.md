@@ -1,22 +1,23 @@
-# CIQUANTA · Relações Institucionais
+# CIQUANTA CRM
 
 CRM e central de operações institucionais do CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.
 
-Aplicação web autônoma, sem servidor próprio e sem dependência de outros sistemas ou de bibliotecas de terceiros carregadas da internet: todo o conteúdo desta pasta pode ser copiado para um repositório próprio e publicado como site estático. O passo a passo está em [PUBLICACAO.md](PUBLICACAO.md).
+Aplicação web autônoma, sem servidor próprio e sem dependência de outros sistemas ou de bibliotecas de terceiros carregadas da internet: todo o conteúdo desta pasta pode ser copiado para um repositório próprio e publicado como site estático. O passo a passo de publicação está em [PUBLICACAO.md](PUBLICACAO.md) e o manual de operação, em [docs/manual-ciquanta-crm.pdf](docs/manual-ciquanta-crm.pdf).
 
 ## Módulos
 
 | Módulo | Função |
 |---|---|
-| Painel | Painel de comando: situação da conta Google, pipeline ponderado, contratado contra a meta anual, taxa de resposta, visitas à réplica, próximas ações ordenadas por impacto, agenda unificada, funil, receita por fonte, mapa por estado e potencial por setor. |
+| Hoje | Tela de abertura: situação da conta Google, pipeline ponderado, contratado contra a meta anual, taxa de resposta, visitas à réplica, próximas ações ordenadas por impacto, agenda unificada, funil, receita por fonte, mapa por estado e potencial por setor. |
 | Sinais do mercado | Notícias do dia ligadas às organizações do CRM, por tema, e oportunidades identificadas com IA. Organizações citadas nos últimos 30 dias ganham pontos de potencial. |
 | Central de automação | Fluxo animado da coleta ao CRM, resultado de cada etapa da coleta diária, rotinas do aplicativo, piloto automático de abordagem e registro. |
 | Captação | Plano de captação: meta anual e metas por frente de financiamento, contratado e pipeline ponderado, previsão por trimestre, cobertura por mecanismo de fomento (organizações elegíveis ainda sem abordagem) e relatório executivo em PDF. |
-| Interações em tempo real | Acompanha a caixa da conta Google do CIQUANTA pelo histórico do Gmail; vincula cada resposta à organização, registra no histórico, encerra a cadência do contato e avisa a equipe. |
-| Agenda | Marcos institucionais, eventos potenciais para participação (marcados "a confirmar"), prazos de editais, visitas à réplica e compromissos do Google Agenda; reuniões com convite e link do Meet; exportação `.ics`. |
+| Caixa de entrada | Acompanha a caixa da conta Google do CIQUANTA pelo histórico do Gmail; vincula cada resposta à organização, registra no histórico, encerra a cadência do contato e avisa a equipe. |
+| Agenda | Marcos institucionais, eventos potenciais para participação (marcados "a confirmar"), prazos de editais, visitas à réplica e compromissos do Google Agenda; reuniões com convite e link do Meet; exportação `.ics`. Cada evento gera uma campanha com o público sugerido (setores do evento ou parceiros estratégicos). |
 | Visitas e cadastros | Integração com o Painel CIQUANTA (`painelciquanta.secties.pb.gov.br`): lê as planilhas de agendamentos de visita e de cadastros de perfis, mostra visitantes por dia, categorias e temas de interesse e leva pesquisadores, empreendedores e parceiros ao CRM. |
 | Organizações e contatos | CRM com setor, segmento, nível de evidência de atuação quântica, relacionamento, prioridade, bloco de parceria, mecanismos, dados da Receita Federal e pontuação de potencial (0 a 100, com os motivos). A ficha reúne e-mails, arquivos do Drive e compromissos ligados à organização. |
 | Oportunidades | Funil com valor, probabilidade por etapa, valor ponderado, modalidade, linha de pesquisa, mecanismo de financiamento, previsão por trimestre e proposta técnica e comercial em PDF, com cenários de custo líquido pela Lei do Bem. |
+| Programa de parceiros | Cotas anuais de parceria (valores e benefícios editáveis), adesões com carta em PDF, receita recorrente, renovações e candidatas por potencial. Cada adesão vira oportunidade no funil. |
 | Rede | Mapa interativo das organizações em torno dos setores ou dos mecanismos de fomento. |
 | Setores e aplicações | 22 setores; dez com agenda de pesquisa aplicada e apresentação própria no formato da agenda oficial do sistema financeiro. |
 | Busca ativa | Mapeamento com 471 organizações (empresas, deep techs, fornecedores quânticos, investidores, fomentadores, ICTs, autoridades), consulta e lote de CNPJ, buscas prontas para encontrar contatos e descoberta de contatos nas conversas do Gmail. |
@@ -38,8 +39,9 @@ O CRM se atualiza sozinho em duas camadas.
 |---|---|---|
 | Painel CIQUANTA | Totais públicos de cadastros e visitas à réplica, com histórico diário | `data/painel.json` |
 | Notícias e editais | Notícias sobre computação quântica, P&D, deep tech e fomento (Google Notícias, EMBRAPII, Agência FAPESP), ligadas às organizações citadas; chamadas abertas com prazo quando o texto informa | `data/sinais.json`, `data/editais-auto.json` |
-| Canais institucionais | Visita o site oficial de até 70 organizações por execução e guarda e-mails de setores (inovação, relações institucionais, contato), CNPJ do rodapé e LinkedIn. E-mails pessoais são descartados | `data/canais.json` |
-| Receita Federal | Situação cadastral, CNAE, porte e capital para os CNPJ conhecidos | `data/receita.json` |
+| Canais institucionais | Visita o site oficial de até 70 organizações por execução, descobre as páginas internas (links e sitemap) e guarda os e-mails de diretorias e setores (presidência, gabinete, reitoria, diretorias, relações institucionais, inovação, RI, imprensa), classificados pelo endereço e pelo texto em volta; também CNPJ do rodapé e LinkedIn. E-mails pessoais são descartados | `data/canais.json` |
+| Diretorias na web com IA | Com a chave da Anthropic, o Claude procura na web (portais de transparência, governança, relatórios) os e-mails de diretorias das organizações que ainda não têm um. Só entra o que é conferido na própria página citada, no domínio da organização | `data/canais.json` |
+| Receita Federal | Situação cadastral, CNAE, porte, capital e e-mail cadastrado para os CNPJ conhecidos | `data/receita.json` |
 | Descoberta com IA | Com a chave da Anthropic configurada, o Claude lê as notícias novas e sugere organizações e oportunidades; só entra o que está escrito no texto da notícia | `data/descobertas.json` |
 
 Ao final, o validador confere a integridade das bases e o resultado vai para `data/coleta.json`. Uma etapa que falha não impede as outras.
@@ -63,25 +65,25 @@ Segue a apresentação institucional oficial do CIQUANTA (`assets/docs/ciquanta-
 
 - Logotipo: `assets/logo-azul.png`, `assets/logo-branco.png`, `assets/logo-marinho.png`
 - Parceiros: `assets/parceiros-marinho.png`, `assets/parceiros-branco.png`, `assets/secties-govpb*.png`
-- Cores: azul-marinho `#14224A`, azul `#3056D5`, vermelho de destaque `#C8232C`, lavanda `#EEF2FB`, linhas `#D5DCEA`, texto secundário `#5B6680`
-- Tipografia: Arial
+- Cores: marinho `#0F1A36` (menu), azul `#3056D5`, azul luminoso `#5B7CFA`, ciano `#2BB6D9`; vermelho só para erros
+- Tipografia: Archivo (fonte variável, mesma do Painel CIQUANTA), incluída em `assets/fonts/` com a licença OFL
+- Movimento: campo quântico animado no menu, órbitas no cabeçalho de Hoje, indicador deslizante no menu e entrada escalonada dos cartões; respeita a preferência do sistema por menos movimento. Modo escuro automático.
 
-## Conta Google (uma vez)
+## E-mail do CIQUANTA (uma vez, sem Google Cloud)
 
-1. No [Google Cloud Console](https://console.cloud.google.com/), crie um projeto e ative Gmail API, Google Calendar API, Google Drive API e Google Sheets API.
-2. Configure a tela de consentimento OAuth (Interno, se a conta for Google Workspace).
-3. Crie um ID do cliente OAuth do tipo Aplicativo da Web, com o endereço do sistema como origem JavaScript autorizada.
-4. Em Configurações, cole o Client ID, escolha as permissões e conecte com a conta do CIQUANTA.
+A conexão com ciquanta@secties.pb.gov.br é feita por uma **ponte** no Google Apps Script (`ponte/ponte.gs`), publicada pela própria conta como app da Web. Não há projeto no Google Cloud, tela de consentimento nem ID de cliente.
 
-A base compartilhada usa a permissão de guardar no Drive (`drive.file`), que só alcança os arquivos criados pelo próprio sistema.
+1. Em Configurações, **Copiar código da ponte**: o código já vem com uma chave de acesso gerada no computador.
+2. Em [script.google.com](https://script.google.com/home/projects/create), com a conta do CIQUANTA: cole o código, adicione os serviços **Gmail API** e **Google Calendar API**, e implante como **App da Web** (Executar como: Eu; Quem pode acessar: Qualquer pessoa).
+3. Cole o endereço `/exec` em Configurações e conecte. **Link para a equipe** conecta os outros computadores.
 
-Permissões: envio (`gmail.send`, obrigatória); leitura para acompanhar respostas (`gmail.readonly`); rascunhos (`gmail.compose`); agenda e reuniões (`calendar.events`); busca de arquivos e apresentações no Drive (`drive.metadata.readonly`); planilhas do Painel CIQUANTA (`spreadsheets.readonly`); cópia de segurança (`drive.file`). Não há chave secreta: o token fica só na memória da aba aberta.
+A ponte só atende pedidos com a chave (comparação em tempo constante) e faz apenas o que o CRM precisa: enviar e criar rascunhos, ler as conversas para acompanhar respostas, ler e criar compromissos (com Meet), buscar arquivos e apresentações no Drive, ler as planilhas do Painel CIQUANTA sem colunas de documentos, telefone ou endereço, e guardar a base compartilhada em arquivos da pasta "CIQUANTA CRM". A chave não sai nas cópias de segurança. Detalhes e problemas comuns estão no manual.
 
-O acompanhamento em tempo real e as cadências funcionam enquanto o sistema estiver aberto em alguma aba com a conta conectada.
+O acompanhamento em tempo real e as cadências funcionam enquanto o sistema estiver aberto em alguma aba com a ponte conectada.
 
 ### Painel CIQUANTA
 
-A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agendamentos de visita" e "CIQUANTA | Cadastros de perfis". Com a busca no Drive ativada elas são localizadas pelo nome; sem ela, informe os links em Configurações.
+A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agendamentos de visita" e "CIQUANTA | Cadastros de perfis". A ponte as localiza pelo nome; se preferir, informe os links em Configurações.
 
 ## Dados e privacidade
 
@@ -89,6 +91,7 @@ A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agenda
 - O mapeamento (`data/empresas.json`) contém apenas dados públicos de organizações e não inclui pessoas nem e-mails.
 - Das planilhas do Painel CIQUANTA, o sistema guarda somente totais (visitas por dia, categorias, temas). As linhas completas ficam na memória da aba; telefone e documentos não são copiados, e quem não aceitou receber notícias entra no CRM marcado para não receber e-mails.
 - Campanhas e cadências respeitam a lista de descadastro, e o rodapé dos e-mails informa como deixar de receber mensagens (LGPD).
+- A coleta guarda apenas caixas institucionais publicadas pelas próprias organizações (diretoria@, gabinete@, inovacao@...). Endereços com cara de pessoa (nome.sobrenome@, iniciais) são descartados.
 
 ## Manutenção
 
@@ -98,10 +101,12 @@ A conta conectada precisa ter acesso de leitura às planilhas "CIQUANTA | Agenda
 - `data/mecanismos.json`: mecanismos de fomento (revisar percentuais e prazos quando a legislação mudar).
 - `data/modelos.json` e `data/agenda.json`: modelos de e-mail e agenda iniciais. As datas dos eventos potenciais são referências e devem ser conferidas na página oficial de cada evento.
 
-- `tools/coleta/`: coletores da atualização diária (Node 20 ou superior; só a descoberta com IA usa dependências).
+- `tools/coleta/`: coletores da atualização diária (Node 20 ou superior; só as etapas com IA usam dependências).
+- `ponte/ponte.gs`: código da ponte do e-mail. Ao mudar, aumente `VERSAO` e publique uma nova versão no Apps Script.
+- `docs/manual/`: fonte do manual em PDF (HTML e capturas de tela).
 - `tools/validar-dados.mjs`: verifica a integridade das bases (`node tools/validar-dados.mjs`). Rode antes de publicar alterações em `data/`.
 - `js/vendor/chart.umd.js`: Chart.js 4.4.1 (licença MIT), incluída no próprio sistema.
 
-Segurança: a página define uma política de conteúdo (CSP) que só permite programas do próprio endereço e do login do Google, e conexões com as APIs do Google e as bases públicas de CNPJ.
+Segurança: a página define uma política de conteúdo (CSP) que só permite programas do próprio endereço e conexões com a ponte do Apps Script e as bases públicas de CNPJ.
 
 Para testar localmente: `python3 -m http.server` nesta pasta e abrir `http://localhost:8000/`.

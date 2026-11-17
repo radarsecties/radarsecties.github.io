@@ -17,7 +17,7 @@ function lista(view) {
   const draw = () => {
     const camps = [...store.list('campanhas')].sort((a, b) => (b.criadoEm || '').localeCompare(a.criadoEm || ''));
     const env = store.list('envios');
-    view.innerHTML = `<div class="section-head"><div><h2>Campanhas de e-mail</h2><p>Envios personalizados a empresas, fomentadores e autoridades a partir da conta Google do CIQUANTA, com ritmo controlado, limite diário, lista de descadastro e acompanhamento das respostas em tempo real.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Campanhas de e-mail</h2></div>
       <button class="btn primary" id="nova">+ Nova campanha</button></div>
       ${gmailCard()}
       <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Campanha</th><th>Status</th><th>Destinatários</th><th>Enviados</th><th>Respostas</th><th>Criada</th><th></th></tr></thead><tbody>
@@ -41,9 +41,9 @@ function lista(view) {
 function gmailCard() {
   const s = G.status(); const c = store.cfg();
   return `<div class="card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-    <div><div class="title">${s.conectado ? `Conectado como <strong>${esc(s.email)}</strong>` : 'Conta Google não conectada'}</div>
-    <div class="muted small">${c.clientId ? `Ritmo: 1 e-mail a cada ${c.intervaloSeg}s · limite diário ${c.limiteDiario} · enviados hoje: ${runner.enviadosHoje()}` : 'Configure o Client ID do Google em Configurações para habilitar o envio.'}</div></div>
-    <div class="toolbar" style="margin:0">${s.conectado ? '<button class="btn" id="g-off">Desconectar</button>' : c.clientId ? '<button class="btn primary" id="g-on">Conectar conta Google</button>' : '<a class="btn primary" href="#/config">Configurar integração</a>'}</div></div>`;
+    <div><div class="title">${s.conectado ? `Conectado como <strong>${esc(s.email)}</strong>` : 'E-mail desconectado'}</div>
+    <div class="muted small">${s.conectado ? `Ritmo: 1 e-mail a cada ${c.intervaloSeg}s · limite diário ${c.limiteDiario} · enviados hoje: ${runner.enviadosHoje()}` : 'Configure o Client ID do Google em Configurações para habilitar o envio.'}</div></div>
+    <div class="toolbar" style="margin:0">${s.conectado ? '' : c.ponteUrl ? '<button class="btn primary" id="g-on">Conectar conta Google</button>' : '<a class="btn primary" href="#/config">Configurar integração</a>'}</div></div>`;
 }
 function bindGmailCard(view, redraw) {
   view.querySelector('#g-on')?.addEventListener('click', async () => { try { await G.connect(); toast('Gmail conectado.', 'ok'); redraw(); } catch (e) { toast(e.message, 'bad'); } });
@@ -179,7 +179,7 @@ function editor(view, id) {
     const total = c.destinatarios.length;
     const run = runner.isRunning(id);
     $('#send-box').innerHTML = `
-      ${!conf.clientId ? '<div class="callout warn">Configure o Client ID do Google em <a href="#/config">Configurações</a>.</div>' : !s.conectado ? '<button class="btn primary" id="g-on" style="width:100%;justify-content:center">Conectar conta Google</button>' : `<div class="muted small">Remetente: <strong>${esc(s.email)}</strong></div>`}
+      ${!conf.ponteUrl ? '<div class="callout warn"><a href="#/config">Conectar o e-mail do CIQUANTA</a></div>' : !s.conectado ? '<button class="btn primary" id="g-on" style="width:100%;justify-content:center">Conectar conta Google</button>' : `<div class="muted small">Remetente: <strong>${esc(s.email)}</strong></div>`}
       <div class="progress" style="margin:10px 0 6px"><span style="width:${pct(done, total)}%"></span></div>
       <div class="small muted">${done} de ${total} processados · enviados hoje: ${runner.enviadosHoje()}/${conf.limiteDiario}</div>
       <div class="toolbar" style="margin:10px 0 0">
@@ -188,7 +188,7 @@ function editor(view, id) {
            <button class="btn primary" id="start" ${!s.conectado || !total ? 'disabled' : ''}>${c.modo === 'rascunho' ? 'Criar rascunhos' : done && done < total ? 'Continuar envio' : 'Iniciar envio'}</button>`}
       </div>
       ${!run ? `<details style="margin-top:10px"><summary class="small">Agendar envio</summary><div class="toolbar" style="margin-top:8px"><input type="datetime-local" id="ag" value="${esc(c.agendadaPara ? c.agendadaPara.slice(0, 16) : '')}" style="width:auto"><button class="btn sm" id="ag-ok">Agendar</button>${c.status === 'agendada' ? '<button class="btn sm ghost" id="ag-x">Cancelar agendamento</button>' : ''}</div>
-        <p class="muted small">O envio agendado começa no horário se o CIQUANTA estiver aberto em alguma aba com o Gmail conectado.</p></details>` : ''}
+        </details>` : ''}
       <div class="log" id="log" style="margin-top:10px">${esc(logText.join('\n')) || 'Registro do envio aparecerá aqui.'}</div>`;
     $('#g-on')?.addEventListener('click', async () => { try { await G.connect(); drawSend(); } catch (e) { toast(e.message, 'bad'); } });
     $('#test')?.addEventListener('click', sendTest);

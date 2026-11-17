@@ -10,6 +10,10 @@ import * as auto from '../automacao.js';
 import { loadMecanismos } from '../email.js';
 import { proximasAcoes, receitaPorFonte, pontuar, contexto } from '../score.js';
 import { icon } from '../icons.js';
+import { orbitaSVG } from '../motion.js';
+
+const DIAS = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
+const saudacao = () => { const h = new Date().getHours(); return h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite'; };
 
 const compacto = v => v >= 1e9 ? `R$ ${(v / 1e9).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} bi` : v >= 1e6 ? `R$ ${(v / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi` : v >= 1e3 ? `R$ ${Math.round(v / 1e3)} mil` : money(v);
 const MES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
@@ -61,13 +65,14 @@ export async function render(view) {
 
     view.innerHTML = `
     <section class="cmd">
-      <div><div class="kicker">${d.getDate()} de ${MESES_LONGOS[d.getMonth()]} de ${d.getFullYear()}</div><h2>Relações institucionais do CIQUANTA</h2>
-        <div class="chips"><span class="chip ${g.conectado ? 'on' : ''}">${icon('mail', 13)} ${g.conectado ? esc(g.email) : 'Conta Google desconectada'}</span><span class="chip ${live.ativo ? 'on' : ''}">${icon('sino', 13)} Respostas em tempo real ${live.ativo ? 'ativas' : 'paradas'}</span><span class="chip ${g.conectado && conf.cadenciasAtivas ? 'on' : ''}">${icon('campanhas', 13)} ${insAtivas} contato(s) em cadência</span></div></div>
-      <div class="toolbar" style="margin:0">${s.orgs.length ? '' : '<a class="btn primary" href="#/busca?aba=referencia">Importar mapeamento setorial</a>'}${g.conectado ? '' : '<a class="btn primary" href="#/config">Conectar conta Google</a>'}
-        <a class="btn" href="#/oportunidades">${icon('mais', 15)} Oportunidade</a><a class="btn" href="#/cadencias">${icon('campanhas', 15)} Cadências</a><a class="btn" href="#/apresentacoes">${icon('apresentacoes', 15)} Apresentações</a><button class="btn" id="kbtn">${icon('busca', 15)} Buscar <kbd>Ctrl K</kbd></button></div>
+      ${orbitaSVG()}
+      <div><div class="kicker">${DIAS[d.getDay()]}, ${d.getDate()} de ${MESES_LONGOS[d.getMonth()]}</div><h2>${saudacao()}. ${acoes.length ? `${acoes.length === 1 ? 'Uma ação pede' : `${acoes.length} ações pedem`} atenção hoje.` : 'Tudo em dia por aqui.'}</h2>
+        <div class="chips"><span class="chip ${g.conectado ? 'on' : ''}">${icon('mail', 13)} ${g.conectado ? esc(g.email || 'E-mail conectado') : 'E-mail desconectado'}</span><span class="chip ${live.ativo ? 'on' : ''}">${icon('sino', 13)} ${live.ativo ? 'Respostas ao vivo' : 'Respostas em pausa'}</span><span class="chip ${g.conectado && conf.cadenciasAtivas && insAtivas ? 'on' : ''}">${icon('play', 13)} ${insAtivas} em cadência</span></div></div>
+      <div class="toolbar">${g.conectado ? '' : '<a class="btn primary" href="#/config">Conectar e-mail</a>'}
+        <a class="btn" href="#/oportunidades">${icon('mais', 15)} Oportunidade</a><a class="btn" href="#/campanhas">${icon('campanhas', 15)} Campanha</a><button class="btn" id="kbtn">${icon('busca', 15)} <kbd>Ctrl K</kbd></button></div>
     </section>
 
-    ${guia(s, g)}
+
     <div class="grid g5" style="margin-bottom:18px">
       <a class="card kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value" data-contar="${Math.round(ponderado)}" data-formato="moeda">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
       <a class="card kpi" href="#/captacao"><span class="label">Contratado</span><span class="value" data-contar="${Math.round(contratado)}" data-formato="moeda">${compacto(contratado)}</span><span class="sub">${meta ? `${pct(contratado, meta)}% da meta de ${compacto(meta)}` : 'defina a meta no plano de captação'}</span>${meta ? `<span class="meta-bar"><i style="width:${Math.min(100, pct(contratado, meta))}%"></i><b style="width:${Math.min(100 - Math.min(100, pct(contratado, meta)), pct(ponderado, meta))}%"></b></span>` : ''}</a>

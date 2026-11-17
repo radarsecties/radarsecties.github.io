@@ -25,7 +25,7 @@ export async function render(view) {
     const hoje = isoDay();
     const l = [...store.list('editais')].sort((a, b) => (a.prazo || '9999').localeCompare(b.prazo || '9999'));
     const ativos = l.filter(e => ['aberto', 'preparacao', 'submetido'].includes(e.status));
-    view.innerHTML = `<div class="section-head"><div><h2>Editais e chamadas</h2><p>Acompanhamento das chamadas de fomento em que o CIQUANTA concorre como executor ou coexecutor: prazo, valor pleiteado, parceiros e situação. Prazos próximos aparecem nas próximas ações do painel.</p></div><button class="btn primary" id="novo">${icon('mais', 15)} Novo edital</button></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Editais e chamadas</h2></div><button class="btn primary" id="novo">${icon('mais', 15)} Novo edital</button></div>
       <div class="grid g4" style="margin-bottom:16px">
         <div class="card kpi"><span class="label">Em acompanhamento</span><span class="value">${ativos.length}</span><span class="sub">abertos, em preparação ou submetidos</span></div>
         <div class="card kpi"><span class="label">Valor pleiteado</span><span class="value">${money(ativos.reduce((a, e) => a + (Number(e.valor) || 0), 0))}</span><span class="sub">em chamadas ativas</span></div>

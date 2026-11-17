@@ -7,7 +7,7 @@ import { loadMecanismos, mecCurto } from '../email.js';
 export async function render(view) {
   await loadMecanismos();
   const f = { modo: 'setor', filtro: 'relevantes', setor: '' };
-  view.innerHTML = `<div class="section-head"><div><h2>Rede de relacionamento</h2><p>Mapa interativo das organizações em torno dos setores ou dos mecanismos de fomento. O tamanho do ponto indica o potencial e a cor, o estágio do relacionamento. Arraste para mover, use a roda do mouse para aproximar e clique para abrir a organização.</p></div></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Rede de relacionamento</h2></div></div>
     <div class="toolbar"><select id="modo"><option value="setor">Agrupar por setor</option><option value="mecanismo">Agrupar por mecanismo de fomento</option></select>
       <select id="filtro"><option value="relevantes">Potencial alto ou já em contato</option><option value="contato">Com contato cadastrado</option><option value="ativas">Em contato, engajadas e parceiras</option><option value="todas">Todas</option></select>
       <select id="setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), '', { empty: 'Todos os setores' })}</select>

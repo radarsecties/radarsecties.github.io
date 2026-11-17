@@ -1,4 +1,5 @@
 import * as store from '../store.js';
+import { publicoDoEvento } from '../publico.js';
 import * as G from '../google.js';
 import { openReuniaoForm } from '../components.js';
 import { esc, modal, formData, options, toast, isoDay, fmtDate, MESES_LONGOS, download, safeUrl, dayChip, relTime } from '../util.js';
@@ -9,7 +10,7 @@ export async function render(view) {
   const now = new Date(); let ym = [now.getFullYear(), now.getMonth()]; let filtro = '';
   let gevs = [], gmsg = '';
   const carregarGoogle = async () => {
-    if (!G.status().conectado || !G.hasScope('calendar')) { gmsg = G.status().conectado ? 'Ative a Agenda em Configurações e reconecte para ver os eventos do Google Agenda.' : ''; return; }
+    if (!G.status().conectado) { gmsg = ''; return; }
     try {
       const r = await G.calendarEvents({ dias: 120, passado: 30 });
       gevs = (r.items || []).filter(e => e.status !== 'cancelled').map(e => ({ id: 'g-' + e.id, google: true, titulo: e.summary || '(sem título)', data: (e.start.dateTime || e.start.date).slice(0, 10),
@@ -25,7 +26,7 @@ export async function render(view) {
     const days = Array.from({ length: 42 }, (_, i) => new Date(start.getFullYear(), start.getMonth(), start.getDate() + i));
     const hoje = isoDay();
     const prox = evs.filter(e => e.data >= hoje).sort((a, b) => a.data.localeCompare(b.data)).slice(0, 12);
-    view.innerHTML = `<div class="section-head"><div><h2>Agenda</h2><p>Agenda institucional do CIQUANTA, eventos potenciais para participação, prazos de editais e de mecanismos, visitas à réplica e as reuniões do Google Agenda da conta conectada. Itens marcados como "a confirmar" precisam de checagem na fonte oficial.</p>${gmsg ? `<p class="small" style="color:var(--warn)">${esc(gmsg)}</p>` : ''}</div>
+    view.innerHTML = `<div class="section-head"><div><h2>Agenda</h2>${gmsg ? `<p class="small" style="color:var(--warn)">${esc(gmsg)}</p>` : ''}</div>
       <div class="toolbar" style="margin:0"><button class="btn" id="ics">Exportar .ics</button><button class="btn" id="reun">Agendar reunião</button><button class="btn primary" id="novo">Novo evento</button></div></div>
       <div class="grid split-21">
         <div class="card"><div class="toolbar" style="justify-content:space-between"><div class="toolbar" style="margin:0"><button class="btn sm" id="prev" aria-label="Mês anterior">‹</button><strong style="min-width:150px;text-align:center;text-transform:capitalize">${MESES_LONGOS[m]} ${y}</strong><button class="btn sm" id="next" aria-label="Próximo mês">›</button><button class="btn sm ghost" id="today">Hoje</button></div>
@@ -82,12 +83,15 @@ function detalhe(e, done) {
   const { el, close } = modal({ title: e.titulo, body: `<div class="tags" style="margin-bottom:10px"><span class="ev t-${esc(e.tipo)}" style="display:inline-block">${esc(TIPOS[e.tipo] || e.tipo)}</span>${e.aConfirmar ? '<span class="badge warn">data a confirmar</span>' : ''}</div>
     <p><strong>${fmtDate(e.data, { long: true })}${e.hora ? ' · ' + esc(e.hora) : ''}</strong>${e.local ? `<br>${esc(e.local)}` : ''}</p>
     ${e.descricao ? `<p style="white-space:pre-wrap">${esc(e.descricao)}</p>` : ''}${link ? `<p><a href="${esc(link)}" target="_blank" rel="noopener">Site oficial ↗</a></p>` : ''}`,
-    footer: `<button class="btn" id="edit">Editar</button><button class="btn" id="ics1">Baixar .ics</button><a class="btn" target="_blank" rel="noopener" href="${esc(gcalLink(e))}">Google Agenda ↗</a><button class="btn primary" id="conv">Convidar contatos</button>` });
+    footer: `<button class="btn" id="edit">Editar</button><button class="btn" id="ics1">Baixar .ics</button><a class="btn" target="_blank" rel="noopener" href="${esc(gcalLink(e))}">Google Agenda ↗</a><button class="btn primary" id="conv">${['potencial', 'prazo'].includes(e.tipo) ? 'Marcar encontros' : 'Convidar público'}</button>` });
   el.querySelector('#edit').onclick = () => { close(); form(e, done); };
   el.querySelector('#ics1').onclick = () => download(`evento-${e.id}.ics`, ics([e]), 'text/calendar;charset=utf-8');
   el.querySelector('#conv').onclick = () => {
-    const mod = store.get('modelos', 'mod-evento');
-    const c = store.upsert('campanhas', { nome: `Convite: ${e.titulo}`, modeloId: mod?.id, assunto: mod?.assunto || `Convite: {{evento}}`, corpo: mod?.corpo || '', vars: { evento: e.titulo, data_evento: fmtDate(e.data, { long: true }) + (e.local ? `, ${e.local}` : '') }, status: 'rascunho', modo: 'enviar', destinatarios: [], materiais: [] }, 'cmp');
+    const externo = ['potencial', 'prazo'].includes(e.tipo);
+    const mod = store.get('modelos', externo ? 'mod-encontro' : 'mod-evento');
+    const dest = publicoDoEvento(e);
+    const c = store.upsert('campanhas', { nome: `${externo ? 'Encontro' : 'Convite'}: ${e.titulo}`, modeloId: mod?.id, eventoId: e.id, assunto: mod?.assunto || `Convite: {{evento}}`, corpo: mod?.corpo || '', vars: { evento: e.titulo, data_evento: fmtDate(e.data, { long: true }) + (e.local ? `, ${e.local}` : '') }, status: 'rascunho', modo: 'enviar', destinatarios: dest, materiais: [] }, 'cmp');
+    toast(dest.length ? `${dest.length} contato(s) sugerido(s) para o público.` : 'Campanha criada; escolha o público.', 'ok');
     close(); location.hash = `#/campanhas/${c.id}`;
   };
 }

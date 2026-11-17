@@ -49,7 +49,6 @@ export async function run(campId) {
   const camp = store.get('campanhas', campId); if (!camp) return;
   const conf = store.cfg();
   const modo = camp.modo === 'rascunho' ? 'rascunho' : 'enviar';
-  if (modo === 'rascunho' && !G.hasScope('compose')) { toast('Para criar rascunhos, ative essa permissão em Configurações e reconecte a conta Google.', 'bad'); return; }
   if (!G.status().conectado) await G.connect();
   await loadMecanismos();
 
@@ -111,7 +110,7 @@ export function cancel() { if (running) running.cancel = true; }
 
 /** Verifica respostas no Gmail para envios com threadId. */
 export async function checkReplies(campId) {
-  if (!G.hasScope('read')) throw new Error('Ative a leitura do Gmail em Configurações e reconecte a conta Google.');
+  if (!G.hasScope('read')) throw new Error('Conecte o e-mail do CIQUANTA em Configurações.');
   const envios = store.list('envios').filter(e => e.threadId && e.status === 'enviado' && !e.respondido && (!campId || e.campanhaId === campId));
   let n = 0;
   for (const e of envios) {

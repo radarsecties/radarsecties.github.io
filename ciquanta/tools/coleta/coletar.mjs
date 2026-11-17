@@ -14,6 +14,7 @@ const ETAPAS = [
   ['receita', 'Dados da Receita Federal', coletarReceita],
   // A descoberta com IA carrega o SDK só quando há chave configurada
   ['descoberta', 'Descoberta com IA', async opts => (await import('./descoberta.mjs')).descobrir(opts)],
+  ['contatos-ia', 'Diretorias na web com IA', async opts => (await import('./contatos-ia.mjs')).contatosIA(opts)],
 ];
 
 const pedidas = process.argv.slice(2);

@@ -14,7 +14,7 @@ export const PAINEL_PUBLICO = 'https://script.google.com/macros/s/AKfycbx1oLvENM
 
 export const ROTINAS = [
   { id: 'mapeamento', chave: 'autoMapeamento', nome: 'Mapeamento de organizações', desc: 'Leva ao CRM as organizações novas do mapeamento e as descobertas nas notícias. As que a equipe exclui não voltam.' },
-  { id: 'canais', chave: 'autoCanais', nome: 'Contatos institucionais', desc: 'Cria contatos com os e-mails de setores (inovação, relações institucionais, contato geral) publicados nos sites oficiais.' },
+  { id: 'canais', chave: 'autoCanais', nome: 'Contatos de diretorias', desc: 'Cria contatos com os e-mails de diretorias e setores publicados pelas organizações.' },
   { id: 'receita', chave: 'autoReceita', nome: 'Dados da Receita Federal', desc: 'Completa CNPJ, razão social, situação cadastral, porte e atividade econômica.' },
   { id: 'painel', chave: 'autoPainel', nome: 'Painel CIQUANTA', desc: 'Atualiza os totais de cadastros e visitas à réplica a cada abertura e a cada três horas, sem login.' },
   { id: 'gmail', chave: 'autoGmailContatos', nome: 'Contatos vindos do Gmail', desc: 'Quem responde de um domínio de organização mapeada vira contato automaticamente.' },
@@ -64,7 +64,7 @@ export async function mapeamento() {
   return { n: novas, msg: novas ? `${novas} organização(ões) nova(s) no CRM${completadas ? `, ${completadas} completada(s)` : ''}` : completadas ? `${completadas} organização(ões) completada(s)` : 'mapeamento em dia' };
 }
 
-const ORDEM_PAPEL = ['Inovação e P&D', 'Relações institucionais', 'Relações com investidores', 'Contato geral', 'Sustentabilidade', 'Comunicação e imprensa'];
+const ORDEM_PAPEL = ['Inovação e P&D', 'Relações institucionais', 'Diretoria', 'Presidência', 'Gabinete', 'Reitoria', 'Relações com investidores', 'Contato geral', 'Sustentabilidade', 'Comunicação e imprensa'];
 export async function canais() {
   const c = await ler('canais'); if (!c?.porOrg) return { n: 0, msg: 'a coleta ainda não publicou canais' };
   const s = store.state();

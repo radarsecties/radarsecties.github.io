@@ -25,7 +25,7 @@ function grade(view, ref) {
     <div style="display:flex;justify-content:space-between;gap:8px;align-items:flex-start"><h4 style="font-size:16px">${esc(s.nome)}</h4>${s.deck ? `<span class="badge">${s.linhas.length} linhas</span>` : `<span class="badge gray">usa agenda de ${esc(store.setorCurto(s.deckId))}</span>`}</div>
     <p class="muted small" style="margin:0;flex:1">${esc(s.resumo)}</p>
     <div class="n"><div><b>${n.mapeadas}</b>mapeadas</div><div><b>${n.confirmadas}</b>com atuação quântica</div><div><b>${n.crm}</b>no CRM</div><div><b>${money(n.pipeline)}</b>pipeline</div></div></div>`; };
-  view.innerHTML = `<div class="section-head"><div><h2>Setores e aplicações</h2><p>Agendas de pesquisa aplicada por setor, no formato da agenda oficial do CIQUANTA para o sistema financeiro: pergunta central, linha de base clássica, abordagem híbrida e quântica, entregas e indicadores.</p></div></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Setores e aplicações</h2></div></div>
     <div class="grid g3" id="g1">${comDeck.map(card).join('')}</div>
     <h3 style="margin:24px 0 12px;font-size:15px">Setores relacionados</h3><div class="grid g3" id="g2">${outros.map(card).join('')}</div>`;
   const onClick = e => { const c = e.target.closest('.setor-card'); if (c) location.hash = `#/setores/${c.dataset.id}`; };

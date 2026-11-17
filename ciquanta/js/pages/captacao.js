@@ -12,7 +12,7 @@ export const compacto = v => v >= 1e9 ? `R$ ${(v / 1e9).toLocaleString('pt-BR', 
 
 function abrirMetas(depois) {
   const c = store.cfg(), metas = c.metas || {};
-  modal({ title: 'Metas de captação', body: `<p class="muted" style="margin-top:0">A meta anual orienta o painel e o relatório executivo. As metas por frente são opcionais e ajudam a distribuir o esforço.</p>
+  modal({ title: 'Metas de captação', body: `
     <form id="fm" class="form-grid"><label class="field full">Meta anual de captação (R$)<input type="number" name="metaAnual" min="0" step="50000" value="${esc(c.metaAnual || '')}"></label>
     ${FRENTES.map(f => `<label class="field">${esc(f.nome)}<input type="number" name="f:${f.id}" min="0" step="50000" value="${esc(metas[f.id] || '')}"></label>`).join('')}
     <p class="full muted small" id="soma" style="margin:0"></p></form>`,
@@ -32,7 +32,7 @@ export async function render(view, { arg } = {}) {
     const r = resumo(), ano = new Date().getFullYear();
     const barra = (c, p, m) => { const base = Math.max(m, c + p, 1); return `<div class="meta-bar" style="height:8px" title="Contratado ${money(c)} · ponderado ${money(p)}${m ? ' · meta ' + money(m) : ''}"><i style="width:${c / base * 100}%"></i><b style="width:${p / base * 100}%"></b></div>`; };
     const mecs = [...r.porMec].sort((a, b) => ordem === 'lacuna' ? (b.orgs - b.abordadas) - (a.orgs - a.abordadas) : 0);
-    view.innerHTML = `<div class="section-head"><div><h2>Plano de captação ${ano}</h2><p>Metas, frentes de financiamento e cobertura do mapeamento. Os valores vêm das oportunidades registradas: contratado é o que já foi assinado; ponderado é o valor em aberto multiplicado pela probabilidade da etapa.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Plano de captação ${ano}</h2></div>
       <div class="toolbar" style="margin:0"><button class="btn" id="rel">${icon('modelos', 15)} Relatório executivo</button><button class="btn primary" id="metas">Definir metas</button></div></div>
 
     <div class="grid g4" style="margin-bottom:18px">
@@ -82,7 +82,7 @@ export async function render(view, { arg } = {}) {
     const orgs = store.list('orgs').filter(o => (o.mecanismos || []).some(m => f.mecs.includes(m)));
     const semAbordagem = orgs.filter(o => !o.relacionamento || o.relacionamento === 'mapeada');
     view.innerHTML = `<a class="btn ghost" href="#/captacao" style="margin-bottom:12px">${icon('esquerda', 16)} Plano de captação</a>
-      <div class="section-head"><div><h2>${esc(f.nome)}</h2><p>${esc(f.desc)}</p></div></div>
+      <div class="section-head"><div><h2>${esc(f.nome)}</h2></div></div>
       <div class="grid g4" style="margin-bottom:18px">
         <div class="card kpi"><span class="label">Organizações elegíveis</span><span class="value">${num(orgs.length)}</span><span class="sub">${num(orgs.filter(o => comContato.has(o.id)).length)} com contato cadastrado</span></div>
         <div class="card kpi"><span class="label">Sem abordagem</span><span class="value">${num(semAbordagem.length)}</span><span class="sub">ainda no estágio "mapeada"</span></div>

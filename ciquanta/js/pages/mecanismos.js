@@ -5,8 +5,8 @@ export async function render(view) {
   const ref = await store.ref('mecanismos');
   const tipos = [...new Set(ref.itens.map(m => m.tipo))].sort();
   const f = { q: '', tipo: '', prio: '' };
-  view.innerHTML = `<div class="section-head"><div><h2>Mecanismos e leis de inovação</h2><p>Instrumentos brasileiros que movimentam investimento público e privado em P&D, com o papel que o CIQUANTA pode ter em cada um. Os argumentos servem às abordagens; os mecanismos podem ser associados às organizações e às oportunidades.</p></div></div>
-    <div class="callout warn" style="margin-bottom:14px"><strong>Atenção:</strong> ${esc(ref.aviso)} <span class="muted">Revisado em ${fmtDate(ref.verificadoEm)}.</span></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Mecanismos e leis de inovação</h2></div></div>
+    
     <div class="grid g4" style="margin-bottom:16px" id="kpis"></div>
     <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Lei, setor ou órgão"><select id="tipo">${options(tipos, '', { empty: 'Todos os tipos' })}</select>
       <select id="prio"><option value="">Todas as prioridades</option><option value="1">Prioridade alta</option><option value="2">Média</option><option value="3">Complementar</option></select></div>

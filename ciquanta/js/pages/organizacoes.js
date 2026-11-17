@@ -12,7 +12,7 @@ export async function render(view, { params }) {
     evidencia: params.get('evidencia') || '', prioridade: '', mecanismo: params.get('mecanismo') || '', sort: '_pot', dir: -1 };
   const sel = new Set();
   view.innerHTML = `
-  <div class="section-head"><div><h2>Organizações</h2><p>Empresas que investem em P&D, fomentadores, autoridades e instituições de pesquisa acompanhadas pelo CIQUANTA. Clique numa linha para ver contatos, oportunidades e histórico.</p></div>
+  <div class="section-head"><div><h2>Organizações</h2></div>
     <div class="toolbar" style="margin:0"><a class="btn" href="#/busca?aba=referencia">Importar mapeamento</a><button class="btn" id="imp">Importar CSV</button><button class="btn" id="exp">Exportar CSV</button><button class="btn primary" id="nova">${icon('mais', 16)} Nova organização</button></div></div>
   <div class="toolbar">
     <input type="search" class="grow" id="q" placeholder="Nome, cidade, tag, atuação" value="${esc(f.q)}">
@@ -107,7 +107,7 @@ export async function render(view, { params }) {
 function importOrgs(done) {
   const { el, close } = modal({ title: 'Importar organizações (CSV)', body: `
     <p>Primeira linha com os nomes das colunas, separador <code>;</code> ou <code>,</code>. Colunas reconhecidas: <code>nome</code>, <code>nome_fantasia</code>, <code>cnpj</code>, <code>segmento</code>, <code>setor</code>, <code>uf</code>, <code>cidade</code>, <code>site</code>, <code>email</code>, <code>telefone</code>, <code>tags</code>, <code>notas</code>.</p>
-    <p class="muted small">Listas públicas do MCTI (beneficiárias da Lei do Bem, empresas habilitadas na Lei de TICs) podem ser convertidas em planilha e importadas aqui. Organizações com mesmo CNPJ ou mesmo nome são atualizadas.</p>
+    
     <input type="file" accept=".csv,text/csv" id="file">`, footer: '<button class="btn" data-close>Fechar</button>' });
   el.querySelector('#file').onchange = async e => {
     const file = e.target.files[0]; if (!file) return;

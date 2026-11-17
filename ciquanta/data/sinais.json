@@ -1,7 +1,37 @@
 {
- "atualizadoEm": "2026-11-16T22:36:49.811Z",
+ "atualizadoEm": "2026-11-17T00:14:40.955Z",
  "aviso": "Títulos e links de notícias públicas; o conteúdo pertence a cada veículo.",
  "itens": [
+  {
+   "id": "d827df9800b8",
+   "titulo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança",
+   "fonte": "MOMENTO MT",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYW84VnJTUXlzX3RGZnhBT09oMXBseVJ2bXZLUkVoaXZMeGV1R0VmTEhxSHVjd1VWQU1UVDJIcGw1Q051X2t3Vkg3cjJDeGVnRnRBeXB2dnBJWXZqc2xLTWtvRm9sQWlHUTFJMGVGQnJOS2ZUQk9vN2JaYjB4bjVKaXQwVzhHR25WMDk1X0ZQaEh1UVlKOEV6RHRTNFJqa1lyRzhTbkJEWHJWUjRjT09fM3NYN3lWbmRpVDJRTVdmbw?oc=5",
+   "data": "2026-11-16T23:00:00.000Z",
+   "temas": [
+    "quantica"
+   ],
+   "orgs": [
+    "ref-mcti"
+   ],
+   "edital": false,
+   "resumo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança MOMENTO MT",
+   "coletadoEm": "2026-11-17T00:13:49.161Z"
+  },
+  {
+   "id": "78e113f94e4b",
+   "titulo": "Computadores quânticos devem impulsionar pesquisas e formação acadêmica nas universidades da Paraíba, afirma secretário",
+   "fonte": "Poder Paraíba",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPM3YwWDlPWklLUUdyV2d0a0tUNU0yaWREMGZJdzlOQ0pLSldsRG52aU5kRU1LMXJQSFJkMWpUd2RiMDU2aWd3X3dRTjk5cUVfb0lCUWZCZ3NOLU1rRU5lTHFNLWhVX1I5ZkloMGY0Z3lyY1M1dmdUTktMMmt0aEdwOGVXZ1JTRmdQSlVMOGVFLWhCR1FrMzdhNHQ4RnpLWDU4ZUNyZlJTTFlDb0VYdnhUZ3poeU1rODIxRmdJdklwQUY2VE1JRjVGWGtNMS1XTFoxQjdrLXFOUGtnckxNamwwWg?oc=5",
+   "data": "2026-11-16T22:45:08.000Z",
+   "temas": [
+    "quantica"
+   ],
+   "orgs": [],
+   "edital": false,
+   "resumo": "Computadores quânticos devem impulsionar pesquisas e formação acadêmica nas universidades da Paraíba, afirma secretário Poder Paraíba",
+   "coletadoEm": "2026-11-17T00:13:49.160Z"
+  },
   {
    "id": "e4691d06fba6",
    "titulo": "João Azevêdo afirma que computador quântico coloca Paraíba entre os principais centros de pesquisa do mundo",
@@ -30,6 +60,20 @@
    "edital": false,
    "resumo": "Paraíba quer transformar computação quântica em tecnologia própria Paraíba Business",
    "coletadoEm": "2026-11-16T22:31:20.789Z"
+  },
+  {
+   "id": "ad7d7c0f6cfc",
+   "titulo": "Computadores quânticos avaliados em R$ 83 milhões chegam à Paraíba e montagem começa no dia 24",
+   "fonte": "Maurílio Júnior",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNYWpQZC1aNGtFd2lwMk0tMmVVdHV3Qk15UnMzZmdhVHdvOXM2MWR5eVlfSHpsZlVOQmF6aDAtTVBMX3pvNnV4Wjh2LWRlbjNnTEhlbW9MMkJCSmtfQzhTcEpZdDY5cDdFVXZjSWYtNlcwVTRfcVREbVZndExNeU5mbjVXOUFnN1EtVzhNTC1HZDNRNnhTLUJndHZBZXZ0RlJhQzNiRWV2SWxCeHFZUnVCUWFyVmV3aURfR1h1MmkybkQ0S2xaSlY3WmJ4TUU?oc=5",
+   "data": "2026-11-16T21:45:05.000Z",
+   "temas": [
+    "quantica"
+   ],
+   "orgs": [],
+   "edital": false,
+   "resumo": "Computadores quânticos avaliados em R$ 83 milhões chegam à Paraíba e montagem começa no dia 24 Maurílio Júnior",
+   "coletadoEm": "2026-11-17T00:13:49.160Z"
   },
   {
    "id": "8822cc92b98b",
@@ -1394,7 +1438,8 @@
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOWmsweVdHb05NVUdZUTFGZnB5MUhFZDNkeGtEQmNTRXpDaktJNUo1Ylh5THBqc2FoeDA5OHBUMjNYQ3VqZVI0aF9vTldmRV9zaG5NMWxxcXVsQVRDRjdRc25DcXU0YjQ0YzBXQzNJcTlCSW5DQ0xaZnlMbl9DZy1iRFVUWS1ObEVqYTBFV1JVNkhENjFkNFBFTmg3d0dVR0p4R0pnTW1ndHdHcVd1aWZTRFJVX2xQZWFtSkxZSkJ3cnVWX09oS3YtLWw1dw?oc=5",
    "data": "2026-11-04T08:00:00.000Z",
    "temas": [
-    "agro"
+    "agro",
+    "saude"
    ],
    "orgs": [],
    "edital": false,

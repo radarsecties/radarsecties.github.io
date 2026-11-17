@@ -26,7 +26,7 @@ let ocupado = false, pausas = 0, timer = null, pendente = null;
 const subs = new Set();
 export const onSync = fn => (subs.add(fn), () => subs.delete(fn));
 function avisar() { subs.forEach(f => { try { f(estado()); } catch (e) { console.error(e); } }); }
-const habilitado = () => !!store.cfg().sincronizar && G.status().conectado && G.hasScope('backup');
+const habilitado = () => !!store.cfg().sincronizar && G.status().conectado;
 export const estado = () => ({ ...est, ativo: habilitado(), abaLider });
 /** Este computador e esta aba podem executar envios automáticos agora? */
 export const podeAutomatizar = () => abaLider && (!habilitado() || est.motorAqui);
@@ -100,7 +100,7 @@ async function disputarMotor() {
 }
 
 export async function sincronizar({ manual = false } = {}) {
-  if (!habilitado()) { if (manual) toast('Ative a base compartilhada em Configurações e conecte a conta Google com a permissão de guardar no Drive.', 'bad'); return false; }
+  if (!habilitado()) { if (manual) toast('Conecte o e-mail do CIQUANTA e ative a base compartilhada em Configurações.', 'bad'); return false; }
   if (ocupado || pausas) return false;
   ocupado = true; est.fase = 'sincronizando'; avisar();
   try {

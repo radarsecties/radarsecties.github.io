@@ -19,7 +19,7 @@ export async function render(view, { params }) {
     ch?.destroy(); ch = null;
     const l = filtradas();
     const abertas = l.filter(o => !['contratada', 'perdida'].includes(o.etapa));
-    view.innerHTML = `<div class="section-head"><div><h2>Oportunidades de negócio</h2><p>Cada oportunidade liga uma organização a uma linha de pesquisa, uma modalidade de participação e um instrumento de financiamento. O valor ponderado multiplica o valor estimado pela probabilidade da etapa.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Oportunidades de negócio</h2></div>
       <button class="btn primary" id="nova">${icon('mais', 16)} Nova oportunidade</button></div>
       <div class="grid g4" style="margin-bottom:16px">
         <div class="card kpi"><span class="label">Valor ponderado</span><span class="value">${money(abertas.reduce((a, o) => a + store.pipelineValor(o), 0))}</span><span class="sub">${abertas.length} abertas</span></div>

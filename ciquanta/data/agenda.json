@@ -42,7 +42,10 @@
    "local": "Estados Unidos",
    "descricao": "Maior encontro mundial de física, com trilha de informação quântica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
   },
   {
    "id": "ag-pot-01",
@@ -53,7 +56,11 @@
    "local": "Rio de Janeiro (RJ)",
    "descricao": "Feira de defesa e segurança, realizada em anos ímpares. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "governo-defesa",
+    "aeroespacial"
+   ]
   },
   {
    "id": "ag-wqd",
@@ -75,7 +82,10 @@
    "local": "Ribeirão Preto (SP)",
    "descricao": "Feira de tecnologia agrícola. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "agro"
+   ]
   },
   {
    "id": "ag-pot-03",
@@ -86,7 +96,10 @@
    "local": "São Paulo (SP)",
    "descricao": "Feira do setor de saúde. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "saude"
+   ]
   },
   {
    "id": "ag-pot-04",
@@ -97,7 +110,11 @@
    "local": "São Paulo (SP)",
    "descricao": "Congresso de tecnologia do setor financeiro. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "financeiro",
+    "seguros"
+   ]
   },
   {
    "id": "ag-pot-05",
@@ -108,7 +125,11 @@
    "local": "Rio de Janeiro (RJ)",
    "descricao": "Conferência de tecnologia e startups. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "deeptech",
+    "investidores"
+   ]
   },
   {
    "id": "ag-pot-06",
@@ -119,7 +140,10 @@
    "local": "A definir",
    "descricao": "Encontro anual da comunidade científica brasileira. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
   },
   {
    "id": "ag-formpd",
@@ -141,7 +165,11 @@
    "local": "São Paulo (SP)",
    "descricao": "Encontro do ecossistema de startups de base científica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "deeptech",
+    "investidores"
+   ]
   },
   {
    "id": "ag-pot-08",
@@ -152,7 +180,11 @@
    "local": "São Paulo (SP)",
    "descricao": "Feira do setor de energia solar e armazenamento. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "energia",
+    "clima"
+   ]
   },
   {
    "id": "ag-pot-09",
@@ -163,7 +195,11 @@
    "local": "A definir",
    "descricao": "Conferência internacional de computação e engenharia quântica. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema",
+    "tic"
+   ]
   },
   {
    "id": "ag-pot-10",
@@ -174,7 +210,11 @@
    "local": "São Paulo (SP)",
    "descricao": "Evento de telecomunicações e tecnologia. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "telecom",
+    "tic"
+   ]
   },
   {
    "id": "ag-pot-11",
@@ -185,7 +225,10 @@
    "local": "Nacional",
    "descricao": "Programação de divulgação científica em todo o país. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "ecossistema"
+   ]
   },
   {
    "id": "ag-pot-12",
@@ -196,7 +239,11 @@
    "local": "Vale do Silício (EUA)",
    "descricao": "Conferência de computação quântica aplicada a negócios. Período habitual do evento: confirmar a data de 2027 na página oficial antes de planejar a participação.",
    "link": "",
-   "aConfirmar": true
+   "aConfirmar": true,
+   "setores": [
+    "tic",
+    "financeiro"
+   ]
   }
  ]
 }

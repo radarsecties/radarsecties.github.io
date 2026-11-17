@@ -8,7 +8,7 @@ export async function render(view) {
   const draw = () => {
     const mods = store.list('modelos');
     const m = store.get('modelos', curId);
-    view.innerHTML = `<div class="section-head"><div><h2>Modelos de e-mail</h2><p>Textos-base para empresas, autoridades e fomentadores. Use variáveis como <code>{{saudacao}}</code> e <code>{{organizacao}}</code>: cada destinatário recebe a versão personalizada, no layout institucional do CIQUANTA.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Modelos de e-mail</h2></div>
       <div class="toolbar" style="margin:0"><button class="btn" id="restore">Restaurar modelos padrão</button><button class="btn primary" id="novo">+ Novo modelo</button></div></div>
       <div class="grid split">
         <div class="card" style="padding:8px"><div class="list">${mods.map(x => `<button class="list-item btn ghost" style="justify-content:flex-start;text-align:left;border-radius:8px;${x.id === curId ? 'background:var(--primary-soft)' : ''}" data-id="${esc(x.id)}"><div><div class="title">${esc(x.nome)}</div><div class="meta">${esc(x.categoria || 'Geral')}</div></div></button>`).join('') || '<div class="empty">Sem modelos.</div>'}</div></div>
@@ -23,7 +23,7 @@ export async function render(view) {
           </div>
           <div class="toolbar" style="margin:12px 0 0"><button class="btn" id="dup">Duplicar</button><button class="btn danger" id="del">Excluir</button><a class="btn primary" href="#/campanhas" id="usar">Usar em campanha</a></div></div>
           <div class="card"><div class="small" style="margin-bottom:6px"><strong>Assunto:</strong> <span id="pv-s"></span></div><iframe class="preview-frame" id="pv" sandbox title="Pré-visualização"></iframe>
-          <p class="muted small">Exemplo com um contato fictício. A assinatura vem de Configurações.</p></div></div>` : '<div class="card"><div class="empty">Selecione ou crie um modelo.</div></div>'}
+          </div></div>` : '<div class="card"><div class="empty">Selecione ou crie um modelo.</div></div>'}
       </div>`;
     view.querySelectorAll('[data-id]').forEach(b => b.onclick = () => { curId = b.dataset.id; draw(); });
     view.querySelector('#novo').onclick = () => { const n = store.upsert('modelos', { nome: 'Novo modelo', categoria: 'Geral', assunto: '', corpo: '<p>{{saudacao}},</p>\n<p></p>\n<p>Atenciosamente,</p>' }, 'mod'); curId = n.id; draw(); };

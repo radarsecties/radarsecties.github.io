@@ -11,7 +11,7 @@ const ABAS = [['referencia', 'Mapeamento setorial'], ['cnpj', 'Consulta CNPJ'], 
 export async function render(view, { params }) {
   const mecs = await loadMecanismos();
   let aba = params.get('aba') || 'referencia';
-  view.innerHTML = `<div class="section-head"><div><h2>Busca ativa</h2><p>Mapeamento de empresas e instituições com relação a P&D e computação quântica, consulta de dados públicos da Receita Federal e buscas prontas para encontrar as pessoas certas em cada organização.</p></div></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Busca ativa</h2></div></div>
     <div class="tabs">${ABAS.map(([k, l]) => `<button data-aba="${k}" class="${aba === k ? 'active' : ''}">${l}</button>`).join('')}</div><div id="aba"></div>`;
   const A = view.querySelector('#aba');
   const go = k => { aba = k; view.querySelectorAll('[data-aba]').forEach(b => b.classList.toggle('active', b.dataset.aba === k)); ({ cnpj, lote, prospeccao, referencia, gmail })[k](A, mecs); };
@@ -31,7 +31,7 @@ function cnpj(A, mecs) {
   A.innerHTML = `<div class="grid g2">
     <div class="card"><h3>Consultar CNPJ na Receita Federal</h3>
       <form id="f" class="toolbar" style="margin:0"><input type="text" class="grow" id="c" placeholder="00.000.000/0000-00" inputmode="numeric" autocomplete="off"><button class="btn primary">Consultar</button></form>
-      <p class="muted small">Retorna razão social, nome fantasia, CNAE, porte, situação, e-mail e telefone cadastrados, endereço e quadro de administradores. Fontes públicas: BrasilAPI, Minha Receita e CNPJ.ws.</p>
+      
       <div id="r"></div></div>
     <div class="card"><h3>Como encontrar o contato certo</h3><ol class="steps">
       <li><strong>Empresa:</strong> consulte o CNPJ para confirmar dados cadastrais, setor (CNAE) e porte.</li>
@@ -65,7 +65,7 @@ function cnpj(A, mecs) {
 
 function lote(A) {
   A.innerHTML = `<div class="card"><h3>Enriquecer uma lista de CNPJs</h3>
-    <p class="muted">Cole CNPJs (um por linha ou separados por vírgula), por exemplo de listas públicas de beneficiárias da Lei do Bem ou de empresas habilitadas na Lei de TICs. As consultas são feitas uma a uma, com pausa, para respeitar os limites das APIs públicas.</p>
+    
     <textarea id="t" placeholder="33.000.167/0001-01&#10;..." style="min-height:140px"></textarea>
     <div class="toolbar" style="margin-top:10px"><button class="btn primary" id="go">Consultar</button><button class="btn hidden" id="stop">Parar</button><button class="btn hidden" id="imp">Adicionar todos ao CRM</button><span class="muted small" id="st"></span></div>
     <div class="table-wrap"><table><thead><tr><th>CNPJ</th><th>Razão social</th><th>UF</th><th>CNAE</th><th>E-mail</th><th>Status</th></tr></thead><tbody id="tb"><tr><td colspan="6"><div class="empty">Resultados aparecerão aqui.</div></td></tr></tbody></table></div></div>`;
@@ -118,7 +118,7 @@ async function referencia(A) {
   const fontes = Object.fromEntries((await store.ref('fontes')).itens.map(f => [f.id, f]));
   const sel = new Set(); const f = { q: '', seg: '', uf: '', setor: '', ev: '' };
   const EV = { confirmada: 'Atuação quântica confirmada', indicios: 'Indícios públicos', potencial: 'Perfil compatível' };
-  A.innerHTML = `<div class="callout info" style="margin-bottom:12px">${esc(ref.aviso)} <span class="muted">Revisado em ${esc(ref.verificadoEm.split('-').reverse().join('/'))}.</span></div>
+  A.innerHTML = `
     <div class="grid g4" style="margin-bottom:14px">${Object.entries(EV).map(([k, l]) => `<div class="card kpi"><span class="label">${l}</span><span class="value">${ref.itens.filter(r => r.evidencia === k).length}</span></div>`).join('')}<div class="card kpi"><span class="label">Total mapeado</span><span class="value">${ref.itens.length}</span><span class="sub">${new Set(ref.itens.map(r => r.setor)).size} setores</span></div></div>
     <div class="toolbar"><input type="search" class="grow" id="q" placeholder="Filtrar organizações">
     <select id="setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), '', { empty: 'Setor' })}</select>
@@ -156,8 +156,8 @@ async function referencia(A) {
 function gmail(A) {
   const s = G.status();
   A.innerHTML = `<div class="card"><h3>Descobrir contatos nas suas conversas do Gmail</h3>
-    <p class="muted">Procura remetentes e destinatários de conversas que você já teve com um domínio ou tema (ex.: <code>petrobras.com.br</code>, <code>"Lei do Bem"</code>, <code>quântica</code>). Útil para reaproveitar relacionamentos existentes. Requer a permissão de leitura do Gmail.</p>
-    ${!s.conectado || !G.hasScope('read') ? `<div class="callout warn">Conecte o Gmail com a permissão de leitura: ative a leitura do Gmail em <a href="#/config">Configurações</a> e reconecte a conta.</div>` : ''}
+    
+    ${!s.conectado ? `<div class="callout warn"><a href="#/config">Conectar o e-mail do CIQUANTA</a></div>` : ''}
     <form class="toolbar" id="f" style="margin-top:10px"><input class="grow" type="text" id="q" placeholder="Domínio, nome da empresa ou termo de busca do Gmail"><button class="btn primary">Buscar</button></form>
     <div id="r"></div></div>`;
   A.querySelector('#f').onsubmit = async e => {

@@ -104,7 +104,7 @@ function avisar(item, org) {
 
 /** Varre os últimos dias da caixa para trazer ao CRM conversas anteriores com organizações cadastradas. */
 export async function sincronizar(dias = 14, onProgresso) {
-  if (!G.hasScope('read')) throw new Error('Ative a leitura do Gmail em Configurações e reconecte a conta.');
+  if (!G.hasScope('read')) throw new Error('Conecte o e-mail do CIQUANTA em Configurações.');
   const l = await G.listMessages(`newer_than:${dias}d -in:chats -in:spam -in:trash`, 150);
   const msgs = l.messages || [];
   let vinculadas = 0;

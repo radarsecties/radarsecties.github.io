@@ -76,6 +76,20 @@
    "categoria": "Canais",
    "assunto": "CIQUANTA: projetos de P&D com ICT para a carteira da {{organizacao}}",
    "corpo": "<p>{{saudacao}},</p><p>Empresas que já declaram P&D costumam buscar projetos executados com instituições de pesquisa, pelo tratamento previsto no art. 19-A da Lei do Bem e em outros instrumentos. O CIQUANTA oferece esse tipo de projeto em otimização, química e materiais, IA quântica e segurança pós-quântica.</p><p>Propomos uma conversa sobre como a {{organizacao}} pode levar essa possibilidade aos clientes, com o centro como executor técnico. A apresentação institucional está em {{institucional}}.</p><p>Atenciosamente,</p>"
+  },
+  {
+   "id": "mod-evento",
+   "nome": "Convite: evento do CIQUANTA",
+   "categoria": "Eventos",
+   "assunto": "Convite: {{evento}}",
+   "corpo": "<p>{{saudacao}},</p><p>O CIQUANTA, Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba, tem a satisfação de convidar {{pronome}} para <strong>{{evento}}</strong>, em {{data_evento}}.</p><p>O centro reúne 120 qubits supercondutores em operação, laboratórios de pesquisa aplicada e um hall de exposição aberto a empresas, instituições de pesquisa e governo. Será uma oportunidade para conhecer de perto a infraestrutura e conversar sobre projetos com {{organizacao}}.</p><p>A apresentação institucional está disponível em {{institucional}}.</p><p>Pedimos a gentileza de confirmar a presença respondendo a esta mensagem.</p>"
+  },
+  {
+   "id": "mod-encontro",
+   "nome": "Encontro em evento do setor",
+   "categoria": "Eventos",
+   "assunto": "CIQUANTA no {{evento}}: vamos conversar?",
+   "corpo": "<p>{{saudacao}},</p><p>A equipe do CIQUANTA estará no <strong>{{evento}}</strong> ({{data_evento}}) e gostaria de aproveitar a ocasião para uma conversa breve com {{organizacao}} sobre aplicações de computação quântica para {{setor}}.</p><p>O centro opera 120 qubits supercondutores e desenvolve projetos de pesquisa aplicada que podem ser financiados por {{mecanismo}}. A agenda setorial está em {{apresentacao}}.</p><p>Se houver interesse, indique o melhor horário durante o evento ou, se preferir, uma reunião on-line antes dele.</p>"
   }
  ]
 }

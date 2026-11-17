@@ -1,5 +1,5 @@
 // Cadências: sequências automáticas de e-mails por contato, que param quando há resposta ou descadastro.
-// O motor roda enquanto o sistema estiver aberto com a conta Google conectada.
+// O motor roda enquanto o sistema estiver aberto com o e-mail do CIQUANTA conectado.
 import * as store from './store.js';
 import * as G from './google.js';
 import { compose, buildMime, loadMecanismos } from './email.js';
@@ -49,7 +49,7 @@ export async function ciclo({ manual = false } = {}) {
   if (rodando) return 0;
   const conf = store.cfg();
   if (!manual && (!conf.cadenciasAtivas || !sync.podeAutomatizar() || (conf.horarioComercial && !dentroDoHorario()))) return 0;
-  if (!G.status().conectado) { if (manual) toast('Conecte a conta Google para executar as cadências.', 'bad'); return 0; }
+  if (!G.status().conectado) { if (manual) toast('Conecte o e-mail do CIQUANTA para executar as cadências.', 'bad'); return 0; }
   if (manual) await sync.sincronizar(); // traz o que outros computadores já enviaram
   rodando = true; emit(); sync.pausar(true);
   await loadMecanismos();

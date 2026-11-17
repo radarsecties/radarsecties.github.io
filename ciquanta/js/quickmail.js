@@ -41,7 +41,6 @@ export async function quickMail(contato) {
   const go = async draft => {
     try {
       if (!G.status().conectado) await G.connect();
-      if (draft && !G.hasScope('compose')) throw new Error('Ative "Rascunhos" em Configurações e reconecte o Gmail.');
       const m = cur(); const conf = store.cfg();
       const raw = buildMime({ to: contato.email, toName: contato.nome, from: G.status().email, fromName: conf.remetenteNome, replyTo: conf.replyTo, subject: m.subject, html: m.html });
       const r = draft ? await G.draftRaw(raw) : await G.sendRaw(raw);

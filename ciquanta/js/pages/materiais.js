@@ -7,7 +7,7 @@ const MAX = 10 * 1024 * 1024;
 export async function render(view) {
   const draw = () => {
     const mats = [...store.list('materiais')].sort((a, b) => (b.criadoEm || '').localeCompare(a.criadoEm || ''));
-    view.innerHTML = `<div class="section-head"><div><h2>Materiais institucionais</h2><p>Apresentações, folders, notas técnicas e vídeos do CIQUANTA, prontos para acompanhar campanhas como link ou anexo. Para arquivos grandes, prefira links do Google Drive.</p></div>
+    view.innerHTML = `<div class="section-head"><div><h2>Materiais institucionais</h2></div>
       <div class="toolbar" style="margin:0"><a class="btn" href="#/apresentacoes">Apresentações</a><button class="btn primary" id="novo">+ Novo material</button></div></div>
       ${mats.length ? `<div class="grid g3">${mats.map(m => `<div class="card" style="display:flex;flex-direction:column;gap:8px">
         <div style="display:flex;justify-content:space-between;gap:8px"><span class="badge">${esc(m.categoria || 'Outro')}</span><span class="muted small">${new Date(m.criadoEm).toLocaleDateString('pt-BR')}</span></div>

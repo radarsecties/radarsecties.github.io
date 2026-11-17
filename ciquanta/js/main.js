@@ -8,46 +8,55 @@ import * as cadencia from './cadencia.js';
 import { abrirPaleta } from './paleta.js';
 import * as sync from './sync.js';
 import * as automacao from './automacao.js';
-import { animarNumeros, revelar } from './motion.js';
+import { animarNumeros, revelar, campo } from './motion.js';
 
+// [título, ícone, carregador, grupo do menu (null: fora do menu), rótulo curto no menu]
 const ROUTES = {
-  painel: ['Painel', 'painel', () => import('./pages/painel.js'), 'Visão geral'],
-  sinais: ['Sinais do mercado', 'sinal', () => import('./pages/sinais.js'), 'Visão geral'],
-  captacao: ['Plano de captação', 'oportunidades', () => import('./pages/captacao.js'), 'Visão geral'],
-  interacoes: ['Interações em tempo real', 'interacoes', () => import('./pages/interacoes.js'), 'Visão geral'],
-  agenda: ['Agenda', 'agenda', () => import('./pages/agenda.js'), 'Visão geral'],
-  visitas: ['Visitas e cadastros', 'contatos', () => import('./pages/visitas.js'), 'Visão geral'],
+  painel: ['Hoje', 'painel', () => import('./pages/painel.js'), '', 'Hoje'],
+  interacoes: ['Caixa de entrada', 'interacoes', () => import('./pages/interacoes.js'), '', 'Caixa de entrada'],
+  agenda: ['Agenda', 'agenda', () => import('./pages/agenda.js'), '', 'Agenda'],
   organizacoes: ['Organizações', 'organizacoes', () => import('./pages/organizacoes.js'), 'Relacionamento'],
   contatos: ['Contatos', 'contatos', () => import('./pages/contatos.js'), 'Relacionamento'],
-  oportunidades: ['Oportunidades de negócio', 'oportunidades', () => import('./pages/oportunidades.js'), 'Relacionamento'],
-  rede: ['Rede de relacionamento', 'link', () => import('./pages/rede.js'), 'Relacionamento'],
-  setores: ['Setores e aplicações', 'setores', () => import('./pages/setores.js'), 'Relacionamento'],
-  busca: ['Busca ativa', 'busca', () => import('./pages/busca.js'), 'Relacionamento'],
-  cadencias: ['Cadências automáticas', 'play', () => import('./pages/cadencias.js'), 'Comunicação'],
-  campanhas: ['Campanhas de e-mail', 'campanhas', () => import('./pages/campanhas.js'), 'Comunicação'],
+  oportunidades: ['Oportunidades', 'oportunidades', () => import('./pages/oportunidades.js'), 'Relacionamento'],
+  parceiros: ['Programa de parceiros', 'parceiro', () => import('./pages/parceiros.js'), 'Relacionamento', 'Parceiros'],
+  rede: ['Rede de relacionamento', 'link', () => import('./pages/rede.js'), 'Relacionamento', 'Rede'],
+  captacao: ['Plano de captação', 'captacao', () => import('./pages/captacao.js'), 'Captação', 'Plano de captação'],
+  editais: ['Editais e chamadas', 'edital', () => import('./pages/editais.js'), 'Captação', 'Editais'],
+  mecanismos: ['Leis e mecanismos de fomento', 'mecanismos', () => import('./pages/mecanismos.js'), 'Captação', 'Leis e mecanismos'],
+  simulador: ['Simulador de incentivos', 'simulador', () => import('./pages/simulador.js'), 'Captação', 'Simulador'],
+  campanhas: ['Campanhas', 'campanhas', () => import('./pages/campanhas.js'), 'Comunicação'],
+  cadencias: ['Cadências', 'play', () => import('./pages/cadencias.js'), 'Comunicação'],
   modelos: ['Modelos de e-mail', 'modelos', () => import('./pages/modelos.js'), 'Comunicação'],
   apresentacoes: ['Apresentações', 'apresentacoes', () => import('./pages/apresentacoes.js'), 'Comunicação'],
   materiais: ['Materiais', 'materiais', () => import('./pages/materiais.js'), 'Comunicação'],
-  mecanismos: ['Leis e mecanismos de fomento', 'mecanismos', () => import('./pages/mecanismos.js'), 'Fomento'],
-  editais: ['Editais e chamadas', 'modelos', () => import('./pages/editais.js'), 'Fomento'],
-  simulador: ['Simulador de incentivos', 'simulador', () => import('./pages/simulador.js'), 'Fomento'],
-  automacao: ['Central de automação', 'robo', () => import('./pages/automacao.js'), 'Sistema'],
-  fontes: ['Fontes e referências', 'fontes', () => import('./pages/fontes.js'), 'Sistema'],
-  config: ['Configurações', 'config', () => import('./pages/config.js'), 'Sistema'],
+  sinais: ['Sinais do mercado', 'sinal', () => import('./pages/sinais.js'), 'Inteligência', 'Sinais'],
+  busca: ['Busca ativa', 'busca', () => import('./pages/busca.js'), 'Inteligência'],
+  setores: ['Setores e aplicações', 'setores', () => import('./pages/setores.js'), 'Inteligência', 'Setores'],
+  visitas: ['Visitas e cadastros', 'contatos', () => import('./pages/visitas.js'), 'Inteligência', 'Visitas'],
+  automacao: ['Automação', 'robo', () => import('./pages/automacao.js'), false],
+  config: ['Configurações', 'config', () => import('./pages/config.js'), false],
+  fontes: ['Fontes e referências', 'fontes', () => import('./pages/fontes.js'), null],
   org: ['Organização', 'organizacoes', () => import('./pages/org.js'), null],
 };
-const NAV_LABEL = { sinais: 'Sinais do mercado', automacao: 'Automação', captacao: 'Captação', interacoes: 'Interações', oportunidades: 'Oportunidades', setores: 'Setores', campanhas: 'Campanhas', mecanismos: 'Leis e mecanismos', simulador: 'Simulador', fontes: 'Fontes', cadencias: 'Cadências', rede: 'Rede', editais: 'Editais', visitas: 'Visitas e cadastros' };
+const GRUPO_DE = Object.fromEntries(Object.entries(ROUTES).map(([id, r]) => [id, r[3]]));
 
 let cleanup = null, current = '', seq = 0;
 
 function buildNav() {
-  let g = '', h = '';
-  for (const [id, [title, ic, , grupo]] of Object.entries(ROUTES)) {
-    if (!grupo) continue;
-    if (grupo !== g) { h += `<div class="nav-group">${esc(grupo)}</div>`; g = grupo; }
-    h += `<a href="#/${id}" data-route="${id}">${icon(ic)}<span>${esc(NAV_LABEL[id] || title)}</span>${id === 'interacoes' ? '<span class="count hidden" id="nav-live"></span>' : ''}</a>`;
+  let g = null, h = '<span class="indicador" aria-hidden="true"></span>';
+  for (const [id, [title, ic, , grupo, curto]] of Object.entries(ROUTES)) {
+    if (grupo === null || grupo === false) continue;
+    if (grupo !== g) { if (grupo) h += `<div class="nav-group">${esc(grupo)}</div>`; g = grupo; }
+    h += `<a href="#/${id}" data-route="${id}">${icon(ic, 16)}<span>${esc(curto || title)}</span>${id === 'interacoes' ? '<span class="count hidden" id="nav-live"></span>' : ''}</a>`;
   }
   $('#nav').innerHTML = h;
+}
+/** Desliza o destaque do menu até o item ativo. */
+function moverIndicador() {
+  const a = $('#nav a.active'), ind = $('#nav .indicador');
+  if (!ind) return;
+  if (!a) { ind.style.opacity = 0; return; }
+  ind.style.opacity = 1; ind.style.height = a.offsetHeight + 'px'; ind.style.transform = `translateY(${a.offsetTop}px)`;
 }
 
 function parseHash() {
@@ -63,10 +72,12 @@ async function route() {
   const [title, , loader] = ROUTES[name];
   try { cleanup?.(); } catch {}
   cleanup = null; current = name;
-  $('#page-title').textContent = title;
-  document.title = `${title} · CIQUANTA`;
   const navId = name === 'org' ? 'organizacoes' : name;
-  $$('#nav a').forEach(a => a.classList.toggle('active', a.dataset.route === navId));
+  const grupo = GRUPO_DE[navId] || (GRUPO_DE[navId] === false ? 'Sistema' : '');
+  $('#page-title').innerHTML = `${grupo ? esc(grupo) + ' / ' : ''}<b>${esc(title)}</b>`;
+  document.title = `${title} · CIQUANTA CRM`;
+  $$('#nav a, .pe a').forEach(a => a.classList.toggle('active', a.dataset.route === navId));
+  moverIndicador();
   $('#sidebar').classList.remove('open');
   const view = $('#view');
   view.classList.remove('entrada');
@@ -92,7 +103,7 @@ function badges() {
   const s = G.status(), m = monitor.estado();
   const el = $('#gmail-status');
   el.classList.toggle('on', s.conectado); el.classList.toggle('off', !s.conectado);
-  el.querySelector('.txt').textContent = s.conectado ? s.email || 'Conta Google conectada' : 'Conta Google desconectada';
+  el.querySelector('.txt').textContent = s.conectado ? s.email || 'E-mail conectado' : 'E-mail desconectado';
   $('#live-btn').classList.toggle('on', m.ativo);
   $('#live-btn').title = m.ativo ? `Acompanhamento ativo${m.ultimo ? ', última verificação ' + new Date(m.ultimo).toLocaleTimeString('pt-BR') : ''}` : 'Acompanhamento em tempo real desligado';
   const n = $('#nav-live'); if (n) { n.textContent = m.naoLidos; n.classList.toggle('hidden', !m.naoLidos); }
@@ -107,6 +118,8 @@ function init() {
   $('#theme-btn').innerHTML = icon('tema', 17);
   $('#live-btn').innerHTML = icon('sino', 17);
   $('#sync-btn').innerHTML = icon('sync', 17);
+  $('#pe-auto').innerHTML = icon('robo', 17); $('#pe-config').innerHTML = icon('config', 17);
+  $('#busca-ic').outerHTML = icon('busca', 15);
   $('#sync-btn').onclick = () => sync.sincronizar({ manual: true });
   window.addEventListener('hashchange', route);
   $('#menu-btn').onclick = () => $('#sidebar').classList.toggle('open');
@@ -126,8 +139,8 @@ function init() {
     { n: 'Baixar cópia de segurança', f: async () => (await import('./util.js')).download(`ciquanta-crm-${new Date().toISOString().slice(0, 10)}.json`, store.exportJSON(), 'application/json') },
     { n: 'Alternar tema claro e escuro', f: () => $('#theme-btn').click() }, { n: 'Atalhos de teclado', f: () => atalhos() },
   ];
-  const paleta = () => abrirPaleta(Object.entries(ROUTES).filter(([, r]) => r[3]).map(([id, r]) => ({ id, titulo: r[0] })), acoes);
-  const IR = { p: 'painel', m: 'captacao', o: 'organizacoes', c: 'contatos', n: 'oportunidades', a: 'agenda', i: 'interacoes', e: 'cadencias', s: 'setores', l: 'mecanismos' };
+  const paleta = () => abrirPaleta(Object.entries(ROUTES).filter(([id]) => id !== 'org').map(([id, r]) => ({ id, titulo: r[0] })), acoes);
+  const IR = { h: 'painel', m: 'captacao', o: 'organizacoes', c: 'contatos', n: 'oportunidades', p: 'parceiros', a: 'agenda', i: 'interacoes', e: 'cadencias', s: 'sinais', l: 'mecanismos' };
   const atalhos = async () => (await import('./util.js')).modal({ title: 'Atalhos de teclado', body: `<div class="atalhos">
     <kbd>Ctrl K</kbd><span>Busca rápida e ações (organizações, contatos, oportunidades, telas)</span>
     <kbd>?</kbd><span>Esta lista de atalhos</span>
@@ -141,7 +154,10 @@ function init() {
     else if (e.key === 'g') g = Date.now();
     else if (Date.now() - g < 1200 && IR[e.key]) { g = 0; location.hash = '#/' + IR[e.key]; }
   });
-  $('#global-search').addEventListener('focus', e => { e.target.blur(); paleta(); });
+  $('#global-search').addEventListener('click', paleta);
+  campo($('#campo'));
+  window.addEventListener('resize', moverIndicador);
+  window.addEventListener('scroll', () => $('.topbar').classList.toggle('rolou', scrollY > 4), { passive: true });
   window.addEventListener('ciq:paleta', paleta);
   document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); paleta(); } });
   $('#gmail-status').onclick = () => { location.hash = '#/config'; };
@@ -162,6 +178,7 @@ function init() {
     if (w === 'externo') { clearTimeout(reabrir); reabrir = setTimeout(() => { if (!$('#modal-root').children.length && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) route(); badges(); }, 400); }
   });
   store.pontoDiario();
+  G.iniciarConexao();
   automacao.iniciar();
   automacao.onAutomacao(res => { if (res?.some(x => x.n) && ['painel', 'organizacoes', 'contatos', 'visitas'].includes(current) && !$('#modal-root').children.length && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement?.tagName)) route(); });
   store.seedIfNeeded().then(novo => { if (novo && ['painel', 'agenda', 'modelos'].includes(current)) route(); });

@@ -12,7 +12,7 @@ export async function render(view, { arg }) {
 async function biblioteca(view) {
   const decks = await listDecks();
   const mats = store.list('materiais').filter(m => m.deckId);
-  view.innerHTML = `<div class="section-head"><div><h2>Apresentações</h2><p>Apresentação institucional e agendas setoriais com a identidade do CIQUANTA. Cada uma tem um link público que pode seguir nas campanhas e nos e-mails; o destinatário vê os slides no navegador e pode salvar em PDF.</p></div></div>
+  view.innerHTML = `<div class="section-head"><div><h2>Apresentações</h2></div></div>
     <div class="deck-grid" id="decks">${decks.map(d => `<div class="deck-thumb" data-id="${esc(d.id)}">
       ${d.capa ? `<div class="cover img" style="background-image:url('${esc(d.capa)}')"></div>` : `<div class="cover"><img src="assets/logo-azul.png" alt="CIQUANTA"><div><div class="kicker">Agenda de pesquisa aplicada</div><b>${esc(d.setor.nome)}</b><div class="small muted">${d.setor.linhas.length} linhas de pesquisa</div></div></div>`}
       <div class="info"><div class="title">${esc(d.titulo)}</div><div class="small muted" style="flex:1">${esc(d.sub)}</div>
@@ -29,8 +29,8 @@ async function biblioteca(view) {
 
 function drive(el) {
   const s = G.status();
-  if (!s.conectado || !G.hasScope('drive')) {
-    el.innerHTML = `<p class="muted">Para listar as apresentações da equipe guardadas no Google Drive (deck final, reunião executiva, agendas setoriais), ative "Listar apresentações do Google Drive" em <a href="#/config">Configurações</a> e conecte a conta Google.</p>`;
+  if (!s.conectado) {
+    el.innerHTML = '<div class="empty"><a href="#/config">Conecte o e-mail do CIQUANTA</a> para ver as apresentações do Drive.</div>';
     return;
   }
   el.innerHTML = '<div class="toolbar"><input type="search" class="grow" id="dq" value="CIQUANTA"><button class="btn" id="dbusca">Buscar no Drive</button></div><div id="dres"><div class="empty">Carregando…</div></div>';
@@ -42,7 +42,7 @@ function drive(el) {
       const tipo = m => m.includes('google-apps.presentation') ? 'Google Apresentações' : m.includes('pdf') ? 'PDF' : 'PowerPoint';
       R.innerHTML = fs.length ? `<div class="table-wrap"><table><thead><tr><th>Arquivo</th><th>Tipo</th><th>Atualizado</th><th></th></tr></thead><tbody>${fs.map(f => `<tr><td class="title">${esc(f.name)}<div class="muted small">${esc(f.owners?.[0]?.displayName || '')}</div></td><td class="small">${tipo(f.mimeType)}</td><td class="small">${fmtDate(f.modifiedTime)}</td>
         <td class="nowrap"><a class="btn sm" href="${esc(f.webViewLink)}" target="_blank" rel="noopener">${icon('externo', 13)} Abrir</a> <button class="btn sm" data-mat="${esc(f.id)}">Adicionar aos materiais</button></td></tr>`).join('')}</tbody></table></div>
-        <p class="muted small">O link do Drive só abre para quem tem permissão no arquivo. Para enviar a empresas, ajuste o compartilhamento no Drive ou use o link público das apresentações acima.</p>` : '<div class="empty">Nenhum arquivo encontrado.</div>';
+        ` : '<div class="empty">Nenhum arquivo encontrado.</div>';
       R.onclick = e => {
         const id = e.target.dataset.mat; if (!id) return;
         const f = fs.find(x => x.id === id);
@@ -71,7 +71,7 @@ async function visualizar(view, id) {
         ${setor ? `<div class="list-item"><button class="btn" id="camp">${icon('campanhas', 15)} Campanha para contatos do setor</button></div><div class="list-item"><a class="btn" href="#/setores/${esc(id)}">${icon('setores', 15)} Ver setor e organizações</a></div>` : ''}
         <div class="list-item"><button class="btn" id="pdf">${icon('imprimir', 15)} ${deck.pdf ? 'Baixar PDF oficial' : 'Gerar PDF'}</button></div>
       </div>
-      <p class="muted small">Use as setas do teclado para navegar. Em tela cheia, clique na metade direita para avançar e na esquerda para voltar.</p></div></div>`;
+      </div></div>`;
   const off = mountViewer(view.querySelector('#viewer'), deck);
   view.querySelector('#copy').onclick = async () => { try { await navigator.clipboard.writeText(link); toast('Link copiado.', 'ok'); } catch { view.querySelector('#lk').select(); } };
   view.querySelector('#pdf').onclick = () => printDeck(deck);

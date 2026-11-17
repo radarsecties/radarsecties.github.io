@@ -12,7 +12,7 @@ export const resumir = (j, cnpj) => ({
   cnpj, razao: j.razao_social || '', fantasia: j.nome_fantasia || '', situacao: j.descricao_situacao_cadastral || '',
   cnae: String(j.cnae_fiscal || ''), cnaeDesc: j.cnae_fiscal_descricao || '', porte: j.porte || j.descricao_porte || '',
   natureza: j.natureza_juridica || '', municipio: j.municipio || '', uf: j.uf || '', capital: Number(j.capital_social) || 0,
-  abertura: j.data_inicio_atividade || '', atualizadoEm: agora(),
+  abertura: j.data_inicio_atividade || '', email: String(j.email || '').toLowerCase().trim(), atualizadoEm: agora(),
 });
 
 export async function coletarReceita({ log = console.log } = {}) {

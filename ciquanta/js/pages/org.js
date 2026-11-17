@@ -131,11 +131,11 @@ export async function render(view, { arg, params }) {
     }
     if (tab === 'google') {
       const g = G.status(), dom = o.site ? store.dominio(o.site) : '', nome = o.nomeFantasia || o.nome;
-      if (!g.conectado) T.innerHTML = '<div class="card"><div class="empty">Conecte a conta Google em <a href="#/config">Configurações</a> para ver aqui os e-mails, os arquivos do Drive e os compromissos ligados a esta organização.</div></div>';
+      if (!g.conectado) T.innerHTML = '<div class="card"><div class="empty"><a href="#/config">Conecte o e-mail do CIQUANTA</a> para ver aqui os e-mails, os arquivos do Drive e os compromissos ligados a esta organização.</div></div>';
       else {
         T.innerHTML = `<div class="grid g3"><div class="card"><h3>E-mails ${icon('mail', 15)}</h3><div id="g-mail"><div class="empty">Buscando…</div></div></div><div class="card"><h3>Arquivos no Drive ${icon('materiais', 15)}</h3><div id="g-drive"><div class="empty">Buscando…</div></div></div><div class="card"><h3>Agenda ${icon('agenda', 15)}</h3><div id="g-cal"><div class="empty">Buscando…</div></div></div></div>`;
         const put = (id, h) => { const el = T.querySelector(id); if (el) el.innerHTML = h; };
-        const falha = (id, e, perm) => put(id, `<div class="empty">${G.hasScope(perm) ? esc(e.message) : 'Permissão não concedida. Ative em Configurações e reconecte.'}</div>`);
+        const falha = (id, e, perm) => put(id, `<div class="empty">${esc(e.message)}</div>`);
         const emails = contatos.map(c => c.email).filter(isEmail);
         const q = [dom && `from:${dom} OR to:${dom}`, ...emails.slice(0, 6).map(e => `from:${e} OR to:${e}`)].filter(Boolean).join(' OR ') || `"${nome}"`;
         G.threadsDetalhe(q, 8).then(l => put('#g-mail', l.length ? `<div class="list">${l.map(t => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="https://mail.google.com/mail/u/0/#all/${esc(t.id)}">${esc(t.assunto)}</a><div class="meta">${esc(t.de.replace(/<.*>/, '').trim())} · ${t.n} mensagem(ns) · ${fmtDate(t.data)}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhuma conversa encontrada.</div>')).catch(e => falha('#g-mail', e, 'read'));
@@ -146,7 +146,7 @@ export async function render(view, { arg, params }) {
     if (tab === 'busca') {
       const links = linksBusca(o.nomeFantasia || o.nome, { site: o.site });
       const grupos = [...new Set(links.map(l => l.grupo))];
-      T.innerHTML = `<div class="callout info" style="margin-bottom:14px">Abra as buscas, identifique a pessoa responsável (P&D, inovação, relações governamentais) e cadastre com o botão Contato, registrando a fonte. Use apenas contatos institucionais públicos e respeite pedidos de descadastro (LGPD).</div>
+      T.innerHTML = `
         <div class="grid g2">${grupos.map(g => `<div class="card"><h3>${esc(g)}</h3><div class="list">${links.filter(l => l.grupo === g).map(l => `<div class="list-item"><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.titulo)} ${icon('externo', 13)}</a></div>`).join('')}</div></div>`).join('')}
         ${o.receita?.socios?.length ? `<div class="card"><h3>Administradores (Receita Federal)</h3><div class="list">${o.receita.socios.slice(0, 10).map(s => `<div class="list-item"><div style="flex:1">${esc(s.nome)}<div class="meta">${esc(s.qualificacao)}</div></div><a class="btn sm" target="_blank" rel="noopener" href="https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(s.nome + ' ' + (o.nomeFantasia || o.nome))}">LinkedIn</a></div>`).join('')}</div></div>` : ''}</div>`;
     }

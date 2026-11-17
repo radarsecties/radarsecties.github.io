@@ -183,13 +183,12 @@ export function openReuniaoForm({ orgId, contatoIds = [], oportunidadeId = '', t
     ev.target.disabled = true;
     try {
       if (!G.status().conectado) await G.connect();
-      if (!G.hasScope('calendar')) throw new Error('Ative a Agenda em Configurações e reconecte a conta Google.');
       const r = await G.createEvent({ titulo: d.titulo, descricao: d.descricao, inicio, fim, convidados, local: d.local, meet: !!d.meet });
       if (orgId) {
         store.logInteracao({ orgId, tipo: 'reuniao', titulo: d.titulo, data: inicio.toISOString(), descricao: `${d.descricao}\nConvidados: ${convidados.join(', ') || '—'}`, link: r.htmlLink, meet: r.hangoutLink || '', calendarId: r.id, oportunidadeId });
         const o = store.get('orgs', orgId); if (o && ['mapeada', 'contato'].includes(o.relacionamento || 'mapeada')) { o.relacionamento = 'engajada'; store.touch('orgs'); }
       }
-      toast('Reunião criada no Google Agenda e convites enviados.', 'ok'); close(); onSave?.(r);
+      toast('Reunião criada na agenda do CIQUANTA e convites enviados.', 'ok'); close(); onSave?.(r);
     } catch (e) { toast(e.message, 'bad'); ev.target.disabled = false; }
   };
 }

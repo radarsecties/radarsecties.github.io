@@ -8,7 +8,7 @@ export async function render(view) {
   const f = { q: '', segmento: '', area: '', uf: '', email: '' };
   const sel = new Set();
   view.innerHTML = `
-  <div class="section-head"><div><h2>Contatos</h2><p>Pessoas de referência em cada organização: gestores de P&D e inovação, diretores e assessores de autoridades. São elas que recebem as campanhas e os convites de reunião.</p></div>
+  <div class="section-head"><div><h2>Contatos</h2></div>
     <div class="toolbar" style="margin:0"><button class="btn" id="imp">Importar CSV</button><button class="btn" id="exp">Exportar CSV</button><button class="btn primary" id="novo">+ Novo contato</button></div></div>
   <div class="toolbar">
     <input type="search" class="grow" id="q" placeholder="Nome, cargo, e-mail, organização…">
@@ -75,7 +75,7 @@ export async function render(view) {
 function importContatos(done) {
   const { el, close } = modal({ title: 'Importar contatos (CSV)', body: `
     <p>Colunas reconhecidas: <code>nome</code>, <code>email</code>, <code>cargo</code>, <code>area</code>, <code>telefone</code>, <code>linkedin</code>, <code>tratamento</code>, <code>organizacao</code>, <code>segmento</code>, <code>uf</code>, <code>fonte</code>.</p>
-    <p class="muted small">Organizações que não existirem serão criadas. Contatos com o mesmo e-mail são atualizados. E-mails na lista de descadastro continuam bloqueados.</p>
+    
     <input type="file" accept=".csv,text/csv" id="file">`, footer: '<button class="btn" data-close>Fechar</button>' });
   el.querySelector('#file').onchange = async e => {
     const file = e.target.files[0]; if (!file) return;

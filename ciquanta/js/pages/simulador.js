@@ -11,8 +11,8 @@ const SIMS = {
 export async function render(view, { params }) {
   let cur = SIMS[params.get('m')] ? params.get('m') : 'lei-do-bem';
   let ch = null;
-  view.innerHTML = `<div class="section-head"><div><h2>Simulador de incentivos</h2><p>Estimativas rápidas para usar em reuniões com empresas: quanto custa, de fato, um projeto de PD&I com o CIQUANTA e quanto recurso obrigatório de P&D a empresa precisa aplicar.</p></div></div>
-    <div class="callout warn" style="margin-bottom:14px">Valores aproximados, apenas para conversa inicial. A apuração real depende do regime tributário, do enquadramento do projeto e da regulamentação vigente: a empresa deve validar com a área tributária.</div>
+  view.innerHTML = `<div class="section-head"><div><h2>Simulador de incentivos</h2></div></div>
+    
     <div class="tabs">${Object.entries(SIMS).map(([k, l]) => `<button data-s="${k}" class="${k === cur ? 'active' : ''}">${l}</button>`).join('')}</div>
     <div class="grid g2"><div class="card" id="form"></div><div class="card"><h3>Resultado</h3><div id="out"></div><div class="chart-box" style="height:220px;margin-top:12px"><canvas id="c"></canvas></div></div></div>`;
   const F = view.querySelector('#form'), O = view.querySelector('#out');
@@ -29,25 +29,25 @@ export async function render(view, { params }) {
       <label class="field">Fator do art. 19-A (definido pelo comitê)<select id="fat"><option value="0.5">50%</option><option value="1">100%</option><option value="1.5">150%</option><option value="2">200%</option><option value="2.5" selected>250% (máximo)</option></select></label>
       ${field('lucro', 'Lucro real antes das exclusões (R$)', 20000000, 'step="100000"')}
       ${field('aliq', 'Alíquota IRPJ + CSLL (%)', 34, 'step="1" max="40"')}</div>
-      <p class="muted small">Exclusões não podem gerar prejuízo fiscal. O art. 19-A não se acumula com o art. 19 para o mesmo dispêndio.</p>`,
+      `,
     'lei-de-tics': () => `<h3>Lei de TICs (Lei 8.248/1991)</h3><div class="form-grid">
       ${field('fat', 'Faturamento anual com bens incentivados (R$)', 500000000, 'step="1000000"')}
       ${field('perc', 'Percentual de PD&I exigido (%)', 4, 'step="0.1"')}
       ${field('ext', 'Parcela a aplicar fora da empresa (ICTs, PPIs, FNDCT) (%)', 50, 'step="1" max="100"')}
       ${field('reg', 'Parcela destinada a N/NE/CO (%)', 30, 'step="1" max="100"')}
       ${field('share', 'Fatia que o CIQUANTA pode captar (%)', 10, 'step="1" max="100"')}</div>
-      <p class="muted small">As proporções exatas estão no Decreto 10.356/2020 e variam por produto e região. Ajuste os campos ao caso real.</p>`,
+      `,
     'pdi-aneel': () => `<h3>PD&I ANEEL (Lei 9.991/2000)</h3><div class="form-grid">
       ${field('rol', 'Receita operacional líquida da concessionária (R$)', 3000000000, 'step="10000000"')}
       ${field('perc', 'Percentual aplicado em projetos de PD&I regulados (%)', 0.4, 'step="0.05"')}
       ${field('share', 'Fatia que o CIQUANTA pode captar (%)', 5, 'step="1" max="100"')}</div>
-      <p class="muted small">Confira o percentual e a divisão entre FNDCT, MME e projetos próprios no regulamento vigente da ANEEL (PROPDI).</p>`,
+      `,
     'pdi-anp': () => `<h3>Cláusula de PD&I ANP</h3><div class="form-grid">
       ${field('rb', 'Receita bruta dos campos com obrigação (R$)', 20000000000, 'step="100000000"')}
       <label class="field">Regime<select id="perc"><option value="1">Concessão (1%)</option><option value="0.5">Partilha / cessão onerosa (0,5%)</option></select></label>
       ${field('ict', 'Parcela mínima em ICTs credenciadas (%)', 50, 'step="1" max="100"')}
       ${field('share', 'Fatia que o CIQUANTA pode captar (%)', 2, 'step="0.5" max="100"')}</div>
-      <p class="muted small">Percentuais conforme o contrato de cada campo e a Resolução ANP nº 918/2023. Exige credenciamento da unidade de pesquisa na ANP.</p>`,
+      `,
   };
 
   const calc = {

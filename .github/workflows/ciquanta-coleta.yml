@@ -33,6 +33,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CIQUANTA_MODELO: ${{ vars.CIQUANTA_MODELO }}
+          CIQUANTA_LOTE_IA: ${{ vars.CIQUANTA_LOTE_IA }}
         run: node ciquanta/tools/coleta/coletar.mjs
       - name: Publicar as bases atualizadas
         run: |

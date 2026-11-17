@@ -3,21 +3,21 @@ import { uid, toast, norm } from './util.js';
 
 const KEY = 'ciquanta:crm:v2';
 const VERSION = 2;
-const SEED = 3; // versão dos dados iniciais (modelos, agenda e cadências)
-export const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos', 'cadencias', 'inscricoes', 'editais'];
+const SEED = 4; // versão dos dados iniciais (modelos, agenda e cadências)
+export const COLS = ['orgs', 'contatos', 'interacoes', 'oportunidades', 'campanhas', 'envios', 'recebidos', 'modelos', 'materiais', 'eventos', 'cadencias', 'inscricoes', 'editais', 'adesoes'];
 
 const empty = () => ({
   version: VERSION,
   orgs: [], contatos: [], interacoes: [], oportunidades: [], campanhas: [], envios: [], recebidos: [],
-  modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], supressao: [], descartadas: [],
+  modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], adesoes: [], supressao: [], descartadas: [],
   painel: { atualizadoEm: '', visitas: [], cadastros: {}, temas: {}, totais: {} },
   config: {
-    clientId: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
-    enderecoPublico: '', intervaloSeg: 5, limiteDiario: 400, monitorSeg: 30, notificacoes: true,
+    ponteUrl: '', ponteChave: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
+    enderecoPublico: '', intervaloSeg: 5, limiteDiario: 400, monitorSeg: 60, notificacoes: true,
     rodape: 'Você recebeu esta mensagem por sua atuação institucional em ciência, tecnologia e inovação. Para não receber novos contatos do CIQUANTA, responda com "REMOVER".',
     escopos: { rascunhos: true, leitura: true, agenda: true, drive: true, backup: false, planilhas: true },
     planilhaVisitas: '', planilhaCadastros: '', painelUrl: 'https://painelciquanta.secties.pb.gov.br',
-    metaAnual: 0, metas: {}, horarioComercial: true, cadenciasAtivas: true,
+    metaAnual: 0, metas: {}, cotas: [], horarioComercial: true, cadenciasAtivas: true,
     sincronizar: false, baseFileId: '', cfgEm: {}, guiaOculto: false,
     autoMapeamento: true, autoCanais: true, autoReceita: true, autoPainel: true, autoGmailContatos: true,
     pilotoAutomatico: false, pilotoLimite: 12, pilotoMinimo: 55,
@@ -98,7 +98,7 @@ window.addEventListener('storage', e => {
 export const state = () => db;
 export const cfg = () => db.config;
 /** Preferências que valem para toda a equipe e seguem para a base compartilhada. As demais são de cada computador. */
-export const CONFIG_COMUM = ['remetenteNome', 'remetenteCargo', 'remetenteTelefone', 'replyTo', 'enderecoPublico', 'intervaloSeg', 'limiteDiario', 'rodape', 'planilhaVisitas', 'planilhaCadastros', 'painelUrl', 'metaAnual', 'metas', 'horarioComercial', 'cadenciasAtivas',
+export const CONFIG_COMUM = ['remetenteNome', 'remetenteCargo', 'remetenteTelefone', 'replyTo', 'enderecoPublico', 'intervaloSeg', 'limiteDiario', 'rodape', 'planilhaVisitas', 'planilhaCadastros', 'painelUrl', 'metaAnual', 'metas', 'cotas', 'horarioComercial', 'cadenciasAtivas',
   'autoMapeamento', 'autoCanais', 'autoReceita', 'autoPainel', 'autoGmailContatos', 'pilotoAutomatico', 'pilotoLimite', 'pilotoMinimo'];
 export function setConfig(patch) {
   // Cada preferência comum guarda quando foi alterada, para a mescla entre computadores valer item a item
@@ -222,7 +222,7 @@ export async function seedIfNeeded() {
 }
 
 // ---- Backup
-export function exportJSON() { const { config, ...rest } = db; return JSON.stringify({ ...rest, config: { ...config, historyId: '' }, exportadoEm: now(), app: 'ciquanta-crm' }, null, 1); }
+export function exportJSON() { const { config, ...rest } = db; return JSON.stringify({ ...rest, config: { ...config, historyId: '', ponteChave: '' }, exportadoEm: now(), app: 'ciquanta-crm' }, null, 1); }
 export function importJSON(text, { merge = false } = {}) {
   let d; try { d = JSON.parse(text); } catch { throw new Error('O arquivo não é um JSON válido.'); }
   if (!d || !Array.isArray(d.orgs)) throw new Error('O arquivo não é uma cópia do CRM CIQUANTA.');
@@ -230,7 +230,7 @@ export function importJSON(text, { merge = false } = {}) {
   sanear(d);
   if (!merge) {
     const keep = db.config;
-    db = { ...empty(), ...d, config: { ...empty().config, ...keep, ...(d.config || {}), clientId: d.config?.clientId || keep.clientId, historyId: keep.historyId } };
+    db = { ...empty(), ...d, config: { ...empty().config, ...keep, ...(d.config || {}), ponteUrl: d.config?.ponteUrl || keep.ponteUrl, ponteChave: keep.ponteChave, historyId: keep.historyId } };
   } else {
     for (const col of COLS) {
       const ids = new Set(db[col].map(x => x.id));
@@ -241,7 +241,7 @@ export function importJSON(text, { merge = false } = {}) {
   }
   emit('import');
 }
-export function resetAll() { criarPonto('antes de apagar todos os dados'); const c = db.config.clientId; db = empty(); db.config.clientId = c; emit('reset'); }
+export function resetAll() { criarPonto('antes de apagar todos os dados'); const { ponteUrl, ponteChave } = db.config; db = empty(); Object.assign(db.config, { ponteUrl, ponteChave }); emit('reset'); }
 export const contagem = (d = db) => ({ orgs: d.orgs.length, contatos: d.contatos.length, oportunidades: d.oportunidades.length, interacoes: d.interacoes.length });
 
 // ---- IndexedDB (arquivos de materiais)

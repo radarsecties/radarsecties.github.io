@@ -1,5 +1,5 @@
 // Integração com o Painel CIQUANTA (painelciquanta.secties.pb.gov.br): visitas à réplica e cadastros de perfis.
-// Lê as planilhas do painel pela conta Google conectada. Documentos e telefones não são gravados no CRM.
+// Lê as planilhas do painel pelo e-mail do CIQUANTA conectado. Documentos e telefones não são gravados no CRM.
 import * as store from '../store.js';
 import * as G from '../google.js';
 import { esc, toast, norm, options, isEmail, fmtDate, isoDay, uid, debounce } from '../util.js';
@@ -14,9 +14,9 @@ const dataISO = v => { const m = String(v).match(/(\d{2})\/(\d{2})\/(\d{4})/); r
 const sim = v => /^sim/i.test(String(v));
 
 export async function sincronizar() {
-  if (!G.hasScope('planilhas')) throw new Error('Ative "Ler as planilhas do Painel CIQUANTA" em Configurações e reconecte a conta Google.');
+  if (!G.hasScope('planilhas')) throw new Error('Conecte o e-mail do CIQUANTA em Configurações.');
   const conf = store.cfg(); const ids = { visitas: G.sheetId(conf.planilhaVisitas), cadastros: G.sheetId(conf.planilhaCadastros) };
-  for (const k of ['visitas', 'cadastros']) if (!ids[k] && G.hasScope('drive')) { try { ids[k] = await G.driveFindByName(NOMES[k]); } catch {} }
+  for (const k of ['visitas', 'cadastros']) if (!ids[k]) { try { ids[k] = await G.driveFindByName(NOMES[k]); } catch {} }
   if (!ids.visitas && !ids.cadastros) throw new Error('Informe em Configurações os links das planilhas do painel (agendamentos de visita e cadastros de perfis).');
   store.setConfig({ planilhaVisitas: ids.visitas || conf.planilhaVisitas, planilhaCadastros: ids.cadastros || conf.planilhaCadastros });
   mem = { visitas: [], cadastros: [] };
@@ -58,10 +58,10 @@ export async function render(view) {
   const draw = () => {
     ch.forEach(c => c.destroy()); ch = [];
     const p = store.state().painel, t = p.totais || {}, conf = store.cfg(), g = G.status(), hoje = isoDay();
-    const pronto = g.conectado && G.hasScope('planilhas');
-    view.innerHTML = `<div class="section-head"><div><h2>Visitas e cadastros</h2><p>Dados do <a href="${esc(conf.painelUrl)}" target="_blank" rel="noopener">Painel CIQUANTA</a>: agendamentos de visita à réplica do computador quântico (futuro hall de exposição) e cadastros de pesquisadores, estudantes, empreendedores e parceiros. Os totais públicos chegam sozinhos a cada abertura e a cada três horas. Com a conta Google conectada, o CRM também lê as planilhas e lista os agendamentos e cadastros.</p></div>
+    const pronto = g.conectado;
+    view.innerHTML = `<div class="section-head"><div><h2>Visitas e cadastros</h2></div>
       <div class="toolbar" style="margin:0"><a class="btn" href="${esc(conf.painelUrl)}" target="_blank" rel="noopener">${icon('externo', 14)} Abrir o painel</a><button class="btn primary" id="sync" ${pronto ? '' : 'disabled'}>Atualizar dados</button></div></div>
-      ${!pronto ? `<div class="callout info" style="margin-bottom:16px">Totais atualizados automaticamente pelo Painel CIQUANTA${p.painelEm ? ` (dados de ${esc(p.painelEm.replace('T', ' às '))})` : ''}. Para ver a lista de agendamentos e levar cadastros ao CRM, conecte a conta Google com a permissão "Ler as planilhas do Painel CIQUANTA" em <a href="#/config">Configurações</a>.</div>` : ''}
+      
       <div class="grid g4" style="margin-bottom:16px">
         <div class="card kpi"><span class="label">${p.fonte === 'publico' ? 'Sessões com agendamento' : 'Visitas agendadas'}</span><span class="value" data-contar="${t.visitas || 0}">${t.visitas ?? '—'}</span><span class="sub">${t.futuras ?? 0} a partir de hoje${t.canceladas ? ` · ${t.canceladas} cancelada(s) fora da conta` : ''}</span></div>
         <div class="card kpi"><span class="label">Visitantes</span><span class="value" data-contar="${t.pessoas || 0}">${t.pessoas ?? '—'}</span><span class="sub">${t.recebidos ? `${t.recebidos} já recebidos · ` : ''}pessoas nos agendamentos</span></div>
@@ -107,7 +107,7 @@ export async function render(view) {
       const l = () => { const q = norm(f.q); return mem.cadastros.filter(c => (!f.cat || c.categoria === f.cat) && (!f.consent || c.noticias) && (!q || norm([c.nome, c.instituicao, c.temas, c.cidade].join(' ')).includes(q))); };
       L.innerHTML = `<div class="toolbar"><input type="search" class="grow" id="cq" placeholder="Nome, instituição, tema" value="${esc(f.q)}"><select id="ccat">${options(cats, f.cat, { empty: 'Todas as categorias' })}</select><label class="check"><input type="checkbox" id="cons" ${f.consent ? 'checked' : ''}> Só quem aceita receber notícias</label><button class="btn primary" id="imp">Levar os filtrados ao CRM</button></div>
         <div class="table-wrap"><table><thead><tr><th>Nome</th><th>Categoria</th><th>Instituição ou empresa</th><th>Local</th><th>Temas de interesse</th><th>Notícias</th></tr></thead><tbody>${l().slice(0, 400).map(c => `<tr><td class="title">${esc(c.nome)}<div class="muted small">${esc(c.cargo)}</div></td><td><span class="badge">${esc(c.categoria)}</span></td><td>${esc(c.instituicao || '—')}</td><td class="small">${esc([c.cidade, c.uf].filter(Boolean).join('/'))}</td><td class="small">${esc(c.temas)}</td><td>${c.noticias ? '<span class="badge ok">aceita</span>' : '<span class="badge gray">não</span>'}</td></tr>`).join('') || '<tr><td colspan="6"><div class="empty">Nenhum cadastro neste filtro.</div></td></tr>'}</tbody></table></div>
-        <p class="muted small">Ao levar ao CRM, quem não aceitou receber notícias entra marcado para não receber e-mails. Telefone e documentos não são copiados.</p>`;
+        `;
       L.querySelector('#cq').addEventListener('input', debounce(e => { f.q = e.target.value; lista(); const i = L.querySelector('#cq'); i.focus(); i.setSelectionRange(i.value.length, i.value.length); }, 300));
       L.querySelector('#ccat').onchange = e => { f.cat = e.target.value; lista(); };
       L.querySelector('#cons').onchange = e => { f.consent = e.target.checked; lista(); };

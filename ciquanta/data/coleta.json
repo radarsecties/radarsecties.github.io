@@ -1,6 +1,58 @@
 {
  "execucoes": [
   {
+   "em": "2026-11-17T00:17:51.839Z",
+   "segundos": 252,
+   "etapas": [
+    {
+     "id": "painel",
+     "nome": "Painel CIQUANTA",
+     "ok": true,
+     "ignorada": false,
+     "n": 57,
+     "segundos": 4,
+     "msg": "painel: 57 cadastros (50 pessoas, 7 instituições, 12 estados), 192 visitantes previstos, 71 já recebidos"
+    },
+    {
+     "id": "sinais",
+     "nome": "Notícias e editais",
+     "ok": true,
+     "ignorada": false,
+     "n": 30,
+     "segundos": 58,
+     "msg": "sinais: 285 lidos, 30 novos, 154 guardados (46 citam organizações) · editais: 2 novos, 14 guardados · falhas: ciquanta: HTTP 429"
+    },
+    {
+     "id": "canais",
+     "nome": "Canais institucionais e CNPJ",
+     "ok": true,
+     "ignorada": false,
+     "n": 70,
+     "segundos": 160,
+     "msg": "canais: 70 sites visitados (12 com e-mail institucional, 20 com CNPJ, 11 sem resposta) · base: 13 organizações com canal, 21 com CNPJ"
+    },
+    {
+     "id": "receita",
+     "nome": "Dados da Receita Federal",
+     "ok": true,
+     "ignorada": false,
+     "n": 17,
+     "segundos": 30,
+     "msg": "receita: 17 CNPJ atualizados, 3 sem resposta · base: 18 organizações com dados cadastrais"
+    },
+    {
+     "id": "descoberta",
+     "nome": "Descoberta com IA",
+     "ok": true,
+     "ignorada": true,
+     "n": 0,
+     "segundos": 0,
+     "msg": "descoberta: sem ANTHROPIC_API_KEY, etapa ignorada"
+    }
+   ],
+   "integridade": "ok"
+  },
+  {
    "em": "2026-11-16T22:36:50.047Z",
    "segundos": 45,
    "etapas": [
@@ -54,44 +106,44 @@
   }
  ],
  "ultima": {
-  "em": "2026-11-16T22:36:50.047Z",
-  "segundos": 45,
+  "em": "2026-11-17T00:17:51.839Z",
+  "segundos": 252,
   "etapas": [
    {
     "id": "painel",
     "nome": "Painel CIQUANTA",
     "ok": true,
     "ignorada": false,
-    "n": 55,
+    "n": 57,
     "segundos": 4,
-    "msg": "painel: 55 cadastros (48 pessoas, 7 instituições, 12 estados), 192 visitantes previstos, 71 já recebidos"
+    "msg": "painel: 57 cadastros (50 pessoas, 7 instituições, 12 estados), 192 visitantes previstos, 71 já recebidos"
    },
    {
     "id": "sinais",
     "nome": "Notícias e editais",
     "ok": true,
     "ignorada": false,
-    "n": 27,
-    "segundos": 41,
-    "msg": "sinais: 308 lidos, 27 novos, 151 guardados (45 citam organizações) · editais: 2 novos, 14 guardados"
+    "n": 30,
+    "segundos": 58,
+    "msg": "sinais: 285 lidos, 30 novos, 154 guardados (46 citam organizações) · editais: 2 novos, 14 guardados · falhas: ciquanta: HTTP 429"
    },
    {
     "id": "canais",
     "nome": "Canais institucionais e CNPJ",
     "ok": true,
     "ignorada": false,
-    "n": 0,
-    "segundos": 0,
-    "msg": "canais: 0 sites visitados (0 com e-mail institucional, 0 com CNPJ, 0 sem resposta) · base: 1 organizações com canal, 1 com CNPJ"
+    "n": 70,
+    "segundos": 160,
+    "msg": "canais: 70 sites visitados (12 com e-mail institucional, 20 com CNPJ, 11 sem resposta) · base: 13 organizações com canal, 21 com CNPJ"
    },
    {
     "id": "receita",
     "nome": "Dados da Receita Federal",
     "ok": true,
     "ignorada": false,
-    "n": 0,
-    "segundos": 0,
-    "msg": "receita: 0 CNPJ atualizados, 0 sem resposta · base: 1 organizações com dados cadastrais"
+    "n": 17,
+    "segundos": 30,
+    "msg": "receita: 17 CNPJ atualizados, 3 sem resposta · base: 18 organizações com dados cadastrais"
    },
    {
     "id": "descoberta",
