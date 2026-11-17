@@ -10,10 +10,8 @@ import * as auto from '../automacao.js';
 import { loadMecanismos } from '../email.js';
 import { proximasAcoes, receitaPorFonte, pontuar, contexto } from '../score.js';
 import { icon } from '../icons.js';
-import { palavras } from '../motion.js';
 
 const DIAS = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
-const saudacao = () => { const h = new Date().getHours(); return h < 12 ? 'Bom dia' : h < 18 ? 'Boa tarde' : 'Boa noite'; };
 
 const compacto = v => v >= 1e9 ? `R$ ${(v / 1e9).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} bi` : v >= 1e6 ? `R$ ${(v / 1e6).toLocaleString('pt-BR', { maximumFractionDigits: 1 })} mi` : v >= 1e3 ? `R$ ${Math.round(v / 1e3)} mil` : money(v);
 const MES = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'];
@@ -64,15 +62,11 @@ export async function render(view) {
     const fmax = Math.max(1, ...FUNIL.map(f => s.oportunidades.filter(o => (o.etapa || 'qualificacao') === f.id).reduce((a, o) => a + (Number(o.valor) || 0), 0)));
 
     view.innerHTML = `
-    <header class="hoje">
-      <div>
-        <div class="data">${DIAS[d.getDay()]}, ${d.getDate()} de ${MESES_LONGOS[d.getMonth()]}</div>
-        <h2>${(() => { const n = acoes.length, pre = saudacao() + '.'; if (!n) return `${palavras(pre)} ${palavras('Tudo em dia por aqui.', 2)}`; const qtd = n === 1 ? 'Uma ação' : `${n} ações`; return `${palavras(pre)} <em>${palavras(qtd, 2)}</em> ${palavras(n === 1 ? 'pede atenção hoje.' : 'pedem atenção hoje.', 4)}`; })()}</h2>
-        <div class="estado-linha"><span class="${g.conectado ? 'on' : ''}">${g.conectado ? esc(g.email || 'E-mail conectado') : 'E-mail desconectado'}</span><span class="${live.ativo ? 'on' : ''}">${live.ativo ? 'Respostas ao vivo' : 'Respostas em pausa'}</span><span class="${g.conectado && conf.cadenciasAtivas && insAtivas ? 'on' : ''}">${insAtivas} em cadência</span></div>
-      </div>
-      <div class="toolbar">${g.conectado ? '' : '<a class="btn primary" href="#/config">Conectar e-mail</a>'}
-        <a class="btn" href="#/oportunidades">Nova oportunidade</a><a class="btn" href="#/campanhas">Nova campanha</a><button class="btn ghost" id="kbtn">Buscar <kbd>Ctrl K</kbd></button></div>
-    </header>
+    <div class="section-head">
+      <div><div class="kicker">${DIAS[d.getDay()]}, ${d.getDate()} de ${MESES_LONGOS[d.getMonth()]}</div><h2>Hoje</h2></div>
+      <div class="toolbar" style="margin:0">${g.conectado ? '' : '<a class="btn primary" href="#/config">Conectar e-mail</a>'}
+        <a class="btn" href="#/oportunidades">${icon('mais', 15)} Oportunidade</a><a class="btn" href="#/campanhas">${icon('campanhas', 15)} Campanha</a></div>
+    </div>
 
     <div class="regua">
       <a class="kpi" href="#/oportunidades"><span class="label">Pipeline ponderado</span><span class="value" data-contar="${Math.round(ponderado)}" data-formato="moeda">${compacto(ponderado)}</span><span class="sub">${abertas.length} oportunidade(s) em aberto</span></a>
@@ -83,7 +77,7 @@ export async function render(view) {
     </div>
 
     <div class="grid dash-a" style="margin-bottom:18px">
-      <div class="card"><h3>Próximas ações <span class="muted">ordenadas por impacto</span></h3><div class="acoes">${acoes.length ? acoes.map(a => `<a class="acao" href="${esc(a.href)}"><span class="badge ${TIPO_COR[a.tipo] || ''}">${esc(a.tipo)}</span><span class="tx"><b>${esc(a.titulo)}</b><small>${esc(a.detalhe || '')}</small></span>${icon('direita', 16)}</a>`).join('') : `<div class="empty">Nada pendente. ${s.orgs.length ? 'Cadastre contatos nas organizações de maior potencial para iniciar as cadências.' : 'Comece importando o mapeamento setorial.'}</div>`}</div></div>
+      <div class="card"><h3>Próximas ações <span class="muted">${acoes.length ? acoes.length + ' por ordem de impacto' : ''}</span></h3><div class="acoes">${acoes.length ? acoes.map(a => `<a class="acao" href="${esc(a.href)}"><span class="badge ${TIPO_COR[a.tipo] || ''}">${esc(a.tipo)}</span><span class="tx"><b>${esc(a.titulo)}</b><small>${esc(a.detalhe || '')}</small></span>${icon('direita', 16)}</a>`).join('') : `<div class="empty">Nada pendente. ${s.orgs.length ? 'Cadastre contatos nas organizações de maior potencial para iniciar as cadências.' : 'Comece importando o mapeamento setorial.'}</div>`}</div></div>
       <div class="card"><h3>Agenda <a class="small" href="#/agenda">abrir</a></h3><div class="list">${ag.length ? ag.map(e => `<div class="list-item"><div class="date-chip">${e.data.slice(8)}<small>${MES[+e.data.slice(5, 7) - 1]}</small></div><div style="min-width:0"><div class="title">${esc(e.titulo)}</div><div class="meta"><span class="badge ${e.k}">${esc(e.tipo)}</span> ${e.hora ? esc(e.hora) + ' · ' : ''}${relTime(e.data)}${e.conf ? ' · a confirmar' : ''}</div></div></div>`).join('') : '<div class="empty">Sem compromissos futuros.</div>'}</div></div>
     </div>
 
@@ -117,7 +111,6 @@ export async function render(view) {
     else s.orgs.forEach(o => { if (o.uf) ufCount[o.uf] = (ufCount[o.uf] || 0) + 1; });
     view.querySelector('#map').appendChild(mapaFluxo(ufCount, { label: modoMapa === 'painel' ? 'cadastros no Painel CIQUANTA' : 'organizações', onClick: uf => location.hash = modoMapa === 'painel' ? '#/visitas' : `#/organizacoes?uf=${uf}` }));
     view.querySelectorAll('[data-mapa]').forEach(b => b.onclick = () => { modoMapa = b.dataset.mapa; draw(); });
-    view.querySelector('#kbtn').onclick = () => window.dispatchEvent(new Event('ciq:paleta'));
     view.querySelector('#guia-x')?.addEventListener('click', () => { store.setConfig({ guiaOculto: true }); draw(); });
     const l = [...s.interacoes].sort((a, b) => (b.data || '').localeCompare(a.data || '')).slice(0, 6);
     view.querySelector('#feed').innerHTML = l.length ? l.map(i => { const o = store.get('orgs', i.orgId); return `<div class="list-item"><span class="badge ${i.tipo === 'recebido' ? 'ok' : i.tipo === 'reuniao' || i.tipo === 'visita' ? 'info' : 'gray'}">${esc(i.tipo === 'recebido' ? 'recebido' : i.tipo === 'email' ? 'enviado' : i.tipo)}</span><div style="min-width:0"><div class="title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(i.titulo)}</div><div class="meta">${o ? `<a href="#/org/${esc(o.id)}">${esc(o.nomeFantasia || o.nome)}</a> · ` : ''}${fmtDateTime(i.data)}</div></div></div>`; }).join('') : '<div class="empty">Nenhuma interação registrada.</div>';

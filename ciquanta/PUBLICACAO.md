@@ -43,7 +43,7 @@ Se a conta for do Google Workspace e a opção "Qualquer pessoa" não aparecer n
 
 O acesso tem duas camadas, ambas ligadas à conta ciquanta@secties.pb.gov.br.
 
-**Camada 1, no próprio CRM (já incluída).** Todo computador sem sessão vê só a tela **Entrar**. O código vai para a caixa do CIQUANTA, vale 10 minutos e uma única entrada; cinco tentativas erradas invalidam o código, e a ponte limita os pedidos. A sessão dura 30 dias. Em Configurações → **Acesso ao CRM** aparecem os computadores com acesso, com o botão **Encerrar** para cada um; o link **Sair**, no rodapé do menu, encerra a sessão e pode apagar os dados daquele computador (útil em máquinas compartilhadas). Sem sessão, a ponte não devolve nenhum contato, conversa, oportunidade ou arquivo.
+**Camada 1, no próprio CRM (já incluída).** Todo computador sem sessão vê só a tela **Entrar**. O código vai para a caixa do CIQUANTA, vale 10 minutos e uma única entrada; cinco tentativas erradas invalidam o código, e a ponte limita os pedidos. A sessão dura 30 dias. Em Configurações → **Acesso ao CRM** aparecem os computadores com acesso, com o botão **Encerrar** para cada um; **Sair**, no menu da conta (rodapé do menu lateral), encerra a sessão e pode apagar os dados daquele computador (útil em máquinas compartilhadas). Sem sessão, a ponte não devolve nenhum contato, conversa, oportunidade ou arquivo.
 
 Para que qualquer visitante caia na tela de entrada, publique o arquivo `data/acesso.json` com o endereço da ponte: em Configurações → Acesso ao CRM, clique em **Baixar acesso.json** e envie o arquivo para a pasta `data/` do repositório (ou peça a quem mantém o sistema). O endereço da ponte não é segredo: sozinho, ele só permite pedir um código, que chega ao e-mail do CIQUANTA.
 

@@ -77,7 +77,9 @@ async function route() {
   const grupo = GRUPO_DE[navId] || (GRUPO_DE[navId] === false ? 'Sistema' : '');
   $('#page-title').innerHTML = `${grupo ? esc(grupo) + ' / ' : ''}<b>${esc(title)}</b>`;
   document.title = `${title} · CIQUANTA CRM`;
-  $$('#nav a, .pe a').forEach(a => a.classList.toggle('active', a.dataset.route === navId));
+  $$('#nav a').forEach(a => a.classList.toggle('active', a.dataset.route === navId));
+  $$('#conta-menu [data-ir]').forEach(b => b.classList.toggle('active', b.dataset.ir === navId));
+  fecharConta();
   moverIndicador();
   $('#sidebar').classList.remove('open');
   const view = $('#view');
@@ -101,11 +103,25 @@ async function route() {
   }
 }
 
+function abrirConta() {
+  const m = $('#conta-menu'); m.hidden = false; $('#conta').setAttribute('aria-expanded', 'true');
+  requestAnimationFrame(() => m.classList.add('aberto'));
+  m.querySelector('[role=menuitem]:not([hidden])')?.focus({ preventScroll: true });
+}
+function fecharConta() {
+  const m = $('#conta-menu'); if (!m || m.hidden) return;
+  m.classList.remove('aberto'); $('#conta').setAttribute('aria-expanded', 'false');
+  setTimeout(() => { if (!m.classList.contains('aberto')) m.hidden = true; }, 180);
+}
+
 function badges() {
   const s = G.status(), m = monitor.estado();
-  const el = $('#gmail-status');
+  const el = $('#conta-estado');
   el.classList.toggle('on', s.conectado); el.classList.toggle('off', !s.conectado);
-  el.querySelector('.txt').textContent = s.conectado ? 'E-mail conectado' : 'E-mail desconectado'; el.title = s.conectado ? s.email || '' : 'Conectar o e-mail do CIQUANTA';
+  el.querySelector('span').textContent = s.conectado ? (s.email || 'E-mail conectado') : 'E-mail desconectado';
+  $('#conta').title = s.conectado ? s.email || '' : 'E-mail do CIQUANTA desconectado';
+  $('#m-sair').hidden = !G.temAcesso();
+  $('#m-tema').textContent = (document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark' ? 'Tema claro' : 'Tema escuro';
   $('#live-btn').classList.toggle('on', m.ativo);
   $('#live-btn').title = m.ativo ? `Acompanhamento ativo${m.ultimo ? ', última verificação ' + new Date(m.ultimo).toLocaleTimeString('pt-BR') : ''}` : 'Acompanhamento em tempo real desligado';
   const n = $('#nav-live'); if (n) { n.textContent = m.naoLidos; n.classList.toggle('hidden', !m.naoLidos); }
@@ -160,10 +176,18 @@ function init() {
   window.addEventListener('scroll', () => $('.topbar').classList.toggle('rolou', scrollY > 4), { passive: true });
   window.addEventListener('ciq:paleta', paleta);
   document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); paleta(); } });
-  $('#gmail-status').onclick = () => { location.hash = '#/config'; };
-  $('#pe-sair')?.classList.toggle('hidden', !G.temAcesso());
-  $('#pe-sair')?.addEventListener('click', async e => {
-    e.preventDefault();
+  // Menu da conta: abre para cima, fecha com Esc, clique fora ou ao trocar de tela
+  $('#conta').onclick = () => ($('#conta-menu').hidden ? abrirConta() : fecharConta());
+  document.addEventListener('pointerdown', e => { if (!e.target.closest('#conta, #conta-menu')) fecharConta(); });
+  $('#conta-menu').addEventListener('keydown', e => {
+    const itens = $$('#conta-menu [role=menuitem]').filter(b => !b.hidden), i = itens.indexOf(document.activeElement);
+    if (e.key === 'Escape') { fecharConta(); $('#conta').focus(); }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); itens[(i + (e.key === 'ArrowDown' ? 1 : -1) + itens.length) % itens.length]?.focus(); }
+  });
+  $$('#conta-menu [data-ir]').forEach(b => b.onclick = () => { location.hash = '#/' + b.dataset.ir; fecharConta(); });
+  $('#m-tema').onclick = () => { $('#theme-btn').click(); badges(); };
+  $('#m-sair').addEventListener('click', async () => {
+    fecharConta();
     const { modal } = await import('./util.js');
     const { el, close } = modal({ title: 'Sair do CRM', body: '<p>Este computador volta para a tela de entrada. Para entrar de novo, use o código enviado ao e-mail do CIQUANTA.</p>',
       footer: '<button class="btn" data-close>Cancelar</button><button class="btn danger" id="s-apagar">Sair e apagar os dados deste computador</button><button class="btn primary" id="s-sair">Sair</button>' });

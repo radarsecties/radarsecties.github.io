@@ -61,6 +61,8 @@ let total = 0;
 for (const [nome, vp] of [['computador', { width: 1440, height: 900 }], ['celular', { width: 390, height: 844 }]]) {
   const ctx = await b.newContext({ viewport: vp, deviceScaleFactor: SO_VERIFICAR ? 1 : 2, serviceWorkers: 'block', colorScheme: ESCURO ? 'dark' : 'light' });
   await ctx.route('https://script.google.com/**', r => r.abort());
+  // A revisão vê as telas do CRM; a tela de entrada exigida por data/acesso.json fica de fora
+  await ctx.route('**/data/acesso.json', r => r.fulfill({ status: 404, body: '' }));
   const p = await ctx.newPage(); const erros = [];
   p.on('pageerror', e => erros.push(e.message));
   await p.goto(U); await p.evaluate(() => localStorage.clear()); await p.reload();

@@ -96,7 +96,8 @@ export function toast(msg, kind = '', { acao, onAcao } = {}) {
   el.setAttribute('role', kind === 'bad' ? 'alert' : 'status');
   if (acao) { const b = document.createElement('button'); b.type = 'button'; b.textContent = acao; b.onclick = () => { el.remove(); onAcao?.(); }; el.appendChild(b); }
   $('#toasts').appendChild(el);
-  setTimeout(() => el.remove(), acao ? 9000 : kind === 'bad' ? 7000 : 3800);
+  const sair = () => { el.classList.add('saindo'); setTimeout(() => el.remove(), 260); };
+  setTimeout(sair, acao ? 9000 : kind === 'bad' ? 7000 : 3800);
 }
 
 export function modal({ title, body, footer = '', wide = false, onMount }) {
@@ -106,7 +107,7 @@ export function modal({ title, body, footer = '', wide = false, onMount }) {
   back.innerHTML = `<div class="modal ${wide ? 'wide' : ''}" role="dialog" aria-modal="true" aria-label="${esc(title)}">
     <header><h2>${esc(title)}</h2><button class="icon-btn" data-close aria-label="Fechar">✕</button></header>
     <div class="body">${body}</div>${footer ? `<footer>${footer}</footer>` : ''}</div>`;
-  const close = () => { back.remove(); document.removeEventListener('keydown', onKey); };
+  const close = () => { document.removeEventListener('keydown', onKey); if (back.classList.contains('saindo')) return; back.classList.add('saindo'); setTimeout(() => back.remove(), 200); };
   const onKey = e => { if (e.key === 'Escape') close(); };
   back.addEventListener('mousedown', e => { if (e.target === back) close(); });
   back.addEventListener('click', e => { if (e.target.closest('[data-close]')) close(); });
