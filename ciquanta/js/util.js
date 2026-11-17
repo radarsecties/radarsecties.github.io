@@ -19,7 +19,7 @@ export const MESES_LONGOS = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 
 export function parseDate(d) { if (!d) return null; if (d instanceof Date) return d; const s = String(d); return /^\d{4}-\d{2}-\d{2}$/.test(s) ? new Date(s + 'T12:00:00') : new Date(s); }
 export function fmtDate(d, opts = {}) { const x = parseDate(d); if (!x || isNaN(x)) return '—'; return x.toLocaleDateString('pt-BR', opts.long ? { day: '2-digit', month: 'long', year: 'numeric' } : { day: '2-digit', month: '2-digit', year: 'numeric' }); }
 export function fmtDateTime(d) { const x = parseDate(d); if (!x || isNaN(x)) return '—'; return x.toLocaleString('pt-BR', { day: '2-digit', month: '2-digit', year: '2-digit', hour: '2-digit', minute: '2-digit' }); }
-export function dayChip(d) { const x = parseDate(d); return x ? `<div class="date-chip">${String(x.getDate()).padStart(2, '0')}<small>${MESES[x.getMonth()]}</small></div>` : ''; }
+export function dayChip(d) { const x = parseDate(d); return x ? `<div class="date-chip">${x.getDate()}<small>${MESES[x.getMonth()]}</small></div>` : ''; }
 export const isoDay = (d = new Date()) => { const x = parseDate(d); return `${x.getFullYear()}-${String(x.getMonth() + 1).padStart(2, '0')}-${String(x.getDate()).padStart(2, '0')}`; };
 export function relTime(d) {
   const x = parseDate(d); if (!x) return '';
@@ -46,21 +46,21 @@ export const REGIAO = { AC:'Norte',AP:'Norte',AM:'Norte',PA:'Norte',RO:'Norte',R
 export const SEGMENTOS = ['Empresa', 'Startup', 'Investidor', 'Fomentador', 'Autoridade', 'Academia/ICT', 'Associação/Rede', 'Imprensa', 'Outro'];
 // Relacionamento com a organização (independente das oportunidades)
 export const RELACIONAMENTO = [
-  { id: 'mapeada', nome: 'Mapeada', cor: '#9AA3C0' },
-  { id: 'contato', nome: 'Em contato', cor: '#5B7BE3' },
-  { id: 'engajada', nome: 'Engajada', cor: '#3056D5' },
-  { id: 'parceira', nome: 'Parceira', cor: '#12805C' },
-  { id: 'pausada', nome: 'Pausada', cor: '#727892' },
+  { id: 'mapeada', nome: 'Mapeada', cor: '#C2C3BA' },
+  { id: 'contato', nome: 'Em contato', cor: '#8EA0E6' },
+  { id: 'engajada', nome: 'Engajada', cor: '#2F55D4' },
+  { id: 'parceira', nome: 'Parceira', cor: '#2B7A57' },
+  { id: 'pausada', nome: 'Pausada', cor: '#858A9A' },
 ];
 export const relNome = id => (RELACIONAMENTO.find(e => e.id === id) || RELACIONAMENTO[0]).nome;
 // Funil de oportunidades de negócio, com probabilidade padrão por etapa
 export const FUNIL = [
-  { id: 'qualificacao', nome: 'Qualificação', prob: 10, cor: '#9AA3C0' },
-  { id: 'reuniao', nome: 'Reunião técnica', prob: 25, cor: '#5B7BE3' },
-  { id: 'proposta', nome: 'Proposta técnica', prob: 45, cor: '#3056D5' },
-  { id: 'negociacao', nome: 'Negociação e instrumento jurídico', prob: 70, cor: '#172A68' },
-  { id: 'contratada', nome: 'Contratada', prob: 100, cor: '#12805C' },
-  { id: 'perdida', nome: 'Não avançou', prob: 0, cor: '#C2283F' },
+  { id: 'qualificacao', nome: 'Qualificação', prob: 10, cor: '#C2C3BA' },
+  { id: 'reuniao', nome: 'Reunião técnica', prob: 25, cor: '#8EA0E6' },
+  { id: 'proposta', nome: 'Proposta técnica', prob: 45, cor: '#2F55D4' },
+  { id: 'negociacao', nome: 'Negociação e instrumento jurídico', prob: 70, cor: 'var(--tinta)' },
+  { id: 'contratada', nome: 'Contratada', prob: 100, cor: '#2B7A57' },
+  { id: 'perdida', nome: 'Não avançou', prob: 0, cor: '#B02F46' },
 ];
 export const funilNome = id => (FUNIL.find(e => e.id === id) || FUNIL[0]).nome;
 export const MODALIDADES = [

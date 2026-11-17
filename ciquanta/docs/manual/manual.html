@@ -4,66 +4,63 @@
 <meta charset="utf-8">
 <title>CIQUANTA CRM · Manual de operação</title>
 <style>
-@font-face { font-family: 'Archivo Variable'; font-weight: 100 900; font-stretch: 62% 125%; src: url(../../assets/fonts/archivo-latin-standard-normal.woff2) format('woff2-variations'); unicode-range: U+0000-00FF, U+2000-206F, U+20AC; }
-@font-face { font-family: 'Archivo Variable'; font-weight: 100 900; font-stretch: 62% 125%; src: url(../../assets/fonts/archivo-latin-ext-standard-normal.woff2) format('woff2-variations'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
-@page { size: A4; margin: 16mm 16mm 18mm; }
+@font-face { font-family: 'Hanken Grotesk'; font-weight: 100 900; src: url(../../assets/fonts/hanken-grotesk-latin-wght-normal.woff2) format('woff2-variations'); unicode-range: U+0000-00FF, U+2000-206F, U+20AC; }
+@font-face { font-family: 'Hanken Grotesk'; font-weight: 100 900; src: url(../../assets/fonts/hanken-grotesk-latin-ext-wght-normal.woff2) format('woff2-variations'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@font-face { font-family: 'Newsreader'; font-weight: 200 800; src: url(../../assets/fonts/newsreader-latin-opsz-normal.woff2) format('woff2-variations'); unicode-range: U+0000-00FF, U+2000-206F, U+20AC; }
+@font-face { font-family: 'Newsreader'; font-weight: 200 800; src: url(../../assets/fonts/newsreader-latin-ext-opsz-normal.woff2) format('woff2-variations'); unicode-range: U+0100-02BA, U+1E00-1E9F; }
+@font-face { font-family: 'Newsreader'; font-style: italic; font-weight: 200 800; src: url(../../assets/fonts/newsreader-latin-opsz-italic.woff2) format('woff2-variations'); }
+@page { size: A4; margin: 18mm 18mm 20mm; }
 @page :first { margin: 0; }
 * { box-sizing: border-box; }
-body { margin: 0; font-family: 'Archivo Variable', Arial, sans-serif; color: #0F1A36; font-size: 10.4pt; line-height: 1.55; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-h1, h2, h3 { margin: 0; font-weight: 650; letter-spacing: -.01em; }
-h2 { font-size: 21pt; font-stretch: 112%; letter-spacing: -.02em; margin: 0 0 4mm; }
-h3 { font-size: 12.5pt; margin: 6mm 0 2mm; }
+body { margin: 0; font-family: 'Hanken Grotesk', Arial, sans-serif; color: #101934; font-size: 10.2pt; line-height: 1.6; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+h1, h2, h3 { margin: 0; letter-spacing: -.01em; }
+h2 { font-family: 'Newsreader', Georgia, serif; font-size: 27pt; font-weight: 400; line-height: 1.08; letter-spacing: -.02em; margin: 0 0 5mm; }
+h3 { font-size: 11pt; font-weight: 650; margin: 7mm 0 2mm; padding-top: 2.5mm; border-top: 1px solid #E2E2DA; }
 p { margin: 0 0 3mm; }
-a { color: #3056D5; }
-.capa { height: 297mm; padding: 26mm 22mm; color: #fff; position: relative; overflow: hidden; page-break-after: always;
-  background: radial-gradient(120% 90% at 100% 0%, #2B4CC8 0%, transparent 55%), radial-gradient(80% 60% at 0% 100%, #11306E 0%, transparent 60%), linear-gradient(160deg, #0F1A36, #0B1430 70%); display: flex; flex-direction: column; }
-.capa img.logo { width: 70mm; }
-.capa .crm { display: inline-block; margin-left: 4mm; font-size: 9pt; font-weight: 700; letter-spacing: .16em; padding: 1.2mm 2.6mm; border-radius: 2mm; background: rgba(91,124,250,.45); border: 1px solid rgba(255,255,255,.2); vertical-align: middle; }
-.capa h1 { font-size: 40pt; font-stretch: 112%; letter-spacing: -.02em; line-height: 1.05; margin-top: auto; }
-.capa .sub { font-size: 13pt; color: rgba(255,255,255,.75); margin-top: 6mm; max-width: 130mm; }
-.capa .rodape { margin-top: 18mm; display: flex; justify-content: space-between; align-items: flex-end; font-size: 9pt; color: rgba(255,255,255,.6); }
-.capa .rodape img { width: 60mm; opacity: .8; }
-.capa svg { position: absolute; right: -60mm; top: 20mm; width: 200mm; opacity: .9; }
+a { color: #2F55D4; }
+.capa { height: 297mm; padding: 28mm 24mm 24mm; background: #F7F7F4; position: relative; page-break-after: always; display: flex; flex-direction: column; }
+.capa .marca { display: flex; align-items: center; gap: 4mm; }
+.capa img.logo { width: 58mm; }
+.capa .crm { font-size: 8.5pt; font-weight: 600; letter-spacing: .2em; color: #858A9A; padding-left: 4mm; border-left: 1px solid #C9C9BF; }
+.capa h1 { font-family: 'Newsreader', Georgia, serif; font-weight: 350; font-size: 64pt; line-height: .98; letter-spacing: -.03em; margin-top: auto; }
+.capa h1 em { color: #2F55D4; font-weight: 400; }
+.capa .sub { font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 14pt; color: #4B5470; margin-top: 7mm; max-width: 135mm; line-height: 1.4; }
+.capa .rodape { margin-top: 22mm; padding-top: 4mm; border-top: 1px solid #101934; display: flex; justify-content: space-between; font-size: 8.5pt; color: #858A9A; }
 .sec { page-break-before: always; }
-.k { font-size: 8.5pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #3056D5; margin-bottom: 2mm; }
-.lead { font-size: 11.5pt; color: #3D4A6B; margin-bottom: 5mm; }
-figure { margin: 4mm auto 5mm; width: 88%; break-inside: avoid; }
+.k { font-family: 'Newsreader', Georgia, serif; font-style: italic; font-size: 13pt; color: #4B5470; margin-bottom: 1.5mm; }
+.lead { font-family: 'Newsreader', Georgia, serif; font-size: 13pt; line-height: 1.45; color: #2B3350; margin-bottom: 6mm; }
+figure { margin: 4mm 0 6mm; break-inside: avoid; }
 h3 { break-after: avoid; }
 table, .caixa, ol.passos > li { break-inside: avoid; }
-figure img { width: 100%; border-radius: 3mm; box-shadow: 0 1.5mm 6mm rgba(15,26,54,.14); border: 1px solid #E7EAF2; display: block; }
-figcaption { font-size: 8.5pt; color: #5D6884; margin-top: 2mm; }
-ol.passos { counter-reset: p; list-style: none; padding: 0; margin: 0 0 4mm; display: grid; gap: 2.2mm; }
+figure img { width: 100%; border-radius: 1.5mm; border: 1px solid #E2E2DA; display: block; }
+figcaption { font-size: 8.5pt; color: #858A9A; margin-top: 2mm; }
+ol.passos { counter-reset: p; list-style: none; padding: 0; margin: 0 0 4mm; display: grid; gap: 2.4mm; }
 ol.passos > li { counter-increment: p; padding-left: 10mm; position: relative; }
-ol.passos > li::before { content: counter(p, decimal-leading-zero); position: absolute; left: 0; top: .2mm; font-weight: 700; font-size: 9pt; color: #3056D5; letter-spacing: .04em; }
-ul { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1mm; }
-.caixa { border-radius: 3mm; padding: 3.5mm 4.5mm; background: #EEF2FB; margin: 3mm 0 4mm; }
-.caixa.alerta { background: #FBEEDB; }
-.caixa b:first-child { display: block; margin-bottom: 1mm; }
-.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
-table { width: 100%; border-collapse: collapse; margin: 2mm 0 5mm; font-size: 9.6pt; }
-th, td { text-align: left; padding: 2mm 2.5mm; border-bottom: 1px solid #E7EAF2; vertical-align: top; }
-th { font-size: 8pt; letter-spacing: .06em; text-transform: uppercase; color: #8A93AB; font-weight: 600; }
-kbd { font: 8.5pt ui-monospace, Menlo, monospace; border: 1px solid #D5DBE8; border-bottom-width: 2px; border-radius: 1.2mm; padding: 0 1.2mm; background: #fff; }
-code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 1px solid #E7EAF2; border-radius: 1mm; padding: 0 1mm; }
-.sumario { columns: 2; column-gap: 10mm; padding: 0; list-style: none; counter-reset: s; }
-.sumario li { counter-increment: s; padding: 2mm 0 2mm 9mm; border-bottom: 1px solid #E7EAF2; position: relative; break-inside: avoid; }
-.sumario li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; color: #3056D5; font-weight: 700; font-size: 9pt; top: 2.3mm; }
-.sumario small { display: block; color: #5D6884; font-size: 8.8pt; }
-.mini { font-size: 9pt; color: #5D6884; }
+ol.passos > li::before { content: counter(p, decimal-leading-zero); position: absolute; left: 0; top: -.6mm; font-family: 'Newsreader', Georgia, serif; font-size: 12pt; color: #858A9A; }
+ul { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1.2mm; }
+.caixa { border-left: 2px solid #2F55D4; padding: .5mm 0 .5mm 4.5mm; margin: 4mm 0 5mm; color: #2B3350; }
+.caixa.alerta { border-left-color: #9C620F; }
+.caixa b:first-child { display: block; margin-bottom: 1mm; color: #101934; }
+.grade { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
+table { width: 100%; border-collapse: collapse; margin: 2mm 0 5mm; font-size: 9.4pt; border-top: 1px solid #101934; }
+th, td { text-align: left; padding: 2.2mm 3mm 2.2mm 0; border-bottom: 1px solid #E2E2DA; vertical-align: top; }
+th { font-size: 8.5pt; color: #858A9A; font-weight: 500; }
+kbd { font: 8.5pt ui-monospace, Menlo, monospace; border: 1px solid #C9C9BF; border-radius: 1mm; padding: 0 1.2mm; color: #4B5470; }
+code { font: 8.8pt ui-monospace, Menlo, monospace; background: #EEEEE8; border-radius: 1mm; padding: 0 1mm; }
+.sumario { columns: 2; column-gap: 12mm; padding: 0; list-style: none; counter-reset: s; border-top: 1px solid #101934; }
+.sumario li { counter-increment: s; padding: 2.4mm 0 2.4mm 10mm; border-bottom: 1px solid #E2E2DA; position: relative; break-inside: avoid; }
+.sumario li::before { content: counter(s, decimal-leading-zero); position: absolute; left: 0; font-family: 'Newsreader', Georgia, serif; color: #858A9A; font-size: 11pt; top: 2mm; }
+.sumario small { display: block; color: #858A9A; font-size: 8.8pt; }
+.mini { font-size: 8.8pt; color: #858A9A; }
 </style>
 </head>
 <body>
 
 <section class="capa">
-  <svg viewBox="0 0 420 420" aria-hidden="true"><defs><radialGradient id="n" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#9FB4FF" stop-opacity=".9"/><stop offset=".45" stop-color="#5B7CFA" stop-opacity=".35"/><stop offset="1" stop-color="#5B7CFA" stop-opacity="0"/></radialGradient></defs>
-    <circle cx="210" cy="210" r="80" fill="url(#n)"/><ellipse cx="210" cy="210" rx="190" ry="72" fill="none" stroke="rgba(143,165,236,.7)" stroke-width="1.2"/><circle cx="400" cy="210" r="5" fill="#2BB6D9"/>
-    <ellipse cx="210" cy="210" rx="72" ry="190" fill="none" stroke="rgba(143,165,236,.45)"/><circle cx="210" cy="20" r="4" fill="#9FB4FF"/>
-    <ellipse cx="210" cy="210" rx="160" ry="160" fill="none" stroke="rgba(143,165,236,.25)" stroke-dasharray="2 8"/><ellipse cx="210" cy="210" rx="120" ry="44" transform="rotate(35 210 210)" fill="none" stroke="rgba(43,182,217,.55)"/>
-    <circle cx="210" cy="210" r="10" fill="#fff"/></svg>
-  <div><img class="logo" src="../../assets/logo-branco.png" alt="CIQUANTA"><span class="crm">CRM</span></div>
-  <h1>Manual<br>de operação</h1>
+  <div class="marca"><img class="logo" src="../../assets/logo-marinho.png" alt="CIQUANTA"><span class="crm">CRM</span></div>
+  <h1>Manual<br>de <em>operação</em></h1>
   <p class="sub">Relações institucionais, captação de recursos e comunicação do Centro Internacional de Computação e Tecnologias Quânticas do Estado da Paraíba.</p>
-  <div class="rodape"><span>Versão de novembro de 2026</span><img src="../../assets/secties-govpb-branco.png" alt="SECTIES, Governo da Paraíba"></div>
+  <div class="rodape"><span>Versão de novembro de 2026</span><span>ciquanta@secties.pb.gov.br</span></div>
 </section>
 
 <section>
@@ -97,8 +94,8 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
     <tr><td><b>Relacionamento</b></td><td>Organizações (471 mapeadas), contatos, oportunidades de negócio, programa de parceiros e mapa da rede.</td></tr>
     <tr><td><b>Captação</b></td><td>Metas, frentes de financiamento, editais, leis de incentivo e simulador.</td></tr>
     <tr><td><b>Comunicação</b></td><td>Campanhas de e-mail, cadências automáticas, modelos, apresentações e materiais.</td></tr>
-    <tr><td><b>Inteligência</b></td><td>Notícias do mercado, busca de empresas e contatos, setores e visitas à réplica.</td></tr>
-    <tr><td><b>Automação e Configurações</b></td><td>Ícones no rodapé do menu: rotinas automáticas, conexão de e-mail, remetente e cópias.</td></tr></table>
+    <tr><td><b>Inteligência</b></td><td>Notícias do mercado, pessoas de P&amp;D das organizações, busca de empresas e contatos, setores e visitas à réplica.</td></tr>
+    <tr><td><b>Automação e Configurações</b></td><td>Links no rodapé do menu: rotinas automáticas, conexão de e-mail, remetente e cópias.</td></tr></table>
   <h3>Onde ficam os dados</h3>
   <p>Os dados do CRM ficam no navegador de cada computador e, com a <b>base compartilhada</b> ligada, num arquivo da pasta <i>CIQUANTA CRM</i> do Google Drive da conta ciquanta@. Assim todos os computadores trabalham sobre a mesma base. O site publicado guarda só o programa e as bases públicas (organizações, notícias, editais); nenhum contato ou conversa fica nele.</p>
 </section>
@@ -136,14 +133,15 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
 <section class="sec">
   <div class="k">03 · A rotina do dia</div>
   <h2>Hoje, caixa de entrada e agenda</h2>
-  <p><b>Hoje</b> é a tela de abertura. O cabeçalho diz quantas ações pedem atenção; abaixo vêm os indicadores (pipeline ponderado, contratado contra a meta, organizações em relacionamento, taxa de resposta e visitantes da réplica), as <b>próximas ações</b> ordenadas por impacto e a agenda unificada. Clique em qualquer indicador ou ação para ir direto ao ponto.</p>
+  <p><b>Hoje</b> é a tela de abertura. A frase do topo diz quantas ações pedem atenção, e logo abaixo aparecem o estado do e-mail, das respostas ao vivo e das cadências; abaixo vêm os indicadores (pipeline ponderado, contratado contra a meta, organizações em relacionamento, taxa de resposta e visitantes da réplica), as <b>próximas ações</b> ordenadas por impacto e a agenda unificada. Clique em qualquer indicador ou ação para ir direto ao ponto.</p>
   <table><tr><th>Ação sugerida</th><th>O que fazer</th></tr>
     <tr><td>Responder</td><td>Há mensagens recebidas sem leitura. Abra a caixa de entrada.</td></tr>
     <tr><td>Proposta</td><td>Oportunidade em proposta ou negociação sem documento. Gere a proposta em PDF na ficha.</td></tr>
     <tr><td>Atrasado / Retomar</td><td>Próximo passo vencido ou oportunidade parada há mais de 14 dias.</td></tr>
     <tr><td>Edital</td><td>Chamada acompanhada com prazo em menos de três semanas.</td></tr>
     <tr><td>Cadência</td><td>Organização de alto potencial com contato e sem abordagem.</td></tr>
-    <tr><td>Contato</td><td>Organização de alto potencial ainda sem e-mail cadastrado.</td></tr></table>
+    <tr><td>Contato</td><td>Organização de alto potencial ainda sem e-mail cadastrado.</td></tr>
+    <tr><td>Pesquisa</td><td>Organização de alto potencial com pessoas publicando sobre computação quântica que ainda não estão nos contatos. Abra a aba Pessoas de P&amp;D da ficha.</td></tr></table>
   <p><b>Caixa de entrada</b> mostra, quase em tempo real, as mensagens trocadas com organizações do CRM. Cada resposta encerra a cadência daquele contato, muda o relacionamento para “engajada” e fica no histórico. Quem responde de um domínio mapeado vira contato sozinho.</p>
   <p><b>Agenda</b> junta marcos do CIQUANTA, eventos do setor, prazos de editais, visitas à réplica e os compromissos do Google Agenda da conta. Em um evento, o botão <b>Convidar público</b> (eventos do CIQUANTA) ou <b>Marcar encontros</b> (eventos externos) cria uma campanha já com o público sugerido.</p>
   <figure><img src="agenda.jpg" alt="Agenda"><figcaption>Agenda: os itens marcados como “a confirmar” precisam de checagem na fonte oficial.</figcaption></figure>
@@ -153,12 +151,13 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
   <div class="k">04 · Relacionamento</div>
   <h2>Organizações, contatos e oportunidades</h2>
   <figure><img src="organizacoes.jpg" alt="Organizações"><figcaption>Organizações ordenadas por potencial. Selecione várias para mudar o relacionamento, inscrever em cadência ou montar uma campanha.</figcaption></figure>
-  <p><b>Potencial</b> é uma nota de 0 a 100 com critérios visíveis (passe o mouse sobre a barra): atuação quântica, prioridade, obrigação de PD&amp;I, setor estratégico, Nordeste, contato com e-mail, respostas, relacionamento, oportunidade aberta e notícias recentes.</p>
+  <p><b>Potencial</b> é uma nota de 0 a 100 com critérios visíveis (passe o mouse sobre a barra): atuação quântica, prioridade, obrigação de PD&amp;I, setor estratégico, Nordeste, contato com e-mail, respostas, relacionamento, oportunidade aberta, notícias recentes e pesquisadores publicando sobre computação quântica.</p>
   <h3>Ficha da organização</h3>
   <figure><img src="ficha.jpg" alt="Ficha da organização"><figcaption>Ficha: dados da Receita Federal chegam sozinhos pela coleta diária.</figcaption></figure>
   <ul>
     <li><b>Visão geral</b>: atuação em P&amp;D e computação quântica, fontes, mecanismos, dados da Receita e notícias que citam a organização.</li>
     <li><b>Contatos, Oportunidades, Histórico</b>: tudo o que foi registrado, com e-mail rápido e proposta em PDF.</li>
+    <li><b>Pessoas de P&amp;D</b>: quem publica pela organização, com temas, trabalho de destaque e, quando públicos, cargo e e-mail profissional; e lideranças de inovação citadas em fontes públicas. <b>Adicionar</b> leva a pessoa aos contatos.</li>
     <li><b>E-mails, arquivos e agenda</b>: conversas do Gmail, arquivos do Drive e reuniões ligados à organização.</li>
     <li><b>Encontrar contatos</b>: buscas prontas para localizar a pessoa responsável.</li>
   </ul>
@@ -221,9 +220,10 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
     <tr><td>Notícias e editais</td><td>Notícias sobre computação quântica, P&amp;D e fomento, ligadas às organizações citadas, e chamadas abertas.</td></tr>
     <tr><td>Contatos de diretorias</td><td>Lê as páginas de diretoria, governança, estrutura, contato e imprensa dos sites oficiais e guarda os e-mails de presidência, gabinete, reitoria, diretorias, relações institucionais, inovação, investidores, imprensa e contato.</td></tr>
     <tr><td>Receita Federal</td><td>Situação cadastral, atividade, porte, capital e e-mail do cadastro.</td></tr>
+    <tr><td>Pessoas de P&amp;D</td><td>Na OpenAlex, quem publica pela organização nos últimos seis anos, com temas e trabalhos; no ORCID, o cargo atual e o e-mail profissional, só quando o próprio pesquisador o tornou público e o domínio é o da organização.</td></tr>
     <tr><td>Descoberta com IA</td><td>Com a chave da Anthropic, o Claude lê as notícias e sugere novas organizações e oportunidades.</td></tr>
-    <tr><td>Diretorias na web com IA</td><td>O Claude busca na web os e-mails de diretorias publicados fora da página inicial. Cada e-mail só entra depois que o CRM abre a página indicada e confirma que ele está escrito lá, no domínio da organização.</td></tr></table>
-  <div class="caixa"><b>Regra dos contatos automáticos</b>Só entram caixas de setores (diretoria@, gabinete@, inovacao@, nit@ e similares) publicadas pela própria organização. E-mails pessoais, como nome.sobrenome@, são descartados, assim como ouvidoria, LGPD, RH e vendas. Todos os envios têm descadastro.</div>
+    <tr><td>Diretorias na web com IA</td><td>O Claude busca na web os e-mails de diretorias publicados fora da página inicial. Cada e-mail só entra depois que o CRM abre a página indicada e confirma que ele está escrito lá, no domínio da organização. Também traz as lideranças de P&amp;D e inovação citadas pelo nome (só nome, cargo e fonte).</td></tr></table>
+  <div class="caixa"><b>Regra dos contatos automáticos</b>Só entram caixas de setores (diretoria@, gabinete@, inovacao@, nit@ e similares) publicadas pela própria organização. E-mails pessoais, como nome.sobrenome@, são descartados, assim como ouvidoria, LGPD, RH e vendas. De pesquisadores, só entra o e-mail profissional que a própria pessoa tornou público no ORCID, e só quando alguém da equipe clica em Adicionar. Todos os envios têm descadastro.</div>
   <h3>Rotinas do aplicativo</h3>
   <p>Ao abrir o CRM e a cada três horas, as rotinas levam ao CRM as organizações novas, os contatos de diretorias, os dados da Receita e os totais do Painel CIQUANTA. Cada rotina pode ser ligada ou desligada na Central de automação.</p>
   <h3>Piloto automático de abordagem</h3>
@@ -232,11 +232,14 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
 
 <section class="sec">
   <div class="k">09 · Inteligência</div>
-  <h2>Sinais, busca ativa, setores e visitas</h2>
+  <h2>Sinais, pessoas de P&amp;D, setores e visitas</h2>
   <figure><img src="sinais.jpg" alt="Sinais do mercado"><figcaption>Sinais do mercado: notícias por tema, com as organizações do CRM citadas.</figcaption></figure>
+  <h3>Pessoas de P&amp;D</h3>
+  <p>Em <b>Busca ativa → Pessoas de P&amp;D</b> estão os pesquisadores e as lideranças de inovação de todas as organizações, para ir além dos e-mails institucionais. Filtre por computação quântica, por setor ou por quem tem e-mail profissional público; abra o perfil (ORCID ou OpenAlex), procure a pessoa no LinkedIn ou leve-a aos contatos com <b>Adicionar</b>. O botão <b>Adicionar os que têm e-mail</b> leva de uma vez as pessoas filtradas com e-mail público.</p>
+  <figure><img src="pesquisa.jpg" alt="Pessoas de P&amp;D"><figcaption>Pessoas de P&amp;D: nomes e trabalhos ilustrativos.</figcaption></figure>
   <ul>
     <li><b>Sinais</b>: notícias coletadas duas vezes por dia. Organizações citadas nos últimos 30 dias ganham pontos de potencial. As oportunidades identificadas com IA aparecem no topo; confirme antes de agir.</li>
-    <li><b>Busca ativa</b>: mapeamento de referência, consulta e lote de CNPJ, buscas prontas e descoberta de contatos nas conversas do Gmail.</li>
+    <li><b>Busca ativa</b>: pessoas de P&amp;D, mapeamento de referência, consulta e lote de CNPJ, buscas prontas e descoberta de contatos nas conversas do Gmail.</li>
     <li><b>Setores</b>: 22 setores, dez com agenda de pesquisa aplicada e apresentação própria.</li>
     <li><b>Visitas</b>: totais do Painel CIQUANTA sem login; com o e-mail conectado, a lista de agendamentos e cadastros, para levar ao CRM quem aceitou receber notícias.</li>
   </ul>
@@ -289,6 +292,8 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #F4F6FB; border: 
     <li><b>Site</b>: repositório <code>radarsecties/ciquanta-crm</code> no GitHub, publicado pelo GitHub Pages (Settings → Pages → branch <code>main</code>). Cada mudança enviada à branch principal entra no ar em minutos.</li>
     <li><b>Coleta diária</b>: arquivo <code>.github/workflows/coleta.yml</code>. Em Settings → Actions → General, a permissão de gravação precisa estar ligada.</li>
     <li><b>IA</b>: segredo <code>ANTHROPIC_API_KEY</code> em Settings → Secrets and variables → Actions. Opcionalmente, a variável <code>CIQUANTA_MODELO</code> escolhe o modelo e <code>CIQUANTA_LOTE_IA</code> quantas organizações pesquisar por dia.</li>
+    <li><b>Pessoas de P&amp;D</b>: funciona sem chave. O segredo opcional <code>OPENALEX_API_KEY</code> amplia a cota na OpenAlex, e a variável <code>CIQUANTA_LOTE_PESQUISA</code> define quantas organizações pesquisar por execução (padrão 45). Para rodar só uma etapa, use Run workflow e informe, por exemplo, <code>pesquisadores</code>.</li>
+    <li><b>Design</b>: as regras visuais estão em <code>.claude/skills/design-ciquanta/SKILL.md</code>; <code>node tools/design/revisar.mjs</code> captura todas as telas e aponta desvios.</li>
     <li><b>Ponte de e-mail</b>: código em <code>ponte/ponte.gs</code>. Quando o repositório trouxer uma versão nova, copie e publique de novo no Apps Script.</li>
     <li><b>Bases de referência</b>: arquivos em <code>data/</code>. Antes de publicar alterações manuais, rode <code>node tools/validar-dados.mjs</code>.</li>
   </ul>

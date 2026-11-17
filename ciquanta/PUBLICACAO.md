@@ -55,7 +55,8 @@ A coleta diária roda no GitHub Actions do repositório publicado, sem servidor 
 3. Em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions**: a coleta grava as bases atualizadas no próprio repositório.
 4. Rode a primeira vez em **Actions → CIQUANTA · Coleta diária → Run workflow**. Depois disso ela roda sozinha às 6h17 todos os dias e às 15h47 nos dias úteis. O GitHub só agenda fluxos que estão na branch principal.
 5. (Opcional) Etapas com IA (descoberta de oportunidades nas notícias e busca de e-mails de diretorias na web): em **Settings → Secrets and variables → Actions**, crie o segredo `ANTHROPIC_API_KEY` com uma chave da [Anthropic](https://console.anthropic.com/). Sem ela, essas etapas são apenas ignoradas. A variável `CIQUANTA_LOTE_IA` define quantas organizações a busca de diretorias pesquisa por execução (padrão 12). O modelo padrão é o Claude Opus 5.5; para usar outro, crie a variável `CIQUANTA_MODELO` (por exemplo `claude-fable-5-2`).
-6. No sistema, abra **Central de automação** e confira o resultado da coleta. Para que a abordagem também seja automática, preencha o remetente em Configurações, ligue as cadências e o **piloto automático**, e deixe um computador da equipe com o sistema aberto no horário comercial.
+6. (Opcional) Pessoas de P&D: a etapa funciona sem chave. Para uma cota maior na OpenAlex, crie o segredo `OPENALEX_API_KEY` (gratuito em openalex.org). A variável `CIQUANTA_LOTE_PESQUISA` define quantas organizações são pesquisadas por execução (padrão 45). Para rodar uma etapa isolada, use **Run workflow** e informe, por exemplo, `pesquisadores`.
+7. No sistema, abra **Central de automação** e confira o resultado da coleta. Para que a abordagem também seja automática, preencha o remetente em Configurações, ligue as cadências e o **piloto automático**, e deixe um computador da equipe com o sistema aberto no horário comercial.
 
 ## 5. Confira depois de publicar
 

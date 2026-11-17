@@ -1,6 +1,6 @@
 import * as store from '../store.js';
 import { esc, money, norm, debounce, options, FUNIL, MODALIDADES, modNome, fmtDate, toCSV, download, toast } from '../util.js';
-import { openOportunidadeForm } from '../components.js';
+import { openOportunidadeForm, funilBadge } from '../components.js';
 import { loadMecanismos, mecCurto } from '../email.js';
 import { chart, PALETTE } from '../charts.js';
 import { icon } from '../icons.js';
@@ -48,9 +48,9 @@ export async function render(view, { params }) {
   const funil = (C, l) => {
     C.innerHTML = `<div class="kanban" id="kb">${FUNIL.map(e => {
       const col = l.filter(o => (o.etapa || 'qualificacao') === e.id);
-      return `<section class="kcol" data-et="${e.id}"><header><div class="h"><span><span class="dot-i" style="background:${e.cor};margin-right:6px"></span>${esc(e.nome)}</span><span class="badge gray">${col.length}</span></div>
+      return `<section class="kcol" data-et="${e.id}"><header><div class="h"><span><span class="dot-i" style="background:${e.cor};margin-right:6px"></span>${esc(e.nome)}</span><span class="muted">${col.length}</span></div>
         <div class="s">${money(col.reduce((a, o) => a + (Number(o.valor) || 0), 0))} · ${e.prob}%</div></header>
-        <div class="kbody">${col.map(o => { const org = store.get('orgs', o.orgId); return `<article class="kcard" draggable="true" data-id="${esc(o.id)}" style="border-left-color:${e.cor}">
+        <div class="kbody">${col.map(o => { const org = store.get('orgs', o.orgId); return `<article class="kcard" draggable="true" data-id="${esc(o.id)}">
           <div class="t">${esc(o.titulo)}</div><div class="s">${esc(org?.nomeFantasia || org?.nome || '—')} · ${esc(store.setorCurto(o.setor))}</div>
           <div class="v">${money(o.valor)} <span class="s">· ${o.probabilidade ?? e.prob}%</span></div>
           ${o.proximoEm ? `<div class="s">Próximo passo: ${fmtDate(o.proximoEm)}</div>` : ''}</article>`; }).join('')}</div></section>`;
@@ -76,7 +76,7 @@ export async function render(view, { params }) {
     const rows = [...l].sort((a, b) => store.pipelineValor(b) - store.pipelineValor(a));
     C.innerHTML = `<div class="toolbar"><button class="btn sm" id="exp">Exportar CSV</button></div><div class="table-wrap"><table><thead><tr><th>Oportunidade</th><th>Organização</th><th>Setor</th><th>Modalidade</th><th>Mecanismo</th><th>Etapa</th><th class="num">Valor</th><th class="num">Prob.</th><th class="num">Ponderado</th><th>Previsão</th><th></th></tr></thead><tbody>
       ${rows.map(o => { const org = store.get('orgs', o.orgId); const et = FUNIL.find(x => x.id === o.etapa) || FUNIL[0]; return `<tr class="row-link" data-id="${esc(o.id)}"><td class="title">${esc(o.titulo)}</td><td>${org ? `<a href="#/org/${esc(org.id)}">${esc(org.nomeFantasia || org.nome)}</a>` : '—'}</td><td>${esc(store.setorCurto(o.setor))}</td><td class="small">${esc(modNome(o.modalidade))}</td><td class="small">${o.mecanismo ? esc(mecCurto(o.mecanismo)) : '—'}</td>
-        <td><span class="badge gray"><span class="dot-i" style="background:${et.cor}"></span>${esc(et.nome)}</span></td><td class="num">${money(o.valor)}</td><td class="num">${o.probabilidade ?? 0}%</td><td class="num title">${money(store.pipelineValor(o))}</td><td class="small">${o.previsao ? fmtDate(o.previsao) : '—'}</td>
+        <td>${funilBadge(o.etapa)}</td><td class="num">${money(o.valor)}</td><td class="num">${o.probabilidade ?? 0}%</td><td class="num title">${money(store.pipelineValor(o))}</td><td class="small">${o.previsao ? fmtDate(o.previsao) : '—'}</td>
         <td><button class="btn sm ghost danger" data-del="${esc(o.id)}" aria-label="Excluir">${icon('x', 14)}</button></td></tr>`; }).join('')}</tbody></table></div>`;
     C.querySelector('tbody').onclick = async e => {
       const d = e.target.closest('[data-del]');

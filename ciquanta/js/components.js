@@ -7,10 +7,11 @@ import { loadMecanismos } from './email.js';
 
 export const AREAS = ['P&D e inovação', 'Diretoria executiva', 'Relações governamentais e institucionais', 'Gabinete', 'Tecnologia e engenharia', 'Jurídico e tributário', 'Comunicação', 'Pesquisa acadêmica', 'Outra'];
 
-export const segBadge = s => `<span class="badge ${s === 'Empresa' || s === 'Startup' ? '' : s === 'Fomentador' ? 'ok' : s === 'Autoridade' ? 'marinho' : s === 'Academia/ICT' ? 'info' : 'gray'}">${esc(s || '—')}</span>`;
-export const relBadge = id => { const e = RELACIONAMENTO.find(x => x.id === id) || RELACIONAMENTO[0]; return `<span class="badge gray"><span class="dot-i" style="background:${e.cor}"></span>${esc(e.nome)}</span>`; };
-export const funilBadge = id => { const e = FUNIL.find(x => x.id === id) || FUNIL[0]; return `<span class="badge gray"><span class="dot-i" style="background:${e.cor}"></span>${esc(e.nome)}</span>`; };
-export const evBadge = ev => { const [l, k] = EVIDENCIA[ev] || EVIDENCIA.potencial; return `<span class="badge ${k}" title="${esc(l)}">${esc(l)}</span>`; };
+export const segBadge = s => `<span class="muted">${esc(s || '—')}</span>`;
+export const relBadge = id => { const e = RELACIONAMENTO.find(x => x.id === id) || RELACIONAMENTO[0]; return `<span class="marca" style="--c:${e.cor}"><i></i>${esc(e.nome)}</span>`; };
+export const funilBadge = id => { const e = FUNIL.find(x => x.id === id) || FUNIL[0]; return `<span class="marca" style="--c:${e.cor}"><i></i>${esc(e.nome)}</span>`; };
+const NIVEL = { confirmada: [3, 'Confirmada'], indicios: [2, 'Indícios'], potencial: [1, 'Compatível'] };
+export const evBadge = ev => { const [l] = EVIDENCIA[ev] || EVIDENCIA.potencial, [n, curto] = NIVEL[ev] || NIVEL.potencial; return `<span class="nivel n${n}" title="${esc(l)}"><span class="tr" aria-hidden="true"><i></i><i></i><i></i></span>${esc(curto)}</span>`; };
 const setorOpts = sel => options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), sel, { empty: 'Selecione…' });
 
 export async function mecCheckboxes(selected = []) {

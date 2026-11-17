@@ -1,21 +1,21 @@
 // Gráficos (Chart.js) com cores do CIQUANTA e suporte a tema claro/escuro
-export const PALETTE = ['#3056D5', '#14224A', '#C8232C', '#7F97E8', '#12805C', '#9AA3C0', '#0B7A99', '#C9D3F3', '#5B6680', '#F0A3A7'];
+export const PALETTE = ['#2F55D4', '#101934', '#8EA0E6', '#2B7A57', '#C2C3BA', '#2C6C97', '#9C620F', '#4B5470', '#D6DCF4', '#B02F46'];
 
 function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
 
 export function chart(canvas, config) {
   if (!window.Chart) { canvas.parentElement.innerHTML = '<div class="empty">Gráficos indisponíveis (sem conexão com a biblioteca).</div>'; return { destroy() {} }; }
   const text = css('--text-2'), grid = css('--line');
-  Chart.defaults.font.family = "Arial, 'Helvetica Neue', Helvetica, sans-serif";
+  Chart.defaults.font.family = "'Hanken Grotesk', 'Helvetica Neue', Arial, sans-serif"; Chart.defaults.font.size = 12;
   Chart.defaults.color = text;
   const base = {
     responsive: true, maintainAspectRatio: false,
     animation: matchMedia('(prefers-reduced-motion: reduce)').matches ? false : { duration: 900, easing: 'easeOutQuart', delay: c => c.type === 'data' && c.mode === 'default' ? c.dataIndex * 35 : 0 },
-    plugins: { legend: { labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, color: text } }, tooltip: { backgroundColor: '#14224A', padding: 10, cornerRadius: 8 } },
+    plugins: { legend: { labels: { boxWidth: 10, boxHeight: 10, usePointStyle: true, color: text } }, tooltip: { backgroundColor: css('--tinta'), titleColor: css('--papel'), bodyColor: css('--papel'), padding: 10, cornerRadius: 6, displayColors: false } },
   };
   const isCart = !['doughnut', 'pie', 'polarArea', 'radar'].includes(config.type);
   if (isCart) base.scales = {
-    x: { grid: { color: grid, drawTicks: false }, border: { display: false }, ticks: { color: text } },
+    x: { grid: { display: false }, border: { color: css('--line-strong') }, ticks: { color: text } },
     y: { grid: { color: grid, drawTicks: false }, border: { display: false }, ticks: { color: text, precision: 0 }, beginAtZero: true },
   };
   const merged = { ...config, options: deepMerge(base, config.options || {}) };

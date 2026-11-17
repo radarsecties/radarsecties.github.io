@@ -11,8 +11,10 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/icone-192.png">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0B1430">
-<link rel="preload" href="assets/fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D1120" media="(prefers-color-scheme: dark)">
+<link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/deck.css">
 <script src="js/tema.js"></script>
@@ -20,14 +22,13 @@
 <body>
 <div class="app">
   <aside class="sidebar" id="sidebar">
-    <canvas id="campo" aria-hidden="true"></canvas>
     <a class="brand" href="#/painel" aria-label="CIQUANTA, início">
-      <img src="assets/logo-branco.png" alt="CIQUANTA" width="138" height="14"><span class="crm">CRM</span>
+      <img class="claro" src="assets/logo-marinho.png" alt="CIQUANTA" width="118" height="12"><img class="escuro" src="assets/logo-branco.png" alt="" width="118" height="12" aria-hidden="true"><span class="crm">CRM</span>
     </a>
     <nav class="nav" id="nav" aria-label="Navegação principal"></nav>
     <div class="sidebar-foot">
-      <div class="pe"><button id="gmail-status" class="gstatus off" type="button"><span class="dot"></span><span class="txt">E-mail desconectado</span></button><a href="#/automacao" data-route="automacao" id="pe-auto" title="Automação" aria-label="Automação"></a><a href="#/config" data-route="config" id="pe-config" title="Configurações" aria-label="Configurações"></a></div>
-      <img src="assets/secties-govpb-branco.png" alt="Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior, Governo da Paraíba" class="parceiros">
+      <button id="gmail-status" class="gstatus off" type="button"><span class="dot"></span><span class="txt">E-mail desconectado</span></button>
+      <div class="pe"><a href="#/automacao" data-route="automacao" id="pe-auto">Automação</a><a href="#/config" data-route="config" id="pe-config">Configurações</a></div>
     </div>
   </aside>
   <div class="main">

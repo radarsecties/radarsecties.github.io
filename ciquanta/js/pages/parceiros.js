@@ -7,10 +7,10 @@ import { pontuar, contexto } from '../score.js';
 import { compactoBR as compacto } from '../motion.js';
 
 export const COTAS_PADRAO = [
-  { id: 'fundador', nome: 'Fundador', valor: 2000000, vagas: 3, c1: '#0F1A36', c2: '#2B4CC8', beneficios: ['Assento no conselho consultivo', '400 horas de processador quântico por ano', 'Projeto de P&D dedicado', 'Marca nos espaços do centro'] },
-  { id: 'estrategico', nome: 'Estratégico', valor: 750000, vagas: 8, c1: '#2B4CC8', c2: '#5B7CFA', beneficios: ['150 horas de processador quântico', 'Laboratório conjunto', 'Dois eventos exclusivos por ano', 'Capacitação para 20 pessoas'] },
-  { id: 'associado', nome: 'Associado', valor: 200000, vagas: 20, c1: '#1D84B5', c2: '#2BB6D9', beneficios: ['40 horas de processador quântico', 'Vagas nos cursos do centro', 'Convites para a agenda institucional'] },
-  { id: 'startup', nome: 'Deep tech', valor: 24000, vagas: 30, c1: '#0E8A68', c2: '#2BB6D9', beneficios: ['10 horas de processador quântico', 'Mentoria técnica', 'Vitrine no hall de exposição'] },
+  { id: 'fundador', nome: 'Fundador', valor: 2000000, vagas: 3, c1: '#101934', beneficios: ['Assento no conselho consultivo', '400 horas de processador quântico por ano', 'Projeto de P&D dedicado', 'Marca nos espaços do centro'] },
+  { id: 'estrategico', nome: 'Estratégico', valor: 750000, vagas: 8, c1: '#2F55D4', beneficios: ['150 horas de processador quântico', 'Laboratório conjunto', 'Dois eventos exclusivos por ano', 'Capacitação para 20 pessoas'] },
+  { id: 'associado', nome: 'Associado', valor: 200000, vagas: 20, c1: '#8EA0E6', beneficios: ['40 horas de processador quântico', 'Vagas nos cursos do centro', 'Convites para a agenda institucional'] },
+  { id: 'startup', nome: 'Deep tech', valor: 24000, vagas: 30, c1: '#2B7A57', beneficios: ['10 horas de processador quântico', 'Mentoria técnica', 'Vitrine no hall de exposição'] },
 ];
 export const cotas = () => store.cfg().cotas?.length ? store.cfg().cotas : COTAS_PADRAO;
 const ST = { negociacao: ['Em negociação', 'warn'], ativa: ['Ativa', 'ok'], encerrada: ['Encerrada', 'gray'] };
@@ -107,7 +107,7 @@ export async function render(view) {
         <div class="kpi"><span class="label">Capacidade do programa</span><span class="value">${compacto(potencial)}</span><span class="sub">${pct(arr, potencial)}% ocupada</span></div>
         <div class="kpi"><span class="label">Renovações em 90 dias</span><span class="value" data-contar="${renov.length}">${renov.length}</span><span class="sub">${renov.length ? compacto(renov.reduce((s, a) => s + a.valor, 0)) + ' a renovar' : 'nenhuma pendente'}</span></div>
       </div>
-      <div class="cotas" style="margin-bottom:18px">${cs.map(c => { const n = ads.filter(a => a.cota === c.id && a.status === 'ativa').length; return `<button class="cota" data-cota="${esc(c.id)}" style="--c1:${c.c1 || '#2B4CC8'};--c2:${c.c2 || '#5B7CFA'};text-align:left;border:0;cursor:pointer;font:inherit;${filtro && filtro !== c.id ? 'opacity:.45' : ''}">
+      <div class="cotas" style="margin-bottom:18px">${cs.map(c => { const n = ads.filter(a => a.cota === c.id && a.status === 'ativa').length; return `<button class="cota" data-cota="${esc(c.id)}" style="--c1:${c.c1 || '#2F55D4'};text-align:left;cursor:pointer;font:inherit;${filtro && filtro !== c.id ? 'opacity:.45' : ''}">
         <span class="nome">${esc(c.nome)}</span><span class="preco">${compacto(c.valor)} <small>por ano</small></span><span class="vagas">${n} de ${c.vagas} vagas ocupadas</span>
         <ul>${c.beneficios.slice(0, 4).map(b => `<li>${esc(b)}</li>`).join('')}</ul></button>`; }).join('')}</div>
       <div class="grid split-21">

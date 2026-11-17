@@ -8,7 +8,7 @@ import * as cadencia from './cadencia.js';
 import { abrirPaleta } from './paleta.js';
 import * as sync from './sync.js';
 import * as automacao from './automacao.js';
-import { animarNumeros, revelar, campo } from './motion.js';
+import { animarNumeros, revelar } from './motion.js';
 
 // [título, ícone, carregador, grupo do menu (null: fora do menu), rótulo curto no menu]
 const ROUTES = {
@@ -47,7 +47,7 @@ function buildNav() {
   for (const [id, [title, ic, , grupo, curto]] of Object.entries(ROUTES)) {
     if (grupo === null || grupo === false) continue;
     if (grupo !== g) { if (grupo) h += `<div class="nav-group">${esc(grupo)}</div>`; g = grupo; }
-    h += `<a href="#/${id}" data-route="${id}">${icon(ic, 16)}<span>${esc(curto || title)}</span>${id === 'interacoes' ? '<span class="count hidden" id="nav-live"></span>' : ''}</a>`;
+    h += `<a href="#/${id}" data-route="${id}"><span>${esc(curto || title)}</span>${id === 'interacoes' ? '<span class="count hidden" id="nav-live"></span>' : ''}</a>`;
   }
   $('#nav').innerHTML = h;
 }
@@ -56,7 +56,7 @@ function moverIndicador() {
   const a = $('#nav a.active'), ind = $('#nav .indicador');
   if (!ind) return;
   if (!a) { ind.style.opacity = 0; return; }
-  ind.style.opacity = 1; ind.style.height = a.offsetHeight + 'px'; ind.style.transform = `translateY(${a.offsetTop}px)`;
+  ind.style.opacity = 1; ind.style.height = (a.offsetHeight - 8) + 'px'; ind.style.transform = `translateY(${a.offsetTop + 4}px)`;
 }
 
 function parseHash() {
@@ -85,6 +85,7 @@ async function route() {
   try {
     const mod = await loader();
     await store.loadSetores();
+    await (await import('./pesquisa.js')).carregarPesquisa();
     if (my !== seq) return;
     view.innerHTML = '';
     const c = (await mod.render(view, { arg, params })) || null;
@@ -103,7 +104,7 @@ function badges() {
   const s = G.status(), m = monitor.estado();
   const el = $('#gmail-status');
   el.classList.toggle('on', s.conectado); el.classList.toggle('off', !s.conectado);
-  el.querySelector('.txt').textContent = s.conectado ? s.email || 'E-mail conectado' : 'E-mail desconectado';
+  el.querySelector('.txt').textContent = s.conectado ? 'E-mail conectado' : 'E-mail desconectado'; el.title = s.conectado ? s.email || '' : 'Conectar o e-mail do CIQUANTA';
   $('#live-btn').classList.toggle('on', m.ativo);
   $('#live-btn').title = m.ativo ? `Acompanhamento ativo${m.ultimo ? ', última verificação ' + new Date(m.ultimo).toLocaleTimeString('pt-BR') : ''}` : 'Acompanhamento em tempo real desligado';
   const n = $('#nav-live'); if (n) { n.textContent = m.naoLidos; n.classList.toggle('hidden', !m.naoLidos); }
@@ -118,7 +119,6 @@ function init() {
   $('#theme-btn').innerHTML = icon('tema', 17);
   $('#live-btn').innerHTML = icon('sino', 17);
   $('#sync-btn').innerHTML = icon('sync', 17);
-  $('#pe-auto').innerHTML = icon('robo', 17); $('#pe-config').innerHTML = icon('config', 17);
   $('#busca-ic').outerHTML = icon('busca', 15);
   $('#sync-btn').onclick = () => sync.sincronizar({ manual: true });
   window.addEventListener('hashchange', route);
@@ -155,7 +155,6 @@ function init() {
     else if (Date.now() - g < 1200 && IR[e.key]) { g = 0; location.hash = '#/' + IR[e.key]; }
   });
   $('#global-search').addEventListener('click', paleta);
-  campo($('#campo'));
   window.addEventListener('resize', moverIndicador);
   window.addEventListener('scroll', () => $('.topbar').classList.toggle('rolou', scrollY > 4), { passive: true });
   window.addEventListener('ciq:paleta', paleta);

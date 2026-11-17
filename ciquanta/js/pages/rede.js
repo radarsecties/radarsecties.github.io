@@ -11,7 +11,7 @@ export async function render(view) {
     <div class="toolbar"><select id="modo"><option value="setor">Agrupar por setor</option><option value="mecanismo">Agrupar por mecanismo de fomento</option></select>
       <select id="filtro"><option value="relevantes">Potencial alto ou já em contato</option><option value="contato">Com contato cadastrado</option><option value="ativas">Em contato, engajadas e parceiras</option><option value="todas">Todas</option></select>
       <select id="setor">${options(store.setoresLista().map(s => ({ id: s.id, nome: s.nome })), '', { empty: 'Todos os setores' })}</select>
-      <span class="tags" style="margin-left:auto">${RELACIONAMENTO.map(r => `<span class="badge gray"><span class="dot-i" style="background:${r.cor}"></span>${r.nome}</span>`).join('')}</span></div>
+      <span class="tags" style="margin-left:auto">${RELACIONAMENTO.map(r => `<span class="marca" style="--c:${r.cor}"><i></i>${r.nome}</span>`).join('')}</span></div>
     <div class="card" style="padding:0;overflow:hidden;position:relative"><canvas id="cv" style="display:block;width:100%;height:640px;cursor:grab"></canvas><div id="tip" class="toast" style="position:absolute;display:none;pointer-events:none;max-width:300px"></div><div id="vazio" class="empty" style="position:absolute;inset:0;display:none;place-items:center"></div></div>
     <p class="muted small" id="leg"></p>`;
   const cv = view.querySelector('#cv'), ctx = cv.getContext('2d'), tip = view.querySelector('#tip');

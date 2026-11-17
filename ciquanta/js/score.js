@@ -2,6 +2,7 @@
 import * as store from './store.js';
 import { REGIAO, isEmail, isoDay } from './util.js';
 import { citadasRecentes } from './sinais.js';
+import { quanticasPorOrg } from './pesquisa.js';
 
 const OBRIGATORIOS = ['pdi-aneel', 'pdi-anp', 'lei-de-tics', 'lei-tics-zfm', 'brasil-semicon', 'mover', 'redata'];
 
@@ -19,6 +20,7 @@ export function pontuar(o, ctx = contexto()) {
   add({ engajada: 6, parceira: 10 }[o.relacionamento] || 0, o.relacionamento === 'parceira' ? 'Parceira' : 'Relacionamento engajado');
   if (ctx.comOpp.has(o.id)) add(10, 'Oportunidade em aberto');
   if (ctx.citadas?.has(o.id)) add(5, 'Citada em notícia recente');
+  if (ctx.pesqQuant?.has(o.id)) add(6, 'Tem pesquisadores publicando sobre computação quântica');
   const total = Math.min(100, m.reduce((a, x) => a + x[0], 0));
   return { total, faixa: total >= 65 ? 'alto' : total >= 40 ? 'medio' : 'baixo', motivos: m };
 }
@@ -27,7 +29,7 @@ export function contexto() {
   const comEmail = new Set(store.list('contatos').filter(c => isEmail(c.email) && !c.optout).map(c => c.orgId));
   const respondeu = new Set(store.list('recebidos').filter(r => r.direcao === 'entrada').map(r => r.orgId));
   const comOpp = new Set(store.list('oportunidades').filter(o => !['contratada', 'perdida'].includes(o.etapa)).map(o => o.orgId));
-  return { comEmail, respondeu, comOpp, citadas: citadasRecentes(30) };
+  return { comEmail, respondeu, comOpp, citadas: citadasRecentes(30), pesqQuant: quanticasPorOrg() };
 }
 
 /** Lista priorizada do que fazer agora. Cada item: { peso, titulo, detalhe, href, tipo }. */
@@ -47,9 +49,12 @@ export function proximasAcoes(limite = 8) {
   const inscritos = new Set(store.list('inscricoes').filter(i => i.status === 'ativa').map(i => store.get('contatos', i.contatoId)?.orgId));
   const contatada = new Set(store.list('envios').filter(e => e.status === 'enviado').map(e => store.get('contatos', e.contatoId)?.orgId));
   const pont = orgs.map(o => [o, pontuar(o, ctx)]).sort((a, b) => b[1].total - a[1].total);
-  let semContato = 0, semCadencia = 0, semOpp = 0;
+  let semContato = 0, semCadencia = 0, semOpp = 0, pesq = 0;
+  const contatosNome = new Set(store.list('contatos').map(c => c.orgId + '|' + String(c.nome || '').toLowerCase()));
   for (const [o, p] of pont) {
     if (p.total < 45) break;
+    const q = (ctx.pesqQuant.get(o.id) || []).filter(x => !contatosNome.has(o.id + '|' + x.nome.toLowerCase()));
+    if (q.length && pesq++ < 2) out.push({ peso: 50 + p.total / 5, tipo: 'Pesquisa', titulo: `Conhecer ${q.length === 1 ? 'quem pesquisa' : q.length + ' pessoas que pesquisam'} computação quântica em ${nome(o)}`, detalhe: q.slice(0, 3).map(x => x.nome).join(', '), href: `#/org/${o.id}?aba=pesquisa` });
     if (!ctx.comEmail.has(o.id)) { if (semContato++ < 3) out.push({ peso: 40 + p.total / 5, tipo: 'Contato', titulo: `Encontrar contato em ${nome(o)}`, detalhe: `Potencial ${p.total}: ainda sem contato com e-mail`, href: `#/org/${o.id}?aba=busca` }); }
     else if (!contatada.has(o.id) && !inscritos.has(o.id)) { if (semCadencia++ < 3) out.push({ peso: 55 + p.total / 5, tipo: 'Cadência', titulo: `Iniciar contato com ${nome(o)}`, detalhe: `Potencial ${p.total}: contato cadastrado, sem abordagem`, href: '#/cadencias' }); }
     else if ((o.relacionamento === 'engajada' || ctx.respondeu.has(o.id)) && !ctx.comOpp.has(o.id) && o.relacionamento !== 'parceira') { if (semOpp++ < 3) out.push({ peso: 75, tipo: 'Oportunidade', titulo: `Registrar oportunidade com ${nome(o)}`, detalhe: 'Organização engajada, sem oportunidade em aberto', href: `#/org/${o.id}?aba=agenda` }); }

@@ -5,16 +5,17 @@ import { sugerirMecanismos, linksProspeccao } from '../dominio.js';
 import { fromRef } from './setores.js';
 import { loadMecanismos, mecNome } from '../email.js';
 import * as G from '../google.js';
+import { carregarPesquisa, todasPessoas, linhaPessoa, ligarPessoas, adicionarContato } from '../pesquisa.js';
 
-const ABAS = [['referencia', 'Mapeamento setorial'], ['cnpj', 'Consulta CNPJ'], ['lote', 'CNPJs em lote'], ['prospeccao', 'Prospecção guiada'], ['gmail', 'Contatos no Gmail']];
+const ABAS = [['pesquisa', 'Pessoas de P&D'], ['referencia', 'Mapeamento setorial'], ['cnpj', 'Consulta CNPJ'], ['lote', 'CNPJs em lote'], ['prospeccao', 'Prospecção guiada'], ['gmail', 'Contatos no Gmail']];
 
 export async function render(view, { params }) {
   const mecs = await loadMecanismos();
-  let aba = params.get('aba') || 'referencia';
+  let aba = params.get('aba') || 'pesquisa';
   view.innerHTML = `<div class="section-head"><div><h2>Busca ativa</h2></div></div>
     <div class="tabs">${ABAS.map(([k, l]) => `<button data-aba="${k}" class="${aba === k ? 'active' : ''}">${l}</button>`).join('')}</div><div id="aba"></div>`;
   const A = view.querySelector('#aba');
-  const go = k => { aba = k; view.querySelectorAll('[data-aba]').forEach(b => b.classList.toggle('active', b.dataset.aba === k)); ({ cnpj, lote, prospeccao, referencia, gmail })[k](A, mecs); };
+  const go = k => { aba = k; view.querySelectorAll('[data-aba]').forEach(b => b.classList.toggle('active', b.dataset.aba === k)); ({ cnpj, lote, prospeccao, referencia, gmail, pesquisa })[k](A, mecs); };
   view.querySelectorAll('[data-aba]').forEach(b => b.onclick = () => go(b.dataset.aba));
   go(aba);
 }
@@ -25,6 +26,32 @@ function addOrg(dados, { abrir = true } = {}) {
   const org = store.upsert('orgs', { segmento: 'Empresa', relacionamento: 'mapeada', evidencia: 'potencial', prioridade: 'B', ...dados, mecanismos: dados.mecanismos?.length ? dados.mecanismos : sugerirMecanismos({ segmento: 'Empresa', ...dados }) }, 'org');
   if (abrir) location.hash = `#/org/${org.id}`;
   return { org, novo: true };
+}
+
+async function pesquisa(A) {
+  await carregarPesquisa();
+  const todas = todasPessoas(), f = { q: '', quant: false, email: false, setor: '' };
+  const setores = [...new Set(todas.map(p => p.org.setor).filter(Boolean))].map(id => ({ id, nome: store.setorCurto(id) })).sort((a, b) => a.nome.localeCompare(b.nome));
+  A.innerHTML = `<div class="toolbar"><input class="grow" type="search" id="pq" placeholder="Nome, organização ou tema">
+    <select id="ps"><option value="">Todos os setores</option>${options(setores, '')}</select>
+    <label class="check"><input type="checkbox" id="pqt"> Computação quântica</label><label class="check"><input type="checkbox" id="pem"> Com e-mail profissional</label>
+    <button class="btn" id="padd">Adicionar os que têm e-mail</button></div><div id="pr"></div>`;
+  const R = A.querySelector('#pr');
+  const filtrar = () => todas.filter(p => (!f.quant || p.quantico) && (!f.email || p.email) && (!f.setor || p.org.setor === f.setor) && (!f.q || norm(`${p.nome} ${p.org.nome} ${p.org.nomeFantasia || ''} ${(p.temas || []).join(' ')} ${p.cargo || ''}`).includes(norm(f.q))))
+    .sort((a, b) => (b.relevancia || 35) - (a.relevancia || 35));
+  const draw = () => {
+    const l = filtrar();
+    R.innerHTML = l.length ? `<p class="muted small">${l.length} pessoa(s) em ${new Set(l.map(p => p.org.id)).size} organização(ões) · ${l.filter(p => p.quantico).length} em computação quântica · ${l.filter(p => p.email).length} com e-mail profissional público</p><div class="pessoas">${l.slice(0, 300).map(p => linhaPessoa(p, { comOrg: true })).join('')}</div>`
+      : `<div class="empty">${todas.length ? 'Nenhuma pessoa com esses filtros.' : 'As pessoas de P&D aparecem aqui depois da coleta diária (produção científica na OpenAlex, ORCID e lideranças citadas em fontes públicas).'}</div>`;
+    ligarPessoas(R, l, draw);
+  };
+  const deb = debounce(draw, 180);
+  A.querySelector('#pq').oninput = e => { f.q = e.target.value; deb(); };
+  A.querySelector('#ps').onchange = e => { f.setor = e.target.value; draw(); };
+  A.querySelector('#pqt').onchange = e => { f.quant = e.target.checked; draw(); };
+  A.querySelector('#pem').onchange = e => { f.email = e.target.checked; draw(); };
+  A.querySelector('#padd').onclick = () => { const n = filtrar().filter(p => p.email).map(adicionarContato).filter(Boolean).length; toast(n ? `${n} pessoa(s) adicionada(s) aos contatos.` : 'Todas as pessoas com e-mail já estão nos contatos.', n ? 'ok' : ''); draw(); };
+  draw();
 }
 
 function cnpj(A, mecs) {
@@ -134,7 +161,7 @@ async function referencia(A) {
     const l = list();
     A.querySelector('#tb').innerHTML = l.map(o => { const has = inCRM(o); return `<tr>
       <td><input type="checkbox" data-id="${esc(o.id)}" ${sel.has(o.id) ? 'checked' : ''} ${has ? 'disabled' : ''} aria-label="Selecionar"></td>
-      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="badge">A</span>' : ''} ${has ? '<span class="badge ok">no CRM</span>' : ''}</div><div class="muted small">${esc(o.segmento)}${o.cidade ? ' · ' + esc(o.cidade) : ''}${o.atuacao ? '<br>' + esc(o.atuacao) : (o.notas ? ' · ' + esc(o.notas) : '')}</div></td>
+      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="prio" title="Prioridade A">A</span>' : ''} ${has ? '<span class="badge ok">no CRM</span>' : ''}</div><div class="muted small">${esc(o.segmento)}${o.cidade ? ' · ' + esc(o.cidade) : ''}${o.atuacao ? '<br>' + esc(o.atuacao) : (o.notas ? ' · ' + esc(o.notas) : '')}</div></td>
       <td class="small">${esc(store.setorCurto(o.setor))}</td><td><span class="badge ${o.evidencia === 'confirmada' ? 'ok' : o.evidencia === 'indicios' ? 'info' : 'gray'}">${EV[o.evidencia]}</span></td><td>${esc(o.uf || '—')}</td>
       <td class="small">${o.fontes.map(id => fontes[id]).filter(Boolean).map(ff => ff.url ? `<a href="${esc(ff.url)}" target="_blank" rel="noopener" title="${esc(ff.titulo)}">${esc(ff.titulo.split(':')[0])}</a>` : esc(ff.titulo.split(',')[0])).join('<br>') || (safeUrl(o.site) ? `<a href="${esc(o.site)}" target="_blank" rel="noopener">site</a>` : '—')}</td></tr>`; }).join('');
     A.querySelector('#cnt').textContent = `${l.length} exibidas · ${sel.size} selecionadas`;

@@ -34,6 +34,8 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           CIQUANTA_MODELO: ${{ vars.CIQUANTA_MODELO }}
           CIQUANTA_LOTE_IA: ${{ vars.CIQUANTA_LOTE_IA }}
+          CIQUANTA_LOTE_PESQUISA: ${{ vars.CIQUANTA_LOTE_PESQUISA }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
         run: node ciquanta/tools/coleta/coletar.mjs
       - name: Publicar as bases atualizadas
         run: |

@@ -11,10 +11,12 @@ import * as G from '../google.js';
 import { carregarSinais, sinaisDe } from '../sinais.js';
 import { pontuar } from '../score.js';
 import { gerarProposta } from '../proposta.js';
+import { carregarPesquisa, pesquisaDe, linhaPessoa, ligarPessoas } from '../pesquisa.js';
 
 export async function render(view, { arg, params }) {
   const mecs = await loadMecanismos();
   await carregarSinais();
+  await carregarPesquisa();
   const fontes = Object.fromEntries((await store.ref('fontes')).itens.map(f => [f.id, f]));
   let tab = params.get('aba') || 'geral';
   const draw = () => {
@@ -26,11 +28,12 @@ export async function render(view, { arg, params }) {
     const agenda = setor?.deck ? setor : store.setoresLista().find(s => s.id === setor?.deckId);
     const site = safeUrl(o.site);
     const pot = pontuar(o);
+    const pq = pesquisaDe(o);
     view.innerHTML = `
     <div class="toolbar"><a href="#/organizacoes" class="btn ghost">${icon('esquerda', 16)} Organizações</a></div>
-    <div class="card acento" style="margin-bottom:16px">
+    <div class="card" style="margin-bottom:18px">
       <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:flex-start">
-        <div><h2 style="font-size:22px">${esc(o.nome)}</h2>
+        <div><h2 class="titulo-org">${esc(o.nome)}</h2>
           <div class="muted">${o.nomeFantasia ? esc(o.nomeFantasia) + ' · ' : ''}${esc(store.setorNome(o.setor))} · ${esc([o.cidade, o.uf].filter(Boolean).join('/') || '—')}</div>
           <div class="tags" style="margin-top:8px"><span class="pot" title="${esc(pot.motivos.map(m => `+${m[0]} ${m[1]}`).join('\n'))}">Potencial <i><b style="width:${pot.total}%"></b></i>${pot.total}</span> ${segBadge(o.segmento)} ${evBadge(o.evidencia)} ${relBadge(o.relacionamento)} ${o.prioridade ? `<span class="badge">Prioridade ${esc(o.prioridade)}</span>` : ''} ${o.bloco ? `<span class="badge gray">${esc(blocoNome(o.bloco))}</span>` : ''} ${(o.tags || []).map(t => `<span class="badge gray">#${esc(t)}</span>`).join('')}</div></div>
         <div class="toolbar" style="margin:0">
@@ -50,7 +53,7 @@ export async function render(view, { arg, params }) {
       </div>
     </div>
     <div class="tabs" role="tablist">
-      ${[['geral', 'Visão geral'], ['contatos', `Contatos (${contatos.length})`], ['oportunidades', `Oportunidades (${ops.length})`], ['historico', `Histórico (${hist.length})`], ['agenda', 'Agenda setorial'], ['google', 'E-mails, arquivos e agenda'], ['busca', 'Encontrar contatos']].map(([k, l]) => `<button role="tab" data-tab="${k}" class="${tab === k ? 'active' : ''}">${l}</button>`).join('')}
+      ${[['geral', 'Visão geral'], ['contatos', `Contatos (${contatos.length})`], ['oportunidades', `Oportunidades (${ops.length})`], ['historico', `Histórico (${hist.length})`], ['pesquisa', `Pessoas de P&D (${pq.lista.length})`], ['agenda', 'Agenda setorial'], ['google', 'E-mails, arquivos e agenda'], ['busca', 'Encontrar contatos']].map(([k, l]) => `<button role="tab" data-tab="${k}" class="${tab === k ? 'active' : ''}">${l}</button>`).join('')}
     </div><div id="tab"></div>`;
     const T = view.querySelector('#tab');
 
@@ -142,6 +145,12 @@ export async function render(view, { arg, params }) {
         G.driveSearch(nome, 10).then(r => put('#g-drive', (r.files || []).length ? `<div class="list">${r.files.map(f => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="${esc(f.webViewLink)}">${esc(f.name)}</a><div class="meta">${esc(f.owners?.[0]?.displayName || '')} · ${fmtDate(f.modifiedTime)}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhum arquivo cita esta organização.</div>')).catch(e => falha('#g-drive', e, 'drive'));
         G.calendarSearch(nome).then(r => put('#g-cal', (r.items || []).length ? `<div class="list">${r.items.map(ev => `<div class="list-item"><div style="min-width:0;flex:1"><a class="title" target="_blank" rel="noopener" href="${esc(ev.htmlLink)}">${esc(ev.summary || '(sem título)')}</a><div class="meta">${fmtDateTime(ev.start.dateTime || ev.start.date)}${ev.hangoutLink ? ` · <a target="_blank" rel="noopener" href="${esc(ev.hangoutLink)}">Meet</a>` : ''}</div></div></div>`).join('')}</div>` : '<div class="empty">Nenhum compromisso com esta organização.</div>')).catch(e => falha('#g-cal', e, 'calendar'));
       }
+    }
+    if (tab === 'pesquisa') {
+      const q = pq.lista.filter(p => p.quantico).length;
+      T.innerHTML = `<div class="card"><h3>Pessoas de P&D <span class="muted">${pq.instituicao ? `produção registrada como ${esc(pq.instituicao.nome)}${q ? ` · ${q} em computação quântica` : ''}` : 'produção científica e lideranças citadas'}</span></h3>
+        ${pq.lista.length ? `<div class="pessoas">${pq.lista.map(p => linhaPessoa(p)).join('')}</div>` : `<div class="empty">${pq.buscadoEm ? 'Nenhuma produção científica ou liderança pública identificada até agora.' : 'A coleta diária ainda não pesquisou esta organização.'}</div>`}</div>`;
+      ligarPessoas(T, pq.lista, draw);
     }
     if (tab === 'busca') {
       const links = linksBusca(o.nomeFantasia || o.nome, { site: o.site });

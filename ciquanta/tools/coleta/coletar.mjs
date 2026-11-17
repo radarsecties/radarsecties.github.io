@@ -12,12 +12,13 @@ const ETAPAS = [
   ['sinais', 'Notícias e editais', coletarSinais],
   ['canais', 'Canais institucionais e CNPJ', coletarCanais],
   ['receita', 'Dados da Receita Federal', coletarReceita],
+  ['pesquisadores', 'Pessoas de P&D (OpenAlex e ORCID)', async opts => (await import('./pesquisadores.mjs')).coletarPesquisadores(opts)],
   // A descoberta com IA carrega o SDK só quando há chave configurada
   ['descoberta', 'Descoberta com IA', async opts => (await import('./descoberta.mjs')).descobrir(opts)],
   ['contatos-ia', 'Diretorias na web com IA', async opts => (await import('./contatos-ia.mjs')).contatosIA(opts)],
 ];
 
-const pedidas = process.argv.slice(2);
+const pedidas = process.argv.slice(2).filter(a => /^[a-z-]+$/.test(a));
 const inicio = Date.now(), log = [];
 const registro = ler('coleta.json', { execucoes: [] });
 const etapas = [];

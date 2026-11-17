@@ -32,8 +32,8 @@ export async function render(view, { params }) {
     <button class="btn sm danger" id="bulk-del">Excluir</button><button class="btn sm ghost" id="bulk-clear">Limpar seleção</button></div>
   <div class="table-wrap"><table><thead><tr>
     <th style="width:28px"><input type="checkbox" id="all" aria-label="Selecionar todas"></th>
-    <th class="sortable" data-s="nome">Organização</th><th class="sortable" data-s="setor">Setor</th><th>Segmento</th><th class="sortable" data-s="evidencia">Atuação quântica</th>
-    <th class="sortable" data-s="relacionamento">Relacionamento</th><th class="sortable" data-s="_pot" title="Pontuação de 0 a 100; passe o mouse sobre o número para ver os critérios">Potencial</th><th class="sortable" data-s="uf">UF</th><th class="num">Contatos</th><th class="num sortable" data-s="_pipe">Pipeline</th>
+    <th class="sortable" data-s="nome">Organização</th><th class="sortable" data-s="setor">Setor</th><th class="sortable" data-s="evidencia">Atuação quântica</th>
+    <th class="sortable" data-s="relacionamento">Relacionamento</th><th class="sortable" data-s="_pot" title="Pontuação de 0 a 100; passe o mouse sobre o número para ver os critérios">Potencial</th><th class="num">Contatos</th><th class="num sortable" data-s="_pipe">Pipeline</th>
   </tr></thead><tbody id="tb"></tbody></table></div>
   <p class="muted small" id="count"></p>`;
 
@@ -58,8 +58,8 @@ export async function render(view, { params }) {
     const l = filtered();
     view.querySelector('#tb').innerHTML = l.length ? l.slice(0, 600).map(({ o, ct, pipe, pot }) => `<tr class="row-link" data-id="${esc(o.id)}">
       <td><input type="checkbox" data-sel="${esc(o.id)}" ${sel.has(o.id) ? 'checked' : ''} aria-label="Selecionar"></td>
-      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="badge">A</span>' : ''}</div><div class="muted small">${esc(o.cidade || '')}${o.site ? ` · ${esc(store.dominio(o.site))}` : ''}</div></td>
-      <td class="small">${esc(store.setorCurto(o.setor))}</td><td>${segBadge(o.segmento)}</td><td>${evBadge(o.evidencia)}</td><td>${relBadge(o.relacionamento)}</td><td><span class="pot" title="${esc(pot.motivos.map(m => `+${m[0]} ${m[1]}`).join('\n'))}"><i><b style="width:${pot.total}%"></b></i>${pot.total}</span></td><td>${esc(o.uf || '—')}</td>
+      <td><div class="title">${esc(o.nome)} ${o.prioridade === 'A' ? '<span class="prio" title="Prioridade A">A</span>' : ''}</div><div class="muted small">${esc(o.cidade || '')}${o.uf ? `, ${esc(o.uf)}` : ''}${o.site ? ` · ${esc(store.dominio(o.site))}` : ''}</div></td>
+      <td><div>${esc(store.setorCurto(o.setor))}</div><div class="muted small">${esc(o.segmento || '')}</div></td><td>${evBadge(o.evidencia)}</td><td>${relBadge(o.relacionamento)}</td><td><span class="pot" title="${esc(pot.motivos.map(m => `+${m[0]} ${m[1]}`).join('\n'))}"><i><b style="width:${pot.total}%"></b></i>${pot.total}</span></td>
       <td class="num">${ct || '<span class="muted">0</span>'}</td><td class="num nowrap">${pipe ? money(pipe) : '<span class="muted">—</span>'}</td></tr>`).join('')
       : `<tr><td colspan="10"><div class="empty">${store.list('orgs').length ? 'Nenhuma organização com esses filtros.' : 'Nenhuma organização ainda. <a href="#/busca?aba=referencia">Importe o mapeamento setorial</a> ou use a <a href="#/busca">busca por CNPJ</a>.'}</div></td></tr>`;
     view.querySelector('#count').textContent = `${l.length} de ${store.list('orgs').length} organizações${l.length > 600 ? ' (exibindo 600; use os filtros)' : ''}`;

@@ -20,7 +20,7 @@ Aplicação web autônoma, sem servidor próprio e sem dependência de outros si
 | Programa de parceiros | Cotas anuais de parceria (valores e benefícios editáveis), adesões com carta em PDF, receita recorrente, renovações e candidatas por potencial. Cada adesão vira oportunidade no funil. |
 | Rede | Mapa interativo das organizações em torno dos setores ou dos mecanismos de fomento. |
 | Setores e aplicações | 22 setores; dez com agenda de pesquisa aplicada e apresentação própria no formato da agenda oficial do sistema financeiro. |
-| Busca ativa | Mapeamento com 471 organizações (empresas, deep techs, fornecedores quânticos, investidores, fomentadores, ICTs, autoridades), consulta e lote de CNPJ, buscas prontas para encontrar contatos e descoberta de contatos nas conversas do Gmail. |
+| Busca ativa | Pessoas de P&D das organizações (pesquisadores com produção científica, temas, trabalho de destaque, cargo e e-mail profissional quando públicos, lideranças de inovação citadas em fontes públicas), mapeamento com 471 organizações (empresas, deep techs, fornecedores quânticos, investidores, fomentadores, ICTs, autoridades), consulta e lote de CNPJ, buscas prontas para encontrar contatos e descoberta de contatos nas conversas do Gmail. |
 | Cadências | Sequências automáticas de e-mails por público, em dias úteis e horário comercial, com continuação na mesma conversa. Param quando o contato responde ou pede descadastro. |
 | Campanhas e modelos | Envio personalizado pela conta Google, com tratamento formal, link da apresentação do setor, materiais, rascunhos, teste, agendamento, limite diário e descadastro. |
 | Apresentações | Apresentação institucional oficial (22 páginas) e apresentações setoriais no mesmo padrão, com modo apresentação, PDF e link público (`apresentacao.html?d=<setor>`); biblioteca do Google Drive. |
@@ -40,7 +40,8 @@ O CRM se atualiza sozinho em duas camadas.
 | Painel CIQUANTA | Totais públicos de cadastros e visitas à réplica, com histórico diário | `data/painel.json` |
 | Notícias e editais | Notícias sobre computação quântica, P&D, deep tech e fomento (Google Notícias, EMBRAPII, Agência FAPESP), ligadas às organizações citadas; chamadas abertas com prazo quando o texto informa | `data/sinais.json`, `data/editais-auto.json` |
 | Canais institucionais | Visita o site oficial de até 70 organizações por execução, descobre as páginas internas (links e sitemap) e guarda os e-mails de diretorias e setores (presidência, gabinete, reitoria, diretorias, relações institucionais, inovação, RI, imprensa), classificados pelo endereço e pelo texto em volta; também CNPJ do rodapé e LinkedIn. E-mails pessoais são descartados | `data/canais.json` |
-| Diretorias na web com IA | Com a chave da Anthropic, o Claude procura na web (portais de transparência, governança, relatórios) os e-mails de diretorias das organizações que ainda não têm um. Só entra o que é conferido na própria página citada, no domínio da organização | `data/canais.json` |
+| Pessoas de P&D | Para até 45 organizações por execução, encontra na OpenAlex quem publica pela organização nos últimos seis anos, os temas e quem trabalha com computação quântica; no ORCID, o cargo atual e o e-mail, só quando o próprio pesquisador o tornou público e o domínio é o da organização | `data/pesquisadores.json` |
+| Diretorias na web com IA | Com a chave da Anthropic, o Claude procura na web (portais de transparência, governança, relatórios) os e-mails de diretorias das organizações que ainda não têm um e as lideranças de P&D e inovação citadas pelo nome (só nome, cargo e fonte). Só entra o que é conferido na própria página citada | `data/canais.json`, `data/pesquisadores.json` |
 | Receita Federal | Situação cadastral, CNAE, porte, capital e e-mail cadastrado para os CNPJ conhecidos | `data/receita.json` |
 | Descoberta com IA | Com a chave da Anthropic configurada, o Claude lê as notícias novas e sugere organizações e oportunidades; só entra o que está escrito no texto da notícia | `data/descobertas.json` |
 
@@ -61,13 +62,14 @@ Para rodar a coleta à mão: `cd tools/coleta && npm install && node coletar.mjs
 
 ## Identidade visual
 
-Segue a apresentação institucional oficial do CIQUANTA (`assets/docs/ciquanta-apresentacao-institucional.pdf`):
+A interface tem linguagem própria, editorial e científica: papel e tinta, filetes no lugar de caixas, texto no lugar de selos. As regras completas, com o que é proibido, estão em `.claude/skills/design-ciquanta/SKILL.md`.
 
-- Logotipo: `assets/logo-azul.png`, `assets/logo-branco.png`, `assets/logo-marinho.png`
-- Parceiros: `assets/parceiros-marinho.png`, `assets/parceiros-branco.png`, `assets/secties-govpb*.png`
-- Cores: marinho `#0F1A36` (menu), azul `#3056D5`, azul luminoso `#5B7CFA`, ciano `#2BB6D9`; vermelho só para erros
-- Tipografia: Archivo (fonte variável, mesma do Painel CIQUANTA), incluída em `assets/fonts/` com a licença OFL
-- Movimento: campo quântico animado no menu, órbitas no cabeçalho de Hoje, indicador deslizante no menu e entrada escalonada dos cartões; respeita a preferência do sistema por menos movimento. Modo escuro automático.
+- Tipografia: Hanken Grotesk na interface e Newsreader nos títulos, números e nomes, incluídas em `assets/fonts/` (licença OFL)
+- Cores: papel `#F7F7F4`, tinta `#101934`, azul CIQUANTA `#2F55D4` só como acento; vermelho apenas para erro. Tema escuro automático
+- Movimento: filetes que se desenham na entrada das telas, números que contam, frase de abertura palavra por palavra e marcador do menu que desliza; respeita a preferência do sistema por menos movimento
+- Marca: a interface mostra só o logotipo do CIQUANTA (`assets/logo-marinho.png` e `assets/logo-branco.png`). Propostas, cartas, e-mails e apresentações seguem o modelo institucional oficial, com os parceiros (`assets/parceiros-*.png`, `assets/secties-govpb*.png`)
+
+Revisão de design: `node tools/design/revisar.mjs` captura todas as telas (computador e celular, claro ou escuro, com `--escuro`) em `tools/design/saida/` e acusa pílulas, degradês, sombras fora de janelas, fontes fora do sistema, texto pequeno demais e rolagem horizontal.
 
 ## E-mail do CIQUANTA (uma vez, sem Google Cloud)
 
