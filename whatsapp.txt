@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 31
-_Segunda-feira, 16 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 32
+_Terça-feira, 17 de novembro de 2026_
 
-*COMPUTADORES QUÂNTICOS DE R$ 83 MILHÕES CHEGAM À PARAÍBA*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.
+*QLUSTER RAISES €4.7 MILLION TO DEVELOP A NEW GENERATION OF QUANTUM COMPUTERS*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. *Prazo:* Professor do Centro de Ciências Humanas e Exatas ministra conferência de encerramento de colóquio internacional no Chile _(UEPB)_
-2. Computador quântico chega a João Pessoa e coloca a Paraíba como referência nacional em ciência e tecnologia _(Polêmica Paraíba)_
-3. From First-Timers to PhDs: 1,000+ Builders Take on Quantum at the Qollab × IonQ Hackathon _(The Quantum Insider)_
+1. CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba _(ClickPB)_
+2. Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança _(MCTI)_
+3. Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos _(UFPB)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Abertas as inscrições para 1ª Jornada Acadêmica do Programa de Pós-graduação em Psicologia da Saúde
-*Brasil:* Marcha Ventures destinará R$ 10 milhões em aportes a startups e deep techs nos próximos três anos
-*Mundo:* PsiQuantum and AMD Expand Partnership on Quantum Computing Infrastructure
+*Paraíba:* Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest
+*Brasil:* Embrapii inaugura Unidade Inovação Einstein em Saúde Digital
+*Mundo:* Planckian Selected for €10 Million in EIC Support for Quantum Hardware
 
-> *Você sabia?* O GPS do seu celular só acerta o caminho porque corrige a relatividade de Einstein. Sem isso, erraria uns 10 km por dia.
+> *Você sabia?* Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.
 
 *Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radar.secties.pb.gov.br/edicao/31/
+https://radar.secties.pb.gov.br/edicao/32/

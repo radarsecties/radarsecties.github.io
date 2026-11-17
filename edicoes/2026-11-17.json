@@ -1,0 +1,1522 @@
+{
+ "data": "2026-11-17",
+ "numero": 32,
+ "modo": "automatico",
+ "destaque": "Qluster Raises €4.7 Million to Develop a New Generation of Quantum Computers",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba. Também em destaque: Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança; e Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos.",
+ "itens": [
+  {
+   "id": "d99d31fe7701",
+   "titulo": "CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba",
+   "url": "https://www.clickpb.com.br/tecnologia/ciquanta-computador-pb.html",
+   "resumo": "Instalado em João Pessoa com investimento de até R$ 200 milhões, o Ciquanta terá dois computadores quânticos em 2027.",
+   "fonte": "ClickPB",
+   "fonteId": "clickpb",
+   "dataPub": "2026-11-16",
+   "imagem": "https://www.clickpb.com.br/wp-content/uploads/2026/11/ciquanta.jpeg",
+   "coletadoEm": "2026-11-16T20:02:10Z",
+   "tipo": "oficial",
+   "programas": [
+    "ciquanta",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 47,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "2791564dfad0",
+   "titulo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc2EzVEZ2S2FjM2F6QWlRVTRUT2x6UjRhdUdINzBZNmZHOU5uU2ZEbEREUkk4U1Y5SmxLXzVxS3Q5MW9fRENIV0ZrRllZOGtoSVh6bXZ3ay1qdVBldlE0bDFVZkJqTnl6dVBkVGttempEYWJxSDJpamdza0UzMGFwcUJDTWV2OWE2Y0d1ZzZuN3hoNXpZZmNiR3BDOWlidUNBeGNRNU5Pdk9KWXNYWEQtSEhqUzFxQVpsbUY1Mkh5ODZTRlB3VTFQeFBJYk5ONzUzaTI5U3hIYTU4Rk91b3R6TklvYUtKYXB6c3ZwQWhrVUtaQQ?oc=5",
+   "resumo": "",
+   "fonte": "MCTI",
+   "fonteId": "mcti",
+   "dataPub": "2026-11-16",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:58:45Z",
+   "tipo": "oficial",
+   "programas": [
+    "ciquanta"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 46,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "45a5e2453200",
+   "titulo": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
+   "url": "https://paraibaja.com.br/governo-da-paraiba-abre-inscricoes-para-a-3a-edicao-do-game-dev-quest",
+   "resumo": "O Governo da Paraíba, por meio da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior (Secties), em parceria com a Fundação de Apoio à Pesquisa do Estado da Paraíba (Fapesq), lançou, nessa segunda-feira (16) um novo edital para seleção de equipes da 3ª edição do Game Dev Quest. O circuito…",
+   "fonte": "Paraíba Já",
+   "fonteId": "paraibaja",
+   "dataPub": "2026-11-17",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:59:24Z",
+   "tipo": "oficial",
+   "programas": [
+    "ensino",
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 40,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "89ca04b0a8f0",
+   "titulo": "Qluster Raises €4.7 Million to Develop a New Generation of Quantum Computers",
+   "url": "https://thequantuminsider.com/2026/11/17/qluster-raises-e4-7-million-to-develop-a-new-generation-of-quantum-computers",
+   "resumo": "Qluster, a Paris-based startup specializing in quantum computing, announces its first funding round of €4.7 million led by Quantonation, an investment fund specializing in quantum technologies and disruptive physics-based innovations, with the support of Quantum Launchpad and Bpifrance. A spin-off from the prestigious…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-17",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Qluster_levee_preseed_16x9_EN_web.jpg",
+   "coletadoEm": "2026-11-17T18:59:10Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "fomento",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "9ce1017394ff",
+   "titulo": "Planckian Selected for €10 Million in EIC Support for Quantum Hardware",
+   "url": "https://thequantuminsider.com/2026/11/17/planckian-selected-for-e10-million-in-eic-support-for-quantum-hardware",
+   "resumo": "Planckian, a quantum hardware company building superconducting quantum processors, has been selected by the European Innovation Council (EIC) for the EIC Accelerator. The award combines a €2.5 million grant with an equity investment of €7.5 million from the EIC Fund. Planckian is one of 35 companies selected in this…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-17",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Planckian_EIC_website_header_1920x1080_v3.png",
+   "coletadoEm": "2026-11-17T18:59:10Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "fomento",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "3661dfdb8922",
+   "titulo": "Telia, Nokia And QMill Demonstrate Quantum-Powered Encryption in a 5G Network",
+   "url": "https://thequantuminsider.com/2026/11/17/telia-nokia-and-qmill-demonstrate-quantum-powered-encryption-in-a-5g-network",
+   "resumo": "Telia Finland, Nokia and QMill have demonstrated the world’s first quantum-powered encryption in a 5G network using commercial equipment. In the proof of concept (PoC), QMill’s solution was integrated into Nokia’s 5G base station software and successfully demonstrated in Telia’s 5G innovation environment. Two firsts…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-17",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Nokia-Telia-and-QMill-in-Balance-1.png",
+   "coletadoEm": "2026-11-17T18:59:10Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "inclusao",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "a3a3d3025255",
+   "titulo": "Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVmhnaG5rU3doajJ3bFdNLXVoc0JXRWFLLXVBNjJRZThvaG9nX0ZuUW5HSU5QQzAxaDJEUFk3SXlXVVRTN2hPeXh5bkVEY2FJQkVyQnJNSm5NLVdIRnZ6aWF6MzlTRG1tdUFKV3VNVERZaUtUUDFSQkJmU3J5NmtUUG50a0RaZ1E1UnhmRTlibUJXZ1Z5bjBNYjJjMlpBR3dYTUl6bXduZGxxRVRC?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-17",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:58:24Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "703ffd472b54",
+   "titulo": "Índice de Inovação: Paraíba melhora competitividade e amplia investimentos em tecnologia",
+   "url": "https://jornaldaparaiba.com.br/cotidiano/indice-de-inovacao-paraiba-melhora-competitividade-e-amplia-investimentos-em-tecnologia",
+   "resumo": "Centro de Computação Quântica deve como a ser implementado na PB em 2026 - FOto: Divulgação. Gustavo Demétrio A Paraíba apresentou melhora na competitividade global entre entre 2025 e 2026, segundo o Índice de Inovação dos Estados 2026. O estado saiu da 27ª para a 17ª posição no ranking nacional no período, subindo…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-17",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Centro-de-Computacao-Quantica-deve-como-a-ser-impl0021456100202511242035-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FCentro-de-Computacao-Quantica-deve-como-a-ser-impl0021456100202511242035.jpg%3Fxid%3D1243413&amp;xid=1243413",
+   "coletadoEm": "2026-11-17T18:58:29Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "db892dffcaf0",
+   "titulo": "Parceria entre universidades desenvolve aplicativo que une Odontologia e Língua Brasileira de Sinais",
+   "url": "https://uepb.edu.br/parceria-entre-universidades-desenvolve-aplicativo-que-une-odontologia-e-lingua-brasileira-de-sinais",
+   "resumo": "O “Sorriso em Libras” foi criado para ajudar a transformar a relação das crianças com o cuidado odontológico, onde estas podem aprender de forma divertida e dentistas encontram apoio para construir uma experiência de confiança e cuidado. O aplicativo surgiu de uma parceria entre discentes e docentes do curso de…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-13",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/App-Sorriso-em-Libras-6-138x300.jpeg",
+   "coletadoEm": "2026-11-13T17:31:58Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "324e2a332a27",
+   "titulo": "Saiba como controlar a ansiedade antes e durante a prova do Enem",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/saiba-como-controlar-a-ansiedade-antes-e-durante-a-prova-do-enem",
+   "resumo": "Meses de preparação para o Exame Nacional do Ensino Médio (Enem) 2026, até que o segundo dia de provas, neste domingo (15), se aproxima. Com ele, muitos dos 5,05 milhões de candidatos sentem a pressão e até nervosismo na hora de colocar os conhecimentos à prova. Tão importante quanto revisar conteúdos estudados é ter…",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-15",
+   "imagem": "",
+   "coletadoEm": "2026-11-15T16:50:50Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "0b7eed92839d",
+   "titulo": "MEC revela que site do Inep sofreu tentativas de ataques hackers",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/mec-revela-que-site-do-inep-sofreu-tentativas-de-ataques-que-foram-controladas",
+   "resumo": "O ministro da Educação, Leonardo Barchini, disse que a página do Inep (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira) sofreu tentativas de ataques hackers, que foram controlados, neste domingo (15), segundo dia de prova do Enem. O comentário foi feito por Barchini na manhã deste domingo ao…",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-15",
+   "imagem": "",
+   "coletadoEm": "2026-11-16T20:02:09Z",
+   "tipo": "seguranca",
+   "programas": [
+    "seguranca",
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "462c2db52b59",
+   "titulo": "Reaplicação do Enem 2026: veja quem tem direito e como solicitar nova prova",
+   "url": "https://jornaldaparaiba.com.br/educacao/reaplicacao-do-enem-2026-veja-quem-tem-direito-e-como-solicitar-nova-prova",
+   "resumo": "Foto: Bruna Araújo/MEC O prazo para solicitar a reaplicação do Exame Nacional do Ensino Médio (Enem) 2026 está aberto até sexta-feira (20). O pedido é destinado aos candidatos que tiveram a participação nas provas prejudicada por problemas logísticos ou foram acometidos por doenças infectocontagiosas previstas no…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-17",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/enem-2026-prazo-para-pedir-reaplicacao-da-prova-co0022259000202611161542-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fenem-2026-prazo-para-pedir-reaplicacao-da-prova-co0022259000202611161542.jpg%3Fxid%3D1243379&amp;xid=1243379",
+   "coletadoEm": "2026-11-17T18:58:29Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": true,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "195633d896c2",
+   "titulo": "Inscrições para o concurso do TJPB terminam nesta quarta-feira (18)",
+   "url": "https://portalcorreio.com.br/inscricoes-para-o-concurso-do-tjpb-terminam-nesta-quarta-feira-18",
+   "resumo": "O prazo para inscrição no concurso do Tribunal de Justiça da Paraíba (TJPB) termina às 16h, desta quarta-feira (18). As inscrições devem ser realizadas exclusivamente pela internet, por meio do site da FGV, a taxa de inscrição, fixada em R$ 120. O certame oferece 50 vagas imediatas para o cargo de Analista Judiciário…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-17",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/06/6db55b58bda5849b381ea6dbb4b81dc4.jpg",
+   "coletadoEm": "2026-11-17T18:58:31Z",
+   "tipo": "evento",
+   "programas": [
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": true,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "a2afe03c1851",
+   "titulo": "Q-CTRL Unifies Boulder Opal and Fire Opal into Autonomous End-to-End Quantum Infrastructure Software",
+   "url": "https://quantumcomputingreport.com/q-ctrl-unifies-boulder-opal-and-fire-opal-into-autonomous-end-to-end-quantum-infrastructure-software",
+   "resumo": "Q-CTRL has integrated its Boulder Opal and Fire Opal software into a single platform for end-to-end quantum infrastructure. This unified system automates the entire quantum computing lifecycle, from processor bring-up to workload execution, significantly reducing manual effort and improving performance. The technology…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-17",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:59:10Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "escopo": "Global",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "fb5a6efba01c",
+   "titulo": "Embrapii inaugura Unidade Inovação Einstein em Saúde Digital",
+   "url": "https://embrapii.org.br/embrapii-inaugura-unidade-inovacao-einstein-em-saude-digital",
+   "resumo": "Iniciativa integra estratégia nacional do Ministério da Saúde e da Embrapii para fortalecer a pesquisa aplicada O Einstein Hospital Israelita foi credenciado como Unidade da Empresa Brasileira de Pesquisa e Inovação Industrial (Embrapii) na área de Saúde Digital. Desta forma, passa a apoiar empresas no desenvolvimento…",
+   "fonte": "Embrapii",
+   "fonteId": "embrapii",
+   "dataPub": "2026-11-17",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:58:53Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "transversal"
+   ],
+   "escopo": "Nacional",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "5055bc86ccc9",
+   "titulo": "IFPB transforma equipamentos apreendidos em inclusão digital e cidadania",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/ifpb-transforma-equipamentos-apreendidos-em-inclusao-digital-e-cidadania",
+   "resumo": "Aos 36 anos, Ana Paula da Silva tem motivos de sobra para se orgulhar da própria trajetória. Filha de agricultores, mãe de três filhos e nascida na comunidade Tabuleiro de Muquém, em Areia-PB, ela concluiu o Ensino Médio apenas no ano passado. Agora, está dando mais um passo em busca de novas oportunidades: aprender a…",
+   "fonte": "Paraíba Online",
+   "fonteId": "paraibaonline",
+   "dataPub": "2026-11-15",
+   "imagem": "",
+   "coletadoEm": "2026-11-16T20:02:09Z",
+   "tipo": "inclusao",
+   "programas": [
+    "ensino",
+    "inclusao"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "46852609d001",
+   "titulo": "Paraíba gastou R$ 94,9 milhões para aplicar Lei de Drogas em 2024",
+   "url": "https://jornaldaparaiba.com.br/cotidiano/paraiba-gastou-r-949-milhoes-para-aplicar-lei-de-drogas-em-2024",
+   "resumo": "Reprodução / Polícia Militar da Paraíba A Paraíba gastou R$ 94,9 milhões com a aplicação da Lei de Drogas em 2024, segundo pesquisa feita pelo Centro de Estudos de Segurança e Cidadania (CESeC). No estado, a maior parte do valor foi investido no Sistema Penitenciário (47,4%) e no Tribunal de Justiça (22,6%).O estudo…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-17",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Operacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FOperacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649.jpg%3Fxid%3D1243371&amp;xid=1243371",
+   "coletadoEm": "2026-11-17T18:58:29Z",
+   "tipo": "norma",
+   "programas": [
+    "fomento",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "b95dbb251632",
+   "titulo": "Como startups devem monitorar as oportunidades do setor de minerais críticos em discussão no Brasil",
+   "url": "https://startupi.com.br/como-startups-devem-monitorar-as-oportunidades-do-setor-de-minerais-criticos-em-discussao-no-brasil",
+   "resumo": "Startupi Como startups devem monitorar as oportunidades do setor de minerais críticos em discussão no Brasil Com R$ 1,2 bilhão em investimentos públicos para mapeamento geológico e aportes bilionários dos EUA no país, a corrida global para quebrar o monopólio chinês do refino abre uma janela rara para deep techs…",
+   "fonte": "Startupi",
+   "fonteId": "startupi",
+   "dataPub": "2026-11-17",
+   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/minreacao.webp",
+   "coletadoEm": "2026-11-17T18:59:04Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao",
+    "fomento",
+    "internacional"
+   ],
+   "escopo": "Nacional",
+   "pontos": 28,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "e19beb4d139f",
+   "titulo": "ÚLTIMOS DIAS! Inscrições para o 8º Prêmio Carolina Bori se encerram neste domingo",
+   "url": "http://www.jornaldaciencia.org.br/ultimos-dias-inscricoes-para-o-8o-premio-carolina-bori-se-encerram-neste-domingo",
+   "resumo": "Estudantes do Ensino Médio e da Graduação podem concorrer a prêmios de até R$ 13 mil, além de mentoria com cientistas e participação na Reunião Anual da SBPC. Interessadas têm até 15 de novembro para participar",
+   "fonte": "Jornal da Ciência",
+   "fonteId": "sbpc",
+   "dataPub": "2026-11-13",
+   "imagem": "http://www.jornaldaciencia.org.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-01-at-14.15.26-300x150.jpeg",
+   "coletadoEm": "2026-11-14T16:24:30Z",
+   "tipo": "evento",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Nacional",
+   "pontos": 27,
+   "urgente": true,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "07159166be28",
+   "titulo": "Projeto Comunicar Ciência oferece bolsas a universitários para divulgação científica",
+   "url": "https://jornal.usp.br/universidade/projeto-comunicar-ciencia-oferece-bolsas-a-universitarios-para-divulgacao-cientifica",
+   "resumo": "Estudantes de graduação em qualquer área do conhecimento podem se inscrever até o dia 22 de janeiro de 2027",
+   "fonte": "Jornal da USP",
+   "fonteId": "jornalusp",
+   "dataPub": "2026-11-13",
+   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/11/20261113_00_divulgacao_cientifica_imprensa_midia_camera.jpg",
+   "coletadoEm": "2026-11-14T16:24:48Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "astronomia",
+    "fomento"
+   ],
+   "escopo": "Nacional",
+   "pontos": 27,
+   "urgente": true,
+   "relevancia": "radar",
+   "origem": "auto"
+  }
+ ],
+ "doe": {},
+ "secom": [
+  {
+   "titulo": "CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba",
+   "portal": "ClickPB",
+   "url": "https://www.clickpb.com.br/tecnologia/ciquanta-computador-pb.html",
+   "dataPub": "2026-11-16",
+   "programas": [
+    "ciquanta",
+    "fomento"
+   ],
+   "resumo": ""
+  },
+  {
+   "titulo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança",
+   "portal": "MCTI",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc2EzVEZ2S2FjM2F6QWlRVTRUT2x6UjRhdUdINzBZNmZHOU5uU2ZEbEREUkk4U1Y5SmxLXzVxS3Q5MW9fRENIV0ZrRllZOGtoSVh6bXZ3ay1qdVBldlE0bDFVZkJqTnl6dVBkVGttempEYWJxSDJpamdza0UzMGFwcUJDTWV2OWE2Y0d1ZzZuN3hoNXpZZmNiR3BDOWlidUNBeGNRNU5Pdk9KWXNYWEQtSEhqUzFxQVpsbUY1Mkh5ODZTRlB3VTFQeFBJYk5ONzUzaTI5U3hIYTU4Rk91b3R6TklvYUtKYXB6c3ZwQWhrVUtaQQ?oc=5",
+   "dataPub": "2026-11-16",
+   "programas": [
+    "ciquanta"
+   ],
+   "resumo": ""
+  },
+  {
+   "titulo": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
+   "portal": "Paraíba Já",
+   "url": "https://paraibaja.com.br/governo-da-paraiba-abre-inscricoes-para-a-3a-edicao-do-game-dev-quest",
+   "dataPub": "2026-11-17",
+   "programas": [
+    "ensino",
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": ""
+  }
+ ],
+ "propostas": [],
+ "doeAuto": {
+  "data": "2026-11-17",
+  "lido": false,
+  "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
+  "arquivos": [],
+  "mencoes": []
+ },
+ "geradoEm": "2026-11-17T16:00:30-03:00",
+ "saude": [
+  {
+   "id": "auniao",
+   "nome": "A União",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "abdi",
+   "nome": "ABDI",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.abdi.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "abc",
+   "nome": "Academia Brasileira de Ciências",
+   "ok": true,
+   "itens": 21,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "agenciabori",
+   "nome": "Agência Bori",
+   "ok": true,
+   "itens": 9,
+   "feed": "https://abori.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "agenciabrasil",
+   "nome": "Agência Brasil",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "agenciacamara",
+   "nome": "Agência Câmara",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://www.camara.leg.br/noticias/rss/ultimas-noticias",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "ufpb-agencia",
+   "nome": "Agência de Notícias da UFPB",
+   "ok": true,
+   "itens": 13,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "aeb",
+   "nome": "Agência Espacial Brasileira",
+   "ok": true,
+   "itens": 6,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "agenciafapesp",
+   "nome": "Agência FAPESP",
+   "ok": true,
+   "itens": 7,
+   "feed": "https://agencia.fapesp.br/rss/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "agenciagov",
+   "nome": "Agência Gov",
+   "ok": true,
+   "itens": 15,
+   "feed": "https://agenciagov.ebc.com.br/RSS",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "agenciasenado",
+   "nome": "Agência Senado",
+   "ok": true,
+   "itens": 15,
+   "feed": "https://www12.senado.leg.br/noticias/RSS",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "anatel",
+   "nome": "Anatel",
+   "ok": true,
+   "itens": 10,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "anpd",
+   "nome": "ANPD",
+   "ok": true,
+   "itens": 3,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "anprotec",
+   "nome": "Anprotec",
+   "ok": true,
+   "itens": 8,
+   "feed": "https://anprotec.org.br/site/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "alpb",
+   "nome": "Assembleia Legislativa da Paraíba",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.al.pb.leg.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "baguete",
+   "nome": "Baguete",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "worldbank-digital",
+   "nome": "Banco Mundial Digital",
+   "ok": true,
+   "itens": 0,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "iadb",
+   "nome": "BID",
+   "ok": true,
+   "itens": 5,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "bndes",
+   "nome": "BNDES",
+   "ok": true,
+   "itens": 20,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "capes",
+   "nome": "CAPES",
+   "ok": true,
+   "itens": 4,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "cgee",
+   "nome": "CGEE",
+   "ok": true,
+   "itens": 5,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "cgibr",
+   "nome": "CGI.br",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://cgi.br/noticias/feed.rss",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "cienciahoje",
+   "nome": "Ciência Hoje",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://cienciahoje.org.br/feed/",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "clickpb",
+   "nome": "ClickPB",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://www.clickpb.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "cnpq",
+   "nome": "CNPq",
+   "ok": true,
+   "itens": 12,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "codata",
+   "nome": "CODATA",
+   "ok": true,
+   "itens": 14,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "ec-digital",
+   "nome": "Comissão Europeia Digital",
+   "ok": true,
+   "itens": 2,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "confap",
+   "nome": "Confap",
+   "ok": true,
+   "itens": 7,
+   "feed": "https://confap.org.br/news/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "consecti",
+   "nome": "Consecti",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.consecti.org.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "convergencia",
+   "nome": "Convergência Digital",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://convergenciadigital.com.br/category/governo/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "dataprev",
+   "nome": "Dataprev",
+   "ok": true,
+   "itens": 35,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "embrapa-algodao",
+   "nome": "Embrapa Algodão",
+   "ok": true,
+   "itens": 35,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "embrapii",
+   "nome": "Embrapii",
+   "ok": true,
+   "itens": 4,
+   "feed": "https://embrapii.org.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "eso",
+   "nome": "ESO",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://www.eso.org/public/news/feed/",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "eurekalert",
+   "nome": "EurekAlert",
+   "ok": true,
+   "itens": 3,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "fiepb",
+   "nome": "FIEP",
+   "ok": true,
+   "itens": 8,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "finep",
+   "nome": "Finep",
+   "ok": true,
+   "itens": 8,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "folhapatoense",
+   "nome": "Folha Patoense",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://folhapatoense.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "govdigital",
+   "nome": "Governo Digital",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "govtech",
+   "nome": "GovTech",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.govtech.com/artificial-intelligence.rss",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "horizontes",
+   "nome": "Horizontes de Inovação",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://horizontesdeinovacao.pb.gov.br/feed/",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "hpcwire",
+   "nome": "HPCwire",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.hpcwire.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "ibram",
+   "nome": "Ibram",
+   "ok": true,
+   "itens": 8,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "ieee",
+   "nome": "IEEE Spectrum",
+   "ok": true,
+   "itens": 11,
+   "feed": "https://spectrum.ieee.org/feeds/feed.rss",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "ifpb",
+   "nome": "IFPB",
+   "ok": true,
+   "itens": 26,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "insidehighered",
+   "nome": "Inside Higher Ed",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.insidehighered.com/rss.xml",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "ipea",
+   "nome": "Ipea",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "iphan",
+   "nome": "Iphan",
+   "ok": true,
+   "itens": 7,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "cio",
+   "nome": "IT Forum",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "sbpc",
+   "nome": "Jornal da Ciência",
+   "ok": true,
+   "itens": 10,
+   "feed": "http://www.jornaldaciencia.org.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "jornaldaparaiba",
+   "nome": "Jornal da Paraíba",
+   "ok": true,
+   "itens": 40,
+   "feed": "https://jornaldaparaiba.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "unicamp",
+   "nome": "Jornal da Unicamp",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "jornalusp",
+   "nome": "Jornal da USP",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://jornal.usp.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "maispb",
+   "nome": "MaisPB",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.maispb.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "mcti",
+   "nome": "MCTI",
+   "ok": true,
+   "itens": 19,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "mec",
+   "nome": "MEC",
+   "ok": true,
+   "itens": 34,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "mittr",
+   "nome": "MIT Technology Review",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.technologyreview.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "mobiletime",
+   "nome": "Mobile Time",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://www.mobiletime.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "nasa",
+   "nome": "NASA",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.nasa.gov/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "nature",
+   "nome": "Nature",
+   "ok": true,
+   "itens": 40,
+   "feed": "https://www.nature.com/nature.rss",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "nossaciencia",
+   "nome": "Nossa Ciência",
+   "ok": true,
+   "itens": 7,
+   "feed": "https://nossaciencia.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "oecd-education",
+   "nome": "OECD Education",
+   "ok": true,
+   "itens": 0,
+   "feed": "https://oecdedutoday.com/feed/",
+   "via": "feed",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "oecd-ai",
+   "nome": "OECD.AI",
+   "ok": true,
+   "itens": 3,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "olhardigital",
+   "nome": "Olhar Digital",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://olhardigital.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "paraibabusiness",
+   "nome": "Paraíba Business",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://paraibabusiness.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "paraibaja",
+   "nome": "Paraíba Já",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://paraibaja.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "paraibaonline",
+   "nome": "Paraíba Online",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://paraibaonline.com.br/educacao-e-ciencia/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "paraibatotal",
+   "nome": "Paraíba Total",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://paraibatotal.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "pbagora",
+   "nome": "PB Agora",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "pesquisafapesp",
+   "nome": "Pesquisa FAPESP",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://revistapesquisa.fapesp.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "physorg-quantum",
+   "nome": "Phys.org Quantum",
+   "ok": true,
+   "itens": 30,
+   "feed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "physicsworld",
+   "nome": "Physics World",
+   "ok": true,
+   "itens": 31,
+   "feed": "https://physicsworld.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "poderparaiba",
+   "nome": "Poder Paraíba",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://poderparaiba.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "polemicapb",
+   "nome": "Polêmica Paraíba",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.polemicaparaiba.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "portalcorreio",
+   "nome": "Portal Correio",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://portalcorreio.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "governo-pb",
+   "nome": "Portal do Governo da Paraíba",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "pmcg",
+   "nome": "Prefeitura de Campina Grande",
+   "ok": true,
+   "itens": 35,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "pmjp",
+   "nome": "Prefeitura de João Pessoa",
+   "ok": true,
+   "itens": 16,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "quanta",
+   "nome": "Quanta Magazine",
+   "ok": true,
+   "itens": 5,
+   "feed": "https://api.quantamagazine.org/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "qcreport",
+   "nome": "Quantum Computing Report",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://quantumcomputingreport.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "restofworld",
+   "nome": "Rest of World",
+   "ok": true,
+   "itens": 4,
+   "feed": "https://restofworld.org/feed/latest/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "rnp",
+   "nome": "RNP",
+   "ok": true,
+   "itens": 6,
+   "feed": "https://www.rnp.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "saudedigital",
+   "nome": "Saúde Digital News",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://saudedigitalnews.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "science",
+   "nome": "Science",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://www.science.org/rss/news_current.xml",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "sebrae-pb",
+   "nome": "Sebrae Paraíba",
+   "ok": true,
+   "itens": 36,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "semiengineering",
+   "nome": "Semiconductor Engineering",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://semiengineering.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "serpro",
+   "nome": "Serpro",
+   "ok": true,
+   "itens": 13,
+   "feed": "https://www.serpro.gov.br/RSS",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "spacenews",
+   "nome": "SpaceNews",
+   "ok": true,
+   "itens": 12,
+   "feed": "https://spacenews.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "startupi",
+   "nome": "Startupi",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://startupi.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "telesintese",
+   "nome": "Tele.Síntese",
+   "ok": true,
+   "itens": 40,
+   "feed": "https://telesintese.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "teletime",
+   "nome": "Teletime",
+   "ok": true,
+   "itens": 30,
+   "feed": "https://teletime.com.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "theconversation-br",
+   "nome": "The Conversation Brasil",
+   "ok": true,
+   "itens": 31,
+   "feed": "https://theconversation.com/br/articles.atom",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "quantuminsider",
+   "nome": "The Quantum Insider",
+   "ok": true,
+   "itens": 10,
+   "feed": "https://thequantuminsider.com/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "the",
+   "nome": "Times Higher Education",
+   "ok": true,
+   "itens": 0,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
+   "id": "uepb",
+   "nome": "UEPB",
+   "ok": true,
+   "itens": 20,
+   "feed": "https://uepb.edu.br/feed/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "ufpb",
+   "nome": "UFPB",
+   "ok": true,
+   "itens": 13,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "unesco",
+   "nome": "UNESCO",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "iesalc",
+   "nome": "UNESCO IESALC",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "unesco-whc",
+   "nome": "UNESCO Patrimônio Mundial",
+   "ok": true,
+   "itens": 3,
+   "feed": "https://whc.unesco.org/en/news/rss/",
+   "via": "feed",
+   "obs": ""
+  },
+  {
+   "id": "wscom",
+   "nome": "WSCOM",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "cas",
+   "nome": "Academia Chinesa de Ciências",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "apolitical",
+   "nome": "Apolitical",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "brasilcg",
+   "nome": "Brasil CG",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "chinadaily-tech",
+   "nome": "China Daily Tech",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "europeana",
+   "nome": "Europeana",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "fapesq",
+   "nome": "FAPESQ",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "icom",
+   "nome": "ICOM",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "ifsertaopb",
+   "nome": "IF Sertão Paraibano",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "insa",
+   "nome": "INSA",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "iphaep",
+   "nome": "IPHAEP",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "jampanews",
+   "nome": "Jampa News",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "radiotabajara",
+   "nome": "Rádio Tabajara",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "scidev",
+   "nome": "SciDev.Net",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "sebrae-startups",
+   "nome": "Sebrae Startups",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "ufcg",
+   "nome": "UFCG",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "uwn",
+   "nome": "University World News",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "xinhua",
+   "nome": "Xinhua Ciência",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  }
+ ],
+ "curiosidade": {
+  "texto": "Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.",
+  "porque": "Cada qubit pode estar numa mistura de 0 e 1. Os estados possíveis dobram a cada qubit: 2 elevado a 20, 2 elevado a 100.",
+  "tema": "quantica",
+  "area": "Computação quântica",
+  "formula": "2²⁰ = 1.048.576"
+ },
+ "capa": "capa-2026-11-17-1600.png"
+}
