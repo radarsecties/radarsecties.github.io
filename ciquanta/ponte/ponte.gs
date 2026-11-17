@@ -3,13 +3,17 @@
  *
  * Roda na própria conta do CIQUANTA (Google Apps Script) e dá ao CRM o que ele precisa do Google:
  * enviar e acompanhar e-mails, agenda, arquivos do Drive, planilhas do Painel CIQUANTA e a base compartilhada.
- * Não usa Google Cloud nem ID de cliente. Só atende pedidos que trazem a chave abaixo.
+ * Não usa Google Cloud nem ID de cliente. Só atende quem traz a chave abaixo (computador que instalou a ponte)
+ * ou uma sessão aberta com o código de acesso enviado ao próprio e-mail do CIQUANTA.
  *
  * Serviços avançados usados (menu Serviços +): Gmail API (obrigatório) e Google Calendar API (link do Meet).
  */
 const CHAVE = '__CHAVE__';
 const PASTA = 'CIQUANTA CRM';
-const VERSAO = 2;
+const VERSAO = 3;
+const DIAS_SESSAO = 30;
+// Únicas ações atendidas sem chave nem sessão: pedir o código e entrar com ele
+const PUBLICAS = { acessoPedir: true, acessoEntrar: true };
 
 function doGet() {
   return saida({ ok: true, app: 'ciquanta-ponte', versao: VERSAO });
@@ -18,10 +22,16 @@ function doGet() {
 function doPost(e) {
   let req;
   try { req = JSON.parse(e.postData.contents); } catch (x) { return saida({ ok: false, erro: 'Pedido inválido.' }); }
-  if (!req || !iguais_(req.chave, CHAVE)) return saida({ ok: false, codigo: 401, erro: 'Chave de acesso incorreta.' });
+  if (!req) return saida({ ok: false, erro: 'Pedido inválido.' });
   const acao = ACOES[req.acao];
   if (!acao) return saida({ ok: false, erro: 'Ação desconhecida: ' + req.acao });
-  try { return saida({ ok: true, dados: acao(req.dados || {}) }); }
+  let sessao = null;
+  if (!PUBLICAS[req.acao]) {
+    if (iguais_(req.chave, CHAVE)) sessao = { admin: true };
+    else if (req.sessao) sessao = sessaoValida_(req.sessao);
+    if (!sessao) return saida({ ok: false, codigo: 401, erro: req.sessao ? 'Acesso encerrado ou expirado. Entre de novo com o código enviado ao e-mail do CIQUANTA.' : 'Chave de acesso incorreta.' });
+  }
+  try { return saida({ ok: true, dados: acao(req.dados || {}, sessao) }); }
   catch (x) { return saida({ ok: false, erro: String((x && x.message) || x) }); }
 }
 
@@ -32,6 +42,25 @@ function iguais_(a, b) {
   let d = 0; for (let i = 0; i < a.length; i++) d |= a.charCodeAt(i) ^ b.charCodeAt(i);
   return d === 0;
 }
+// ---- Acesso: código de uso único enviado ao próprio e-mail do CIQUANTA e sessões de 30 dias por computador
+function hash_(s) { return Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, String(s)).map(function (b) { return ('0' + (b & 255).toString(16)).slice(-2); }).join(''); }
+function props_() { return PropertiesService.getScriptProperties(); }
+function mascarar_(e) { const p = String(e).split('@'); return p[0].slice(0, 2) + '•••' + p[0].slice(-1) + '@' + p[1]; }
+function sessaoValida_(token) {
+  if (!/^[a-f0-9-]{60,80}$/.test(String(token))) return null;
+  const k = 'sessao:' + hash_(token), p = props_(), v = p.getProperty(k);
+  if (!v) return null;
+  const s = JSON.parse(v);
+  if (s.expira < Date.now()) { p.deleteProperty(k); return null; }
+  if (Date.now() - (s.uso || 0) > 36e5) { s.uso = Date.now(); p.setProperty(k, JSON.stringify(s)); }
+  s.chave = k; return s;
+}
+function sessoes_() {
+  const todas = props_().getProperties(), out = [];
+  Object.keys(todas).forEach(function (k) { if (k.indexOf('sessao:') === 0) { const s = JSON.parse(todas[k]); if (s.expira < Date.now()) props_().deleteProperty(k); else out.push([k, s]); } });
+  return out;
+}
+
 function eu_() { return String(Session.getEffectiveUser().getEmail() || '').toLowerCase(); }
 function exigeGmail_() { if (typeof Gmail === 'undefined') throw new Error('Ative o serviço "Gmail API" no Apps Script (Serviços +) e publique uma nova versão.'); }
 function aspas_(s) { return String(s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
@@ -61,7 +90,43 @@ function revisao_(f) { return { id: f.getId(), headRevisionId: String(f.getLastU
 const SENSIVEL = /cpf|rg\b|identidade|documento|telefone|celular|whats|nascimento|endere[cç]o|cep\b/i;
 
 const ACOES = {
-  ping: () => ({ email: eu_(), gmailAvancado: typeof Gmail !== 'undefined', agendaAvancada: typeof Calendar !== 'undefined', cotaDiaria: MailApp.getRemainingDailyQuota(), fuso: Session.getScriptTimeZone(), versao: VERSAO }),
+  // ---- Acesso
+  acessoPedir: d => {
+    const c = CacheService.getScriptCache(), n = Number(c.get('pedidos') || 0);
+    if (n >= 6) throw new Error('Muitos pedidos de código em pouco tempo. Aguarde 15 minutos.');
+    c.put('pedidos', String(n + 1), 900);
+    const codigo = String(parseInt(hash_(Utilities.getUuid()).slice(0, 12), 16) % 1000000);
+    const seis = ('000000' + codigo).slice(-6), quem = String(d.dispositivo || 'um computador').slice(0, 60);
+    c.put('codigo', JSON.stringify({ h: hash_(seis), tentativas: 0 }), 600);
+    GmailApp.sendEmail(eu_(), 'Código de acesso ao CIQUANTA CRM: ' + seis,
+      'Código de acesso ao CIQUANTA CRM: ' + seis + '\n\nPedido por: ' + quem + '\nVale por 10 minutos e para uma única entrada.\n\nSe não foi alguém da equipe, ignore esta mensagem: ninguém entra sem este código.');
+    return { para: mascarar_(eu_()) };
+  },
+  acessoEntrar: d => {
+    const c = CacheService.getScriptCache(), v = c.get('codigo');
+    if (!v) throw new Error('Código expirado. Peça um novo.');
+    const x = JSON.parse(v);
+    if (!iguais_(hash_(String(d.codigo || '').replace(/\D/g, '')), x.h)) {
+      x.tentativas++;
+      if (x.tentativas >= 5) { c.remove('codigo'); throw new Error('Código incorreto. Peça um novo código.'); }
+      c.put('codigo', JSON.stringify(x), 600);
+      throw new Error('Código incorreto.');
+    }
+    c.remove('codigo');
+    const token = Utilities.getUuid() + '-' + Utilities.getUuid(), agora = Date.now();
+    const s = { nome: String(d.dispositivo || 'Computador').slice(0, 60), criada: agora, uso: agora, expira: agora + DIAS_SESSAO * 864e5 };
+    props_().setProperty('sessao:' + hash_(token), JSON.stringify(s));
+    return { sessao: token, email: eu_(), expira: s.expira };
+  },
+  acessoSessoes: (d, sessao) => sessoes_().map(function (e) { return { id: e[0].slice(7, 19), nome: e[1].nome, criada: e[1].criada, uso: e[1].uso, expira: e[1].expira, atual: sessao.chave === e[0] }; }),
+  acessoRevogar: (d, sessao) => {
+    let n = 0;
+    sessoes_().forEach(function (e) { if (d.id === 'todas' ? e[0] !== sessao.chave : e[0].slice(7, 19) === d.id) { props_().deleteProperty(e[0]); n++; } });
+    return { encerradas: n };
+  },
+  acessoSair: (d, sessao) => { if (sessao.chave) props_().deleteProperty(sessao.chave); return { ok: true }; },
+
+  ping: () => ({ email: eu_(), acesso: true, gmailAvancado: typeof Gmail !== 'undefined', agendaAvancada: typeof Calendar !== 'undefined', cotaDiaria: MailApp.getRemainingDailyQuota(), fuso: Session.getScriptTimeZone(), versao: VERSAO }),
 
   // ---- E-mail
   enviar: d => { exigeGmail_(); const corpo = { raw: d.raw }; if (d.threadId) corpo.threadId = d.threadId; const r = Gmail.Users.Messages.send(corpo, 'me'); return { id: r.id, threadId: r.threadId }; },

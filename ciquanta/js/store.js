@@ -12,7 +12,7 @@ const empty = () => ({
   modelos: [], materiais: [], eventos: [], cadencias: [], inscricoes: [], editais: [], adesoes: [], supressao: [], descartadas: [],
   painel: { atualizadoEm: '', visitas: [], cadastros: {}, temas: {}, totais: {} },
   config: {
-    ponteUrl: '', ponteChave: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
+    ponteUrl: '', ponteChave: '', ponteSessao: '', remetenteNome: '', remetenteCargo: '', remetenteTelefone: '', replyTo: 'ciquanta@secties.pb.gov.br',
     enderecoPublico: '', intervaloSeg: 5, limiteDiario: 400, monitorSeg: 60, notificacoes: true,
     rodape: 'Você recebeu esta mensagem por sua atuação institucional em ciência, tecnologia e inovação. Para não receber novos contatos do CIQUANTA, responda com "REMOVER".',
     escopos: { rascunhos: true, leitura: true, agenda: true, drive: true, backup: false, planilhas: true },
@@ -71,8 +71,11 @@ function load() {
   } catch (e) { console.error(e); return empty(); }
 }
 
-let saveTimer, avisouFalha = false;
+let saveTimer, avisouFalha = false, descartado = false;
+/** Depois de apagar os dados deste computador, nada mais é gravado até recarregar a página. */
+export function descartar() { descartado = true; clearTimeout(saveTimer); }
 function gravar() {
+  if (descartado) return true;
   try { localStorage.setItem(KEY, JSON.stringify(db)); avisouFalha = false; return true; }
   catch (e) {
     console.error(e);
@@ -222,7 +225,7 @@ export async function seedIfNeeded() {
 }
 
 // ---- Backup
-export function exportJSON() { const { config, ...rest } = db; return JSON.stringify({ ...rest, config: { ...config, historyId: '', ponteChave: '' }, exportadoEm: now(), app: 'ciquanta-crm' }, null, 1); }
+export function exportJSON() { const { config, ...rest } = db; return JSON.stringify({ ...rest, config: { ...config, historyId: '', ponteChave: '', ponteSessao: '' }, exportadoEm: now(), app: 'ciquanta-crm' }, null, 1); }
 export function importJSON(text, { merge = false } = {}) {
   let d; try { d = JSON.parse(text); } catch { throw new Error('O arquivo não é um JSON válido.'); }
   if (!d || !Array.isArray(d.orgs)) throw new Error('O arquivo não é uma cópia do CRM CIQUANTA.');
@@ -230,7 +233,7 @@ export function importJSON(text, { merge = false } = {}) {
   sanear(d);
   if (!merge) {
     const keep = db.config;
-    db = { ...empty(), ...d, config: { ...empty().config, ...keep, ...(d.config || {}), ponteUrl: d.config?.ponteUrl || keep.ponteUrl, ponteChave: keep.ponteChave, historyId: keep.historyId } };
+    db = { ...empty(), ...d, config: { ...empty().config, ...keep, ...(d.config || {}), ponteUrl: d.config?.ponteUrl || keep.ponteUrl, ponteChave: keep.ponteChave, ponteSessao: keep.ponteSessao, historyId: keep.historyId } };
   } else {
     for (const col of COLS) {
       const ids = new Set(db[col].map(x => x.id));
@@ -241,7 +244,7 @@ export function importJSON(text, { merge = false } = {}) {
   }
   emit('import');
 }
-export function resetAll() { criarPonto('antes de apagar todos os dados'); const { ponteUrl, ponteChave } = db.config; db = empty(); Object.assign(db.config, { ponteUrl, ponteChave }); emit('reset'); }
+export function resetAll() { criarPonto('antes de apagar todos os dados'); const { ponteUrl, ponteChave, ponteSessao } = db.config; db = empty(); Object.assign(db.config, { ponteUrl, ponteChave, ponteSessao }); emit('reset'); }
 export const contagem = (d = db) => ({ orgs: d.orgs.length, contatos: d.contatos.length, oportunidades: d.oportunidades.length, interacoes: d.interacoes.length });
 
 // ---- IndexedDB (arquivos de materiais)

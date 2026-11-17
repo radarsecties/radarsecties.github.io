@@ -79,7 +79,9 @@ A conexão com ciquanta@secties.pb.gov.br é feita por uma **ponte** no Google A
 2. Em [script.google.com](https://script.google.com/home/projects/create), com a conta do CIQUANTA: cole o código, adicione os serviços **Gmail API** e **Google Calendar API**, e implante como **App da Web** (Executar como: Eu; Quem pode acessar: Qualquer pessoa).
 3. Cole o endereço `/exec` em Configurações e conecte. **Link para a equipe** conecta os outros computadores.
 
-A ponte só atende pedidos com a chave (comparação em tempo constante) e faz apenas o que o CRM precisa: enviar e criar rascunhos, ler as conversas para acompanhar respostas, ler e criar compromissos (com Meet), buscar arquivos e apresentações no Drive, ler as planilhas do Painel CIQUANTA sem colunas de documentos, telefone ou endereço, e guardar a base compartilhada em arquivos da pasta "CIQUANTA CRM". A chave não sai nas cópias de segurança. Detalhes e problemas comuns estão no manual.
+**Acesso restrito:** só o computador que instalou a ponte usa a chave. Os demais entram pela tela **Entrar**, com um código de seis dígitos enviado ao próprio ciquanta@secties.pb.gov.br, e recebem uma sessão de 30 dias, que pode ser encerrada em Configurações → Acesso ao CRM. Com `data/acesso.json` publicado, todo visitante sem sessão vê só a tela de entrada. Para fechar também os arquivos do site no domínio da SECTIES, veja a seção 3 de [PUBLICACAO.md](PUBLICACAO.md) (Cloudflare Access ou proxy de autenticação).
+
+A ponte só atende pedidos com a chave ou uma sessão válida (comparação em tempo constante) e faz apenas o que o CRM precisa: enviar e criar rascunhos, ler as conversas para acompanhar respostas, ler e criar compromissos (com Meet), buscar arquivos e apresentações no Drive, ler as planilhas do Painel CIQUANTA sem colunas de documentos, telefone ou endereço, e guardar a base compartilhada em arquivos da pasta "CIQUANTA CRM". A chave não sai nas cópias de segurança. Detalhes e problemas comuns estão no manual.
 
 O acompanhamento em tempo real e as cadências funcionam enquanto o sistema estiver aberto em alguma aba com a ponte conectada.
 

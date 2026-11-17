@@ -1,6 +1,6 @@
 // Funcionamento sem conexão: a rede vem sempre primeiro; a cópia guardada só é usada quando não há internet.
 // Assim, toda atualização publicada chega na próxima abertura, sem versões presas em cache.
-const CACHE = 'ciquanta-crm-v5';
+const CACHE = 'ciquanta-crm-v6';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => e.waitUntil(

@@ -121,11 +121,20 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #EEEEE8; border-r
   <p>Volte ao CRM, cole o endereço no campo do passo 03 e clique em <b>Conectar</b>. O cartão mostra o e-mail conectado, quantos envios ainda cabem no dia e se as reuniões terão Meet. A base compartilhada é ligada automaticamente.</p>
   <figure><img src="config.jpg" alt="Configurações com o e-mail conectado"><figcaption>E-mail conectado: a cota diária vem da própria conta Google.</figcaption></figure>
   <h3>Outros computadores da equipe</h3>
-  <p>No computador já conectado, clique em <b>Link para a equipe</b> e envie o link por um canal interno. Quem abrir o link fica conectado na hora, com a mesma base. Trate o link como uma senha: ele permite enviar e-mails em nome do CIQUANTA.</p>
+  <p>No computador já conectado, clique em <b>Link para a equipe</b> e envie o link por um canal interno. Quem abrir o link vê a tela <b>Entrar</b>.</p>
+  <h3>Entrar no CRM</h3>
+  <figure><img src="entrar.jpg" alt="Tela de entrada"><figcaption>Entrar: o código vai para o e-mail do CIQUANTA.</figcaption></figure>
+  <ol class="passos">
+    <li>Confira o nome do computador (aparece na lista de acessos) e clique em <b>Enviar código</b>.</li>
+    <li>Abra a caixa ciquanta@secties.pb.gov.br: chega o e-mail “Código de acesso ao CIQUANTA CRM”, com seis dígitos.</li>
+    <li>Digite o código e clique em <b>Entrar</b>. O código vale 10 minutos e uma única entrada; este computador fica liberado por 30 dias.</li>
+  </ol>
+  <p>Em <b>Configurações → Acesso ao CRM</b> aparecem os computadores com acesso; <b>Encerrar</b> desliga um deles na hora. O link <b>Sair</b>, no rodapé do menu, encerra o acesso deste computador e pode apagar os dados dele, o que é recomendado em computadores compartilhados. Para que qualquer pessoa que abra o endereço caia na tela de entrada, publique o arquivo <code>data/acesso.json</code> (botão <b>Baixar acesso.json</b>).</p>
   <h3>Atualizar a ponte ou trocar a chave</h3>
   <ul>
     <li><b>Nova versão do código:</b> cole o código novo no Apps Script e use <b>Implantar → Gerenciar implantações → editar (lápis) → Versão: Nova versão → Implantar</b>. O endereço continua o mesmo.</li>
-    <li><b>Trocar a chave</b> (por exemplo, se o link vazou): em Configurações, desconecte, copie o código de novo (vem com chave nova), publique uma nova versão e reconecte. Depois envie um novo link à equipe.</li>
+    <li><b>Trocar a chave</b> (por exemplo, se o computador que instalou a ponte foi perdido): em Configurações, desconecte, copie o código de novo (vem com chave nova), publique uma nova versão e reconecte. Os computadores da equipe continuam entrando pelo código.</li>
+    <li><b>Ponte da versão 2</b>: Configurações mostra o aviso <i>Atualize a ponte para a versão 3</i>. Copie o código atualizado e publique uma nova versão; só então a entrada por código funciona.</li>
   </ul>
 </section>
 
@@ -255,7 +264,7 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #EEEEE8; border-r
     <li><b>Descadastro</b>: quem responder “REMOVER” deve entrar na lista de descadastro em Configurações. Ninguém da lista recebe campanha ou cadência.</li>
     <li><b>Planilhas do Painel</b>: CPF, documento, telefone, endereço e data de nascimento não saem das planilhas; só totais ficam guardados.</li>
   </ul>
-  <div class="caixa alerta"><b>Acesso ao e-mail</b>O endereço da ponte com a chave, ou o link para a equipe, dá acesso ao e-mail do CIQUANTA. Compartilhe só com a equipe e troque a chave se houver dúvida.</div>
+  <div class="caixa alerta"><b>Acesso ao CRM</b>Ninguém entra sem o código enviado ao e-mail do CIQUANTA, e cada computador liberado aparece em Configurações → Acesso ao CRM, onde pode ser encerrado. Ao publicar no domínio da SECTIES, peça à TI a porta de acesso na frente do endereço (seção 3 do guia de publicação).</div>
 </section>
 
 <section class="sec">
@@ -280,6 +289,8 @@ code { font: 8.8pt ui-monospace, Menlo, monospace; background: #EEEEE8; border-r
     <tr><td>Reuniões sem link do Meet</td><td>Adicione o serviço Google Calendar API e publique uma nova versão.</td></tr>
     <tr><td>Cadências não enviam</td><td>Nenhum computador conectado e aberto, envio automático desligado em Cadências ou fora do horário comercial.</td></tr>
     <tr><td>Limite diário atingido</td><td>O Google limita envios por dia (1.500 destinatários no Workspace, por script). Os envios continuam no dia seguinte.</td></tr>
+    <tr><td>O código não chega</td><td>Confira a caixa e o spam de ciquanta@secties.pb.gov.br. Depois de seis pedidos seguidos, a ponte espera 15 minutos antes de enviar outro.</td></tr>
+    <tr><td>“Acesso encerrado ou expirado”</td><td>A sessão venceu (30 dias) ou foi encerrada em Configurações. Entre de novo com um código.</td></tr>
     <tr><td>Dados diferentes entre computadores</td><td>Base compartilhada desligada em um deles. Ligue em Configurações e use “Sincronizar agora”.</td></tr>
     <tr><td>A Central mostra coleta antiga</td><td>Veja a aba Actions do repositório no GitHub; o resultado de cada execução fica registrado lá.</td></tr></table>
 </section>

@@ -18,13 +18,8 @@ async function copiar(texto, msg) {
 }
 
 export async function render(view, { params } = {}) {
-  // Link de acesso enviado pela equipe: configura a ponte neste computador e limpa o endereço
-  if (params?.get('ponte') && params.get('chave')) {
-    store.setConfig({ ponteUrl: params.get('ponte'), ponteChave: params.get('chave'), sincronizar: true });
-    history.replaceState(null, '', '#/config');
-    G.connect().then(() => { toast('E-mail do CIQUANTA conectado neste computador.', 'ok'); sync.iniciar(); }).catch(e => toast(e.message, 'bad'));
-  }
-  let pontos = await store.listarPontos();
+  let pontos = await store.listarPontos(), acessos = null;
+  const carregarAcessos = () => G.status().recursos?.acesso ? G.sessoes().then(l => { acessos = l; draw(); }).catch(() => {}) : null;
   const draw = () => {
     const c = store.cfg(), s = G.status(), st = store.state(), y = sync.estado(), r = s.recursos || {};
     const pub = (c.enderecoPublico || '').trim() || (location.protocol === 'https:' ? new URL('.', location.href).href : '');
@@ -45,6 +40,11 @@ export async function render(view, { params } = {}) {
       <div><span>02</span><b>Publicar no Apps Script</b><a class="btn sm" href="https://script.google.com/home/projects/create" target="_blank" rel="noopener">${icon('externo', 13)} Abrir com a conta do CIQUANTA</a></div>
       <div><span>03</span><b>Colar o endereço</b><form id="pt" style="display:flex;gap:6px"><input type="url" name="url" placeholder="https://script.google.com/macros/s/…/exec" value="${esc(c.ponteUrl)}" required><button class="btn primary sm">Conectar</button></form></div>
     </div>`}
+
+    ${s.conectado && !r.acesso && c.ponteChave ? `<div class="callout warn" style="margin:0 0 18px">Atualize a ponte para a versão 3 para que a equipe entre com o código enviado ao e-mail do CIQUANTA. <button class="btn sm" id="copiar">${icon('copiar', 14)} Copiar código atualizado</button></div>` : ''}
+    ${s.conectado && r.acesso ? `<div class="card" style="margin-bottom:24px"><h3>Acesso ao CRM <span class="toolbar" style="margin:0"><button class="btn sm ghost" id="exigir">Baixar acesso.json</button>${acessos?.filter(a => !a.atual).length ? '<button class="btn sm" id="rev-todas">Encerrar os outros acessos</button>' : ''}</span></h3>
+      ${acessos ? (acessos.length ? `<div class="table-wrap"><table><thead><tr><th>Computador</th><th>Entrou em</th><th>Último uso</th><th>Expira em</th><th></th></tr></thead><tbody>${acessos.sort((a, b) => b.uso - a.uso).map(a => `<tr><td class="title">${esc(a.nome)}${a.atual ? ' <span class="badge ok">este computador</span>' : ''}</td><td>${fmtDateTime(a.criada)}</td><td>${fmtDateTime(a.uso)}</td><td>${fmtDateTime(a.expira)}</td><td class="num">${a.atual ? '' : `<button class="btn sm ghost danger" data-rev="${esc(a.id)}">Encerrar</button>`}</td></tr>`).join('')}</tbody></table></div>` : `<div class="empty">Só este computador${c.ponteChave ? ', que instalou a ponte,' : ''} tem acesso.</div>`) : '<div class="empty">Carregando…</div>'}
+    </div>` : ''}
 
     <div class="grid g2">
       <div class="card"><h3>Remetente e assinatura</h3><form class="form-grid" id="rem">
@@ -95,7 +95,7 @@ export async function render(view, { params } = {}) {
     const conectar = async () => {
       try { await G.connect(); toast('E-mail do CIQUANTA conectado.', 'ok'); if (!store.cfg().sincronizar) store.setConfig({ sincronizar: true }); sync.iniciar(); }
       catch (e) { toast(e.message, 'bad'); }
-      draw();
+      draw(); carregarAcessos();
     };
     view.querySelector('#pt')?.addEventListener('submit', e => {
       e.preventDefault(); const url = G.normalizarPonte(new FormData(e.target).get('url'));
@@ -107,9 +107,12 @@ export async function render(view, { params } = {}) {
     view.querySelector('#on')?.addEventListener('click', conectar);
     view.querySelector('#off')?.addEventListener('click', () => { G.disconnect(); draw(); });
     view.querySelector('#link')?.addEventListener('click', () => {
-      const u = `${location.origin}${location.pathname}#/config?ponte=${encodeURIComponent(c.ponteUrl)}&chave=${encodeURIComponent(c.ponteChave)}`;
-      copiar(u, 'Link de acesso copiado. Envie só para a equipe: ele dá acesso ao e-mail do CIQUANTA.');
+      const u = `${location.origin}${location.pathname}#/entrar?ponte=${encodeURIComponent(c.ponteUrl)}`;
+      copiar(u, 'Link copiado. Quem abrir entra com o código enviado ao e-mail do CIQUANTA.');
     });
+    view.querySelector('#exigir')?.addEventListener('click', () => { download('acesso.json', JSON.stringify({ ponte: c.ponteUrl }, null, 1) + '\n', 'application/json'); toast('Publique o arquivo em data/acesso.json: todo computador sem acesso verá a tela de entrada.', 'ok'); });
+    view.querySelector('#rev-todas')?.addEventListener('click', async () => { if (await confirmDialog('Encerrar o acesso de todos os outros computadores? Eles precisarão de um novo código.', { ok: 'Encerrar', danger: true })) { await G.revogar('todas'); toast('Acessos encerrados.', 'ok'); carregarAcessos(); } });
+    view.querySelectorAll('[data-rev]').forEach(b => b.onclick = async () => { await G.revogar(b.dataset.rev); toast('Acesso encerrado.', 'ok'); carregarAcessos(); });
     form('#rem', d => { store.setConfig(d); toast('Salvo.', 'ok'); });
     form('#mp', d => { store.setConfig({ painelUrl: d.painelUrl || 'https://painelciquanta.secties.pb.gov.br', planilhaVisitas: d.planilhaVisitas.trim(), planilhaCadastros: d.planilhaCadastros.trim() }); toast('Salvo.', 'ok'); });
     form('#rit', d => { store.setConfig({ intervaloSeg: Math.max(1, +d.intervaloSeg || 5), limiteDiario: Math.max(1, +d.limiteDiario || 400), monitorSeg: Math.max(30, +d.monitorSeg || 60), notificacoes: !!d.notificacoes }); if (monitor.estado().ativo) { monitor.parar(); monitor.iniciar(); } toast('Salvo.', 'ok'); });
@@ -141,6 +144,7 @@ export async function render(view, { params } = {}) {
     view.querySelector('#reset').onclick = async () => { if (await confirmDialog('Apagar todos os dados (organizações, contatos, oportunidades, campanhas e histórico)? Baixe uma cópia antes.', { ok: 'Apagar tudo', danger: true })) { store.resetAll(); await store.seedIfNeeded(); toast('Dados apagados.'); draw(); } };
   };
   draw();
-  const offs = [G.onAuth(draw), sync.onSync(() => { if (!view.contains(document.activeElement) || document.activeElement === document.body) draw(); })];
+  carregarAcessos();
+  const offs = [G.onAuth(st => { draw(); if (st.conectado && !acessos) carregarAcessos(); }), sync.onSync(() => { if (!view.contains(document.activeElement) || document.activeElement === document.body) draw(); })];
   return () => offs.forEach(f => f());
 }

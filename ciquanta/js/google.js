@@ -1,6 +1,7 @@
 // Conexão com o e-mail do CIQUANTA pela ponte (ponte/ponte.gs), publicada como app da Web na própria conta.
 // Mantém a mesma interface usada pelo resto do CRM (envio, leitura, agenda, Drive, planilhas e base compartilhada),
-// sem Google Cloud, ID de cliente ou login por janela: basta o endereço da ponte e a chave de acesso.
+// sem Google Cloud, ID de cliente ou login por janela. O computador que instalou a ponte usa a chave; os demais
+// entram com um código enviado ao próprio e-mail do CIQUANTA e recebem uma sessão de 30 dias.
 import { cfg, setConfig } from './store.js';
 import { sleep } from './util.js';
 
@@ -9,7 +10,8 @@ const subs = new Set();
 export const onAuth = fn => (subs.add(fn), () => subs.delete(fn));
 const notify = () => subs.forEach(f => { try { f(status()); } catch (e) { console.error(e); } });
 
-const configurada = () => /^https:\/\/script\.google(usercontent)?\.com\//.test(cfg().ponteUrl || '') && !!cfg().ponteChave;
+const urlValida = u => /^https:\/\/script\.google(usercontent)?\.com\//.test(u || '');
+const configurada = () => urlValida(cfg().ponteUrl) && !!(cfg().ponteChave || cfg().ponteSessao);
 export function status() { return { conectado: !!info, email: info?.email || '', configurada: configurada(), erro: ultimoErro, recursos: info || {} }; }
 /** Todas as funções vêm da mesma ponte; o Meet e as conversas encadeadas dependem dos serviços avançados. */
 export const hasScope = () => !!info;
@@ -23,22 +25,27 @@ export function gerarChave() {
 /** Endereço do app da Web na forma pública: sem o domínio do Workspace (/a/macros/<domínio>/) e sem o número da conta (/u/N/). */
 export const normalizarPonte = url => String(url || '').trim().replace(/\/a\/macros\/[^/]+\//, '/macros/').replace(/\/u\/\d+\//, '/').replace(/\/dev$/, '/exec');
 
-async function chamar(acao, dados = {}, tentativas = 0) {
-  const { ponteChave } = cfg(), ponteUrl = normalizarPonte(cfg().ponteUrl);
-  if (!configurada()) throw Object.assign(new Error('Conecte o e-mail do CIQUANTA em Configurações.'), { status: 401 });
+async function chamar(acao, dados = {}, tentativas = 0, url = '') {
+  const { ponteChave, ponteSessao } = cfg(), ponteUrl = normalizarPonte(url || cfg().ponteUrl);
+  if (!url && !configurada()) throw Object.assign(new Error('Conecte o e-mail do CIQUANTA em Configurações.'), { status: 401 });
   let r;
   try {
     // text/plain evita a verificação prévia do navegador, que o Apps Script não atende
-    r = await fetch(ponteUrl, { method: 'POST', redirect: 'follow', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ chave: ponteChave, acao, dados }) });
+    const corpo = url ? { acao, dados } : { chave: ponteChave || undefined, sessao: ponteChave ? undefined : ponteSessao || undefined, acao, dados };
+    r = await fetch(ponteUrl, { method: 'POST', redirect: 'follow', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(corpo) });
   } catch (e) {
-    if (tentativas < 2) { await sleep(1500 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1); }
+    if (tentativas < 2) { await sleep(1500 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1, url); }
     throw new Error('A ponte não respondeu. Abra o endereço /exec numa janela anônima: deve aparecer {"ok":true}. Se pedir login, a implantação não está como "Qualquer pessoa".');
   }
-  if ((r.status === 429 || r.status >= 500) && tentativas < 3) { await sleep(2000 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1); }
+  if ((r.status === 429 || r.status >= 500) && tentativas < 3) { await sleep(2000 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1, url); }
   let j; try { j = await r.json(); } catch { throw new Error('Resposta inesperada da ponte. Confira se a implantação está como "Qualquer pessoa".'); }
   if (!j.ok) {
     const e = Object.assign(new Error(j.erro || 'Falha na ponte de e-mail.'), { status: j.codigo || 400 });
-    if (j.codigo === 401 && info) { info = null; ultimoErro = e.message; notify(); }
+    if (j.codigo === 401 && !url) {
+      info = null; ultimoErro = e.message; notify();
+      // Sessão encerrada em outro computador ou vencida: volta para a tela de entrada
+      if (!ponteChave && ponteSessao) { setConfig({ ponteSessao: '' }); window.dispatchEvent(new Event('ciq:acesso-expirado')); }
+    }
     throw e;
   }
   return j.dados;
@@ -50,6 +57,27 @@ export async function connect() {
   notify(); return status();
 }
 export function disconnect() { info = null; notify(); }
+
+// ---- Acesso com código enviado ao e-mail do CIQUANTA
+/** Pede à ponte um código de uso único, enviado ao próprio e-mail do CIQUANTA. Devolve o endereço mascarado. */
+export async function pedirCodigo(url, dispositivo) {
+  if (!urlValida(normalizarPonte(url))) throw new Error('Endereço da ponte inválido.');
+  return chamar('acessoPedir', { dispositivo }, 0, url);
+}
+/** Troca o código por uma sessão de 30 dias neste computador. */
+export async function entrarComCodigo(url, codigo, dispositivo) {
+  const r = await chamar('acessoEntrar', { codigo, dispositivo }, 0, url);
+  setConfig({ ponteUrl: normalizarPonte(url), ponteSessao: r.sessao, sincronizar: true });
+  return r;
+}
+export const sessoes = () => chamar('acessoSessoes');
+export const revogar = id => chamar('acessoRevogar', { id });
+/** Encerra a sessão deste computador na ponte e aqui. */
+export async function sair() {
+  if (cfg().ponteSessao) { try { await chamar('acessoSair'); } catch {} }
+  setConfig({ ponteSessao: '', ponteChave: '' }); info = null; notify();
+}
+export const temAcesso = () => !!(cfg().ponteChave || cfg().ponteSessao);
 /** Conecta sozinho ao abrir, se a ponte já estiver configurada. */
 export function iniciarConexao() { if (configurada()) connect().catch(e => console.warn('ponte:', e.message)); }
 

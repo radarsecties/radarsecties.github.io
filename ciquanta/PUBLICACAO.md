@@ -35,16 +35,34 @@ A conexão usa uma ponte no Google Apps Script, dentro da própria conta ciquant
 4. Em **Serviços** (+), adicione **Gmail API** e **Google Calendar API**.
 5. **Implantar → Nova implantação → App da Web**, com **Executar como: Eu** e **Quem pode acessar: Qualquer pessoa**. Autorize com a conta do CIQUANTA (em "O Google não verificou este app", use **Avançado → Acessar**).
 6. Copie o endereço que termina em `/exec`, cole no passo 03 de Configurações e clique em **Conectar**. A base compartilhada é ligada automaticamente.
-7. Nos outros computadores, use **Link para a equipe** no computador já conectado. Trate o link como senha.
+7. Nos outros computadores, use **Link para a equipe** no computador já conectado. Quem abrir o link vê a tela **Entrar**: o CRM envia um código de seis dígitos para ciquanta@secties.pb.gov.br e, com ele, libera aquele computador por 30 dias. O link não contém a chave.
 
 Se a conta for do Google Workspace e a opção "Qualquer pessoa" não aparecer na implantação, o administrador do domínio precisa permitir apps da Web do Apps Script com acesso externo (Admin → Apps → Google Workspace → Apps Script).
 
-## 3. Configure o sistema no primeiro acesso
+## 3. Feche o acesso ao CRM
+
+O acesso tem duas camadas, ambas ligadas à conta ciquanta@secties.pb.gov.br.
+
+**Camada 1, no próprio CRM (já incluída).** Todo computador sem sessão vê só a tela **Entrar**. O código vai para a caixa do CIQUANTA, vale 10 minutos e uma única entrada; cinco tentativas erradas invalidam o código, e a ponte limita os pedidos. A sessão dura 30 dias. Em Configurações → **Acesso ao CRM** aparecem os computadores com acesso, com o botão **Encerrar** para cada um; o link **Sair**, no rodapé do menu, encerra a sessão e pode apagar os dados daquele computador (útil em máquinas compartilhadas). Sem sessão, a ponte não devolve nenhum contato, conversa, oportunidade ou arquivo.
+
+Para que qualquer visitante caia na tela de entrada, publique o arquivo `data/acesso.json` com o endereço da ponte: em Configurações → Acesso ao CRM, clique em **Baixar acesso.json** e envie o arquivo para a pasta `data/` do repositório (ou peça a quem mantém o sistema). O endereço da ponte não é segredo: sozinho, ele só permite pedir um código, que chega ao e-mail do CIQUANTA.
+
+**Camada 2, no domínio (recomendada ao publicar em secties.pb.gov.br).** A camada 1 protege os dados, mas os arquivos do programa e as bases públicas (mapeamento, notícias, canais institucionais) continuam abertos a quem souber o endereço. Para fechar também a página, a TI coloca uma porta na frente do domínio. O domínio da SECTIES já passa pela Cloudflare, que faz isso sem custo para equipes pequenas (Cloudflare Zero Trust, até 50 usuários):
+
+1. Em **Zero Trust → Access → Applications → Add an application → Self-hosted**, informe o endereço do CRM (por exemplo, `crm.ciquanta.secties.pb.gov.br`).
+2. Em **Policies**, crie uma regra **Allow** com **Include → Emails: ciquanta@secties.pb.gov.br** (e, se quiser, os e-mails individuais da equipe ou **Emails ending in: @secties.pb.gov.br**).
+3. Em **Login methods**, use **One-time PIN**: quem abrir o endereço recebe um PIN no e-mail autorizado. Com o Google Workspace da SECTIES configurado como provedor, o login pode ser o próprio Google.
+4. Em **Session duration**, use 24 horas ou 7 dias.
+5. Libere sem porta só o que precisa ser público: `apresentacao.html` e a pasta `assets/` (as apresentações setoriais têm link público nos e-mails).
+
+Sem Cloudflare, o mesmo resultado vem de um proxy de autenticação no servidor da SECTIES (por exemplo, oauth2-proxy com o Google, restrito à conta do CIQUANTA). No GitHub Pages não há como pôr porta: lá vale só a camada 1.
+
+## 4. Configure o sistema no primeiro acesso
 
 1. Preencha **Remetente e assinatura**. Em **Endereço público do sistema**, informe o endereço publicado: ele é usado nas imagens dos e-mails e nos links das apresentações.
 2. Em **Busca ativa**, importe o mapeamento. Em **Captação**, defina as metas. Em **Parceiros**, revise os valores e benefícios das cotas.
 
-## 4. Ligue a atualização automática
+## 5. Ligue a atualização automática
 
 A coleta diária roda no GitHub Actions do repositório publicado, sem servidor próprio.
 
@@ -58,10 +76,11 @@ A coleta diária roda no GitHub Actions do repositório publicado, sem servidor 
 6. (Opcional) Pessoas de P&D: a etapa funciona sem chave. Para uma cota maior na OpenAlex, crie o segredo `OPENALEX_API_KEY` (gratuito em openalex.org). A variável `CIQUANTA_LOTE_PESQUISA` define quantas organizações são pesquisadas por execução (padrão 45). Para rodar uma etapa isolada, use **Run workflow** e informe, por exemplo, `pesquisadores`.
 7. No sistema, abra **Central de automação** e confira o resultado da coleta. Para que a abordagem também seja automática, preencha o remetente em Configurações, ligue as cadências e o **piloto automático**, e deixe um computador da equipe com o sistema aberto no horário comercial.
 
-## 5. Confira depois de publicar
+## 6. Confira depois de publicar
 
 - [ ] O endereço abre com cadeado (HTTPS) e o painel carrega.
 - [ ] Em Configurações, o cartão do e-mail mostra a conta conectada, a cota diária e se as reuniões terão Meet.
+- [ ] Numa janela anônima, o endereço publicado mostra só a tela **Entrar**, e o código chega a ciquanta@secties.pb.gov.br.
 - [ ] Um e-mail de teste (Campanhas → Enviar teste) chega com o logotipo no cabeçalho.
 - [ ] Uma reunião de teste aparece no Google Agenda com link do Meet.
 - [ ] "Visitas e cadastros" lê as planilhas do Painel CIQUANTA.
@@ -71,13 +90,13 @@ A coleta diária roda no GitHub Actions do repositório publicado, sem servidor 
 
 Se a conexão falhar, as causas mais comuns são: implantação sem "Qualquer pessoa" em quem pode acessar, serviço Gmail API não adicionado, ou código colado de outro computador (com outra chave). O manual traz a lista completa.
 
-## 6. Quem enxerga o quê
+## 7. Quem enxerga o quê
 
 - O site publicado contém só o programa, as bases públicas (mapeamento, notícias, editais, canais institucionais publicados pelas próprias organizações, dados da Receita e totais do Painel CIQUANTA) e as apresentações. **Nenhum dado do CRM fica no site.**
 - Contatos, oportunidades, histórico e e-mails ficam no navegador de quem usa e, com a base compartilhada, em um arquivo no Google Drive da conta do CIQUANTA. Só quem entra com essa conta tem acesso.
-- O site pede aos buscadores que não o indexem. Para restringir também a abertura da página, use um controle de acesso na frente do endereço (por exemplo, o proxy de autenticação da TI).
+- O site pede aos buscadores que não o indexem. Sem sessão aberta com o código enviado ao e-mail do CIQUANTA, o CRM mostra só a tela de entrada; para fechar também os arquivos do site, veja a camada 2 na seção 3.
 - Cadências e respostas em tempo real funcionam enquanto o sistema estiver aberto em algum computador com a ponte conectada. Convém manter um computador da equipe com a aba aberta no horário comercial.
 
-## 7. Atualizações
+## 8. Atualizações
 
 Toda mudança enviada à branch publicada entra no ar em seguida; os usuários recebem a versão nova na próxima abertura. Antes de publicar alterações nas bases de `data/`, rode `node tools/validar-dados.mjs`.

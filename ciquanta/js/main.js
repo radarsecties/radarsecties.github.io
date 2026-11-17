@@ -9,6 +9,7 @@ import { abrirPaleta } from './paleta.js';
 import * as sync from './sync.js';
 import * as automacao from './automacao.js';
 import { animarNumeros, revelar } from './motion.js';
+import * as acesso from './acesso.js';
 
 // [título, ícone, carregador, grupo do menu (null: fora do menu), rótulo curto no menu]
 const ROUTES = {
@@ -160,6 +161,17 @@ function init() {
   window.addEventListener('ciq:paleta', paleta);
   document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); paleta(); } });
   $('#gmail-status').onclick = () => { location.hash = '#/config'; };
+  $('#pe-sair')?.classList.toggle('hidden', !G.temAcesso());
+  $('#pe-sair')?.addEventListener('click', async e => {
+    e.preventDefault();
+    const { modal } = await import('./util.js');
+    const { el, close } = modal({ title: 'Sair do CRM', body: '<p>Este computador volta para a tela de entrada. Para entrar de novo, use o código enviado ao e-mail do CIQUANTA.</p>',
+      footer: '<button class="btn" data-close>Cancelar</button><button class="btn danger" id="s-apagar">Sair e apagar os dados deste computador</button><button class="btn primary" id="s-sair">Sair</button>' });
+    const sair = async apagar => { close(); await G.sair(); if (apagar) await acesso.apagarDadosLocais(); location.hash = '#/painel'; location.reload(); };
+    el.querySelector('#s-sair').onclick = () => sair(false);
+    el.querySelector('#s-apagar').onclick = () => sair(true);
+  });
+  window.addEventListener('ciq:acesso-expirado', () => acesso.mostrarEntrada());
   G.onAuth(s => {
     badges();
     if (s.conectado) cadencia.iniciar(); else cadencia.parar();
@@ -190,4 +202,5 @@ function init() {
   window.addEventListener('offline', () => toast('Sem conexão com a internet. O que você fizer fica guardado neste navegador.', 'bad'));
   window.addEventListener('online', () => { toast('Conexão restabelecida.', 'ok'); sync.sincronizar(); });
 }
-init();
+// Nada do CRM abre antes de confirmar o acesso deste computador
+acesso.liberado().then(ok => { if (ok) init(); });
