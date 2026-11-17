@@ -20,8 +20,11 @@ export function gerarChave() {
   return btoa(String.fromCharCode(...a)).replace(/\+/g, 'x').replace(/\//g, 'y').replace(/=+$/, '');
 }
 
+/** Endereço do app da Web na forma pública: sem o domínio do Workspace (/a/macros/<domínio>/) e sem o número da conta (/u/N/). */
+export const normalizarPonte = url => String(url || '').trim().replace(/\/a\/macros\/[^/]+\//, '/macros/').replace(/\/u\/\d+\//, '/').replace(/\/dev$/, '/exec');
+
 async function chamar(acao, dados = {}, tentativas = 0) {
-  const { ponteUrl, ponteChave } = cfg();
+  const { ponteChave } = cfg(), ponteUrl = normalizarPonte(cfg().ponteUrl);
   if (!configurada()) throw Object.assign(new Error('Conecte o e-mail do CIQUANTA em Configurações.'), { status: 401 });
   let r;
   try {
@@ -29,7 +32,7 @@ async function chamar(acao, dados = {}, tentativas = 0) {
     r = await fetch(ponteUrl, { method: 'POST', redirect: 'follow', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify({ chave: ponteChave, acao, dados }) });
   } catch (e) {
     if (tentativas < 2) { await sleep(1500 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1); }
-    throw new Error('A ponte de e-mail não respondeu. Confira a conexão e o endereço em Configurações.');
+    throw new Error('A ponte não respondeu. Abra o endereço /exec numa janela anônima: deve aparecer {"ok":true}. Se pedir login, a implantação não está como "Qualquer pessoa".');
   }
   if ((r.status === 429 || r.status >= 500) && tentativas < 3) { await sleep(2000 * 2 ** tentativas); return chamar(acao, dados, tentativas + 1); }
   let j; try { j = await r.json(); } catch { throw new Error('Resposta inesperada da ponte. Confira se a implantação está como "Qualquer pessoa".'); }

@@ -98,7 +98,7 @@ export async function render(view, { params } = {}) {
       draw();
     };
     view.querySelector('#pt')?.addEventListener('submit', e => {
-      e.preventDefault(); const url = new FormData(e.target).get('url').trim();
+      e.preventDefault(); const url = G.normalizarPonte(new FormData(e.target).get('url'));
       if (!/^https:\/\/script\.google(usercontent)?\.com\/.+\/exec$/.test(url)) { toast('Cole o endereço do app da Web, que termina em /exec.', 'bad'); return; }
       if (!store.cfg().ponteChave) { toast('Copie o código da ponte primeiro (passo 01).', 'bad'); return; }
       store.setConfig({ ponteUrl: url }); conectar();
