@@ -12,7 +12,10 @@ const LOTE = Number(process.env.CIQUANTA_LOTE_PESQUISA || 45);
 const RENOVAR_DIAS = 30, POR_ORG = 15, ANOS = 6;
 const OA = 'https://api.openalex.org';
 const chave = () => process.env.OPENALEX_API_KEY ? `&api_key=${encodeURIComponent(process.env.OPENALEX_API_KEY)}` : '';
-const QUANTICO = /quantum|qu[aâ]ntic|qubit|post-quantum|p[oó]s-qu[aâ]ntic|annealing|variational quantum|qaoa/i;
+// Computação e informação quânticas, não física quântica em geral ("quantum yield", "quantum dots" e afins ficam de fora)
+const QUANTICO = /quantum[ -](comput|algorithm|annealing|annealer|circuit|machine learning|neural|optimi[sz]|approximate optimi|simulat|information|cryptograph|key distribution|communicat|internet|network|sens(?:or|ing)|software|advantage|supremacy|hardware|processor|chip|error[ -]correct|gate|walk|random number|state|entangle|programming|cloud|readiness|safe|resistant|secure)|simulation of (?:open )?quantum|qubit|\bqaoa\b|\bvqe\b|\bqkd\b|\bqrng\b|variational quantum|post-quantum|p[oó]s-qu[aâ]ntic|computa[cç][aã]o qu[aâ]ntica|computador(?:es)? qu[aâ]ntico|algoritmos? qu[aâ]ntico|criptografia qu[aâ]ntica|redes? qu[aâ]ntica|internet qu[aâ]ntica|era qu[aâ]ntica|ataques? qu[aâ]ntico|entropia qu[aâ]ntica|ml-kem|crystals-(?:kyber|dilithium)/i;
+const TEMA_QUANTICO = /quantum computing|quantum information/i;
+const BUSCA_QUANTICA = '"quantum computing" OR "quantum algorithm" OR qubit OR "post-quantum" OR "quantum annealing" OR "quantum machine learning" OR "quantum cryptography" OR "quantum information" OR "quantum key distribution" OR "quantum optimization" OR "computação quântica"';
 // Temas próximos das linhas de pesquisa do CIQUANTA: contam a favor, sem serem quânticos
 const AFINS = /optimi[sz]ation|otimiza|cryptograph|criptograf|machine learning|aprendizado de m[aá]quina|molecular simulation|simula[cç][aã]o|high.performance computing|computa[cç][aã]o de alto desempenho|reservoir|portfolio|carteira|logistics|log[ií]stica|power system|sistemas de pot[eê]ncia/i;
 
@@ -20,21 +23,26 @@ const SEGMENTOS = new Set(['Empresa', 'Startup', 'Academia/ICT', 'Fomentador', '
 const TIPOS_OK = { Empresa: ['company'], Startup: ['company'], 'Academia/ICT': ['education', 'facility', 'nonprofit', 'government', 'company'], Fomentador: ['government', 'company', 'nonprofit', 'funder'], 'Associação/Rede': ['nonprofit', 'company', 'facility', 'other'] };
 
 const oa = async caminho => baixar(`${OA}${caminho}${chave()}`, { tipo: 'json', timeout: 25000, headers: { Accept: 'application/json' } });
-const palavras = s => norm(s).replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9 ]/g, ' ').split(' ').filter(w => w.length > 2 && !['s.a', 'sa', 'ltda', 'grupo', 'the', 'and', 'de', 'do', 'da', 'dos', 'das', 'brasil', 'brazil', 'instituto', 'institute', 'company', 'companhia'].includes(w));
+// Nomes em português e em inglês viram as mesmas palavras ("Fundação" e "Foundation", "Banco" e "Bank")
+const SINONIMOS = { foundation: 'fundacao', university: 'universidade', national: 'nacional', research: 'pesquisa', center: 'centro', centre: 'centro', bank: 'banco', development: 'desenvolvimento', technology: 'tecnologia', technological: 'tecnologico', federal: 'federal', state: 'estadual', agricultural: 'agropecuaria', telecommunications: 'telecomunicacoes', energy: 'energia', health: 'saude', space: 'espaciais', hospital: 'hospital', military: 'militar', engineering: 'engenharia', northeast: 'nordeste', north: 'norte', south: 'sul', southeast: 'sudeste' };
+const VAZIAS = new Set(['s.a', 'sa', 'ltda', 'grupo', 'the', 'and', 'for', 'of', 'de', 'do', 'da', 'dos', 'das', 'em', 'brasil', 'brazil', 'brazilian', 'brasileira', 'brasileiro', 'instituto', 'institute', 'company', 'companhia', 'inc']);
+const palavras = s => norm(s).replace(/\(.*?\)/g, ' ').replace(/[^a-z0-9 ]/g, ' ').split(' ').map(w => SINONIMOS[w] || w).filter(w => w.length > 2 && !VAZIAS.has(w));
+/** Domínio registrável (fiocruz.br, itau.com.br). Sites dentro de gov.br não identificam a organização. */
+export const dominioBase = u => { const d = dominio(u); if (!d) return ''; const l = d.split('.'); const b = l.slice(/\.(com|gov|org|edu|mil|net|ind|coop|art)\.br$/.test(d) ? -3 : -2).join('.'); return ['gov.br', 'org.br', 'com.br', 'edu.br'].includes(b) ? '' : b; };
 
 /** Escolhe a instituição da OpenAlex que corresponde à organização: pelo domínio do site ou pelo nome. */
 export function escolherInstituicao(org, candidatas) {
-  const dOrg = dominio(org.site), pOrg = new Set(palavras(org.nomeFantasia || org.nome));
+  const dOrg = dominioBase(org.site), pOrg = new Set(palavras(org.nomeFantasia || org.nome));
+  const siglas = [org.nome, org.nomeFantasia, ...String(org.nome).split(/[,(]/)].map(x => norm(String(x || '').replace(/\)/g, ''))).filter(x => /^[a-z0-9&-]{2,10}$/.test(x));
   let melhor = null, nota = 0;
   for (const c of candidatas || []) {
-    const dC = dominio(c.homepage_url);
-    let n = 0;
-    if (dOrg && dC && (dC === dOrg || dC.endsWith('.' + dOrg) || dOrg.endsWith('.' + dC))) n += 3;
     const pC = palavras(c.display_name), comuns = pC.filter(w => pOrg.has(w)).length;
-    const cobertura = pOrg.size ? comuns / pOrg.size : 0, precisao = pC.length ? comuns / pC.length : 0;
-    n += cobertura * 1.2 + precisao * 0.8;
-    if ((TIPOS_OK[org.segmento] || []).includes(c.type)) n += 0.4;
-    if (c.country_code && c.country_code !== 'BR') n -= 1;
+    const nome = (pOrg.size ? comuns / pOrg.size : 0) * 1.2 + (pC.length ? comuns / pC.length : 0) * 0.8;
+    const tipo = (TIPOS_OK[org.segmento] || []).includes(c.type) ? 0.4 : 0;
+    // Sigla registrada na OpenAlex (INPE, CBPF, IME) vale como nome
+    const sigla = siglas.some(a => (c.display_name_acronyms || []).some(x => norm(x) === a)) ? 2 + Math.log10((c.works_count || 0) + 1) * 0.05 : 0;
+    // Mesmo domínio: decide o porte (a sede publica mais que uma unidade regional); sem domínio, decide o nome
+    const n = dOrg && dominioBase(c.homepage_url) === dOrg ? 3 + Math.log10((c.works_count || 0) + 1) * 0.6 + nome * 0.3 + tipo : Math.max(nome, sigla) + tipo - (c.country_code && c.country_code !== 'BR' ? 1 : 0);
     if (n > nota) { nota = n; melhor = c; }
   }
   // Exige o domínio ou um nome muito próximo: melhor ficar sem do que associar a organização errada
@@ -47,7 +55,7 @@ export function agruparAutores(trabalhos, instId) {
   for (const w of trabalhos) {
     const titulo = w.title || w.display_name || '', ano = w.publication_year || 0;
     const temas = (w.topics || []).map(t => t.display_name).filter(Boolean);
-    const quant = QUANTICO.test(titulo) || temas.some(t => QUANTICO.test(t)), afim = AFINS.test(titulo) || temas.some(t => AFINS.test(t));
+    const quant = QUANTICO.test(titulo) || temas.some(t => TEMA_QUANTICO.test(t)), afim = AFINS.test(titulo) || temas.some(t => AFINS.test(t));
     for (const a of w.authorships || []) {
       if (!(a.institutions || []).some(i => i.id === instId || (i.lineage || []).includes(instId))) continue;
       const id = a.author?.id; if (!id || !a.author.display_name) continue;
@@ -92,6 +100,10 @@ export async function orcidPublico(orcid, org) {
 
 export async function coletarPesquisadores({ log = console.log } = {}) {
   const base = ler('pesquisadores.json', { porOrg: {} });
+  // Versão 2: critério estrito de computação quântica e associação por domínio; refaz tudo uma vez
+  if (!(base.versao >= 2)) { for (const x of Object.values(base.porOrg)) { delete x.buscadoEm; delete x.instituicao; } base.versao = 2; }
+  // Versão 3: associação por sigla; refaz as organizações que ficaram sem instituição
+  if (base.versao < 3) { for (const x of Object.values(base.porOrg)) if (!x.instituicao) { delete x.buscadoEm; x.pessoas = []; } base.versao = 3; }
   const limite = new Date(Date.now() - RENOVAR_DIAS * 864e5).toISOString();
   const ordem = { A: 0, B: 1, C: 2 }, ev = { confirmada: 0, indicios: 1 };
   const fila = organizacoes().filter(o => SEGMENTOS.has(o.segmento) && !(base.porOrg[o.id]?.buscadoEm > limite))
@@ -103,20 +115,21 @@ export async function coletarPesquisadores({ log = console.log } = {}) {
     const x = base.porOrg[o.id] ||= {};
     try {
       let inst = x.instituicao;
-      if (inst === undefined) {
+      if (!inst) {
         const q = encodeURIComponent((o.nomeFantasia || o.nome).replace(/\(.*?\)/g, '').trim());
-        const r = await oa(`/institutions?search=${q}&filter=country_code:BR&per_page=8&select=id,display_name,type,homepage_url,country_code,works_count`);
+        const r = await oa(`/institutions?search=${q}&filter=country_code:BR&per_page=8&select=id,display_name,display_name_acronyms,type,homepage_url,country_code,works_count`);
         const c = escolherInstituicao(o, r.results);
         inst = x.instituicao = c ? { id: c.id.replace('https://openalex.org/', ''), nome: c.display_name, tipo: c.type, trabalhos: c.works_count } : null;
         await sleep(120);
       }
       x.buscadoEm = agora();
-      if (!inst) { x.pessoas = x.pessoas || []; continue; }
+      if (!inst) { x.pessoas = []; continue; }
       comInst++;
       const sel = 'select=id,doi,title,publication_year,authorships,topics';
       const [rec, qua] = await Promise.all([
         oa(`/works?filter=authorships.institutions.lineage:${inst.id},from_publication_date:${desde}&sort=publication_date:desc&per_page=100&${sel}`),
-        oa(`/works?filter=authorships.institutions.lineage:${inst.id},title_and_abstract.search:quantum&sort=publication_date:desc&per_page=50&${sel}`).catch(() => ({ results: [] })),
+        oa(`/works?filter=authorships.institutions.lineage:${inst.id},title_and_abstract.search:${encodeURIComponent(BUSCA_QUANTICA)}&sort=publication_date:desc&per_page=50&${sel}`)
+          .catch(() => oa(`/works?filter=authorships.institutions.lineage:${inst.id},title_and_abstract.search:quantum%20computing&sort=publication_date:desc&per_page=50&${sel}`)).catch(() => ({ results: [] })),
       ]);
       const vistos = new Set(), trabalhos = [...(qua.results || []), ...(rec.results || [])].filter(w => !vistos.has(w.id) && vistos.add(w.id));
       const lista = agruparAutores(trabalhos, 'https://openalex.org/' + inst.id).slice(0, POR_ORG);

@@ -55,7 +55,7 @@ export function linhaPessoa(p, { comOrg = false } = {}) {
   const ja = jaContato(p);
   return `<div class="pessoa" data-pid="${esc(p.id)}" data-org="${esc(p.org.id)}">
     <div class="quem"><a class="nome" href="${esc(perfil)}" target="_blank" rel="noopener">${esc(p.nome)}</a>${p.quantico ? '<span class="q" title="Publica sobre computação quântica">quântica</span>' : ''}
-      <div class="meta">${comOrg ? `<a href="#/org/${esc(p.org.id)}">${esc(p.org.nomeFantasia || p.org.nome)}</a> · ` : ''}${esc(p.cargo || (p.temas || []).join(', ') || (p.tipo === 'lideranca' ? 'Liderança de P&D e inovação' : ''))}</div></div>
+      <div class="meta">${comOrg ? `<a href="#/org/${esc(p.org.id)}">${esc(p.org.nomeFantasia || p.org.nome)}</a> · ` : ''}${esc(p.cargo || (p.temas || []).slice(0, 2).join(', ') || (p.tipo === 'lideranca' ? 'Liderança de P&D e inovação' : ''))}</div></div>
     <div class="obra">${p.destaque ? `<a href="${esc(p.destaque.url)}" target="_blank" rel="noopener">${esc(p.destaque.titulo)}</a><span class="muted"> ${p.destaque.ano || ''}</span>` : p.tipo === 'lideranca' ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">Citado em ${esc(host(p.url))}</a>` : ''}
       ${p.trabalhos ? `<div class="meta">${p.trabalhos} trabalho(s) desde ${new Date().getFullYear() - 6}${p.email ? ` · ${esc(p.email)}` : ''}</div>` : p.email ? `<div class="meta">${esc(p.email)}</div>` : ''}</div>
     <div class="acoes-p"><a class="btn sm ghost" href="${esc(linkedin(p))}" target="_blank" rel="noopener">LinkedIn</a>${ja ? '<span class="muted small">no CRM</span>' : '<button class="btn sm" data-add>Adicionar</button>'}</div>

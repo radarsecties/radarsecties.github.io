@@ -1,6 +1,54 @@
 {
  "execucoes": [
   {
+   "em": "2026-11-17T11:25:37.580Z",
+   "segundos": 28,
+   "etapas": [
+    {
+     "id": "pesquisadores",
+     "nome": "Pessoas de P&D (OpenAlex e ORCID)",
+     "ok": true,
+     "ignorada": false,
+     "n": 105,
+     "segundos": 28,
+     "msg": "pesquisadores: 45 organizações consultadas, 7 com produção identificada, 105 pessoas de P&D, 1 com e-mail profissional público, 0 falhas · base: 316 pessoas"
+    }
+   ],
+   "integridade": "ok"
+  },
+  {
+   "em": "2026-11-17T11:24:04.580Z",
+   "segundos": 34,
+   "etapas": [
+    {
+     "id": "pesquisadores",
+     "nome": "Pessoas de P&D (OpenAlex e ORCID)",
+     "ok": true,
+     "ignorada": false,
+     "n": 211,
+     "segundos": 34,
+     "msg": "pesquisadores: 45 organizações consultadas, 16 com produção identificada, 211 pessoas de P&D, 1 com e-mail profissional público, 0 falhas · base: 226 pessoas"
+    }
+   ],
+   "integridade": "ok"
+  },
+  {
+   "em": "2026-11-17T11:20:58.232Z",
+   "segundos": 62,
+   "etapas": [
+    {
+     "id": "pesquisadores",
+     "nome": "Pessoas de P&D (OpenAlex e ORCID)",
+     "ok": true,
+     "ignorada": false,
+     "n": 226,
+     "segundos": 62,
+     "msg": "pesquisadores: 45 organizações consultadas, 17 com produção identificada, 226 pessoas de P&D, 2 com e-mail profissional público, 0 falhas · base: 226 pessoas"
+    }
+   ],
+   "integridade": "ok"
+  },
+  {
    "em": "2026-11-17T00:17:51.839Z",
    "segundos": 252,
    "etapas": [
@@ -106,53 +154,17 @@
   }
  ],
  "ultima": {
-  "em": "2026-11-17T00:17:51.839Z",
-  "segundos": 252,
+  "em": "2026-11-17T11:25:37.580Z",
+  "segundos": 28,
   "etapas": [
    {
-    "id": "painel",
-    "nome": "Painel CIQUANTA",
+    "id": "pesquisadores",
+    "nome": "Pessoas de P&D (OpenAlex e ORCID)",
     "ok": true,
     "ignorada": false,
-    "n": 57,
-    "segundos": 4,
-    "msg": "painel: 57 cadastros (50 pessoas, 7 instituições, 12 estados), 192 visitantes previstos, 71 já recebidos"
-   },
-   {
-    "id": "sinais",
-    "nome": "Notícias e editais",
-    "ok": true,
-    "ignorada": false,
-    "n": 30,
-    "segundos": 58,
-    "msg": "sinais: 285 lidos, 30 novos, 154 guardados (46 citam organizações) · editais: 2 novos, 14 guardados · falhas: ciquanta: HTTP 429"
-   },
-   {
-    "id": "canais",
-    "nome": "Canais institucionais e CNPJ",
-    "ok": true,
-    "ignorada": false,
-    "n": 70,
-    "segundos": 160,
-    "msg": "canais: 70 sites visitados (12 com e-mail institucional, 20 com CNPJ, 11 sem resposta) · base: 13 organizações com canal, 21 com CNPJ"
-   },
-   {
-    "id": "receita",
-    "nome": "Dados da Receita Federal",
-    "ok": true,
-    "ignorada": false,
-    "n": 17,
-    "segundos": 30,
-    "msg": "receita: 17 CNPJ atualizados, 3 sem resposta · base: 18 organizações com dados cadastrais"
-   },
-   {
-    "id": "descoberta",
-    "nome": "Descoberta com IA",
-    "ok": true,
-    "ignorada": true,
-    "n": 0,
-    "segundos": 0,
-    "msg": "descoberta: sem ANTHROPIC_API_KEY, etapa ignorada"
+    "n": 105,
+    "segundos": 28,
+    "msg": "pesquisadores: 45 organizações consultadas, 7 com produção identificada, 105 pessoas de P&D, 1 com e-mail profissional público, 0 falhas · base: 316 pessoas"
    }
   ],
   "integridade": "ok"
