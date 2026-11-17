@@ -3,7 +3,7 @@
  "numero": 32,
  "modo": "automatico",
  "destaque": "Qluster Raises €4.7 Million to Develop a New Generation of Quantum Computers",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba. Também em destaque: Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança; e Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba. Também em destaque: Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança; e Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos.",
  "itens": [
   {
    "id": "d99d31fe7701",
@@ -177,6 +177,26 @@
    "origem": "auto"
   },
   {
+   "id": "f7194e9837d3",
+   "titulo": "OPINIÃO: Computadores quânticos e o desafio do retorno social e da política tecnológica de Estado",
+   "url": "https://jornaldaparaiba.com.br/politica/conversa-politica/opiniao-computadores-quanticos-e-o-desafio-do-retorno-social-e-da-politica-tecnologica-de-estado",
+   "resumo": "Veja como é computador quântico que vai ser instalado na Paraíba; Jornal da Paraíba visitou - Foto: Gustavo Demétrio. Gustavo Demétrio A Paraíba entra em um território que, até pouco tempo, parecia restrito aos grandes centros de pesquisa do mundo. A chegada de computadores quânticos ao estado o coloca em uma posição…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-17",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/primeiros-computadores-quanticos-da-america-latina0022243400202611101419-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fprimeiros-computadores-quanticos-da-america-latina0022243400202611101419.jpg%3Fxid%3D1243453&amp;xid=1243453",
+   "coletadoEm": "2026-11-17T19:53:55Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
    "id": "db892dffcaf0",
    "titulo": "Parceria entre universidades desenvolve aplicativo que une Odontologia e Língua Brasileira de Sinais",
    "url": "https://uepb.edu.br/parceria-entre-universidades-desenvolve-aplicativo-que-une-odontologia-e-lingua-brasileira-de-sinais",
@@ -279,24 +299,23 @@
    "origem": "auto"
   },
   {
-   "id": "a2afe03c1851",
-   "titulo": "Q-CTRL Unifies Boulder Opal and Fire Opal into Autonomous End-to-End Quantum Infrastructure Software",
-   "url": "https://quantumcomputingreport.com/q-ctrl-unifies-boulder-opal-and-fire-opal-into-autonomous-end-to-end-quantum-infrastructure-software",
-   "resumo": "Q-CTRL has integrated its Boulder Opal and Fire Opal software into a single platform for end-to-end quantum infrastructure. This unified system automates the entire quantum computing lifecycle, from processor bring-up to workload execution, significantly reducing manual effort and improving performance. The technology…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
+   "id": "b84fbb092cfd",
+   "titulo": "João Pessoa abre inscrições para apoio financeiro a blocos alternativos no Carnaval",
+   "url": "https://portalcorreio.com.br/joao-pessoa-abre-inscricoes-para-apoio-financeiro-a-blocos-alternativos-no-carnaval",
+   "resumo": "Estão abertas a partir desta terça-feira (17), as inscrições para apoio financeiro a Blocos Alternativos do Carnaval de Bairros de João Pessoa. As inscrições seguem até o dia 11 de dezembro, com investimento total previsto de R$ 300 mil. O objetivo do edital é fortalecer a folia nos bairros por meio do apoio…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
    "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:59:10Z",
-   "tipo": "quantica",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/78805a221a988e79ef3f42d7c5bfd418-71.png",
+   "coletadoEm": "2026-11-17T19:53:55Z",
+   "tipo": "edital",
    "programas": [
-    "ciquanta",
-    "ensino"
+    "fomento"
    ],
-   "escopo": "Global",
+   "escopo": "Paraíba",
    "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
+   "urgente": true,
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -334,27 +353,6 @@
    "programas": [
     "ensino",
     "inclusao"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "46852609d001",
-   "titulo": "Paraíba gastou R$ 94,9 milhões para aplicar Lei de Drogas em 2024",
-   "url": "https://jornaldaparaiba.com.br/cotidiano/paraiba-gastou-r-949-milhoes-para-aplicar-lei-de-drogas-em-2024",
-   "resumo": "Reprodução / Polícia Militar da Paraíba A Paraíba gastou R$ 94,9 milhões com a aplicação da Lei de Drogas em 2024, segundo pesquisa feita pelo Centro de Estudos de Segurança e Cidadania (CESeC). No estado, a maior parte do valor foi investido no Sistema Penitenciário (47,4%) e no Tribunal de Justiça (22,6%).O estudo…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-17",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Operacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FOperacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649.jpg%3Fxid%3D1243371&amp;xid=1243371",
-   "coletadoEm": "2026-11-17T18:58:29Z",
-   "tipo": "norma",
-   "programas": [
-    "fomento",
-    "transversal"
    ],
    "escopo": "Paraíba",
    "pontos": 31,
@@ -472,15 +470,15 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-17T16:00:30-03:00",
+ "geradoEm": "2026-11-17T16:55:26-03:00",
  "saude": [
   {
    "id": "auniao",
    "nome": "A União",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 15,
+   "feed": "https://auniao.pb.gov.br/RSS",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -496,7 +494,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 21,
+   "itens": 22,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -577,7 +575,7 @@
    "id": "anatel",
    "nome": "Anatel",
    "ok": true,
-   "itens": 10,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -622,10 +620,10 @@
    "id": "worldbank-digital",
    "nome": "Banco Mundial Digital",
    "ok": true,
-   "itens": 0,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
-   "obs": "Respondeu, mas sem notícias recentes"
+   "obs": ""
   },
   {
    "id": "iadb",
@@ -694,7 +692,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 12,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -757,7 +755,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -865,7 +863,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 11,
+   "itens": 12,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -964,7 +962,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 19,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1171,7 +1169,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 16,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1234,7 +1232,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 36,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1518,5 +1516,5 @@
   "area": "Computação quântica",
   "formula": "2²⁰ = 1.048.576"
  },
- "capa": "capa-2026-11-17-1600.png"
+ "capa": "capa-2026-11-17-1655.png"
 }
