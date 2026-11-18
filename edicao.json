@@ -1,191 +1,188 @@
 {
- "data": "2026-11-17",
- "numero": 32,
+ "data": "2026-11-18",
+ "numero": 33,
  "modo": "automatico",
- "destaque": "Qluster Raises €4.7 Million to Develop a New Generation of Quantum Computers",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba. Também em destaque: Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança; e Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos.",
+ "destaque": "Quantum Physics Can Verify a Person’s Location, NIST Researchers Show",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba. Também em destaque: Inovatec realiza três novos pedidos de depósitos de patentes nas áreas de alimentos, biotecnologia e saúde; e CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital.",
  "itens": [
   {
-   "id": "d99d31fe7701",
-   "titulo": "CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba",
-   "url": "https://www.clickpb.com.br/tecnologia/ciquanta-computador-pb.html",
-   "resumo": "Instalado em João Pessoa com investimento de até R$ 200 milhões, o Ciquanta terá dois computadores quânticos em 2027.",
-   "fonte": "ClickPB",
-   "fonteId": "clickpb",
-   "dataPub": "2026-11-16",
-   "imagem": "https://www.clickpb.com.br/wp-content/uploads/2026/11/ciquanta.jpeg",
-   "coletadoEm": "2026-11-16T20:02:10Z",
-   "tipo": "oficial",
-   "programas": [
-    "ciquanta",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 47,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "2791564dfad0",
-   "titulo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc2EzVEZ2S2FjM2F6QWlRVTRUT2x6UjRhdUdINzBZNmZHOU5uU2ZEbEREUkk4U1Y5SmxLXzVxS3Q5MW9fRENIV0ZrRllZOGtoSVh6bXZ3ay1qdVBldlE0bDFVZkJqTnl6dVBkVGttempEYWJxSDJpamdza0UzMGFwcUJDTWV2OWE2Y0d1ZzZuN3hoNXpZZmNiR3BDOWlidUNBeGNRNU5Pdk9KWXNYWEQtSEhqUzFxQVpsbUY1Mkh5ODZTRlB3VTFQeFBJYk5ONzUzaTI5U3hIYTU4Rk91b3R6TklvYUtKYXB6c3ZwQWhrVUtaQQ?oc=5",
-   "resumo": "",
-   "fonte": "MCTI",
-   "fonteId": "mcti",
-   "dataPub": "2026-11-16",
+   "id": "4a8e5489a41b",
+   "titulo": "Ciquanta abrirá computadores quânticos para empresas da Paraíba e negocia parcerias com bancos",
+   "url": "https://paraibabusiness.com.br/ciquanta-abrira-computadores-quanticos-para-empresas-da-paraiba-e-negocia-parcerias-com-bancos",
+   "resumo": "O Centro Internacional de Computação e Tecnologias Quânticas da Paraíba (Ciquanta), em João Pessoa, permitirá que empresas paraibanas e pesquisadores de diferentes regiões do país utilizem seus computadores quânticos por meio da apresentação de projetos. Em entrevista exclusiva ao Paraíba Business, nesta quarta-feira…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-18",
    "imagem": "",
-   "coletadoEm": "2026-11-17T18:58:45Z",
+   "coletadoEm": "2026-11-18T18:41:18Z",
    "tipo": "oficial",
    "programas": [
     "ciquanta"
    ],
    "escopo": "Paraíba",
-   "pontos": 46,
+   "pontos": 43,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "45a5e2453200",
-   "titulo": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
-   "url": "https://paraibaja.com.br/governo-da-paraiba-abre-inscricoes-para-a-3a-edicao-do-game-dev-quest",
-   "resumo": "O Governo da Paraíba, por meio da Secretaria de Estado da Ciência, Tecnologia, Inovação e Ensino Superior (Secties), em parceria com a Fundação de Apoio à Pesquisa do Estado da Paraíba (Fapesq), lançou, nessa segunda-feira (16) um novo edital para seleção de equipes da 3ª edição do Game Dev Quest. O circuito…",
-   "fonte": "Paraíba Já",
-   "fonteId": "paraibaja",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:59:24Z",
-   "tipo": "oficial",
+   "id": "bef7bf963091",
+   "titulo": "Brazil Receives Parts for Two Quantum Computers in Partnership With China",
+   "url": "https://thequantuminsider.com/2026/11/18/brazil-receives-parts-for-two-quantum-computers-in-partnership-with-china",
+   "resumo": "Brazil received parts for two quantum computers under a deal with Chinese technology company China Electronics Technology Group Corporation, or CETC. The equipment arrived Nov. 16 in João Pessoa, the capital of the northeastern state of Paraíba, Brazil’s Ministry of Science, Technology and Innovation said in a news…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-18",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-18-at-9.18.41-AM-1.png",
+   "coletadoEm": "2026-11-18T18:41:44Z",
+   "tipo": "quantica",
    "programas": [
-    "ensino",
-    "inovacao",
-    "fomento"
+    "ciquanta",
+    "internacional",
+    "inovacao"
    ],
    "escopo": "Paraíba",
-   "pontos": 40,
+   "pontos": 42,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "89ca04b0a8f0",
-   "titulo": "Qluster Raises €4.7 Million to Develop a New Generation of Quantum Computers",
-   "url": "https://thequantuminsider.com/2026/11/17/qluster-raises-e4-7-million-to-develop-a-new-generation-of-quantum-computers",
-   "resumo": "Qluster, a Paris-based startup specializing in quantum computing, announces its first funding round of €4.7 million led by Quantonation, an investment fund specializing in quantum technologies and disruptive physics-based innovations, with the support of Quantum Launchpad and Bpifrance. A spin-off from the prestigious…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-17",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Qluster_levee_preseed_16x9_EN_web.jpg",
-   "coletadoEm": "2026-11-17T18:59:10Z",
-   "tipo": "quantica",
+   "id": "4f7f5f81fc17",
+   "titulo": "Inovatec realiza três novos pedidos de depósitos de patentes nas áreas de alimentos, biotecnologia e saúde",
+   "url": "https://uepb.edu.br/inovatec-realiza-tres-novos-pedidos-de-depositos-de-patentes-nas-areas-de-alimentos-biotecnologia-e-saude",
+   "resumo": "A Coordenadoria de Inovação Tecnológica (Inovatec) da Universidade Estadual da Paraíba (UEPB) realizou, recentemente, o depósito de três novos pedidos de patentes junto ao Instituto Nacional da Propriedade Industrial (INPI). As tecnologias são resultados de pesquisas desenvolvidas na Instituição e abrangem as áreas de…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-18",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2023/10/Inovatec-1-Pedido-de-Patente.jpg",
+   "coletadoEm": "2026-11-18T18:41:12Z",
+   "tipo": "inovacao",
    "programas": [
-    "ciquanta",
-    "fomento",
+    "ensino",
     "inovacao"
    ],
-   "escopo": "Global",
-   "pontos": 36,
+   "escopo": "Paraíba",
+   "pontos": 39,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "9ce1017394ff",
-   "titulo": "Planckian Selected for €10 Million in EIC Support for Quantum Hardware",
-   "url": "https://thequantuminsider.com/2026/11/17/planckian-selected-for-e10-million-in-eic-support-for-quantum-hardware",
-   "resumo": "Planckian, a quantum hardware company building superconducting quantum processors, has been selected by the European Innovation Council (EIC) for the EIC Accelerator. The award combines a €2.5 million grant with an equity investment of €7.5 million from the EIC Fund. Planckian is one of 35 companies selected in this…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
+   "id": "d50871230b91",
+   "titulo": "Museu de Arte Popular da Paraíba abre duas novas exposições nesta semana: “Sargaços” e “Fernanda, de Volta”",
+   "url": "https://uepb.edu.br/museu-de-arte-popular-da-paraiba-abre-duas-novas-exposicoes-nesta-semana-sargacos-e-fernanda-de-volta",
+   "resumo": "Nesta semana, o Museu de Arte Popular da Paraíba (MAPP) da Universidade Estadual da Paraíba (UEPB), em Campina Grande, recebe duas novas exposições: “Sargaços”, de Rosilda Sá, com curadoria de Amanda Tavares, e “Fernanda, de Volta”, com curadoria de Alberto Burity. As duas mostras têm entrada franca. Bordados…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
    "dataPub": "2026-11-17",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Planckian_EIC_website_header_1920x1080_v3.png",
-   "coletadoEm": "2026-11-17T18:59:10Z",
-   "tipo": "quantica",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Post-01-5-scaled.png",
+   "coletadoEm": "2026-11-18T18:41:12Z",
+   "tipo": "ensino",
    "programas": [
-    "ciquanta",
-    "fomento",
-    "inovacao"
+    "ensino",
+    "patrimonio"
    ],
-   "escopo": "Global",
+   "escopo": "Paraíba",
+   "pontos": 38,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "12c710d5ce2c",
+   "titulo": "Pró-reitoria de Extensão divulga resultado final da seleção das propostas de programas e projetos PROAPEX Cota 2026/2027",
+   "url": "https://uepb.edu.br/pro-reitoria-de-extensao-divulga-resultado-final-da-selecao-das-propostas-de-programas-e-projetos-proapex-cota-2026-2027",
+   "resumo": "A Pró-reitoria de Extensão (PROEX) da Universidade Estadual da Paraíba (UEPB) divulgou, nesta quarta-feira (18), o resultado final das avaliações do Programa de Apoio a Projetos de Extensão (PROAPEX), referente à Cota 2026–2022027. O resultado apresenta a avaliação das propostas submetidas ao programa, que tem como…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-18",
+   "imagem": "",
+   "coletadoEm": "2026-11-18T18:41:12Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
    "pontos": 36,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "3661dfdb8922",
-   "titulo": "Telia, Nokia And QMill Demonstrate Quantum-Powered Encryption in a 5G Network",
-   "url": "https://thequantuminsider.com/2026/11/17/telia-nokia-and-qmill-demonstrate-quantum-powered-encryption-in-a-5g-network",
-   "resumo": "Telia Finland, Nokia and QMill have demonstrated the world’s first quantum-powered encryption in a 5G network using commercial equipment. In the proof of concept (PoC), QMill’s solution was integrated into Nokia’s 5G base station software and successfully demonstrated in Telia’s 5G innovation environment. Two firsts…",
+   "id": "0cb074f25f78",
+   "titulo": "Quantum Physics Can Verify a Person’s Location, NIST Researchers Show",
+   "url": "https://thequantuminsider.com/2026/11/18/quantum-physics-can-verify-a-persons-location-nist-researchers-show",
+   "resumo": "Imagine a corporate treasurer directing her company’s financial network to make a $50 million wire transfer. How can the network be certain the command is coming from a secure terminal in the company’s headquarters, and not a hacker’s laptop across the globe? In a first-of-its-kind experiment, scientists at the…",
    "fonte": "The Quantum Insider",
    "fonteId": "quantuminsider",
-   "dataPub": "2026-11-17",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Nokia-Telia-and-QMill-in-Balance-1.png",
-   "coletadoEm": "2026-11-17T18:59:10Z",
+   "dataPub": "2026-11-18",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-18-at-1.03.15-PM-1.png",
+   "coletadoEm": "2026-11-18T18:41:44Z",
    "tipo": "quantica",
    "programas": [
     "ciquanta",
-    "inclusao",
-    "inovacao"
+    "seguranca",
+    "fomento"
    ],
    "escopo": "Global",
    "pontos": 35,
+   "urgente": true,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "c346f38e1cf7",
+   "titulo": "SAXON Q Announces ‘Quantum Watchdog,’ to Detect When Quantum Computers Fail",
+   "url": "https://thequantuminsider.com/2026/11/17/saxon-q-announces-quantum-watchdog-to-detect-when-quantum-computers-fail",
+   "resumo": "SAXON Q, a leader in NV-center quantum computing, today announced the Quantum Watchdog, a patented safety system that monitors a quantum computer and puts it into a safe mode if it fails. The system is designed for quantum computers operating in research environments and upcoming industrial applications — including…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-17",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Saxon.jpg",
+   "coletadoEm": "2026-11-17T18:59:10Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 34,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "a3a3d3025255",
-   "titulo": "Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNVmhnaG5rU3doajJ3bFdNLXVoc0JXRWFLLXVBNjJRZThvaG9nX0ZuUW5HSU5QQzAxaDJEUFk3SXlXVVRTN2hPeXh5bkVEY2FJQkVyQnJNSm5NLVdIRnZ6aWF6MzlTRG1tdUFKV3VNVERZaUtUUDFSQkJmU3J5NmtUUG50a0RaZ1E1UnhmRTlibUJXZ1Z5bjBNYjJjMlpBR3dYTUl6bXduZGxxRVRC?oc=5",
-   "resumo": "",
-   "fonte": "UFPB",
-   "fonteId": "ufpb",
-   "dataPub": "2026-11-17",
+   "id": "78996ee2912d",
+   "titulo": "SAXON Q Introduces Patented Quantum Watchdog System for Runtime QPU Fault Detection",
+   "url": "https://quantumcomputingreport.com/saxon-q-introduces-patented-quantum-watchdog-system-for-runtime-qpu-fault-detection",
+   "resumo": "SAXON Q has introduced Quantum Watchdog, a patented system designed to detect hardware failures in quantum processors during live operation. This system monitors physical telemetry and runs verified test calculations to ensure the integrity of QPUs. Quantum Watchdog will be offered as a configurable option on SAXON…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-18",
    "imagem": "",
-   "coletadoEm": "2026-11-17T18:58:24Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-18T18:41:44Z",
+   "tipo": "quantica",
    "programas": [
-    "ensino"
+    "ciquanta",
+    "inovacao"
    ],
-   "escopo": "Paraíba",
+   "escopo": "Global",
    "pontos": 33,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "703ffd472b54",
-   "titulo": "Índice de Inovação: Paraíba melhora competitividade e amplia investimentos em tecnologia",
-   "url": "https://jornaldaparaiba.com.br/cotidiano/indice-de-inovacao-paraiba-melhora-competitividade-e-amplia-investimentos-em-tecnologia",
-   "resumo": "Centro de Computação Quântica deve como a ser implementado na PB em 2026 - FOto: Divulgação. Gustavo Demétrio A Paraíba apresentou melhora na competitividade global entre entre 2025 e 2026, segundo o Índice de Inovação dos Estados 2026. O estado saiu da 27ª para a 17ª posição no ranking nacional no período, subindo…",
+   "id": "3e3f4f1bbeba",
+   "titulo": "Primeiros computadores quânticos da América Latina chegam à PB nesta segunda (16)",
+   "url": "https://jornaldaparaiba.com.br/tecnologia/primeiros-computadores-quanticos-da-america-latina-chegam-na-pb-nesta-segunda-16",
+   "resumo": "Veja como é computador quântico que vai ser instalado na Paraíba; Jornal da Paraíba visitou - Foto: Gustavo Demétrio. Gustavo Demétrio Os dois primeiros computadores quânticos da América Latina chegaram à Paraíba nesta segunda-feira (16). Os equipamentos serão instalados no Centro de Computação Quântica da Paraíba…",
    "fonte": "Jornal da Paraíba",
    "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-17",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Centro-de-Computacao-Quantica-deve-como-a-ser-impl0021456100202511242035-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FCentro-de-Computacao-Quantica-deve-como-a-ser-impl0021456100202511242035.jpg%3Fxid%3D1243413&amp;xid=1243413",
-   "coletadoEm": "2026-11-17T18:58:29Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "inovacao",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "f7194e9837d3",
-   "titulo": "OPINIÃO: Computadores quânticos e o desafio do retorno social e da política tecnológica de Estado",
-   "url": "https://jornaldaparaiba.com.br/politica/conversa-politica/opiniao-computadores-quanticos-e-o-desafio-do-retorno-social-e-da-politica-tecnologica-de-estado",
-   "resumo": "Veja como é computador quântico que vai ser instalado na Paraíba; Jornal da Paraíba visitou - Foto: Gustavo Demétrio. Gustavo Demétrio A Paraíba entra em um território que, até pouco tempo, parecia restrito aos grandes centros de pesquisa do mundo. A chegada de computadores quânticos ao estado o coloca em uma posição…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-17",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/primeiros-computadores-quanticos-da-america-latina0022243400202611101419-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fprimeiros-computadores-quanticos-da-america-latina0022243400202611101419.jpg%3Fxid%3D1243453&amp;xid=1243453",
-   "coletadoEm": "2026-11-17T19:53:55Z",
+   "dataPub": "2026-11-16",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/primeiros-computadores-quanticos-da-america-latina0022243400202611101419-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fprimeiros-computadores-quanticos-da-america-latina0022243400202611101419.jpg%3Fxid%3D1243346&amp;xid=1243346",
+   "coletadoEm": "2026-11-16T21:05:10Z",
    "tipo": "quantica",
    "programas": [
     "ciquanta"
@@ -197,141 +194,41 @@
    "origem": "auto"
   },
   {
-   "id": "db892dffcaf0",
-   "titulo": "Parceria entre universidades desenvolve aplicativo que une Odontologia e Língua Brasileira de Sinais",
-   "url": "https://uepb.edu.br/parceria-entre-universidades-desenvolve-aplicativo-que-une-odontologia-e-lingua-brasileira-de-sinais",
-   "resumo": "O “Sorriso em Libras” foi criado para ajudar a transformar a relação das crianças com o cuidado odontológico, onde estas podem aprender de forma divertida e dentistas encontram apoio para construir uma experiência de confiança e cuidado. O aplicativo surgiu de uma parceria entre discentes e docentes do curso de…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-13",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/App-Sorriso-em-Libras-6-138x300.jpeg",
-   "coletadoEm": "2026-11-13T17:31:58Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "324e2a332a27",
-   "titulo": "Saiba como controlar a ansiedade antes e durante a prova do Enem",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/saiba-como-controlar-a-ansiedade-antes-e-durante-a-prova-do-enem",
-   "resumo": "Meses de preparação para o Exame Nacional do Ensino Médio (Enem) 2026, até que o segundo dia de provas, neste domingo (15), se aproxima. Com ele, muitos dos 5,05 milhões de candidatos sentem a pressão e até nervosismo na hora de colocar os conhecimentos à prova. Tão importante quanto revisar conteúdos estudados é ter…",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-15",
-   "imagem": "",
-   "coletadoEm": "2026-11-15T16:50:50Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "0b7eed92839d",
-   "titulo": "MEC revela que site do Inep sofreu tentativas de ataques hackers",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/mec-revela-que-site-do-inep-sofreu-tentativas-de-ataques-que-foram-controladas",
-   "resumo": "O ministro da Educação, Leonardo Barchini, disse que a página do Inep (Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira) sofreu tentativas de ataques hackers, que foram controlados, neste domingo (15), segundo dia de prova do Enem. O comentário foi feito por Barchini na manhã deste domingo ao…",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-15",
-   "imagem": "",
-   "coletadoEm": "2026-11-16T20:02:09Z",
-   "tipo": "seguranca",
-   "programas": [
-    "seguranca",
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "462c2db52b59",
-   "titulo": "Reaplicação do Enem 2026: veja quem tem direito e como solicitar nova prova",
-   "url": "https://jornaldaparaiba.com.br/educacao/reaplicacao-do-enem-2026-veja-quem-tem-direito-e-como-solicitar-nova-prova",
-   "resumo": "Foto: Bruna Araújo/MEC O prazo para solicitar a reaplicação do Exame Nacional do Ensino Médio (Enem) 2026 está aberto até sexta-feira (20). O pedido é destinado aos candidatos que tiveram a participação nas provas prejudicada por problemas logísticos ou foram acometidos por doenças infectocontagiosas previstas no…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-17",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/enem-2026-prazo-para-pedir-reaplicacao-da-prova-co0022259000202611161542-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fenem-2026-prazo-para-pedir-reaplicacao-da-prova-co0022259000202611161542.jpg%3Fxid%3D1243379&amp;xid=1243379",
-   "coletadoEm": "2026-11-17T18:58:29Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": true,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "195633d896c2",
-   "titulo": "Inscrições para o concurso do TJPB terminam nesta quarta-feira (18)",
-   "url": "https://portalcorreio.com.br/inscricoes-para-o-concurso-do-tjpb-terminam-nesta-quarta-feira-18",
-   "resumo": "O prazo para inscrição no concurso do Tribunal de Justiça da Paraíba (TJPB) termina às 16h, desta quarta-feira (18). As inscrições devem ser realizadas exclusivamente pela internet, por meio do site da FGV, a taxa de inscrição, fixada em R$ 120. O certame oferece 50 vagas imediatas para o cargo de Analista Judiciário…",
-   "fonte": "Portal Correio",
-   "fonteId": "portalcorreio",
-   "dataPub": "2026-11-17",
-   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/06/6db55b58bda5849b381ea6dbb4b81dc4.jpg",
-   "coletadoEm": "2026-11-17T18:58:31Z",
-   "tipo": "evento",
-   "programas": [
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": true,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "b84fbb092cfd",
-   "titulo": "João Pessoa abre inscrições para apoio financeiro a blocos alternativos no Carnaval",
-   "url": "https://portalcorreio.com.br/joao-pessoa-abre-inscricoes-para-apoio-financeiro-a-blocos-alternativos-no-carnaval",
-   "resumo": "Estão abertas a partir desta terça-feira (17), as inscrições para apoio financeiro a Blocos Alternativos do Carnaval de Bairros de João Pessoa. As inscrições seguem até o dia 11 de dezembro, com investimento total previsto de R$ 300 mil. O objetivo do edital é fortalecer a folia nos bairros por meio do apoio…",
-   "fonte": "Portal Correio",
-   "fonteId": "portalcorreio",
-   "dataPub": "2026-11-17",
-   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/78805a221a988e79ef3f42d7c5bfd418-71.png",
-   "coletadoEm": "2026-11-17T19:53:55Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 32,
-   "urgente": true,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "fb5a6efba01c",
-   "titulo": "Embrapii inaugura Unidade Inovação Einstein em Saúde Digital",
-   "url": "https://embrapii.org.br/embrapii-inaugura-unidade-inovacao-einstein-em-saude-digital",
-   "resumo": "Iniciativa integra estratégia nacional do Ministério da Saúde e da Embrapii para fortalecer a pesquisa aplicada O Einstein Hospital Israelita foi credenciado como Unidade da Empresa Brasileira de Pesquisa e Inovação Industrial (Embrapii) na área de Saúde Digital. Desta forma, passa a apoiar empresas no desenvolvimento…",
-   "fonte": "Embrapii",
-   "fonteId": "embrapii",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:58:53Z",
+   "id": "0cf39782c0cc",
+   "titulo": "Prefeitura de Patos realiza primeiro encontro do Programa de Pré-Aceleração de Startups",
+   "url": "https://folhapatoense.com/2026/11/18/prefeitura-de-patos-realiza-primeiro-encontro-do-programa-de-pre-aceleracao-de-startups",
+   "resumo": "A Prefeitura de Patos, por meio da Secretaria de Ciência, Tecnologia, Inovação e Desenvolvimento Econômico – CiTI-DE, realizou o primeiro encontro do Programa de Pré-Aceleração de Startups, iniciativa pioneira no município voltada ao fortalecimento de empresas de base tecnológica e ao incentivo ao empreendedorismo…",
+   "fonte": "Folha Patoense",
+   "fonteId": "folhapatoense",
+   "dataPub": "2026-11-18",
+   "imagem": "https://patos.pb.gov.br/images/fotos_p2_news/6afc67431c3c5_WhatsApp_Image_2026-11-17_at_08.29.23.jpeg",
+   "coletadoEm": "2026-11-18T18:41:19Z",
    "tipo": "inovacao",
    "programas": [
     "inovacao",
     "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "7e408b8eb14c",
+   "titulo": "CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital",
+   "url": "https://telesintese.com.br/cct-aprova-r-15-bilhao-em-emendas-para-tecnologia-e-inclusao-digital",
+   "resumo": "Comissão do Senado selecionou seis propostas para o Orçamento de 2027, incluindo R$ 300 milhões para inclusão digital e R$ 345 milhões para o setor espacial O post CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital apareceu primeiro em TeleSíntese .",
+   "fonte": "Tele.Síntese",
+   "fonteId": "telesintese",
+   "dataPub": "2026-11-18",
+   "imagem": "https://telesintese.com.br/wp-content/uploads/2026/11/CCT-Senado-1.jpg",
+   "coletadoEm": "2026-11-18T18:41:42Z",
+   "tipo": "inclusao",
+   "programas": [
+    "inclusao",
+    "fomento",
+    "astronomia"
    ],
    "escopo": "Nacional",
    "pontos": 31,
@@ -340,19 +237,102 @@
    "origem": "auto"
   },
   {
-   "id": "5055bc86ccc9",
-   "titulo": "IFPB transforma equipamentos apreendidos em inclusão digital e cidadania",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/15/ifpb-transforma-equipamentos-apreendidos-em-inclusao-digital-e-cidadania",
-   "resumo": "Aos 36 anos, Ana Paula da Silva tem motivos de sobra para se orgulhar da própria trajetória. Filha de agricultores, mãe de três filhos e nascida na comunidade Tabuleiro de Muquém, em Areia-PB, ela concluiu o Ensino Médio apenas no ano passado. Agora, está dando mais um passo em busca de novas oportunidades: aprender a…",
-   "fonte": "Paraíba Online",
-   "fonteId": "paraibaonline",
-   "dataPub": "2026-11-15",
-   "imagem": "",
-   "coletadoEm": "2026-11-16T20:02:09Z",
-   "tipo": "inclusao",
+   "id": "32687a3384f3",
+   "titulo": "Enem 2026: revisão e gestão do tempo são foco na reta final",
+   "url": "https://portalcorreio.com.br/enem-2026-revisao-e-gestao-do-tempo-sao-foco-na-reta-final",
+   "resumo": "A reta final para o segundo dia do Exame Nacional do Ensino Médio (Enem) de 2026, neste domingo (15), é de revisão acelerada dos conteúdos de matemática, física, química e biologia. Muitos candidatos pretendem estudar até o último momento possível. A estudante da 3º série do ensino médio de uma escola privada de…",
+   "fonte": "Portal Correio",
+   "fonteId": "portalcorreio",
+   "dataPub": "2026-11-14",
+   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2026/11/3125ada00e0b7b9654d4cb725405c183.jpg",
+   "coletadoEm": "2026-11-14T17:11:41Z",
+   "tipo": "ensino",
    "programas": [
     "ensino",
-    "inclusao"
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "03b114fbd15b",
+   "titulo": "UFPB admite falha interna e reconhece atraso no pagamento de bolsas de extensão",
+   "url": "https://www.polemicaparaiba.com.br/educacao/ufpb-admite-falha-interna-e-reconhece-atraso-no-pagamento-de-bolsas-de-extensao",
+   "resumo": "Foto: Reprodução/UFPB A Universidade Federal da Paraíba (UFPB) reconheceu, nesta segunda-feira (16), que o pagamento das bolsas de extensão está atrasado devido a um problema administrativo da própria instituição. Em nota oficial, a universidade assumiu a responsabilidade pela situação e pediu desculpas aos estudantes…",
+   "fonte": "Polêmica Paraíba",
+   "fonteId": "polemicapb",
+   "dataPub": "2026-11-16",
+   "imagem": "https://uploads.polemicaparaiba.com.br/2026/11/WhatsApp-Image-2026-11-16-at-16.12.10.jpeg",
+   "coletadoEm": "2026-11-16T20:02:11Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "46852609d001",
+   "titulo": "Paraíba gastou R$ 94,9 milhões para aplicar Lei de Drogas em 2024",
+   "url": "https://jornaldaparaiba.com.br/cotidiano/paraiba-gastou-r-949-milhoes-para-aplicar-lei-de-drogas-em-2024",
+   "resumo": "Reprodução / Polícia Militar da Paraíba A Paraíba gastou R$ 94,9 milhões com a aplicação da Lei de Drogas em 2024, segundo pesquisa feita pelo Centro de Estudos de Segurança e Cidadania (CESeC). No estado, a maior parte do valor foi investido no Sistema Penitenciário (47,4%) e no Tribunal de Justiça (22,6%).O estudo…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-17",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Operacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FOperacao-cumpre-mandados-contra-suspeitos-de-trafi0021707500202603250649.jpg%3Fxid%3D1243371&amp;xid=1243371",
+   "coletadoEm": "2026-11-17T18:58:29Z",
+   "tipo": "norma",
+   "programas": [
+    "fomento",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "9b945cea616f",
+   "titulo": "Raio X do Pescado 2027: regulação defasada dificulta inovação na indústria, diz Seafood Brasil",
+   "url": "https://paraibabusiness.com.br/raio-x-do-pescado-2027-regulacao-defasada-dificulta-inovacao-na-industria-diz-seafood-brasil",
+   "resumo": "O estudo Raio X do Pescado na Indústria Brasileira 2027, da Seafood Brasil, aponta a regulação defasada como principal entrave à inovação e à competitividade da indústria de pescado do país. O relatório, divulgado em 10 de novembro de 2026, reúne relatos de empresas de processamento de diversas regiões, do Rio Grande…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-17",
+   "imagem": "",
+   "coletadoEm": "2026-11-17T18:58:32Z",
+   "tipo": "inovacao",
+   "programas": [
+    "inovacao"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "ba9000ce2c4e",
+   "titulo": "Rebanho de cabras e ovelhas de Juazeirinho cresce 18% desde 2021, diz Sebrae/PB",
+   "url": "https://paraibabusiness.com.br/rebanho-de-cabras-e-ovelhas-de-juazeirinho-cresce-18-desde-2021-diz-sebrae-pb",
+   "resumo": "O rebanho de cabras e ovelhas de Juazeirinho, no Cariri paraibano, cresceu cerca de 18% entre 2021 e 2025 e chegou a 17.879 animais, segundo a Usina de Dados do Sebrae/PB. O percentual é um cálculo do Paraíba Business sobre os números do Sebrae/PB. O município recebe o Juá Capri, de quinta-feira (19) a sábado […]",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-18",
+   "imagem": "",
+   "coletadoEm": "2026-11-18T18:41:18Z",
+   "tipo": "evento",
+   "programas": [
+    "inovacao",
+    "transversal"
    ],
    "escopo": "Paraíba",
    "pontos": 31,
@@ -361,20 +341,61 @@
    "origem": "auto"
   },
   {
-   "id": "b95dbb251632",
-   "titulo": "Como startups devem monitorar as oportunidades do setor de minerais críticos em discussão no Brasil",
-   "url": "https://startupi.com.br/como-startups-devem-monitorar-as-oportunidades-do-setor-de-minerais-criticos-em-discussao-no-brasil",
-   "resumo": "Startupi Como startups devem monitorar as oportunidades do setor de minerais críticos em discussão no Brasil Com R$ 1,2 bilhão em investimentos públicos para mapeamento geológico e aportes bilionários dos EUA no país, a corrida global para quebrar o monopólio chinês do refino abre uma janela rara para deep techs…",
-   "fonte": "Startupi",
-   "fonteId": "startupi",
+   "id": "307fa5584243",
+   "titulo": "Ministério da Saúde abre seleção com 300 vagas e salários de mais de R$ 10 mil; veja detalhes",
+   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/ministerio-da-saude-abre-selecao-com-300-vagas-e-salarios-de-mais-de-r-10-mil-veja-detalhes",
+   "resumo": "A man is writing/signing on a paper. Focused on a hand with pen. undergraduate student holding pencil and sitting on row chair doing final exam attending in examination room or classroom.university student.. Jornal da Paraíba O Ministério da Saúde abriu um processo seletivo simplificado com 300 vagas imediatas para…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-16",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Prefeitura-de-Itabaiana-abre-inscricoes-de-concurs0021693500202603181744-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FPrefeitura-de-Itabaiana-abre-inscricoes-de-concurs0021693500202603181744.jpg%3Fxid%3D1243302&amp;xid=1243302",
+   "coletadoEm": "2026-11-16T20:02:10Z",
+   "tipo": "norma",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "95a87f7e10fd",
+   "titulo": "ANPD prevê lançar edital de concurso para 50 vagas imediatas em dezembro",
+   "url": "https://convergenciadigital.com.br/governo/anpd-preve-lancar-edital-de-concurso-para-50-vagas-imediatas-em-dezembro",
+   "resumo": "Oportunidades são para o cargo de Especialista em Regulação de Proteção de Dados, que exige formação de nível superior. A remuneração inicial de R$ 17,7 mil. Outros 150 vão para o cadastro reserva.",
+   "fonte": "Convergência Digital",
+   "fonteId": "convergencia",
+   "dataPub": "2026-11-18",
+   "imagem": "",
+   "coletadoEm": "2026-11-18T18:41:40Z",
+   "tipo": "seguranca",
+   "programas": [
+    "seguranca",
+    "fomento"
+   ],
+   "escopo": "Nacional",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "d06341e2fa88",
+   "titulo": "DCOI - Diretoria de Cooperação Institucional, Internacional e Inovação Chamada P?blica CNPq/MMulheres n? 19/2026 - Programa",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPZEVQOWRZcnZURWwyQmlBdWdzczhQRnhKM1d3QlM5LVdXMHhURDQtaVJ5R0FYQWlJNUVFcjA0czIxWnFIWU9IendoX1Z0RDBzYnN0RkgtUHZQbWlSMk5PVFRHdXNaTS1wSHZKUktKbmdUN0RtWG0zX0NZQm5LR1J1bnA1NlRmcXZpTHRPcFpLOUMteDVocjI1dGRxVGdwQks3elZkY2szaDU0UEJ4c3hwYk9wV0FJTERZWE91U3pzZUZVaW1RS21CcnBUSFQ4cHg0dUt1SDdpSnpmUQ?oc=5",
+   "resumo": "",
+   "fonte": "CNPq",
+   "fonteId": "cnpq",
    "dataPub": "2026-11-17",
-   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/minreacao.webp",
-   "coletadoEm": "2026-11-17T18:59:04Z",
+   "imagem": "",
+   "coletadoEm": "2026-11-18T18:41:25Z",
    "tipo": "inovacao",
    "programas": [
-    "inovacao",
     "fomento",
-    "internacional"
+    "inovacao"
    ],
    "escopo": "Nacional",
    "pontos": 28,
@@ -383,45 +404,24 @@
    "origem": "auto"
   },
   {
-   "id": "e19beb4d139f",
-   "titulo": "ÚLTIMOS DIAS! Inscrições para o 8º Prêmio Carolina Bori se encerram neste domingo",
-   "url": "http://www.jornaldaciencia.org.br/ultimos-dias-inscricoes-para-o-8o-premio-carolina-bori-se-encerram-neste-domingo",
-   "resumo": "Estudantes do Ensino Médio e da Graduação podem concorrer a prêmios de até R$ 13 mil, além de mentoria com cientistas e participação na Reunião Anual da SBPC. Interessadas têm até 15 de novembro para participar",
-   "fonte": "Jornal da Ciência",
-   "fonteId": "sbpc",
-   "dataPub": "2026-11-13",
-   "imagem": "http://www.jornaldaciencia.org.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-01-at-14.15.26-300x150.jpeg",
-   "coletadoEm": "2026-11-14T16:24:30Z",
-   "tipo": "evento",
+   "id": "e7437cb8cc75",
+   "titulo": "Brasil desafia retração global e vê venture capital em startups saltar 56%",
+   "url": "https://startupi.com.br/venture-capital-startups-brasileiras-cresce-56",
+   "resumo": "Startupi Brasil desafia retração global e vê venture capital em startups saltar 56% Aportes chegam a US$ 609 milhões entre julho e setembro, impulsionados por fintechs e por uma nova tese de investimento: inteligência artificial embarcada em softwares corporativos O post Brasil desafia retração global e vê venture…",
+   "fonte": "Startupi",
+   "fonteId": "startupi",
+   "dataPub": "2026-11-18",
+   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/markus-winkler-VCPfdECTUnA-unsplash.jpg",
+   "coletadoEm": "2026-11-18T18:41:40Z",
+   "tipo": "inovacao",
    "programas": [
-    "ensino",
+    "inovacao",
+    "secretaria2030",
     "fomento"
    ],
    "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": true,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "07159166be28",
-   "titulo": "Projeto Comunicar Ciência oferece bolsas a universitários para divulgação científica",
-   "url": "https://jornal.usp.br/universidade/projeto-comunicar-ciencia-oferece-bolsas-a-universitarios-para-divulgacao-cientifica",
-   "resumo": "Estudantes de graduação em qualquer área do conhecimento podem se inscrever até o dia 22 de janeiro de 2027",
-   "fonte": "Jornal da USP",
-   "fonteId": "jornalusp",
-   "dataPub": "2026-11-13",
-   "imagem": "https://jornal.usp.br/wp-content/uploads/2026/11/20261113_00_divulgacao_cientifica_imprensa_midia_camera.jpg",
-   "coletadoEm": "2026-11-14T16:24:48Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "astronomia",
-    "fomento"
-   ],
-   "escopo": "Nacional",
-   "pontos": 27,
-   "urgente": true,
+   "pontos": 28,
+   "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
   }
@@ -429,48 +429,25 @@
  "doe": {},
  "secom": [
   {
-   "titulo": "CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba",
-   "portal": "ClickPB",
-   "url": "https://www.clickpb.com.br/tecnologia/ciquanta-computador-pb.html",
-   "dataPub": "2026-11-16",
-   "programas": [
-    "ciquanta",
-    "fomento"
-   ],
-   "resumo": ""
-  },
-  {
-   "titulo": "Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança",
-   "portal": "MCTI",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQc2EzVEZ2S2FjM2F6QWlRVTRUT2x6UjRhdUdINzBZNmZHOU5uU2ZEbEREUkk4U1Y5SmxLXzVxS3Q5MW9fRENIV0ZrRllZOGtoSVh6bXZ3ay1qdVBldlE0bDFVZkJqTnl6dVBkVGttempEYWJxSDJpamdza0UzMGFwcUJDTWV2OWE2Y0d1ZzZuN3hoNXpZZmNiR3BDOWlidUNBeGNRNU5Pdk9KWXNYWEQtSEhqUzFxQVpsbUY1Mkh5ODZTRlB3VTFQeFBJYk5ONzUzaTI5U3hIYTU4Rk91b3R6TklvYUtKYXB6c3ZwQWhrVUtaQQ?oc=5",
-   "dataPub": "2026-11-16",
+   "titulo": "Ciquanta abrirá computadores quânticos para empresas da Paraíba e negocia parcerias com bancos",
+   "portal": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/ciquanta-abrira-computadores-quanticos-para-empresas-da-paraiba-e-negocia-parcerias-com-bancos",
+   "dataPub": "2026-11-18",
    "programas": [
     "ciquanta"
-   ],
-   "resumo": ""
-  },
-  {
-   "titulo": "Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest",
-   "portal": "Paraíba Já",
-   "url": "https://paraibaja.com.br/governo-da-paraiba-abre-inscricoes-para-a-3a-edicao-do-game-dev-quest",
-   "dataPub": "2026-11-17",
-   "programas": [
-    "ensino",
-    "inovacao",
-    "fomento"
    ],
    "resumo": ""
   }
  ],
  "propostas": [],
  "doeAuto": {
-  "data": "2026-11-17",
+  "data": "2026-11-18",
   "lido": false,
   "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-17T16:55:26-03:00",
+ "geradoEm": "2026-11-18T15:42:57-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -494,7 +471,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 22,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -530,7 +507,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 13,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -539,7 +516,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 6,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -575,7 +552,7 @@
    "id": "anatel",
    "nome": "Anatel",
    "ok": true,
-   "itens": 11,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -584,7 +561,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 3,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -620,16 +597,16 @@
    "id": "worldbank-digital",
    "nome": "Banco Mundial Digital",
    "ok": true,
-   "itens": 1,
+   "itens": 0,
    "feed": "busca de notícias",
    "via": "busca",
-   "obs": ""
+   "obs": "Respondeu, mas sem notícias recentes"
   },
   {
    "id": "iadb",
    "nome": "BID",
    "ok": true,
-   "itens": 5,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -638,7 +615,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 20,
+   "itens": 24,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -647,7 +624,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 4,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -656,7 +633,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 5,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -692,7 +669,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 10,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -701,7 +678,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 14,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -710,7 +687,7 @@
    "id": "ec-digital",
    "nome": "Comissão Europeia Digital",
    "ok": true,
-   "itens": 2,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -719,7 +696,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 7,
+   "itens": 9,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -728,9 +705,9 @@
    "id": "consecti",
    "nome": "Consecti",
    "ok": true,
-   "itens": 10,
-   "feed": "https://www.consecti.org.br/feed/",
-   "via": "feed",
+   "itens": 19,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -746,7 +723,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 35,
+   "itens": 34,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -755,7 +732,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 36,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -791,7 +768,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -800,7 +777,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -854,7 +831,7 @@
    "id": "ibram",
    "nome": "Ibram",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -863,7 +840,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -872,7 +849,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 26,
+   "itens": 24,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -899,7 +876,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -962,7 +939,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 18,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1016,7 +993,7 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "https://nossaciencia.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1115,7 +1092,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 31,
+   "itens": 36,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1148,19 +1125,10 @@
    "obs": ""
   },
   {
-   "id": "governo-pb",
-   "nome": "Portal do Governo da Paraíba",
-   "ok": true,
-   "itens": 1,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1169,7 +1137,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 15,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1205,7 +1173,7 @@
    "id": "rnp",
    "nome": "RNP",
    "ok": true,
-   "itens": 6,
+   "itens": 10,
    "feed": "https://www.rnp.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1250,7 +1218,7 @@
    "id": "serpro",
    "nome": "Serpro",
    "ok": true,
-   "itens": 13,
+   "itens": 14,
    "feed": "https://www.serpro.gov.br/RSS",
    "via": "feed",
    "obs": ""
@@ -1259,7 +1227,7 @@
    "id": "spacenews",
    "nome": "SpaceNews",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "https://spacenews.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1295,7 +1263,7 @@
    "id": "theconversation-br",
    "nome": "The Conversation Brasil",
    "ok": true,
-   "itens": 31,
+   "itens": 35,
    "feed": "https://theconversation.com/br/articles.atom",
    "via": "feed",
    "obs": ""
@@ -1331,7 +1299,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 13,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1340,16 +1308,7 @@
    "id": "unesco",
    "nome": "UNESCO",
    "ok": true,
-   "itens": 1,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "iesalc",
-   "nome": "UNESCO IESALC",
-   "ok": true,
-   "itens": 1,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1461,6 +1420,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "governo-pb",
+   "nome": "Portal do Governo da Paraíba",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "radiotabajara",
    "nome": "Rádio Tabajara",
    "ok": false,
@@ -1493,6 +1460,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "iesalc",
+   "nome": "UNESCO IESALC",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "uwn",
    "nome": "University World News",
    "ok": false,
@@ -1510,14 +1485,14 @@
   }
  ],
  "curiosidade": {
-  "texto": "Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.",
-  "porque": "Cada qubit pode estar numa mistura de 0 e 1. Os estados possíveis dobram a cada qubit: 2 elevado a 20, 2 elevado a 100.",
-  "tema": "quantica",
-  "area": "Computação quântica",
-  "formula": "2²⁰ = 1.048.576"
+  "texto": "Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto.",
+  "porque": "O frio extremo evita que o calor bagunce os qubits. O espaço vazio fica em torno de -270 °C; esses chips chegam bem mais perto de -273,15 °C.",
+  "tema": "frio",
+  "area": "Baixas temperaturas",
+  "formula": "0 K = −273,15 °C"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-17-1655.png",
- "link": "https://radar.secties.pb.gov.br/edicao/32/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 32\n_Terça-feira, 17 de novembro de 2026_\n\n*QLUSTER RAISES €4.7 MILLION TO DEVELOP A NEW GENERATION OF QUANTUM COMPUTERS*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba _(ClickPB)_\n2. Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança _(MCTI)_\n3. Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos _(UFPB)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest\n*Brasil:* Embrapii inaugura Unidade Inovação Einstein em Saúde Digital\n*Mundo:* Planckian Selected for €10 Million in EIC Support for Quantum Hardware\n\n> *Você sabia?* Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/32/"
+ "capa": "capa-2026-11-18-1542.png",
+ "link": "https://radar.secties.pb.gov.br/edicao/33/",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 33\n_Quarta-feira, 18 de novembro de 2026_\n\n*QUANTUM PHYSICS CAN VERIFY A PERSON’S LOCATION, NIST RESEARCHERS SHOW*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Ciquanta abrirá computadores quânticos para empresas da Paraíba e negocia parcerias com bancos _(Paraíba Business)_\n2. Inovatec realiza três novos pedidos de depósitos de patentes nas áreas de alimentos, biotecnologia e saúde _(UEPB)_\n3. SAXON Q Introduces Patented Quantum Watchdog System for Runtime QPU Fault Detection _(Quantum Computing Report)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Brazil Receives Parts for Two Quantum Computers in Partnership With China\n*Brasil:* CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital\n*Mundo:* SAXON Q Announces ‘Quantum Watchdog,’ to Detect When Quantum Computers Fail\n\n> *Você sabia?* Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/33/"
 }

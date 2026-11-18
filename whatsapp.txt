@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 32
-_Terça-feira, 17 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 33
+_Quarta-feira, 18 de novembro de 2026_
 
-*QLUSTER RAISES €4.7 MILLION TO DEVELOP A NEW GENERATION OF QUANTUM COMPUTERS*
+*QUANTUM PHYSICS CAN VERIFY A PERSON’S LOCATION, NIST RESEARCHERS SHOW*
 > 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. CiQuanta: conheça o centro que vai operar os primeiros computadores quânticos da América Latina na Paraíba _(ClickPB)_
-2. Com apoio do MCTI, computadores quânticos chegam a João Pessoa e implementação do Ciquanta avança _(MCTI)_
-3. Aluna da UFPB recebe Prêmio CAPES de Tese 2026 na área de Ciência de Alimentos _(UFPB)_
+1. Ciquanta abrirá computadores quânticos para empresas da Paraíba e negocia parcerias com bancos _(Paraíba Business)_
+2. Inovatec realiza três novos pedidos de depósitos de patentes nas áreas de alimentos, biotecnologia e saúde _(UEPB)_
+3. SAXON Q Introduces Patented Quantum Watchdog System for Runtime QPU Fault Detection _(Quantum Computing Report)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Governo da Paraíba abre inscrições para a 3ª edição do Game Dev Quest
-*Brasil:* Embrapii inaugura Unidade Inovação Einstein em Saúde Digital
-*Mundo:* Planckian Selected for €10 Million in EIC Support for Quantum Hardware
+*Paraíba:* Brazil Receives Parts for Two Quantum Computers in Partnership With China
+*Brasil:* CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital
+*Mundo:* SAXON Q Announces ‘Quantum Watchdog,’ to Detect When Quantum Computers Fail
 
-> *Você sabia?* Um computador quântico de 20 qubits trabalha com mais de 1 milhão de combinações ao mesmo tempo. Com 100 qubits, o número tem 31 dígitos.
+> *Você sabia?* Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto.
 
 *Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radar.secties.pb.gov.br/edicao/32/
+https://radar.secties.pb.gov.br/edicao/33/
