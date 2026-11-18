@@ -341,22 +341,23 @@
    "origem": "auto"
   },
   {
-   "id": "307fa5584243",
-   "titulo": "Ministério da Saúde abre seleção com 300 vagas e salários de mais de R$ 10 mil; veja detalhes",
-   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/ministerio-da-saude-abre-selecao-com-300-vagas-e-salarios-de-mais-de-r-10-mil-veja-detalhes",
-   "resumo": "A man is writing/signing on a paper. Focused on a hand with pen. undergraduate student holding pencil and sitting on row chair doing final exam attending in examination room or classroom.university student.. Jornal da Paraíba O Ministério da Saúde abriu um processo seletivo simplificado com 300 vagas imediatas para…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-16",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/Prefeitura-de-Itabaiana-abre-inscricoes-de-concurs0021693500202603181744-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2FPrefeitura-de-Itabaiana-abre-inscricoes-de-concurs0021693500202603181744.jpg%3Fxid%3D1243302&amp;xid=1243302",
-   "coletadoEm": "2026-11-16T20:02:10Z",
-   "tipo": "norma",
+   "id": "e1ed078eaa44",
+   "titulo": "Ruy Carneiro anuncia apoio à acessibilidade da UFPB e recursos para novo elevador do HU",
+   "url": "https://www.polemicaparaiba.com.br/politica/ruy-carneiro-anuncia-apoio-a-acessibilidade-da-ufpb-e-recursos-para-novo-elevador-do-hu",
+   "resumo": "O deputado federal Ruy Carneiro (Podemos-PB) recebeu nesta segunda-feira, 17, em seu gabinete em Brasília, representantes da Universidade Federal da Paraíba (UFPB) e do Hospital Universitário Lauro Wanderley (HULW) para discutir investimentos em acessibilidade e melhorias na estrutura hospitalar. Nos encontros, o…",
+   "fonte": "Polêmica Paraíba",
+   "fonteId": "polemicapb",
+   "dataPub": "2026-11-18",
+   "imagem": "https://uploads.polemicaparaiba.com.br/2026/11/fotos-polemica-52.png",
+   "coletadoEm": "2026-11-18T19:25:34Z",
+   "tipo": "ensino",
    "programas": [
     "ensino",
-    "fomento"
+    "fomento",
+    "transversal"
    ],
    "escopo": "Paraíba",
-   "pontos": 30,
+   "pontos": 31,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -447,7 +448,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-18T15:42:57-03:00",
+ "geradoEm": "2026-11-18T16:27:06-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -471,7 +472,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 15,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -516,7 +517,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 5,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -615,7 +616,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 24,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -678,7 +679,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 13,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -705,7 +706,7 @@
    "id": "consecti",
    "nome": "Consecti",
    "ok": true,
-   "itens": 19,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -777,7 +778,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -849,7 +850,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 24,
+   "itens": 23,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -939,7 +940,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -993,9 +994,9 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 8,
-   "feed": "https://nossaciencia.com.br/feed/",
-   "via": "feed",
+   "itens": 3,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -1128,7 +1129,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 36,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1200,7 +1201,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 37,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1491,5 +1492,5 @@
   "area": "Baixas temperaturas",
   "formula": "0 K = −273,15 °C"
  },
- "capa": "capa-2026-11-18-1542.png"
+ "capa": "capa-2026-11-18-1627.png"
 }
