@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 33
-_Quarta-feira, 18 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 34
+_Quinta-feira, 19 de novembro de 2026_
 
-*QUANTUM PHYSICS CAN VERIFY A PERSON’S LOCATION, NIST RESEARCHERS SHOW*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 13 delas da Paraíba.
+*COMPUTADORES QUÂNTICOS CHEGAM À PB*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. Ciquanta abrirá computadores quânticos para empresas da Paraíba e negocia parcerias com bancos _(Paraíba Business)_
-2. Inovatec realiza três novos pedidos de depósitos de patentes nas áreas de alimentos, biotecnologia e saúde _(UEPB)_
-3. SAXON Q Introduces Patented Quantum Watchdog System for Runtime QPU Fault Detection _(Quantum Computing Report)_
+1. *Prazo:* Dia da Consciência Negra marca luta por igualdade, justiça social e políticas afirmativas na Universidade Estadual da Paraíba _(UEPB)_
+2. SK Broadband to Test Quantum Security on Korea-Singapore Subsea Cable _(The Quantum Insider)_
+3. Museu Casa de Cultura Hermano José, da UFPB, abre exposição sobre memória e ancestralidade negra nesta quinta-feira (19) _(UFPB)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Brazil Receives Parts for Two Quantum Computers in Partnership With China
-*Brasil:* CCT aprova R$ 1,5 bilhão em emendas para tecnologia e inclusão digital
-*Mundo:* SAXON Q Announces ‘Quantum Watchdog,’ to Detect When Quantum Computers Fail
+*Paraíba:* Universidade Estadual da Paraíba e Procon Estadual iniciam fiscalização de gasolina em postos de combustíveis
+*Brasil:* Senado aprova prazo maior para uso de R$ 1,8 bilhão em conectividade escolar
+*Mundo:* Students Use Quantum Computing to Address Electric Grid Challenges at Tennessee Hackathon
 
-> *Você sabia?* Muitos computadores quânticos funcionam mais gelados que o espaço sideral: a poucos milésimos de grau do zero absoluto.
+> *Você sabia?* No espaço, ninguém ouve sua explosão. Os filmes de ficção científica deveriam ser bem mais silenciosos.
 
-*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:
-https://radar.secties.pb.gov.br/edicao/33/
+*Leia a edição completa*, com 20 notícias:
+https://radar.secties.pb.gov.br/edicao/34/
