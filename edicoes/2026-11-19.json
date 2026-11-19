@@ -2,9 +2,51 @@
  "data": "2026-11-19",
  "numero": 34,
  "modo": "automatico",
- "destaque": "Computadores quânticos chegam à PB",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba. Também em destaque: Computadores quânticos chegam à PB; e Museu Casa de Cultura Hermano José, da UFPB, abre exposição sobre memória e ancestralidade negra nesta quinta-feira (19).",
+ "destaque": "Paraíba abre edital para 30 startups no Web Summit Qatar 2027, em Doha",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 9 delas da Paraíba. Também em destaque: FARPAS celebra 10ª edição com mais de 850 participantes e fortalece a conexão entre Universidade e escolas públicas; e Computadores quânticos chegam à PB.",
  "itens": [
+  {
+   "id": "19cbec6d4016",
+   "titulo": "Paraíba abre edital para 30 startups no Web Summit Qatar 2027, em Doha",
+   "url": "https://paraibabusiness.com.br/secties-seleciona-30-startups-qatar-2027",
+   "resumo": "Edital do programa Paraíba sem Fronteiras oferece 30 vagas, recursos do Tesouro Estadual e inscrições por formulário online; resultados serão divulgados pela SECTIES.",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-19",
+   "imagem": "",
+   "coletadoEm": "2026-11-19T19:30:10Z",
+   "tipo": "oficial",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 48,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "4b29cca506d9",
+   "titulo": "FARPAS celebra 10ª edição com mais de 850 participantes e fortalece a conexão entre Universidade e escolas públicas",
+   "url": "https://uepb.edu.br/farpas-celebra-10a-edicao-com-mais-de-850-participantes-e-fortalece-a-conexao-entre-universidade-e-escolas-publicas",
+   "resumo": "O Festival de Artes e Participação Social (FARPAS) chegou à sua 10ª edição reafirmando a importância da arte, da educação, do diálogo e da participação coletiva. Realizado nos dias 18 e 19 de novembro, no Câmpus V da Universidade Estadual da Paraíba (UEPB), em João Pessoa, o evento reuniu mais de 850 inscritos, entre…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-19",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/FARPAS-2.png",
+   "coletadoEm": "2026-11-19T19:30:05Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 40,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
   {
    "id": "db6152721eaa",
    "titulo": "Dia da Consciência Negra marca luta por igualdade, justiça social e políticas afirmativas na Universidade Estadual da Paraíba",
@@ -22,7 +64,7 @@
    "escopo": "Paraíba",
    "pontos": 37,
    "urgente": true,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -109,47 +151,6 @@
    "origem": "auto"
   },
   {
-   "id": "69639dd29933",
-   "titulo": "“UTRA Educa” é lançado como plataforma gratuita que orienta famílias e profissionais sobre o uso de telas",
-   "url": "https://uepb.edu.br/utra-educa-e-lancado-como-plataforma-gratuita-que-orienta-familias-e-profissionais-sobre-o-uso-de-telas",
-   "resumo": "O Departamento de Psicologia da Universidade Estadual da Paraíba (UEPB) realizou, na manhã desta quarta-feira (18), no Auditório de Psicologia, no Câmpus I, em Campina Grande, o encontro UTRA Educa, que trouxe um debate sobre os desafios enfrentados por psicólogos(as) e professores(as) na era digital, especialmente em…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-19",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Lancamento-Projeto-UTRA-6.jpeg",
-   "coletadoEm": "2026-11-19T18:53:47Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "c58997527b1b",
-   "titulo": "Museu Casa de Cultura Hermano José, da UFPB, abre exposição sobre memória e ancestralidade negra nesta quinta-feira (19)",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQc01Gc3VoZ2JTSzZRaVNYZDFjUUREYmo5WFlPbE1KN0dpNFpZWHUzemdQLW40ZWdhdU5TcDVkU25KN1BwdXVqQXdZLThBcG1qLUx0SnExM0R6UURFUDdCUUR0R2JUVnJPb3F5VGRzVzRCalZGdFBGM0FsTHJhTkMzbDBlMF84TWJfZ3BfZlpSYzJsdmx4U1lieG9lNWhGVHNCT0NSZi00UnN0N3Y2dTQ3a3VMYkQyeklPREx5T1I0LVctdXNMcnluRmRKX2lIWXpDVGtES3NXQWpRaDVP?oc=5",
-   "resumo": "",
-   "fonte": "UFPB",
-   "fonteId": "ufpb",
-   "dataPub": "2026-11-19",
-   "imagem": "",
-   "coletadoEm": "2026-11-19T18:53:49Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "patrimonio"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
    "id": "e2b31d81bf56",
    "titulo": "Senado aprova prazo maior para uso de R$ 1,8 bilhão em conectividade escolar",
    "url": "https://telesintese.com.br/senado-aprova-prazo-maior-para-uso-de-r-18-bilhao-em-conectividade-escolar",
@@ -188,6 +189,27 @@
     "internacional"
    ],
    "escopo": "Global",
+   "pontos": 34,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "c58997527b1b",
+   "titulo": "Museu Casa de Cultura Hermano José, da UFPB, abre exposição sobre memória e ancestralidade negra nesta quinta-feira (19)",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQc01Gc3VoZ2JTSzZRaVNYZDFjUUREYmo5WFlPbE1KN0dpNFpZWHUzemdQLW40ZWdhdU5TcDVkU25KN1BwdXVqQXdZLThBcG1qLUx0SnExM0R6UURFUDdCUUR0R2JUVnJPb3F5VGRzVzRCalZGdFBGM0FsTHJhTkMzbDBlMF84TWJfZ3BfZlpSYzJsdmx4U1lieG9lNWhGVHNCT0NSZi00UnN0N3Y2dTQ3a3VMYkQyeklPREx5T1I0LVctdXNMcnluRmRKX2lIWXpDVGtES3NXQWpRaDVP?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-19",
+   "imagem": "",
+   "coletadoEm": "2026-11-19T18:53:49Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "patrimonio"
+   ],
+   "escopo": "Paraíba",
    "pontos": 34,
    "urgente": false,
    "relevancia": "media",
@@ -318,7 +340,7 @@
    "escopo": "Nacional",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -347,26 +369,6 @@
    "titulo": "Meta levará o Muse aos óculos com IA, mas sem data para o Brasil",
    "url": "https://paraibabusiness.com.br/meta-anuncia-oculos-com-ia-que-interpretam-o-que-usuario-observa-em-2026",
    "resumo": "A Meta anunciou em 23 de setembro de 2026, no evento Meta Connect, que levará o Muse, seu agente pessoal de inteligência artificial (IA), aos óculos inteligentes nos próximos meses. O agente poderá agir sobre o que o usuário está vendo, como um produto em uma prateleira, segundo a empresa. A Meta não informou data […]",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-16",
-   "imagem": "",
-   "coletadoEm": "2026-11-16T20:02:11Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 29,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "86c97f048f08",
-   "titulo": "Samsung testa Meal Scan, IA do Samsung Health que estima calorias por foto",
-   "url": "https://paraibabusiness.com.br/samsung-testa-meal-scan-ia-do-samsung-health-que-estima-calorias-por-foto",
-   "resumo": "A Samsung testa o Meal Scan, recurso de inteligência artificial (IA) do aplicativo Samsung Health que estima as calorias de uma refeição a partir de uma foto, segundo reportagem do SamMobile reproduzida pelo Canaltech nesta segunda-feira (16 de novembro de 2026). A empresa não anunciou oficialmente os detalhes do…",
    "fonte": "Paraíba Business",
    "fonteId": "paraibabusiness",
    "dataPub": "2026-11-16",
@@ -427,7 +429,19 @@
   }
  ],
  "doe": {},
- "secom": [],
+ "secom": [
+  {
+   "titulo": "Paraíba abre edital para 30 startups no Web Summit Qatar 2027, em Doha",
+   "portal": "Paraíba Business",
+   "url": "https://paraibabusiness.com.br/secties-seleciona-30-startups-qatar-2027",
+   "dataPub": "2026-11-19",
+   "programas": [
+    "inovacao",
+    "fomento"
+   ],
+   "resumo": ""
+  }
+ ],
  "propostas": [],
  "doeAuto": {
   "data": "2026-11-19",
@@ -436,7 +450,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-19T15:55:26-03:00",
+ "geradoEm": "2026-11-19T16:31:41-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -460,7 +474,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 17,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -622,7 +636,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 23,
+   "itens": 24,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -766,7 +780,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 13,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -820,7 +834,7 @@
    "id": "ibram",
    "nome": "Ibram",
    "ok": true,
-   "itens": 8,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -829,7 +843,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -1054,9 +1068,9 @@
    "id": "paraibatotal",
    "nome": "Paraíba Total",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 10,
+   "feed": "https://paraibatotal.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1126,7 +1140,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 37,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1135,7 +1149,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 10,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1199,6 +1213,15 @@
    "nome": "Sebrae Paraíba",
    "ok": true,
    "itens": 39,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "sebrae-startups",
+   "nome": "Sebrae Startups",
+   "ok": true,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1434,14 +1457,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "sebrae-startups",
-   "nome": "Sebrae Startups",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "ufcg",
    "nome": "UFCG",
    "ok": false,
@@ -1481,5 +1496,5 @@
   "area": "Acústica",
   "formula": "som no vácuo: 0 m/s"
  },
- "capa": "capa-2026-11-19-1555.png"
+ "capa": "capa-2026-11-19-1631.png"
 }
