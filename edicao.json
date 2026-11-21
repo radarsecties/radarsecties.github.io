@@ -433,7 +433,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-21T14:12:05-03:00",
+ "geradoEm": "2026-11-21T15:03:57-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -457,7 +457,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 13,
+   "itens": 14,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -493,7 +493,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 9,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -574,7 +574,7 @@
    "id": "baguete",
    "nome": "Baguete",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -619,7 +619,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 19,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -751,15 +751,6 @@
    "obs": ""
   },
   {
-   "id": "finep",
-   "nome": "Finep",
-   "ok": true,
-   "itens": 6,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "folhapatoense",
    "nome": "Folha Patoense",
    "ok": true,
@@ -853,7 +844,16 @@
    "id": "ipea",
    "nome": "Ipea",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "iphan",
+   "nome": "Iphan",
+   "ok": true,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -886,6 +886,15 @@
    "obs": ""
   },
   {
+   "id": "unicamp",
+   "nome": "Jornal da Unicamp",
+   "ok": true,
+   "itens": 39,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "jornalusp",
    "nome": "Jornal da USP",
    "ok": true,
@@ -907,7 +916,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1168,7 +1177,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 32,
+   "itens": 31,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1276,7 +1285,16 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 9,
+   "itens": 8,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "unesco",
+   "nome": "UNESCO",
+   "ok": true,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1365,6 +1383,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "finep",
+   "nome": "Finep",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "icom",
    "nome": "ICOM",
    "ok": false,
@@ -1389,24 +1415,8 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "iphan",
-   "nome": "Iphan",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "jampanews",
    "nome": "Jampa News",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "unicamp",
-   "nome": "Jornal da Unicamp",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1445,14 +1455,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "unesco",
-   "nome": "UNESCO",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "iesalc",
    "nome": "UNESCO IESALC",
    "ok": false,
@@ -1477,7 +1479,7 @@
   "formula": "+3,8 cm por ano"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-21-1412.png",
+ "capa": "capa-2026-11-21-1503.png",
  "link": "https://radar.secties.pb.gov.br/edicao/36/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 36\n_Sábado, 21 de novembro de 2026_\n\n*GIGANTES DO SETOR FINANCEIRO SÃO ALVO DE ATAQUES HACKER*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas” _(UEPB)_\n2. Guest Post: When Will Quantum Computing Become Useful for Insurance? _(The Quantum Insider)_\n3. Computadores quânticos chegam à PB _(A União)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Enem 2026: termina em um dia prazo para pedir reaplicação da prova\n*Brasil:* 05102026_EDITAL CAPES/INEP Nº 26/2026 - ALTERAÇÃO\n*Mundo:* Qluster Raises €4.7 Million Pre-Seed Round Led by Quantonation to Build Continuous-Variable Photonic Quantum Computers\n\n> *Você sabia?* A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/36/"
 }
