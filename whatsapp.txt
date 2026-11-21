@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 35
-_Sexta-feira, 20 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 36
+_Sábado, 21 de novembro de 2026_
 
-*PRAZO PARA PEDIR REAPLICAÇÃO DO ENEM 2026 TERMINA NESTA SEXTA-FEIRA*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.
+*GIGANTES DO SETOR FINANCEIRO SÃO ALVO DE ATAQUES HACKER*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. Projeto de extensão Luz Negra promove exposições fotográficas em duas escolas públicas de Campina Grande _(UEPB)_
-2. Delta Gold Launches Dedicated Quantum Sensing Program _(The Quantum Insider)_
-3. Reitoria da UFPB entrega 30 computadores ao CAVN para reforçar estrutura tecnológica _(UFPB)_
+1. Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas” _(UEPB)_
+2. Guest Post: When Will Quantum Computing Become Useful for Insurance? _(The Quantum Insider)_
+3. Computadores quânticos chegam à PB _(A União)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Comissão Permanente de Concursos abre inscrições para fiscais atuarem em aplicação de provas no Câmpus de Guarabira
-*Brasil:* PL do Marco Legal de IA vai retornar ao Senado e votação fica distante em 2026
-*Mundo:* Mastercard Launches Quantum Advisory Practice for Financial Services
+*Paraíba:* Enem 2026: termina em um dia prazo para pedir reaplicação da prova
+*Brasil:* 05102026_EDITAL CAPES/INEP Nº 26/2026 - ALTERAÇÃO
+*Mundo:* Qluster Raises €4.7 Million Pre-Seed Round Led by Quantonation to Build Continuous-Variable Photonic Quantum Computers
 
-> *Você sabia?* Você é, literalmente, poeira de estrelas. O cálcio dos seus ossos e o ferro do seu sangue foram fabricados dentro de estrelas.
+> *Você sabia?* A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.
 
 *Leia a edição completa*, com 20 notícias:
-https://radar.secties.pb.gov.br/edicao/35/
+https://radar.secties.pb.gov.br/edicao/36/
