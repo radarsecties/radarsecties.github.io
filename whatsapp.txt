@@ -1,20 +1,20 @@
-*RADAR SECTIES*  |  Edição nº 36
-_Sábado, 21 de novembro de 2026_
+*RADAR SECTIES*  |  Edição nº 37
+_Domingo, 22 de novembro de 2026_
 
-*GIGANTES DO SETOR FINANCEIRO SÃO ALVO DE ATAQUES HACKER*
-> 20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba.
+*UFPB ABRE SELEÇÃO PARA PROFESSOR REGENTE DE CURSOS DA UNIVERSIDADE ABERTA DO BRASIL*
+> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.
 
 *O QUE PEDE ATENÇÃO HOJE*
-1. Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas” _(UEPB)_
-2. Guest Post: When Will Quantum Computing Become Useful for Insurance? _(The Quantum Insider)_
-3. Computadores quânticos chegam à PB _(A União)_
+1. Especialistas: Inteligência Artificial na educação exige capacitação de professores _(Paraíba Online)_
+2. Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas _(Paraíba Business)_
+3. How the Department of Commerce’s Quantum Awards Work and What Companies Give in Return _(The Quantum Insider)_
 
 *NA PARAÍBA, NO BRASIL E NO MUNDO*
-*Paraíba:* Enem 2026: termina em um dia prazo para pedir reaplicação da prova
-*Brasil:* 05102026_EDITAL CAPES/INEP Nº 26/2026 - ALTERAÇÃO
-*Mundo:* Qluster Raises €4.7 Million Pre-Seed Round Led by Quantonation to Build Continuous-Variable Photonic Quantum Computers
+*Paraíba:* Edital seleciona 22 startups paraibanas para participar do Web Summit Qatar 2027
+*Brasil:* No 42º ENPROP, CAPES reforça diálogo com pró-reitores e coordenadores da pós-graduação
+*Mundo:* QuEra Computing and NVIDIA Introduce PPVM Open-Source Digital-Twin Simulation Framework for Quantum Processors
 
-> *Você sabia?* A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.
+> *Você sabia?* Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois.
 
 *Leia a edição completa*, com 20 notícias:
-https://radar.secties.pb.gov.br/edicao/36/
+https://radar.secties.pb.gov.br/edicao/37/

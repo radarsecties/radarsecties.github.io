@@ -1,125 +1,44 @@
 {
- "data": "2026-11-21",
- "numero": 36,
+ "data": "2026-11-22",
+ "numero": 37,
  "modo": "automatico",
- "destaque": "Gigantes do setor financeiro são alvo de ataques hacker",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba. Também em destaque: Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas”; e Computadores quânticos chegam à PB.",
+ "destaque": "UFPB abre seleção para professor regente de cursos da Universidade Aberta do Brasil",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Especialistas: Inteligência Artificial na educação exige capacitação de professores; e Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas.",
  "itens": [
   {
-   "id": "50fbcf81e740",
-   "titulo": "Gigantes do setor financeiro são alvo de ataques hacker",
-   "url": "https://portalcorreio.com.br/gigantes-do-setor-financeiro-sao-alvo-de-ataques-hacker-2",
-   "resumo": "As empresas JPMorgan Chase, Visa e Mastercard foram alvos de ataques hacker. O movimento criminoso pode ter terminado com vazamento de dados de milhares de clientes. A informação é do R7. O vazamento pode ter tornado público nomes e e-mails dos clientes dessas empresas. Ambas negaram que o vazamento tenha afetado…",
-   "fonte": "Portal Correio",
-   "fonteId": "portalcorreio",
-   "dataPub": "2026-11-21",
-   "imagem": "https://portalcorreio.com.br/portalcorreio/storage/2020/03/Cartão-de-crédito-Foto-Marcello-Casal-Jr-Agência-Brasil.jpg",
-   "coletadoEm": "2026-11-21T17:09:34Z",
-   "tipo": "seguranca",
-   "programas": [
-    "seguranca"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 36,
-   "urgente": true,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "e4191c38440c",
-   "titulo": "Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas”",
-   "url": "https://uepb.edu.br/nucleo-de-acessibilidade-e-inclusao-promove-oficina-sobre-o-tema-recursos-pedagogicos-e-praticas-inclusivas",
-   "resumo": "O Núcleo de Acessibilidade e Inclusão (NAI) da Universidade Estadual da Paraíba (UEPB), por meio do projeto de extensão Desenhando Linhas Inclusivas: o Núcleo de Acessibilidade e Inclusão da UEPB em Foco, promove, na sexta-feira (27), das 14 às 17h, a oficina “Recursos Pedagógicos e Práticas Inclusivas: da…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
+   "id": "f3265127e960",
+   "titulo": "UFPB abre seleção para professor regente de cursos da Universidade Aberta do Brasil",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcjlidjRpckI0RmJLWS1vR1NXckJVeWdqaWctMjQ1NmlNRy1kT18yZTYxQ3VuSzZWbjBHdjZ5eERyam1ZOHJmV2N5aGxXRUJCM2xWeVdOTW5DaHFleGxnNzd3SXlIVjZzQ2ZLUmw0bjIxdVRVX21hSFJkdlVpbFhrTVBERlRwYVJLZE1kNVRHZnZuSWU4NzhGdUxhZTAxbmp2Vnl1YmZpcFZkNlhWVmExYW5faWFKNll2OVE?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
    "dataPub": "2026-11-19",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Inscricao-NAI.jpg",
-   "coletadoEm": "2026-11-19T18:53:47Z",
+   "imagem": "",
+   "coletadoEm": "2026-11-22T17:39:10Z",
    "tipo": "ensino",
    "programas": [
     "ensino"
    ],
    "escopo": "Paraíba",
-   "pontos": 34,
+   "pontos": 33,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "9d5b3693c9a8",
-   "titulo": "Enem 2026: termina em um dia prazo para pedir reaplicação da prova",
-   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/19/enem-2026-termina-em-um-dia-prazo-para-pedir-reaplicacao-da-prova",
-   "resumo": "Os participantes do Exame Nacional do Ensino Médio (Enem) 2026 que, por questões de logística ou doenças infectocontagiosas, não conseguiram fazer as provas podem requerer até esta sexta-feira (20) a reaplicação das avaliações. Por meio da Página do Participante do Enem, o candidato pode fazer o pedido…",
+   "id": "a4b6b77f8267",
+   "titulo": "Especialistas: Inteligência Artificial na educação exige capacitação de professores",
+   "url": "https://paraibaonline.com.br/educacao-e-ciencia/2026/11/22/especialistas-inteligencia-artificial-na-educacao-exige-capacitacao-de-professores",
+   "resumo": "A discussão sobre Inteligência Artificial (IA) na Matemática é um dos eixos centrais do 9º Simpósio Nacional da Formação do Professor de Matemática, evento da Associação Nacional dos Professores de Matemática na Educação Básica (ANPMat), que ocorre de 19 a 22 de novembro de 2026, em São Luís (MA). O diretor-geral do…",
    "fonte": "Paraíba Online",
    "fonteId": "paraibaonline",
-   "dataPub": "2026-11-19",
+   "dataPub": "2026-11-22",
    "imagem": "",
-   "coletadoEm": "2026-11-19T18:53:51Z",
-   "tipo": "ensino",
+   "coletadoEm": "2026-11-22T17:39:12Z",
+   "tipo": "ia-gov",
    "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": true,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "8a48048f63a9",
-   "titulo": "Como usar a nota do Enem 2026 para entrar na universidade? Veja opções",
-   "url": "https://jornaldaparaiba.com.br/educacao/como-usar-a-nota-do-enem-2026-para-entrar-na-universidade-veja-opcoes",
-   "resumo": "Enem 2026: João Pessoa tem maior número de inscritos entre cidades da Paraíba | Foto: Divulgação. Bruna Araújo/MEC A nota do Enem 2026 poderá ser usada para disputar vagas em universidades públicas, conseguir bolsas de estudo em faculdades particulares e solicitar financiamento estudantil. O resultado individual do…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-19",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/enem-2026-joao-pessoa-tem-maior-numero-de-inscrito0022221600202611021600-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fenem-2026-joao-pessoa-tem-maior-numero-de-inscrito0022221600202611021600.jpg%3Fxid%3D1243643&amp;xid=1243643",
-   "coletadoEm": "2026-11-19T18:53:52Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "ea3bdbc75a35",
-   "titulo": "Guest Post: When Will Quantum Computing Become Useful for Insurance?",
-   "url": "https://thequantuminsider.com/2026/11/20/guest-post-when-will-quantum-computing-become-useful-for-insurance",
-   "resumo": "Guest Post Dr. Kris Naudts, Zeynep Koruturk, and Donald Harmitt @ Firgun Ventures. Firgun Ventures is a VC firm investing in Series A/B quantum scale-ups globally. Insurance is, at its core, the business of putting a price on uncertainty, and computationally intensive simulations underpin much of how insurers assess…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-20",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/mcqi3mljc4e.jpg",
-   "coletadoEm": "2026-11-20T18:23:08Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "14986e19fbd2",
-   "titulo": "Computadores quânticos chegam à PB",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMXdYTGt0ME5Ib2hPVVNUVTNibFlwdlNGZTlHMTBweGNQajEydHB4VVV3b29QTWhUejdaSjFoTUFMZkJ6b3RNNWN3dmNsZUtTMXVzT1haVDh3amd0alNEbU5hTkUzeWpqaTlnWF9ZVFZSaS1BSGh2QTVoMGhqTzNXanR3?oc=5",
-   "resumo": "",
-   "fonte": "A União",
-   "fonteId": "auniao",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:59:42Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta"
+    "secretaria2030",
+    "transversal"
    ],
    "escopo": "Paraíba",
    "pontos": 32,
@@ -128,231 +47,285 @@
    "origem": "auto"
   },
   {
-   "id": "3c82da69e6cf",
-   "titulo": "Governo da Paraíba lança edital para levar startups paraibanas ao Web Summit Qatar 2027",
-   "url": "https://paraibaja.com.br/governo-da-paraiba-lanca-edital-para-levar-startups-paraibanas-ao-web-summit-qatar-2027",
-   "resumo": "De acordo com o edital, podem participar startups sediadas na Paraíba, como matriz ou filial, com domicílio fiscal ativo e regular no estado O post Governo da Paraíba lança edital para levar startups paraibanas ao Web Summit Qatar 2027 apareceu primeiro em Paraíba Já .",
-   "fonte": "Paraíba Já",
-   "fonteId": "paraibaja",
+   "id": "e79c91238100",
+   "titulo": "Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas",
+   "url": "https://paraibabusiness.com.br/antonio-carlo-demingos-alerta-para-riscos-do-uso-da-inteligencia-artificial-nas-empresas",
+   "resumo": "A inteligência artificial pode ampliar a produtividade das empresas, mas sua adoção também exige atenção à segurança da informação. O compartilhamento de dados confidenciais em ferramentas públicas, respostas incorretas tratadas como verdade e decisões automatizadas sem supervisão estão entre os riscos que podem…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-22",
+   "imagem": "",
+   "coletadoEm": "2026-11-22T17:39:14Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030",
+    "seguranca"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "698da6ce67c3",
+   "titulo": "How the Department of Commerce’s Quantum Awards Work and What Companies Give in Return",
+   "url": "https://thequantuminsider.com/2026/11/20/how-the-department-of-commerces-quantum-awards-work-and-what-companies-give-in-return",
+   "resumo": "The U.S. Department of Commerce’s quantum computing awards combine research funding with government ownership, giving companies access to capital for specific engineering projects in exchange for shares and commitments governing how the work is completed. Agreements disclosed in SEC filings by Rigetti Computing…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-20",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Commerce-Graphic.png",
+   "coletadoEm": "2026-11-20T18:23:08Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "939bb2cc7bfb",
+   "titulo": "QuEra Computing and NVIDIA Introduce PPVM Open-Source Digital-Twin Simulation Framework for Quantum Processors",
+   "url": "https://quantumcomputingreport.com/quera-computing-and-nvidia-introduce-ppvm-open-source-digital-twin-simulation-framework-for-quantum-processors",
+   "resumo": "QuEra Computing and NVIDIA have introduced PPVM, an open-source digital-twin simulation framework for quantum processors. PPVM unifies generalized stabilizer tableau simulation with Heisenberg-picture Pauli propagation, allowing for emulation of quantum processors, hardware noise, and classical control logic. It…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
    "dataPub": "2026-11-21",
    "imagem": "",
-   "coletadoEm": "2026-11-21T17:10:56Z",
-   "tipo": "edital",
+   "coletadoEm": "2026-11-21T17:10:52Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino"
+   ],
+   "escopo": "Global",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "3ec9a1fc70cf",
+   "titulo": "Edital seleciona 22 startups paraibanas para participar do Web Summit Qatar 2027",
+   "url": "https://www.clickpb.com.br/tecnologia/startups-pb-web-summit-qatar.html",
+   "resumo": "As startups selecionadas participarão como expositoras, integrando a ilha de startups e o estande institucional do Governo da Paraíba.",
+   "fonte": "ClickPB",
+   "fonteId": "clickpb",
+   "dataPub": "2026-11-22",
+   "imagem": "https://www.clickpb.com.br/wp-content/uploads/2023/12/inovacao_e_startups.jpg",
+   "coletadoEm": "2026-11-22T17:39:13Z",
+   "tipo": "inovacao",
    "programas": [
     "inovacao",
     "fomento"
    ],
    "escopo": "Paraíba",
-   "pontos": 32,
+   "pontos": 30,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "a1546ffffb02",
-   "titulo": "Qluster Raises €4.7 Million Pre-Seed Round Led by Quantonation to Build Continuous-Variable Photonic Quantum Computers",
-   "url": "https://quantumcomputingreport.com/qluster-raises-e4-7-million-pre-seed-round-led-by-quantonation-to-build-continuous-variable-photonic-quantum-computers",
-   "resumo": "Qluster, a Paris-based photonic quantum computing startup, has secured €4.7 million in pre-seed funding. Led by Quantonation, the investment will be used to establish an R&D laboratory and expand its teams. Qluster's technology utilizes continuous-variable cluster states with the goal of eliminating cryogenic…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:59:10Z",
+   "id": "5515b4e70bea",
+   "titulo": "Marco Legal da IA: novas regras podem garantir mais transparência e proteção aos brasileiros no uso da inteligência artificial",
+   "url": "https://www.polemicaparaiba.com.br/brasil/marco-legal-da-ia-novas-regras-podem-garantir-mais-transparencia-e-protecao-aos-brasileiros-no-uso-da-inteligencia-artificial",
+   "resumo": "Arte: Carlos Lyra Proposta em tramitação no Congresso prevê direito à explicação sobre decisões automatizadas, proteção de dados pessoais e identificação de conteúdos produzidos por inteligência artificial O post Marco Legal da IA: novas regras podem garantir mais transparência e proteção aos brasileiros no uso da…",
+   "fonte": "Polêmica Paraíba",
+   "fonteId": "polemicapb",
+   "dataPub": "2026-11-22",
+   "imagem": "https://uploads.polemicaparaiba.com.br/2026/11/WhatsApp-Image-2026-11-21-at-12.08.12.jpeg",
+   "coletadoEm": "2026-11-22T17:39:14Z",
+   "tipo": "ia-gov",
+   "programas": [
+    "secretaria2030",
+    "seguranca"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "726d24825f63",
+   "titulo": "QuEra Computing and Berkeley Lab Publish Nature Study of Quantum Dynamics on Up to 180 Qubits",
+   "url": "https://thequantuminsider.com/2026/11/18/quera-berkeley-lab-study-quantum-dynamics-aquila",
+   "resumo": "The National Energy Research Scientific Computing Center (NERSC) at Lawrence Berkeley National Laboratory and QuEra Computing, the leader in neutral-atom quantum computing, today announced the publication of a new study in Nature. Using Aquila, QuEra’s analog neutral-atom quantum computer, coupled with classical…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-18",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-18_22-01.png",
+   "coletadoEm": "2026-11-18T18:41:44Z",
    "tipo": "quantica",
    "programas": [
-    "ciquanta",
-    "fomento",
-    "inovacao"
+    "ciquanta"
    ],
    "escopo": "Global",
-   "pontos": 31,
+   "pontos": 30,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "b9b304757c79",
-   "titulo": "Türkiye Signs Agreement with IQM Quantum Computers to Deploy 54-Qubit Radiance R3 System at TÜBİTAK in 2027",
-   "url": "https://quantumcomputingreport.com/turkiye-signs-agreement-with-iqm-quantum-computers-to-deploy-54-qubit-radiance-r3-system-at-tubitak-in-2027",
-   "resumo": "Türkiye's Scientific and Technological Research Council (TÜBİTAK) has partnered with IQM Quantum Computers to deploy a 54-qubit superconducting quantum computer, the IQM Radiance R3 system, in 2027. This system will provide sovereign quantum computing capacity for Turkish universities, research institutes, and private…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-17T18:59:10Z",
+   "id": "36d8ac455d24",
+   "titulo": "Zapata Quantum Launches Open Challenge to Verify AI-Generated Quantum Research",
+   "url": "https://thequantuminsider.com/2026/11/18/zapata-quantum-launches-open-challenge-to-verify-ai-generated-quantum-research",
+   "resumo": "As AI accelerates scientific discovery, it has become increasingly critical that new results be both provably correct and explainable to humans. Zapata Quantum (OTCQB: ZPTA) (“Zapata”, “Zapata Quantum” or the “Company”), a pioneer in quantum computing application and algorithm development, today announced ForShor.ai…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-18",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/Screenshot-2026-11-18-at-7.06.26-AM.png",
+   "coletadoEm": "2026-11-18T18:41:44Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta"
+   ],
+   "escopo": "Global",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "a607b758d6a8",
+   "titulo": "Zapata Quantum and University of Maryland Launch ForShor Challenge for AI-Assisted Quantum Research",
+   "url": "https://www.hpcwire.com/off-the-wire/zapata-quantum-and-university-of-maryland-launch-forshor-challenge-for-ai-assisted-quantum-research",
+   "resumo": "BOSTON, Nov. 18, 2026 — Zapata Quantum, a pioneer in quantum computing application and algorithm development, today announced ForShor.ai, an open challenge that demonstrates a new paradigm of AI-assisted quantum research that meets these requirements. Developed with the University of Maryland (UMD) and built around a…",
+   "fonte": "HPCwire",
+   "fonteId": "hpcwire",
+   "dataPub": "2026-11-18",
+   "imagem": "https://www.hpcwire.com/wp-content/uploads/2025/12/zapata-quantum-2025-300x173.png",
+   "coletadoEm": "2026-11-18T18:42:12Z",
    "tipo": "quantica",
    "programas": [
     "ciquanta",
     "ensino"
    ],
    "escopo": "Global",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "1deac6d6ca95",
-   "titulo": "Bradesco and evolutionQ Begin Quantum Communication Tests to Assess New Data Protection Models",
-   "url": "https://thequantuminsider.com/2026/11/18/bradesco-and-evolutionq-begin-quantum-communication-tests-to-assess-new-data-protection-models",
-   "resumo": "A pioneering initiative in Brazil’s financial sector seeks to study, in a controlled environment, the feasibility of the technology and its potential to strengthen the security of information exchange among companies, financial institutions and startups in the coming years. São Paulo, September 2026 — Bradesco…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-18",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/EvolutionQ-logo-on-blue-tech-background.png",
-   "coletadoEm": "2026-11-18T18:41:44Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "seguranca",
-    "inovacao"
-   ],
-   "escopo": "Global",
-   "pontos": 31,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "d48686a62913",
-   "titulo": "05102026_EDITAL CAPES/INEP Nº 26/2026 - ALTERAÇÃO",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNYTlGbG5vd0xUaFY1cE9UWkhJa0FjNm9yaGlvcFVnZnVvZEx0R1FCNmdtQXdYRUlaU3R6dTBYbVB2MHhlaE1XX2JDeml6N2FFLW0wZVg0bXRyQ0hCdjM3eFFGakFwQ3BzN00tSVBHYVNYUkhQeVJSRGJuNDJKZHFHaS1Eay1nbEowaUt5UkJQbFNoZFhpYVc0Y00ya0lhLUtmY1VCUWdyTWNQRU5KVmtZOGFlVm9DNGdWb1BWeDM5ckFGb0xtVXotYg?oc=5",
-   "resumo": "",
-   "fonte": "CAPES",
-   "fonteId": "capes",
-   "dataPub": "2026-11-21",
-   "imagem": "",
-   "coletadoEm": "2026-11-21T17:10:11Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "fomento"
-   ],
-   "escopo": "Nacional",
    "pontos": 30,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "203af1b8ea16",
-   "titulo": "CAPES divulga resultado preliminar da segunda etapa do Programa Observatório da Educação Especial Inclusiva",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNblhxVHdacjRkbnVQYlJlQ0RjMDFnR2otSW55Q0tXa1R4Qm1ycFNkMndvQlV4VFFLN3dROUlMZXo1SFUxSnFURThuQS1PcXZPdlR3aFUtUTdWcTVtdkdQc0hYU2lWdHZKSU4zUXlNSV9LV2J1TUhyOWxJNFZPZDYzUFdPUDJRMi1VMDVYT0VLNVpIenZHUlNRUlpBVmpudV9mTlJ3V1lmZl9DQTdCR3FUX3hxUnZLcGN6OFotOTZNX3RDVmF0ZndUVW40a3FKSDJZbUhxWmJ4NklUdTh5NW4ycERxNklzTEU1YWJzUg?oc=5",
+   "id": "ce1cd630b397",
+   "titulo": "UFPB promove pesquisa sobre alimentação e bem-estar estudantil",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdFNFdHZFd2MxdVJ3eU45Q0dKQnRxTFo0dmY4UjBqS1dTdzJ2SW1wQVJpUlNGLVpQcEUtY3hsdFU5YnI4QXp5Z294djU1blgyU2p1STdlenNXR0JHWHhXMUZIN1ZHR3VtQlRzVklJNldFZFpvUXFoYWpILWRkUXZIbmNVX0lmSy1NR3lpZlQ4YU00WUVBd2xN?oc=5",
    "resumo": "",
-   "fonte": "CAPES",
-   "fonteId": "capes",
-   "dataPub": "2026-11-17",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-19",
    "imagem": "",
-   "coletadoEm": "2026-11-20T18:22:49Z",
+   "coletadoEm": "2026-11-19T18:53:49Z",
    "tipo": "ensino",
    "programas": [
-    "ensino",
-    "astronomia"
+    "ensino"
    ],
-   "escopo": "Nacional",
+   "escopo": "Paraíba",
    "pontos": 29,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "2afafbff85a9",
-   "titulo": "Lince Ventures aporta em startups de inteligência artificial e turismo corporativo",
-   "url": "https://startupi.com.br/lince-ventures-investe-startups-ia-viagens-corporativas",
-   "resumo": "Startupi Lince Ventures aporta em startups de inteligência artificial e turismo corporativo Com participação societária e suporte operacional, veículo de corporate venture do Grupo Lince aposta na RustyRAG e na RHTrip para escalar operações B2B no país O post Lince Ventures aporta em startups de inteligência…",
-   "fonte": "Startupi",
-   "fonteId": "startupi",
+   "id": "724c3965b4ac",
+   "titulo": "Unipê abre inscrições para Vestibular Solidário de Natal",
+   "url": "https://jornaldaparaiba.com.br/economia/mercado/unipe-abre-inscricoes-para-vestibular-solidario-de-natal",
+   "resumo": "Divulgação O Centro Universitário de João Pessoa (Unipê), instituição que integra a Cruzeiro do Sul Educacional, lança neste fim de ano uma iniciativa que amplia as oportunidades de ingresso no ensino superior. O Vestibular Solidário de Natal oferece condições diferenciadas para candidatos que desejam iniciar a…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
    "dataPub": "2026-11-19",
-   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/IMG_0330-1.jpg.jpeg",
-   "coletadoEm": "2026-11-19T18:54:12Z",
-   "tipo": "inovacao",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/unipe-realiza-auloes-gratuitos-no-tiktok-para-ajud0022223900202611031605-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Funipe-realiza-auloes-gratuitos-no-tiktok-para-ajud0022223900202611031605.jpg%3Fxid%3D1243741&amp;xid=1243741",
+   "coletadoEm": "2026-11-20T18:22:44Z",
+   "tipo": "ensino",
    "programas": [
-    "inovacao",
-    "secretaria2030"
-   ],
-   "escopo": "Nacional",
-   "pontos": 28,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "5cf92264566b",
-   "titulo": "Especial Web Summit Lisboa: O futuro já começou. Mas muitas empresas continuam olhando para o lugar errado",
-   "url": "https://startupi.com.br/o-futuro-ja-comecou-mas-muitas-empresas-continuam-olhando-para-o-lugar-errado",
-   "resumo": "Startupi Especial Web Summit Lisboa: O futuro já começou. Mas muitas empresas continuam olhando para o lugar errado Por João Kepler, escritor, empresário e investidor da Nova Economia, direto do Web Summit 2026 O post Especial Web Summit Lisboa: O futuro já começou. Mas muitas empresas continuam olhando para o lugar…",
-   "fonte": "Startupi",
-   "fonteId": "startupi",
-   "dataPub": "2026-11-19",
-   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/zulfugar-karimov-qT2oW-VSvOE-unsplash.jpg",
-   "coletadoEm": "2026-11-19T18:54:12Z",
-   "tipo": "inovacao",
-   "programas": [
-    "inovacao",
-    "internacional"
-   ],
-   "escopo": "Nacional",
-   "pontos": 28,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "8473c1ab3393",
-   "titulo": "Banco Mundial: Servidores públicos têm de se adaptar e se qualificar para a era da IA",
-   "url": "https://convergenciadigital.com.br/governo/banco-mundial-servidores-publicos-tem-de-se-adaptar-e-se-qualificar-para-a-era-da-ia",
-   "resumo": "Ao participar do IA. Gov Summit, o especialista sênior em transformação digital e inteligência artificial do Banco Mundial, Luciano Charlita, disse que a transição entre o tradicional e o novo vai exigir um esforço considerável dos servidores e da administração pública.",
-   "fonte": "Convergência Digital",
-   "fonteId": "convergencia",
-   "dataPub": "2026-11-19",
-   "imagem": "https://convergenciadigital.com.br/wp-content/uploads/2026/11/IA-GOV-Summit-2026.jpg",
-   "coletadoEm": "2026-11-19T18:54:13Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030",
-    "internacional",
-    "transversal"
-   ],
-   "escopo": "Nacional",
-   "pontos": 28,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "b30674e08dc7",
-   "titulo": "edital 19-2026 retificado pelo edital 24 especializacao gestao pública 2026.2",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOS3Jmb0JGSlAtblhSWlZoWU1ER3A3eS1WTlh1bWoyQkNOZWRuVkJBODduLWxqS3lqNDNrNTVXWEYwemozQXNZbnRoaEh6eHE0YU1iUC11cV94aTQ0MkhRT2RURFlITEViVjBMdFlPRVFUbHljdUVrS2l6TU5jN2tCSUkxRFF3ZjJ2bnFMdzhXWVRscFY1M09uTXJxSUY4QXVZZy11dUVjdE9TYUVzVGRpVFV5Umc1SEl3U29nWm0xbw?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-21T17:09:32Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento"
+    "ensino"
    ],
    "escopo": "Paraíba",
-   "pontos": 28,
+   "pontos": 29,
    "urgente": false,
-   "relevancia": "radar",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "977c04c0039d",
-   "titulo": "Além da conectividade: o papel da IA no futuro das telecomunicações",
-   "url": "https://teletime.com.br/17/11/2026/alem-da-conectividade-o-papel-da-ia-no-futuro-das-telecomunicacoes",
-   "resumo": "O mercado de telecomunicações está entrando em uma fase em que a conectividade continuará essencial, mas deixará de ser suficiente. Quem souber usar IA para operar melhor, antecipar problemas, personalizar serviços e criar novas propostas de valor terá condições de preservar margens e crescer com relevânci",
+   "id": "7e4e1d7de150",
+   "titulo": "Prazo para solicitar reaplicação do Enem 2026 termina nesta sexta-feira (20); saiba quem tem direito",
+   "url": "https://www.polemicaparaiba.com.br/educacao/prazo-para-solicitar-reaplicacao-do-enem-2026-termina-nesta-sexta-feira-20-saiba-quem-tem-direito",
+   "resumo": "Foto: Reprodução/Angerlo Miguel/MEC Os participantes do Exame Nacional do Ensino Médio (Enem) 2026 que não conseguiram realizar as provas por problemas de saúde ou dificuldades na aplicação têm até esta sexta-feira (20) para solicitar a reaplicação. O pedido deve ser feito exclusivamente pela Página do Participante…",
+   "fonte": "Polêmica Paraíba",
+   "fonteId": "polemicapb",
+   "dataPub": "2026-11-20",
+   "imagem": "https://uploads.polemicaparaiba.com.br/2026/11/e744d87c-34c4-46cc-87d0-3f05dc93f7d0.jpeg",
+   "coletadoEm": "2026-11-20T18:22:45Z",
+   "tipo": "evento",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": true,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "984349e06524",
+   "titulo": "Mensagem da UFPB sobre o Dia Nacional de Zumbi e da Consciência Negra",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRDhJd25faE51cVNUUDhyT3RrZnV2Vl81MHN0Q3ZEeUhvWjJaa09BbHpWdTJrRzhOYnd1VGE4RFdFZ1JEckE1RGktTEwtRWNSUWhKZXZQY0o3bnJkVVBIRF9ZaG0zbWlDaGpHOFpmMWZkNno5N1NrbXJuTFpvS3ZMU2dZaEFtUXg5dDBfNE9Ed01rNXRKZTA1a0V2TkZEQjhX?oc=5",
+   "resumo": "",
+   "fonte": "Agência de Notícias da UFPB",
+   "fonteId": "ufpb-agencia",
+   "dataPub": "2026-11-20",
+   "imagem": "",
+   "coletadoEm": "2026-11-20T18:23:17Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 29,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "c79c88e35e4c",
+   "titulo": "No 42º ENPROP, CAPES reforça diálogo com pró-reitores e coordenadores da pós-graduação",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZmlPTjBWZDRDeEZ6UDZWVERtaGo5anBCTnBNVTVDdHpiV1VQNno5TDQzY0ZaTmI1UTM3MjZpWG9UQTg2cjJyZDFCaUJQWXRrV3d1aWItbUZLc2k1UjU2T05BX25QTHFsMHVnNW1DRHA5akY1MGFJTmdLM0xYLTN4NGtVUHhHeHprTFhtTEYtRjBCYmFsNkxNSi1wZmdRRlE4VFpQcHJJZ1Z6Uk5UWkkwbGN0NU5LTU4yZWlac1NUWW1WWkdGSWdvYTZHUG1NTHc?oc=5",
+   "resumo": "",
+   "fonte": "CAPES",
+   "fonteId": "capes",
+   "dataPub": "2026-11-19",
+   "imagem": "",
+   "coletadoEm": "2026-11-21T17:10:11Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino"
+   ],
+   "escopo": "Nacional",
+   "pontos": 28,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "7ef6c228a3df",
+   "titulo": "TCU vê progresso em políticas de inclusão digital, mas cobra nova governança",
+   "url": "https://teletime.com.br/18/11/2026/tcu-ve-progresso-em-politicas-de-inclusao-digital-mas-cobra-nova-governanca",
+   "resumo": "Diagnóstico do Tribunal de Contas da União sobre políticas governamentais indica avanços na promoção da inclusão digital nos últimos dois anos. Por outro lado, a Lista de Alto Risco da Administração Pública Federal também aponta desafios na conexão de escolas e na governança pública de iniciativas de conectividade",
    "fonte": "Teletime",
    "fonteId": "teletime",
-   "dataPub": "2026-11-17",
-   "imagem": "https://teletime.com.br/wp-content/uploads/2026/11/Foto_-Kaique-Andrades_2.jpg-534x462.webp",
-   "coletadoEm": "2026-11-17T18:59:02Z",
+   "dataPub": "2026-11-19",
+   "imagem": "https://teletime.com.br/wp-content/uploads/2026/10/celular-smartphone-usuarios-freepik-1-534x462.webp",
+   "coletadoEm": "2026-11-19T18:54:12Z",
    "tipo": "inclusao",
    "programas": [
     "inclusao",
-    "secretaria2030"
+    "transversal"
    ],
    "escopo": "Nacional",
    "pontos": 27,
@@ -361,15 +334,15 @@
    "origem": "auto"
   },
   {
-   "id": "e392a3801cf8",
-   "titulo": "Sandbox Regulatório de IA da ANPD conquista prêmio internacional em Bruxelas",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRjVlVmtTR3VycDlWTXRnby1GZ25uRUJfMkVTX3NYUkNadXA0Z191eEptOTJjOGJzMzZ3Qm5mZWZYVHgtTUo5bk5oUFZOTjdqdEtTZF9mTVcyQU8yQUpUZ2RhZlBlNkFfblBCcUlfVGp3SWFFUE1Na0lEeE5pQlluQ0lFS3FDaXI1RHJMYml5SzlDUF85SkNrUmR2V09mcXBZS0J1NmFmZmVyeVB2Z3d0STZIdl9VakZnUnNHSVdKRTZIUQ?oc=5",
+   "id": "33919630dbfe",
+   "titulo": "Rede Ibero-Americana de Proteção de Dados, presidida pela ANPD, aprova padrões para uso de IA",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRkZNLVBrNEdwVkJRR3pXREtGaDhHWUZuNTlIUmRrMkEybERNQlU2TmpWbktnaEtNczI1TW5uOTdHV09CRXZ6RHN3amsxdVFiMThxNnc3bDV4SnIyUnVMSHBadnBaTDQ3c0l4Ny1EUEJUUWdxVDZtNXhrY3Ffd2NDU2FsT0FVTUR0dnN6NGYzbXFlWG4yXzAyMElZdGNKaFhhNTdfWGd5dm5BalhPckc0Q2J2cGdIeG9BcUNUUnBRU0ZvUE9RQlhkaFA2ZVg5Y1hXUnYwdEtn?oc=5",
    "resumo": "",
    "fonte": "ANPD",
    "fonteId": "anpd",
-   "dataPub": "2026-11-17",
+   "dataPub": "2026-11-18",
    "imagem": "",
-   "coletadoEm": "2026-11-18T18:41:28Z",
+   "coletadoEm": "2026-11-20T18:22:52Z",
    "tipo": "seguranca",
    "programas": [
     "seguranca",
@@ -382,42 +355,63 @@
    "origem": "auto"
   },
   {
-   "id": "07349d5c25a4",
-   "titulo": "ANPD prorroga tomada de subsídios do Plano de Dados Abertos até esta quinta (19)",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMWNwY0Ficm9DejBSTmgydGNZUlZiUTBxN2RNcWZXTWZ3RTRLZ1dtc19XZDZrWldJNGFMYjZFSmc1eE5HWmJNalJhMWhlLXFZQ01FSEJEb2pzMXA1Ry1BTUtzWHo0ODRWZmJocEVYZS01OEQtbXZlNTUtVVBGN1F1VFFSN2N6bVQycnJNaVp0MVpjNUdaSVFJZkNrMVJZVVB2V1lmWnNxa1lBY2kwd0hJUVlRcVNiM0t1SjdGQUE3MHdJTjJM?oc=5",
-   "resumo": "",
-   "fonte": "ANPD",
-   "fonteId": "anpd",
-   "dataPub": "2026-11-17",
-   "imagem": "",
-   "coletadoEm": "2026-11-18T18:41:28Z",
-   "tipo": "seguranca",
+   "id": "325adaf023fe",
+   "titulo": "Starlink recebe autorização para operar em novas faixas de frequência no Brasil",
+   "url": "https://teletime.com.br/19/11/2026/starlink-faixas-brasil",
+   "resumo": "Anatel formalizou a autorização para a Starlink utilizar novas faixas de radiofrequência no Brasil, nas bandas Ku, Ka e Q/V. Espectro poderá ser usado em serviços fixos por satélite e, quando permitido pela regulamentação, para serviços móveis por satélite.",
+   "fonte": "Teletime",
+   "fonteId": "teletime",
+   "dataPub": "2026-11-19",
+   "imagem": "https://teletime.com.br/wp-content/uploads/2026/06/starlink-antena-spacex-534x462.webp",
+   "coletadoEm": "2026-11-20T18:23:06Z",
+   "tipo": "inclusao",
    "programas": [
-    "seguranca"
+    "inclusao",
+    "astronomia"
    ],
    "escopo": "Nacional",
+   "pontos": 27,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "c168f20e22e5",
+   "titulo": "Inscrições para concurso da prefeitura de Itapororoca terminam nesta sexta-feira (20)",
+   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/concurso-da-prefeitura-de-itapororoca-edital-inscricao-vagas-e-provas",
+   "resumo": "Prazo para inscrição em lista de espera do ProUni é adiado / Foto: Arquivo. As inscrições para o concurso público da prefeitura de Itapororoca, na Zona da Mata da Paraíba, terminam nesta sexta-feira (20). O certame oferece 175 vagas para cargos que exigem escolaridade nos níveis fundamental, médio, técnico e superior.…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
+   "dataPub": "2026-11-20",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/170000/500x0/Mais-de-20-mil-candidatos-podem-fazer-as-provas-do0017303400202405260717-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F170000%2FMais-de-20-mil-candidatos-podem-fazer-as-provas-do0017303400202405260717.jpg%3Fxid%3D1243819&amp;xid=1243819",
+   "coletadoEm": "2026-11-20T18:22:44Z",
+   "tipo": "evento",
+   "programas": [
+    "transversal",
+    "ensino"
+   ],
+   "escopo": "Paraíba",
    "pontos": 27,
    "urgente": true,
    "relevancia": "radar",
    "origem": "auto"
   },
   {
-   "id": "789ab2980271",
-   "titulo": "CONFAP reconhece iniciativas das FAPs, pesquisadores e profissionais de comunicação na 5ª edição dos Prêmios de Ciência, Tecnologia e Inovação",
-   "url": "https://news.confap.org.br/confap-reconhece-iniciativas-das-faps-pesquisadores-e-profissionais-de-comunicacao-na-5a-edicao-dos-premios-de-ciencia-tecnologia-e-inovacao",
-   "resumo": "Na manhã desta quarta-feira (18), o Conselho Nacional das Fundações Estaduais de Amparo à Pesquisa (CONFAP) realizou, em Curitiba (PR), a cerimônia de entrega da 5ª edição do Prêmio CONFAP de Boas Práticas em Fomento à CT&I e do Prêmio CONFAP de Ciência, Tecnologia & Inovação – Professora Niède Guidon. A solenidade…",
-   "fonte": "Confap",
-   "fonteId": "confap",
+   "id": "7f7aae35db22",
+   "titulo": "CFO 2027 do Corpo de Bombeiros da Paraíba tem edital divulgado",
+   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/cfo-2027-corpo-de-bombeiros-edital",
+   "resumo": "CFO 2027. O Corpo de Bombeiros da Paraíba divulgou o edital do concurso público para o Curso de Formação de Oficiais no Diário Oficial do Estado desta quarta-feira (18). Ao todo, são 20 vagas para o quadro de Oficiais, com o objetivo de preencher no futuro os cargos de 2º Tenente BM.As inscrições acontecem entre os…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
    "dataPub": "2026-11-18",
-   "imagem": "",
-   "coletadoEm": "2026-11-18T18:41:39Z",
-   "tipo": "inovacao",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/170000/500x0/CFO-do-Corpo-de-Bombeiros-2025-edital-inscricao-e-0017596900202410121004-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F170000%2FCFO-do-Corpo-de-Bombeiros-2025-edital-inscricao-e-0017596900202410121004.jpg%3Fxid%3D1243538&amp;xid=1243538",
+   "coletadoEm": "2026-11-18T18:41:17Z",
+   "tipo": "edital",
    "programas": [
-    "fomento",
-    "inovacao"
+    "fomento"
    ],
-   "escopo": "Nacional",
-   "pontos": 27,
+   "escopo": "Paraíba",
+   "pontos": 26,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -427,13 +421,13 @@
  "secom": [],
  "propostas": [],
  "doeAuto": {
-  "data": "2026-11-21",
+  "data": "2026-11-22",
   "lido": false,
   "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-21T15:03:57-03:00",
+ "geradoEm": "2026-11-22T14:41:44-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -457,7 +451,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 14,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -466,7 +460,7 @@
    "id": "agenciabori",
    "nome": "Agência Bori",
    "ok": true,
-   "itens": 14,
+   "itens": 12,
    "feed": "https://abori.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -493,7 +487,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -547,7 +541,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -556,7 +550,7 @@
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 8,
+   "itens": 4,
    "feed": "https://anprotec.org.br/site/feed/",
    "via": "feed",
    "obs": ""
@@ -565,7 +559,7 @@
    "id": "alpb",
    "nome": "Assembleia Legislativa da Paraíba",
    "ok": true,
-   "itens": 10,
+   "itens": 9,
    "feed": "https://www.al.pb.leg.br/feed/",
    "via": "feed",
    "obs": ""
@@ -574,7 +568,7 @@
    "id": "baguete",
    "nome": "Baguete",
    "ok": true,
-   "itens": 36,
+   "itens": 30,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -610,7 +604,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 10,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -619,7 +613,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 20,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -670,10 +664,19 @@
    "obs": ""
   },
   {
+   "id": "ec-digital",
+   "nome": "Comissão Europeia Digital",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -700,7 +703,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 21,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -709,7 +712,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 37,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -718,7 +721,7 @@
    "id": "embrapii",
    "nome": "Embrapii",
    "ok": true,
-   "itens": 3,
+   "itens": 2,
    "feed": "https://embrapii.org.br/feed/",
    "via": "feed",
    "obs": ""
@@ -746,6 +749,15 @@
    "nome": "FIEP",
    "ok": true,
    "itens": 2,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
+   "id": "finep",
+   "nome": "Finep",
+   "ok": true,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -799,7 +811,7 @@
    "id": "ibram",
    "nome": "Ibram",
    "ok": true,
-   "itens": 4,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -808,7 +820,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 13,
+   "itens": 12,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -826,7 +838,7 @@
    "id": "insa",
    "nome": "INSA",
    "ok": true,
-   "itens": 1,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -853,7 +865,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 12,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -889,7 +901,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 39,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -916,7 +928,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 15,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -925,7 +937,7 @@
    "id": "mec",
    "nome": "MEC",
    "ok": true,
-   "itens": 35,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -970,7 +982,7 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 7,
+   "itens": 6,
    "feed": "https://nossaciencia.com.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1042,7 +1054,7 @@
    "id": "pesquisafapesp",
    "nome": "Pesquisa FAPESP",
    "ok": true,
-   "itens": 8,
+   "itens": 6,
    "feed": "https://revistapesquisa.fapesp.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1060,7 +1072,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 34,
+   "itens": 29,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1114,7 +1126,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1177,16 +1189,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 31,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "sebrae-startups",
-   "nome": "Sebrae Startups",
-   "ok": true,
-   "itens": 1,
+   "itens": 24,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1204,7 +1207,7 @@
    "id": "serpro",
    "nome": "Serpro",
    "ok": true,
-   "itens": 15,
+   "itens": 13,
    "feed": "https://www.serpro.gov.br/RSS",
    "via": "feed",
    "obs": ""
@@ -1213,7 +1216,7 @@
    "id": "spacenews",
    "nome": "SpaceNews",
    "ok": true,
-   "itens": 13,
+   "itens": 11,
    "feed": "https://spacenews.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1249,7 +1252,7 @@
    "id": "theconversation-br",
    "nome": "The Conversation Brasil",
    "ok": true,
-   "itens": 39,
+   "itens": 37,
    "feed": "https://theconversation.com/br/articles.atom",
    "via": "feed",
    "obs": ""
@@ -1285,7 +1288,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1321,7 +1324,7 @@
    "id": "xinhua",
    "nome": "Xinhua Ciência",
    "ok": true,
-   "itens": 3,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1359,14 +1362,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "ec-digital",
-   "nome": "Comissão Europeia Digital",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "europeana",
    "nome": "Europeana",
    "ok": false,
@@ -1377,14 +1372,6 @@
   {
    "id": "fapesq",
    "nome": "FAPESQ",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "finep",
-   "nome": "Finep",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1447,6 +1434,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "sebrae-startups",
+   "nome": "Sebrae Startups",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "ufcg",
    "nome": "UFCG",
    "ok": false,
@@ -1472,14 +1467,14 @@
   }
  ],
  "curiosidade": {
-  "texto": "A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.",
-  "porque": "As marés roubam um pouquinho da rotação da Terra e empurram a Lua para longe, devagar.",
-  "tema": "astro",
-  "area": "Gravitação",
-  "formula": "+3,8 cm por ano"
+  "texto": "Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois.",
+  "porque": "Quanto mais quente algo está em relação ao ambiente, mais rápido perde calor. O leite logo de cara reduz essa diferença desde o início.",
+  "tema": "calor",
+  "area": "Termodinâmica",
+  "formula": "dT/dt = −k (T − Tₐ)"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-21-1503.png",
- "link": "https://radar.secties.pb.gov.br/edicao/36/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 36\n_Sábado, 21 de novembro de 2026_\n\n*GIGANTES DO SETOR FINANCEIRO SÃO ALVO DE ATAQUES HACKER*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 7 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Núcleo de Acessibilidade e Inclusão promove oficina sobre o tema “Recursos Pedagógicos e Práticas Inclusivas” _(UEPB)_\n2. Guest Post: When Will Quantum Computing Become Useful for Insurance? _(The Quantum Insider)_\n3. Computadores quânticos chegam à PB _(A União)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Enem 2026: termina em um dia prazo para pedir reaplicação da prova\n*Brasil:* 05102026_EDITAL CAPES/INEP Nº 26/2026 - ALTERAÇÃO\n*Mundo:* Qluster Raises €4.7 Million Pre-Seed Round Led by Quantonation to Build Continuous-Variable Photonic Quantum Computers\n\n> *Você sabia?* A Lua se afasta da Terra cerca de 3,8 cm por ano, mais ou menos a velocidade com que sua unha cresce.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/36/"
+ "capa": "capa-2026-11-22-1441.png",
+ "link": "https://radar.secties.pb.gov.br/edicao/37/",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 37\n_Domingo, 22 de novembro de 2026_\n\n*UFPB ABRE SELEÇÃO PARA PROFESSOR REGENTE DE CURSOS DA UNIVERSIDADE ABERTA DO BRASIL*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Especialistas: Inteligência Artificial na educação exige capacitação de professores _(Paraíba Online)_\n2. Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas _(Paraíba Business)_\n3. How the Department of Commerce’s Quantum Awards Work and What Companies Give in Return _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Edital seleciona 22 startups paraibanas para participar do Web Summit Qatar 2027\n*Brasil:* No 42º ENPROP, CAPES reforça diálogo com pró-reitores e coordenadores da pós-graduação\n*Mundo:* QuEra Computing and NVIDIA Introduce PPVM Open-Source Digital-Twin Simulation Framework for Quantum Processors\n\n> *Você sabia?* Vai demorar para tomar o café? Ponha o leite logo. Ele fica mais quente no fim do que se o leite entrar depois.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/37/"
 }
