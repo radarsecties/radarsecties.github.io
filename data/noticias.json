@@ -200336,6 +200336,440 @@
 "escopo": "Nacional",
 "pontos": 7,
 "urgente": false
+},
+"3141d09222e4": {
+"id": "3141d09222e4",
+"titulo": "PROGRAMA DE PÓS-GRADUAÇÃO EM GEOGRAFIA (CCEN - PPGG)",
+"url": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE9rT0tMWlV0ZDIwc3MxSGYyeG16cC04OGVGMHBZTmNTTVdScjdJOEJ6NklmWU1zMC1TSm8tTA?oc=5",
+"resumo": "",
+"fonte": "UFPB",
+"fonteId": "ufpb",
+"dataPub": "2026-11-19",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:41Z",
+"tipo": "ensino",
+"programas": [
+"ensino"
+],
+"escopo": "Paraíba",
+"pontos": 19,
+"urgente": false
+},
+"70f192541cd8": {
+"id": "70f192541cd8",
+"titulo": "v. 11 n. 1 (2026): Revista Brasileira de Políticas Públicas e Internacionais - RPPI",
+"url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE52OGZBRmlDb1RvUjByZHpmRTlfR0VteG9PNDlwa01OUFhRdW5aUFZlbHFnVHhYLUtTbUNSVFlfYy1BdThqb09FcFhOZmJTYmFTWURV?oc=5",
+"resumo": "",
+"fonte": "UFPB",
+"fonteId": "ufpb",
+"dataPub": "2026-11-16",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:41Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 4,
+"urgente": false
+},
+"0b954f05d9bd": {
+"id": "0b954f05d9bd",
+"titulo": "- IFPB",
+"url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQMmNpc0FUX1J5U1VUUEpyVTZBZVcyYy1DVWlieHVIbGlONjdjT3BVX2t3UWN3OHg2TTMxcVJURDFaUVd1V3ljeUh1MDNNWVBUUTNXTzZjQnFuQmQzVE5jZllKV1NlMUlwMnltNFZaS1QyUzFfT3hJZ3FiSFY4enc2ZTFoRHFyZXNiRVFPaUJyUDJoTmc3?oc=5",
+"resumo": "",
+"fonte": "IFPB",
+"fonteId": "ifpb",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:42Z",
+"tipo": "ensino",
+"programas": [
+"ensino"
+],
+"escopo": "Paraíba",
+"pontos": 19,
+"urgente": false
+},
+"7a29ce1ad263": {
+"id": "7a29ce1ad263",
+"titulo": "Homem é preso suspeito de abusar de menino de 8 anos durante passeio de moto em Triunfo",
+"url": "https://www.clickpb.com.br/policial/homem-abusar-menino-triunfo.html",
+"resumo": "As informações iniciais são de que o homem saiu com o menino para um passeio de moto e, na volta, a criança contou do abuso.",
+"fonte": "ClickPB",
+"fonteId": "clickpb",
+"dataPub": "2026-11-22",
+"imagem": "https://www.clickpb.com.br/wp-content/uploads/2025/06/policia_preso_prisao_algemado_foto_pixabay-1200x800.jpg",
+"coletadoEm": "2026-11-22T18:33:44Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": -24,
+"urgente": false
+},
+"27a16525ec06": {
+"id": "27a16525ec06",
+"titulo": "Caminhonete capota e danifica poste de iluminação nas Três Ruas, em João Pessoa",
+"url": "https://jornaldaparaiba.com.br/cotidiano/caminhonete-capota-e-danifica-poste-de-iluminacao-nas-tres-ruas-em-joao-pessoa",
+"resumo": "Caminhonete capota e danifica poste de iluminação nas Três Ruas, em João Pessoa. (Foto: Reprodução/Redes Sociais) Uma caminhonete capotou na manhã deste domingo (22) após colisão com outro veículo nas Três Ruas, no bairro dos Bancários, na Zona Sul de João Pessoa. De acordo com o Comando de Policiamento de Trânsito…",
+"fonte": "Jornal da Paraíba",
+"fonteId": "jornaldaparaiba",
+"dataPub": "2026-11-22",
+"imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/caminhonete-capota-e-danifica-poste-de-iluminacao-0022274800202611221456-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fcaminhonete-capota-e-danifica-poste-de-iluminacao-0022274800202611221456.jpg%3Fxid%3D1243964&amp;xid=1243964",
+"coletadoEm": "2026-11-22T18:33:45Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 7,
+"urgente": false
+},
+"8133f9f8f879": {
+"id": "8133f9f8f879",
+"titulo": "Alunos de escola pública da Paraíba criam foguetes para recuperar a Caatinga",
+"url": "https://www.maispb.com.br/895504/alunos-de-escola-publica-da-paraiba-criam-foguetes-para-recuperar-a-caatinga.html",
+"resumo": "O desmatamento da Serra dos Brandões, no município de Cuité, no Curimataú paraibano, despertou uma pergunta entre sete estudantes da rede pública: como utilizar a tecnologia para ajudar a recuperar áreas degradadas da Caatinga? A partir dessa inquietação, nasceu o Apollo SPX (@apolloexperiment ) , projeto científico…",
+"fonte": "MaisPB",
+"fonteId": "maispb",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:45Z",
+"tipo": "ciencia",
+"programas": [
+"transversal",
+"ensino"
+],
+"escopo": "Paraíba",
+"pontos": 20,
+"urgente": false
+},
+"856b76c97ca8": {
+"id": "856b76c97ca8",
+"titulo": "GOLPE DO FALSO ALUGUEL: Confira como anúncios clonados, contratos falsos e pedidos de pagamentos são usados por criminosos",
+"url": "https://www.polemicaparaiba.com.br/tecnologia/golpe-do-falso-aluguel-confira-como-anuncios-clonados-contratos-falsos-e-pedidos-de-pagamentos-sao-usados-por-criminosos",
+"resumo": "Final de ano é sinônimo de viagem em família, amigos e, claro, alugar casa ou apartamento para curtir os dias de verão e feriados prolongados. No entanto, o momento de descanso pode se tornar uma tremenda dor de cabeça devido aos golpes que inundaram as plataformas e redes sociais nos últimos anos. O advogado…",
+"fonte": "Polêmica Paraíba",
+"fonteId": "polemicapb",
+"dataPub": "2026-11-22",
+"imagem": "https://uploads.polemicaparaiba.com.br/2026/11/5-dicas-para-sair-do-aluguel-1hbgiynye6kpy.webp",
+"coletadoEm": "2026-11-22T18:33:45Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"3ae898c644cd": {
+"id": "3ae898c644cd",
+"titulo": "Veja os alimentos que terão imposto zero no governo Lula em 2027",
+"url": "https://www.polemicaparaiba.com.br/politica/veja-os-alimentos-que-terao-imposto-zero-no-governo-lula-em-2027",
+"resumo": "Apartir de janeiro de 2027, começa a valer uma das principais mudanças da reforma tributária para o consumidor brasileiro: a alíquota zero da CBS e do IBS sobre os alimentos incluídos na Cesta Básica Nacional. A medida foi sancionada pelo presidente Luiz Inácio Lula da Silva (PT) em janeiro de 2025, por meio da Lei…",
+"fonte": "Polêmica Paraíba",
+"fonteId": "polemicapb",
+"dataPub": "2026-11-22",
+"imagem": "https://uploads.polemicaparaiba.com.br/2026/11/cesta-basica.jpg",
+"coletadoEm": "2026-11-22T18:33:45Z",
+"tipo": "norma",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 6,
+"urgente": false
+},
+"482d93eb493a": {
+"id": "482d93eb493a",
+"titulo": "Chevrolet abre pré-venda do Captiva híbrido por R$ 199,9 mil",
+"url": "https://paraibabusiness.com.br/chevrolet-abre-pre-venda-do-captiva-hibrido-por-r-1999-mil",
+"resumo": "A Chevrolet iniciou a pré-venda do Captiva PHEV 2027 no Brasil, com preço anunciado de R$ 199.990. O modelo marca a entrada da General Motors no segmento de híbridos plug-in no mercado nacional e amplia a disputa entre SUVs eletrificados na faixa dos R$ 200 mil. A oferta foi divulgada pela rede de concessionárias…",
+"fonte": "Paraíba Business",
+"fonteId": "paraibabusiness",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:46Z",
+"tipo": "ciencia",
+"programas": [
+"fomento"
+],
+"escopo": "Paraíba",
+"pontos": -13,
+"urgente": false
+},
+"0f299da9e462": {
+"id": "0f299da9e462",
+"titulo": "Hugo se movimenta para indicar cargos na CEF. Em tempo: Carlos Vieira tem méritos para permanecer",
+"url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNcEZkYnl5bVY4bno1UFdaQUp2Q3ZOSm80UWd6eVdVbjEzOHBxc19XMWpKcWtUZjVONzBQTVB3Mm1xTEFvRjdEaTJZRUlOWHN1NGxPVE1LUjR3WW0yVjFTcGlvWldtWkZXalB3WENtR0xvR1RPSkRqLU04ZW9wckNSTzlpNXdURHlyNUx1OHVWZVBfdkJfcXlSQ0ZZX1pRVHQzX0VCek95Z3JlcTA3ZWl4WTJPUkk1S1V4R3VSd1NfeHZ4cXBEdHNQWGpDSzlDU29jZ2NfUWkwd25lRGJtZGMwMk1acVkyQ1Fx?oc=5",
+"resumo": "",
+"fonte": "WSCOM",
+"fonteId": "wscom",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:46Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"26456c49fccf": {
+"id": "26456c49fccf",
+"titulo": "VÍDEO - Prefeito Léo Bezerra critica novela da Globo e convida roteirista a gravar em JP: \"Nordeste mudou faz tempo\"",
+"url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQU1NickNnWHROWXUxcXNmOU9MeU9XQWw3di0tTER6RlNmb0dvZHlaNlFzQ0JXMkR2eEZYYUlPUmlQanQ3cU5zaDdxejIwU1N4ZlB2MDFCSjZSbEk1UEJjaFhaWkpBZkRqdEh5anY5NGpzVHpFQzR0YjBOZnRRT1dLZllHTVppUE51engxQ3ZkZnl5Z1pWZmNrWVVtM1hITVdwNjhIaFl3R1pmNURjWUdYTjgtNjVzdTNYZTBqdmFUYThnQnFzN3lqNDJGN09LX19kbmMyVVROV3ozcUF5ekNoYTNjWW9PdlZUcFR0djhGRkI0QjZ5VEhQeG9ROGU4cjNZelRtMXpVbWZsZw?oc=5",
+"resumo": "",
+"fonte": "PB Agora",
+"fonteId": "pbagora",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:49Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": -24,
+"urgente": false
+},
+"41047b3eccd2": {
+"id": "41047b3eccd2",
+"titulo": "Mulher é flagrada tentando entrar com drogas na região íntima em presídio de João Pessoa",
+"url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeDVHdWRkdzhtN0o2NlJ4MzAyNjZ4V0VhREwtYTAwblNzQ2VpZnR1OVZkOXVyejFwLWNJRjJGMHduNlVwNVRZNnFyYXl1NUNiRWRFOGxZanFVQlZ0MjRYaUpINGt6V1pfN05BSkpGVmNkVXpyOEV3bnpIazdMR3BsUi1SLVB2bFRBcjlfaUJDY0taWW8wWVJza3lodGEyV08wdlc3UWZNanZTX0VSSVFkRlFQR1Yxc21OdmtVc2E3bV9saWlfTHMwR3RaYnZzUQ?oc=5",
+"resumo": "",
+"fonte": "PB Agora",
+"fonteId": "pbagora",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:33:49Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"ca656ba50c56": {
+"id": "ca656ba50c56",
+"titulo": "Bolsonaro segue internado na UTI sem previsão de alta",
+"url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/bolsonaro-segue-internado-na-uti-sem-previsao-de-alta",
+"resumo": "O ex-presidente da República Jair Messias Bolsonaro segue internado em uma unidade de terapia intensiva (UTI), sem previsão de alta, no Hospital DF Star, em Brasília, com diagnóstico de abdômen agudo obstrutivo. A informação consta do boletim médico divulgado pelo hospital neste domingo (22). “Paciente apresenta-se…",
+"fonte": "Agência Brasil",
+"fonteId": "agenciabrasil",
+"dataPub": "2026-11-22",
+"imagem": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg",
+"coletadoEm": "2026-11-22T18:34:21Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": 0,
+"urgente": false
+},
+"d2af84406fc8": {
+"id": "d2af84406fc8",
+"titulo": "Futebol feminino: São Paulo é campeão do Paulistão F Petrobras Sub-17",
+"url": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/futebol-feminino-sao-paulo-e-campeao-do-paulistao-f-petrobras-sub-17",
+"resumo": "O São Paulo é campeão do Paulistão F Petrobras Sub-17 de 2026 . Em final única disputada na manhã de domingo (22), em Jaú, interior de São Paulo, e com transmissão ao vivo da TV Brasil , as Brabinhas, como é conhecida a equipe de base do São Paulo, venceu a Ferroviária por 4 a 2. O título manteve o São Paulo como o…",
+"fonte": "Agência Brasil",
+"fonteId": "agenciabrasil",
+"dataPub": "2026-11-22",
+"imagem": "https://cdn.jsdelivr.net/gh/sergiosdlima/assets-ebc@1.0.0/abr/assets/images/logo-agenciabrasil.svg",
+"coletadoEm": "2026-11-22T18:34:21Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -29,
+"urgente": false
+},
+"7eb3ff9853ee": {
+"id": "7eb3ff9853ee",
+"titulo": "Busca de Publicações",
+"url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSVMtZGg2MjBIVEtIVmVHU3hVUHVleG11eDZDNk9pcV9fNmFVTmp3WUkzUGlyOHpHTGM0Wk5ET0s4V0Z2ZHdjVEo3QnpMTnhpQ3FPNTFua2U3QUZ0MGdBQVV4U2RXZ1pud1I0aU5waXkxeTFoSmx1VTlUV05uNjlaX2VrRlp0R0d1MDR5dVVtRUxFQk1NcUtWV1F6dXdERzZCaWR6alVJLTVJT2VKM1hJdFZBckx2aW9nQlJ3VFp6QUwxZDJIbDdZTmNWWQ?oc=5",
+"resumo": "",
+"fonte": "Embrapa Algodão",
+"fonteId": "embrapa-algodao",
+"dataPub": "2026-11-16",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:34:26Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"5b5107e8bb2a": {
+"id": "5b5107e8bb2a",
+"titulo": "Busca de Publicações",
+"url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPelY4RjlYSmluNGYzWjRWRGx3YVNUSWZBbVRJeWY3ajMyOXpWdFdmeDJKM09rOFA1bi1QRTZVU1djSVJ2VFo5NWRPMDNvMk5NM3M4UEgyS3FXanBHMy1fR2dnOWhhUHpBa1NrYVB4MkpJUGhSSy1TZ0VlWDlBWGdTNWx4OWh0VGRqV1ZTT09pc1EzaENGbGc?oc=5",
+"resumo": "",
+"fonte": "Embrapa Algodão",
+"fonteId": "embrapa-algodao",
+"dataPub": "2026-11-16",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:34:26Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"cf3976c7afce": {
+"id": "cf3976c7afce",
+"titulo": "Busca de Publicações",
+"url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZDNIV2pKd2F5bXNNV0NvRXVwUW1YQ2FxWlluaFFrX1k2b0JMUHQ5VzRPNUZRemZtdktIWGU2U2VKNlQ1dGw2TDd5cjBfWk00Z3V1OXBhNEs0X2FGYjRMSDVGWm45M0c5SU1VODFMTkpmSmlGTDV3SDEwMjl6azRSZjBaY1ZqU2NkUW1kaGdiQTc4NTVv?oc=5",
+"resumo": "",
+"fonte": "Embrapa Algodão",
+"fonteId": "embrapa-algodao",
+"dataPub": "2026-11-16",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:34:26Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 1,
+"urgente": false
+},
+"36ba2e4fa641": {
+"id": "36ba2e4fa641",
+"titulo": "Ministério da Educação",
+"url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5FZG15RG5aYkpYZ01JQWUwV01LTHdSZHZIYXVWdHN6bjZnRGM0TTlqNm5wQ0xvS09TNzNmT0oyWDl6R2xrck15WHR0T1U5UDk3Q1hLYkpHYlZnZw?oc=5",
+"resumo": "",
+"fonte": "MEC",
+"fonteId": "mec",
+"dataPub": "2026-11-15",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:34:42Z",
+"tipo": "norma",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": 11,
+"urgente": false
+},
+"2233cbf9cbc7": {
+"id": "2233cbf9cbc7",
+"titulo": "Governo Federal prepara política nacional de combate à violência política de gênero e raça",
+"url": "https://poderparaiba.com.br/governo-federal-prepara-politica-nacional-de-combate-a-violencia-politica-de-genero-e-raca",
+"resumo": "O Governo Federal prepara uma política nacional de enfrentamento à violência política de gênero e raça, que deverá integrar o Plano Nacional de Políticas para as Mulheres, previsto para ser lançado até o fim de 2026. A iniciativa, coordenada pelo Ministério das Mulheres, tem como objetivo ampliar a proteção de…",
+"fonte": "Poder Paraíba",
+"fonteId": "poderparaiba",
+"dataPub": "2026-11-22",
+"imagem": "https://s.w.org/images/core/emoji/17.0.2/72x72/2705.png",
+"coletadoEm": "2026-11-22T18:35:06Z",
+"tipo": "norma",
+"programas": [
+"transversal"
+],
+"escopo": "Paraíba",
+"pontos": 8,
+"urgente": false
+},
+"08d4861bf894": {
+"id": "08d4861bf894",
+"titulo": "Acervos presidenciais, Casas do Patrimônio e cooperação internacional compõem seminário no Rio de Janeiro (RJ)",
+"url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNLTd6dnJyaWJtbkhpTXdDOWdBbWRfX3pCZmNoVHBITElvZFE4RlVZeV8tTWVXTjhzUnhYQ2JWN2VSenpHRFJ5YndEQWdwTFFxdk1kaGtjUjFob3NHdl9mLVR3MHF1dmw2WUF3Wm1leTRNRl8wYmJCbTl4aG01MUdEc280Z21RcHdlZkwzNWN6YkNDQjZ1ckZzNzBURFRNR2dZZDk3RkNkOFhHeFB6LWpBVDNnaF9vQlQya0pBUHkxcmJZTzMtZ3RlWUZEQ0FmUkI3LTdkMmF3WFRRa2cxREJKM0x0b2ZaX3RCRUE5Zw?oc=5",
+"resumo": "",
+"fonte": "Iphan",
+"fonteId": "iphan",
+"dataPub": "2026-11-19",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:35:11Z",
+"tipo": "patrimonio",
+"programas": [
+"patrimonio",
+"internacional"
+],
+"escopo": "Nacional",
+"pontos": 27,
+"urgente": false
+},
+"2993fedc0fda": {
+"id": "2993fedc0fda",
+"titulo": "atrastas 84 datu kopas",
+"url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONDF5Rl9MdlB5Yk9GZmVmQ3hIdl9WY0J5VzBtNFMtdl84SGdnNENjMnBMMWJzQlF3ajJ4Q2ZvZ3ZtY3lCa1FyMVMyS192c193MldZZEVobWFjTFRDMEhHVkNKRzRpbS1sUWJFeGt0TXFtSkt4aFNtUTNndW5rcXI1bThFckI4LTMwSjVTWUZMcWM5UFo0T2NpMEU4dkNySWU4TUpTSWxpMklMMVVSdlhJV1k2ZUNuUERaMXdGZjZR?oc=5",
+"resumo": "",
+"fonte": "Ipea",
+"fonteId": "ipea",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:35:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
+},
+"e52707028431": {
+"id": "e52707028431",
+"titulo": "1 gagnapakki fannst",
+"url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNNTNXdFgySXFDdUI0MHBMRmM3M0NiNl9DeWJocU1jYXVETWpfS1FSSTRhSFJKSU91ajdNSHpjMm9LSGpBeW1QbWNXVjN5Qzc4M2t0Ykdlem9IMWRWd0JjZXB0MmgweEtfUWZhSk5PRk9lUmhxS3hLYVlCXzBkR0d6QTdubmd1ekVnR1oxR3daYV9WSlUxNjNBV1Njam9ZOWdOa09UaHRmVzVNZk1Vbkh1d0xnbC1rZEZObTdkNmZPVlhSMWlsM0t3?oc=5",
+"resumo": "",
+"fonte": "Ipea",
+"fonteId": "ipea",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:35:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
+},
+"e2acff288331": {
+"id": "e2acff288331",
+"titulo": "109 conjunts de dades trobats",
+"url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPS0cyb3BXOTU2WGpWdHQ3Mnc3VEJjbzdiMmt1MGwwZ2x0YVMwT0d6RGY1WVB0a0c4ZjhEb1JkbHBWUklmbHU5c08zSGJ6b25OODJXTE1CNV9uRzZMWnVZUEYyN1puMkFfOHI0RzR1NlJnS1JsR3hiSjlyQ3plRkZZMm0ydHQ2aUV3UThmMjVrWE5pWllFdjI1UldRUmpZd2FkeWY1LW95NkR0X0JHZ3RZb1hMRjhjZnA1c0U1a3VYT3o1b2JDM0xNQmpkQ0NtZ0RQNUtsZFAxWjRFbi1HUUE?oc=5",
+"resumo": "",
+"fonte": "Ipea",
+"fonteId": "ipea",
+"dataPub": "2026-11-22",
+"imagem": "",
+"coletadoEm": "2026-11-22T18:35:17Z",
+"tipo": "ciencia",
+"programas": [
+"transversal"
+],
+"escopo": "Nacional",
+"pontos": -7,
+"urgente": false
+},
+"0575d23d809d": {
+"id": "0575d23d809d",
+"titulo": "O ajudante de Alice Huang: homem é acusado de contrabandear chips da Nvidia para a China",
+"url": "https://olhardigital.com.br/2026/11/22/pro/o-ajudante-de-alice-huang-homem-e-acusado-de-contrabandear-chips-da-nvidia-para-a-china",
+"resumo": "Li Ming atuou nos bastidores de uma rede ligada à ex-companheira de Jensen Huang, revelando um esquema mais amplo para driblar sanções dos EUA. O post O ajudante de Alice Huang: homem é acusado de contrabandear chips da Nvidia para a China apareceu primeiro em Olhar Digital .",
+"fonte": "Olhar Digital",
+"fonteId": "olhardigital",
+"dataPub": "2026-11-22",
+"imagem": "https://olhardigital.com.br/wp-content/uploads/2026/11/social-1024x512.jpg",
+"coletadoEm": "2026-11-22T18:35:17Z",
+"tipo": "ciencia",
+"programas": [
+"internacional"
+],
+"escopo": "Nacional",
+"pontos": 8,
+"urgente": false
 }
 }
 }

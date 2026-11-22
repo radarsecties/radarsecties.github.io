@@ -3,7 +3,7 @@
  "numero": 37,
  "modo": "automatico",
  "destaque": "UFPB abre seleção para professor regente de cursos da Universidade Aberta do Brasil",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Especialistas: Inteligência Artificial na educação exige capacitação de professores; e Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas.",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: Especialistas: Inteligência Artificial na educação exige capacitação de professores; e Antonio Carlo Demingos alerta para riscos do uso da inteligência artificial nas empresas.",
  "itens": [
   {
    "id": "f3265127e960",
@@ -397,21 +397,22 @@
    "origem": "auto"
   },
   {
-   "id": "7f7aae35db22",
-   "titulo": "CFO 2027 do Corpo de Bombeiros da Paraíba tem edital divulgado",
-   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/cfo-2027-corpo-de-bombeiros-edital",
-   "resumo": "CFO 2027. O Corpo de Bombeiros da Paraíba divulgou o edital do concurso público para o Curso de Formação de Oficiais no Diário Oficial do Estado desta quarta-feira (18). Ao todo, são 20 vagas para o quadro de Oficiais, com o objetivo de preencher no futuro os cargos de 2º Tenente BM.As inscrições acontecem entre os…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-18",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/170000/500x0/CFO-do-Corpo-de-Bombeiros-2025-edital-inscricao-e-0017596900202410121004-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F170000%2FCFO-do-Corpo-de-Bombeiros-2025-edital-inscricao-e-0017596900202410121004.jpg%3Fxid%3D1243538&amp;xid=1243538",
-   "coletadoEm": "2026-11-18T18:41:17Z",
-   "tipo": "edital",
+   "id": "08d4861bf894",
+   "titulo": "Acervos presidenciais, Casas do Patrimônio e cooperação internacional compõem seminário no Rio de Janeiro (RJ)",
+   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNLTd6dnJyaWJtbkhpTXdDOWdBbWRfX3pCZmNoVHBITElvZFE4RlVZeV8tTWVXTjhzUnhYQ2JWN2VSenpHRFJ5YndEQWdwTFFxdk1kaGtjUjFob3NHdl9mLVR3MHF1dmw2WUF3Wm1leTRNRl8wYmJCbTl4aG01MUdEc280Z21RcHdlZkwzNWN6YkNDQjZ1ckZzNzBURFRNR2dZZDk3RkNkOFhHeFB6LWpBVDNnaF9vQlQya0pBUHkxcmJZTzMtZ3RlWUZEQ0FmUkI3LTdkMmF3WFRRa2cxREJKM0x0b2ZaX3RCRUE5Zw?oc=5",
+   "resumo": "",
+   "fonte": "Iphan",
+   "fonteId": "iphan",
+   "dataPub": "2026-11-19",
+   "imagem": "",
+   "coletadoEm": "2026-11-22T18:35:11Z",
+   "tipo": "patrimonio",
    "programas": [
-    "fomento"
+    "patrimonio",
+    "internacional"
    ],
-   "escopo": "Paraíba",
-   "pontos": 26,
+   "escopo": "Nacional",
+   "pontos": 27,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
@@ -427,7 +428,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-22T14:41:44-03:00",
+ "geradoEm": "2026-11-22T15:36:13-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -487,7 +488,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -541,7 +542,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -595,7 +596,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 18,
+   "itens": 17,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -613,7 +614,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 15,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -712,7 +713,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 38,
+   "itens": 34,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -865,7 +866,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 15,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1117,7 +1118,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 36,
+   "itens": 35,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1288,7 +1289,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 9,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1324,7 +1325,7 @@
    "id": "xinhua",
    "nome": "Xinhua Ciência",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1473,5 +1474,5 @@
   "area": "Termodinâmica",
   "formula": "dT/dt = −k (T − Tₐ)"
  },
- "capa": "capa-2026-11-22-1441.png"
+ "capa": "capa-2026-11-22-1536.png"
 }
