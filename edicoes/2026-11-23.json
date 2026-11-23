@@ -2,8 +2,8 @@
  "data": "2026-11-23",
  "numero": 38,
  "modo": "automatico",
- "destaque": "CQC, CO.LAB and Outset Ventures Partner to Accelerate Quantum Commercialization",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: Museu de Arte Popular da Paraíba recebe lançamento do livro “Todos os Contos de Amor são Ridículos”, nesta quinta-feira (26); e IFPB - Repositório Digital: Uso institucional do whatsapp na comunicação escola-família no ensino médio integrado: possibilidades e limites para o acompanhamento da trajetória escolar e possíveis….",
+ "destaque": "Professor da UFPB conquista 6,8 milhões em financiamento em edital da FINEP",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 11 delas da Paraíba. Também em destaque: Museu de Arte Popular da Paraíba recebe lançamento do livro “Todos os Contos de Amor são Ridículos”, nesta quinta-feira (26); e Professor da UFPB conquista 6,8 milhões em financiamento em edital da FINEP.",
  "itens": [
   {
    "id": "8f657126c388",
@@ -66,6 +66,27 @@
    "pontos": 38,
    "urgente": false,
    "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "09f676356cef",
+   "titulo": "Professor da UFPB conquista 6,8 milhões em financiamento em edital da FINEP",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNd3ozQy1ENlJfOWRlc2MyaUtWckhKQXppMUZZcEdWQVpOd2k2NEVKVUdpcXk0aC1EWjc3LU1nVlpCQzk1X2VQNzRwVFRQeXJxWFdEZEtqSjRKQkdscTZ6a3J5eDBCUVpZcFpRV3cyQkxIWEd2WkpGRkg4MmJib0J2NU9tZEJXVFBSRWRCWGd6bHNmU2tSYkZxZXlJUmlzMVNGYmVSMXd2OA?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-23",
+   "imagem": "",
+   "coletadoEm": "2026-11-23T22:41:53Z",
+   "tipo": "edital",
+   "programas": [
+    "ensino",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 37,
+   "urgente": false,
+   "relevancia": "alta",
    "origem": "auto"
   },
   {
@@ -132,24 +153,24 @@
    "origem": "auto"
   },
   {
-   "id": "15c60c3e86f9",
-   "titulo": "IFPB - Repositório Digital: Uso institucional do whatsapp na comunicação escola-família no ensino médio integrado: possibilidades e limites para o acompanhamento da trajetória escolar e possíveis…",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE90RHhpSU5rUUFjZnI0MkRkekpBbzBuR3g2Wm1fc2pLYi1zODFSdE5sMjJWM0Y0S1RtemhkeUZDcUViNGI3LWhjX2d2RTg1aG9BV3lpRTh5Y2xyR0Vkb25v?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
+   "id": "bc6108531216",
+   "titulo": "Concurso da Prefeitura de Gurjão: edital é aberto com 39 vagas e salários de até R$ 14 mil",
+   "url": "https://jornaldaparaiba.com.br/vamos-trabalhar/concurso-da-prefeitura-de-gurjao-pb-2026",
+   "resumo": "Concurso da Prefeitura de Gurjão: edital é aberto com 39 vagas e salários de até R$ 14 mil - Foto: Reprodução/Freepik. A Prefeitura de Gurjão, no Cariri da Paraíba, lançou o edital de um concurso público com 39 vagas para cargos de níveis fundamental, médio e superior, nesta segunda-feira (23). As inscrições começam…",
+   "fonte": "Jornal da Paraíba",
+   "fonteId": "jornaldaparaiba",
    "dataPub": "2026-11-23",
-   "imagem": "",
-   "coletadoEm": "2026-11-23T21:55:08Z",
-   "tipo": "ensino",
+   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/210000/500x0/concurso-da-prefeitura-de-triunfo-oferece-mais-de-0021841400202605231502-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F210000%2Fconcurso-da-prefeitura-de-triunfo-oferece-mais-de-0021841400202605231502.webp%3Fxid%3D1244104&amp;xid=1244104",
+   "coletadoEm": "2026-11-23T22:41:55Z",
+   "tipo": "edital",
    "programas": [
-    "ensino",
-    "transversal"
+    "transversal",
+    "fomento"
    ],
    "escopo": "Paraíba",
-   "pontos": 35,
+   "pontos": 36,
    "urgente": false,
-   "relevancia": "alta",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
@@ -168,6 +189,27 @@
     "fomento"
    ],
    "escopo": "Global",
+   "pontos": 35,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "15c60c3e86f9",
+   "titulo": "IFPB - Repositório Digital: Uso institucional do whatsapp na comunicação escola-família no ensino médio integrado: possibilidades e limites para o acompanhamento da trajetória escolar e possíveis…",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE90RHhpSU5rUUFjZnI0MkRkekpBbzBuR3g2Wm1fc2pLYi1zODFSdE5sMjJWM0Y0S1RtemhkeUZDcUViNGI3LWhjX2d2RTg1aG9BV3lpRTh5Y2xyR0Vkb25v?oc=5",
+   "resumo": "",
+   "fonte": "IFPB",
+   "fonteId": "ifpb",
+   "dataPub": "2026-11-23",
+   "imagem": "",
+   "coletadoEm": "2026-11-23T21:55:08Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "transversal"
+   ],
+   "escopo": "Paraíba",
    "pontos": 35,
    "urgente": false,
    "relevancia": "media",
@@ -299,7 +341,7 @@
    "escopo": "Global",
    "pontos": 29,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -320,7 +362,7 @@
    "escopo": "Nacional",
    "pontos": 28,
    "urgente": false,
-   "relevancia": "media",
+   "relevancia": "radar",
    "origem": "auto"
   },
   {
@@ -383,47 +425,6 @@
    "urgente": true,
    "relevancia": "radar",
    "origem": "auto"
-  },
-  {
-   "id": "1733d4673280",
-   "titulo": "Funjope lança primeiro edital de audiovisual e anuncia R$ 9 milhões para o setor",
-   "url": "https://paraibatotal.com.br/2026/11/19/funjope-lanca-primeiro-edital-de-audiovisual-e-anuncia-r-9-milhoes-para-o-setor",
-   "resumo": "A Fundação Cultural de João Pessoa (Funjope) publicou, nesta terça-feira (17), o Edital Walfredo Rodriguez de Fomento ao […]",
-   "fonte": "Paraíba Total",
-   "fonteId": "paraibatotal",
-   "dataPub": "2026-11-19",
-   "imagem": "https://paraibatotal.com.br/wp-content/uploads/2023/11/BANNER-WEB-728x90-POLPA-DA-ROCA.gif",
-   "coletadoEm": "2026-11-19T19:30:11Z",
-   "tipo": "edital",
-   "programas": [
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 26,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "3dce01dc76d8",
-   "titulo": "Anatel formaliza espectro na banda S para Starlink e AST SpaceMobile",
-   "url": "https://teletime.com.br/19/11/2026/starlink-ast-spacemobile-banda-s",
-   "resumo": "Anatel formalizou ao longo desta semana as autorizações para que as operadoras de satélites Starlink (da SpaceX) e AST SpaceMobile utilizem maior capacidade de banda S no Brasil. Cada empresa terá blocos somando 15+15 MHz",
-   "fonte": "Teletime",
-   "fonteId": "teletime",
-   "dataPub": "2026-11-19",
-   "imagem": "https://teletime.com.br/wp-content/uploads/2026/07/espectro-radiofrequencia-faixa-freepik-534x462.webp",
-   "coletadoEm": "2026-11-20T18:23:06Z",
-   "tipo": "inclusao",
-   "programas": [
-    "inclusao",
-    "astronomia"
-   ],
-   "escopo": "Nacional",
-   "pontos": 26,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
   }
  ],
  "doe": {},
@@ -448,7 +449,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-23T18:57:59-03:00",
+ "geradoEm": "2026-11-23T19:44:26-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -472,7 +473,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 12,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -508,7 +509,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 5,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -562,7 +563,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 4,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -589,7 +590,7 @@
    "id": "baguete",
    "nome": "Baguete",
    "ok": true,
-   "itens": 34,
+   "itens": 32,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -607,7 +608,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 19,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -688,9 +689,9 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 7,
-   "feed": "https://confap.org.br/news/feed/",
-   "via": "feed",
+   "itens": 8,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -724,7 +725,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 18,
+   "itens": 32,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -913,7 +914,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -940,7 +941,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 18,
+   "itens": 17,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1138,7 +1139,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 34,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1210,7 +1211,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 27,
+   "itens": 26,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1309,7 +1310,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 5,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1494,5 +1495,5 @@
   "area": "Eletricidade",
   "formula": "≈ 30.000 °C"
  },
- "capa": "capa-2026-11-23-1857.png"
+ "capa": "capa-2026-11-23-1944.png"
 }
