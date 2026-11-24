@@ -433,13 +433,13 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-24T17:33:11-03:00",
+ "geradoEm": "2026-11-24T18:19:40-03:00",
  "saude": [
   {
    "id": "auniao",
    "nome": "A União",
    "ok": true,
-   "itens": 23,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -457,7 +457,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -574,7 +574,7 @@
    "id": "baguete",
    "nome": "Baguete",
    "ok": true,
-   "itens": 32,
+   "itens": 31,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -592,7 +592,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 40,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -700,7 +700,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 30,
+   "itens": 28,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -709,7 +709,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 37,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -754,7 +754,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 6,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -850,10 +850,19 @@
    "obs": ""
   },
   {
+   "id": "ipea",
+   "nome": "Ipea",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 14,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -889,7 +898,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -916,7 +925,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 29,
+   "itens": 28,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1114,7 +1123,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 35,
+   "itens": 33,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1264,6 +1273,15 @@
    "obs": ""
   },
   {
+   "id": "the",
+   "nome": "Times Higher Education",
+   "ok": true,
+   "itens": 0,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
    "id": "uepb",
    "nome": "UEPB",
    "ok": true,
@@ -1390,14 +1408,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "ipea",
-   "nome": "Ipea",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "iphaep",
    "nome": "IPHAEP",
    "ok": false,
@@ -1438,14 +1448,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "the",
-   "nome": "Times Higher Education",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "ufcg",
    "nome": "UFCG",
    "ok": false,
@@ -1477,5 +1479,5 @@
   "area": "Mecânica",
   "formula": "g na Lua ≈ 1,62 m/s²"
  },
- "capa": "capa-2026-11-24-1733.png"
+ "capa": "capa-2026-11-24-1819.png"
 }

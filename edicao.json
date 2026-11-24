@@ -433,13 +433,13 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-24T17:33:11-03:00",
+ "geradoEm": "2026-11-24T18:19:40-03:00",
  "saude": [
   {
    "id": "auniao",
    "nome": "A União",
    "ok": true,
-   "itens": 23,
+   "itens": 20,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -457,7 +457,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 8,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -574,7 +574,7 @@
    "id": "baguete",
    "nome": "Baguete",
    "ok": true,
-   "itens": 32,
+   "itens": 31,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -592,7 +592,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 40,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -700,7 +700,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 30,
+   "itens": 28,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -709,7 +709,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 37,
+   "itens": 36,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -754,7 +754,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 6,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -850,10 +850,19 @@
    "obs": ""
   },
   {
+   "id": "ipea",
+   "nome": "Ipea",
+   "ok": true,
+   "itens": 40,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 14,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -889,7 +898,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -916,7 +925,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 29,
+   "itens": 28,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1114,7 +1123,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 35,
+   "itens": 33,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1264,6 +1273,15 @@
    "obs": ""
   },
   {
+   "id": "the",
+   "nome": "Times Higher Education",
+   "ok": true,
+   "itens": 0,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": "Respondeu, mas sem notícias recentes"
+  },
+  {
    "id": "uepb",
    "nome": "UEPB",
    "ok": true,
@@ -1390,14 +1408,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "ipea",
-   "nome": "Ipea",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "iphaep",
    "nome": "IPHAEP",
    "ok": false,
@@ -1438,14 +1448,6 @@
    "obs": "Sem feed acessível hoje"
   },
   {
-   "id": "the",
-   "nome": "Times Higher Education",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
    "id": "ufcg",
    "nome": "UFCG",
    "ok": false,
@@ -1478,7 +1480,7 @@
   "formula": "g na Lua ≈ 1,62 m/s²"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-24-1733.png",
+ "capa": "capa-2026-11-24-1819.png",
  "link": "https://radar.secties.pb.gov.br/edicao/39/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 39\n_Terça-feira, 24 de novembro de 2026_\n\n*PROFESSOR DA UFPB CONQUISTA 6,8 MILHÕES EM FINANCIAMENTO EM EDITAL DA FINEP*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Universidade Estadual da Paraíba deposita dois novos pedidos de patentes de tecnologias para análise de etanol e de pellets _(UEPB)_\n2. *Prazo:* Inscrições para 230 vagas em cursos técnicos gratuitos do IFPB são prorrogadas; veja prazo _(Jornal da Paraíba)_\n3. UNM Hosts First Quantum Industry Day in New Mexico _(The Quantum Insider)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Dedicada a Hamlet: curso de Letras Inglês do Câmpus de Campina Grande realiza primeira edição do Shakexperience\n*Brasil:* Conselho Diretor do FNDCT aprova R$ 4,9 bilhões em crédito para inovação\n*Mundo:* Researchers Fit Quantum Circuits Into a 30 Billion-Parameter AI Model\n\n> *Você sabia?* Em 1971, um astronauta soltou um martelo e uma pena na Lua. Chegaram ao chão juntos. Galileu teria adorado.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/39/"
 }
