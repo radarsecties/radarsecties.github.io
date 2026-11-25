@@ -90,21 +90,21 @@
    "origem": "auto"
   },
   {
-   "id": "47e3f15e5fb0",
-   "titulo": "2ª Semana de Educação, Ciências e Tecnologia é aberta com realização de Feira de Cursos e divulgação de projetos",
-   "url": "https://uepb.edu.br/2a-semana-de-educacao-ciencias-e-tecnologia-e-aberta-com-realizacao-de-feira-de-cursos-e-divulgacao-de-projetos",
-   "resumo": "Exposição de projetos de pesquisa, apresentação de trabalhos acadêmicos, minicursos, oficinas, palestras e workshops. Estas são as atividades da 2ª edição da Semana de Educação, Ciências e Tecnologia do Centro de Ciências e Tecnologia (CCT) da Universidade Estadual da Paraíba (UEPB), Câmpus I de Campina Grande. O…",
+   "id": "c6fa31b04acd",
+   "titulo": "Primeiros socorros e prevenção: servidores do Câmpus I participam de Palestra de Formação de Brigada de Incêndio",
+   "url": "https://uepb.edu.br/primeiros-socorros-e-prevencao-servidores-do-campus-i-participam-de-palestra-de-formacao-de-brigada-de-incendio",
+   "resumo": "Noções de primeiros socorros e prevenção de incêndio foram os temas da palestra de Formação de Brigada de Incêndio, ministrada pelo 7º Batalhão de Bombeiro Militar do Corpo de Bombeiros Militar da Paraíba (7º BBM/CBMPB), para cerca de 120 servidores do Campus I, da Universidade Estadual da Paraíba, em Campina Grande…",
    "fonte": "UEPB",
    "fonteId": "uepb",
-   "dataPub": "2026-11-24",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Abertura-da-2a-Semana-de-Educacao-Ciencias-e-Tecnologia-2026-2.jpeg",
-   "coletadoEm": "2026-11-24T20:30:44Z",
+   "dataPub": "2026-11-25",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Palestra-de-Formacao-de-Brigada-de-Incendio-2026-8.jpeg",
+   "coletadoEm": "2026-11-25T20:30:33Z",
    "tipo": "ensino",
    "programas": [
     "ensino"
    ],
    "escopo": "Paraíba",
-   "pontos": 34,
+   "pontos": 36,
    "urgente": false,
    "relevancia": "media",
    "origem": "auto"
@@ -443,7 +443,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-25T16:50:48-03:00",
+ "geradoEm": "2026-11-25T17:32:19-03:00",
  "saude": [
   {
    "id": "auniao",
@@ -503,16 +503,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 39,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "aeb",
-   "nome": "Agência Espacial Brasileira",
-   "ok": true,
-   "itens": 1,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -548,7 +539,7 @@
    "id": "anatel",
    "nome": "Anatel",
    "ok": true,
-   "itens": 7,
+   "itens": 6,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -566,7 +557,7 @@
    "id": "anprotec",
    "nome": "Anprotec",
    "ok": true,
-   "itens": 3,
+   "itens": 6,
    "feed": "https://anprotec.org.br/site/feed/",
    "via": "feed",
    "obs": ""
@@ -578,15 +569,6 @@
    "itens": 10,
    "feed": "https://www.al.pb.leg.br/feed/",
    "via": "feed",
-   "obs": ""
-  },
-  {
-   "id": "baguete",
-   "nome": "Baguete",
-   "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
    "obs": ""
   },
   {
@@ -612,15 +594,6 @@
    "nome": "CAPES",
    "ok": true,
    "itens": 15,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "cgee",
-   "nome": "CGEE",
-   "ok": true,
-   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -710,16 +683,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 26,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "embrapa-algodao",
-   "nome": "Embrapa Algodão",
-   "ok": true,
-   "itens": 39,
+   "itens": 30,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -755,7 +719,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 3,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -764,7 +728,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 2,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -860,30 +824,12 @@
    "obs": ""
   },
   {
-   "id": "ipea",
-   "nome": "Ipea",
-   "ok": true,
-   "itens": 39,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "iphan",
-   "nome": "Iphan",
-   "ok": true,
-   "itens": 13,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "cio",
    "nome": "IT Forum",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 32,
+   "feed": "https://itforum.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -908,7 +854,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 40,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -935,7 +881,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 36,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1115,7 +1061,7 @@
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
    "ok": true,
-   "itens": 15,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1124,7 +1070,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 35,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1295,7 +1241,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 39,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1322,9 +1268,9 @@
    "id": "wscom",
    "nome": "WSCOM",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 10,
+   "feed": "https://www.wscom.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1345,8 +1291,24 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "aeb",
+   "nome": "Agência Espacial Brasileira",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "apolitical",
    "nome": "Apolitical",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "baguete",
+   "nome": "Baguete",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1369,8 +1331,24 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "cgee",
+   "nome": "CGEE",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "chinadaily-tech",
    "nome": "China Daily Tech",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "embrapa-algodao",
+   "nome": "Embrapa Algodão",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1409,8 +1387,24 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "ipea",
+   "nome": "Ipea",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "iphaep",
    "nome": "IPHAEP",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "iphan",
+   "nome": "Iphan",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1488,5 +1482,5 @@
   "area": "Física quântica",
   "formula": "E = h · f"
  },
- "capa": "capa-2026-11-25-1650.png"
+ "capa": "capa-2026-11-25-1732.png"
 }
