@@ -434,7 +434,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-26T16:28:23-03:00",
+ "geradoEm": "2026-11-26T17:15:46-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -485,7 +485,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 40,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -584,7 +584,7 @@
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 40,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -593,7 +593,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 12,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -692,7 +692,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 22,
+   "itens": 21,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -701,7 +701,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 40,
+   "itens": 26,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -728,7 +728,7 @@
    "id": "eurekalert",
    "nome": "EurekAlert",
    "ok": true,
-   "itens": 4,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -863,7 +863,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 14,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -881,9 +881,9 @@
    "id": "sbpc",
    "nome": "Jornal da Ciência",
    "ok": true,
-   "itens": 10,
-   "feed": "http://www.jornaldaciencia.org.br/feed/",
-   "via": "feed",
+   "itens": 5,
+   "feed": "busca de notícias",
+   "via": "busca",
    "obs": ""
   },
   {
@@ -899,7 +899,7 @@
    "id": "unicamp",
    "nome": "Jornal da Unicamp",
    "ok": true,
-   "itens": 31,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -926,7 +926,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 40,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -980,9 +980,9 @@
    "id": "nossaciencia",
    "nome": "Nossa Ciência",
    "ok": true,
-   "itens": 4,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 8,
+   "feed": "https://nossaciencia.com.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -1133,7 +1133,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 7,
+   "itens": 8,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1205,7 +1205,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 29,
+   "itens": 31,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1304,7 +1304,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 40,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1482,7 +1482,7 @@
   "formula": "≈ 8 × 10²⁴ moléculas por copo"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-26-1628.png",
+ "capa": "capa-2026-11-26-1715.png",
  "link": "https://radar.secties.pb.gov.br/edicao/41/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 41\n_Quinta-feira, 26 de novembro de 2026_\n\n*JPMORGAN PROJETA US$ 450 BILHÕES EM DÍVIDA PARA IA EM 2027, ALTA DE 22%*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. EDITAL Nº 41/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO PROFISSIONAL (Retificado em 25/11/26, Item 2) _(FAPESQ)_\n2. Parlamentares querem cibersegurança no PL do Marco Legal da Inteligência Artificial _(Convergência Digital)_\n3. Quantum eMotion Completes C$32 Million ($22.5 Million USD) Acquisition of Cybersecurity Provider Plurilock Security _(Quantum Computing Report)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Governo da Paraíba lança edital para levar 22 startups paraibanas ao Web Summit Qatar 2027\n*Brasil:* Finep e BNDES selecionam a Bossanova para gestão de FIP de R$ 250 mi para startups\n*Mundo:* Chulalongkorn Researchers Call for Greater Quantum Investment in Thailand\n\n> *Você sabia?* Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/41/"
 }
