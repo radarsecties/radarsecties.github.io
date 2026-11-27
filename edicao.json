@@ -1,14 +1,35 @@
 {
- "data": "2026-11-26",
- "numero": 41,
+ "data": "2026-11-27",
+ "numero": 42,
  "modo": "automatico",
- "destaque": "JPMorgan projeta US$ 450 bilhões em dívida para IA em 2027, alta de 22%",
- "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba. Também em destaque: JPMorgan projeta US$ 450 bilhões em dívida para IA em 2027, alta de 22%; e Parlamentares querem cibersegurança no PL do Marco Legal da Inteligência Artificial.",
+ "destaque": "Crédito no celular chega à pequena empresa; startup de IA capta US$ 6 milhões",
+ "leitura": "20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba. Também em destaque: EDITAL Nº 40/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO ACADÊMICOS (Retificado em 25/11/2026, Item 2); e Crédito no celular chega à pequena empresa; startup de IA capta US$ 6 milhões.",
  "itens": [
   {
-   "id": "38f0ee05d555",
-   "titulo": "EDITAL Nº 41/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO PROFISSIONAL (Retificado em 25/11/26, Item 2)",
-   "url": "https://fapesq.rpp.br/editais/editais-2026/25_11_26-edital-no-41-2026-concessao-de-bolsas-de-mestrado-e-doutorado-profissional_retificado-em-25-11-2026.pdf/view",
+   "id": "094c973e2d45",
+   "titulo": "Mostra Cine Currículos em Movimento chega a João Pessoa e valoriza histórias e culturas dos territórios paraibanos",
+   "url": "https://uepb.edu.br/mostra-cine-curriculos-em-movimento-chega-a-joao-pessoa-e-valoriza-historias-e-culturas-dos-territorios-paraibanos",
+   "resumo": "A Mostra Itinerante Cine Currículos em Movimento, que integra o projeto “Ciência, Tecnologia e Inovação Aqui Tem SECTIES”, desenvolvida em parceria entre a Universidade Estadual da Paraíba (UEPB) e a Secretaria de Ciência, Tecnologia, Inovação e Ensino Superior (SECTIES), chegou a João Pessoa nesta quinta-feira (27)…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-27",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Mostra-Cine-Curriculos-em-Movimento-Campus-V-2.png",
+   "coletadoEm": "2026-11-27T19:22:38Z",
+   "tipo": "oficial",
+   "programas": [
+    "ensino",
+    "inovacao"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 49,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "f3ded816e645",
+   "titulo": "EDITAL Nº 40/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO ACADÊMICOS (Retificado em 25/11/2026, Item 2)",
+   "url": "https://fapesq.rpp.br/editais/editais-2026/25_11_26-edital-no-40-2026-concessao-de-bolsas-de-mestrado-e-doutorado-academicos_retificado-em-25-11-2026.pdf/view",
    "resumo": "",
    "fonte": "FAPESQ",
    "fonteId": "fapesq",
@@ -27,19 +48,19 @@
    "origem": "auto"
   },
   {
-   "id": "a00678fc4821",
-   "titulo": "Governo da Paraíba lança edital para levar 22 startups paraibanas ao Web Summit Qatar 2027",
-   "url": "https://fapesq.rpp.br/noticias/governo-da-paraiba-lanca-edital-para-levar-22-startups-paraibanas-ao-web-summit-qatar-2027",
-   "resumo": "",
-   "fonte": "FAPESQ",
-   "fonteId": "fapesq",
-   "dataPub": "2026-11-23",
-   "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:26Z",
-   "tipo": "inovacao",
+   "id": "cf8a931005d7",
+   "titulo": "21º Festival Audiovisual Internacional Comunicurtas UEPB promove acesso ao cinema para estudantes da rede pública",
+   "url": "https://uepb.edu.br/21o-festival-audiovisual-internacional-comunicurtas-uepb-promove-acesso-ao-cinema-para-estudantes-da-rede-publica",
+   "resumo": "Dentro da proposta de democratização do cinema, levando cultura e arte para todos os públicos, o 21º Festival Audiovisual Internacional Comunicurtas UEPB está promovendo mais uma vez o acesso à sétima arte a estudantes da rede pública de ensino. Ao longo da semana, muitas escolas municipais e estaduais foram…",
+   "fonte": "UEPB",
+   "fonteId": "uepb",
+   "dataPub": "2026-11-27",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/IMG-20261126-WA0293.jpg",
+   "coletadoEm": "2026-11-27T19:22:38Z",
+   "tipo": "ensino",
    "programas": [
-    "inovacao",
-    "fomento"
+    "ensino",
+    "transversal"
    ],
    "escopo": "Paraíba",
    "pontos": 38,
@@ -48,57 +69,15 @@
    "origem": "auto"
   },
   {
-   "id": "dd27acbd5492",
-   "titulo": "JPMorgan projeta US$ 450 bilhões em dívida para IA em 2027, alta de 22%",
-   "url": "https://paraibabusiness.com.br/jpmorgan-projeta-us-450-bilhoes-em-divida-para-ia-em-2027-alta-de-22",
-   "resumo": "O JPMorgan projeta que empresas emitirão US$ 450 bilhões em títulos de grau de investimento em 2027 para financiar gastos com inteligência artificial (IA), segundo a Bloomberg, em projeção de quarta-feira (25 de novembro de 2026). Em 2026, a emissão global desse tipo de dívida por empresas focadas em IA foi de US$ 368…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
-   "dataPub": "2026-11-26",
-   "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:28Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030",
-    "fomento"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 37,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "efca1bac0a2f",
-   "titulo": "Parlamentares querem cibersegurança no PL do Marco Legal da Inteligência Artificial",
-   "url": "https://convergenciadigital.com.br/governo/parlamentares-querem-ciberseguranca-no-pl-do-marco-legal-da-inteligencia-artificial",
-   "resumo": "Relator do PL, deputado Aguinaldo Ribeiro, do PP/PB, diz ainda que falar de soberania digital, sem ter orçamento público, é \"romantismo\".",
-   "fonte": "Convergência Digital",
-   "fonteId": "convergencia",
-   "dataPub": "2026-11-26",
-   "imagem": "https://convergenciadigital.com.br/wp-content/uploads/2026/11/DigIA2026_900.jpg",
-   "coletadoEm": "2026-11-26T19:27:18Z",
-   "tipo": "seguranca",
-   "programas": [
-    "secretaria2030",
-    "seguranca"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 37,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "4119075a479e",
-   "titulo": "PPGDR realiza 3º Seminário de Dissertações com ampliação de diálogo entre pesquisadores de diferentes instituições",
-   "url": "https://uepb.edu.br/ppgdr-realiza-3o-seminario-de-dissertacoes-com-ampliacao-de-dialogo-entre-pesquisadores-de-diferentes-instituicoes",
-   "resumo": "O Programa de Pós-graduação em Desenvolvimento Regional (PPGDR) da Universidade Estadual da Paraíba (UEPB) deu início, na manhã desta quinta-feira (26), na sala 318 da Central Acadêmica Paulo Freire, no Câmpus I, a 3ª edição do Seminário de Dissertações, uma oportunidade de consolidar projetos e propiciar, entre…",
+   "id": "06a517851adb",
+   "titulo": "UEPB reúne pesquisadores internacionais no 1º Encontro Latino-Americano de Psicologia Sócio-Histórica",
+   "url": "https://uepb.edu.br/uepb-reune-pesquisadores-internacionais-no-1o-encontro-latino-americano-de-psicologia-socio-historica",
+   "resumo": "A Universidade Estadual da Paraíba (UEPB) sediou, entre os dias 27 e 30 de outubro de 2026, o 1º Encontro Latino-Americano de Psicologia Sócio-Histórica. O evento foi realizado nos centros de Educação (CEDUC) e de Ciências Biológicas e da Saúde (CCBS), reunindo pesquisadores de referência internacional e…",
    "fonte": "UEPB",
    "fonteId": "uepb",
-   "dataPub": "2026-11-26",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/3o-Seminario-de-Dissertacoes-do-PPGDR-1.jpeg",
-   "coletadoEm": "2026-11-26T19:26:22Z",
+   "dataPub": "2026-11-23",
+   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/1o-Encontro-Latino-Americano-de-Psicologia-Socio-Historica.jpeg",
+   "coletadoEm": "2026-11-27T19:22:38Z",
    "tipo": "ensino",
    "programas": [
     "ensino"
@@ -110,19 +89,41 @@
    "origem": "auto"
   },
   {
-   "id": "6b8cc04769cd",
-   "titulo": "Conselhão participa de seminário entre universidades brasileiras e chinesas",
-   "url": "https://agenciagov.ebc.com.br/noticias/202611/conselhao-participa-de-evento-inedito-entre-universidades-brasileiras-e-chinesas",
-   "resumo": "É primeiro encontro formal entre uma universidade brasileira e uma universidade chinesa dedicado à educação. Raimunda Monteiro representou colegiado no Seminário Brasil-China UFBA-BNU, que acontece em Salvador",
-   "fonte": "Agência Gov",
-   "fonteId": "agenciagov",
-   "dataPub": "2026-11-26",
+   "id": "f59c2cab13a4",
+   "titulo": "Crédito no celular chega à pequena empresa; startup de IA capta US$ 6 milhões",
+   "url": "https://paraibabusiness.com.br/credito-no-celular-chega-a-pequena-empresa-startup-de-ia-capta-us-6-milhoes",
+   "resumo": "Micro, pequenas e médias empresas (PMEs) passam a ter mais etapas do crédito resolvidas no aplicativo. Na Efí, a empresa consulta um limite pré-aprovado, escolhe valor e condições e recebe o dinheiro na conta, sem passar pelo gerente. Antecipação de recebíveis, capital de giro e crédito emergencial têm contratação…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-27",
    "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:37Z",
-   "tipo": "evento",
+   "coletadoEm": "2026-11-27T19:22:44Z",
+   "tipo": "edital",
+   "programas": [
+    "inovacao",
+    "secretaria2030",
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 36,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "22b1ff8f371e",
+   "titulo": "EDITAL Nº 05/2026 - PROCESSO SELETIVO PPGCI-UFPB 2026-2027 (MESTRADO) RESULTADO DA ETAPA DE EXAME CURRICULAR João Pessoa, 23 d",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxObXc1d1EzOVVacUlyTlprakhRU2FfblB0X3hnX2Z4VENwQzdDRVRRMkx2RDMzZ3I0VEp6VHIwekdRU3ZSWWlFeUpNd1dxMmpEN25uczh0LUdsd002b1U5T0RUU3VwTlR3LTZEdHpWemQ5TDQ5M0Vic1RpbGwzcW9aR2RmbXVmY0lqbk9UZVFzRWpvUUc5UzJHTGNkdzVGQ042RlhlUUtVRzJvd1FiYko4NA?oc=5",
+   "resumo": "",
+   "fonte": "UFPB",
+   "fonteId": "ufpb",
+   "dataPub": "2026-11-23",
+   "imagem": "",
+   "coletadoEm": "2026-11-27T19:22:41Z",
+   "tipo": "ensino",
    "programas": [
     "ensino",
-    "internacional"
+    "fomento"
    ],
    "escopo": "Paraíba",
    "pontos": 35,
@@ -131,144 +132,62 @@
    "origem": "auto"
   },
   {
-   "id": "ca932b09b3ca",
-   "titulo": "Quantum eMotion Completes C$32 Million ($22.5 Million USD) Acquisition of Cybersecurity Provider Plurilock Security",
-   "url": "https://quantumcomputingreport.com/quantum-emotion-completes-c32-million-22-5-million-usd-acquisition-of-cybersecurity-provider-plurilock-security",
-   "resumo": "Quantum eMotion Corp. has completed its C$31.98 million acquisition of Plurilock Security Inc., a Canadian cybersecurity company. This strategic move combines Quantum eMotion's quantum cryptography with Plurilock's cybersecurity operations, enhancing their offerings in critical services, identity management, and cloud…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-26",
+   "id": "b348d874ec55",
+   "titulo": "MPPB define prazo para acordo de acessibilidade no Centro Histórico de João Pessoa",
+   "url": "https://paraibabusiness.com.br/mppb-define-prazo-para-acordo-de-acessibilidade-no-centro-historico-de-joao-pessoa",
+   "resumo": "O Ministério Público do Estado da Paraíba (MPPB) realizou, nesta sexta-feira (27 de novembro de 2026), uma audiência extrajudicial, sem processo na Justiça, sobre acessibilidade, mobilidade urbana, regularização urbanística e preservação do patrimônio histórico-cultural no Centro Histórico de João Pessoa, com foco nas…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-27",
    "imagem": "",
-   "coletadoEm": "2026-11-26T19:27:25Z",
-   "tipo": "quantica",
+   "coletadoEm": "2026-11-27T19:22:44Z",
+   "tipo": "patrimonio",
    "programas": [
-    "ciquanta",
-    "seguranca",
-    "fomento"
-   ],
-   "escopo": "Global",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "alta",
-   "origem": "auto"
-  },
-  {
-   "id": "47e3f15e5fb0",
-   "titulo": "2ª Semana de Educação, Ciências e Tecnologia é aberta com realização de Feira de Cursos e divulgação de projetos",
-   "url": "https://uepb.edu.br/2a-semana-de-educacao-ciencias-e-tecnologia-e-aberta-com-realizacao-de-feira-de-cursos-e-divulgacao-de-projetos",
-   "resumo": "Exposição de projetos de pesquisa, apresentação de trabalhos acadêmicos, minicursos, oficinas, palestras e workshops. Estas são as atividades da 2ª edição da Semana de Educação, Ciências e Tecnologia do Centro de Ciências e Tecnologia (CCT) da Universidade Estadual da Paraíba (UEPB), Câmpus I de Campina Grande. O…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-24",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Abertura-da-2a-Semana-de-Educacao-Ciencias-e-Tecnologia-2026-2.jpeg",
-   "coletadoEm": "2026-11-24T20:30:44Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
+    "patrimonio"
    ],
    "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "4ab0829c565a",
-   "titulo": "Centro Artístico Cultural realiza culminância dos cursos de Dança de Salão, Percussão Regional, Violão e Xilogravura",
-   "url": "https://uepb.edu.br/centro-artistico-cultural-realiza-culminancia-dos-cursos-de-danca-de-salao-percussao-regional-violao-e-xilogravura",
-   "resumo": "O Centro Artístico Cultural (CAC) da Universidade Estadual da Paraíba (UEPB), vinculado à Pró-reitoria de Cultura (PROCULT), realiza, nesta quinta-feira (26), as atividades de culminância dos cursos de Dança de Salão, Percussão Regional, Violão e Xilogravura. A programação terá início às 19h e a entrada é franca. Como…",
-   "fonte": "UEPB",
-   "fonteId": "uepb",
-   "dataPub": "2026-11-25",
-   "imagem": "https://uepb.edu.br/wp-content/uploads/2026/11/Cartaz-Cultural-com-Icones-de-Xilogravura.png",
-   "coletadoEm": "2026-11-25T19:48:16Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "71971c3be4aa",
-   "titulo": "INOVA-UFPB divulga finalistas do 9º Prêmio Delby Fernandes de Inovação",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQa1l3Z0RpOFBoT1gtQk5IdEZpS2hjb2g4b0hRWGVkY0JROVZoNnVLTXBkb2ZuajkzLVVlX0F5cUtOdDZkbnhBS2NVaUZpTlJMVDI0eThiUW1YWEJsZXBhQXkzWkhteHhFa2pyNnBJdGtjdTdxcWFTclRlU1lTdEp3S0NOZXVkMHNNa2FsUjB4SmZSTDF4R0hzaERJTXBENk5xVXc?oc=5",
-   "resumo": "",
-   "fonte": "UFPB",
-   "fonteId": "ufpb",
-   "dataPub": "2026-11-26",
-   "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:25Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "inovacao"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "18939a4a9e70",
-   "titulo": "IFPB - Repositório Digital: Flua Speech: Sistema baseado em modelo de linguagem de grande escala para transcrição literal e anotação de disfluências na fala",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5VOTl1b1lHZlBQS0lnVVFuZkYtOXRqVEZCOXZHNk9NbmI2WTVtcHlaYmtqVVk5djc4b2NZbUVFV3RVZmJHcEg2QnRGLXJhb1BxOEdXOUpvNmJZVlYtRVFV?oc=5",
-   "resumo": "",
-   "fonte": "IFPB",
-   "fonteId": "ifpb",
-   "dataPub": "2026-11-26",
-   "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:26Z",
-   "tipo": "ensino",
-   "programas": [
-    "ensino",
-    "secretaria2030"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "bea3366d2f7c",
-   "titulo": "O que você faz com a IA é seu?",
-   "url": "https://jornaldaparaiba.com.br/espaco-opiniao/o-que-voce-faz-com-a-ia-e-seu",
-   "resumo": "Jornal da Paraíba Entre dizer que a inteligência artificial não fez nada e acreditar que ela fez tudo, existe um processo de construção que precisa ser reconhecido e valorizado.Quando alguém me pergunta se determinado conteúdo foi feito por inteligência artificial, gosto de ampliar a discussão. Quem teve a ideia? Quem…",
-   "fonte": "Jornal da Paraíba",
-   "fonteId": "jornaldaparaiba",
-   "dataPub": "2026-11-26",
-   "imagem": "https://cdn.jornaldaparaiba.com.br/img/inline/220000/500x0/o-que-voce-faz-com-a-ia-e-seu0022286400202611261236-8.webp?fallback=https%3A%2F%2Fcdn.jornaldaparaiba.com.br%2Fimg%2Finline%2F220000%2Fo-que-voce-faz-com-a-ia-e-seu0022286400202611261236.png%3Fxid%3D1244485&amp;xid=1244485",
-   "coletadoEm": "2026-11-26T19:26:27Z",
-   "tipo": "ia-gov",
-   "programas": [
-    "secretaria2030"
-   ],
-   "escopo": "Paraíba",
-   "pontos": 34,
+   "pontos": 35,
    "urgente": true,
    "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "53b8f090ef55",
-   "titulo": "ElevenLabs negocia captação com avaliação de US$ 33 bilhões, diz Bloomberg",
-   "url": "https://paraibabusiness.com.br/elevenlabs-negocia-captacao-com-avaliacao-de-us-33-bilhoes-diz-bloomberg",
-   "resumo": "A ElevenLabs, startup de inteligência artificial (IA) de voz, está em negociações iniciais para captar recursos com avaliação de US$ 33 bilhões, segundo a Bloomberg, em reportagem de quarta-feira (25 de novembro de 2026). O valor a captar e os investidores não foram informados. A empresa planeja fechar a rodada no…",
-   "fonte": "Paraíba Business",
-   "fonteId": "paraibabusiness",
+   "id": "79538d98cfd9",
+   "titulo": "Gyeonggi Province Holds Forum on Quantum and Semiconductor Industry Cooperation",
+   "url": "https://thequantuminsider.com/2026/11/27/gyeonggi-province-quantum-industry-development-forum",
+   "resumo": "The ‘Gyeonggi Quantum Innovation Forum and 2026 Gyeonggi Quantum-Semiconductor Convergence Industry Networking Day’, hosted by Gyeonggi Province and the Gyeonggi Business and Science Accelerator and organised by Sungkyunkwan University’s Anchor Project Group and the Korea Nanotechnology Institute, was held on the 25th…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-27",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-27_21-05.png",
+   "coletadoEm": "2026-11-27T19:23:44Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "ensino",
+    "inovacao"
+   ],
+   "escopo": "Global",
+   "pontos": 34,
+   "urgente": false,
+   "relevancia": "alta",
+   "origem": "auto"
+  },
+  {
+   "id": "24840cf8c101",
+   "titulo": "IFPB valida em Portugal modelos matemáticos e ferramentas de IA voltados à redução da pegada de carbono",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZXEyS3hSd0tzT1M5ZW4yM0dDUDNVRFp0NWVqR1BLck5vX3FiMlplNjZtalpGTzlBOWhiSW5FaDFhR2s0bU9ZUS05V0ZFdjZTU215b0lVUFdlOE1pc2NJTUVLVFhQMFI1Tk04VUVyc0NWUUg2Uy1DVjdETUNIeGZWYVZBd25QMEpEUVpDamVpRHhjQ0ttZWJLZjFRaUZscDh4S3A3eDk4a2ttb1E2YTdrZnBjeFJWRXg0Y3g3NzdQMmswVTktUXlIdTF0cVVmSllRekYySExyejU?oc=5",
+   "resumo": "",
+   "fonte": "IFPB",
+   "fonteId": "ifpb",
    "dataPub": "2026-11-26",
    "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:28Z",
-   "tipo": "inovacao",
+   "coletadoEm": "2026-11-27T19:22:42Z",
+   "tipo": "ensino",
    "programas": [
-    "inovacao",
+    "ensino",
     "secretaria2030",
-    "fomento"
+    "internacional"
    ],
    "escopo": "Paraíba",
    "pontos": 34,
@@ -277,52 +196,10 @@
    "origem": "auto"
   },
   {
-   "id": "329e9b2cb870",
-   "titulo": "Chulalongkorn Researchers Call for Greater Quantum Investment in Thailand",
-   "url": "https://thequantuminsider.com/2026/11/25/chulalongkorn-researchers-call-greater-quantum-investment-thailand",
-   "resumo": "Chulalongkorn University physicists are urging Thailand to build quantum expertise andstrengthen research support to prepare for opportunities in computing, industry and data security. With specialists taking years to train, the university’s learning programs offer a way to start preparing now. Assistant Professor Dr.…",
-   "fonte": "The Quantum Insider",
-   "fonteId": "quantuminsider",
-   "dataPub": "2026-11-25",
-   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-25_14-33.png",
-   "coletadoEm": "2026-11-25T19:49:34Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "ensino"
-   ],
-   "escopo": "Global",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "media",
-   "origem": "auto"
-  },
-  {
-   "id": "30c4a4b7db94",
-   "titulo": "Forschungszentrum Jülich and ARQUE Systems Secure €35 Million ($38.4 Million USD) to Build 200-Qubit Silicon Spin Quantum Computer",
-   "url": "https://quantumcomputingreport.com/forschungszentrum-julich-and-arque-systems-secure-e35-million-38-4-million-usd-to-build-200-qubit-silicon-spin-quantum-computer",
-   "resumo": "Forschungszentrum Jülich and ARQUE Systems have launched Q-STAR.NRW, a €35 million initiative to build a 200-qubit silicon spin quantum computer by the end of 2029. This project, primarily funded by German federal funds, will integrate the quantum computer into the Jülich UNified Infrastructure for Quantum Computing…",
-   "fonte": "Quantum Computing Report",
-   "fonteId": "qcreport",
-   "dataPub": "2026-11-24",
-   "imagem": "",
-   "coletadoEm": "2026-11-25T19:49:34Z",
-   "tipo": "quantica",
-   "programas": [
-    "ciquanta",
-    "fomento"
-   ],
-   "escopo": "Global",
-   "pontos": 33,
-   "urgente": false,
-   "relevancia": "radar",
-   "origem": "auto"
-  },
-  {
-   "id": "e3010634a0f1",
-   "titulo": "University of Sussex and Universal Quantum Demonstrate Laser-Free Axial-Mode Entangling Gate on Doppler-Cooled Trapped Ions",
-   "url": "https://quantumcomputingreport.com/university-of-sussex-and-universal-quantum-demonstrate-laser-free-axial-mode-entangling-gate-on-doppler-cooled-trapped-ions",
-   "resumo": "Researchers from the University of Sussex and Universal Quantum have demonstrated a high-fidelity, all-electronic two-qubit entangling gate using Doppler-cooled ytterbium ions. This laser-free gate operates on the axial stretch mode, achieving Bell-state fidelities above fault-tolerant thresholds without ground-state…",
+   "id": "8ba5c09df672",
+   "titulo": "Zapata Quantum and University of Maryland Launch ForShor.ai Formal Verification Challenge for AI-Assisted Quantum Algorithm Design",
+   "url": "https://quantumcomputingreport.com/zapata-quantum-and-university-of-maryland-launch-forshor-ai-formal-verification-challenge-for-ai-assisted-quantum-algorithm-design",
+   "resumo": "Zapata Quantum and the University of Maryland have launched ForShor.ai, a formal verification challenge combining formal theorem proving with AI to optimize quantum factoring subroutines. The initiative invites researchers to submit recursive arithmetic schedules, which are then verified for mathematical correctness…",
    "fonte": "Quantum Computing Report",
    "fonteId": "qcreport",
    "dataPub": "2026-11-26",
@@ -336,44 +213,130 @@
    "escopo": "Global",
    "pontos": 33,
    "urgente": false,
-   "relevancia": "radar",
+   "relevancia": "media",
    "origem": "auto"
   },
   {
-   "id": "c8f3bf110cfe",
-   "titulo": "Finep e BNDES selecionam a Bossanova para gestão de FIP de R$ 250 mi para startups",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPcTJHSWlNeXlWWEJlN2NPMG0tSTVhMjFNSFZtbngwcEJQNnM0MjZYWWRBZmd4ZUpzc29WTUlfV1ZFcUlobXBXbURMazVYcXlwcDBrYmdTUmk3YUh2RUFoNGYwUUk5Q2lyRFh4bjM1X2t1bmVlUDBWTnlVQnY0RDFjM1FPWmxlcjlnN2NnSkxQLU1SV3J2NnU4QnFnXzVZQlBnb29XTnBaUmpHUXdPNDRlNTJnOA?oc=5",
-   "resumo": "",
-   "fonte": "Finep",
-   "fonteId": "finep",
-   "dataPub": "2026-11-24",
+   "id": "de3579cb834e",
+   "titulo": "Diraq Finalizes $38 Million CHIPS R&D Award with U.S. Department of Commerce for Silicon Spin Quantum Chips",
+   "url": "https://quantumcomputingreport.com/diraq-finalizes-38-million-chips-rd-award-with-u-s-department-of-commerce-for-silicon-spin-quantum-chips",
+   "resumo": "Diraq secured a $38 million CHIPS R&D award from the U.S. Department of Commerce to advance silicon spin quantum chips, establishing U.S. facilities and aiming for over two million physical qubits by 2031. This funding will accelerate U.S.-based fabrication, testing, and research for their CMOS-compatible quantum…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-27",
    "imagem": "",
-   "coletadoEm": "2026-11-25T20:30:42Z",
+   "coletadoEm": "2026-11-27T19:23:44Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 33,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "f6d18f79b6aa",
+   "titulo": "Página 1 de 2 Chamada CNPq/SETEC/MCTI Nº 13/2026 - Apoio a Eventos de Promoção do Empreendedorismo e da Inovação no Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOaTI2MExGb1BpWWcxZUxiZmR5cHhiQnhmdkQ3dFI2VFFDQnUyM1p2dW9YeUVJZ2pESDBJd2haNlFEQXFRZjRyUUYtUTNuSExqWWtoQ1phb21GLXNEbnV6cDVyYjhDUVc3Wi02a01sWFJZWGp1dE9VbGs1c3k1d2Y5T3pRU2paV1FianJXYXNTNnQyZnhYc2hvQU44T1FnU3JjM0luS3Y0N2FGalU5NjVlX2stY2FfZloyRm9Pak1wSDNIb2t3WW91blRSejlRcjlqcE9mRW9Hd3E5aGdXT0RhaDdKb01laEdxUkE?oc=5",
+   "resumo": "",
+   "fonte": "CNPq",
+   "fonteId": "cnpq",
+   "dataPub": "2026-11-27",
+   "imagem": "",
+   "coletadoEm": "2026-11-27T19:23:16Z",
    "tipo": "inovacao",
    "programas": [
     "fomento",
     "inovacao"
    ],
    "escopo": "Nacional",
-   "pontos": 30,
+   "pontos": 32,
    "urgente": false,
    "relevancia": "alta",
    "origem": "auto"
   },
   {
-   "id": "0e1f5d956a34",
-   "titulo": "Chamada de Apoio a Eventos de Empreendedorismo e Inovação apoiará 11 ações no 1º semestre de 2027; veja o resultado final",
-   "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPRVhyVXU4bUFORXc5ZmdfVnlCRjVzSXNzdHE3MzFpemJqRTlsMG1nQWNIOEtBb1J5VTFGejlBVGRzLWtjeEpvN0RVUFRCQnhoVmp1SkE5a0E2ZVRzbTNuSEo2bmpxbW5XOHh6aUpGOWctcVhwNEhtaDVodEtxUTgxY1ZNb2dHQnpsRVB1eDRGM2d6b2dMVTBBeHpZTEtlbXg5dUR0Z2QtQm9RQXE1YTMwR3ZsbDdxTW1yb0RaNjlRZEJ1andtQmF6ZlRLVEM4NENTMTJQVzR6NzRIZGdpSUU3SW1TMWJ6eS1EdDZtRk5Fd0huSG1KNG5oQVFmc1NjY1VWMTY0OTBfSFp6eUhHRjQ4Uks2LW1MTkk?oc=5",
+   "id": "0e45a749e7eb",
+   "titulo": "CyberRidge Selected for The Lucrative EIC Award For Innovation In Quantum Security",
+   "url": "https://thequantuminsider.com/2026/11/23/cyberridge-european-innovation-council-co-funding",
+   "resumo": "CyberRidge has been selected for co-funding by the European Innovation Council (EIC), Europe’s flagship program for breakthrough technologies. In this highly selective round, only 71 companies were chosen out of 1211 applicants. The European Commission set up the EIC in 2021 to identify, develop, and scale…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-23",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/2026-11-23_21-11.png",
+   "coletadoEm": "2026-11-23T21:56:46Z",
+   "tipo": "quantica",
+   "programas": [
+    "ciquanta",
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "fdf2742ff9fa",
+   "titulo": "Q.security Launches With $11.5 Million From Castle Island Ventures, New York Life Ventures and Coinbase Ventures",
+   "url": "https://thequantuminsider.com/2026/11/23/q-security-launches-with-11-5-million-from-castle-island-ventures-new-york-life-ventures-and-coinbase-ventures",
+   "resumo": "Q.security, the provider of the business-first post-quantum cryptography (PQC) remediation platform, today announced its launch from stealth with $11.5 million in seed funding led by Castle Island Ventures, with investment from New York Life Ventures and Coinbase Ventures. Q.security takes enterprises from discovery…",
+   "fonte": "The Quantum Insider",
+   "fonteId": "quantuminsider",
+   "dataPub": "2026-11-23",
+   "imagem": "https://thequantuminsider.com/wp-content/uploads/2026/11/te.png",
+   "coletadoEm": "2026-11-23T21:56:46Z",
+   "tipo": "inovacao",
+   "programas": [
+    "ciquanta",
+    "inovacao",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 32,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "a2cfa4f404d0",
+   "titulo": "EDITAL Nº 45/2026 - VAGAS REMANESCENTES SELEÇÃO DE PESQUISADOR EXTENSIONISTA PARA O PROGRAMA DE APOIO AO DESENVOLVIMENTO RURAL SUSTENTÁVEL (3ª Chamada do cadastro de reserva)",
+   "url": "https://fapesq.rpp.br/editais/editais-2026/26_11_26-edital-no-45-2026-fapesq_empaer-3a-chamada-do-cadastro-de-reserva.pdf/view",
    "resumo": "",
-   "fonte": "CNPq",
-   "fonteId": "cnpq",
+   "fonte": "FAPESQ",
+   "fonteId": "fapesq",
    "dataPub": "2026-11-26",
    "imagem": "",
-   "coletadoEm": "2026-11-26T19:27:00Z",
+   "coletadoEm": "2026-11-26T19:26:26Z",
+   "tipo": "edital",
+   "programas": [
+    "fomento"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 31,
+   "urgente": false,
+   "relevancia": "media",
+   "origem": "auto"
+  },
+  {
+   "id": "5e586457f319",
+   "titulo": "R$ 18,5 bilhões em contratos: inovação aberta com startups deixa a fase de testes e vira operação no Brasil",
+   "url": "https://startupi.com.br/inovacao-aberta-startups-18-bilhoes-contratos-decada-resultados",
+   "resumo": "Startupi R$ 18,5 bilhões em contratos: inovação aberta com startups deixa a fase de testes e vira operação no Brasil Com valor médio por contrato 65% maior e quase metade dos acordos renovados de anos anteriores, ecossistema corporativo abre a \"década dos resultados\" — e IA já está presente em 3 de cada 10 projetos O…",
+   "fonte": "Startupi",
+   "fonteId": "startupi",
+   "dataPub": "2026-11-27",
+   "imagem": "https://startupi.com.br/wp-content/uploads/2026/11/vitaly-gariev-1tWSpIVPi78-unsplash.jpg",
+   "coletadoEm": "2026-11-27T19:23:40Z",
    "tipo": "inovacao",
    "programas": [
     "inovacao",
-    "fomento"
+    "fomento",
+    "secretaria2030"
    ],
    "escopo": "Nacional",
    "pontos": 30,
@@ -382,19 +345,60 @@
    "origem": "auto"
   },
   {
-   "id": "02448826a4c7",
-   "titulo": "Finep lança edital de R$ 120 milhões para impulsionar ensaios não clínicos e clínicos estratégicos para o SUS",
-   "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQUjVzRW5Ub3M0bFJpZlV5T1hGWjJsSFQ1NVE4SHgtUEJuRnowOEZ5X3ZSRE1wT1pwUEgtd0RuT25uU1dxU2tvVmlLdGtsSHRfdVhhS2hnM1NBdnJGdmN0TzAwSGhUd3Fldnp5QVBQOFVuQy01SGEzaDhmTndWQlJEQ0NVUWV3VTBleFAyUWZBRU9UNERZNF9JZWkxVmlHckY0MURuS002OV9SZmtJSS1aQVBjbGdkZE15SDd1WUhMZFJVZmR1c0RGM3QyVWxSUi1KQnhGUi1LU0pjOHJ0V3FINUlhbE4weWpNeXl5U19Dam5UYjZBbEdadg?oc=5",
-   "resumo": "",
-   "fonte": "Finep",
-   "fonteId": "finep",
-   "dataPub": "2026-11-25",
+   "id": "91f9b9ffee34",
+   "titulo": "Harvard, QuEra, NVIDIA, Anthropic, and Three National Labs Secure $12 Million DOE Award for AI-Driven Quantum Error Correction",
+   "url": "https://quantumcomputingreport.com/harvard-quera-nvidia-anthropic-and-three-national-labs-secure-12-million-doe-award-for-ai-driven-quantum-error-correction",
+   "resumo": "A consortium including Harvard, QuEra, NVIDIA, Anthropic, and three National Labs has received a $12 million DOE award for the ASQC initiative. This project will focus on developing AI-designed quantum error correction specifically tailored for scientific computing workloads. The goal is to reduce the overhead for…",
+   "fonte": "Quantum Computing Report",
+   "fonteId": "qcreport",
+   "dataPub": "2026-11-24",
    "imagem": "",
-   "coletadoEm": "2026-11-26T19:26:33Z",
-   "tipo": "edital",
+   "coletadoEm": "2026-11-24T20:31:59Z",
+   "tipo": "quantica",
    "programas": [
-    "fomento",
-    "transversal"
+    "ciquanta",
+    "fomento"
+   ],
+   "escopo": "Global",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "0de76b486755",
+   "titulo": "Hackers invadem Cloud One, nuvem da Força Aérea dos EUA, diz Reuters",
+   "url": "https://paraibabusiness.com.br/hackers-invadem-cloud-one-nuvem-da-forca-aerea-dos-eua-diz-reuters",
+   "resumo": "Sugestão de imagem: foto de arquivo de base ou de aeronave da Força Aérea dos EUA (crédito a informar), ou arte própria sobre segurança digital. Evitar imagem de “hacker encapuzado” e qualquer arte que sugira dados vazados. Hackers invadiram a Cloud One, principal plataforma de computação em nuvem da Força Aérea dos…",
+   "fonte": "Paraíba Business",
+   "fonteId": "paraibabusiness",
+   "dataPub": "2026-11-27",
+   "imagem": "",
+   "coletadoEm": "2026-11-27T19:22:44Z",
+   "tipo": "seguranca",
+   "programas": [
+    "seguranca"
+   ],
+   "escopo": "Paraíba",
+   "pontos": 30,
+   "urgente": false,
+   "relevancia": "radar",
+   "origem": "auto"
+  },
+  {
+   "id": "42772f73122b",
+   "titulo": "CAPES lança módulo inédito do Observatório Nísia Floresta sobre a atuação profissional de mestres e doutores",
+   "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOX2dRM2JXYkUwV1l6MmtremFBQlZfaldlZUF5dVlJNFFuRTBBM05odmVFb0gzUHQzYVJ0aGNrMncwbkZ3a3ZVNmRZZEhGcmtFOWxLeVFPQU5Ddy1HR0tUVHFUQV8wazhEeUMycnpEQ25DaTlrRXRLM05SQ0FDbkRIaVdIV2w4dUtGRVBBdnJNbFpSUzVQYkdaMmhGWWw2U3dFb1B0Zm9YcjJjMzhybUZwQU1lTW0yTVRIWjFjRmVzcElzVnc4UU0wYkZWbEZ5aEZFeW9aVUNENW5zOWc4OGpvQXd3Q296eTdLcWZtcFZn?oc=5",
+   "resumo": "",
+   "fonte": "CAPES",
+   "fonteId": "capes",
+   "dataPub": "2026-11-26",
+   "imagem": "",
+   "coletadoEm": "2026-11-27T19:23:17Z",
+   "tipo": "ensino",
+   "programas": [
+    "ensino",
+    "astronomia"
    ],
    "escopo": "Nacional",
    "pontos": 29,
@@ -403,38 +407,50 @@
    "origem": "auto"
   },
   {
-   "id": "91b9549e9cc7",
-   "titulo": "Embrapii recebe Medalha Zeferino Vaz em celebração aos 60 anos da Unicamp",
-   "url": "https://embrapii.org.br/embrapii-recebe-medalha-zeferino-vaz-em-celebracao-aos-60-anos-da-unicamp",
-   "resumo": "Presidente Alvaro Prata recebeu a distinção nesta quarta-feira (25), em cerimônia realizada em Campinas (SP) A Empresa Brasileira de Pesquisa e Inovação Industrial (Embrapii) foi homenageada pela Universidade Estadual de Campinas (Unicamp) com a Medalha Zeferino Vaz 2026. A distinção foi criada pela instituição para…",
-   "fonte": "Embrapii",
-   "fonteId": "embrapii",
+   "id": "24186d64eef7",
+   "titulo": "Fraude e identidade dominam o ranking de cibersegurança do 100 Open Startups 2026",
+   "url": "https://itforum.com.br/noticias/fraude-identidade-ciber-100-open-startups-2026",
+   "resumo": "A 100 Open Startups publicou nesta terça-feira (24) a classificação completa do Ranking 100 Open Startups 2026. Na categoria Cybersecurity and Identification, o recorte reúne seis startups: Acertpix, Kiggu, Exato Digital, Eskive, T-Shield e Minds Digital, nessa ordem. A lista mostra onde as grandes empresas estão…",
+   "fonte": "IT Forum",
+   "fonteId": "cio",
    "dataPub": "2026-11-25",
-   "imagem": "",
-   "coletadoEm": "2026-11-26T19:27:05Z",
-   "tipo": "inovacao",
+   "imagem": "https://db00ytxhy7e1q.cloudfront.net/2026/08/ciberseguranca-1-1.jpg",
+   "coletadoEm": "2026-11-25T20:31:32Z",
+   "tipo": "seguranca",
    "programas": [
-    "inovacao",
-    "ensino"
+    "seguranca",
+    "inovacao"
    ],
    "escopo": "Nacional",
-   "pontos": 29,
+   "pontos": 28,
    "urgente": false,
    "relevancia": "radar",
    "origem": "auto"
   }
  ],
  "doe": {},
- "secom": [],
+ "secom": [
+  {
+   "titulo": "Mostra Cine Currículos em Movimento chega a João Pessoa e valoriza histórias e culturas dos territórios paraibanos",
+   "portal": "UEPB",
+   "url": "https://uepb.edu.br/mostra-cine-curriculos-em-movimento-chega-a-joao-pessoa-e-valoriza-historias-e-culturas-dos-territorios-paraibanos",
+   "dataPub": "2026-11-27",
+   "programas": [
+    "ensino",
+    "inovacao"
+   ],
+   "resumo": ""
+  }
+ ],
  "propostas": [],
  "doeAuto": {
-  "data": "2026-11-26",
+  "data": "2026-11-27",
   "lido": false,
   "obs": "Nenhuma edição do Diário Oficial publicada para esta data até o momento da coleta.",
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-26T17:15:46-03:00",
+ "geradoEm": "2026-11-27T16:24:35-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -449,7 +465,7 @@
    "id": "abc",
    "nome": "Academia Brasileira de Ciências",
    "ok": true,
-   "itens": 2,
+   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -485,7 +501,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 4,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -494,7 +510,7 @@
    "id": "aeb",
    "nome": "Agência Espacial Brasileira",
    "ok": true,
-   "itens": 2,
+   "itens": 5,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -539,7 +555,7 @@
    "id": "anpd",
    "nome": "ANPD",
    "ok": true,
-   "itens": 12,
+   "itens": 10,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -581,10 +597,19 @@
    "obs": ""
   },
   {
+   "id": "iadb",
+   "nome": "BID",
+   "ok": true,
+   "itens": 1,
+   "feed": "busca de notícias",
+   "via": "busca",
+   "obs": ""
+  },
+  {
    "id": "bndes",
    "nome": "BNDES",
    "ok": true,
-   "itens": 18,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -593,7 +618,7 @@
    "id": "capes",
    "nome": "CAPES",
    "ok": true,
-   "itens": 11,
+   "itens": 15,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -602,7 +627,7 @@
    "id": "cgee",
    "nome": "CGEE",
    "ok": true,
-   "itens": 6,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -638,7 +663,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 10,
+   "itens": 12,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -647,7 +672,7 @@
    "id": "codata",
    "nome": "CODATA",
    "ok": true,
-   "itens": 2,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -665,7 +690,7 @@
    "id": "confap",
    "nome": "Confap",
    "ok": true,
-   "itens": 6,
+   "itens": 7,
    "feed": "https://confap.org.br/news/feed/",
    "via": "feed",
    "obs": ""
@@ -692,7 +717,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 21,
+   "itens": 18,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -701,7 +726,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 26,
+   "itens": 27,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -746,7 +771,7 @@
    "id": "fiepb",
    "nome": "FIEP",
    "ok": true,
-   "itens": 3,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -755,7 +780,7 @@
    "id": "finep",
    "nome": "Finep",
    "ok": true,
-   "itens": 5,
+   "itens": 11,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -773,7 +798,7 @@
    "id": "govdigital",
    "nome": "Governo Digital",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -809,7 +834,7 @@
    "id": "ibram",
    "nome": "Ibram",
    "ok": true,
-   "itens": 5,
+   "itens": 7,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -818,7 +843,7 @@
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
-   "itens": 12,
+   "itens": 11,
    "feed": "https://spectrum.ieee.org/feeds/feed.rss",
    "via": "feed",
    "obs": ""
@@ -827,7 +852,7 @@
    "id": "ifpb",
    "nome": "IFPB",
    "ok": true,
-   "itens": 39,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -863,7 +888,7 @@
    "id": "iphan",
    "nome": "Iphan",
    "ok": true,
-   "itens": 15,
+   "itens": 16,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -881,9 +906,9 @@
    "id": "sbpc",
    "nome": "Jornal da Ciência",
    "ok": true,
-   "itens": 5,
-   "feed": "busca de notícias",
-   "via": "busca",
+   "itens": 10,
+   "feed": "http://www.jornaldaciencia.org.br/feed/",
+   "via": "feed",
    "obs": ""
   },
   {
@@ -926,7 +951,7 @@
    "id": "mcti",
    "nome": "MCTI",
    "ok": true,
-   "itens": 38,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -935,7 +960,7 @@
    "id": "mec",
    "nome": "MEC",
    "ok": true,
-   "itens": 38,
+   "itens": 37,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1061,7 +1086,7 @@
    "id": "pesquisafapesp",
    "nome": "Pesquisa FAPESP",
    "ok": true,
-   "itens": 6,
+   "itens": 7,
    "feed": "https://revistapesquisa.fapesp.br/feed/",
    "via": "feed",
    "obs": ""
@@ -1070,7 +1095,7 @@
    "id": "physorg-quantum",
    "nome": "Phys.org Quantum",
    "ok": true,
-   "itens": 30,
+   "itens": 26,
    "feed": "https://phys.org/rss-feed/physics-news/quantum-physics/",
    "via": "feed",
    "obs": ""
@@ -1079,7 +1104,7 @@
    "id": "physicsworld",
    "nome": "Physics World",
    "ok": true,
-   "itens": 38,
+   "itens": 35,
    "feed": "https://physicsworld.com/feed/",
    "via": "feed",
    "obs": ""
@@ -1115,7 +1140,7 @@
    "id": "governo-pb",
    "nome": "Portal do Governo da Paraíba",
    "ok": true,
-   "itens": 3,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1124,7 +1149,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 33,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1142,7 +1167,7 @@
    "id": "quanta",
    "nome": "Quanta Magazine",
    "ok": true,
-   "itens": 5,
+   "itens": 4,
    "feed": "https://api.quantamagazine.org/feed/",
    "via": "feed",
    "obs": ""
@@ -1160,7 +1185,7 @@
    "id": "restofworld",
    "nome": "Rest of World",
    "ok": true,
-   "itens": 4,
+   "itens": 3,
    "feed": "https://restofworld.org/feed/latest/",
    "via": "feed",
    "obs": ""
@@ -1205,7 +1230,7 @@
    "id": "sebrae-pb",
    "nome": "Sebrae Paraíba",
    "ok": true,
-   "itens": 31,
+   "itens": 38,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1283,15 +1308,6 @@
    "obs": ""
   },
   {
-   "id": "the",
-   "nome": "Times Higher Education",
-   "ok": true,
-   "itens": 0,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": "Respondeu, mas sem notícias recentes"
-  },
-  {
    "id": "uepb",
    "nome": "UEPB",
    "ok": true,
@@ -1304,7 +1320,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 4,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1340,7 +1356,7 @@
    "id": "xinhua",
    "nome": "Xinhua Ciência",
    "ok": true,
-   "itens": 6,
+   "itens": 3,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1364,14 +1380,6 @@
   {
    "id": "apolitical",
    "nome": "Apolitical",
-   "ok": false,
-   "itens": 0,
-   "feed": null,
-   "obs": "Sem feed acessível hoje"
-  },
-  {
-   "id": "iadb",
-   "nome": "BID",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1450,6 +1458,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "the",
+   "nome": "Times Higher Education",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "ufcg",
    "nome": "UFCG",
    "ok": false,
@@ -1475,14 +1491,14 @@
   }
  ],
  "curiosidade": {
-  "texto": "Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra.",
-  "porque": "Um copo tem cerca de 8 seguido de 24 zeros de moléculas. Os oceanos inteiros dariam algo como 5 seguido de 21 zeros de copos.",
-  "tema": "molecula",
-  "area": "Física da matéria",
-  "formula": "≈ 8 × 10²⁴ moléculas por copo"
+  "texto": "A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta.",
+  "porque": "É o tempo de a luz ir e voltar, cobrindo cerca de 384 mil km em cada sentido.",
+  "tema": "luz",
+  "area": "Óptica",
+  "formula": "384.000 km ÷ c ≈ 1,3 s"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-26-1715.png",
- "link": "https://radar.secties.pb.gov.br/edicao/41/",
- "whatsapp": "*RADAR SECTIES*  |  Edição nº 41\n_Quinta-feira, 26 de novembro de 2026_\n\n*JPMORGAN PROJETA US$ 450 BILHÕES EM DÍVIDA PARA IA EM 2027, ALTA DE 22%*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 12 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. EDITAL Nº 41/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO PROFISSIONAL (Retificado em 25/11/26, Item 2) _(FAPESQ)_\n2. Parlamentares querem cibersegurança no PL do Marco Legal da Inteligência Artificial _(Convergência Digital)_\n3. Quantum eMotion Completes C$32 Million ($22.5 Million USD) Acquisition of Cybersecurity Provider Plurilock Security _(Quantum Computing Report)_\n\n*NA PARAÍBA, NO BRASIL E NO MUNDO*\n*Paraíba:* Governo da Paraíba lança edital para levar 22 startups paraibanas ao Web Summit Qatar 2027\n*Brasil:* Finep e BNDES selecionam a Bossanova para gestão de FIP de R$ 250 mi para startups\n*Mundo:* Chulalongkorn Researchers Call for Greater Quantum Investment in Thailand\n\n> *Você sabia?* Um copo d'água tem mais moléculas do que existem copos d'água em todos os oceanos da Terra.\n\n*Leia a edição completa*, com 20 notícias:\nhttps://radar.secties.pb.gov.br/edicao/41/"
+ "capa": "capa-2026-11-27-1624.png",
+ "link": "https://radar.secties.pb.gov.br/edicao/42/",
+ "whatsapp": "*RADAR SECTIES*  |  Edição nº 42\n_Sexta-feira, 27 de novembro de 2026_\n\n*CRÉDITO NO CELULAR CHEGA À PEQUENA EMPRESA; STARTUP DE IA CAPTA US$ 6 MILHÕES*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Mostra Cine Currículos em Movimento chega a João Pessoa e valoriza histórias e culturas dos territórios paraibanos _(UEPB)_\n2. EDITAL Nº 40/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO ACADÊMICOS (Retificado em 25/11/2026, Item 2) _(FAPESQ)_\n3. Gyeonggi Province Holds Forum on Quantum and Semiconductor Industry Cooperation _(The Quantum Insider)_\n\n> *Você sabia?* A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/42/"
 }
