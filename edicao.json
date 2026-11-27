@@ -450,7 +450,7 @@
   "arquivos": [],
   "mencoes": []
  },
- "geradoEm": "2026-11-27T16:24:35-03:00",
+ "geradoEm": "2026-11-27T17:02:02-03:00",
  "saude": [
   {
    "id": "abdi",
@@ -501,16 +501,7 @@
    "id": "ufpb-agencia",
    "nome": "Agência de Notícias da UFPB",
    "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "aeb",
-   "nome": "Agência Espacial Brasileira",
-   "ok": true,
-   "itens": 5,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -540,15 +531,6 @@
    "itens": 15,
    "feed": "https://www12.senado.leg.br/noticias/RSS",
    "via": "feed",
-   "obs": ""
-  },
-  {
-   "id": "anatel",
-   "nome": "Anatel",
-   "ok": true,
-   "itens": 8,
-   "feed": "busca de notícias",
-   "via": "busca",
    "obs": ""
   },
   {
@@ -583,24 +565,6 @@
    "nome": "Baguete",
    "ok": true,
    "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "worldbank-digital",
-   "nome": "Banco Mundial Digital",
-   "ok": true,
-   "itens": 1,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "iadb",
-   "nome": "BID",
-   "ok": true,
-   "itens": 1,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -663,7 +627,7 @@
    "id": "cnpq",
    "nome": "CNPq",
    "ok": true,
-   "itens": 12,
+   "itens": 13,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -717,7 +681,7 @@
    "id": "dataprev",
    "nome": "Dataprev",
    "ok": true,
-   "itens": 18,
+   "itens": 19,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -726,7 +690,7 @@
    "id": "embrapa-algodao",
    "nome": "Embrapa Algodão",
    "ok": true,
-   "itens": 27,
+   "itens": 40,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -753,7 +717,7 @@
    "id": "eurekalert",
    "nome": "EurekAlert",
    "ok": true,
-   "itens": 5,
+   "itens": 4,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -831,15 +795,6 @@
    "obs": ""
   },
   {
-   "id": "ibram",
-   "nome": "Ibram",
-   "ok": true,
-   "itens": 7,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "ieee",
    "nome": "IEEE Spectrum",
    "ok": true,
@@ -878,24 +833,6 @@
   {
    "id": "ipea",
    "nome": "Ipea",
-   "ok": true,
-   "itens": 40,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "iphan",
-   "nome": "Iphan",
-   "ok": true,
-   "itens": 16,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
-   "id": "cio",
-   "nome": "IT Forum",
    "ok": true,
    "itens": 40,
    "feed": "busca de notícias",
@@ -1020,15 +957,6 @@
    "obs": "Respondeu, mas sem notícias recentes"
   },
   {
-   "id": "oecd-ai",
-   "nome": "OECD.AI",
-   "ok": true,
-   "itens": 1,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "olhardigital",
    "nome": "Olhar Digital",
    "ok": true,
@@ -1149,7 +1077,7 @@
    "id": "pmcg",
    "nome": "Prefeitura de Campina Grande",
    "ok": true,
-   "itens": 38,
+   "itens": 39,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1158,7 +1086,7 @@
    "id": "pmjp",
    "nome": "Prefeitura de João Pessoa",
    "ok": true,
-   "itens": 8,
+   "itens": 9,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1320,7 +1248,7 @@
    "id": "ufpb",
    "nome": "UFPB",
    "ok": true,
-   "itens": 40,
+   "itens": 2,
    "feed": "busca de notícias",
    "via": "busca",
    "obs": ""
@@ -1353,15 +1281,6 @@
    "obs": ""
   },
   {
-   "id": "xinhua",
-   "nome": "Xinhua Ciência",
-   "ok": true,
-   "itens": 3,
-   "feed": "busca de notícias",
-   "via": "busca",
-   "obs": ""
-  },
-  {
    "id": "auniao",
    "nome": "A União",
    "ok": false,
@@ -1378,8 +1297,40 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "aeb",
+   "nome": "Agência Espacial Brasileira",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "anatel",
+   "nome": "Anatel",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "apolitical",
    "nome": "Apolitical",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "worldbank-digital",
+   "nome": "Banco Mundial Digital",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "iadb",
+   "nome": "BID",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1410,6 +1361,14 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "ibram",
+   "nome": "Ibram",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "icom",
    "nome": "ICOM",
    "ok": false,
@@ -1434,8 +1393,32 @@
    "obs": "Sem feed acessível hoje"
   },
   {
+   "id": "iphan",
+   "nome": "Iphan",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "cio",
+   "nome": "IT Forum",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
    "id": "jampanews",
    "nome": "Jampa News",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "oecd-ai",
+   "nome": "OECD.AI",
    "ok": false,
    "itens": 0,
    "feed": null,
@@ -1488,6 +1471,14 @@
    "itens": 0,
    "feed": null,
    "obs": "Sem feed acessível hoje"
+  },
+  {
+   "id": "xinhua",
+   "nome": "Xinhua Ciência",
+   "ok": false,
+   "itens": 0,
+   "feed": null,
+   "obs": "Sem feed acessível hoje"
   }
  ],
  "curiosidade": {
@@ -1498,7 +1489,7 @@
   "formula": "384.000 km ÷ c ≈ 1,3 s"
  },
  "fotoNucleo": "secretario.jpg",
- "capa": "capa-2026-11-27-1624.png",
+ "capa": "capa-2026-11-27-1702.png",
  "link": "https://radar.secties.pb.gov.br/edicao/42/",
  "whatsapp": "*RADAR SECTIES*  |  Edição nº 42\n_Sexta-feira, 27 de novembro de 2026_\n\n*CRÉDITO NO CELULAR CHEGA À PEQUENA EMPRESA; STARTUP DE IA CAPTA US$ 6 MILHÕES*\n> 20 notícias de ciência, tecnologia, inovação e ensino superior, 10 delas da Paraíba.\n\n*O QUE PEDE ATENÇÃO HOJE*\n1. Mostra Cine Currículos em Movimento chega a João Pessoa e valoriza histórias e culturas dos territórios paraibanos _(UEPB)_\n2. EDITAL Nº 40/2026 - CONCESSÃO DE BOLSAS DE MESTRADO E DOUTORADO ACADÊMICOS (Retificado em 25/11/2026, Item 2) _(FAPESQ)_\n3. Gyeonggi Province Holds Forum on Quantum and Semiconductor Industry Cooperation _(The Quantum Insider)_\n\n> *Você sabia?* A luz leva 1,3 segundo para ir da Terra à Lua. Uma chamada de vídeo com a Lua teria quase 3 segundos de atraso na resposta.\n\n*Leia a edição completa*, com 20 notícias e pautas da SECTIES e da FAPESQ:\nhttps://radar.secties.pb.gov.br/edicao/42/"
 }
